@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<!--
+      <link rel="stylesheet" href="https://js.arcgis.com/4.8/esri/css/main.css">
+      <script src="https://js.arcgis.com/4.8/"></script>
+-->
+      <script src="./papaparse.js"></script>
+      <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+<!--      <link rel="stylesheet" href="https://js.arcgis.com/3.26/esri/css/esri.css">-->
+      <link rel="stylesheet" href="https://js.arcgis.com/4.8/esri/css/main.css">
+        <script src="https://js.arcgis.com/4.8/"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>ArcGIS DevLabs: Create a JavaScript starter app</title>
+    <style>
+      html, body, #viewDiv {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+      }
+    </style>
+      
+  <script>
+            var data;
+
+          function handleFileSelect(evt) {
+            var file = evt.target.files[0];
+
+//              function Point(x, y) {
+//                  this.x = x;
+//                  this.y = y;
+//              }
+            Papa.parse(file, {
+              complete: function(results) {
+                data = results.data;
+                console.log(data);
+                  var coordinates = new Array();
+                var graphicsArray = [];
+                var map;
+                require([
+      "esri/Map",
+        "esri/views/MapView",
+        "esri/geometry/Point",
+        "esri/symbols/SimpleMarkerSymbol",
+        "esri/Graphic", 
+        "esri/layers/GraphicsLayer",
+                    "esri/symbols/SimpleLineSymbol", 
+                    "esri/Color",
+        "dojo/domReady!"
+      ], function(
+        Map, MapView, Point, SimpleMarkerSymbol, Graphic, GraphicsLayer, SimpleLineSymbol, Color
+      ) {
+                    
+    var graphicsLayer = new GraphicsLayer(); 
+
+    var map = new Map({
+      basemap: "topo-vector"
+    });
+                   
+    console.log(data.length);
+                for(i=1; i < data.length; i++) {
+                    if(data[i][2] != 0) {
+                    var point = new Point(data[i][2], data[i][3]);
+                    
+                    
+                    var pointSymbol = new SimpleMarkerSymbol(SimpleMarkerSymbol.STYLE_CIRCLE, 10,
+    new SimpleLineSymbol(SimpleLineSymbol.STYLE_SOLID,
+    new Color([255,0,0]), 1),
+    new Color([0,255,0,0.25]));
+                    var g = new Graphic(point, pointSymbol);
+                    graphicsLayer.add(g);
+                    
+//                    var pointSymbol = new SimpleMarkerSymbol();
+//                    var pointAttributes = {name: data[i][7]};
+////                    var pointInfoTemplate = new InfoTemplate(data[i][7]);
+//                    var pointGraphic = new Graphic(point, pointSymbol, pointAttributes);
+//                    graphicsArray.push(pointGraphic);
+                    coordinates[i] = point;
+                }
+                }
+                console.log("COOOOORDINATES");
+                console.log(coordinates);
+
+                    
+    
+    var view = new MapView({
+      container: "viewDiv",
+      map: map,
+      center: [-118.3306, 46.0706],
+      zoom: 16
+    });
+    console.log(graphicsLayer);
+      map.add(graphicsLayer); 
+                                 
+  });
+                  
+//                  console.log(graphicsArray);
+//                  for (i=0; i < graphicsArray.length; i++){
+//                    map.graphics.add(graphicsArray[i]);
+//                }
+                  
+                  
+//                require([
+//                  "esri/map",
+//    "esri/geometry/Geometry",
+//    "esri/geometry/Point",
+//    "esri/geometry/Polyline",
+//    "esri/geometry/Polygon",
+//    "esri/graphic",
+//    "esri/symbols/SimpleMarkerSymbol",
+//    "esri/symbols/SimpleLineSymbol",
+//    "esri/symbols/SimpleFillSymbol",
+//    "esri/Color",
+//    "esri/InfoTemplate",
+//    "dojo/domReady!",
+//    "esri/geometry"], function (Map,
+//
+//Geometry,
+//Point,
+//Polyline,
+//Polygon,
+//Graphic,
+//SimpleMarkerSymbol,
+//SimpleLineSymbol,
+//SimpleFillSymbol,
+//Color,
+//InfoTemplate) {
+//
+//                map = new Map({
+//                  basemap: "topo-vector"
+//                });
+//                    
+//                
+//                  console.log(data.length);
+//                for(i=1; i < data.length; i++) {
+//                    var point = new Point(data[i][2], data[i][3]);
+//                    var pointSymbol = new SimpleMarkerSymbol();
+//                    var pointAttributes = {name: data[i][7]};
+//                    var pointInfoTemplate = new InfoTemplate(data[i][7]);
+//                    var pointGraphic = new Graphic(point, pointSymbol, pointAttributes).setInfoTemplate(pointInfoTemplate);
+//                    graphicsArray.push(pointGraphic);
+//                    coordinates[i] = point;
+//                }
+//                console.log("COOOOORDINATES");
+//                console.log(coordinates);
+//
+//                var view = new MapView({
+//                  container: "viewDiv",
+//                  map: map,
+//                  center: [-118.3306, 46.0706],
+//                  zoom: 16
+//                });
+//              });
+                 
+              }
+                
+            });
+            
+          }
+
+          $(document).ready(function(){
+            $("#csv-file").change(handleFileSelect);
+          });
+      
+    </script>
+    <input type="file" id="csv-file" name="files"/>
+      <div id="map"></div>
+<!--
+  <script>
+        var data;
+ 
+        var file = files["TreeData.csv"];
+      
+        data = Papa.parse(file);
+      
+        console.log(data);
+    
+
+//        Papa.parse(file, {
+//          header: true,
+//          dynamicTyping: true,
+//          complete: function(results) {
+//            data = results;
+//            console.log(data);
+//          }
+//        });
+      
+    </script>
+-->
+<!--
+      <script>
+          
+          
+          require([
+              "esri/Map",
+              "esri/views/MapView",
+              "dojo/domReady!"
+            ], function(Map, MapView) {
+
+            var map = new Map({
+              basemap: "topo-vector"
+            });
+
+            var view = new MapView({
+              container: "viewDiv",
+              map: map,
+              center: [-118.3306, 46.0706],
+              zoom: 16
+            });
+          });
+      </script>
+-->
+  </head>
+  <body>
+    <div id="viewDiv"></div>
+  </body>
+</html>

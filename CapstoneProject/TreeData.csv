@@ -1,0 +1,1472 @@
+ID,Waypoint_Number,Lat,Long,Alt_ft,Zone,Tree_Number,Common_Name,Latin_Name,Family,Age_Class,DBH_in,Tree_Height_ft,Canopy_Radius_ft,Root_Zone_Infringement,Condition_Class,Priority,Champion_Tree,Memorial_Tree_Shrub
+1,1164,46.0727500,-118.33053,976,A,1,Eastern Redbud,Cercis Canadensis,Fabaceae (Leguminosae),15-20,11,25,10,50%,Fair,C,No ,No
+2,1165,46.0727300,-118.33056,994,A,2,Eastern Redbud,Cercis Canadensis,Fabaceae (Leguminosae),30-40,43,27,15,25%,Fair,B,No ,No
+3,1166,46.0723800,-118.33083,968,A,3,Yellow Wood,Cladrastis lutea,Fabaceae (Leguminosae),20,14,20,5,50%,Fair,B,No ,No
+4,1167,46.0721400,-118.33106,972,A,4,Yellow Wood,Cladrastis lutea,Fabaceae (Leguminosae),20,25,15,10,50%,Good,B,No ,No
+5,1168,46.0715700,-118.3315,970,A,5,Norway Maple,Acer platanoides,Aceraceae,15,30,25,8,25%,Good,B,No ,No
+6,1169,46.0716700,-118.33162,982,A,6,Birch,Betula Iacquemontii,Betulaceae,15,15,25,7,25%,Good,B,No ,No
+7,1170,46.0717200,-118.33169,977,A,7,Birch,Betula Iacquemontii,Betulaceae,20,29,30,14,25%,Good,B,No ,No
+8,1171,46.0717500,-118.33176,979,A,8,Indian Bean/Catalpa,Catalpa Bignonioides,Bignoniaceae,20,56,33,16,25%,Good,B,No ,No
+9,1173,46.0718000,-118.33193,979,A,9,Indian Bean/Catalpa,Catalpa Bignonioides,Bignoniaceae,35,112,35,21,25%,Good,B,No ,No
+10,1174,46.0718700,-118.33204,985,A,10,Birch,Betula Iacquemontii,Betulaceae,35,72,65,18,25%,Good,B,No ,No
+11,1175,46.0719600,-118.33229,988,A,11,Norway Maple,Acer platanoides,Aceraceae,15,29,20,10,25%,Good,B,No ,No
+12,1176,46.0720000,-118.33237,983,A,12,Norway Maple,Acer platanoides,Aceraceae,15,22,20,6,25%,Good,B,No ,No
+13,1177,46.0720500,-118.33247,984,A,13,Norway Maple,Acer platanoides,Aceraceae,15,18,20,6,25%,Good,B,No ,No
+14,1178,46.0720700,-118.33249,981,A,14,Silver Maple,Acer Saccharinum,Aceraceae,10-12,128,65,30,50%,Poor,C,No ,No
+15,1179,46.0720800,-118.33245,982,A,15,Western Larch (tamarack),Larix Occidentalis,Pinaceae,10-12,16,20,5,50%,Good,B,No ,No
+16,1180,46.0720300,-118.3324,979,A,16,Western Larch (tamarack),Larix Occidentalis,Pinaceae,14,18,25,5,50%,Good,B,No ,No
+17,1181,46.0721200,-118.33218,985,A,17,Western Larch (tamarack),Larix Occidentalis,Pinaceae,14,27,32,6,25%,Good,B,No ,No
+18,1182,46.0722100,-118.33235,978,A,18,Western Larch (tamarack),Larix Occidentalis,Pinaceae,14,22,25,6,25%,Good,B,No ,No
+19,1183,46.0722700,-118.33236,987,A,19,Western Larch (tamarack),Larix Occidentalis,Pinaceae,14,21,25,6,25%,Good,B,No ,No
+20,1184,46.0722700,-118.33237,974,A,20,Western Larch (tamarack),Larix Occidentalis,Pinaceae,14,16,25,6,25%,Good,B,No ,No
+21,1185,46.0722000,-118.33248,978,A,21,Green Ash,Fraxinus Pennsylvanica ,Oleaceae,16,28,25,9,25%,Fair,B,No ,No
+22,1186,46.0722700,-118.33246,981,A,22,Green Ash,Fraxinus Pennsylvanica ,Oleaceae,16,39,25,16,25%,Fair,B,No ,No
+23,1187,46.0724400,-118.33228,974,A,23,Green Ash,Fraxinus Pennsylvanica ,Oleaceae,16,31,25,17,25%,Fair,B,No ,No
+24,1188,46.0724900,-118.33222,977,A,24,Green Ash,Fraxinus Pennsylvanica ,Oleaceae,16,27,25,11,25%,Fair,B,No ,No
+25,1189,46.0726000,-118.33212,978,A,25,Green Ash,Fraxinus Pennsylvanica ,Oleaceae,16,37,25,8,25%,Fair,B,No ,No
+26,1190,46.0725400,-118.33211,977,A,26,Douglas Fir,Pseudotsuga Menziesii,Pinaceae,35,60,65,15,50%,Good,B,No ,No
+27,1191,46.0725000,-118.33215,968,A,27,Douglas Fir,Pseudotsuga Menziesii,Pinaceae,35,60,65,17,50%,Good,B,No ,No
+28,1192,46.0724900,-118.33211,976,A,28,Douglas Fir,Pseudotsuga Menziesii,Pinaceae,35,63,65,17,50%,Good,B,No ,No
+29,1193,46.0725300,-118.3321,975,A,29,Pine,Pinus,Pinaceae,35,74,60,17,50%,Poor,B,No ,No
+30,1194,46.0725000,-118.33205,975,A,30,Oriental Spruce,Picea Orientalis,Pinaceae,35,69,60,10.5,25%,Good,B,No ,No
+31,1195,46.0726100,-118.33201,973,A,31,Black Locust,Robinia pseudoacacia,Fabaceae (Leguminosae),85-100,120,,14,25%,Poor,C,No ,No
+32,1196,46.0726600,-118.332,979,A,32,Green Ash,Fraxinus Pennsylvanica ,Oleaceae,15,26,35,17,0%,Good,B,No ,No
+33,1197,46.0727300,-118.33201,981,A,33,Green Ash,Fraxinus Pennsylvanica ,Oleaceae,15,33,35,18,0%,Good,B,No ,No
+34,1198,46.0727300,-118.33194,981,A,34,Green Ash,Fraxinus Pennsylvanica ,Oleaceae,15,33,35,16,0%,Good,B,No ,No
+35,1199,46.0728200,-118.33187,982,A,35,Green Ash,Fraxinus Pennsylvanica ,Oleaceae,15,28,35,18,0%,Good,B,No ,No
+36,1200,46.0728300,-118.33179,977,A,36,Green Ash,Fraxinus Pennsylvanica ,Oleaceae,15,29,35,12,0%,Good,B,No ,No
+37,1201,46.0728400,-118.33171,973,A,37,Green Ash,Fraxinus Pennsylvanica ,Oleaceae,15,30,35,14,0%,Good,B,No ,No
+38,1202,46.0728500,-118.33155,973,A,38,Green Ash,Fraxinus Pennsylvanica ,Oleaceae,15,35,35,18,0%,Good,B,No ,No
+39,1203,46.0728500,-118.33145,970,A,39,Green Ash,Fraxinus Pennsylvanica ,Oleaceae,15,34,35,13,0%,Good,B,No ,No
+40,1204,46.0728600,-118.33131,970,A,40,Green Ash,Fraxinus Pennsylvanica ,Oleaceae,15,34,35,13,0%,Good,B,No ,No
+41,1205,46.0728500,-118.33121,974,A,41,Green Ash,Fraxinus Pennsylvanica ,Oleaceae,15,32,35,14,0%,Good,B,No ,No
+42,1206,46.0728600,-118.33108,974,A,42,Green Ash,Fraxinus Pennsylvanica ,Oleaceae,15,26,35,12,0%,Good,B,No ,No
+43,1207,46.0728500,-118.33097,977,A,43,Green Ash,Fraxinus Pennsylvanica ,Oleaceae,15,31,35,14,0%,Good,B,No ,No
+44,1208,46.0728500,-118.33092,980,A,44,Green Ash,Fraxinus Pennsylvanica ,Oleaceae,15,35,35,17,0%,Good,B,No ,No
+45,1209,46.0728500,-118.33071,980,A,45,Green Ash,Fraxinus Pennsylvanica ,Oleaceae,15,36,35,15,0%,Good,B,No ,No
+46,1210,46.0727800,-118.33066,980,A,46,Birch,Betula Iacqueontilii,Betulaceae,15,30,37,13,0%,Good,A,No ,No
+47,1211,46.0727500,-118.33071,986,A,47,Birch,Betula Iacqueontilii,Betulaceae,15,28,35,16,0%,Good,A,No ,No
+48,1212,46.0727300,-118.33076,992,A,48,Birch,Betula Iacqueontilii,Betulaceae,15,29,35,12,0%,Good,A,No ,No
+49,1213,46.0726900,-118.33074,987,A,49,Redbud,Cercis fabaceae,Fabaceae (Leguminosae),15,12,,10,0%,Poor,A,No ,No
+50,1214,46.0726200,-118.33086,986,A,50,Silver Maple,Acer rubrum,Aceraceae,60,168,90,38,0%,Good,A,No ,No
+51,1215,46.0727300,-118.33085,987,A,51,Silver Maple,Acer rubrum,Aceraceae,15,21,,7,0%,Good,B,No ,No
+52,1216,46.0727200,-118.33086,988,A,52,Silver Maple,Acer rubrum,Aceraceae,15,21,38,7,0%,Good,A,No ,No
+53,1217,46.0726800,-118.33103,990,A,53,Indian Bean/Catalpa,Catalpa Bignonioides,Bignoniaceae,15,38,32,14,0%,Good,A,No ,No
+54,1218,46.0727600,-118.33106,989,A,54,Douglas Fir,Pseudotsuga menziesii,Pinaceae,85,114,87,14.5,0%,Good,A,No ,No
+55,1219,46.0727300,-118.33138,980,A,55,Norway Maple,Acer platanoides,Aceraceae,15,20,32,5,0%,Good,A,No ,No
+56,1220,46.0726700,-118.33142,977,A,56,CO Blue Spruce,Picea pungens,Pinaceae,15,29,24,6.5,0%,Good,A,No ,No
+57,1221,46.0727400,-118.33144,981,A,57,"""Tolleson's Blue Weeping"" Iuniper",Iuniper scopulorum,Cupressaceae,15,16,7,6,0%,Good,A,No ,No
+58,1222,46.0726500,-118.33154,984,A,58,Indian Bean/Catalpa,Catalpa Bignonioides,Bignoniaceae,15,33,25,14,0%,Good,A,No ,No
+59,1223,46.0727300,-118.33155,986,A,59,White Ash (Autumn Purple),Fraxinus americana,Oleaceae,15,24,35,14,0%,Good,A,No ,No
+60,1224,46.0727400,-118.3316,986,A,60,White Ash (Autumn Purple),Fraxinus americana,Oleaceae,15,24,35,10,0%,Good,A,No ,No
+61,1225,46.0726900,-118.33165,979,A,61,White Ash (Autumn Purple),Fraxinus americana,Oleaceae,15,29,35,14.5,0%,Good,A,No ,No
+62,1226,46.0726400,-118.33174,978,A,62,Green Ash,Fraxinus Pennsylvanica ,Oleaceae,15,28,36,14,0%,Good,A,No ,No
+63,1227,46.0727500,-118.33182,980,A,63,Silver Maple,Acer rubrum,Aceraceae,15,27,35,9,0%,Good,A,No ,No
+64,1228,46.0726800,-118.33184,980,A,64,Silver Maple,Acer rubrum,Aceraceae,15,27,35,10,0%,Good,A,No ,No
+65,1229,46.0725500,-118.33176,986,A,65,Silver Maple,Acer rubrum,Aceraceae,45,100,68,22,0%,Good,A,No ,No
+66,1230,46.0725400,-118.33164,986,A,66,Black Spruce?,Picea glauca densata,Pinaceae,15,16,20,6,0%,Good,A,No ,No
+67,1231,46.0725000,-118.33162,973,A,67,Black Spruce?,Picea glauca densata,Pinaceae,15,12,15,3,0%,Good,A,No ,No
+68,1232,46.0724900,-118.33012,983,B,1,Western White Pine,Pinus Monticola ,Pinaceae,12,8,15,3,0%,Good,B,No ,No
+69,1233,46.0725400,-118.33015,981,B,2,Silver Maple,Acer Saccharinum,Aceraceae,85-100,144,66,52,50%,Poor,B,No ,No
+70,1234,46.0724900,-118.33037,995,B,3,Bosnian Pine,Pinus Heldreichii,Pinaceae,9,15,12,2.5,0%,Good,B,No ,No
+71,1235,46.0725600,-118.33031,992,B,4,Bosnian Pine,Pinus Heldreichii,Pinaceae,9,6,8,2,0%,Fair,B,No ,No
+72,1236,46.0725900,-118.33032,993,B,5,Black Locust,Robinia Pseuduacacia,Fabaceae (Leguminosae),100,118,65,14,0%,Poor,C,No ,No
+73,1237,46.0726200,-118.33027,1004,B,6,Chestnut,Aesculus hippocastanum,Hippocastanaceae,100,105,54,21,0%,Good,B,No ,No
+74,1238,46.0727000,-118.33033,991,B,7,Chestnut,Aesculus hippocastanum,Hippocastanaceae,100,118,57,21,0%,Good,B,No ,No
+75,1239,46.0727500,-118.33043,984,B,8,Tricolor Beech,Fagus Sylvatica,Fagaceae,10,10,11,6,0%,Poor,C,No ,No
+76,1240,46.0728000,-118.3303,982,B,9,Redwood,Sequoiadendron giganteum,Taxodiaceae,17,34,18,60,0%,Good,B,No ,No
+77,1241,46.0728300,-118.3301,981,B,10,Little leaf Linden,Tilia euchlora,Tiliaceae,50,81,42,22,0%,Good,B,No ,No
+78,1242,46.0727300,-118.33009,990,B,11,Colorado Blue Spruce,Picea Pungens,Pinaceae,30-35,48,35,10,0%,Good,B,No ,No
+79,1243,46.0726900,-118.33005,986,B,12,Mountain Hemlock ,Tsuga Mertensiana,Pinaceae,10,6,5,1.5,0%,Fair,B,No ,No
+80,1244,46.0727400,-118.32997,1002,B,13,Iuniper,Iuniperus?,Cupressaceae,18,30,21,7,0%,Good,B,No ,No
+81,1245,46.0728500,-118.32993,991,B,14,English Hawthorne,Crataegus Laevigata,Rosaceae,65,63,21,13,0%,Fair,B,No ,No
+82,1246,46.0728700,-118.3298,982,B,15,English Hawthorne,Crataegus Laevigata,Rosaceae,30,24,27,9,0%,Fair,B,No ,No
+83,1247,46.0728600,-118.3297,980,B,16,English Hawthorne,Crataegus Laevigata,Rosaceae,30,27,25,8,0%,Fair,B,No ,No
+84,1248,46.0728800,-118.32957,1002,B,17,Red Oak,Quercus rubra,Fagaceae,,31,36,10.5,0%,Good,B,No ,No
+85,1249,46.0727900,-118.32984,994,B,18,Spruce,Picea,Pinaceae,10,10,7,4,0%,Good,B,No ,No
+86,1250,46.0727700,-118.32977,998,B,19,Pine,Pinus,Pinaceae,11,11,12,4,0%,Good,B,No ,No
+87,1251,46.0727800,-118.32968,1002,B,20,Tricolor Beech,Fagus Sylvatica,Fagaceae,6,7,11,1.5,0%,Good,B,No ,No
+88,1252,46.0726700,-118.32955,995,B,21,Spruce,Picea,Pinaceae,10,13,14,4.5,0%,Good,B,No ,No
+89,1253,46.0726700,-118.32946,999,B,22,White Fir,Abies Concolor,Pinaceae,15,21,20,6.5,0%,Good,B,No ,No
+90,1254,46.0727100,-118.32948,992,B,23,Horse Chestnut,Aesculus hippocastanum,Hippocastanaceae,40,77,45,23.5,25%,Good,B,No ,No
+91,1255,46.0726400,-118.32929,993,B,24,Pine,Pinus,Pinaceae,27,33,40,16,0%,Fair,A,No ,No
+92,1256,46.0726400,-118.32932,1012,B,25,Dawn Redwood,Metasequoia glyptostroboides ,Taxodiaceae,27,39,40,11.5,0%,Good,A,No ,No
+93,1257,46.0726600,-118.32931,1007,B,26,Douglas Fir,Psedotsuga Menziesii,Pinaceae,27,53,60,16,0%,Poor,B,No ,No
+94,1258,46.0728400,-118.32932,998,B,27,Pine,Pinus,Pinaceae,27,22,15,6.5,25%,Poor,A,No ,No
+95,1259,46.0728700,-118.32934,995,B,28,Colorado Blue Spruce,Picea pungens,Pinaceae,27,43,23,8,0%,Good,A,No ,No
+96,1260,46.0728900,-118.32937,994,B,29,Pine,Pinus,Pinaceae,27,42,40,140,50%,Poor,B,No ,No
+97,1261,46.0729000,-118.32923,1006,B,30,Tamarack larch,Larix Laricina ,Pinaceae,27,57,30,15,50%,Good,A,No ,No
+98,1262,46.0729000,-118.3291,1001,B,31,White fir,Abies Concolor,Pinaceae,27,50,28,8,25%,Good,A,No ,No
+99,1263,46.0729200,-118.32904,997,B,32,Cypress,Chamaecyparis OR Cupressus,Cupressaceae,27,55,35,7,25%,Good,A,No ,No
+100,1264,46.0729900,-118.32902,995,B,33,Spruce,Picea,Pinaceae,25-30,28,30,6,0%,Fair,A,No ,No
+101,1265,46.0729400,-118.32898,996,B,34,Pine,pinus,Pinaceae,25-30,43,35,7,0%,Fair,A,No ,No
+102,1266,46.0729000,-118.32896,997,B,35,Hemlock,Tsuga,Pinaceae,25-30,13,15,6.5,0%,Good,A,No ,No
+103,1267,46.0729000,-118.32895,996,B,36,Pine,Pinus,Pinaceae,25-30,27,25,6.5,0%,Poor,C,No ,No
+104,1268,46.0729400,-118.32888,997,B,37,Engelmann Spruce,Picea engelmanii,Pinaceae,45,47,45,9,0%,Good,A,No ,No
+105,1269,46.0729700,-118.32882,994,B,38,Western Red Cedar,ThuIa Plicata,Cupressaceae,40,52,42,12,50%,Fair,A,No ,No
+106,1270,46.0729000,-118.32863,974,B,39,Paper Birch,Betula papyrifera,Betulaceae,45,76,45,20,0%,Fair,B,No ,No
+107,1271,46.0728600,-118.32875,1004,B,40,Paper Birch,Betula papyrifera,Betulaceae,45,16,45,13,0%,Fair,B,No ,No
+108,1272,46.0730100,-118.32817,987,B,41,Golden Rain Tree,Koelreuteria paniculata,Sapindaceae,45,127,35,17,0%,Good,A,No ,No
+109,1273,46.0730400,-118.32791,983,B,42,Japanese Tree Lilac,Syringa Reticulata,Oleaceae,7,6.5,13,1.5,0%,Good,A,No ,No
+110,1274,46.0730400,-118.3279,984,B,43,Japanese Tree Lilac,Syringa Reticulata,Oleaceae,7,6.5,13,2,0%,Good,A,No ,No
+111,1275,46.0730400,-118.3279,985,B,44,Japanese Tree Lilac,Syringa Reticulata,Oleaceae,7,8,13,2,0%,Good,A,No ,No
+112,1276,46.0730400,-118.32774,986,B,45,Japanese Maple,Acer palmatum,Aceraceae,7,8,8,2,0%,Good,A,No ,No
+113,1277,46.0728300,-118.32794,1020,B,46,Japanese Maple,Acer palmatum,Aceraceae,8,8.5,5.8,1.5,0%,Fair,A,No ,No
+114,1278,46.0728400,-118.32792,1039,B,47,Podocarpus,Podocarpus,Podocarpaceae,6,2,5,1.5,0%,Good,A,No ,No
+115,1279,46.0728500,-118.32776,987,B,48,Japanese Maple,Acer palmatum,Aceraceae,7,8,8,3,0%,Good,B,No ,No
+116,1280,46.0725700,-118.32754,1003,B,49,Dogwood,Cornus,Cornaceae,7,8.5,13,3,0%,Good,A,No ,No
+117,1281,46.0726000,-118.3278,994,B,50,Sycamore,Platanus acerifolia,Platanaceae,75-85,123,80,36,40%,Good,A,No ,No
+118,1282,46.0725700,-118.32805,989,B,51,Sycamore,Platanus acerifolia,Platanaceae,75-85,136,80,39,50%,Good,A,No ,No
+119,1283,46.0725600,-118.32841,1000,B,52,Sycamore,Platanus acerifolia,Platanaceae,75-85,156,80,28,75%,Good,A,No ,No
+120,1284,46.0724700,-118.32865,1001,B,53,Sycamore,Platanus acerifolia,Platanaceae,75-85,127,80,51,50%,Good,A,No ,No
+121,1285,46.0724300,-118.32885,1003,B,54,Sycamore,Platanus acerifolia,Platanaceae,75-85,139,80,37,15%,Good,A,No ,No
+122,1286,46.0725900,-118.32884,1008,B,55,Europen White Birch,Betula pendula,Betulaceae,55,42,60,19,0%,Fair,B,No ,No
+123,1287,46.0726400,-118.32899,1026,B,56,Alaska Cedar,Chamaecyparis nootkatensis,Cupressaceae,15,16,25,8,0%,Good,A,No ,No
+124,1288,46.0726600,-118.32896,1013,B,57,Colorado Blue Spruce,Picea pungens,Pinaceae,20,7.5,22,7,40%,Good,A,No ,No
+125,1289,46.0726500,-118.329,1014,B,58,Iapanese Red Pine,Pinus densiflora,Pinaceae,25,24,20,7,0%,Fair,A,No ,No
+126,1290,46.0719700,-118.32953,975,B,59,Colorado Blue Spruce,Picea pungens glauca,Pinaceae,25,41,55,16,0%,Good,A,No ,No
+127,1291,46.0726100,-118.32905,945,B,60,Colorado Blue Spruce,Picea pungens,Pinaceae,25,27.5,15,8.5,15%,Good,A,No ,No
+128,1292,46.0725800,-118.32906,952,B,61,Bosnian Redcone Pine,Pinus leucodermis,Pinaceae,25,25.5,25,4,25%,Good,A,No ,No
+129,1296,46.0725800,-118.32916,1008,B,62,White Pine,Pinus manticola,Pinaceae,25,32,25,13,25%,Fair,B,No ,No
+130,1293,46.0725400,-118.32911,1020,B,63,Western Red Ceder,ThuIa plicata,Cupressaceae,25,48,50,14,0%,Good,A,No ,No
+131,1294,46.0725500,-118.32915,1014,B,64,Pine,Pinus,Pinaceae,25,26,30,10,25%,Poor,B,No ,No
+132,1295,46.0725300,-118.3292,1012,B,65,Redbud,Cercis,Fabaceae (Leguminosae),25,52,35,25,25%,Fair,B,No ,No
+133,1297,46.0724800,-118.3291,989,B,66,Europen White Birch,Betula pendula,Ginkgoaceae,55,33,35,12,25%,Poor,C,No ,No
+134,1298,46.0724500,-118.32919,988,B,67,Maple,Acer,Aceraceae,25,24,20,7,25%,Fair,B,No ,No
+135,1299,46.0724400,-118.32928,996,B,68,Vine Maple,Acer circinatum,Aceraceae,0,12,20,3,0%,Removed,C,No ,No
+136,1300,46.0723000,-118.32907,1000,B,69,Red Maple,Acer rubrum,Aceraceae,10,18,30,9,0%,Good,B,No ,No
+137,1301,46.0723400,-118.32917,999,B,70,Sequoia,Sequoiadendron giganteum,Taxodiaceae,20,110,147,11,0%,Good,B,No ,No
+138,1302,46.0723300,-118.32915,997,B,71,Sequoia,Sequoiadendron giganteum,Taxodiaceae,20,93,55,11.5,0%,Good,B,No ,No
+139,1303,46.0722800,-118.32925,998,B,72,Sequoia,Sequoiadendron giganteum,Taxodiaceae,20,92,43,11.5,0%,Good,B,No ,No
+140,1304,46.0723300,-118.32948,988,B,73,Sycamore,Platanus,Platanaceae,85,120,89,38,0%,Good,A,No ,No
+141,1305,46.0722300,-118.32948,998,B,74,Tamarack larch,Larix occidentalis,Pinaceae,12,13,20,5,0%,Fair,B,No ,No
+142,1306,46.0721600,-118.32945,1002,B,75,Dawn Redwood,Metasequoia glyptostroboides,Taxodiaceae,6,4,11,3,0%,Good,B,No ,No
+143,1307,46.0720500,-118.32943,1000,B,76,Tulip Tree,Liriodendron tulipfera,Magnoliaceae,10,15,20,7,0%,Good,B,No ,No
+144,1308,46.0720500,-118.32943,1000,B,77,Limber Pine,Pinus flexilis,Pinaceae,6,6,8,3.5,0%,Good,B,No ,No
+145,1309,46.0720300,-118.3295,1004,B,78,Tulip Tree,Liriodendron tulipfera,Magnoliaceae,10,20,20,10,0%,Good,B,No ,No
+146,1310,46.0722700,-118.32964,1017,B,79,Japanese Maple,Acer palmatum,Aceraceae,22,28,15,15,0%,Fair,A,No ,No
+147,1311,46.0722400,-118.32965,1001,B,80,Japanese Maple,Acer palmatum,Aceraceae,10,9,10,7,0%,Good,A,.,No
+148,1312,46.0722100,-118.3296,1010,B,81,Japanese Maple,Acer palmatum,Aceraceae,10,10.5,12,5,0%,Good,A,No ,No
+149,1313,46.0722100,-118.32958,1005,B,82,Mountain Hemlock,Tsuga mertensiana,Pinaceae,10,4,7,2,0%,Good,A,No ,No
+150,1314,46.0722300,-118.3297,966,B,83,Mountain Hemlock,Tsuga mertensiana,Pinaceae,10,6,8,2,0%,Fair,A,No ,No
+151,1315,46.0722000,-118.32966,961,B,84,Mountain Hemlock,Tsuga mertensiana,Pinaceae,10,5,8,2.5,0%,Good/Fair,A,No ,No
+152,1316,46.0721700,-118.32967,955,B,85,Colorado Blue Spruce,Picea pungens,Pinaceae,35,50,35,9,0%,Fair,C,No ,No
+153,1317,46.0720300,-118.32962,1025,B,86,Scott's Pine,Picea sylvestris,Pinaceae,35,52,35,12,0%,Good,B,No ,No
+154,1318,46.0720300,-118.32961,982,B,87,Pine,Pinus,Pinaceae,10,6.5,7,4,0%,Good,B,No ,No
+155,1319,46.0720400,-118.32964,982,B,88,Pine,Pinus,Pinaceae,10,4,6,3.5,0%,Good,B,No ,No
+156,1320,46.0720400,-118.32965,981,B,89,Pine,Pinus,Pinaceae,10,5,7,4,0%,Good,B,No ,No
+157,1321,46.0720100,-118.32986,989,B,90,Pine,Pinus,Pinaceae,10,7,8,3.5,0%,Fair,B,No ,No
+158,1322,46.0720200,-118.32987,992,B,91,Pine,Pinus,Pinaceae,10,8,8,3.5,0%,Fair,B,No ,No
+159,1323,46.0720200,-118.32988,994,B,92,Pine,Pinus,Pinaceae,10,7,8,3.5,0%,Fair,B,No ,No
+160,1324,46.0720200,-118.32989,1002,B,93,Smoke Tree,Cotinus obovatus,Anacardiaceae,35,65,20,11,0%,Fair,B,No ,No
+161,1325,46.0719900,-118.32996,986,B,94,Pine,Pinus,Pinaceae,10,8,8,3.5,0%,Fair,B,No ,No
+162,1326,46.0720200,-118.32998,978,B,95,Limber Pine,Pinus flexilis,Pinaceae,15,21,25,5,0%,Good,B,No ,No
+163,1327,46.0720200,-118.32997,983,B,96,Limber Pine,Pinus flexilis,Pinaceae,15,24,30,5.5,0%,Good,B,No ,No
+164,1328,46.0720200,-118.33001,984,B,97,Pine,Pinus,Pinaceae,10,12,8,4,0%,Good,B,No ,No
+165,1329,46.0720300,-118.33007,987,B,98,Pine,Pinus,Pinaceae,10,10,8,3,0%,Good,B,No ,No
+166,1330,46.0720300,-118.3301,989,B,99,Pine,Pinus,Pinaceae,10,10,8,4,0%,Good,B,No ,No
+167,1331,46.0720000,-118.33039,1001,B,100,Chitalpa,Chitalpa tashkentensis,Bignoniaceae,2,4.5,15,0,0%,Poor,B,No ,No
+168,1332,46.0720100,-118.33047,1017,B,101,Redbud,Cercis,Fabaceae (Leguminosae),10,6.5,10,4,0%,Fair,B,No ,No
+169,1333,46.0720500,-118.33077,1104,B,102,Kentucky Coffee Tree,Gymnocladus dioica,Fabaceae (Leguminosae),5,4.5,10,0,0%,Fair,B,No ,No
+170,1334,46.0720700,-118.33067,1008,B,103,Lavallei Hawthorne,Crataegus x Lavallei,Rosaceae,13,17,20,5,0%,Fair,B,No ,No
+171,1335,46.0721600,-118.33062,1009,B,104,Lavallei Hawthorne,Crataegus x Lavallei,Rosaceae,13,20,25,6,0%,Fair,B,No ,No
+172,1336,46.0722100,-118.33057,1006,B,105,Lavallei Hawthorne,Crataegus x Lavallei,Rosaceae,13,22,25,4,0%,Good,B,No ,No
+173,1337,46.0722700,-118.33052,1006,B,106,Lavallei Hawthorne,Crataegus x Lavallei,Rosaceae,13,20,25,6,0%,Good,B,No ,No
+174,1338,46.0723100,-118.33048,1003,B,107,Lavallei Hawthorne,Crataegus x Lavallei,Rosaceae,8,10,14,2,0%,Good,B,No ,No
+1467,1337,0,0,,B,108,Spanish Fur,Abies pinsapo,Pinaceae,3,2,2,1,0%,Good,A,No,No
+1468,1338,0,0,,B,109,Japanese Maple,Acer Palmatum,Aceraceae,5,4,3,3,0%,Good,A,No,No
+175,1343,46.0726700,-118.32729,1009,C,1,Sycamore,Platanus,Platanaceae,75-80,116,90,46,0%,Good,A,No ,No
+176,1344,46.0726400,-118.32703,979,C,2,Norway Maple,Acer platanoides,Aceraceae,40,61,35,22.5,0%,Fair,A,No ,No
+177,1345,46.0728000,-118.32699,979,C,3,Giant Sequoia,Sequoiadendron giganteum,Taxodiaceae,15,73,30,10.5,0%,Good,B,No ,No
+178,1346,46.0728000,-118.32689,1002,C,4,,??,,20,34,20,15.5,50%,Good,Re,No ,No
+179,1347,46.0727400,-118.32677,1000,C,5,Mugo Pine,Pinus mugo,Pinaceae,30,33,18,7,50%,Poor,B,No ,No
+180,1348,46.0726100,-118.32682,997,C,6,Smoke tree,Cotinus,Anacardiaceae,15,31,20,11.5,0%,Poor,B,No ,No
+181,1349,46.0725800,-118.32674,989,C,7,Smoke tree,Cotinus,Anacardiaceae,15,15,18,10,0%,Poor,B,No ,No
+182,1350,46.0725400,-118.3268,996,C,8,Red Maple,Acer rubrum,Aceraceae,10,22,23,13,0%,Good,A,No ,No
+183,1351,46.0724800,-118.32701,1007,C,9,Beech,Fagus sylvatica,Fagaceae,6,7,15,3.5,0%,Good,A,No ,No
+184,1352,46.0724700,-118.327,1005,C,10,Beech,Fagus sylvatica,Fagaceae,6,9,17,4,0%,Good,A,No ,No
+185,1353,46.0724100,-118.32673,1000,C,11,Red Maple,Acer rubrum,Aceraceae,12,30,30,15,0%,Good,A,No ,No
+186,1354,46.0723800,-118.32673,991,C,12,Serviceberry,Amelanchier,Rosaceae,15,16,25,12.5,15%,Good,B,No ,No
+187,1355,46.0723400,-118.32662,994,C,13,Serviceberry,Amelanchier,Rosaceae,15,14,25,10,15%,Good,B,No ,No
+188,1356,46.0723000,-118.32695,1003,C,14,Norway Maple,Acer platanoides,Aceraceae,40,54,40,15,0%,Good,A,No ,No
+189,1357,46.0722000,-118.32687,961,C,15,Silver Maple,Acer saccharinum,Aceraceae,90,140,80,43,0%,Fair,A,No ,No
+190,1358,46.0722200,-118.32677,976,C,16,Silver Birch,Betula pendula,Betulaceae,90,74,75,22,0%,Fair,A,No ,No
+191,1359,46.0722300,-118.32674,980,C,17,Bohal/Red Maple,Acer rubrum,Aceraceae,15,36,75,2,0%,Good,A,No ,No
+192,1360,46.0722200,-118.32665,974,C,18,Bohal/Red Maple,Acer rubrum,Aceraceae,15,38,70,11,0%,Good,A,No ,No
+193,1361,46.0721200,-118.32677,978,C,19,Silver Maple,Acer saccharinum,Aceraceae,90,192,80,25,0%,Poor,A,No ,No
+194,1362,46.0720900,-118.3268,976,C,20,Crimson King,Acer platanoides,Aceraceae,10,15,20,5,0%,Fair,A,No ,No
+195,1363,46.0720000,-118.32678,974,C,21,Sycamore Maple,Acer pseudoplatanus,Aceraceae,50,76,45,9,0%,Poor,A,No ,No
+196,1364,46.0720000,-118.32672,992,C,22,Norway Maple,Acer platanoides,Aceraceae,10,16,20,7,0%,Good,A,No ,No
+197,1365,46.0720800,-118.32663,996,C,23,Star Magnolia,Magnolia stellata,Magnoliaceae,10,11,15,4,0%,Good,B,No ,No
+198,1366,46.0720700,-118.3266,996,C,24,Star Magnolia,Magnolia stellata,Magnoliaceae,10,12.5,9,4,0%,Fair,B,No ,No
+199,1367,46.0719400,-118.32659,1013,C,25,Black Locust,Robinia pseudoacacia,Fabaceae (Leguminosae),90,117,65,18,0%,Poor,A,No ,No
+200,1368,46.0718700,-118.3267,1028,C,26,?,?,?,10,10,12,3.5,0%,Poor,C,No ,No
+201,1369,46.0718500,-118.32677,1043,C,27, Norway Maple,Acer platanoides,Aceraceae,10,18,20,5,0%,Fair,A,No ,No
+202,1370,46.0718100,-118.32676,1003,C,28,Linden,Tilia,Tiliaceae,15,38,65,12,0%,Fair,A,No ,No
+203,1371,46.0717700,-118.32666,991,C,29,Linden,Tilia,Tiliaceae,15,41,60,12,0%,Fair,A,No ,No
+204,1372,46.0717400,-118.3267,996,C,30,Linden,Tilia,Tiliaceae,15,36,60,16,0%,Fair,A,No ,No
+205,1373,46.0717000,-118.32677,994,C,31, Norway Maple,Acer platanoides,Aceraceae,25,53,50,14,0%,Fair,A,No ,No
+206,1376,46.0718200,-118.32682,997,C,32,Norway Maple,Acer platanoides,Aceraceae,25,52,50,16,0%,Fair,A,No ,No
+207,1377,46.0718300,-118.32649,994,C,33,Giant Sequoia,Sequoiadendron giganteum,Taxodiaceae,12,44,20,5.5,0%,Good,A,No ,No
+208,1378,46.0717700,-118.32639,996,C,34,Giant Sequoia,Sequoiadendron giganteum,Taxodiaceae,12,58,20,8,0%,Good,A,No ,No
+209,1379,46.0718500,-118.32636,989,C,35,Western Hemlock,Tsuga heterophylla,Pinaceae,15,30,30,9,25%,Fair,A,No ,No
+210,1380,46.0718900,-118.32657,1069,C,36,Beech,Fagus,Fagaceae,7,8,20,2.5,0%,Good,B,No ,No
+211,1381,46.0719600,-118.3263,983,C,37,False Cypress, Chamaecyparis,Cupressaceae,15,26,30,11,10%,Fair,B,No ,No
+212,1382,46.0719600,-118.32631,983,C,38,False Cypress,Chamaecyparis,Cupressaceae,15,23,30,12,15%,Fair,B,No ,No
+213,1383,46.0719600,-118.32631,982,C,39,False Cypress, Chamaecyparis,Cupressaceae,15,38,30,10,10%,Fair,B,No ,No
+214,1384,46.0721200,-118.32628,1001,C,40,Beech,Fagus,Fagaceae,20,23,35,13,0%,Good,B,No ,No
+215,1385,46.0722300,-118.32623,990,C,41,Norway Maple,Acer platanoides,Aceraceae,90,91,60,26.5,25%,Good,B,No ,No
+216,1386,46.0723000,-118.3263,983,C,42,Silver Maple,Acer saccharinum,Aceraceae,90,154,85,30,25%,Removed,,No ,No
+217,1387,46.0723900,-118.32636,1006,C,43,White Fir,Abies concolor,Pinaceae,35,49,45,12,0%,Fair,A,No ,No
+218,1388,46.0724200,-118.32633,1011,C,44,Beech,Fagus,Fagaceae,25,38,45,12.5,0%,Good,A,No ,No
+219,1389,46.0724400,-118.32633,1026,C,45,Western Hemlock,Tsuga Heterophylla,Pinaceae,15,21,35,10.5,25%,Good,A,No ,No
+220,1390,46.0724700,-118.32633,1029,C,46,Western Hemlock,Tsuga Heterophylla,Pinaceae,15,16,25,7,35%,Good,A,No ,No
+221,1391,46.0724700,-118.3263,1011,C,47,Norway Maple,Acer platanoides,Aceraceae,90,85,75,35,25%,Removed,,No ,No
+222,1392,46.0725100,-118.32626,1010,C,48,Silver Maple,Acer Saccharinum,Aceraceae,90,146,90,29,50%,Fair,B,No ,No
+223,1393,46.0726700,-118.32633,998,C,49,Hawthorne,Crataegus Lavaller,Rosaceae,10,16,23,7,0%,Good,B,No ,No
+224,1394,46.0727200,-118.32634,997,C,50,Hawthorne,Crataegus Lavaller,Rosaceae,10,10,17,3.5,0%,Good,B,No ,No
+225,1395,46.0727700,-118.32639,998,C,51,Sycammore,Platanus,Platanaceae,90,155,80,47,75%,Fair,A,No ,No
+226,1396,46.0728100,-118.32634,996,C,52,Hawthorne,Crataegus Lavaller,Rosaceae,10,19,25,8,0%,Good,B,No ,No
+227,1397,46.0728700,-118.32636,990,C,53,Hawthorne,Crataegus Lavaller,Rosaceae,10,16.5,25,5,0%,Good,B,No ,No
+228,1398,46.0729000,-118.32634,992,C,54,Hawthorne,Crataegus Lavaller,Rosaceae,10,18,25,4.5,0%,Good,B,No ,No
+229,1399,46.0729600,-118.32639,989,C,55,Hawthorne,Crataegus Lavaller,Rosaceae,10,16.5,20,6,0%,Good,B,No ,No
+230,1400,46.0731500,-118.3265,1005,C,56,Hawthorne,Crataegus Lavaller,Rosaceae,5,10,17,4.5,0%,Poor,C,No ,No
+231,1401,46.0731500,-118.3266,995,C,57,Hornbeam,Carpinus,Betulaceae,50,84,40,22,75%,Fair,B,No ,No
+232,1402,46.0731500,-118.32672,986,C,58,Hornbeam,Carpinus,Betulaceae,50,89,40,21,75%,Fair,B,No ,No
+233,1403,46.0731300,-118.32679,986,C,59,Hornbeam,Carpinus,Betulaceae,50,96,40,22,75%,Fair,B,No ,No
+234,1404,46.0731300,-118.32692,985,C,60,Hornbeam,Carpinus,Betulaceae,50,90,40,20,75%,Fair,B,No ,No
+235,1405,46.0731200,-118.32703,985,C,61,Hornbeam,Carpinus,Betulaceae,50,78,40,20,75%,Fair,B,No ,No
+236,1406,46.0731100,-118.32713,983,C,62,Hornbeam,Carpinus,Betulaceae,50,96,40,22,75%,Fair,B,No ,No
+237,1407,46.0730300,-118.32745,987,C,63,Norway Maple,Acer platanoides,Aceraceae,50,50,30,15,35%,Fair,B,No ,No
+238,1408,46.0727300,-118.32732,977,C,64,Maidenhair Tree ,Ginkgo biloba,Ginkgoaceae,19,86,60,22,35%,Fair,A,No ,No
+239,1409,46.0729500,-118.32735,986,C,65,Arborvitae,ThuIa,Cupressaceae,35,46,25,8,50%,Fair,B,No ,No
+240,1410,46.0729700,-118.32729,984,C,66,Dogwood,Cornus,Cornaceae,5,5,6.5,3,0%,Fair,A,No ,No
+241,1411,46.0729900,-118.3273,992,C,67,Vine Maple,Acer Capillipes,Aceraceae,30,30,17,10,25%,Good,A,No ,No
+242,1412,46.0730200,-118.32728,997,C,68,Mountain Hemlock,Tsuga Mertensiana,Pinaceae,10,6.5,10,2,0%,Good,A,No ,No
+243,1413,46.0730600,-118.32716,1015,C,69,Pacific Dogwood,Cornus Nuttallii,Cornaceae,15,11,10,5,0%,Good,A,No ,No
+244,1414,46.0730600,-118.32717,1022,C,70,Vine Maple,Acer Capillipes,Aceraceae,30,28,17,9,25%,Removed,C,No ,No
+245,1415,46.0730500,-118.32713,1010,C,71,Pacific Dogwood,Cornus Nuttallii,Cornaceae,15,8,15,4,0%,Good,A,No ,No
+246,1416,46.0730400,-118.32706,998,C,72,Vine Maple,Acer Capillipes,Aceraceae,30,6,,4,0%,Poor,C,No ,No
+247,1417,46.0730500,-118.32697,993,C,73,Mountain Hemlock,Tsuga Mertensiana,Pinaceae,10,6.5,10,3,0%,Good,A,No ,No
+248,1418,46.0730500,-118.32692,984,C,74,Vine Maple,Acer Capillipes,Aceraceae,30,23,15,6,25%,Poor,A,No ,No
+249,1419,46.0730400,-118.32688,986,C,75,Pacific Dogwood,Cornus Nuttallii,Cornaceae,7,6,6,2,0%,Good,A,No ,No
+250,1420,46.0729700,-118.32679,974,C,76,Pacific Dogwood,Cornus Nuttallii,Cornaceae,7,6,5.5,3.5,0%,Good,A,No ,No
+251,1421,46.0729700,-118.32676,972,C,77,Vine Maple,Acer Capillipes,Aceraceae,30,21,15,8,25%,Good,A,No ,No
+252,1422,46.0729800,-118.32669,970,C,78,Mountain Hemlock,Tsuga Mertensiana,Pinaceae,10,5,7,2.5,0%,Good,A,No ,No
+253,1423,46.0730000,-118.32663,972,C,79,Pacific Dogwood,Cornus Nuttallii,Cornaceae,10,11,20,9,0%,Good,A,No ,No
+254,1424,46.0730300,-118.32656,967,C,80,Vine Maple,Acer Capillipes,Aceraceae,30,22,15,7,25%,Good,A,No ,No
+1469,1340,0,0,,C,81,Oak,Quercus,Fagaceae,5,6,12,4,0%,Good,A,No,No
+1470,1341,0,0,,C,82,Dogwood,Cornus,Cornaceae,15,8,12,6,0%,Good,B,No,No
+1471,1342,0,0,,C,83,Seedles Sweetgum,Liquidambar styraciflua 'Rotundiloba',Hamamamelidaceae,5,6,10,2,0%,Good,A,No,No
+1472,1343,0,0,,C,84,Dogwood,Cornus,Cornaceae,15,9,15,5,0%,Good,B,No,No
+255,1431,46.0717500,-118.32615,1012,D,1,Evergreen Dogwood,Cornus capitata ,Cornaceae,7,4,8,2,0%,Good,A,No ,No
+256,1432,46.0717500,-118.32619,1009,D,2,Sequoia,Sequoiadendron giganteum,Taxodiaceae,12,49,30,8.5,0%,Good,B,No ,No
+257,1433,46.0716600,-118.32612,1001,D,3,Honey Locust,Gleditsia triacanthos ,Fabaceae (Leguminosae),25,48,35,28,25%,Good,B,No ,No
+258,1434,46.0715800,-118.32605,1015,D,4,Honey Locust,Gleditsia triacanthos ,Fabaceae (Leguminosae),25,54,35,17.5,25%,Good,B,No ,No
+259,1435,46.0715300,-118.32606,1006,D,5,Double Weeping Cherry,Prunus serrulata,Rosaceae,45,40,20,14,0%,Fair,B,No ,No
+260,1436,46.0715800,-118.32616,993,D,6,Double Weeping Cherry,Prunus serrulata,Rosaceae,45,50,20,16,0%,Fair,B,No ,No
+261,1437,46.0716100,-118.32621,1000,D,7,Double Weeping Cherry,Prunus serrulata,Rosaceae,45,49,20,13,0%,Fair,B,No ,No
+262,1438,46.0716600,-118.32625,1004,D,8,Double Weeping Cherry,Prunus serrulata,Rosaceae,45,46,20,12,0%,Fair,B,No ,No
+263,1439,46.0716400,-118.32643,1012,D,9,Double Weeping Cherry,Prunus serrulata,Rosaceae,45,60,20,13,0%,Fair,B,No ,No
+264,1440,46.0716100,-118.32649,1011,D,10,Double Weeping Cherry,Prunus serrulata,Rosaceae,45,55,20,14,0%,Poor,B,No ,No
+265,1441,46.0716000,-118.32658,1005,D,11,Double Weeping Cherry,Prunus serrulata,Rosaceae,45,36,20,11,0%,Fair,B,No ,No
+266,1442,46.0715400,-118.3266,1003,D,12,Double Weeping Cherry,Prunus serrulata,Rosaceae,45,43,20,13,0%,Fair,B,No ,No
+267,1443,46.0713600,-118.3265,1013,D,13,Double Weeping Cherry,Prunus serrulata,Rosaceae,45,4,4,2,0%,Fair,B,No ,No
+268,1444,46.0714500,-118.32656,1013,D,14,Double Weeping Cherry,Prunus serrulata,Rosaceae,45,39,20,12,0%,Fair,B,No ,No
+269,1445,46.0713700,-118.32604,1036,D,15,Elm,Ulmus,Ulmaceae,0,28,50,6,0%,Good,B,No ,No
+270,1446,46.0713500,-118.32608,1006,D,16,Elm,Ulmus,Ulmaceae,20,24,30,7,0%,,C,No ,No
+271,1447,46.0713300,-118.32603,1004,D,17,Elm,Ulmus,Ulmaceae,20,36,50,10,0%,Good,B,No ,No
+272,1448,46.0713300,-118.32602,1008,D,18,Elm,Ulmus,Ulmaceae,,113,100,22,0%,Good,B,No ,No
+273,1449,46.0713000,-118.32605,1008,D,19,Elm,Ulmus,Ulmaceae,,40,60,11,0%,Good,B,No ,No
+274,1450,46.0712900,-118.32608,1013,D,20,Elm,Ulmus,Ulmaceae,,38,70,11,0%,Good,C,No ,No
+275,1451,46.0712800,-118.32608,1012,D,21,Elm,Ulmus,Ulmaceae,,39,50,10,0%,Good,C,No ,No
+276,1452,46.0712900,-118.32608,1014,D,22,Elm,Ulmus,Ulmaceae,,48,70,14,0%,Good,B,No ,No
+277,1453,46.0712800,-118.32611,1012,D,23,Elm,Ulmus,Ulmaceae,,35,50,9,0%,Good,B,No ,No
+278,1454,46.0712900,-118.32622,1007,D,24,Cedar,Cedrus,Pinaceae,0,16,15,5,0%,Good,B,No ,No
+279,1455,46.0712800,-118.32622,1009,D,25,Elderberry,Sambucus,Caprifoliaceae,0,58,20,15,0%,Good,B,No ,No
+280,1456,46.0712700,-118.32624,1009,D,26,Elderberry,Sambucus,Caprifoliaceae,0,11,15,8,0%,Good,A,No ,No
+281,1457,46.0711600,-118.32601,1002,D,27,Silk Tree,Albizia Iulibrissin,Fabaceae (Leguminosae),12,35.5,25,23,0%,Good,B,No ,No
+282,1458,46.0711900,-118.32606,993,D,28,California White Oak?,Quercus lobata,Fagaceae,15,46.5,40,17.5,0%,Good,A,No ,No
+283,1459,46.0712200,-118.32618,1001,D,29,Western Red Cedar,ThuIa plicata,Cupressaceae,12,28,30,10.5,0%,Good,A,No ,No
+284,1460,46.0712000,-118.32621,999,D,30,White Spruce,Picea glauca,Pinaceae,10,13,20,6,0%,Good,A,No ,No
+285,1461,46.0711800,-118.32626,998,D,31,Pine,Pinus,Pinaceae,12,21.5,25,13,0%,Good,A,No ,No
+286,1462,46.0711600,-118.32626,998,D,32,Dogwood,Cornus,Cornaceae,6,6.5,8,2,0%,Good,A,No ,No
+287,1463,46.0711500,-118.3262,1005,D,33,Weeping Norway Spruce,Picea abies (pendula),Pinaceae,18,10,0,0,0%,Good,A,No ,Yes
+288,1464,46.0710900,-118.32622,998,D,34,Elderberry,Sambucus,Caprifoliaceae,35,37.5,35,19.5,0%,Good,A,No ,No
+289,1465,46.0710900,-118.3262,1003,D,35,Flowering Dogwood,Cornus florida,Cornaceae,20,8,12,6,0%,Fair,B,No ,No
+290,1466,46.0710300,-118.32624,992,D,36,Flowering Dogwood,Cornus florida,Cornaceae,20,9,15,8.5,15%,Good,B,No ,No
+291,1467,46.0710300,-118.32623,1001,D,37,Group of Hiba Cedars (4),ThuIopsis dolabrata,Cupressaceae,25,,25,15,15%,Good,B,No ,No
+292,1468,46.0710000,-118.32617,1003,D,38,Group of Hiba Cedars (2),ThuIopsis dolabrata,Cupressaceae,25,,25,7.5,25%,Good,B,No ,No
+293,1469,46.0710000,-118.32619,994,D,39,Spreading Yew,Taxus densiformus,Taxaceae,65,40,15,15,35%,Fair,B,No ,No
+294,1470,46.0710000,-118.32612,973,D,40,Dogwood,Cornus florida,Cornaceae,20,9,15,8.5,0%,Good,A,No ,No
+295,1471,46.0708800,-118.32595,997,D,41,Brewing Weeping Spruce,Picea breweriana,Pinaceae,92,96,75,14,40%,Good,B,No ,No
+296,1472,46.0708100,-118.32596,996,D,42,Norway Maple,Acer platanoides,Aceraceae,92,108,55,25,0%,Good,A,No ,No
+297,1473,46.0708400,-118.32606,999,D,43,Alaska Cedar,Chamaecyparis nootkatensis,Cupressaceae,7,4,8,1,0%,Good,A,No ,No
+298,1474,46.0707900,-118.32613,1009,D,44,Alaska Cedar,Chamaecyparis nootkatensis,Cupressaceae,7,4,8,1,0%,Good,A,No ,No
+299,1475,46.0708000,-118.3262,973,D,45,Pink Flowering Dogwood,Cornus florida,Cornaceae,25,15,45,15,20%,Fair,B,No ,No
+300,1476,46.0708200,-118.32622,971,D,46,Incense Cedar,Calocedrus decurrens,Cupressaceae,45,84,45,13,40%,Good,A,No ,No
+301,1477,46.0711920,-118.326371,997,D,47,Elm,Ulmus,Ulmaceae,20,24,55,16,0%,Good,B,No ,No
+302,1478,46.0711950,-118.326302,997.23,D,48,Clump of 4 Elms,Ulmus,Ulmaceae,20,,,15,0%,Good,B,No ,No
+303,1479,46.0711360,-118.326301,986,D,49,Elm,Ulmus,Ulmaceae,20,46,,9,0%,Good,B,No ,No
+304,1480,46.0711270,-118.326312,986,D,50,Elm,Ulmus,Ulmaceae,20,31,,11.5,0%,Good,B,No ,No
+305,1481,46.0711380,-118.326352,1010,D,51,Sycamore maple,Acer pseudoplatanus,Aceraceae,20,39,,9,0%,Good,B,No ,No
+306,1482,46.0710680,-118.326368,1023,D,52,Sycamore maple,Acer pseudoplatanus,Aceraceae,50,71,60,18,40%,Good,B,No ,No
+307,1483,46.0710260,-118.326412,1023,D,53,Sycamore maple,Acer pseudoplatanus,Aceraceae,10,14,30,7,50%,Good,B,No ,No
+308,1484,46.0709070,-118.326404,1007,D,54,Quaking Aspen,Populus tremuloides,Salicaceae,10,12,25,5.5,30%,Good,B,No ,No
+309,1485,46.0708850,-118.326439,1007,D,55,Japanese Maple,Acer palmatum,Aceraceae,40,28,20,13,0%,Fair,B,No ,No
+310,1486,46.0708720,-118.326427,1007,D,56,Japanese Maple,Acer palmatum,Aceraceae,10,6.5,15,5,0%,Fair,B,No ,No
+311,1487,46.0708470,-118.326508,994,D,57,Japanese Maple,Acer palmatum,Aceraceae,15,9,8,4.5,0%,Good,B,No ,No
+312,1488,46.0708470,-118.32654,987,D,58,Japanese Maple,Acer palmatum,Aceraceae,15,9,8,6.5,0%,Fair,B,No ,No
+313,1489,46.0707780,-118.326348,990,D,59,Flowering Dogwood,Cornus florida,Cornaceae,10,5,7,3.5,0%,Fair,B,No ,No
+314,1490,46.0707820,-118.326372,977,D,60,Norway Maple,Acer platanoides,Aceraceae,35,46,35,26,35%,Good,B,No ,No
+315,1491,46.0706540,-118.325918,1010,D,61,Pine,Pinus,Pinaceae,20,50,35,17,0%,Good,B,No ,No
+316,1492,46.0706530,-118.32595,100,D,62,Pine,Pinus,Pinaceae,20,52,35,15,0%,Poor,C,No ,No
+317,1493,46.0706460,-118.326115,1008,D,63,Cedar,Cedrus deodara,Pinaceae,20,34,25,14,0%,Good,B,No ,No
+318,1494,46.0706500,-118.32627,976,D,64,Red Maple,Acer rubrum,Aceraceae,20,46,25,18,0%,Good,A,No ,No
+319,1495,46.0706700,-118.32635,983,D,65,Red Dogwood,Cornus florida,Cornaceae,15,14,15,6,0%,Good,B,No ,No
+320,1496,46.0706800,-118.32636,981,D,66,Red Maple,Acer rubrum,Aceraceae,15,21,20,9.5,0%,Good,B,No ,No
+321,1497,46.0706700,-118.3264,993,D,67,Red Maple,Acer rubrum,Aceraceae,15,16,20,6,0%,Good,B,No ,No
+322,1498,46.0706400,-118.32648,977,D,68,Red Dogwood,Cornus florida,Cornaceae,15,10,12,5.5,0%,Good,B,No ,No
+323,1499,46.0706400,-118.32649,986,D,69,Incense Cedar,Calocedrus decurrens,Cupressaceae,15,31,20,7,0%,Good,C,No ,No
+324,1500,46.0706600,-118.3265,986,D,70,Red Dogwood,Cornus florida,Cornaceae,15,10,12,5,0%,Good,B,No ,No
+325,1501,46.0706500,-118.32653,985,D,71,Incense Cedar,Calocedrus decurrens,Cupressaceae,15,11,20,6,0%,Good,B,No ,No
+326,1502,46.0706600,-118.32656,986,D,72,Incense Cedar,Calocedrus decurrens,Cupressaceae,15,24,20,5,0%,Good,C,No ,No
+327,1503,46.0707400,-118.32645,965,D,73,Red Maple,Acer rubrum,Aceraceae,15,28,30,12,0%,Good,B,No ,No
+328,1504,46.0707500,-118.32641,975,D,74,Maple,Acer,Aceraceae,15,10,15,4,0%,Good,B,No ,No
+329,1505,46.0706900,-118.32651,994,D,75,Red Maple,Acer rubrum,Aceraceae,15,14,22,9,0%,Good,B,No ,No
+330,1506,46.0707000,-118.32652,991,D,76,Red Maple,Acer rubrum,Aceraceae,15,25,30,9,0%,Good,B,No ,No
+331,1507,46.0707000,-118.32657,995,D,77,Japanese Maple,Acer palmatum,Aceraceae,15,6,3,3,0%,Good,B,No ,No
+332,1508,46.0707300,-118.32658,991,D,78,Sugar Maple,Acer saccharum,Aceraceae,15,20,30,9,0%,Good,A,No ,No
+333,1509,46.0707400,-118.32654,984,D,79,Sugar Maple,Acer saccharum,Aceraceae,15,15,25,4,0%,Good,A,No ,No
+334,1510,46.0708000,-118.3266,974,D,80,Sugar Maple,Acer saccharum,Aceraceae,15,14,20,10,0%,Good,A,No ,No
+335,1511,46.0707600,-118.32665,989,D,81,Norway Maple,Acer platanoides,Aceraceae,35,65,40,27,0%,Good,B,No ,No
+336,1512,46.0707600,-118.32667,995,D,82,Vine Maple,Acer circinatum,Aceraceae,15,12,15,5.5,0%,Good,A,No ,No
+337,1513,46.0706900,-118.32666,983,D,83,Red Dogwood,Cornus florida,Cornaceae,15,7,10,4,0%,Good,A,No ,No
+338,1514,46.0706600,-118.32676,983,D,84,Red Dogwood,Cornus florida,Cornaceae,15,7,10,3,0%,Good,B,No ,No
+339,1515,46.0708200,-118.32686,995,D,85,Hawthorne,Crataegus,Rosaceae,35,26,30,17,0%,Good,B,No ,No
+340,1516,46.0707900,-118.32682,996,D,86,Magnolia,Magnolia grandiflora,Magnoliaceae,35,46,25,26,0%,Good,B,No ,No
+341,1517,46.0708700,-118.32679,1003,D,87,Vine Maple, Acer circinatum,Aceraceae,35,11,15,6,0%,Good,B,No ,No
+342,1518,46.0708700,-118.3268,1001,D,88,Norway Maple,Acer platanoides,Aceraceae,45,58,40,19,25%,Good,B,No ,No
+343,1519,46.0708300,-118.32683,998,D,89,Seedling Cherry,Prunus,Rosaceae,15,30,30,15,0%,Good,B,No ,No
+344,1520,46.0709400,-118.32689,1003,D,90,Ash,Fraxinus,Oleaceae,17,21,35,7,50%,Good,B,No ,No
+345,1521,46.0707200,-118.32691,994,D,91,Flowering Crabapple,Malus,Rosaceae,20,18,20,13,0%,Good,B,No ,No
+346,1522,46.0707000,-118.3269,996,D,92,Dogwood,Cornus,Cornaceae,12,6,8,4,0%,Good,A,No ,No
+347,1523,46.0706500,-118.32689,1002,D,93,Flowering Cherry,Prunus,Rosaceae,50,51,15,17,0%,Fair,B,No ,No
+348,1524,46.0706900,-118.32693,1005,D,94,Beech,Fagus,Fagaceae,50,77,65,34,0%,Good,B,No ,No
+349,1525,46.0706500,-118.32695,996,D,95,White Flowering Dogwood,Cornus florida,Cornaceae,50,20,12,10,0%,Good,B,No ,No
+351,1526,46.0707800,-118.32703,1004,D,96,Spindle Tree,Euonymus europaeus,Celastraceae,50,30,15,7,0%,Poor,C,No ,No
+350,1527,46.0707500,-118.3271,1005,D,97,Box Elder,Acer negundo,Aceraceae,50,48,35,18,0%,Poor,C,No ,No
+352,1528,46.0706600,-118.32707,1004,D,98,Flowering Cherry,Prunus,Rosaceae,50,79,30,14,0%,Poor,B,No ,No
+353,1529,46.0706900,-118.32718,1001,D,99,Dogwood,Cornus,Cornaceae,50,28,20,11,0%,Good,A,No ,No
+354,1530,46.0707200,-118.32721,1003,D,100,Beech,Fagus,Fagaceae,10,22,35,14,0%,Good,B,No ,No
+355,1531,46.0708000,-118.32712,995,D,101,Weeping Beech,Fagus sylvatica,Fagaceae,30,68,10,4,0%,Fair,A,No ,No
+356,1533,46.0708500,-118.32707,1000,D,102,Brewer's Weeping Spruce,Picea breweriana,Pinaceae,100,115,80,25,0%,Good,B,No ,No
+357,653,46.0709300,-118.32719,968,D,103,American Sweet Gum,Liquidambar styrciflua,Hamamelidaceae,50,77,70,11,35%,Good,B,No ,No
+358,654,46.0707700,-118.32709,973,D,104,Hawthorn,Crataegus,Rosaceae,50,70,35,23,0%,Fair,B,No ,No
+359,655,46.0709000,-118.32721,967,D,105,Eastern Redbud,Cercis canadensis,Fabaceae (Leguminosae),35,28,30,10,0%,Poor,C,No ,No
+360,656,46.0708300,-118.32721,969,D,106,Western Red Cedar,ThuIa plicata,Cupressaceae,50,96,70,16,25%,Good,A,No ,No
+361,657,46.0706300,-118.32729,974,D,107,American Sweet Gum,Liquidambar styrciflua,Hamamelidaceae,50,53,40,24,0%,Good,B,No ,No
+362,1539,46.0708000,-118.32735,1030,D,108,Liberty Elm,Ulmus americana,Ulmaceae,4,4,10,1,0%,Good,B,No ,No
+363,1540,46.0708100,-118.32745,1003,D,109,Norway Maple,Acer platanoides,Aceraceae,50,54,60,21,0%,Good,B,No ,No
+364,1541,46.0708600,-118.32743,992,D,110,Pine,Pinus,Pinaceae,30,30,40,5,0%,Good,B,No ,No
+365,1542,46.0708900,-118.32751,1006,D,111,Elm,Ulmus,Ulmaceae,50,80,85,18,25%,Good,B,No ,No
+366,1543,46.0707800,-118.32757,1009,D,112,Western Larch,Larix occidentalis,Pinaceae,50,66,80,11,0%,Good,B,No ,No
+367,1544,46.0707300,-118.32752,1013,D,113,Tulip Tree,Liriodendron tulipfera,Magnoliaceae,50,90,85,24,0%,Fair,B,No ,No
+368,1545,46.0706700,-118.3275,1009,D,114,Honey Locust,Gleditsia triacanthos,Fabaceae (Leguminosae),50,63,65,23,0%,Fair,B,No ,No
+369,1546,46.0706700,-118.32757,1022,D,115,Honey Locust,Gleditsia triacanthos,Fabaceae (Leguminosae),50,68,65,23,0%,Fair,B,No ,No
+370,1547,46.0707100,-118.32759,1015,D,116,Hickory,Carya,Iuglandaceae,50,51,65,26,0%,Fair,B,No ,No
+371,1548,46.0706500,-118.32776,1013,D,117,Honey Locust,Gleditsia triacanthos,Fabaceae (Leguminosae),50,78,65,17,0%,Fair,B,No ,No
+372,1549,46.0710200,-118.32748,1001,D,118,Flowering Dogwood,Cornus florida,Cornaceae,50,29,15,10,0%,Fair,B,No ,No
+373,1550,46.0709700,-118.32746,1015,D,119,Eastern Redbud,Cercis canadensis,Fabaceae (Leguminosae),50,19,20,10,0%,Fair,B,No ,Yes
+374,1551,46.0710200,-118.32737,1021,D,120,Flowering Dogwood,Cornus florida,Cornaceae,50,15,15,9,0%,Fair,B,No ,Yes
+375,1552,46.0709800,-118.32731,1006,D,121,Dawn Redwood,Metasequoia glyptostroboides,Taxodiaceae,70,134,95,26,35%,Good,B,No ,No
+376,1553,46.0709700,-118.32734,1001,D,122,White Dogwood,Cornus florida,Cornaceae,50,24,15,8,0%,Good,B,No ,Yes
+377,1554,46.0710100,-118.32733,1004,D,123,White Dogwood,Cornus florida,Cornaceae,50,32,12,10,0%,Fair,B,No ,No
+378,1555,46.0710000,-118.32736,1004,D,124,Pink Dogwood,Cornus florida,Cornaceae,50,35,18,12.5,0%,Good,B,No ,Yes
+379,1556,46.0710200,-118.32729,1004,D,125,Pink Dogwood,Cornus florida,Cornaceae,50,41,15,10,0%,Good,B,No ,Yes
+380,1557,46.0710400,-118.32713,995,D,126,Pink Dogwood,Cornus florida,Cornaceae,50,30,15,10,0%,Good,B,No ,Yes
+381,1558,46.0710700,-118.32704,1003,D,127,Pink Dogwood,Cornus florida,Cornaceae,50,25,15,10,0%,Good,B,No ,Yes
+382,1559,46.0710000,-118.32719,982,D,128,Spruce,Picea,Pinaceae,10,6.5,8,3,0%,Good,B,No ,No
+383,1560,46.0709800,-118.3272,977,D,129,Water Birch,Betula occidentalis,Betulaceae,35,38,40,28,0%,Fair,B,No ,No
+384,1561,46.0709800,-118.32684,990,D,130,Devil's Walking Stick ,Aralia spinosa,Araliaceae,12,19,18,7,0%,Good,B,No ,No
+385,1562,46.0709800,-118.32681,992,D,131,Dawn Redwood,Metasequoia glyptostroboides,Fabaceae (Leguminosae),15,18,25,11,0%,Good,B,No ,No
+386,1563,46.0710300,-118.32678,1005,D,132,Dogwood,Cornus florida,Cornaceae,50,20,20,8,0%,Good,B,No ,No
+387,1564,46.0710800,-118.32672,1015,D,133,Dogwood,Cornus florida,Cornaceae,30,13,15,5,0%,Good,B,No ,No
+388,1565,46.0710200,-118.3267,1000,D,134,Dogwood,Cornus florida,Cornaceae,50,14,10,2.5,0%,Poor,C,No ,No
+389,1566,46.0709300,-118.32665,1004,D,135,White Cedar,ThuIa occidentalis,Cupressaceae,12,16,15,5.5,0%,Good,A,No ,No
+390,1567,46.0709200,-118.32666,999,D,136,White Cedar,ThuIa occidentalis,Cupressaceae,12,14,15,5.5,0%,Good,A,No ,No
+391,1568,46.0709100,-118.32659,1003,D,137,White Cedar,ThuIa occidentalis,Cupressaceae,12,15,15,5,0%,Good,A,No ,No
+392,1569,46.0708900,-118.32657,998,D,138,Red Maple,Acer rubrum,Aceraceae,12,14,25,11,0%,Good,B,No ,No
+393,1570,46.0709100,-118.32652,978,D,139,Red Maple,Acer rubrum,Aceraceae,12,10,20,8,0%,Good,B,No ,No
+394,1571,46.0709600,-118.32657,977,D,140,White Cedar,ThuIa occidentalis,Cupressaceae,12,17,18,6,0%,Good,B,No ,No
+395,1572,46.0710000,-118.32659,985,D,141,White Cedar,ThuIa occidentalis,Cupressaceae,12,18,15,6,0%,Good,B,No ,No
+396,1573,46.0710100,-118.32652,995,D,142,Black Locust,Robinia pseudoacacia,Fabaceae (Leguminosae),100,81,65,24,0%,Fair,B,No ,No
+397,1574,46.0710100,-118.32649,996,D,143,Black Locust,Robinia pseudoacacia,Fabaceae (Leguminosae),100,93,85,24,0%,Fair,B,No ,No
+398,1575,46.0710300,-118.32649,996,D,144,Black Locust,Robinia pseudoacacia,Fabaceae (Leguminosae),100,84,85,24,0%,Fair,B,No ,No
+399,1576,46.0710500,-118.32659,980,D,145,White Dogwood,Cornus florida,Cornaceae,25,15,12,11,0%,Good,B,No ,No
+400,1577,46.0710500,-118.32645,997,D,146,Sycamore Maple,Acer pseudoplatanus,Aceraceae,7,14,20,12,0%,Good,B,No ,No
+401,1578,46.0710500,-118.32643,1016,D,147,Elm clump,Ulmus,Ulmaceae,20,31,65,17,0%,Good,B,No ,No
+402,1579,46.0710500,-118.32646,1020,D,148,White Cedar,ThuIa occidentalis,Cupressaceae,12,18,20,6.5,0%,Good,B,No ,No
+403,1580,46.0710600,-118.32645,1021,D,149,White Cedar,ThuIa occidentalis,Cupressaceae,12,20,25,7,0%,Good,B,No ,No
+404,1581,46.0710600,-118.32639,1055,D,150,White Cedar,ThuIa occidentalis,Cupressaceae,12,12,20,4.5,0%,Good,B,No ,No
+405,1582,46.0710800,-118.32751,1033,D,151,Elm,Ulmus,Ulmaceae,12,19,20,16,0%,Good,B,No ,No
+1473,1582,46.0710800,-118.32751,1033,E,1,Hackberry,Celtis occidentalis,Cannabaceae,100,92,35,25.5,40%,Good,B,Yes,No
+1474,1583,46.0711600,-118.32755,997,E,2,Magnolia,Magnolia,Magnoliaceae,20,15,25,12,0%,Good,B,No ,No
+1475,1584,46.0711900,-118.32749,1032,E,3,Vine Maple,Acer circinatum,Aceraceae,20,29,12,8,0%,Poor,B,No ,No
+1476,1585,46.0712200,-118.32748,1039,E,4,Vine Maple,Acer circinatum,Aceraceae,20,11,15,9,0%,Poor,B,No ,No
+1477,1586,46.0712500,-118.32751,1042,E,5,Vine Maple,Acer circinatum,Aceraceae,20,17,12,7.5,0%,Poor,B,No ,No
+1478,1587,46.0712900,-118.32755,1043,E,6,Vine Maple,Acer circinatum,Aceraceae,20,34,20,9.5,0%,Poor,B,No ,No
+1493,1588,46.0711200,-118.32749,1044,E,7,Weeping Tamarac,Larix pendula,Pinaceae,10,6,4,4,0%,Good,A,No,No
+413,1589,46.0710900,-118.32745,1006,E,8,Pine,Pinus,Pinaceae,35,55,40,18,75%,Poor,B,No ,No
+414,1590,46.0711300,-118.32718,1027,E,9,Pink Dogwood,Cornus florida,Cornaceae,35,29,12,8,25%,Fair,B,No ,No
+415,1591,46.0711200,-118.32705,1017,E,10,Cooper Beech,Fagus sylvatica,Fagaceae,12,20,45,10,25%,Fair,B,No ,No
+416,1592,46.0711100,-118.32703,1005,E,11,Cooper Beech,Fagus sylvatica,Fagaceae,12,22,30,12,25%,Good,B,No ,No
+417,1593,46.0711100,-118.32698,1003,E,12,Pink Dogwood,Cornus florida,Cornaceae,35,27,15,7,25%,Fair,B,No ,No
+418,1594,46.0712200,-118.32666,1014,E,13,Pink Dogwood,Cornus florida,Cornaceae,6,7,13,5,0%,Good,B,No ,No
+419,1595,46.0712600,-118.32654,1045,E,14,Pink Dogwood,Cornus florida,Cornaceae,6,6,13,4,0%,Good,B,No ,No
+420,1596,46.0712900,-118.32655,1046,E,15,Pink Dogwood,Cornus florida,Cornaceae,6,7,13,4,0%,Good,B,No ,No
+421,1597,46.0714600,-118.32673,1028,E,16,Noble Fir,Abies procera,Pinaceae,7,8,10,3,0%,Good,B,No ,Yes
+422,1598,46.0715500,-118.32681,1006,E,17,Fern Leaved Beech,Fagus sylvatica aspenifolia,Fagaceae,15,24,25,11,35%,Good,B,No ,No
+423,1599,46.0715100,-118.3269,1001,E,18,Himalayan Dogwood,Cornus capitata,Cornaceae,8,6,7,2,0%,Good,B,No ,No
+424,1600,46.0715000,-118.32699,1001,E,19,Colorado Blue Spruce,Picea punges glauca,Pinaceae,8,4,7,3,0%,Good,A,No ,No
+425,1601,46.0714900,-118.32702,997,E,20,Himalayan Dogwood,Cornus capitata,Cornaceae,8,4,8,2,0%,Good,B,No ,No
+426,1602,46.0715000,-118.32704,995,E,21,Himalayan Dogwood,Cornus capitata,Cornaceae,8,5.5,9,3,0%,Good,B,No ,No
+427,1603,46.0714900,-118.32711,991,E,22,Western Red Cedar,ThuIa plicata,Cupressaceae,15,24,30,8,0%,Good,A,No ,No
+428,1604,46.0714600,-118.32713,980,E,23,Pondorosa Pine,Pinus ponderosa,Pinaceae,15,18.5,10,4.5,0%,Fair,B,No ,No
+429,1605,46.0715200,-118.32717,982,E,24,Pondorosa Pine,Pinus ponderosa,Pinaceae,15,23,22,5.5,0%,Fair,B,No ,No
+430,1606,46.0715100,-118.32732,986,E,25,Pondorosa Pine,Pinus ponderosa,Pinaceae,15,25,20,7,0%,Fair,B,No ,Yes
+431,1607,46.0715100,-118.32735,987,E,26,Korean Fir,Abies koreana,Pinaceae,15,15.5,17,3.5,0%,Good,B,No ,No
+432,1608,46.0715100,-118.32747,988,E,27,Colorado Blue Spruce,Picea punges glauca,Pinaceae,15,23,18,5,30%,Fair,B,No ,No
+433,1609,46.0714100,-118.32742,985,E,28,Southern Magnolia,Magnolia grandiflora,Magnoliaceae,18,23,25,9,35%,Good,B,No ,No
+434,1610,46.0714400,-118.32746,1002,E,29,Pine,Pinus,Pinaceae,40,54,35,11,45%,Fair,B,No ,No
+435,1611,46.0715000,-118.32758,995,E,30,Southern Magnolia,Magnolia grandiflora,Magnoliaceae,18,18,17,9,25%,Good,B,No ,No
+436,1612,46.0715300,-118.32764,1000,E,31,Korean Fir,Abies koreana,Pinaceae,15,15.5,17,4.5,0%,Good,B,No ,No
+437,1613,46.0715300,-118.32768,1001,E,32,Paper Birch,Betula papyrifera,Betulaceae,45,69,40,20,0%,Good,B,No ,No
+438,1614,46.0715400,-118.32782,989,E,33,Paper Birch,Betula papyrifera,Betulaceae,45,78.5,40,16,0%,Good,B,No ,No
+439,1615,46.0715500,-118.32796,989,E,34,European Hornbeam,Carpinus betulus,Betulaceae,45,70,40,19,50%,Good,B,No ,No
+440,1616,46.0714500,-118.32795,991,E,35,European Hornbeam,Carpinus betulus,Betulaceae,45,47,40,,75%,Good,B,No ,No
+441,547,46.0712300,-118.32795,877,E,36,Pine,Pinus,Pinaceae,45,57,45,12,30%,Fair,B,No ,No
+442,548,46.0711800,-118.32787,1001,E,37,Pine,Pinus,Pinaceae,45,51,40,12,0%,Fair,B,No ,No
+443,549,46.0710100,-118.32784,997,E,38,Flowering Dogwood,Cornus florida,Cornaceae,10,5,7,1,0%,Poor,A,No ,No
+444,550,46.0710100,-118.32755,997,E,39,Flowering Dogwood,Cornus florida,Cornaceae,45,31,17,10,0%,Fair,B,No ,No
+445,551,46.0709700,-118.32771,997,E,40,Colorado Blue Spruce,Picea punges glauca,Pinaceae,20,25,20,9.5,0%,Good,B,No ,Yes
+446,552,46.0709200,-118.32751,993,E,41,Flowering Dogwood,Cornus florida,Cornaceae,45,26,9,9,0%,Fair,B,No ,No
+447,553,46.0710500,-118.32781,990,E,42,Sycamore Maple,Acer pseudoplatanus,Aceraceae,45,54,55,26,0%,Good,B,No ,No
+448,554,46.0709400,-118.32796,990,E,43,Seedling Cherry,Prunus,Rosaceae,45,84,55,17,0%,Fair,B,No ,No
+449,555,46.0709100,-118.3281,990,E,44,Sugar Maple,Acer saccharum,Aceraceae,20,38,45,11,0%,Good,B,No ,Yes
+450,556,46.0708600,-118.32816,988,E,45,Pin Oak,Quercus palistris,Fagaceae,20,26,35,17,0%,Good,B,No ,No
+451,557,46.0708200,-118.32837,988,E,46,Black Oak (California),Quercus kelloggii,Fagaceae,20,18,20,15,0%,Good,B,No ,No
+452,558,46.0707100,-118.32846,986,E,47,Birch,Betula,Betulaceae,20,40,50,22,0%,Good,B,No ,No
+453,559,46.0707500,-118.32848,984,E,48,Colorado Blue Spruce,Picea punges glauca,Pinaceae,20,48,25,7,0%,Good,B,No ,No
+454,560,46.0707200,-118.32849,982,E,49,White Pine,Pinus monticola ,Pinaceae,20,13,15,4,50%,Fair,B,No ,No
+455,561,46.0707300,-118.32857,985,E,50,Dawn Redwood,Metasequoia glyptostroboides,Fabaceae (Leguminosae),,64,45,14,0%,Good,A,No ,No
+456,562,46.0706300,-118.32861,986,E,51,Iapanese Maple,Acer palmatum,Aceraceae,,73,35,12,0%,Good,B,No ,No
+457,563,46.0706500,-118.32841,986,E,52,Iapanese Maple,Acer palmatum,Aceraceae,,53,25,13,0%,Fair,B,No ,No
+458,564,46.0706800,-118.32847,987,E,53,Redbud,Cercis,Fabaceae (Leguminosae),,21,20,9,25%,Good,B,No ,No
+459,565,46.0707100,-118.3284,984,E,54,Iapanese Maple,Acer palmatum,Aceraceae,,20,20,6.5,0%,Good,B,No ,No
+460,566,46.0706500,-118.32825,986,E,55,California Black Oak,Quercus kelloggii,Fagaceae,,35,30,17,0%,Good,B,No ,No
+461,567,46.0706700,-118.32821,984,E,56,California Black Oak,Quercus kelloggii,Fagaceae,,34,40,11,0%,Good,B,No ,No
+462,568,46.0706300,-118.32823,987,E,57,California Black Oak,Quercus kelloggii,Fagaceae,,42,40,23,0%,Good,B,No ,No
+463,569,46.0707000,-118.32811,987,E,58,Allegheny Serviceberry,Amelanchier laevis,Rosaceae,,16,15,11,15%,Good,B,No ,No
+464,570,46.0707300,-118.32804,985,E,59,Allegheny Serviceberry,Amelanchier laevis,Rosaceae,,16,15,9.5,15%,Good,B,No ,No
+465,571,46.0706900,-118.32804,987,E,60,Allegheny Serviceberry,Amelanchier laevis,Rosaceae,,15,18,10.5,15%,Good,B,No ,No
+466,572,46.0706200,-118.32801,990,E,61,Allegheny Serviceberry,Amelanchier laevis,Rosaceae,,14,15,11.5,0%,Good,B,No ,No
+467,576,46.0706500,-118.32798,992,E,62,Eastern Hemlock,Tsuga canadensis,Pinaceae,,15,12,8,0%,Fair,B,No ,No
+468,573,46.0706300,-118.32799,991,E,63,Allegheny Serviceberry,Amelanchier laevis,Rosaceae,,17,18,11,0%,Good,B,No ,No
+469,574,46.0706800,-118.32794,990,E,64,Allegheny Serviceberry,Amelanchier laevis,Rosaceae,,17,18,12,0%,Good,B,No ,No
+470,575,46.0706600,-118.32793,992,E,65,Allegheny Serviceberry,Amelanchier laevis,Rosaceae,,12,18,12.5,0%,Good,B,No ,No
+471,577,46.0707300,-118.32781,989,E,66,Flowering cherry plum,Prunus cerasifera,Rosaceae,,41,23,15,0%,Fair,B,No ,No
+472,579,46.0707300,-118.32774,991,E,67,Flowering pear,Pyrus calleryana,Rosaceae,,53,45,34,0%,Fair,B,No ,No
+473,580,46.0708300,-118.32772,992,E,68,Ginkgo (Maidenhair Tree),Ginkgo biloba,Ginkgoaceae,55,69,55,20,0%,Good,B,No ,No
+474,578,46.0708300,-118.32784,986,E,69,Red Maple,Acer rubrum,Aceraceae,20,35,25,11,25%,Fair,B,No ,No
+475,581,46.0708900,-118.32774,991,E,70,Common Hawthorne,Crataegus monogyna,Rosaceae,,66,45,17,25%,Good,B,No ,No
+476,582,46.0709000,-118.32767,990,E,71,Common Hawthorne,Crataegus monogyna,Rosaceae,,42,45,14.5,25%,Good,B,No ,No
+477,583,46.0709300,-118.32764,987,E,72,Water Birch,Betula occidentalis,Betulaceae,20,58,45,10,0%,Good,B,No ,No
+478,584,46.0709100,-118.32761,991,E,73,Dogwood,Cornus,Cornaceae,15,5,12,7,0%,Good,B,No ,No
+479,613,46.0710000,-118.32813,994,E,74,Golden Rain Tree,Koelreuteria paniculata,Sapindaceae,80,93,35,25,0%,Good,B,Yes,No
+480,614,46.0711100,-118.32806,999,E,75,Beech,Fagus sylvatica,Fagaceae,20,61,45,20,5%,Good,B,No ,No
+584,615,46.0709400,-118.32842,992,E,76,Dogwood,Cornus,Cornaceae,,4,5,3,0%,Good,B,No ,No
+481,616,46.0712100,-118.32808,996,E,77,Dogwood,Cornus florida,Cornaceae,15,10,15,6,0%,Poor,B,No ,No
+482,617,46.0711900,-118.32805,999,E,78,Flowering Pear,Pyrus,Rosaceae,15,27,35,18,0%,Good,B,No ,No
+483,618,46.0711900,-118.32804,996,E,79,Dogwood,Cornus,Cornaceae,15,7,9,4,0%,Poor,B,No ,No
+484,619,46.0714500,-118.32808,995,E,80,Dogwood,Cornus,Cornaceae,15,6,8,3,0%,Poor,B,No ,No
+485,620,46.0714900,-118.32808,996,E,81,Dogwood,Cornus,Cornaceae,15,11,10,7.5,0%,Poor,B,No ,No
+486,621,46.0714800,-118.32803,995,E,82,Flowering Pear,Pyrus,Rosaceae,15,26,35,7,0%,Good,B,No ,No
+586,631,46.0719200,-118.32887,1003,F,1,Liberty Elm,Ulmus,Ulmaceae,,4,10,1,0%,Good,B,No ,No
+487,623,46.0716000,-118.32832,995,F,2,Black Mulberry,Morus nigra,Moraceae,65,96,60,30,50%,?,B,No ,No
+488,624,46.0716000,-118.32844,995,F,3,Linden,Tilia cordata,Tiliaceae,5,7,15,4,0%,Good,B,No ,No
+489,625,46.0716700,-118.32855,995,F,4,Norway Maple,Acer platanoides,Aceraceae,45,83,60,15,0%,Poor,B,No ,No
+490,626,46.0715600,-118.32863,1001,F,5,Crack Willow,Salix fragilis,Salicaceae,65,150,60,44,60%,?,B,No ,No
+491,627,46.0716400,-118.32877,1000,F,6,Silver Maple,Acer saccharinum,Aceraceae,65,109,75,45,60%,Fair,B,No ,No
+492,628,46.0716200,-118.32883,1000,F,7,Catalpa/ Indian bean tree,Catalpa,Bignoniaceae,65,88,60,20,80%,Good,B,No ,No
+493,629,46.0716300,-118.3289,1001,F,8,Dogwood,Cornus,Cornaceae,15,6,8.5,5,0%,Good,B,No ,No
+494,630,46.0717800,-118.32885,999,F,9,American Sweet Gum,Liquidambar styraciflua,Bignoniaceae,30,47,70,16.5,0%,Fair,B,No ,No
+495,632,46.0721000,-118.32888,997,F,10,Pinoak,Quercus palustris,Fagaceae,30,38,25,20.5,0%,Poor,B,No ,No
+496,633,46.0722800,-118.32888,998,F,11,American Sweet Gum,Liquidambar styraciflua,Bignoniaceae,30,62,65,18,0%,Good,B,No ,No
+497,1,46.0709400,-118.33004,985,F,12,Spruce,Picea engelmannii,Pinaceae,35,69,55,13,0%,Good,B,No ,No
+498,2,46.0710200,-118.32999,986,F,13,Silver Maple,Acer saccharinum,Aceraceae,65,240,70,39,50%,Fair,B,No ,No
+499,3,46.0716600,-118.32886,1002,F,14,American Sweet Gum,Liquidambar styraciflua,Bignoniaceae,30,54,50,28,0%,Good,B,No ,No
+500,8,46.0719900,-118.32918,1001,F,15,Eastern Hop Hornbeam,Ostrya virginiana,Betulaceae,20,13,17,9.5,0%,Fair,B,No ,No
+501,9,46.0720700,-118.32913,1001,F,16,Eastern Hop Hornbeam,Ostrya virginiana,Betulaceae,20,17,17,8.5,0%,Fair,B,No ,No
+502,10,46.0721300,-118.32905,1002,F,17,Red Maple,Acer rubrum,Aceraceae,18,20,17,1,0%,Good,B,No ,No
+503,11,46.0721900,-118.32895,1001,F,18,Leyland Cypress,Cupressocyparis leylandii,Cupressaceae,20,149,30,13,0%,Good,B,No ,No
+504,12,46.0721200,-118.32898,1001,F,19,Eastern Hop Hornbeam,Ostrya virginiana,Betulaceae,20,10,20,8,0%,Good,B,No ,No
+505,13,46.0720400,-118.32898,1003,F,20,Eastern Hop Hornbeam,Ostrya virginiana,Betulaceae,20,13,20,9,0%,Good,B,No ,No
+506,14,46.0719600,-118.32898,1001,F,21,Eastern Hop Hornbeam,Ostrya virginiana,Betulaceae,20,11,20,8.5,0%,Good,B,No ,No
+507,15,46.0718800,-118.32899,999,F,22,Mountain Hemlock,Tsuga mertensiana,Pinaceae,20,6,7,2.5,0%,Good,B,No ,No
+508,16,46.0718100,-118.32899,999,F,23,Mountain Hemlock,Tsuga mertensiana,Pinaceae,20,7,9,3.5,0%,Good,B,No ,No
+509,17,46.0720100,-118.32909,1002,F,24,Mountain Hemlock,Tsuga mertensiana,Pinaceae,20,7,7,4,0%,Good,A,No ,No
+510,18,46.0716400,-118.32918,1003,F,25,Maple,Acer,Aceraceae,20,11,10,7,0%,Good,B,No ,No
+511,19,46.0717100,-118.32896,1003,F,26,Maple,Acer,Aceraceae,20,6,8,3,0%,Good,B,No ,No
+512,20,46.0716200,-118.32916,1003,F,27,Maple,Acer,Aceraceae,20,8,10,4,0%,Good,B,No ,No
+513,21,46.0719400,-118.32916,1006,F,28,Maple,Acer,Aceraceae,20,7,10,6,0%,Good,B,No ,No
+514,22,46.0718100,-118.32916,1004,F,29,Maple,Acer,Aceraceae,20,3,8,3,0%,Good,B,No ,No
+515,23,46.0718100,-118.32902,1005,F,30,Maple,Acer,Aceraceae,20,4,7,2,0%,Good,B,No ,No
+516,24,46.0717000,-118.3292,1000,F,31,Podocarpus,Podocarpus,Podocarpaceae,20,6,10,2,0%,Fair,B,No ,No
+517,140,46.0712900,-118.32951,869,F,32,Katsura,Cercidiphyllum Iaponicum,Cercidiphyllaceae,20,21,35,14,0%,Good,B,No ,No
+518,141,46.0712500,-118.32951,884,F,33,Katsura,Cercidiphyllum Iaponicum,Cercidiphyllaceae,20,24,35,14,0%,Good,B,No ,No
+519,142,46.0713300,-118.32955,894,F,34,Katsura,Cercidiphyllum Iaponicum,Cercidiphyllaceae,20,22,35,14,0%,Good,B,No ,No
+520,143,46.0713200,-118.32962,903,F,35,Katsura,Cercidiphyllum Iaponicum,Cercidiphyllaceae,20,26,35,12,0%,Good,B,No ,No
+521,144,46.0713000,-118.32968,905,F,36,Katsura,Cercidiphyllum Iaponicum,Cercidiphyllaceae,20,24,,11,0%,Good,B,No ,No
+522,145,46.0714300,-118.3296,912,F,37,Maple,Acer,Aceraceae,20,10,,12,0%,Good,B,No ,No
+523,146,46.0713000,-118.32953,920,F,38,Red Snakebark Maple,Acer capillipes,Aceraceae,20,11,17,5,0%,Good,B,No ,No
+524,147,46.0713700,-118.32953,922,F,39,Red Snakebark Maple,Acer capillipes,Aceraceae,20,16,20,6,0%,Good,B,No ,No
+525,148,46.0713000,-118.32957,934,F,40,Red Snakebark Maple,Acer capillipes,Aceraceae,20,17,20,14,0%,Good,B,No ,No
+526,149,46.0712500,-118.32959,936,F,41,Eastern Hop Hornbeam,Ostrya virginiana,Betulaceae,20,14,22,10.5,0%,Good,B,No ,No
+527,150,46.0712300,-118.32958,951,F,42,Eastern Hop Hornbeam,Ostrya virginiana,Betulaceae,20,15,22,11,35%,Good,B,No ,No
+528,151,46.0711700,-118.3296,952,F,43,Eastern Hop Hornbeam,Ostrya virginiana,Betulaceae,20,18,30,10,0%,Good,B,No ,No
+529,152,46.0712000,-118.32969,953,F,44,Eastern Hop Hornbeam,Ostrya virginiana,Betulaceae,20,13,25,8,0%,Good,B,No ,No
+530,153,46.0712200,-118.3298,955,F,45,Box Elder,Acer negundo,Aceraceae,,70,45,29,0%,Fair,B,No ,No
+531,154,46.0711100,-118.32989,967,F,46,Iapanese Hornbeam,Carpinus Iaponica,Betulaceae,20,20,35,12,0%,Good,B,No ,No
+532,155,46.0711700,-118.32991,967,F,47,Iapanese Hornbeam,Carpinus Iaponica,Betulaceae,20,22,37,12,0%,Good,B,No ,No
+533,156,46.0712700,-118.32998,964,F,48,Iapanese Hornbeam,Carpinus Iaponica,Betulaceae,20,19,35,11,0%,Good,B,No ,No
+534,157,46.0712500,-118.33017,971,F,49,Iapanese Hornbeam,Carpinus Iaponica,Betulaceae,20,17,33,9,0%,Good,B,No ,No
+535,158,46.0712300,-118.33024,973,F,50,Iapanese Hornbeam,Carpinus Iaponica,Betulaceae,20,19,35,11,0%,Good,B,No ,No
+536,159,46.0713500,-118.32996,978,F,51,Big Leaf Maple,Acer macrophylum,Aceraceae,,116,45,37,0%,Fair,B,No ,No
+537,172,46.0714200,-118.33008,989,F,52,Sawleaf Zelkova,Zelkova serrata,Ulmaceae,20,38,25,15,0%,Good,B,No ,No
+538,174,46.0714000,-118.32987,987,F,53,Sawleaf Zelkova,Zelkova serrata,Ulmaceae,20,39,25,18,0%,Good,B,No ,No
+539,175,46.0714400,-118.33004,987,F,54,Colorado Blue Spruce,Picea pungens glauca,Pinaceae,20,16,15,6,0%,Good,B,No ,No
+540,176,46.0715400,-118.33028,988,F,55,Burr Oak,Quercus macrocarpa,Fagaceae,35,73,50,22,50%,Fair,B,No ,No
+541,177,46.0721700,-118.33001,999,F,56,India Horse Chestnut,Aesculus indica,Hippocastanaceae,,125,70,25,0%,Fair,B,No ,No
+542,178,46.0716600,-118.33032,1014,F,57,Iapanese Hornbeam,Carpinus Iaponica,Betulaceae,20,17,40,6,0%,Good,B,No ,No
+543,179,46.0716700,-118.33031,1017,F,58,Iapanese Hornbeam,Carpinus Iaponica,Betulaceae,20,19,45,8,0%,Good,B,No ,No
+544,180,46.0717800,-118.33014,1021,F,59,Iapanese Hornbeam,Carpinus Iaponica,Betulaceae,20,26,50,7,0%,Good,B,No ,No
+545,181,46.0718200,-118.33013,1023,F,60,Alaska Cedar,Chamaecyparis nootkatensis,Cupressaceae,5,5,8,3,0%,Good,B,No ,No
+546,182,46.0718300,-118.32982,1025,F,61,Himalayan Birch,Betula utilis,Betulaceae,55,51,55,17,0%,Fair,B,No ,No
+547,183,46.0717700,-118.32989,1026,F,62,Himalayan Birch,Betula utilis,Betulaceae,55,24,45,10,0%,Poor,B,No ,No
+548,184,46.0719300,-118.33012,1027,F,63,Maple,Acer,Aceraceae,20,23,25,6,0%,Good,B,No ,No
+549,185,46.0720300,-118.32989,1027,F,64,Maple,Acer,Aceraceae,20,24,30,10,0%,Good,B,No ,No
+550,186,46.0719800,-118.3298,1025,F,65,Maple,Acer,Aceraceae,20,24,33,10,0%,Good,B,No ,No
+551,187,46.0720100,-118.32974,1026,F,66,Maple,Acer,Aceraceae,20,24,35,10,0%,Good,B,No ,No
+552,188,46.0720700,-118.32963,1024,F,67,Maple,Acer,Aceraceae,20,24,35,11,0%,Good,B,No ,No
+553,189,46.0721000,-118.32957,1024,F,68,Maple,Acer,Aceraceae,20,28,35,12,0%,Good,B,No ,No
+585,622,46.0716400,-118.32812,995,F,69,Elm Morton Glossy,Ulmus,Ulmaceae,,4,12,1,0%,Good,B,No ,No
+587,634,46.0718400,-118.32904,994,F,70,Elm Morton Glossy,Ulmus,Ulmaceae,,4,12,1,0%,Good,B,No ,No
+611,243,46.0707600,-118.33014,1003,F,71,Kentucky Weeping Spruce,Gymnocladus dioica,Fabaceae (Leguminosae),20,42,55,24,0%,Good,B,No ,No
+612,244,46.0706600,-118.33006,1001,F,72,Green Douglas Fir,Pseudotsuga menziesii,Pinaceae,75,81,85,14,0%,Good,B,No ,No
+613,245,46.0707900,-118.33001,1003,F,73,Birch,Betula,Betulaceae,40,38,60,17,30%,Poor,B,No ,No
+614,246,46.0705500,-118.33016,994,F,74,Pine,Pinus,Pinaceae,40,43,40,9,0%,Poor,B,No ,No
+615,247,46.0704700,-118.33,993,F,75,Elm,Ulmus,Ulmaceae,100,118,75,48,0%,Good,B,No ,No
+616,248,46.0704800,-118.3298,993,F,76,Elm,Ulmus,Ulmaceae,100,114,75,35,0%,Good,B,No ,No
+617,249,46.0706100,-118.32994,994,F,77,Sycamore,Platanus,Platanaceae,100,146,85,43,0%,Good,B,No ,No
+618,250,46.0705300,-118.32937,993,F,78,Elm,Ulmus,Ulmaceae,5,6,12,1,0%,Good,B,No ,No
+619,251,46.0706400,-118.32929,992,F,79,Sycamore,Platanus,Platanaceae,100,116,85,36,30%,Good,A,No ,No
+620,252,46.0705500,-118.32909,993,F,80,Little-leafed Linden,Tilia cordata,Tiliaceae,30,62,75,11,0%,Good,B,No ,No
+621,253,46.0706800,-118.32907,992,F,81,Pine,Pinus ponderosa,Pinaceae,20,29,25,7,0%,Fair,A,No ,No
+622,254,46.0707400,-118.32909,990,F,82,Pine,Pinus ponderosa,Pinaceae,20,23,25,5,0%,Fair,A,No ,No
+623,255,46.0707200,-118.32894,994,F,83,Pine,Pinus ponderosa,Pinaceae,20,24,25,8,0%,Fair,A,No ,No
+624,256,46.0706300,-118.32896,992,F,84,Oak,Quercus,Fagaceae,30,56,45,23,0%,Good,B,No ,No
+625,257,46.0707700,-118.32888,994,F,85,Mountain Ash,Sorbus,Rosaceae,100,96,35,9,0%,Poor,B,No ,No
+626,258,46.0706800,-118.32878,991,F,86,Tricolor Beech,Fagus sylvatica,Fagaceae,20,32,35,12,0%,Good,A,No,No
+627,259,46.0706500,-118.32873,993,F,87,Pine,Pinus,Pinaceae,25,33,20,7,0%,Good,B,No,No
+628,260,46.0710200,-118.32907,994,F,88,Sycamore,Platanus,Platanaceae,100,166,80,52,20%,Good,B,No,No
+629,261,46.0708100,-118.32866,998,F,89,Birch,Betula,Betulaceae,,65,40,28,50%,Fair,A,No,No
+630,262,46.0708000,-118.32918,998,F,90,Dogwood,Cornus,Cornaceae,15,9,13,6,0%,Good,B,No,No
+631,263,46.0707300,-118.3292,997,F,91,Iapanese Maple,Acer palmatum,Aceraceae,10,5,6.5,2,0%,Fair,A,No,No
+632,264,46.0709700,-118.32927,999,F,92,Iapanese Maple,Acer palmatum,Aceraceae,10,5,5,2,0%,Fair,B,No,No
+633,265,46.0710000,-118.32995,996,F,93,Iapanese Maple,Acer palmatum,Aceraceae,10,5,6,1,0%,Fair,B,No,No
+635,267,46.0707400,-118.33012,996,F,94,Iapanese Maple,Acer palmatum,Aceraceae,10,5,5,1,0%,Poor,B,No,No
+634,266,46.0706500,-118.33018,995,F,95,Flowering Plum,Prunus,Rosaceae,10,7,15,7,0%,Fair,B,No,No
+641,273,46.0703700,-118.33044,994,G,1,Magnolia,Magnolia,Magnoliaceae,,12,18,4,0%,Good,B,No,No
+642,274,46.0703500,-118.33053,993,G,2,Magnolia,Magnolia,Magnoliaceae,25,22,25,9,0%,Good,B,No,No
+643,275,46.0703900,-118.33062,997,G,3,Magnolia,Magnolia,Magnoliaceae,20,12,20,3,0%,Good,B,No,No
+644,276,46.0703500,-118.3307,996,G,4,Magnolia,Magnolia,Magnoliaceae,20,18,25,7,0%,Good,A,No,No
+645,277,46.0703500,-118.33083,998,G,5,Magnolia,Magnolia,Magnoliaceae,20,10,20,3,0%,Good,B,No,No
+646,278,46.0703700,-118.33094,998,G,6,Magnolia,Magnolia,Magnoliaceae,20,16,25,8,0%,Fair,B,No,No
+647,279,46.0704200,-118.33107,996,G,7,Hawthorne,Crataegus lavallei,Rosaceae,20,13,15,3,0%,Good,B,No,No
+648,280,46.0705700,-118.33111,995,G,8,Hawthorne,Crataegus lavallei,Rosaceae,20,10,12,3,0%,Good,A,No,No
+649,281,46.0705700,-118.33114,996,G,9,Pine,Pinus,Pinaceae,5,7,5,1.5,0%,Good,A,No,No
+650,282,46.0705600,-118.33124,995,G,10,Pine,Pinus,Pinaceae,5,7,4,1.5,0%,Good,A,No,No
+651,283,46.0706100,-118.33122,995,G,11,Pine,Pinus,Pinaceae,5,7,4,1.5,0%,Good,A,No,No
+652,284,46.0706800,-118.33115,994,G,12,Hawthorne,Crataegus lavallei,Rosaceae,20,10,15,3,0%,Good,B,No,No
+653,285,46.0709300,-118.33123,993,G,13,Hawthorne,Crataegus lavallei,Rosaceae,20,13,15,3,0%,Good,B,No,No
+654,286,46.0710800,-118.33126,994,G,14,Hawthorne,Crataegus lavallei,Rosaceae,20,9,15,2,0%,Good,B,No,No
+655,287,46.0712200,-118.33132,995,G,15,Hawthorne,Crataegus lavallei,Rosaceae,20,12,12,4,0%,Good,B,No,No
+569,205,46.0714100,-118.33133,917,G,16,Lacebark Pine,Pinus bungeana,Pinaceae,10,19,10,3,0%,Good,B,No ,No
+568,204,46.0716300,-118.33121,1003,G,17,Japanese Hornbeam,Carpinus Iaponica,Betulaceae,10,9,12,4,50%,Fair,B,No ,No
+567,203,46.0716300,-118.3312,1003,G,18,Japanese Hornbeam,Carpinus Iaponica,Betulaceae,30,51,40,13,50%,Fair,B,No ,No
+566,202,46.0716300,-118.33119,1005,G,19,Japanese Hornbeam,Carpinus Iaponica,Betulaceae,30,34,40,13,50%,Fair,B,No ,No
+565,201,46.0716300,-118.33108,1005,G,20,Japanese Hornbeam,Carpinus Iaponica,Betulaceae,30,34,40,11,50%,Fair,B,No ,No
+564,200,46.0716800,-118.331,1005,G,21,Japanese Hornbeam,Carpinus Iaponica,Betulaceae,30,34,40,9,50%,Fair,B,No ,No
+563,199,46.0716900,-118.33099,1005,G,22,Japanese Hornbeam,Carpinus Iaponica,Betulaceae,30,34,40,10,50%,Fair,B,No ,No
+562,198,46.0716900,-118.33109,1006,G,23,Japanese Hornbeam,Carpinus Iaponica,Betulaceae,30,28,40,13,50%,Fair,B,No ,No
+561,197,46.0717800,-118.3309,1005,G,24,Iapanese Hornbeam,Carpinus Iaponica,Betulaceae,30,33,40,15,50%,Fair,B,No ,No
+560,196,46.0718000,-118.33095,1006,G,25,Iapanese Hornbeam,Carpinus Iaponica,Betulaceae,30,40,40,14,50%,Fair,B,No ,No
+559,195,46.0719200,-118.33092,1007,G,26,Japanese Hornbeam,Carpinus Iaponica,Betulaceae,30,45,40,13,50%,Fair,B,No ,No
+558,194,46.0719300,-118.33083,1007,G,27,Japanese Hornbeam,Carpinus Iaponica,Betulaceae,30,43,40,13,50%,Fair,B,No ,No
+557,193,46.0718600,-118.3304,1012,G,28,Alaska Cedar,Chamaecyparis nootkatensis,Cupressaceae,5,4,7,3,0%,Good,B,No ,No
+556,192,46.0718000,-118.33025,1015,G,29,Alaska Cedar,Chamaecyparis nootkatensis,Cupressaceae,5,4,7,4,0%,Good,B,No ,No
+555,191,46.0719200,-118.33009,1018,G,30,Red Oak,Quercus rubra,Fagaceae,7,5,12,3,0%,Good,B,No,Yes
+554,190,46.0719700,-118.32926,1025,G,31,Black Walnut,Iuglans nigra,Iuglandaceae,100,174,60,26,0%,Fair,B,No ,No
+570,206,46.0714000,-118.33102,928,G,32,Japanese Maple,Acer Iaponicum,Aceraceae,7,6,7,4,0%,Fair,B,No ,No
+571,207,46.0714600,-118.33095,933,G,33,Japanese Maple,Acer Iaponicum,Aceraceae,7,4,5,1.5,0%,Fair,B,No ,No
+572,208,46.0715000,-118.33093,938,G,34,Japanese Maple,Acer Iaponicum,Aceraceae,7,4,5,2,0%,Fair,B,No ,No
+573,209,46.0713900,-118.33097,942,G,35,Japanese Maple,Acer Iaponicum,Aceraceae,7,6,7,3,0%,Poor,B,No ,No
+574,210,46.0714300,-118.3309,949,G,36,Japanese Hornbeam,Carpinus Iaponica,Betulaceae,35,4,45,20,0%,Fair,B,No ,No
+575,211,46.0715000,-118.33082,955,G,37,Japanese Maple,Acer Iaponicum,Aceraceae,7,5,6,3,0%,Fair,B,No ,No
+576,212,46.0714500,-118.33081,952,G,38,Japanese Maple,Acer Iaponicum,Aceraceae,7,6,7,2,0%,Fair,B,No ,No
+577,213,46.0714900,-118.33064,957,G,39,Japanese Maple,Acer Iaponicum,Aceraceae,7,6,7,4,0%,Fair,B,No ,No
+578,214,46.0714000,-118.33074,956,G,40,Iapanese Hornbeam,Carpinus Iaponica,Betulaceae,35,47,45,20,0%,Fair,B,No ,No
+579,215,46.0715400,-118.3307,959,G,41,Japanese Maple,Acer Iaponicum,Aceraceae,7,6,6,4,0%,Fair,B,No ,No
+580,216,46.0714500,-118.33057,960,G,42,Japanese Maple,Acer Iaponicum,Aceraceae,7,4,6,4,0%,Fair,B,No ,No
+581,217,46.0714000,-118.33044,970,G,43,Burr Oak,Quercus macrocarpa,Fagaceae,45,95,60,30,0%,Good,B,No ,No
+582,218,46.0714100,-118.33019,979,G,44,Sierra Redwood,Sequoiadendron giganteum,Fabaceae (Leguminosae),20,63,30,10,0%,Good,B,No ,No
+583,219,46.0713200,-118.33028,981,G,45,Sierra Redwood,Sequoiadendron giganteum,Fabaceae (Leguminosae),20,72,30,11,0%,Good,B,No ,No
+588,220,46.0712100,-118.3302,1104,G,46,Sequoia,Sequoiadendron giganteum,Taxodiaceae,15,68,40,12,0%,Good,B,No ,No
+589,221,46.0711200,-118.32999,1096,G,47,Sycamore,Platanus,Platanaceae,100,150,85,41,30%,Good,B,No ,No
+590,222,46.0712200,-118.33038,995,G,48,Fringe,Chionanthus,Oleaceae,15,16,15,9,0%,Good,B,No ,No
+591,223,46.0711800,-118.33036,998,G,49,Service Berry,Amelanchier,Rosaceae,15,25,25,12,0%,Good,B,No ,No
+592,224,46.0711500,-118.33045,997,G,50,Service Berry,Amelanchier,Rosaceae,15,20,20,14,0%,Good,B,No ,No
+593,225,46.0711500,-118.33035,996,G,51,Fringe,Chionanthus,Oleaceae,15,12,10,7,0%,Good,B,No ,No
+594,226,46.0710900,-118.33036,997,G,52,Hawthorne,Crataegus,Rosaceae,100,73,25,14,80%,Fair,B,No ,No
+595,227,46.0710100,-118.33028,998,G,53,Flowering Dogwood,Cornus,Cornaceae,50,39,25,12,50%,Good,B,No ,No
+596,228,46.0710100,-118.33037,999,G,54,Flowering Dogwood,Cornus,Cornaceae,30,14,15,6.5,50%,Good,B,No ,No
+597,229,46.0709500,-118.33033,995,G,55,White Flowering Dogwood,Cornus,Cornaceae,15,7,12,8,0%,Poor,B,No ,No
+598,230,46.0709300,-118.33035,1000,G,56,White Flowering Dogwood,Cornus,Cornaceae,15,7,12,8,0%,Poor,B,No ,No
+599,231,46.0709500,-118.33037,999,G,57,White Flowering Dogwood,Cornus,Cornaceae,15,7,12,8,0%,Poor,B,No ,No
+600,232,46.0709600,-118.33029,1002,G,58,White Flowering Dogwood,Cornus,Cornaceae,15,7,12,8,0%,Poor,B,No ,No
+601,233,46.0710000,-118.33025,1001,G,59,White Flowering Dogwood,Cornus,Cornaceae,15,7,12,8,0%,Poor,B,No ,No
+602,234,46.0709500,-118.3302,1001,G,60,White Flowering Dogwood,Cornus,Cornaceae,15,7,12,8,0%,Poor,B,No ,No
+603,235,46.0709400,-118.33028,999,G,61,White Flowering Dogwood,Cornus,Cornaceae,15,7,12,8,0%,Poor,B,No ,No
+604,236,46.0708900,-118.33038,1000,G,62,White Flowering Dogwood,Cornus,Cornaceae,15,7,12,8,0%,Poor,B,No ,No
+605,237,46.0708400,-118.33024,1000,G,63,White Flowering Dogwood,Cornus,Cornaceae,15,7,12,8,0%,Poor,B,No ,No
+606,238,46.0708000,-118.33025,1000,G,64,White Flowering Dogwood,Cornus,Cornaceae,15,7,12,8,0%,Poor,B,No ,No
+607,239,46.0707600,-118.33022,998,G,65,White Flowering Dogwood,Cornus,Cornaceae,15,7,12,8,0%,Poor,B,No ,No
+608,240,46.0708600,-118.33017,999,G,66,Kentucky Coffee Tree,Gymnocladus dioica,Fabaceae (Leguminosae),20,58,55,25,0%,Good,B,No ,No
+609,241,46.0709300,-118.33005,998,G,67,Prickly Canter Oil Tree,Kalopanax,Araliaceae,10,10,15,7,0%,Good,B,No ,No
+610,242,46.0709600,-118.33018,1001,G,68,Brewer's Weeping Spruce,Picea breweriana,Pinaceae,100,86,85,22,0%,Good,B,No ,No
+636,268,46.0707300,-118.33033,997,G,69,Flowering Dogwood,Cornus,Cornaceae,7,7,12,8,0%,Fair,B,No,No
+637,269,46.0707300,-118.33033,998,G,70,Flowering Dogwood,Cornus,Cornaceae,7,7,12,8,0%,Fair,B,No,No
+638,270,46.0707400,-118.33032,998,G,71,Flowering Dogwood,Cornus,Cornaceae,7,7,12,8,0%,Fair,B,No,No
+639,271,46.0706600,-118.33032,997,G,72,?,?,?,,69,80,15,0%,Good,A,No,No
+640,272,46.0706100,-118.33024,999,G,73,Paper Birch,Betula papyrifera,Betulaceae,,24,30,15,0%,Good,B,No,No
+693,289,46.0713800,-118.33168,966,H,1,Honey Locust,Gleditsia triacanthos,Fabaceae (Leguminosae),50,84,30,29,0%,Good,A,No,No
+694,290,46.0713000,-118.3318,965,H,2,Honey Locust,Gleditsia Triacanthos,Fabaceae (Leguminosae),50,46,30,24,0%,Good,A,No,No
+695,291,46.0712400,-118.33184,966,H,3,Honey Locust,Gleditsia Triacanthos,Fabaceae (Leguminosae),50,75,35,35,0%,Good,A,No,No
+696,292,46.0711800,-118.33197,964,H,4,Honey Locust,Gleditsia Triacanthos,Fabaceae (Leguminosae),50,68,35,30,0%,Good,A,No,No
+697,293,46.0710800,-118.33207,963,H,5,Honey Locust,Gleditsia Triacanthos,Fabaceae (Leguminosae),50,90,40,29,0%,Good,A,No,No
+698,294,46.0709300,-118.3323,960,H,6,Honey Locust,Gleditsia Triacanthos,Fabaceae (Leguminosae),50,67,35,22,0%,Good,A,No,No
+699,295,46.0710500,-118.33199,963,H,7,Colorado Blue Spruce,Picea pungens 'Glauca',Pinaceae,50,98,55,19,0%,Good,B,No,No
+700,296,46.0711800,-118.33185,963,H,8,Colorado Blue Spruce,Picea pungens 'Glauca',Pinaceae,50,82,55,17,0%,Good,B,No,No
+701,297,46.0710600,-118.33177,964,H,9,Japanese Hornbeam,Carpinus Iaponica,Betulaceae,,17,30,6,0%,Good,B,No,No
+702,298,46.0710400,-118.33175,967,H,10,Japanese Hornbeam,Carpinus Iaponica,Betulaceae,,19,30,6,0%,Good,B,No,No
+703,299,46.0710300,-118.3316,966,H,11,White Flowering Dogwood,Cornus florida,Cornaceae,,15,15,8,0%,Good,B,No,No
+704,448,46.0709300,-118.33175,1198,H,12,White Flowering Dogwood,Cornus florida,Cornaceae,,20,20,16,0%,Good,B,No,No
+705,449,46.0708600,-118.33183,1194,H,13,White Flowering Dogwood,Cornus florida,Cornaceae,,15,23,13,0%,Good,B,No,No
+706,450,46.0708400,-118.33186,1188,H,14,White Flowering Dogwood,Cornus florida,Cornaceae,,20,17,11,0%,Good,B,No,No
+707,451,46.0708000,-118.33194,1185,H,15,White Flowering Dogwood,Cornus florida,Cornaceae,,18,23,11,0%,Good,B,No,No
+708,452,46.0708400,-118.33202,1177,H,16,White Flowering Dogwood,Cornus florida,Cornaceae,,10,15,9,0%,Fair,B,No,No
+709,453,46.0707800,-118.33209,1176,H,17,White Flowering Dogwood,Cornus florida,Cornaceae,10,6,10,4,0%,Fair,B,No,No
+710,454,46.0707900,-118.33214,1172,H,18,White Flowering Dogwood,Cornus florida,Cornaceae,,14,15,7,0%,Good,B,No,No
+711,455,46.0707900,-118.33232,1166,H,19,White Flowering Dogwood,Cornus florida,Cornaceae,,14,22,8,0%,Good,B,No,No
+712,456,46.0707800,-118.33234,1160,H,20,White Flowering Dogwood,Cornus florida,Cornaceae,,12,15,7,0%,Good,B,No,No
+713,457,46.0707700,-118.33253,1154,H,21,White Flowering Dogwood,Cornus florida,Cornaceae,,11,20,7,0%,Good,B,No,No
+714,458,46.0707600,-118.33258,1149,H,22,White Flowering Dogwood,Cornus florida,Cornaceae,,22,20,10,0%,Good,B,No,No
+715,459,46.0707400,-118.33254,1140,H,23,White Flowering Dogwood,Cornus florida,Cornaceae,45,38,20,15,0%,Good,B,No,No
+716,460,46.0705900,-118.33259,1129,H,24,White Flowering Dogwood,Cornus florida,Cornaceae,45,42,23,16,0%,Good,B,No,No
+717,461,46.0705100,-118.33259,1116,H,25,White Flowering Dogwood,Cornus florida,Cornaceae,45,39,23,14,0%,Good,B,No,No
+718,462,46.0704600,-118.33261,1119,H,26,White Flowering Dogwood,Cornus florida,Cornaceae,45,32,20,12,0%,Good,B,No,No
+719,463,46.0704300,-118.3325,1109,H,27,White Flowering Dogwood,Cornus florida,Cornaceae,45,30,20,12,0%,Good,B,No,No
+720,464,46.0704000,-118.33245,1105,H,28,White Flowering Dogwood,Cornus florida,Cornaceae,,12,15,7,0%,Good,B,No,No
+721,465,46.0704000,-118.33242,1094,H,29,White Flowering Dogwood,Cornus florida,Cornaceae,,9,10,5,0%,Poor,C,No,No
+722,466,46.0703700,-118.3324,1092,H,30,White Flowering Dogwood,Cornus florida,Cornaceae,,6,10,4,0%,Poor,C,No,No
+723,467,46.0703800,-118.33221,1090,H,31,White Flowering Dogwood,Cornus florida,Cornaceae,,14,15,6,0%,Good,B,No,No
+724,468,46.0704100,-118.33221,1088,H,32,White Flowering Dogwood,Cornus florida,Cornaceae,,13,12,6,0%,Good,B,No,No
+725,469,46.0704500,-118.33214,1085,H,33,White Flowering Dogwood,Cornus florida,Cornaceae,,16,20,9,0%,Good,B,No,No
+726,470,46.0705500,-118.33174,1080,H,34,White Flowering Dogwood,Cornus florida,Cornaceae,,19,20,9,0%,Good,B,No,No
+727,471,46.0704900,-118.33169,1075,H,35,White Flowering Dogwood,Cornus florida,Cornaceae,,22,25,13,0%,Good,B,No,No
+728,472,46.0704500,-118.33165,1072,H,36,White Flowering Dogwood,Cornus florida,Cornaceae,,24,25,11,0%,Good,B,No,No
+729,473,46.0705100,-118.33161,1070,H,37,Eastern Redbud,Cercis canadensis,Fabaceae (Leguminosae),,25,15,11,0%,Good,B,No,No
+730,474,46.0705000,-118.33144,1064,H,38,Eastern Redbud,Cercis canadensis,Fabaceae (Leguminosae),,29,15,11,0%,Good,B,No,No
+731,475,46.0705300,-118.33142,1062,H,39,Eastern Redbud,Cercis canadensis,Fabaceae (Leguminosae),,28,15,12,0%,Fair,B,No,No
+732,776,46.0705300,-118.33141,1063,H,40,Eastern Redbud,Cercis canadensis,Fabaceae (Leguminosae),,26,15,19,0%,Fair,B,No,No
+733,477,46.0708300,-118.33154,1056,H,41,Eastern Redbud,Cercis canadensis,Fabaceae (Leguminosae),,21,15,10,0%,Poor,B,No,No
+734,478,46.0708400,-118.33151,1056,H,42,Eastern Redbud,Cercis canadensis,Fabaceae (Leguminosae),,23,15,9,0%,Poor,B,No,No
+735,479,46.0703500,-118.33139,1051,H,43,White Fir,Abies Concolor,Pinaceae,35,50,30,4,0%,Good,B,No,No
+736,480,46.0703500,-118.3319,1045,H,44,European White Birch,Betula pendula,Betulaceae,65,60,55,2,0%,Good,B,No,No
+737,481,46.0702200,-118.33226,1043,H,45,Tree of Heaven,Ailanthus altissima,Simaroubaceae,,113,,26,0%,Fair,B,No,No
+738,482,46.0702900,-118.33231,1042,H,46,Silver Maple,Acer saccharinum,Aceraceae,,138,90,41,0%,Fair,B,No,No
+739,483,46.0701600,-118.33245,1036,H,47,White Fir,Abies Concolor,Pinaceae,20,24,20,7,0%,Good,B,No,No
+740,484,46.0701900,-118.33135,1035,H,48,Dogwood,Cornus,Cornaceae,10,6,10,5,0%,Good,B,No,No
+741,485,46.0701900,-118.33146,1032,H,49,Dogwood,Cornus,Cornaceae,10,5,10,3,0%,Good,B,No,No
+742,486,46.0701700,-118.33159,1029,H,50,Dogwood,Cornus,Cornaceae,10,5.5,8,5,0%,Good,B,No,No
+743,487,46.0701500,-118.33165,1029,H,51,Dogwood,Cornus,Cornaceae,10,5,8,2,0%,Good,B,No,No
+744,488,46.0701300,-118.33173,1028,H,52,Dogwood,Cornus,Cornaceae,10,6.5,10,3,0%,Good,B,No,No
+745,489,46.0701300,-118.33181,1024,H,53,Dogwood,Cornus,Cornaceae,10,7,12,4,0%,Good,B,No,No
+746,490,46.0701600,-118.33198,1023,H,54,Dogwood,Cornus,Cornaceae,10,5,8,3,0%,Good,B,No,No
+747,491,46.0701700,-118.33204,1021,H,55,Dogwood,Cornus,Cornaceae,10,5.5,8,3,0%,Good,B,No,No
+748,492,46.0701600,-118.33213,1020,H,56,Dogwood,Cornus,Cornaceae,10,5,9,3,0%,Good,B,No,No
+749,493,46.0701300,-118.33227,1019,H,57,Dogwood,Cornus,Cornaceae,10,5.5,9,2,0%,Good,B,No,No
+750,494,46.0701000,-118.33236,1015,H,58,Dogwood,Cornus,Cornaceae,10,6.5,12,3,0%,Good,B,No,No
+751,347,46.0715500,-118.3313,851,I,1,Little Leaf Linden,Tilia cordata,Tiliaceae,10,21,20,8,0%,Good,A,No,No
+752,348,46.0715500,-118.3313,852,I,2,Little Leaf Linden,Tilia cordata,Tiliaceae,10,21,25,8,0%,Good,A,No,No
+753,349,46.0715500,-118.3313,853,I,3,Little Leaf Linden,Tilia cordata,Tiliaceae,10,22,30,7,0%,Good,A,No,No
+754,350,46.0715500,-118.3313,852,I,4,Little Leaf Linden,Tilia cordata,Tiliaceae,10,21,25,9,0%,Good,A,No,No
+755,351,46.0715500,-118.3313,851,I,5,Little Leaf Linden,Tilia cordata,Tiliaceae,10,17,20,6,0%,Good,A,No,No
+756,352,46.0715500,-118.3313,849,I,6,Little Leaf Linden,Tilia cordata,Tiliaceae,10,22,30,7,0%,Good,A,No,No
+757,353,46.0715500,-118.3313,851,I,7,Little Leaf Linden,Tilia cordata,Tiliaceae,10,14,25,5,0%,Good,A,No,No
+758,354,46.0715500,-118.3313,853,I,8,Little Leaf Linden,Tilia cordata,Tiliaceae,10,13,18,6,0%,Good,A,No,No
+759,355,46.0715500,-118.3313,855,I,9,Sycamore,Platanus,Platanaceae,,163,85,42,50%,Good,B,No,No
+760,356,46.0715900,-118.33188,1012,I,10,Hawthorne,Crataegus,Rosaceae,10,11,12,9,0%,Good,B,No,No
+761,357,46.0717900,-118.3321,987,I,11,Hawthorne,Crataegus,Rosaceae,10,11,20,9,0%,Good,B,No,No
+762,358,46.0717200,-118.33214,986,I,12,Norway Maple,Acer platanoides,Aceraceae,40,71,45,18,0%,Good,B,No,No
+763,359,46.0718000,-118.33214,985,I,13,Hawthorne,Crataegus,Rosaceae,10,10.5,15,4,0%,Good,B,No,No
+764,360,46.0718500,-118.33214,984,I,14,Hawthorne,Crataegus,Rosaceae,10,13,20,8,0%,Good,B,No,No
+765,361,46.0720500,-118.33227,983,I,15,Hawthorne,Crataegus,Rosaceae,10,14,20,8,0%,Good,B,No,No
+766,362,46.0720800,-118.33235,981,I,16,Hawthorne,Crataegus,Rosaceae,10,14,20,9,0%,Good,B,No,No
+767,363,46.0720700,-118.33243,982,I,17,Hawthorne,Crataegus,Rosaceae,10,14,20,9,0%,Good,B,No,No
+768,364,46.0721300,-118.33268,982,I,18,Hawthorne,Crataegus,Rosaceae,10,13,20,9,0%,Good,B,No,No
+769,365,46.0719400,-118.33272,922,I,19,Ash,Fraxinus,Oleaceae,10,18,25,6,0%,Good,B,No,No
+770,366,46.0718800,-118.33283,927,I,20,Ash,Fraxinus,Oleaceae,10,12.5,25,7,0%,Good,B,No,No
+771,367,46.0718400,-118.3329,925,I,21,Ash,Fraxinus,Oleaceae,10,20,25,7,0%,Good,B,No,No
+772,368,46.0718000,-118.33296,926,I,22,Ash,Fraxinus,Oleaceae,10,16.5,25,6,0%,Good,B,No,No
+773,369,46.0717200,-118.333,928,I,23,Ash,Fraxinus,Oleaceae,10,17.5,25,8,0%,Good,B,No,No
+774,370,46.0716800,-118.33305,927,I,24,Ash,Fraxinus,Oleaceae,10,15,25,7,0%,Good,B,No,No
+775,371,46.0716300,-118.33309,928,I,25,Ash,Fraxinus,Oleaceae,10,20.5,25,8,0%,Good,B,No,No
+776,372,46.0717100,-118.33309,932,I,26,Persian parrotia,Parrotia persica,Hamamelidaceae,10,11.5,20,4,0%,Good,B,No,No
+777,373,46.0717200,-118.33308,935,I,27,Persian parrotia,Parrotia persica,Hamamelidaceae,10,11,20,5,0%,Good,B,No,No
+778,374,46.0717400,-118.33308,935,I,28,Persian parrotia,Parrotia persica,Hamamelidaceae,10,12,20,5,0%,Good,B,No,No
+779,375,46.0717900,-118.33282,945,I,29,Persian parrotia,Parrotia persica,Hamamelidaceae,10,12,20,5,0%,Good,B,No,No
+780,376,46.0718500,-118.33279,946,I,30,Persian parrotia,Parrotia persica,Hamamelidaceae,10,10.5,20,5,0%,Good,B,No,No
+781,377,46.0718600,-118.33277,947,I,31,Persian parrotia,Parrotia persica,Hamamelidaceae,10,12,20,5,0%,Good,B,No,No
+782,378,46.0715500,-118.33324,947,I,32,Sweet gum,Liquidambar,Hamamelidaceae,15,32,30,10,0%,Good,B,No,No
+783,379,46.0714800,-118.33331,949,I,33,Sweet gum,Liquidambar,Hamamelidaceae,15,36,30,12,0%,Good,B,No,No
+784,380,46.0714000,-118.33337,948,I,34,Sweet gum,Liquidambar,Hamamelidaceae,15,35,30,11,0%,Good,B,No,No
+785,381,46.0713900,-118.33343,950,I,35,Sweet gum,Liquidambar,Hamamelidaceae,15,37,30,11,0%,Good,B,No,No
+786,382,46.0712700,-118.33336,948,I,36,Japanese Pagoda Tree,Sophora Iaponica,Fabaceae (Leguminosae),17,34,30,14,0%,Good,B,No,No
+787,383,46.0712100,-118.33328,951,I,37,Japanese Pagoda Tree,Sophora Iaponica,Fabaceae (Leguminosae),17,28,30,10,0%,Good,B,No,No
+788,384,46.0711800,-118.33322,951,I,38,Japanese Pagoda Tree,Sophora Iaponica,Fabaceae (Leguminosae),17,32,30,13,0%,Good,B,No,No
+789,385,46.0711200,-118.33313,954,I,39,Japanese Pagoda Tree,Sophora Iaponica,Fabaceae (Leguminosae),17,32,30,13,0%,Good,B,No,No
+790,386,46.0708300,-118.33305,955,K,1,Evergreen,Picea omorika,Pinaceae,22,30,30,8,0%,Good,A,No,No
+791,387,46.0706400,-118.33294,994,K,2,Evergreen,Picea omorika,Pinaceae,22,26,25,10.5,0%,Good,A,No,No
+792,388,46.0705700,-118.33296,993,K,3,Evergreen,Picea omorika,Pinaceae,22,9,7,3,0%,Good,A,No,No
+793,389,46.0705500,-118.33287,994,K,4,Hedge maple,Acer campestre,Aceraceae,22,19,17,8,0%,Fair,B,No,No
+794,390,46.0706100,-118.33282,995,K,5,Sycamore,Platanus,Platanaceae,22,59,45,18,0%,Good,A,No,No
+795,391,46.0705400,-118.33294,995,K,6,Hedge maple,Acer campestre,Aceraceae,22,32,20,13,0%,Fair,B,No,No
+796,392,46.0705400,-118.3328,993,K,7,Flowering dogwood,Cornus florida,Cornaceae,30,28,20,9,0%,Fair,B,No,No
+797,393,46.0706000,-118.33283,993,K,8,Hedge maple,Acer campestre,Aceraceae,22,13,20,12,0%,Fair,B,No,No
+798,394,46.0705100,-118.33275,992,K,9,Sycamore,Platanus,Platanaceae,22,57,45,24,0%,Good,A,No,No
+799,395,46.0705300,-118.33279,985,K,10,Evergreen,Picea omorika,Pinaceae,22,15.5,20,7,0%,Fair,B,No,No
+800,396,46.0704500,-118.33278,989,K,11,Evergreen,Picea omorika,Pinaceae,22,21,30,7,0%,Good,A,No,No
+801,397,46.0704200,-118.33273,989,K,12,Evergreen,Picea omorika,Pinaceae,22,18,20,6,0%,Good,A,No,No
+802,398,46.0704000,-118.3327,987,K,13,Evergreen,Picea omorika,Pinaceae,22,18,22,6,0%,Good,A,No,No
+803,399,46.0704000,-118.33273,987,K,14,Sycamore,Platanus,Platanaceae,22,47,45,24,0%,Good,B,No,No
+804,400,46.0702300,-118.33268,984,K,15,Sycamore,Platanus,Platanaceae,22,115,75,45,0%,Good,B,No,No
+805,401,46.0701200,-118.3328,983,K,16,Red Maple,Acer freemanii,Aceraceae,22,38,50,10,0%,Good,B,No,No
+806,402,46.0701700,-118.3329,985,K,17,Japanese pagoda tree,Sophora Iaponica,Fabaceae (Leguminosae),22,34.5,30,17,0%,Good,B,No,No
+807,403,46.0700900,-118.33283,986,K,18,Japanese pagoda tree,Sophora Iaponica,Fabaceae (Leguminosae),22,44,30,22,0%,Good,B,No,No
+808,404,46.0700600,-118.33297,989,K,19,Japanese pagoda tree,Sophora Iaponica,Fabaceae (Leguminosae),22,48,30,18,0%,Fair,B,No,No
+809,405,46.0700600,-118.33295,979,K,20,Red Maple,Acer freemanii,Aceraceae,22,40,50,6,0%,Good,A,No,No
+810,406,46.0700600,-118.33309,980,K,21,Red maple,Acer freemanii,Aceraceae,22,43.5,50,5,0%,Good,A,No,No
+811,407,46.0700500,-118.33319,978,K,22,Red maple,Acer freemanii,Aceraceae,22,44,50,8,0%,Good,B,No,No
+812,408,46.0700400,-118.3333,976,K,23,Red maple,Acer freemanii,Aceraceae,22,51,50,9,0%,Good,A,No,No
+813,409,46.0700400,-118.33271,979,K,24,Flowering dogwood,Cornus florida,Cornaceae,22,13.5,10,7,0%,Good,B,No,No
+814,410,46.0700300,-118.33283,978,K,25,Flowering dogwood,Cornus florida,Cornaceae,22,18,15,9,0%,Good,B,No,No
+815,411,46.0699700,-118.33292,975,K,26,Flowering dogwood,Cornus florida,Cornaceae,22,19.5,15,8,0%,Good,B,No,No
+816,412,46.0700100,-118.33303,974,K,27,Flowering dogwood,Cornus florida,Cornaceae,22,18,18,7,0%,Good,B,No,No
+817,413,46.0699800,-118.33309,976,K,28,Flowering dogwood,Cornus florida,Cornaceae,22,16,15,8,0%,Good,B,No,No
+818,414,46.0699800,-118.33316,972,K,29,Flowering dogwood,Cornus florida,Cornaceae,22,20,15,8,0%,Good,B,No,No
+819,415,46.0699200,-118.33328,974,K,30,Flowering dogwood,Cornus florida,Cornaceae,22,16,12,8,0%,Good,B,No,No
+820,415,46.0699000,-118.33338,972,K,31,Flowering dogwood,Cornus florida,Cornaceae,22,18,12,7,0%,Good,B,No,No
+821,417,46.0699500,-118.33354,971,K,32,Flowering dogwood,Cornus florida,Cornaceae,22,13,10,7,0%,Good,B,No,No
+822,418,46.0699200,-118.33361,971,K,33,Flowering dogwood,Cornus florida,Cornaceae,22,10,10,5,0%,Good,B,No,No
+823,419,46.0698800,-118.33376,972,K,34,Flowering dogwood,Cornus florida,Cornaceae,22,11.5,15,6,0%,Good,B,No,No
+824,420,46.0698900,-118.33385,972,K,35,Flowering dogwood,Cornus florida,Cornaceae,22,13.5,10,4,0%,Good,B,No,No
+825,421,46.0698700,-118.33412,968,K,36,Flowering dogwood,Cornus florida,Cornaceae,22,17,18,7,0%,Good,B,No,No
+826,422,46.0699200,-118.33404,971,K,37,Red maple,Acer freemanii,Aceraceae,22,42,50,11,0%,Good,B,No,No
+827,423,46.0699400,-118.33394,969,K,38,Red maple,Acer freemanii,Aceraceae,22,46,50,10,0%,Good,B,No,No
+828,585,46.0696200,-118.33469,980,L,1,Maple,Acer freemanii,Aceraceae,,34,25,13,0%,Good,B,No,No
+829,586,46.0696300,-118.33464,979,L,2,Dogwood,Cornus,Cornaceae,20,10,14,9,0%,Good,B,No,No
+830,587,46.0696400,-118.33457,977,L,3,Maple,Acer freemanii,Aceraceae,20,33,50,6,0%,Good,B,No,No
+831,588,46.0696700,-118.3345,977,L,4,Dogwood,Cornus,Cornaceae,20,14,18,7,0%,Good,B,No,No
+832,589,46.0696600,-118.33431,977,L,5,Maple,Acer freemanii,Aceraceae,20,40,45,9,0%,Good,B,No,No
+833,590,46.0697000,-118.33424,977,L,6,Dogwood,Cornus,Cornaceae,10,6,7,3,0%,Good,B,No,No
+834,591,46.0696800,-118.33413,977,L,7,Dogwood,Cornus,Cornaceae,10,19,20,8,0%,Good,B,No,No
+835,592,46.0697000,-118.33408,976,L,8,Maple,Acer freemanii,Aceraceae,10,41,45,10,0%,Good,B,No,No
+836,593,46.0697200,-118.33401,974,L,9,Dogwood,Cornus,Cornaceae,10,17,20,10,0%,Good,B,No,No
+837,594,46.0697300,-118.33389,975,L,10,Dogwood,Cornus,Cornaceae,10,20,18,8,0%,Good,B,No,No
+838,595,46.0697300,-118.33385,974,L,11,Maple,Acer freemanii,Aceraceae,10,46,45,8,0%,Good,B,No,No
+839,596,46.0697500,-118.3338,975,L,12,Dogwood,Cornus,Cornaceae,10,22,25,14,0%,Good,B,No,No
+840,597,46.0697600,-118.33366,974,L,13,Dogwood,Cornus,Cornaceae,10,21,20,12,0%,Good,B,No,No
+841,598,46.0697600,-118.33361,975,L,14,Maple,Acer freemanii,Aceraceae,10,34,45,8,0%,Good,B,No,No
+842,599,46.0697900,-118.33356,975,L,15,Dogwood,Cornus,Cornaceae,20,15,18,7,0%,Good,B,No,No
+843,600,46.0698000,-118.33342,974,L,16,Dogwood,Cornus,Cornaceae,20,21,16,8,0%,Good,B,No,No
+844,601,46.0697800,-118.33338,977,L,17,Maple,Acer freemanii,Aceraceae,20,48,45,17,0%,Good,B,No,No
+845,602,46.0698100,-118.33332,976,L,18,Dogwood,Cornus,Cornaceae,20,18,12,9,0%,Good,B,No,No
+846,603,46.0698400,-118.33315,975,L,19,Dogwood,Cornus,Cornaceae,20,21,25,10,0%,Good,B,No,No
+847,604,46.0698400,-118.33308,978,L,20,Maple,Acer freemanii,Aceraceae,20,47,50,8,0%,Good,B,No,No
+848,605,46.0698800,-118.33302,977,L,21,Dogwood,Cornus,Cornaceae,20,16,20,8,0%,Good,B,No,No
+849,606,46.0698400,-118.33284,976,L,22,Dogwood,Cornus,Cornaceae,20,20,20,10,0%,Good,B,No,No
+850,607,46.0698200,-118.33308,973,L,23,Dogwood,Cornus,Cornaceae,5,4,7,1,0%,Good,B,No,No
+851,608,46.0698100,-118.33314,974,L,24,Dogwood,Cornus,Cornaceae,5,2,6.5,1,0%,Good,B,No,No
+852,609,46.0697800,-118.33335,974,L,25,Dogwood,Cornus,Cornaceae,5,3,7,1.5,0%,Good,B,No,No
+853,610,46.0696200,-118.33403,972,L,26,Cyprus,Cupressus,Cupressaceae,20,11,15,4,0%,Good,B,No,No
+854,611,46.0696100,-118.33413,971,L,27,Cyprus,Cupressus,Cupressaceae,20,11,15,4,0%,Good,B,No,No
+855,612,46.0694000,-118.33403,971,L,28,Blue spruce,Picea pungens glauca,Pinaceae,5,3,4,1.5,0%,Good,B,No,No
+856,635,46.0693600,-118.33411,960,L,29,Sycammore maple,Acer pseudoplatanus,Aceraceae,35,84,50,22,0%,Fair,B,No,No
+857,636,46.0693000,-118.3341,959,L,30,Black Walnut,Iuglano nigra,Iuglandaceae,35,60,60,12,0%,Poor,B,No,No
+858,637,46.0692800,-118.33404,956,L,31,White Cedar,ThuIa occidentalis,Cupressaceae,35,42,25,4,0%,Fair,A,No,No
+859,638,46.0693700,-118.33385,957,L,32,Dogwood,Cornus,Cornaceae,7,6,8,3,0%,Good,B,No,No
+860,639,46.0693900,-118.33388,956,L,33,Dogwood,Cornus,Cornaceae,7,6.5,13,4,0%,Good,B,No,No
+861,640,46.0694300,-118.33341,960,L,34,White Cedar,ThuIa occidentalis,Cupressaceae,25,23.5,20,11.5,0%,Fair,B,No,No
+862,641,46.0694600,-118.33342,955,L,35,Big Leaf Linden,Tilia americana,Tiliaceae,60,92,75,14,0%,Good,B,No,No
+863,642,46.0695400,-118.33313,951,L,36,Sycammore maple,Acer pseudoplatanus,Aceraceae,60,126,70,20,50%,Good,B,No,No
+864,643,46.0695900,-118.33309,954,L,37,Horse Chestnut,Aesculus,Hippocastanaceae,65,137,70,24,75%,Good,B,No,No
+865,644,46.0695800,-118.33306,957,L,38,Cypress,Cupressus,Cupressaceae,12,15,12,7,0%,Fair,B,No,No
+866,645,46.0695900,-118.33294,957,L,39,Weeping Cherry,Prunus serulata pendula,Rosaceae,30,60,25,20,50%,Fair,B,No,No
+867,646,46.0695700,-118.33296,957,L,40,Iuniper ,Iuniperus,Cupressaceae,50,36,30,5,50%,Fair,B,No,No
+868,647,46.0695900,-118.33291,956,L,41,Iuniper ,Iuniperus,Cupressaceae,50,36,35,5,50%,Fair,B,No,No
+869,648,46.0696100,-118.33288,958,L,42,Iuniper ,Iuniperus,Cupressaceae,50,42,40,5,50%,Fair,B,No,No
+870,649,46.0696300,-118.33283,961,L,43,Iuniper ,Iuniperus,Cupressaceae,50,42,30,5,50%,Fair,B,No,No
+871,60,46.0698300,-118.33279,963,L,44,Hawthorne,Crataegus,Rosaceae,10,23,18,9,0%,Good,B,No,No
+872,651,46.0697200,-118.33268,963,L,45,Liberty Elm,Ulmus,Ulmaceae,,5.5,10,2,0%,Good,B,No,No
+873,671,46.0686000,-118.33149,1022,L,1,Hawthorn,Crataegus,Rosaceae,12,11,18,3,0%,Good,B,No,No
+874,672,46.0686300,-118.33159,1016,L,2,Cedar,Cedrus,Pinaceae,10,9,12,4.5,0%,Good,B,No,No
+875,673,46.0686300,-118.3316,1015,L,3,Cedar,Cedrus,Pinaceae,10,9,12,4.5,0%,Good,B,No,No
+876,674,46.0686700,-118.33169,1002,L,4,California Incense Cedar,Calocedrus decurrens,Cupressaceae,55,85,55,9,0%,Good,B,No,No
+877,675,46.0687600,-118.33186,995,L,5,Tamarack,Larix,Pinaceae,12,12,20,6,0%,Good,B,No,No
+878,676,46.0687900,-118.33194,992,L,6,Western Larch,Larix occidentalis,Pinaceae,15,13,30,3,0%,Good,B,No,No
+879,677,46.0688000,-118.33199,993,L,7,Tamarack,Larix,Pinaceae,15,14,20,6,0%,Good,B,No,No
+880,678,46.0688000,-118.33204,996,L,8,Western Larch,Larix occidentalis,Pinaceae,15,14,30,4,0%,Good,B,No,No
+881,679,46.0689400,-118.33235,990,L,9,Hawthorn,Crataegus,Rosaceae,35,32,25,14,50%,Fair,B,No,No
+882,680,46.0689800,-118.3324,990,L,10,Red Maple,Acer rubrum,Aceraceae,12,14,25,4,0%,Fair,B,No,No
+883,681,46.0690300,-118.33238,991,L,11,Red Maple,Acer rubrum,Aceraceae,12,15,25,4,0%,Good,B,No,No
+884,682,46.0690300,-118.33246,992,L,12,Red Maple,Acer rubrum,Aceraceae,12,18,25,5,0%,Good,B,No,No
+885,683,46.0691400,-118.33239,999,L,13,Katsura,Cercidiphyllum Iaponicum,Cercidiphyllaceae,7,13,20,5,0%,Good,B,No,No
+886,684,46.0691300,-118.33227,1003,L,14,Katsura,Cercidiphyllum Iaponicum,Cercidiphyllaceae,7,16,25,6,0%,Good,B,No,No
+887,685,46.0691500,-118.33224,1002,L,15,Katsura,Cercidiphyllum Iaponicum,Cercidiphyllaceae,7,12,20,5,0%,Good,B,No,No
+888,686,46.0692500,-118.33216,1003,L,16,Katsura,Cercidiphyllum Iaponicum,Cercidiphyllaceae,7,8,20,5,0%,Good,B,No,No
+889,687,46.0688900,-118.33139,1002,L,17,Red Alder,Alnus rubra,Betulaceae,12,6,15,6,0%,Fair,B,No,No
+890,688,46.0689200,-118.33146,1000,L,18,Red Alder,Alnus rubra,Betulaceae,12,5,10,3,0%,Fair,B,No,No
+891,689,46.0687200,-118.33137,1003,L,19,Red Alder,Alnus rubra,Betulaceae,12,6,10,4,0%,Fair,B,No,No
+892,690,46.0686600,-118.33122,1006,L,20,Red Alder,Alnus rubra,Betulaceae,12,6,15,4,0%,Poor,B,No,No
+893,691,46.0687100,-118.33145,1009,L,21,Red Alder,Alnus rubra,Betulaceae,12,8,15,6,0%,Poor,B,No,No
+894,692,46.0687000,-118.33164,1011,L,22,Cedar,Cedrus,Pinaceae,12,8,12,5,0%,Good,B,No,No
+895,693,46.0686700,-118.33149,1011,L,23,Hawthorn,Crataegus,Rosaceae,12,10,15,3,0%,Good,B,No,No
+896,694,46.0687600,-118.3315,1012,L,24,Hawthorn,Crataegus,Rosaceae,12,14,15,4,0%,Good,B,No,No
+897,695,46.0701100,-118.33153,891,L,25,Flowering Dogwood,Cornus florida,Cornaceae,20,7,12,5,0%,Poor,B,No,No
+898,696,46.0701000,-118.33157,973,L,26,Flowering Dogwood,Cornus florida,Cornaceae,20,10,12,7,0%,Poor,B,No,No
+899,697,46.0700700,-118.33173,979,L,27,Flowering Dogwood,Cornus florida,Cornaceae,20,9,15,8,0%,Fair,B,No,No
+900,698,46.0700200,-118.33178,980,L,28,Flowering Dogwood,Cornus florida,Cornaceae,20,8,12,5,0%,Fair,B,No,No
+901,699,46.0700400,-118.33187,983,L,29,Flowering Dogwood,Cornus florida,Cornaceae,20,8,12,5,0%,Fair,B,No,No
+902,700,46.0700200,-118.332,981,L,30,European Hornbeam,Carpinus betulus,Betulaceae,55,69,45,21,0%,Good,A,No,No
+903,701,46.0700300,-118.33222,979,L,31,European Hornbeam,Carpinus betulus,Betulaceae,55,65,45,19,0%,Good,A,No,No
+904,702,46.0699700,-118.33238,980,L,32,European Hornbeam,Carpinus betulus,Betulaceae,55,64,45,19,0%,Good,A,No,No
+905,703,46.0698500,-118.33264,982,L,33,Hawthorn,Crataegus,Rosaceae,12,20,20,6,0%,Good,B,No,No
+906,704,46.0698000,-118.33263,984,L,34,Hawthorn,Crataegus,Rosaceae,12,18,15,4,0%,Good,B,No,No
+907,705,46.0697300,-118.33263,981,L,35,Hawthorn,Crataegus,Rosaceae,12,19,20,4,0%,Good,B,No,No
+908,706,46.0697500,-118.33249,980,L,36,Red Maple,Acer rubrum,Aceraceae,15,15,25,3,0%,Poor,C,No,No
+909,707,46.0697100,-118.33249,980,L,37,Red Maple,Acer rubrum,Aceraceae,15,15,25,3,0%,Good,B,No,No
+910,708,46.0697100,-118.33243,982,L,38,Red Maple,Acer rubrum,Aceraceae,15,14,28,3,0%,Good,B,No,No
+911,709,46.0697400,-118.33234,983,L,39,Red Maple,Acer rubrum,Aceraceae,15,13,28,3,0%,Good,B,No,No
+912,710,46.0697400,-118.33233,976,L,40,Red Maple,Acer rubrum,Aceraceae,15,12,28,4,0%,Good,B,No,No
+913,711,46.0697400,-118.33231,974,L,41,Red Maple,Acer rubrum,Aceraceae,15,14,28,4,0%,Good,B,No,No
+914,712,46.0697200,-118.33225,975,L,42,Red Maple,Acer rubrum,Aceraceae,15,19,30,4,0%,Good,B,No,No
+915,713,46.0698800,-118.3326,977,L,43,Red Maple,Acer rubrum,Aceraceae,20,37,50,6,0%,Good,B,No,No
+916,714,46.0699100,-118.33249,975,L,44,Red Maple,Acer rubrum,Aceraceae,20,36,50,6,0%,Good,B,No,No
+917,715,46.0699000,-118.3324,977,L,45,Red Maple,Acer rubrum,Aceraceae,20,36,50,6,0%,Good,B,No,No
+918,716,46.0698900,-118.33231,982,L,46,Red Maple,Acer rubrum,Aceraceae,20,33,50,7,0%,Good,B,No,No
+919,717,46.0699500,-118.33219,984,L,47,Red Maple,Acer rubrum,Aceraceae,20,31,50,6,0%,Good,B,No,No
+920,718,46.0699400,-118.33207,986,L,48,Red Maple,Acer rubrum,Aceraceae,20,35,50,5,0%,Good,B,No,No
+921,719,46.0699600,-118.33192,988,L,49,Red Maple,Acer rubrum,Aceraceae,20,27,50,3,0%,Good,B,No,No
+922,720,46.0698900,-118.33189,987,L,50,Red Maple,Acer rubrum,Aceraceae,20,33,50,7,0%,Good,B,No,No
+923,721,46.0699600,-118.33179,989,L,51,Red Maple,Acer rubrum,Aceraceae,20,33,50,6,0%,Good,B,No,No
+924,722,46.0700000,-118.33168,993,L,52,Red Maple,Acer rubrum,Aceraceae,20,21,50,4,0%,Good,B,No,No
+925,723,46.0699600,-118.33141,997,L,53,Katsura,Cercidiphyllum Iaponicum,Cercidiphyllaceae,15,15,25,6,0%,Good,A,No,No
+926,724,46.0699900,-118.33142,1000,L,54,Katsura,Cercidiphyllum Iaponicum,Cercidiphyllaceae,15,10,20,3,0%,Poor,C,No,No
+927,725,46.0699700,-118.33137,1001,L,55,Katsura,Cercidiphyllum Iaponicum,Cercidiphyllaceae,15,22,30,6,0%,Good,A,No,No
+928,726,46.0699600,-118.33136,1002,L,56,Katsura,Cercidiphyllum Iaponicum,Cercidiphyllaceae,15,14,25,5,0%,Good,C,No,No
+929,727,46.0699600,-118.33134,1002,L,57,Katsura,Cercidiphyllum Iaponicum,Cercidiphyllaceae,15,18,25,6,0%,Good,A,No,No
+930,728,46.0699500,-118.33128,1002,L,58,Katsura,Cercidiphyllum Iaponicum,Cercidiphyllaceae,15,15,15,7,0%,Good,C,No,No
+931,729,46.0699400,-118.33132,1004,L,59,Katsura,Cercidiphyllum Iaponicum,Cercidiphyllaceae,15,19,20,7,0%,Good,B,No,No
+932,730,46.0698200,-118.33106,1003,L,60,Katsura,Cercidiphyllum Iaponicum,Cercidiphyllaceae,15,15,20,6,0%,Good,B,No,No
+933,731,46.0697900,-118.33105,1003,L,61,Katsura,Cercidiphyllum Iaponicum,Cercidiphyllaceae,15,16,15,6,0%,Good,C,No,No
+934,732,46.0697500,-118.33119,1006,L,62,Katsura,Cercidiphyllum Iaponicum,Cercidiphyllaceae,15,16,20,8,0%,Good,B,No,No
+935,733,46.0697400,-118.33116,1007,L,63,Katsura,Cercidiphyllum Iaponicum,Cercidiphyllaceae,15,12,15,7,0%,Good,C,No,No
+936,734,46.0697200,-118.33118,1009,L,64,Katsura,Cercidiphyllum Iaponicum,Cercidiphyllaceae,15,17,25,9,0%,Good,B,No,No
+937,735,46.0697200,-118.33117,1007,L,65,Katsura,Cercidiphyllum Iaponicum,Cercidiphyllaceae,15,18,25,7,0%,Good,C,No,No
+938,736,46.0697000,-118.33118,1010,L,66,Katsura,Cercidiphyllum Iaponicum,Cercidiphyllaceae,15,12,15,6,0%,Good,B,No,No
+939,737,46.0696900,-118.3311,1004,L,67,Flowering Dogwood,Cornus florida,Cornaceae,20,11,20,6,0%,Good,B,No,No
+940,738,46.0697600,-118.3311,1004,L,68,Flowering Dogwood,Cornus florida,Cornaceae,20,7,10,4,0%,Poor,C,No,No
+941,739,46.0698400,-118.33111,1000,L,69,Flowering Dogwood,Cornus florida,Cornaceae,20,6,12,3,0%,Poor,C,No,No
+942,740,46.0698500,-118.33112,1001,L,70,Flowering Dogwood,Cornus florida,Cornaceae,20,10,12,8,0%,Good,B,No,No
+943,741,46.0699100,-118.33116,999,L,71,Flowering Dogwood,Cornus florida,Cornaceae,20,10,12,5,0%,Fair,B,No,No
+944,742,46.0699900,-118.3312,1000,L,72,Flowering Dogwood,Cornus florida,Cornaceae,20,10,12,6,0%,Good,B,No,No
+945,744,46.0695900,-118.33121,1009,L,73,Catalpa,Catalpa bignonioides,Bignoniaceae,100,123,55,24,50%,Fair,B,No,No
+946,745,46.0696800,-118.33136,1019,L,74,Persian Ironwood,Parrotia persica,Hamamelidaceae,15,5,6,2,0%,Good,A,No,No
+947,746,46.0696800,-118.33136,1019,L,75,Persian Ironwood,Parrotia persica,Hamamelidaceae,15,9,6,2,0%,Poor,C,No,No
+948,747,46.0696200,-118.33138,1017,L,76,Persian Ironwood,Parrotia persica,Hamamelidaceae,15,8,12,3,0%,Poor,B,No,No
+949,748,46.0696000,-118.33135,1018,L,77,Persian Ironwood,Parrotia persica,Hamamelidaceae,15,8,6,2,0%,Poor,C,No,No
+950,749,46.0695400,-118.33129,1017,L,78,Persian Ironwood,Parrotia persica,Hamamelidaceae,15,7,6,3,0%,Poor,C,No,No
+951,750,46.0694500,-118.33172,1019,L,79,Water Birch,Betula nigra,Betulaceae,20,28,40,9,0%,Good,B,No,No
+952,751,46.0694900,-118.33186,1018,L,80,Water Birch,Betula nigra,Betulaceae,20,26,40,11,0%,Good,B,No,No
+953,752,46.0694600,-118.33186,1017,L,81,Water Birch,Betula nigra,Betulaceae,20,20,30,8,0%,Fair,B,No,No
+954,753,46.0694700,-118.33173,1016,L,82,Water Birch,Betula nigra,Betulaceae,20,28,40,14,0%,Good,B,No,No
+955,754,46.0695000,-118.33166,1017,L,83,Water Birch,Betula nigra,Betulaceae,20,20,35,9,0%,Good,B,No,No
+956,755,46.0695100,-118.33164,1016,L,84,Water Birch,Betula nigra,Betulaceae,20,28,40,16,0%,Good,B,No,No
+957,762,46.0694100,-118.33124,1018,L,91,Pine,Pinus,Pinaceae,20,32,30,10,0%,Good,B,No,No
+958,763,46.0694100,-118.3312,1016,L,92,Pine,Pinus,Pinaceae,20,33,25,13,0%,Good,B,No,No
+959,764,46.0694900,-118.33117,1016,L,93,Pine,Pinus,Pinaceae,20,41,25,10,0%,Good,B,No,No
+960,765,46.0695800,-118.33113,1012,L,94,Pine,Pinus,Pinaceae,7,5,7,2,0%,Good,A,No,No
+961,766,46.0693000,-118.33122,1012,L,95,Serviceberry,Amelanchier alnifolia,Rosaceae,20,9,15,7,0%,Good,B,No,No
+962,767,46.0692900,-118.33127,1009,L,96,Serviceberry,Amelanchier alnifolia,Rosaceae,20,9,15,8,0%,Good,B,No,No
+963,768,46.0693100,-118.33133,1012,L,97,Serviceberry,Amelanchier alnifolia,Rosaceae,20,7,15,7,0%,Good,B,No,No
+964,769,46.0693200,-118.33123,1011,L,98,Serviceberry,Amelanchier alnifolia,Rosaceae,20,7,15,7,0%,Good,B,No,No
+965,770,46.0693000,-118.33121,1014,L,99,Serviceberry,Amelanchier alnifolia,Rosaceae,20,8,15,8,0%,Good,B,No,No
+966,771,46.0692300,-118.33118,1012,L,100,Serviceberry,Amelanchier alnifolia,Rosaceae,20,9,15,9,0%,Good,B,No,No
+967,772,46.0693100,-118.33126,1009,L,101,Cottonwood,Populus fremontii,Salicaceae,20,76,50,20,0%,Good,B,No,No
+968,773,46.0693200,-118.33133,1010,L,102,Cottonwood,Populus fremontii,Salicaceae,20,77,60,22,0%,Good,B,No,No
+969,774,46.0691700,-118.3312,941,L,103,Pine,Pinus,Pinaceae,20,37,35,12,0%,Fair,B,No,No
+970,775,46.0692000,-118.33129,948,L,104,Pine,Pinus,Pinaceae,20,34,35,13,0%,Fair,B,No,No
+971,776,46.0692500,-118.33136,952,L,105,Pine,Pinus,Pinaceae,20,31,35,12,0%,Fair,B,No,No
+972,777,46.0693000,-118.3315,957,L,106,Pine,Pinus,Pinaceae,20,29,35,12,0%,Fair,B,No,No
+973,778,46.0693400,-118.33154,963,L,107,Pine,Pinus,Pinaceae,20,38,35,13,0%,Fair,B,No,No
+974,779,46.0692500,-118.33161,962,L,108,Pine,Pinus,Pinaceae,20,35,35,11,0%,Fair,B,No,No
+975,780,46.0693500,-118.33153,965,L,109,Pine,Pinus,Pinaceae,20,29,35,10,0%,Fair,C,No,No
+976,781,46.0692200,-118.33145,964,L,110,Pine,Pinus,Pinaceae,20,33,35,12,0%,Fair,B,No,No
+977,782,46.0691400,-118.33178,970,L,111,Poplar,Populus alba,Salicaceae,10,34,35,13,0%,Good,B,No,No
+978,783,46.0691300,-118.33166,968,L,112,Poplar,Populus alba,Salicaceae,10,45,45,15,0%,Good,B,No,No
+979,784,46.0691200,-118.33169,976,L,113,Poplar,Populus alba,Salicaceae,10,25,40,10,0%,Good,B,No,No
+980,785,46.0692100,-118.33175,975,L,114,Poplar,Populus alba,Salicaceae,10,20,35,6,0%,Good,B,No,No
+981,786,46.0694200,-118.33189,980,L,115,Katsura,Cercidiphyllum Iaponicum,Cercidiphyllaceae,12,17,25,7,0%,Good,B,No,No
+982,787,46.0692600,-118.33191,984,L,116,Katsura,Cercidiphyllum Iaponicum,Cercidiphyllaceae,12,11,25,5,0%,Good,B,No,No
+983,788,46.0693600,-118.33201,986,L,117,Katsura,Cercidiphyllum Iaponicum,Cercidiphyllaceae,12,16,20,7,0%,Good,B,No,No
+984,789,46.0691500,-118.33191,984,L,118,Katsura,Cercidiphyllum Iaponicum,Cercidiphyllaceae,12,15,30,6,0%,Good,B,No,No
+985,790,46.0692500,-118.33201,987,L,119,Katsura,Cercidiphyllum Iaponicum,Cercidiphyllaceae,12,22,30,6,0%,Good,B,No,No
+986,791,46.0693500,-118.33193,985,L,120,Flowering Dogwood,Cornus florida,Cornaceae,15,13,20,6,0%,Good,B,No,No
+987,792,46.0694300,-118.33193,985,L,121,Flowering Dogwood,Cornus florida,Cornaceae,15,9,15,5,0%,Good,B,No,No
+988,795,46.0694400,-118.33207,980,L,124,Flowering Dogwood,Cornus florida,Cornaceae,70,34,35,14,0%,Good,B,No,No
+989,796,46.0692300,-118.33238,984,L,125,Birch,Betula,Betulaceae,70,70,60,25,0%,Fair,B,No,No
+990,797,46.0694200,-118.33237,978,L,126,Weeping Cherry,Prunus,Rosaceae,17,32,25,11,0%,Good,A,No,No
+991,798,46.0693400,-118.33245,978,L,127,Weeping Cherry,Prunus,Rosaceae,17,43,25,19,0%,Good,A,No,No
+992,799,46.0694900,-118.33201,930,L,128,Flowering Plum (multi-stemmed),Prunus,Rosaceae,30,22,25,8,0%,Good,B,No,No
+993,800,46.0694900,-118.33204,936,L,129,Flowering Plum,Prunus,Rosaceae,30,16,25,7,0%,Good,B,No,No
+994,801,46.0694400,-118.33199,939,L,130,Japanese Maple (multi-stemmed),Acer palmatum,Sapindaceae,30,19,20,12,0%,Good,B,No,No
+995,803,46.0694600,-118.33083,973,M,1,Water Birch,Betula occidentalis,Betulaceae,30,42,30,18,0%,Good,B,No,No
+996,804,46.0695300,-118.33079,974,M,2,Willow (wild),Salix,Salicaceae,18,51,40,13,0%,Good,B,No,No
+997,805,46.0695400,-118.33053,980,M,3,Horse Chestnut (multi-stemmed),Aesculus,Sapindaceae,25,42,45,10,0%,Fair,B,No,No
+998,806,46.0695400,-118.33052,981,M,4,Horse Chestnut,Aesculus,Sapindaceae,20,58,45,16,0%,Fair,B,No,No
+999,807,46.0696500,-118.33035,982,M,5,Water Birch (multi-stemmed),Betula occidentalis,Betulaceae,10,16,35,10,0%,Good,B,No,No
+1000,808,46.0696900,-118.33035,980,M,6,Weeping Birch,Betula pendula youngii,Betulaceae,20,8,5,4,0%,Poor,B,No,No
+1001,809,46.0696900,-118.33037,986,M,7,Cherry (multi-stemmed),Prunus,Rosaceae,20,16,20,13,0%,Good,B,No,No
+1002,810,46.0697300,-118.33033,986,M,8,Sycamore Maple,Acer pseudoplatanus,Sapindaceae,12,19,35,7,0%,Good,B,No,No
+1003,811,46.0697500,-118.33027,992,M,9,Ginkgo,Ginkgo biloba,Ginkgoaceae,22,51,50,22,0%,Good,B,No,No
+1004,812,46.0699100,-118.33038,990,M,10,Paper Birch,Betula papyrifera,Betulaceae,20,19,40,11,0%,Good,B,No,No
+1005,813,46.0698800,-118.33034,990,M,11,Paper Birch,Betula papyrifera,Betulaceae,20,19,40,11,0%,Good,B,No,No
+1006,814,46.0698800,-118.33026,992,M,12,Paper Birch,Betula papyrifera,Betulaceae,20,21,40,13,0%,Good,B,No,No
+1007,815,46.0696700,-118.33042,994,M,13,Weeping Redwood,Sequoiadendron giganteum 'Pendulum',Sequoioideae,10,6,9,1,0%,Good,A,No,No
+1008,816,46.0695900,-118.33063,996,M,14,Japanese Maple (multi-stemmed),Acer palmatum,Sapindaceae,40,38,25,14,70%,Poor,B,No,No
+1009,817,46.0696500,-118.33065,995,M,15,Pine,Pinus,Pinaceae,25,74,45,18,0%,Good,B,No,No
+1010,818,46.0696400,-118.33081,992,M,16,Horse Chestnut,Aesculus,Sapindaceae,40,83,45,21,0%,Good,B,No,No
+1011,819,46.0697400,-118.33088,994,M,17,Douglas Fir,Pseudotsuga menziesii,Pinaceae,15,46,35,17,0%,Good,C,No,No
+1012,820,46.0697700,-118.33092,991,M,18,Hawthorn,Crataegus,Rosaceae,15,15,15,4,0%,Fair,B,No,No
+1013,821,46.0698100,-118.33096,993,M,19,Douglas Fir,Pseudotsuga menziesii,Pinaceae,15,38,35,12,0%,Good,C,No,No
+1014,822,46.0699000,-118.33088,995,M,20,Hawthorn,Crataegus,Rosaceae,15,26,25,11,0%,Good,B,No,No
+1015,823,46.0699200,-118.33073,993,M,21,Japanese Maple,Acer palmatum,Sapindaceae,15,6,12,4,0%,Poor,B,No,No
+1016,824,46.0699500,-118.33049,995,M,22,Japanese Maple,Acer palmatum,Sapindaceae,15,7,15,5,0%,Good,B,No,No
+1017,825,46.0701700,-118.33116,958,M,23,Hawthorn,Crataegus,Rosaceae,15,22,25,11,0%,Good,B,No,No
+1018,826,46.0700400,-118.33101,965,M,24,Hawthorn,Crataegus,Rosaceae,15,22,25,11,0%,Good,B,No,No
+1019,827,46.0700700,-118.33097,963,M,25,Hawthorn,Crataegus,Rosaceae,15,17,23,10,0%,Good,B,No,No
+1020,828,46.0700400,-118.33093,965,M,26,White Fir,Abies concolor,Pinaceae,25,46,33,10,0%,Fair,A,No,No
+1021,829,46.0701400,-118.33076,966,M,27,Elm,Ulmus,Ulmaceae,115,180,100,46,50%,Good,A,No,No
+1022,830,46.0702400,-118.33063,967,M,28,Dogwood,Cornus,Cornaceae,10,5,8.5,4,0%,Good,A,No,No
+1023,831,46.0702200,-118.33063,968,M,29,Oak,Quercus,Fagaceae,30,69,60,28,30%,Good,B,No,No
+1024,832,46.0701800,-118.33053,971,M,30,Dogwood,Cornus,Cornaceae,10,7,12,6,0%,Good,B,No,No
+1025,833,46.0699100,-118.3305,972,M,31,Beech,Fagus,Fagaceae,15,21,35,9,0%,Good,A,No,No
+1026,834,46.0702700,-118.33037,978,M,32,Dogwood,Cornus,Cornaceae,10,8,10,6,0%,Good,B,No,No
+1027,835,46.0700600,-118.33044,981,M,33,Beech,Fagus,Fagaceae,15,18,30,7,0%,Good,A,No,No
+1028,836,46.0700400,-118.33034,979,M,34,Cottonwood,Populus,Salicaceae,70,164,80,34,0%,Fair,B,No,No
+1029,837,46.0698500,-118.33036,977,M,35,Norway Maple,Acer platanoides,Aceraceae,35,69,40,18,0%,Fair,B,No,No
+1030,838,46.0698000,-118.33015,977,M,36,Sycamore Maple,Acer pseudoplatanus,Sapindaceae,30,41,40,16,0%,Fair,B,No,No
+1031,839,46.0698100,-118.33003,973,M,37,Water Birch,Betula occidentalis,Betulaceae,12,26,30,15,0%,Poor,B,No,No
+1032,840,46.0699300,-118.33011,976,M,38,Norway Maple,Acer platanoides,Aceraceae,30,36,40,18,0%,Good,B,No,No
+1033,841,46.0699200,-118.33015,975,M,39,Norway Maple,Acer platanoides,Aceraceae,30,40,50,12,0%,Poor,B,No,No
+1034,842,46.0699200,-118.33021,976,M,40,Water Birch (multi-stemmed),Betula occidentalis,Betulaceae,10,17,30,16,0%,Good,B,No,No
+1035,843,46.0699300,-118.33012,976,M,41,Horse Chestnut,Aesculus,Sapindaceae,30,36,35,15,0%,Poor,B,No,No
+1036,844,46.0700800,-118.33033,979,M,42,Silver Maple,Acer saccharinum,Sapindaceae,30,93,60,36,40%,Good,B,No,No
+1037,845,46.0702800,-118.33036,981,M,43,Dogwood,Cornus,Cornaceae,10,7,12,5,0%,Good,B,No,No
+1038,846,46.0702700,-118.33029,979,M,44,Dogwood,Cornus,Cornaceae,10,9,12,8,0%,Good,B,No,No
+1039,847,46.0700800,-118.33018,978,M,45,Norway Maple,Acer platanoides,Aceraceae,35,77,60,29,0%,Good,B,No,No
+1040,848,46.0701300,-118.33011,975,M,46,Norway Maple,Acer platanoides,Aceraceae,35,56,60,22,50%,Good,B,No,No
+1041,849,46.0703000,-118.33009,980,M,47,Ash,Fraxinus,Oleaceae,,70,56,22,20%,Good,A,No,No
+1042,850,46.0702500,-118.33001,981,M,48,Ash,Fraxinus,Oleaceae,,67,55,29,20%,Good,A,No,No
+1043,851,46.0702400,-118.32988,982,M,49,Douglas Fir,Pseudotsuga menziesii,Pinaceae,40,90,80,26,0%,Good,B,No,No
+1044,852,46.0700200,-118.32969,593,M,50,Burr Oak,Quercus macrocarpa,Fagaceae,12,9,20,8,0%,Good,A,No,No
+1045,853,46.0700700,-118.32983,592,M,51,Burr Oak,Quercus macrocarpa,Fagaceae,20,18,40,10,0%,Good,B,No,No
+1046,854,46.0701700,-118.32966,630,M,52,Sycamore Maple (multi-stemmed),Acer pseudoplatanus,Sapindaceae,35,39,55,22,0%,Good,B,No,No
+1047,855,46.0701900,-118.32966,645,M,53,Sycamore Maple,Acer pseudoplatanus,Sapindaceae,35,38,55,17,0%,Good,B,No,No
+1048,856,46.0701300,-118.32974,661,M,54,Norway Maple,Acer platanoides,Aceraceae,45,78,65,28,0%,Good,A,No,No
+1049,857,46.0700300,-118.32994,672,M,55,Elm,Ulmus,Ulmaceae,55,89,75,30,0%,Fair,A,No,No
+1050,858,46.0700100,-118.32996,693,M,56,Purple Birch,Betula pendula,Betulaceae,20,18,42,8,0%,Fair,A,No,No
+1051,859,46.0699100,-118.33,717,M,57,Western Red Cedar,ThuIa plicata,Cupressaceae,,43,45,13,0%,Good,B,No,No
+1052,860,46.0699000,-118.33007,725,M,58,Western Red Cedar,ThuIa plicata,Cupressaceae,,27,40,8,0%,Good,B,No,No
+1053,861,46.0699000,-118.32998,739,M,59,Western Red Cedar,ThuIa plicata,Cupressaceae,,33,45,14,0%,Good,B,No,No
+1054,862,46.0698600,-118.33005,742,M,60,Western Red Cedar,ThuIa plicata,Cupressaceae,,23,35,10,0%,Good,B,No,No
+1055,863,46.0698000,-118.32994,758,M,61,Crack Willow,Salix fragilis,Salicaceae,,104,45,34,0%,Good,B,No,No
+1056,864,46.0697000,-118.33015,789,M,62,Water Birch (multi-stemmed),Betula occidentalis,Betulaceae,12,15,40,17,0%,Good,B,No,No
+1057,865,46.0696500,-118.33018,800,M,63,Hemlock,Tsuga canadensis,Pinaceae,8,2,4,3,0%,Poor,B,No,No
+1058,866,46.0697300,-118.33018,812,M,64,Sycamore Maple,Acer pseudoplatanus,Sapindaceae,35,57,50,18,0%,Fair,B,No,No
+1059,867,46.0696700,-118.33023,821,M,65,?,?,?,8,11,15,4,0%,Good,B,No,No
+1060,868,46.0696200,-118.33032,837,M,66,Indian Bean Tree,Catalpa,Bignoniaceae,20,32,35,12,0%,Good,B,No,No
+1061,869,46.0696200,-118.33029,844,M,67,White Cedar,ThuIa occidentalis,Cupressaceae,10,5,6,2,0%,Good,A,No,No
+1062,870,46.0696200,-118.33035,859,M,68,Curly Willow,Salix matsudana 'Tortuosa',Salicaceae,25,59,45,30,0%,Fair,A,No,No
+1063,871,46.0695200,-118.3303,863,M,69,Pine,Pinus,Pinaceae,30,64,50,21,0%,Fair,A,No,No
+1064,872,46.0695000,-118.33051,870,M,70,Red Alder,Alnus rubra,Betulaceae,45,32,40,14,0%,Poor,B,No,No
+1065,873,46.0694700,-118.33045,880,M,71,Western Red Cedar,ThuIa plicata,Cupressaceae,15,17,10,4,0%,Fair,B,No,No
+1066,874,46.0694100,-118.33041,1001,M,72,Curly Willow,Salix matsudana 'Tortuosa',Salicaceae,45,114,65,30,0%,Fair,A,No,No
+1067,875,46.0694100,-118.33041,994,M,73,Canadian Hemlock,Tsuga canadensis,Pinaceae,12,10,5,3,0%,Poor,A,No,No
+1068,876,46.0694100,-118.33041,995,M,74,Dawn Redwood,Metasequoia glyptostroboides,Cupressaceae,25,70,60,19,25%,Good,A,No,No
+1069,877,46.0694100,-118.33041,994,M,75,Little Leaf Linden,Tilia cordata,Tiliaceae,25,66,70,14,0%,Good,B,No,No
+1070,878,46.0694100,-118.33041,993,M,76,Water Birch,Betula occidentalis,Betulaceae,35,42,35,19,0%,Fair,B,No,No
+1071,879,46.0694100,-118.33041,992,N,1,Eastern Redbud,Cercis canadensis,Fabaceae,15,42,20,8,0%,Poor,B,No,No
+1072,880,46.0694100,-118.33041,992,N,2,Incense Cedar,Calocedrus decurrens,Cupressaceae,9,12,18,4,0%,Good,A,No,No
+1073,881,46.0694100,-118.33041,993,N,3,Hawthorn,Crataegus,Rosaceae,20,16,25,10.5,0%,Good,B,No,No
+1074,882,46.0694100,-118.33041,991,N,4,Hawthorn,Crataegus,Rosaceae,20,27,25,7,0%,Good,B,No,No
+1075,883,46.0694100,-118.33041,990,N,5,Hawthorn,Crataegus,Rosaceae,20,25,25,10,0%,Good,B,No,No
+1076,884,46.0694100,-118.33041,991,N,6,Hawthorn,Crataegus,Rosaceae,20,39,25,14,0%,Good,B,No,No
+1077,885,46.0694100,-118.33041,991,N,7,Hawthorn,Crataegus,Rosaceae,20,44,28,12,0%,Good,B,No,No
+1078,886,46.0694100,-118.33041,985,N,8,Hawthorn,Crataegus,Rosaceae,20,44,30,12,0%,Good,B,No,No
+1079,887,46.0694100,-118.33041,988,N,9,Hawthorn,Crataegus,Rosaceae,20,53,30,16,0%,Good,B,No,No
+1080,888,46.0694100,-118.33041,988,N,10,Incense Cedar,Calocedrus decurrens,Cupressaceae,50,116,65,12,50%,Good,B,No,No
+1081,889,46.0694100,-118.33041,982,N,11,Maple,Acer,Sapindaceae or Aceraceae,20,28,20,10,50%,Good,B,No,No
+1082,890,46.0694100,-118.33041,982,N,12,Maple,Acer,Sapindaceae or Aceraceae,20,24,20,9,50%,Good,B,No,No
+1083,891,46.0694100,-118.33041,983,N,13,Hawthorn,Crataegus,Rosaceae,10,15,20,3,0%,Poor,C,No,No
+1084,892,46.0694100,-118.33041,983,N,14,Maple,Acer,Sapindaceae or Aceraceae,20,26,23,13,0%,Good,A,No,No
+1085,893,46.0694100,-118.33041,980,N,15,Maple,Acer,Sapindaceae or Aceraceae,20,29,30,13,0%,Good,B,No,No
+1086,894,46.0694100,-118.33041,982,N,16,Maple,Acer,Sapindaceae or Aceraceae,20,28,30,13,0%,Good,B,No,No
+1087,895,46.0694100,-118.33041,982,N,17,Maple,Acer,Sapindaceae or Aceraceae,20,34,30,13,0%,Good,B,No,No
+1088,896,46.0694100,-118.33041,981,N,18,Maple,Acer,Sapindaceae or Aceraceae,20,23,25,10,0%,Good,B,No,No
+1089,897,46.0694100,-118.33041,982,N,19,Maple,Acer,Sapindaceae or Aceraceae,20,27,25,11,0%,Good,B,No,No
+1090,898,46.0694100,-118.33041,980,N,20,Maple,Acer,Sapindaceae or Aceraceae,20,24,20,13,0%,Good,B,No,No
+1091,899,46.0691100,-118.33115,937,N,21,Hornbeam,Carpinus betulus,Betulaceae,20,48,50,15,0%,Good,B,No,No
+1092,900,46.0688600,-118.33106,952,N,22,Hornbeam,Carpinus betulus,Betulaceae,20,56,45,16,0%,Good,B,No,No
+1093,901,46.0688800,-118.33097,959,N,23,Flowering Dogwood,Cornus florida,Cornaceae,20,11,20,7,0%,Good,B,No,No
+1094,902,46.0687700,-118.33085,961,N,24,Flowering Dogwood,Cornus florida,Cornaceae,20,15,25,6,0%,Good,B,No,No
+1095,903,46.0688700,-118.33076,966,N,25,Flowering Dogwood,Cornus florida,Cornaceae,25,23,25,11,0%,Good,B,No,No
+1096,904,46.0688000,-118.33064,969,N,26,Incense Cedar,Calocedrus,Cupressaceae,3,2,4.5,1.5,0%,Good,B,No,No
+1097,905,46.0688000,-118.33058,970,N,27,Fringe Tree,Chionanthus virginicus,Oleaceae,15,12,7,3,0%,Fair,B,No,No
+1098,906,46.0688600,-118.33045,975,N,28,Fringe Tree,Chionanthus virginicus,Oleaceae,15,15,15,6,0%,Good,B,No,No
+1099,907,46.0687800,-118.3304,976,N,29,Fringe Tree,Chionanthus virginicus,Oleaceae,15,12,10,6,0%,Fair,B,No,No
+1100,908,46.0688700,-118.33032,978,N,30,Fringe Tree,Chionanthus virginicus,Oleaceae,15,15,10,5,0%,Good,B,No,No
+1101,909,46.0689500,-118.33031,980,N,31,Fringe Tree,Chionanthus virginicus,Oleaceae,15,15,12,5,0%,Good,B,No,No
+1102,910,46.0689900,-118.33031,979,N,32,Yellowwood,Cladrastis lutea,Fabaceae (Leguminosae),20,51,40,25,0%,Good,C,No,No
+1103,911,46.0690000,-118.33024,992,N,33,Yellowwood,Cladrastis lutea,Fabaceae (Leguminosae),20,28,40,14,0%,Good,B,No,No
+1104,912,46.0690200,-118.33011,993,N,34,Yellowwood,Cladrastis lutea,Fabaceae (Leguminosae),20,40,45,11,0%,Fair,B,No,No
+1105,913,46.0690600,-118.33008,995,N,35,Yellowwood,Cladrastis lutea,Fabaceae (Leguminosae),20,36,45,24,0%,Good,C,No,No
+1106,914,46.0691000,-118.33014,996,N,36,Yellowwood,Cladrastis lutea,Fabaceae (Leguminosae),20,36,45,22,0%,Fair,C,No,No
+1107,915,46.0691000,-118.33017,998,N,37,Yellowwood,Cladrastis lutea,Fabaceae (Leguminosae),20,26,35,18,0%,Fair,C,No,No
+1108,916,46.0737500,-118.33016,994,N,38,Incense Cedar,Calocedrus decurrens,Cupressaceae,10,12,12,4.5,0%,Good,A,No,No
+1109,917,46.0692500,-118.3303,1101,N,39,Persian Ironwood,Parrotia persica,Hamamelidaceae,20,24,20,7,0%,Good,B,No,No
+1110,918,46.0692500,-118.33017,1047,N,40,Dogwood,Cornus florida,Cornaceae,10,8,15,4,0%,Good,B,No,No
+1111,919,46.0693100,-118.33032,1010,N,41,Incense Cedar,Calocedrus decurrens,Cupressaceae,5,10,15,4,0%,Good,A,No,No
+1112,920,46.0692900,-118.33062,1009,N,42,Persian Ironwood,Parrotia persica,Hamamelidaceae,20,18,20,8,0%,Good,B,No,No
+1113,921,46.0692000,-118.33015,1015,N,43,Hornbeam,Carpinus betulus,Betulaceae,15,35,335,9,0%,Good,B,No,No
+1114,922,46.0689200,-118.3301,1011,N,44,Hornbeam,Carpinus betulus,Betulaceae,15,31,35,9,0%,Good,B,No,No
+1115,923,46.0687600,-118.33021,1014,N,45,Hornbeam,Carpinus betulus,Betulaceae,15,31,35,8,0%,Good,B,No,No
+1116,924,46.0687400,-118.33019,1014,N,46,Hornbeam,Carpinus betulus,Betulaceae,15,24,35,6,0%,Good,B,No,No
+1117,925,46.0687700,-118.33016,1016,N,47,Colorado Blue Spruce,Picea pungens glauca,Pinaceae,50,76,50,17,0%,Good,B,No,No
+1118,926,46.0686800,-118.33002,1016,N,48,Pine,Pinus,Pinaceae,15,36,25,11,0%,Good,B,No,No
+1119,927,46.0685400,-118.33006,1012,N,49,Red Maple,Acer rubrum,Aceraceae,15,43,40,14,0%,Fair,C,No,No
+1120,928,46.0685900,-118.32993,1016,N,50,Red Maple,Acer rubrum,Aceraceae,15,42,40,20,0%,Poor,C,No,No
+1121,929,46.0685400,-118.32983,1013,N,51,Red Maple,Acer rubrum,Aceraceae,15,32,25,13,0%,Good,B,No,No
+1122,930,46.0685500,-118.32958,1016,N,52,Honey Locust,Gleditsia triacanthos,Fabaceae (Leguminosae),70,88,55,32,0%,Good,A,No,No
+1123,932,46.0687100,-118.32951,1013,N,53,Pine,Pinus,Pinaceae,20,1,20,6,0%,Good,B,No,No
+1124,933,46.0685500,-118.32923,1014,N,54,Norway Maple,Acer platanoides,Aceraceae,35,66,45,26,0%,Good,B,No,No
+1125,934,46.0687100,-118.32914,1000,N,55,Honey Locust,Gleditsia triacanthos,Fabaceae (Leguminosae),35,48,35,22,0%,Good,B,No,No
+1126,935,46.0687700,-118.32923,994,N,56,Honey Locust,Gleditsia triacanthos,Fabaceae (Leguminosae),35,52,40,24,0%,Good,A,No,No
+1127,936,46.0691500,-118.32934,994,N,57,Incense Cedar,Calocedrus decurrens,Cupressaceae,20,60,30,14,0%,Good,B,No,No
+1128,937,46.0690000,-118.32941,994,N,58,Yellow Flowering Dogwood,Cornus mas,Cornaceae,20,14,18,10,0%,Good,B,No,No
+1129,938,46.0689800,-118.3295,993,N,59,Tricolor Beech,Fagus sylvatica,Fagaceae,12,10,15,6,0%,Good,B,No,No
+1130,939,46.0689000,-118.32979,996,N,60,Tricolor Beech,Fagus sylvatica,Fagaceae,12,12,15,8,0%,Good,B,No,No
+1131,940,46.0689700,-118.32985,991,N,61,Yellow Flowering Dogwood,Cornus mas,Cornaceae,20,13,20,11,0%,Good,B,No,No
+1132,941,46.0690600,-118.32987,992,N,62,Incense Cedar,Calocedrus decurrens,Cupressaceae,70,100,65,20,75%,Good,B,No,No
+1133,942,46.0691700,-118.32992,992,O,1,Norway Maple,Acer platanoides,Aceraceae,18,37,30,22,0%,Poor,B,No,No
+1134,943,46.0691900,-118.3299,988,O,2,Tulip Tree,Liriodendron,Magnoliaceae,18,37,45,10,0%,Fair,B,No,No
+1135,944,46.0692400,-118.32995,987,O,3,Cypress,Chamaecyparis nootkatensis,Cupressaceae,15,14,30,2,0%,Good,A,No,No
+1136,945,46.0691900,-118.33001,980,O,4,Cypress,Chamaecyparis nootkatensis,Cupressaceae,15,24,30,3,0%,Good,A,No,No
+1137,946,46.0692300,-118.32985,986,O,5,Cypress,Chamaecyparis nootkatensis,Cupressaceae,15,15,20,6,0%,Good,A,No,No
+1138,947,46.0691900,-118.32985,988,O,6,Cypress,Chamaecyparis nootkatensis,Cupressaceae,15,14,25,4,0%,Good,A,No,No
+1139,948,46.0693500,-118.32981,990,O,7,Dove Tree,Davidia involucrata,Cornaceae ,15,26,35,12,0%,Poor,B,No,No
+1140,949,46.0693100,-118.32975,1000,O,8,Magnolia,Magnolia X loebneri,Magnoliaceae,15,32,30,17,0%,Good,B,No,No
+1141,950,46.0693400,-118.32959,1008,O,9,Magnolia,Magnolia X loebneri,Magnoliaceae,15,31,30,14,0%,Good,B,No,No
+1142,951,46.0691900,-118.32945,1011,O,10,Cypress,Chamaecyparis nootkatensis,Cupressaceae,15,16,25,6,0%,Good,A,No,No
+1143,952,46.0692100,-118.32945,1012,O,11,Tulip Tree,Liriodendron,Magnoliaceae,18,46,50,17,0%,Good,B,No,No
+1144,953,46.0691400,-118.32935,1011,O,12,Norway Maple,Acer platanoides,Aceraceae,45,65,45,14,0%,Good,B,No,No
+1145,954,46.0697800,-118.32918,1010,O,13,Western Red Cedar,ThuIa plicata,Cupressaceae,70,136,70,18,25%,Good,B,No,No
+1146,955,46.0698100,-118.32929,1005,O,14,Colorado Blue Spruce,Picea pungens glauca,Pinaceae,70,72,65,15,0%,Good,B,No,No
+1147,956,46.0697400,-118.32934,1001,O,15,Western Red Cedar,ThuIa plicata,Cupressaceae,70,48,50,13,0%,Fair,B,No,No
+1148,957,46.0697700,-118.32934,1000,O,16,Cypress,Chamaecyparis nootkatensis,Cupressaceae,15,16,30,5,0%,Good,A,No,No
+1149,958,46.0696900,-118.32948,1004,O,17,Cypress,Chamaecyparis nootkatensis,Cupressaceae,15,16,25,7,0%,Good,A,No,No
+1150,959,46.0695800,-118.32955,1005,O,18,White Flowering Dogwood,Cornus florida,Cornaceae,75,30,30,16,50%,Fair,B,No,No
+1151,960,46.0698200,-118.32962,930,O,19,?,?,?,,5,10,6,0%,Good,B,No,No
+1152,961,46.0697800,-118.32978,1041,O,20,?,?,?,,14,25,11,0%,Good,B,No,No
+1153,962,46.0695000,-118.32927,1045,O,21,White Flowering Dogwood,Cornus florida,Cornaceae,75,39,35,14,50%,Fair,B,No,No
+1154,963,46.0697000,-118.32982,1042,O,22,Cypress,Chamaecyparis nootkatensis,Cupressaceae,15,16,30,9,0%,Good,A,No,No
+1155,964,46.0697000,-118.32983,1041,O,23,Cypress,Chamaecyparis nootkatensis,Cupressaceae,15,15,30,8,0%,Good,A,No,No
+1156,965,46.0697500,-118.32996,1032,O,24,Cypress,Chamaecyparis nootkatensis,Cupressaceae,15,17,35,5,0%,Good,A,No,No
+1157,966,46.0697100,-118.32995,1034,O,25,Cypress,Chamaecyparis nootkatensis,Cupressaceae,15,15,30,7,0%,Good,A,No,No
+1158,967,46.0695200,-118.33006,1030,O,26,Iapanese Maple,Acer palmatum,Sapindaceae,,40,15,16,0%,Fair,A,No,No
+1159,968,46.0695100,-118.33004,1028,O,27,Red Maple,Acer rubrum,Sapindaceae,20,51,35,24,0%,Good,B,No,No
+1160,969,46.0694100,-118.32992,1016,O,28,Iapanese Maple,Acer palmatum,Sapindaceae,,25,30,19,0%,Good,A,No,No
+1161,970,46.0697700,-118.32976,1014,O,29,Birch,Betula pendula purpurea,Betulaceae,18,22,35,8,0%,Good,B,No,No
+1162,971,46.0699100,-118.32978,1015,O,30,Honey Locust,Gleditsia triacanthos,Fabaceae,60,96,60,38,0%,Good,A,No,No
+1163,972,46.0699900,-118.32971,1012,O,31,Japanese Tree Lilac,Syringa reticulata,Oleaceae,15,16,20,8,0%,Good,B,No,No
+1164,973,46.0699400,-118.32957,1014,O,32,Japanese Tree Lilac,Syringa reticulata,Oleaceae,15,26,20,10,0%,Good,A,No,No
+1165,974,46.0698300,-118.32938,1016,O,33,Maidenhair Tree,Ginkgo biloba,Ginkgoaceae,15,17,15,6,0%,Good,A,No,No
+1166,975,46.0698900,-118.32934,920,O,34,Flowering Crab Apple,Malus,Rosaceae,15,24,15,9,0%,Good,A,No,No
+1167,976,46.0696500,-118.32898,952,O,35,Flowering Pear,Pyrus,Rosaceae,,22,10,10,0%,Good,B,No,No
+1168,977,46.0696600,-118.32891,949,O,36,Pine,Pinus strobus,Pinaceae,,29,30,6,0%,Good,B,No,No
+1169,978,46.0694800,-118.32898,976,O,37,Colorado Blue Spruce,Picea pungens glauca compacta,Pinaceae,,13,8,4,0%,Good,B,No,No
+1170,979,46.0695000,-118.32892,987,O,38,Flowering Pear,Pyrus,Rosaceae,,24,25,9,0%,Good,B,No,No
+1171,980,46.0695300,-118.32888,987,O,39,Flowering Pear,Pyrus,Rosaceae,,21,25,10,0%,Good,B,No,No
+1172,981,46.0695300,-118.32867,993,O,40,Katsura,Cercidiphyllum Iaponicum,Cercidiphyllaceae,,19,25,8,0%,Good,B,No,No
+1173,982,46.0695700,-118.32873,991,O,41,Flowering Pear,Pyrus,Rosaceae,,26,30,12,0%,Good,B,No,No
+1174,983,46.0697200,-118.3287,995,O,42,Katsura,Cercidiphyllum Iaponicum,Cercidiphyllaceae,,24,25,9,0%,Good,B,No,No
+1175,984,46.0696500,-118.3286,997,O,43,Hawthorn,Crataegus,Rosaceae,25,31,20,10,0%,Good,B,No,No
+1176,985,46.0697000,-118.32853,995,O,44,Elm,Ulmus,Ulmaceae,5,5,15,1,0%,Good,A,No,No
+1177,986,46.0698900,-118.32857,994,O,45,Golden Chain Tree,Laburnum anagyroides,Fabaceae,20,23,20,8,0%,Good,B,No,No
+1178,987,46.0698600,-118.32852,994,O,46,American Holly,Ilex opaca,Aquifoliaceae,20,15,20,8,0%,Good,B,No,No
+1179,988,46.0699300,-118.32884,1001,O,47,Korean Fir,Abies koreana,Pinaceae,10,4,5,2,0%,Good,B,No,No
+1180,989,46.0699500,-118.32912,1014,O,48,Canadian Hemlock,Tsuga canadensis,Pinaceae,10,12,15,6,0%,Good,B,No,No
+1181,990,46.0699300,-118.32911,1012,O,49,Canadian Hemlock,Tsuga canadensis,Pinaceae,10,8,12,7,0%,Good,B,No,No
+1182,991,46.0699700,-118.32916,1013,O,50,Burr Oak,Quercus macrocarpa,Fagaceae,100,192,90,63,0%,Fair,A,No,No
+1183,992,46.0701000,-118.32944,962,O,51,Birch,Betula utilis,Betulaceae,35,40,40,19,0%,Good,A,No,No
+1184,993,46.0700300,-118.32929,966,O,52,European Beech,Fagus sylvatica pendula,Fagaceae,30,31,40,15,0%,Good,B,No,No
+1185,994,46.0702100,-118.32954,965,O,53,Indian Horse Chestnut,Aesculus indica,Sapindaceae,25,62,55,18,0%,Good,B,No,No
+1186,995,46.0701500,-118.32947,972,O,54,Birch,Betula papyrifera,Betulaceae,35,39,40,17,0%,Good,B,No,No
+1187,996,46.0701600,-118.32922,978,O,55,Water Birch,Betula occidentalis,Betulaceae,25,30,40,11,0%,Fair,B,No,No
+1188,997,46.0700800,-118.32921,983,O,56,Chokecherry,Prunus virginiana,Rosaceae,10,14,30,10,0%,Good,B,No,No
+1189,998,46.0701300,-118.32911,987,O,57,Water Birch,Betula occidentalis,Betulaceae,50,40,40,25,0%,Fair,B,No,No
+1190,999,46.0700300,-118.32909,992,P,1,Morton Glossy Elm,Ulmus,Ulmaceae,5,6,12,2,0%,Good,B,No,No
+1191,1000,46.0700300,-118.32901,998,P,2,Red Horse Chestnut,Aesculus X Carnea,Sapindaceae,65,89,45,22,0%,Fair,A,No,No
+1192,1001,46.0700000,-118.32896,997,P,3,Magnolia,Magnolia,Magnoliaceae,15,21,25,8,0%,Good,B,No,No
+1193,1002,46.0701200,-118.32887,1001,P,4,White Fir,Abies concolor,Pinaceae,10,12,12,5,0%,Good,A,No,No
+1194,1003,46.0701700,-118.32889,1001,P,5,Incense Cedar,Calocedrus decurrens,Cupressaceae,6,5,10,2.5,0%,Good,A,No,No
+1195,1004,46.0702400,-118.32886,1002,P,6,Western Red Cedar,ThuIa plicata,Cupressaceae,6,6,12,4,0%,Fair,A,No,No
+1196,1005,46.0702800,-118.32881,1001,P,7,Cedar of Lebanon,Cedrus libani,Pinaceae,6,5,10,3,0%,Good,A,No,No
+1197,1006,46.0703500,-118.32876,1000,P,8,Water Birch,Betula occidentalis,Betulaceae,15,18,35,10,0%,Good,B,No,No
+1198,1007,46.0703600,-118.32876,1001,P,9,Burr Oak,Quercus macrocarpa,Fagaceae,15,21,35,11,0%,Good,B,No,No
+1199,1008,46.0700200,-118.32886,942,P,10,Water Birch,Betula occidentalis,Betulaceae,45,42,30,16,0%,Good,B,No,No
+1200,1009,46.0702200,-118.32902,958,P,11,Flowering Pear,Pyrus calleryana,Rosaceae,25,34,35,10,0%,Good,B,No,No
+1201,1010,46.0703700,-118.32889,997,P,12,Canadian Hemlock,Tsuga canadensis,Pinaceae,10,9,10,5,0%,Good,A,No,No
+1202,1011,46.0703500,-118.32895,997,P,13,Western Red Cedar,ThuIa plicata,Cupressaceae,8,9,15,5,0%,Good,A,No,No
+1203,1012,46.0702500,-118.32895,1000,P,14,Flowering Plum,Prunus cerasifera,Rosaceae,25,8,25,17,0%,Good,B,No,No
+1204,1013,46.0702500,-118.32893,996,P,15,Alaska Cedar,Chamaecyparis nootkatensis,Cupressaceae,7,4,9,1,0%,Good,A,No,No
+1205,1014,46.0702400,-118.32905,998,P,16,Spruce,Picea,Pinaceae,12,9,12,6,0%,Good,A,No,No
+1206,1015,46.0701900,-118.32905,1000,P,17,Flowering Cherry,Prunus serrulata,Rosaceae,35,40,30,16,0%,Fair,B,No,No
+1207,1016,46.0701900,-118.32904,999,P,18,Japanese Nutmeg,Torreya nucifera,Taxaceae,16,12,12,6,0%,Good,A,No,No
+1208,1017,0,0,,P,19,Norway Maple,Acer platanoides,Aceraceae,45,60,45,22,0%,Good,B,No,No
+1209,1031,46.0701500,-118.32905,1000,P,20,Water Birch,Betula occidentalis,Betulaceae,20,26,35,13,0%,Fair,B,No,No
+1210,1032,46.0701500,-118.32915,999,P,21,American Holly,Ilex opaca,Aquifoliaceae,20,11,15,6,0%,Good,B,No,No
+1211,1033,46.0701600,-118.3292,1001,P,22,American Holly,Ilex opaca,Aquifoliaceae,20,12,12,5,0%,Good,B,No,No
+1212,1034,46.0702000,-118.32916,1001,P,23,English Hawthorne,Crataegus laevigata,Rosaceae,60,41,30,12,0%,Poor,B,No,No
+1213,1035,46.0702600,-118.32916,1004,P,24,English Hawthorne,Crataegus laevigata,Rosaceae,60,45,25,9,0%,Poor,B,No,No
+1214,1036,46.0701800,-118.3293,1001,P,25,Quaking Aspen,Populus tremuloides,Salicaceae,15,20,35,7,0%,Fair,B,No,No
+1215,1037,46.0702100,-118.32941,1001,P,26,Quaking Aspen,Populus tremuloides,Salicaceae,15,17,35,9,0%,Fair,B,No,No
+1216,1038,46.0702100,-118.32952,1002,P,27,Quaking Aspen,Populus tremuloides,Salicaceae,10,15,20,5,0%,Fair,B,No,No
+1217,1039,46.0701900,-118.32958,1003,P,28,Indian Horse Chestnut,Aesculus indica,Sapindaceae,37,65,55,24,0%,Good,B,No,No
+1218,1040,46.0703600,-118.32939,1005,P,29,White Ash,Fraxinus americana,Oleaceae,30,69,50,31,0%,Good,B,No,No
+1219,1041,46.0703800,-118.32925,1001,P,30,White Ash,Fraxinus americana,Oleaceae,30,65,50,26,0%,Good,B,No,No
+1220,1042,46.0704300,-118.32911,999,P,31,Red Oak,Quercus rubra,Fagaceae,30,35,45,14,0%,Good,B,No,No
+1221,1043,46.0704100,-118.32902,1002,P,32,Elm,Ulmus,Ulmaceae,100,124,85,25,0%,Fair,B,No,No
+1222,1044,46.0704900,-118.32886,1002,P,33,Red Oak,Quercus rubra,Fagaceae,30,30,30,14,0%,Good,B,No,No
+1223,1045,46.0705200,-118.32873,1004,P,34,Japanese Flowering Cherry,Prunus serrulata,Rosaceae,5,4,5,4,0%,Good,A,No,No
+1224,1046,46.0701900,-118.32884,996,P,35,Red Oak,Quercus rubra,Fagaceae,30,67,50,24,0%,Good,B,No,No
+1225,1047,46.0701000,-118.32886,995,P,36,Dogwood,Cornus florida,Cornaceae,6,4,7,2,0%,Good,A,No,No
+1226,1048,46.0700400,-118.32886,996,P,37,Dogwood,Cornus florida,Cornaceae,6,5,7,3,0%,Good,A,No,No
+656,1049,46.0699900,-118.32883,995,P,38,White Pine,Pinus monticola,Pinaceae,8,8,12,2,0%,Good,A,No,No
+657,1050,46.0699400,-118.32896,998,P,39,Dogwood,Cornus florida,Cornaceae,6,5,7,3,0%,Good,A,No,No
+658,1051,46.0698800,-118.32886,996,P,40,Iapanese Maple,Acer palmatum,Sapindaceae,30,26,30,14,0%,Good,B,No,No
+659,1052,46.0699300,-118.32853,993,P,41,Redbud,Cercis canadensis,Fabaceae,30,31,30,15,0%,Good,B,No,No
+660,1053,46.0701100,-118.32855,998,P,42,Red Oak,Quercus rubra,Fagaceae,30,38,50,20,0%,Good,A,No,No
+661,1054,46.0700900,-118.32862,997,P,43,Iapanese Maple,Acer palmatum,Sapindaceae,10,4,4,3,0%,Good,A,No,No
+662,1055,46.0702400,-118.32845,995,P,44,Pagoda Dogwood,Cornus alternifolia,Cornaceae,10,3,6,2,0%,Good,A,No,No
+663,1056,46.0702000,-118.32849,989,P,45,Burr Oak,Quercus macrocarpa,Fagaceae,55,116,80,42,0%,Good,A,No,No
+664,1057,46.0703100,-118.32865,983,P,46,Flowering Hawthorn,Crataegus,Rosaceae,15,20,20,10,0%,Good,B,No,No
+665,1058,46.0702700,-118.32858,985,P,47,Silver Maple,Acer saccharinum,Sapindaceae,60,172,80,50,0%,Good,A,No,No
+666,1059,46.0703800,-118.32853,981,P,48,Burr Oak,Quercus macrocarpa,Fagaceae,15,28,20,6,0%,Good,A,No,No
+667,1060,46.0704000,-118.32842,981,P,49,Burr Oak,Quercus macrocarpa,Fagaceae,7,7,10,3,0%,Good,A,No,No
+668,1061,46.0705100,-118.32867,982,P,50,Flowering Cherry,Prunus,Rosaceae,5,5,5,4,0%,Good,A,No,No
+669,1062,46.0705000,-118.32853,984,P,51,Norway Maple,Acer platanoides,Aceraceae,6,4,10,1,0%,Fair,A,No,No
+670,1063,46.0705200,-118.32843,988,P,52,Tulip Tree,Liriodendron tulipfera,Magnoliaceae,6,4,9,3,0%,Good,A,No,No
+671,1064,46.0705000,-118.32823,1000,P,53,Elm,Ulmus,Ulmaceae,75,92,65,27,0%,Good,B,No,No
+672,1065,46.0704100,-118.32815,1015,P,54,Little-leaf Linden,Tilia cordata,Tiliaceae,15,24,40,11,0%,Good,B,No,No
+673,1066,46.0703200,-118.32812,1017,P,55,Little-leaf Linden,Tilia cordata,Tiliaceae,30,53,70,12,0%,Good,B,No,No
+674,1067,46.0702300,-118.32815,1016,P,56,Little-leaf Linden,Tilia cordata,Tiliaceae,15,24,40,11,0%,Good,B,No,No
+675,1068,46.0701200,-118.32816,1011,P,57,Little-leaf Linden,Tilia cordata,Tiliaceae,15,25,40,11,0%,Good,B,No,No
+676,1069,46.0699200,-118.32815,1008,P,58,Silver Maple,Acer saccharinum,Sapindaceae,60,126,50,21,0%,Fair,B,No,No
+677,1070,46.0698300,-118.32821,1000,P,59,Little-leaf Linden,Tilia cordata,Tiliaceae,30,59,60,13,0%,Good,B,No,No
+678,1071,46.0697400,-118.32818,993,P,60,Little-leaf Linden,Tilia cordata,Tiliaceae,30,51,60,13,0%,Good,B,No,No
+679,1072,46.0696900,-118.32828,994,P,61,Spruce,Picea,Pinaceae,35,54,45,14,0%,Good,B,No,No
+680,1073,46.0697200,-118.32841,992,P,62,Hawthorn,Crataegus X lavallei,Rosaceae,30,44,25,15,0%,Good,B,No,No
+681,1074,46.0700600,-118.32839,953,P,63,Silver Maple,Acer saccharinum,Sapindaceae,45,128,80,20,0%,Fair,B,No,No
+682,1075,46.0701100,-118.32832,955,P,64,Spruce,Picea,Pinaceae,35,47,45,7,0%,Good,B,No,No
+683,1076,46.0701400,-118.32827,965,P,65,Burr Oak,Quercus macrocarpa,Fagaceae,65,126,85,44,0%,Good,B,No,No
+684,1077,46.0702000,-118.32827,965,P,66,Beech,Fagus,Fagaceae,55,103,65,24,0%,Good,B,No,No
+685,1078,46.0703500,-118.32824,966,P,67,Tulip Tree,Liriodendron tulipfera,Magnoliaceae,12,19,30,8,0%,Good,A,No,No
+686,1079,46.0704200,-118.3282,967,P,68,Spruce,Picea,Pinaceae,45,49,60,8,0%,Fair,B,No,No
+687,1080,46.0704500,-118.32822,967,P,69,Spruce,Picea,Pinaceae,45,60,70,8,0%,Fair,B,No,No
+688,1093,46.0701100,-118.32794,1008,Q,1,Callery Pear,Pyrus calleryana,Rosaceae,18,37,25,16,0%,Good,B,No,No
+689,1094,46.0702300,-118.32796,1009,Q,2,Callery Pear,Pyrus calleryana,Rosaceae,10,14,20,8,0%,Good,B,No,No
+690,1095,46.0702400,-118.32796,1010,Q,3,Callery Pear,Pyrus calleryana,Rosaceae,18,24,25,9,0%,Good,B,No,No
+691,1096,46.0702500,-118.32797,1011,Q,4,Sycamore Maple,Acer pseudoplatanus,Sapindaceae,45,86,45,24,25%,Fair,B,No,No
+1227,1097,46.0703900,-118.328,1010,Q,5,Callery Pear,Pyrus calleryana,Rosaceae,18,32,25,14,0%,Good,B,No,No
+1228,1098,46.0704100,-118.32797,1011,Q,6,Callery Pear,Pyrus calleryana,Rosaceae,10,15,25,4,0%,Good,B,No,No
+1229,1099,46.0702900,-118.32783,1011,Q,7,Flowering Dogwood,Cornus florida,Cornaceae,50,24,15,6,0%,Good,B,No,No
+1230,1100,46.0701700,-118.32786,1010,Q,8,California Incense Cedar,Calocedrus decurrens,Cupressaceae,40,94,12,9,0%,Fair,B,No,No
+1231,1101,46.0702400,-118.32762,1011,Q,9,Pine,Pinus,Pinaceae,12,29,20,8,0%,Good,B,No,No
+1232,1102,46.0703900,-118.3274,1012,Q,10,Common Hazel (multi-stemmed),Corylus avellana,Betulaceae or Corylaceae,50,27,30,17,0%,Fair,B,No,No
+1233,1103,46.0702900,-118.32732,1011,Q,11,American Holly,Ilex opaca,Aquifoliaceae,15,18,20,8,0%,Good,B,No,No
+1234,1104,46.0702600,-118.32741,1013,Q,12,Colorado Blue Spruce,Picea pungens glauca,Pinaceae,12,9,12,4,0%,Good,A,No,No
+1235,1105,46.0702100,-118.3274,1017,Q,13,Green Ash,Fraxinus pennsylvanica,Oleaceae,12,36,35,18,0%,Good,B,No,No
+1236,1106,46.0702200,-118.32735,1017,Q,14,Green Ash,Fraxinus pennsylvanica,Oleaceae,12,26,35,13,0%,Good,B,No,No
+1237,1107,46.0701700,-118.32731,1013,Q,15,Green Ash,Fraxinus pennsylvanica,Oleaceae,12,32,35,17,0%,Good,B,No,No
+1238,1108,46.0702200,-118.32712,1019,Q,16,Silver Maple,Acer saccharinum,Sapindaceae,85,150,70,35,50%,Fair,B,No,No
+1239,1109,46.0701300,-118.32711,1012,Q,17,Catalpa,Catalpa bignonioides,Bignoniaceae,50,87,60,23,50%,Good,B,No,No
+1240,1110,46.0702700,-118.32711,1016,Q,18,Spruce,Picea,Pinaceae,60,46,50,12,0%,Fair,B,No,No
+1241,1111,46.0702400,-118.32711,1016,Q,19,Spruce,Picea,Pinaceae,60,74,75,17,0%,Good,A,No,No
+1242,1112,46.0703500,-118.32716,1016,Q,20,Spruce,Picea,Pinaceae,60,62,60,12,0%,Good,B,No,No
+1243,1113,46.0704600,-118.3271,1012,Q,21,Common Pear,Pyrus communis,Rosaceae,25,26,20,6,0%,Good,B,No,No
+1244,1114,46.0704300,-118.32689,1017,Q,22,White Fir,Abies concolor,Pinaceae,45,70,70,9,0%,Good,B,No,No
+1245,1115,46.0705000,-118.3278,1034,Q,23,Norway Maple,Acer platanoides,Aceraceae,20,31,35,14,0%,Good,B,No,No
+1246,1116,46.0705100,-118.32776,998,Q,24,Eastern Redbud,Cercis canadensis,Fabaceae,20,29,20,19,0%,Good,B,No,No
+1247,1117,46.0705300,-118.32761,997,Q,25,Eastern Redbud,Cercis canadensis,Fabaceae,20,22,20,9,0%,Good,B,No,No
+1248,1118,46.0705300,-118.32753,996,Q,26,Norway Maple,Acer platanoides,Aceraceae,20,32,35,16,0%,Good,B,No,No
+1249,1119,46.0705100,-118.32743,997,Q,27,Eastern Redbud,Cercis canadensis,Fabaceae,20,16,20,6,0%,Good,B,No,No
+1250,1120,46.0705500,-118.32735,999,Q,28,Norway Maple,Acer platanoides,Aceraceae,35,62,35,22,0%,Good,B,No,No
+1251,1121,46.0705100,-118.32719,998,Q,29,Eastern Redbud,Cercis canadensis,Fabaceae,20,20,20,9,0%,Good,B,No,No
+1252,1122,46.0705400,-118.32712,1002,Q,30,Norway Maple,Acer platanoides,Aceraceae,35,64,35,19,0%,Good,B,No,No
+1253,1123,46.0705200,-118.32702,1000,Q,31,Eastern Redbud,Cercis canadensis,Fabaceae,22,24,20,13,0%,Good,B,No,No
+1254,1124,46.0705300,-118.32689,1003,Q,32,Norway Maple,Acer platanoides,Aceraceae,35,57,35,20,0%,Good,B,No,No
+1255,1125,46.0704100,-118.32681,1000,Q,33,Flowering Dogwood,Cornus florida,Cornaceae,15,8,15,4,0%,Good,B,No,No
+1256,1126,46.0703800,-118.32678,1001,Q,34,Flowering Dogwood,Cornus florida,Cornaceae,15,11,15,5,0%,Good,B,No,No
+1257,1127,46.0701800,-118.32679,1002,Q,35,Dogwood,Cornus kousa ,Cornaceae,15,8,10,5,0%,Good,B,No,No
+1258,1128,46.0700400,-118.32665,1011,Q,36,Flowering Dogwood,Cornus capitata,Cornaceae,15,19,15,5,0%,Good,B,No,No
+1259,1129,46.0701000,-118.32666,1012,Q,37,Flowering Dogwood,Cornus capitata,Cornaceae,15,8,15,4,0%,Good,B,No,No
+1260,1130,46.0702000,-118.32671,1011,Q,38,Flowering Dogwood,Cornus capitata,Cornaceae,15,9,15,5,0%,Good,B,No,No
+1261,1131,46.0703400,-118.3267,1006,Q,39,Flowering Dogwood,Cornus capitata,Cornaceae,15,20,15,5,0%,Good,B,No,No
+1262,1132,46.0703900,-118.32669,1015,Q,40,Flowering Dogwood,Cornus capitata,Cornaceae,15,8,15,5,0%,Good,B,No,No
+1263,1133,46.0705100,-118.3266,1014,Q,41,Norway Maple,Acer platanoides,Aceraceae,6,5,10,3,0%,Good,B,No,No
+1264,1134,46.0705100,-118.32644,1012,Q,42,Red Maple,Acer rubrum,Sapindaceae,15,18,25,8,0%,Good,B,No,No
+1265,1135,46.0705000,-118.32632,1015,Q,43,Japanese Maple,Acer palmatum,Sapindaceae,40,40,18,13,0%,Good,B,No,No
+1266,1136,46.0704200,-118.32631,1013,Q,44,Eastern Redbud,Cercis canadensis,Fabaceae,30,42,25,14,50%,Fair,B,No,No
+1267,1137,46.0703400,-118.32645,1011,Q,45,Alder,Alnus,Betulaceae,10,10,12,5,0%,Fair,B,No,No
+1268,1138,46.0703500,-118.32654,1014,Q,46,Ponderosa Pine,Pinus ponderosa,Pinaceae,9,15,15,4,0%,Good,B,No,No
+1269,1139,46.0703100,-118.32636,1011,Q,47,Pine,Pinus,Pinaceae,10,4,6,2,0%,Good,B,No,No
+1270,1140,46.0703100,-118.32636,1011,Q,48,Pine,Pinus,Pinaceae,10,5,8,2,0%,Good,B,No,No
+1271,1141,46.0703100,-118.32636,1012,Q,49,Pine,Pinus,Pinaceae,10,3,6,2,0%,Good,B,No,No
+1272,1142,46.0702500,-118.32637,1010,Q,50,Mountain Ash,Sorbus,Rosaceae,10,12,25,9,0%,Good,B,No,No
+1273,1143,46.0702400,-118.32641,1010,Q,51,Ponderosa Pine,Pinus ponderosa,Pinaceae,10,8,9,3,0%,Good,B,No,No
+1274,1144,46.0702500,-118.32649,1007,Q,52,Tolleson's Weeping Iuniper,Iuniperus scopulorum,Cupressaceae,15,11,15,8,0%,Good,B,No,No
+1275,1145,46.0702700,-118.32665,1005,Q,53,Red Alder,Alnus rubra,Betulaceae,12,12,12,5,0%,Fair,B,No,No
+1276,1146,46.0701200,-118.32663,1003,Q,54,Red Alder,Alnus rubra,Betulaceae,12,10,10,5,0%,Poor,C,No,No
+1277,1147,46.0700300,-118.32661,1002,Q,55,Red Alder,Alnus rubra,Betulaceae,12,9,12,3,0%,Poor,C,No,No
+1278,1148,46.0699900,-118.32658,1005,Q,56,Red Alder,Alnus rubra,Betulaceae,12,11,12,4,0%,Poor,C,No,No
+1279,1149,46.0700000,-118.32659,1002,Q,57,Juniper,Iuniperus,Cupressaceae,10,7,12,4,0%,Good,A,No,No
+1280,1150,46.0759200,-118.32508,991,R,1,White Birch,Betula pendula,Betulaceae,35,47,60,20,75%,Fair,B,No,No
+1281,1151,46.0758800,-118.32506,990,R,2,Sycamore Maple,Acer pseudoplatanus,Aceraceae,35,60,35,25,35%,Fair,B,No,No
+1282,1152,46.0757600,-118.32495,990,R,3,Hawthorne,Crataegus laevigata,Rosaceae,65,65,35,19,25%,Fair,B,No,No
+1283,1153,46.0757800,-118.32495,990,R,4,Hawthorne,Crataegus laevigata,Rosaceae,65,72,35,26,0%,Fair,B,No,No
+1284,1154,46.0757500,-118.32515,993,R,5,Pink Dogwood,Cornus florida,Cornaceae,50,36,25,10,25%,Fair,B,No,No
+1285,1155,46.0757100,-118.32512,993,R,6,White Birch,Betula pendula,Betulaceae,50,51,55,17,35%,Fair,B,No,No
+1286,1156,46.0756900,-118.32496,995,R,7,Norway Maple,Acer platanoides,Aceraceae,50,73,55,24,40%,Good,B,No,No
+1287,1157,46.0756300,-118.3251,996,R,8,Norway Maple,Acer platanoides,Aceraceae,50,82,55,21,40%,Good,B,No,No
+1288,1158,46.0756100,-118.32541,995,R,9,Norway Maple,Acer platanoides,Aceraceae,50,105,55,23,40%,Good,B,No,No
+1289,1159,46.0755700,-118.32556,996,R,10,Norway Maple,Acer platanoides,Aceraceae,50,99,55,23,40%,Good,B,No,No
+1290,1160,46.0755900,-118.32579,995,R,11,Norway Maple,Acer platanoides,Aceraceae,50,92,55,28,40%,Good,B,No,No
+1291,1161,46.0756100,-118.32595,995,R,12,Norway Maple,Acer platanoides,Aceraceae,50,82,55,25,40%,Good,B,No,No
+1292,1162,46.0756000,-118.32611,990,R,13,Norway Maple,Acer platanoides,Aceraceae,50,77,55,23,40%,Good,B,No,No
+1293,1163,46.0756600,-118.32634,994,R,14,Norway Maple,Acer platanoides,Aceraceae,50,62,55,20,40%,Good,B,No,No
+1294,1164,46.0757000,-118.32647,991,R,15,Norway Maple,Acer platanoides,Aceraceae,50,88,55,25,40%,Good,B,No,No
+1295,1165,46.0756200,-118.32665,991,R,16,Norway Maple,Acer platanoides,Aceraceae,50,70,55,21,40%,Good,B,No,No
+1296,1166,46.0757200,-118.32686,994,R,17,Norway Maple,Acer platanoides,Aceraceae,50,82,55,26,40%,Good,B,No,No
+1297,1167,46.0757800,-118.32704,992,R,18,Norway Maple,Acer platanoides,Aceraceae,50,84,55,25,40%,Good,B,No,No
+1298,1168,46.0758100,-118.32706,994,R,19,White Birch,Betula pendula,Betulaceae,45,46,50,15,30%,Poor,B,No,No
+1299,1169,46.0760400,-118.32681,995,R,20,White Birch,Betula pendula,Betulaceae,45,51,50,12,25%,Poor,B,No,No
+1300,1170,46.0763700,-118.32647,995,R,21,Spruce,Picea,Pinaceae,75,98,75,15,0%,Fair,B,No,No
+1301,1171,46.0763100,-118.32621,995,R,22,Alaska Weeping Cedar,Chamaecyparis nootkatensis,Cupressaceae,8,6,10,1,0%,Good,A,No,No
+1302,1172,46.0761400,-118.32623,1001,R,23,Austria Pine,Pinus nigra,Pinaceae,70,112,60,36,0%,Good,B,No,No
+1303,1173,46.0760400,-118.32636,997,R,24,Giant Sequoia,Sequoia dendron,Taxodiaceae,12,48,20,8,0%,Good,A,No,No
+1304,1174,46.0760300,-118.32647,994,R,25,Giant Sequoia,Sequoia dendron,Taxodiaceae,12,48,25,7,0%,Good,B,No,No
+1305,1175,46.0761100,-118.32647,995,R,26,Willow,Salix babylonica,Salicaceae,,,,,0%,Poor,B,No,No
+1306,1176,46.0759800,-118.32652,1001,R,27,Giant Sequoia,Sequoia dendron,Taxodiaceae,12,35,30,6,0%,Good,B,No,No
+1307,1177,46.0759200,-118.32653,1001,R,28,Tulip Tree,Liriodendron tulipfera,Magnoliaceae,15,38,45,16,0%,Good,B,No,No
+1308,1178,46.0760400,-118.32665,1002,R,29,Sycamore Maple,Acer pseudoplatanus,Aceraceae,65,93,60,32,0%,Fair,B,No,No
+1309,1179,46.0760500,-118.3268,996,R,30,Tree of Heaven,Ailanthus altissima,Simaroubaceae,45,86,70,20,0%,Good,B,No,No
+1310,1180,46.0760000,-118.3268,914,R,31,Cypress,Chamaecyparis,Cupressaceae,60,46,25,10,0%,Poor,C,No,No
+1311,1181,46.0759700,-118.32686,930,R,32,Cypress,Chamaecyparis,Cupressaceae,60,52,35,17,0%,Fair,B,No,No
+1312,1182,46.0759500,-118.32683,937,R,33,Tree of Heaven,Ailanthus altissima,Simaroubaceae,45,142,70,40,0%,Fair,B,No,No
+1313,1183,46.0759200,-118.3269,948,R,34,Tree of Heaven,Ailanthus altissima,Simaroubaceae,45,94,55,45,0%,Fair,B,No,No
+1314,1184,46.0760900,-118.32686,996,R,35,Birch,Betula pendula,Betulaceae,60,52,45,14,0%,Fair,B,No,No
+1315,1185,46.0758200,-118.32709,1005,R,36,Birch,Betula pendula,Betulaceae,60,46,45,13,0%,Poor,C,No,No
+1316,1186,46.0758200,-118.32699,1009,R,37,Cypress,Chamaecyparis,Cupressaceae,60,56,30,12,0%,Fair,B,No,No
+1317,1187,46.0758200,-118.327,1006,R,38,Cypress,Chamaecyparis,Cupressaceae,60,52,30,12,0%,Fair,B,No,No
+1318,1188,46.0758100,-118.32695,1006,R,39,Cypress,Chamaecyparis,Cupressaceae,60,60,40,15,0%,Fair,B,No,No
+1319,1189,46.0758200,-118.32658,1009,R,40,Lindin,Tilia Cordata,Tiliaceae,7,6,12,5,0%,Fair,B,No,No
+1320,1190,46.0757400,-118.32661,1015,R,41,Mountain Ash,Sorbus acuporia,Rosaceae,,21,30,6,0%,Good,B,No,No
+1321,1191,46.0757400,-118.32649,1017,R,42,Birch,Betula utilis,Betulaceae,,19,35,10,0%,Good,B,No,No
+1322,1192,46.0757000,-118.3263,1017,R,43,Mountain Ash,Sorbus acuporia,Rosaceae,,18,30,10,0%,Good,B,No,No
+1323,1193,46.0757500,-118.32622,1014,R,44,Birch,Betula utilis,Betulaceae,,22,35,10,0%,Good,B,No,No
+1324,1194,46.0757500,-118.32619,1020,R,45,Mountain Ash,Sorbus acuporia,Rosaceae,,21,30,9,0%,Good,B,No,No
+1325,1195,46.0757800,-118.32604,1023,R,46,Birch,Betula utilis,Betulaceae,,18,35,9,0%,Good,A,No,No
+1326,1196,46.0759000,-118.32594,503,R,47,Mountain Ash,Sorbus acuporia,Rosaceae,,17,45,7,0%,Good,B,No,No
+1327,1197,46.0756500,-118.32585,518,R,48,Birch,Betula utilis,Betulaceae,65,78,75,21,0%,Good,B,No,No
+1328,1198,46.0756400,-118.32585,523,R,49,Mountain Ash,Sorbus acuporia,Rosaceae,,22,35,8,10%,Good,B,No,No
+1329,1199,46.0757200,-118.32574,540,R,50,Mountain Ash,Sorbus acuporia,Rosaceae,,26,30,12,0%,Good,B,No,No
+1330,1200,46.0757700,-118.3258,574,R,51,Iapanese Zelcova,Zelkova serrata,Ulmaceae,,120,60,23,0%,Good,B,No,No
+1331,1201,46.0757600,-118.32561,613,R,52,Iapanese Zelcova,Zelkova serrata,Ulmaceae,,50,45,21,0%,Good,B,No,No
+1332,1202,46.0756900,-118.32558,629,R,53,Mountain Ash,Sorbus acuporia,Rosaceae,,21,25,8,0%,Good,B,No,No
+1333,1203,46.0757400,-118.32538,668,R,54,Birch,Betula utilis,Betulaceae,65,80,65,28,0%,Good,B,No,No
+1334,1204,46.0759700,-118.32527,707,R,55,Douglas Fir,Pseudotsuga menziesii,Pinaceae,60,96,90,20,0%,Good,B,No,No
+1335,1205,46.0759900,-118.32535,732,R,56,Birch,Betula utilis,Betulaceae,15,16,25,10,0%,Good,B,No,No
+1336,1206,46.0760100,-118.32532,736,R,57,Birch,Betula utilis,Betulaceae,15,19,25,9,0%,Good,B,No,No
+1337,1207,46.0760700,-118.32524,739,R,58,Birch,Betula utilis,Betulaceae,15,19,25,11,0%,Good,B,No,No
+1338,1208,46.0761000,-118.32522,749,R,59,Birch,Betula utilis,Betulaceae,15,21,30,13,0%,Good,B,No,No
+1339,1209,46.0761600,-118.32529,751,R,60,Birch,Betula utilis,Betulaceae,15,19,25,9,0%,Good,B,No,No
+1340,1210,46.0761300,-118.32531,757,R,61,Birch,Betula utilis,Betulaceae,15,22,30,10,0%,Good,B,No,No
+1341,1211,46.0760800,-118.32532,766,R,62,Birch,Betula utilis,Betulaceae,15,14,25,10,0%,Good,B,No,No
+1342,1212,46.0761600,-118.32529,769,R,63,Birch,Betula utilis,Betulaceae,15,24,25,11,0%,Good,B,No,No
+1343,1213,46.0762600,-118.32535,781,R,64,Birch,Betula utilis,Betulaceae,15,21,25,11,0%,Good,B,No,No
+1344,1214,46.0762700,-118.32538,791,R,65,Birch,Betula utilis,Betulaceae,15,20,30,10,0%,Good,B,No,No
+1345,1215,46.0762500,-118.32539,799,R,66,Birch,Betula utilis,Betulaceae,15,22,25,11,0%,Good,B,No,No
+1346,1216,46.0763200,-118.32539,803,R,67,Birch,Betula utilis,Betulaceae,15,20,30,11,0%,Good,B,No,No
+1347,1217,46.0763100,-118.32543,807,R,68,Birch,Betula utilis,Betulaceae,15,22,30,12,0%,Good,B,No,No
+1348,1218,46.0763300,-118.32546,813,R,69,Leyland Cypress,Cupressocyparis leylandii,Cupressaceae,15,46,35,12,0%,Good,B,No,No
+1349,1219,46.0763100,-118.32555,836,R,70,Leyland Cypress,Cupressocyparis leylandii,Cupressaceae,15,45,35,13,0%,Good,B,No,No
+1350,1220,46.0763800,-118.32562,838,R,71,Leyland Cypress,Cupressocyparis leylandii,Cupressaceae,15,45,35,13,0%,Good,B,No,No
+1351,1221,46.0763800,-118.32573,853,R,72,Magnolia,Magnolia,Magnoliaceae,15,11,15,6,0%,Poor,B,No,No
+1352,1222,46.0763800,-118.32584,869,R,73,Magnolia,Magnolia,Magnoliaceae,15,12,15,6,0%,Poor,B,No,No
+1353,1223,46.0763600,-118.32596,873,R,74,Magnolia,Magnolia,Magnoliaceae,15,11,12,4,0%,Poor,B,No,No
+1354,1224,46.0763500,-118.32605,873,R,75,Magnolia,Magnolia,Magnoliaceae,15,12,12,5,0%,Poor,C,No,No
+1355,1225,46.0763400,-118.32602,884,R,76,Magnolia,Magnolia,Magnoliaceae,15,15,15,7,0%,Fair,B,No,No
+1356,1226,46.0763700,-118.32588,893,R,77,Magnolia,Magnolia,Magnoliaceae,15,15,20,10,0%,Fair,B,No,No
+1357,1227,46.0763400,-118.32577,892,R,78,Magnolia,Magnolia,Magnoliaceae,15,15,15,6,0%,Fair,B,No,No
+1358,1228,46.0763300,-118.3257,900,R,79,Magnolia,Magnolia,Magnoliaceae,15,16,15,9,0%,Fair,B,No,No
+1359,1229,46.0782100,-118.33065,1006,S,1,Star magnolia,Magnolia stellaita or loebneri,Magnoliaceae,30,25,25,16,0%,Good,B,No,No
+1360,1230,46.0783100,-118.3307,1001,S,2,Siberian spruce,Picea obovata,Pinaceae,20,28,20,8,0%,Good,B,No,No
+1361,1231,46.0783200,-118.3308,998,S,3,Honey locust,Gleditsia triacanthos,Fabaceae (Leguminosae),40,51,30,16,0%,Fair,A,No,No
+1362,1232,46.0784500,-118.33094,999,S,4,Magnolia,Magnolia,Magnoliaceae,15,10,20,8,0%,Fair,B,No,No
+1363,1233,46.0782500,-118.3308,999,S,5,Honey locust,Gleditsia triacanthos,Fabaceae,40,53,35,25,0%,Fair,A,No,No
+1364,1234,46.0782100,-118.33093,995,S,6,English Hawthorne,Crataegus laevigata,Rosaceae,40,26,25,12,0%,Good,B,No,No
+1365,1235,46.0781900,-118.33115,994,S,7,English Hawthorne,Crataegus laevigata,Rosaceae,40,24,20,8,0%,Good,B,No,No
+1366,1236,46.0781900,-118.33124,998,S,8,Autmn blaze,Acer rubrum x fremontii,Aceraceae,20,40,35,19,0%,Good,B,No,No
+1367,1237,46.0781500,-118.33146,996,S,9,Autmn blaze,Acer rubrum x fremontii,Aceraceae,20,44,35,16,0%,Good,B,No,No
+1368,1238,46.0782000,-118.33149,994,S,10,English Hawthorne,Crataegus laevigata,Fabaceae,40,28,15,9,0%,Good,B,No,No
+1369,1239,46.0782400,-118.33156,994,S,11,Black oak?,Quercus,Fagaceae,30,50,50,19,0%,Good,B,No,No
+1370,1240,46.0782200,-118.33166,994,S,12,English Hawthorne,Crataegus laevigata,Fabaceae,40,26,20,9,0%,Good,B,No,No
+1371,1241,46.0781600,-118.33175,992,S,13,Autmn blaze,Acer rubrum x fremontii,Aceraceae,,53,55,15,0%,Good,B,No,No
+1372,1242,46.0781600,-118.33189,992,S,14,Celebration maple,Acer rubrum,Aceraceae,,34,35,15,0%,Good,B,No,No
+1373,1243,46.0782000,-118.33203,992,S,15,Oak,Quercus,Fagaceae,,35,35,16,0%,Good,B,No,No
+1374,1244,46.0781400,-118.33211,990,S,16,Autmn blaze,Acer rubrum x fremontii,Aceraceae,,29,40,18,0%,Good,B,No,No
+1375,1245,46.0781500,-118.33227,989,S,17,Celebration maple,Acer rubrum,Aceraceae,,26,35,16,0%,Good,B,No,No
+1376,1246,46.0781400,-118.33244,988,S,18,Autmn blaze,Acer rubrum x fremontii,Aceraceae,,52,45,15,0%,Good,B,No,No
+1377,1247,46.0782100,-118.33257,988,S,19,Celebration maple,Acer rubrum,Aceraceae,,24,25,10,0%,Good,B,No,No
+1378,1248,46.0783100,-118.33259,1000,S,20,Celebration maple,Acer rubrum,Aceraceae,,36,25,13,0%,Good,B,No,No
+1379,1249,46.0781500,-118.3327,970,S,21,Little leaf linden,Tilia cardata,Tiliaceae,12,13,15,6,0%,Good,B,No,No
+1380,1250,46.0782200,-118.33287,969,S,22,Autmn blaze,Acer rubrum,Aceraceae,,31,25,13,0%,Good,B,No,No
+1381,1251,46.0780300,-118.33312,971,S,23,Marshall seedless,Fraxinus pennsylvanica,Oleaceae,,36,40,10,0%,Fair,B,No,No
+1382,1252,46.0779700,-118.33332,975,S,24,,Quercus,Fagaceae,,51,15,12,0%,Good,B,No,No
+1383,1253,46.0778600,-118.33346,974,S,25,Autmn blaze,Acer rubrum,Aceraceae,,54,55,20,0%,Good,B,No,No
+1384,1254,46.0778700,-118.3337,975,S,26,Norway Maple,Acer platanoides,Aceraceae,15,59,45,18,0%,Good,B,No,No
+1385,1255,46.0777800,-118.33377,978,S,27,Norway Maple,Acer platanoides,Aceraceae,15,49,45,17,0%,Good,B,No,No
+1386,1256,46.0778500,-118.33393,977,S,28,Celebration maple,Acer rubrum,Aceraceae,,27,35,14,0%,Good,B,No,No
+1387,1257,46.0776600,-118.3349,980,S,29,Celebration maple,Acer rubrum,Aceraceae,,40,45,20,0%,Good,B,No,No
+1388,1258,46.0775800,-118.335,979,S,30,Cherry,Prunus,Rosaceae,,44,40,22,0%,Good,B,No,No
+1389,1259,46.0777600,-118.33417,982,S,31,Prickly caster oil tree,Kalopanax picus or maximowiczii,Araliaceae,10,8,9,2.5,0%,Fair,B,No,No
+1390,1260,46.0781300,-118.33368,986,S,32,Marshall seedless,Fraxinus pennsylvanica,Oleaceae,,52,45,17,0%,Good,B,No,No
+1391,1261,46.0782600,-118.33378,985,S,33,Celebration maple,Acer rubrum,Aceraceae,,39,25,14,0%,Good,B,No,No
+1392,1262,46.0786700,-118.33388,990,S,34,Celebration maple,Acer rubrum,Aceraceae,,32,25,10,0%,Good,B,No,No
+1393,1263,46.0785500,-118.33385,990,S,35,Celebration maple,Acer rubrum,Aceraceae,,33,25,14,0%,Good,B,No,No
+1394,,46.0784400,-118.33487,991,S,36,Weeping cherry,Prunus,Rosaceae,8,8,6,3,0%,Good,B,No,No
+1395,1265,46.0784400,-118.33489,989,S,37,Marshall seedless,Fraxinus pennsylvanica,Oleaceae,,33,30,15,0%,Good,B,No,No
+1396,1266,46.0784100,-118.33497,989,S,38,Marshall seedless,Fraxinus pennsylvanica,Oleaceae,,28,30,13,0%,Good,B,No,No
+1397,1267,46.0783500,-118.33501,984,S,39,Marshall seedless,Fraxinus pennsylvanica,Oleaceae,,24,25,13,0%,Fair,B,No,No
+1398,1268,46.0784100,-118.33226,984,S,40,Purple Ash,Fraxinus pennsylvanica or ammericana,Oleaceae,,40,30,17,0%,Good,B,No,No
+1399,1269,46.0784500,-118.33214,983,S,41,Alaska Cedar,Chamaecyparis nootkatensis,Cupressaceae,7,7,15,2,0%,Good,A,No,No
+1400,1270,46.0783400,-118.33205,983,S,42,Pin Oak,Quercus palustris,Fagaceae,,33,35,15,0%,Good,B,No,No
+1401,1271,46.0785300,-118.33197,983,S,43,Autmn blaze,Acer rubrum x fremontii,Aceraceae,,32,40,14,0%,Good,B,No,No
+1402,1272,46.0784600,-118.33172,982,S,44,Purple Ash,Fraxinus pennsylvanica or ammericana,Oleaceae,,28,25,13,0%,Good,B,No,No
+1403,1273,46.0783500,-118.33161,980,S,45,Autmn blaze/ celebration,Acer rubrum,Aceraceae,7,13,20,7,0%,Fair,B,No,No
+1404,1274,46.0783800,-118.33147,981,S,46,Black oak,Quercus,Fagaceae,30,44,45,16,0%,Good,B,No,No
+1405,1275,46.0785700,-118.33154,1010,S,47,,Quercus nigra?,Fagaceae,20,38,35,17,0%,Good,B,No,No
+1406,1276,46.0786900,-118.33142,980,S,48,Autmn blaze,Acer rubrum x fremontii,Aceraceae,,34,35,12,0%,Good,B,No,No
+1407,1277,46.0786500,-118.33121,982,S,49,Green Ash,Fraxinus pennsylvanica,Oleaceae,,29,35,12,0%,Good,B,No,No
+1408,1278,46.0788000,-118.33109,987,S,50,Green Ash,Fraxinus pennsylvanica,Oleaceae,,25,30,8,0%,Good,B,No,No
+1409,1279,46.0786500,-118.33101,990,S,51,,Quercus,Fagaceae,20,45,35,18,0%,Good,B,No,No
+1410,1280,46.0786100,-118.33087,990,S,52,Red Maple,Acer rubrum,Aceraceae,,24,25,11,0%,Good,B,No,No
+1411,1281,46.0787800,-118.33083,992,S,53,Red Maple,Acer rubrum,Aceraceae,,20,25,9,0%,Good,B,No,No
+1412,1282,46.0787600,-118.33063,993,S,54,Bald Cypress,Taxodium distichum,Taxodiaceae,,34,30,16,0%,Good,B,No,No
+1413,1283,46.0787500,-118.33065,993,S,55,,Quercus,Fagaceae,,32,40,15,0%,Good,B,No,No
+1414,1284,46.0789200,-118.33073,994,S,56,Green Ash,Fraxinus pennsylvanica,Oleaceae,,27,35,14,0%,Good,B,No,No
+1415,1285,46.0789000,-118.33046,995,S,57,Norway Maple,Acer platanoides,Aceraceae,35,47,35,16,0%,Good,B,No,No
+1416,1286,46.0790600,-118.33025,1001,S,58,Persian Ironwood,Parrotia persica,Hamamelidaceae,12,10,15,5,0%,Fair,A,No,No
+1417,1287,46.0791400,-118.33037,1003,S,59,Green Ash,Fraxinus pennsylvanica,Oleaceae,,28,35,14,0%,Good,B,No,No
+1418,1288,46.0790900,-118.33063,998,S,60,Maidenhair Tree,Ginkgo biloba,Ginkgoaceae,12,3,6,3,0%,Poor,B,No,No
+1419,1289,46.0792200,-118.33046,1002,S,61,Oak,Quercus,Fagaceae,,25,30,10,0%,Good,B,No,No
+1420,1290,46.0793600,-118.33046,1005,S,62,Green Ash,Fraxinus pennsylvanica,Oleaceae,,26,30,9,0%,Good,B,No,No
+1421,1291,46.0794400,-118.33056,1004,S,63,Autmn blaze,Acer rubrum x fremontii,Aceraceae,,23,35,7,0%,Good,B,No,No
+1422,1292,46.0793900,-118.33073,1002,S,64,Green Ash,Fraxinus pennsylvanica,Oleaceae,,24,30,13,0%,Good,B,No,No
+1423,1293,46.0794200,-118.33081,1000,S,65,Green Ash,Fraxinus pennsylvanica,Oleaceae,,23,30,8,0%,Good,B,No,No
+1424,1294,46.0795200,-118.33086,1000,S,66,,Quercus,Fagaceae,,37,25,16,0%,Good,B,No,No
+1425,1295,46.0796500,-118.33097,996,S,67,Green Ash,Fraxinus pennsylvanica,Oleaceae,,14,25,8,0%,Good,B,No,No
+1426,1296,46.0797300,-118.33072,1000,S,68,Autmn blaze,Acer rubrum x fremontii,Aceraceae,,27,40,12,0%,Good,B,No,No
+1427,1297,46.0796200,-118.33073,1001,S,69,Green Ash,Fraxinus pennsylvanica,Oleaceae,,23,35,8,0%,Good,B,No,No
+1428,1298,46.0795400,-118.33062,1002,S,70,Green Ash,Fraxinus pennsylvanica,Oleaceae,,28,35,14,0%,Good,B,No,No
+1429,1299,46.0788500,-118.33004,1002,S,71,Green Ash,Fraxinus pennsylvanica,Oleaceae,,24,30,11,0%,Good,B,No,No
+1430,1300,46.0787700,-118.32987,1005,S,72,Green Ash,Fraxinus pennsylvanica,Oleaceae,,22,25,12,0%,Good,B,No,No
+1431,1301,46.0788100,-118.32969,1004,S,73,Green Ash,Fraxinus pennsylvanica,Oleaceae,,23,30,13,0%,Good,B,No,No
+1432,1302,46.0789200,-118.32866,1053,S,74,Green Ash,Fraxinus pennsylvanica,Oleaceae,,25,25,14,0%,Good,B,No,No
+1433,1303,46.0788900,-118.32879,1053,S,75,Green Ash,Fraxinus pennsylvanica,Oleaceae,,23,25,12,0%,Good,B,No,No
+1434,1304,46.0785400,-118.3297,1030,S,76,Alaska Cedar,Chamaecyparis nootkatensis,Cupressaceae,10,7,12,3,0%,Good,B,No,No
+1435,1305,46.0786000,-118.33058,1015,S,77,English Hawthorne,Crataegus laevigata,Rosaceae,35,28,20,12,0%,Fair,B,No,No
+1436,1306,46.0785700,-118.33051,1011,S,78,English Hawthorne,Crataegus laevigata,Rosaceae,35,28,20,16,0%,Good,B,No,No
+1437,1307,46.0785100,-118.33058,1014,S,79,English Hawthorne,Crataegus laevigata,Rosaceae,35,28,15,16,0%,Good,B,No,No
+1438,1308,46.0784500,-118.33046,1013,S,80,Black Locust,Robina pseudoacacia,Fabaceae,35,108,60,53,0%,Good,B,No,No
+1439,1309,46.0784100,-118.33044,1016,S,81,Siberian Spruce,Picea obovata,Pinaceae,20,22,20,7,0%,Good,B,No,No
+1440,1310,46.0783700,-118.33033,1014,S,82,Norway Maple,Acer platanoides,Aceraceae,35,60,50,19,0%,Good,B,No,No
+1441,1311,46.0783400,-118.33028,1021,S,83,,Pinus,Pinaceae,35,58,45,13,0%,Fair,B,No,No
+1442,1312,46.0783500,-118.33032,1022,S,84,Brab Apple,Malus floribunda,Rosaceae,35,40,10,18,0%,Good,B,No,No
+1443,1313,46.0783900,-118.33022,1015,S,85,Norway Maple,Acer platanoides,Aceraceae,35,54,50,20,0%,Good,B,No,No
+1444,1314,46.0784100,-118.33023,1019,S,86,Douglas Fir,Pseudotsuga menziesii,Fabaceae,25,28,45,8,0%,Good,B,No,No
+1445,1315,46.0784300,-118.33017,1023,S,87,,Pinus,Pinaceae,35,51,40,14,0%,Good,B,No,No
+1446,1316,46.0784800,-118.33016,1018,S,88,Norway Maple,Acer platanoides,Aceraceae,35,46,35,15,0%,Good,B,No,No
+1447,1317,46.0784100,-118.33008,1019,S,89,Black Locust,Robina pseudoacacia,Fabaceae,35,55,65,15,0%,Fair,B,No,No
+1448,1318,46.0784300,-118.33007,1023,S,90,Pine,Pinus,Pinaceae,35,62,45,12,0%,Poor,B,No,No
+1449,1319,46.0784700,-118.33014,1018,S,91,dogwood,Cornus,Cornaceae,15,10,10,9,0%,Good,B,No,No
+1450,1320,46.0784400,-118.33016,1016,S,92,Norway Maple,Acer platanoides,Aceraceae,35,41,45,15,0%,Good,B,No,No
+1451,1321,46.0784500,-118.33003,1023,S,93,Pine,Pinus,Pinaceae,35,41,45,12,0%,Fair,B,No,No
+1452,1322,46.0784500,-118.32998,1023,S,94,Douglas Fir,Pseudotsuga menziesii,Pinaceae,35,48,55,16,0%,Good,B,No,No
+1453,1323,46.0785300,-118.33,1013,S,95,Norway Maple,Acer platanoides,Aceraceae,35,48,35,15,0%,Good,B,No,No
+1454,1324,46.0785000,-118.32992,1019,S,96,Crab Apple,Malus floribunda,Rosaceae,35,28,15,13,0%,Good,B,No,No
+1455,1325,46.0786000,-118.32998,1005,S,97,Pine,Pinus,Pinaceae,35,31,30,13,0%,Good,B,No,No
+1456,1326,46.0785800,-118.32992,1012,S,98,Black Locust,Robina pseudoacacia,Fabaceae,12,28,50,9,0%,Fair,C,No,No
+1457,1327,46.0785900,-118.3299,1011,S,99,Pine,Pinus,Pinaceae,15,12,12,3,0%,Poor,A,No,No
+1458,1328,46.0785300,-118.32983,1023,S,100,Pine,Pinus,Pinaceae,35,48,30,8,0%,Fair,B,No,No
+1459,1329,46.0785900,-118.32987,1010,S,101,Pine,Pinus,Pinaceae,35,22,12,8,0%,Fair,B,No,No
+1460,1330,46.0785900,-118.32971,1026,S,102,Pine,Pinus,Pinaceae,35,65,45,11,0%,Fair,B,No,No
+1461,1331,46.0786000,-118.32962,1025,S,103,Pine,Pinus,Pinaceae,35,59,45,12,0%,Fair,B,No,No
+1462,1332,46.0786600,-118.32971,1019,S,104,Pine,Pinus,Pinaceae,35,15,25,6,0%,Good,A,No,No
+1463,1333,46.0787100,-118.32967,1013,S,105,Pine,Pinus,Pinaceae,35,24,30,9,0%,Good,A,No,No
+1464,1334,46.0786700,-118.32945,1030,S,106,Pine,Pinus,Pinaceae,35,66,45,13,0%,Good,B,No,No
+1465,1335,46.0787300,-118.32931,1032,S,107,Pine,Pinus,Pinaceae,35,47,35,8,0%,Good,B,No,No
+1466,1336,46.0788400,-118.329,1036,S,108,Pine,Pinus,Pinaceae,35,50,40,11,0%,Good,B,No,No
