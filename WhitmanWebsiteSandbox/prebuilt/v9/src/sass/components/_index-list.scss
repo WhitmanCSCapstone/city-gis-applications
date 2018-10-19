@@ -1,0 +1,63 @@
+/**********************************
+#INDEX-LIST-COMPONENT / #INDEX-LIST-PAGE
+
+Info
+	Styles for the index list component and page	 
+	 
+Notes
+[-] 	If you expect to have images for some list-tems and not have
+		images for others, and you want their item-info sections to 
+		stay aligned, just add an image box for all items regardless of whether
+		there's an image in it.    
+**********************************/
+.wc-index-list-component{
+	.wc-index-list{
+		list-style: none;
+		margin-left:0;
+		padding-left:0;
+		>li{
+			list-style: none;
+		}
+		&.wc-no-images{
+			.wc-image-box{
+				display:none;
+			}
+		}
+	}
+	.wc-index-list-item{
+		margin-bottom:1em;
+		display:flex;
+	}
+		.wc-image-box{
+			@extend .hidden-xs;
+			@include responsiveFlexWidth(100px,100px,100px,130px);
+			@include responsivePaddingRight(1rem,1rem,1rem,1rem);
+		} 
+			img{
+				max-width: 100%;
+			}
+		.wc-item-info{
+			flex:1;
+		}
+			.wc-item-main-link{
+				display:block;
+				font-weight:600;
+				margin:0 0 .5em;
+			}
+}
+.no-flexbox {
+	.wc-index-list{
+		li{
+			@include clearfix();
+		}
+		.wc-image-box{
+			float:left;
+			width:15%;
+		}
+		.wc-item-info{
+			float:left;
+			width:75%;
+		}
+	}
+}
+

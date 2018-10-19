@@ -1,0 +1,1 @@
+These are SVG's that aren't compiled into svg-defs, to be reference with standard <img> tags. This is usually because we cant to include their fill colors or something like that, and I've configured grunt to strip that stuff out. 

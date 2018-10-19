@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<!--**********************************
+	
+THE HEADER
+
+**********************************-->
+<html lang="en" class="no-js">
+<head>
+
+	<meta name="APIKey" content="GoogleMaps:AIzaSyCtN93T96IPFqtNyCUBZs7FdWMROgAKdb0"/>
+	<meta name="APIKey" content="GoogleDrive:AIzaSyCg1OVTbVSAKzsejkwzOflQxxjzH38ojg0"/>
+	<meta name="SearchURL" content="https://www.whitman.edu/xsd/customsearch4/?q=">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Whitman Redesign</title>
+
+	<!--meta tags-->
+	<meta name="robots" content="NOODP,NOYDIR">
+	<link rel="canonical" href="">
+	
+	<meta name="description" content="">
+
+	<!-- Jquery -->
+	<script src="js/jquery.min.js"></script>
+		
+	<!-- Whitman Styles -->
+	<link id="wc-main-css" href="css/wc-style.css" rel="stylesheet"/>
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,&amp;subset=latin-ext" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,700,700i&amp;subset=latin-ext" rel="stylesheet">
+	
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body > 
+	<a class="wc-skip-to-content-link" href="#wc-reader-content">Skip to main content</a>
+	<!-- Header -->	
+	<header class="wc-header" id="wc-site-header" role="banner">
+		<!-- Header Row 1 -->
+		<div class="wc-header-row1" id="wc-header-row1" role="navigation">
+			<div class="wc-container">
+				<!-- Logo -->
+				<a href="index.html" class="wc-header-logo-link" title="Whitman College home">
+					<!-- Desktop Logo -->
+					<img alt="Whitman College logo" class="wc-desktop-header-logo" src="images/svg/not-inline/whitman-logo-header.svg"  onerror="this.src='images/misc/whitman-logo-header.png'"/>
+					
+					<!-- Mobile Logo-->
+					<svg class="wc-mobile-header-logo" viewBox="0 0 180 15">
+						<use xlink:href="images/svg/svg-defs.svg#logo-whitman-nc-flat"></use>
+						<title>Whitman College logo</title>
+					</svg>
+				</a>
+				
+				<div class="wc-right-box">
+					<!-- Constituent Links -->
+					<div class="wc-constituent-links">
+						<ul role="menubar">
+							<li >
+								<a href="/alumni.html" class="wc-clickable" title="Alumni" data-tracking-category="Header Link" data-tracking-action="Click" data-tracking-label="Constituent Link - Alumni">Alumni</a>
+								<span class="wc-bullet" aria-hidden="true">•</span>
+							</li>
+							<li >
+								<a href="/community.html" class="wc-clickable" title="Community" data-tracking-category="Header Link" data-tracking-action="Click" data-tracking-label="Constituent Link - Community">Community</a>
+								<span class="wc-bullet" aria-hidden="true">•</span>
+							</li>
+							<li >
+								<a href="https://my.whitman.edu/faculty" class="wc-clickable" title="Faculty" data-tracking-category="Header Link" data-tracking-action="Click" data-tracking-label="Constituent Link - Faculty">Faculty</a>
+								<span class="wc-bullet" aria-hidden="true">•</span>
+							</li>
+							<li >
+								<a href="/parents" class="wc-clickable" title="Parents" data-tracking-category="Header Link" data-tracking-action="Click" data-tracking-label="Constituent Link - Parents">Parents</a>
+								<span class="wc-bullet" aria-hidden="true">•</span>
+							</li>
+							<li >
+								<a href="https://my.whitman.edu/staff" class="wc-clickable" title="Staff" data-tracking-category="Header Link" data-tracking-action="Click" data-tracking-label="Constituent Link - Staff">Staff</a>
+								<span class="wc-bullet" aria-hidden="true">•</span>
+							</li>
+							<li >
+								<a href="https://my.whitman.edu/students" class="wc-clickable" title="Students" data-tracking-category="Header Link" data-tracking-action="Click" data-tracking-label="Constituent Link - Students">Students</a>
+							</li>
+						</ul>
+					</div>
+					<a href="https://whitman.edu/giving" class="wc-special-button wc-box-button wc-white">Give Now</a>
+
+					<!-- Quick Links - Button -->
+					<button class="wc-quick-links-button collapsed" data-toggle="collapse" data-target="#wc-quick-links-links" id="wc-quick-links-button" role="button" tabindex="0" aria-haspopup="true">
+						<div class="wc-svg-box">
+						</div>
+						<div class="wc-svg-box wc-spins">
+							<svg viewbox= "0 0 32 32" class="icon-arrow-circle-down">
+								<use xlink:href="images/svg/svg-defs.svg#icon-arrow-circle-down"></use>
+							</svg>
+						</div>
+						<span class="wc-text" id="quicklinks">Quick Links</span>
+					</button>
+
+					<!-- Mobile Buttons -->
+	 				<button class="wc-toggle wc-mobile-button" id="wc-mobile-nav-button" aria-label="Menu" aria-expanded="false" >
+						<svg class="wc-not-toggled-icon" viewbox= "0 0 32 32"><use xlink:href="images/svg/svg-defs.svg#icon-menu-mobile-a"></use></svg>
+						<svg class="wc-toggled-icon" viewbox= "0 0 32 32"><use xlink:href="images/svg/svg-defs.svg#icon-menu-mobile-b"></use></svg>
+					</button> 
+ 					<button class="wc-toggle wc-mobile-button" id="wc-mobile-search-button" aria-label="Search" aria-expanded="false" >
+						<svg class="wc-not-toggled-icon" viewbox= "0 0 32 32"><use xlink:href="images/svg/svg-defs.svg#icon-search-mobile-a"></use></svg>
+						<svg class="wc-toggled-icon" viewbox= "0 0 32 32"><use xlink:href="images/svg/svg-defs.svg#icon-search-mobile-b"></use></svg>
+					</button>
+				</div>
+			</div>
+			<!-- Quick Links - Desktop -->
+			<div class="wc-quick-links-links wc-container collapse" id="wc-quick-links-links">
+				<div class="wc-quick-links-section">
+					<ul class="wc-quick-link-columns-text" aria-labelledby="quicklinks" role="menu">
+						<li ><a>Bookstore</a></li>
+						<li ><a>Sexual Misconduct Policy Something Something</a></li>
+						<li ><a>Center for Writing and Speaking</a></li>
+						<li ><a>Employment</a></li>
+						<li ><a>Giving</a></li>
+						<li ><a>Grievance Policy</a></li>
+						<li ><a>News</a></li>
+						<li ><a>Right to Know</a></li>
+						<li ><a>Sexual Misconduct Policy</a></li>
+					</ul>
+				</div>
+				<div class="wc-quick-links-section" role="menubar">
+					<a class="wc-icon-quick-link" href="a-to-z-index.html" >
+						<svg class="wc-icon" viewbox= "0 0 32 32">
+							<use xlink:href="images/svg/svg-defs.svg#icon-a-to-z"></use>
+						</svg>
+						<span class="wc-text">A-to-Z Index</span>
+					</a>
+					<a href="map.html" class="wc-icon-quick-link" >
+						<svg class="wc-icon" viewbox= "0 0 32 32">
+							<use xlink:href="images/svg/svg-defs.svg#icon-map-pin"></use>
+						</svg>
+						<span class="wc-text">Campus Map</span>
+					</a>
+					<a class="wc-icon-quick-link" >
+						<svg class="wc-icon" viewbox= "0 0 32 32">
+							<use xlink:href="images/svg/svg-defs.svg#icon-calendar-no-circle"></use>
+						</svg>
+						<span class="wc-text">Event Calendar</span>
+					</a>
+					<a class="wc-icon-quick-link" >
+						<svg class="wc-icon" viewbox= "0 0 32 32">
+							<use xlink:href="images/svg/svg-defs.svg#icon-library"></use>
+						</svg>
+						<span class="wc-text">Library</span>
+					</a>
+					<a class="wc-icon-quick-link" >
+						<svg class="wc-icon" viewbox= "0 0 32 32">
+							<use xlink:href="images/svg/svg-defs.svg#icon-mywhitman-cog"></use>
+						</svg>
+						<span class="wc-text">myWhitman</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!-- Header Row 2 -->
+		<div class="wc-header-row2" id="wc-header-row2" role="navigation">
+			<div class="wc-container">
+				<!-- Main Nav-->
+
+
+
+
+				<nav class="wc-main-nav wc-sm-collapse" id="wc-main-nav">
+					<!-- Quick Links - Mobile -->
+					<div class="wc-mobile-only wc-mobile-quick-links">
+						<a class="wc-icon-quick-link" href="a-to-z-index.html">
+							<svg class="wc-icon" aria-hidden="true" viewbox= "0 0 32 32">
+								<use xlink:href="images/svg/svg-defs.svg#icon-a-to-z"></use>
+							</svg>
+							<span class="wc-text">A-to-Z</span>
+						</a>
+						<a href="map.html" class="wc-icon-quick-link">
+							<svg class="wc-icon" aria-hidden="true" viewbox= "0 0 32 32">
+								<use xlink:href="images/svg/svg-defs.svg#icon-map-pin"></use>
+							</svg>
+							<span class="wc-text">Map</span>
+						</a>
+						<a class="wc-icon-quick-link">
+							<svg class="wc-icon" aria-hidden="true" viewbox= "0 0 32 32">
+								<use xlink:href="images/svg/svg-defs.svg#icon-calendar-no-circle"></use>
+							</svg>
+							<span class="wc-text">Events</span>
+						</a>
+						<a class="wc-icon-quick-link">
+							<svg class="wc-icon" aria-hidden="true" viewbox= "0 0 32 32">
+								<use xlink:href="images/svg/svg-defs.svg#icon-library"></use>
+							</svg>
+							<span class="wc-text">Library</span>
+						</a>
+						<a class="wc-icon-quick-link">
+							<svg class="wc-icon" aria-hidden="true" viewbox= "0 0 32 32">
+								<use xlink:href="images/svg/svg-defs.svg#icon-mywhitman-cog"></use>
+							</svg>
+							<span class="wc-text">
+								myWhitman
+								<svg class="wc-icon-inline" viewbox= "0 0 32 32">
+									<use xlink:href="images/svg/svg-defs.svg#icon-lock"></use>
+								</svg>
+							</span>
+						</a>
+					</div>
+
+					<ul class="wc-main-nav-level-1">
+						<li>
+							<a class="wc-main-nav-primary-category wc-clickable" href="landing.html" id="main-1">About</a>
+							<button class="wc-main-nav-expander collapsed" data-toggle="collapse" data-target="#wut1" aria-expanded="false" aria-controls="#wut1" aria-label="About sub-menu">
+								<svg viewBox="0 0 32 32"><use  xlink:href="images/svg/svg-defs.svg#icon-arrow-down"></use></svg>
+							</button>
+							<div class="wc-sub-menu wc-container wc-about-sub-menu wc-mobile-collapse-box" id="wut1">
+								<ul role="menu" aria-labelledby="main-1">
+									<li ><a href="map.html">Campus Map</a></li>
+									<li ><a href="detail.html">Campus and Community</a></li>
+									<li ><a>Campus Sustainability</a></li>
+									<li ><a>This link is going to be a long one to test the line breaks</a></li>
+									<li ><a>Fast Facts</a></li>
+									<li ><a href="section-index.html">Leadership and Organization</a></li>
+									<li ><a>Contact Us</a></li>
+									<li ><a>Portaits of the Past</a></li>
+									<li ><a href="style-guide.html">Whitman Hallmarks</a></li>
+								</ul>
+								<div class="wc-feature">
+									<img alt="Feature" src="images/NavbarFeatures/feature1.jpg" />
+									<div class="wc-feature-text">
+										<p>A featured page that will have just about this much text describing it.</p>
+										<a href="#" class="wc-box-button wc-bb-more-link wc-white">Learn More</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a class="wc-main-nav-primary-category wc-clickable" id="main-2">Academics & Library</a>
+							<button class="wc-main-nav-expander collapsed" data-toggle="collapse" data-target="#wut2" aria-expanded="false" aria-controls="#wut2" aria-label="Academics and Library sub-menu">
+								<svg viewBox="0 0 32 32"><use  xlink:href="images/svg/svg-defs.svg#icon-arrow-down"></use></svg>
+							</button>
+							<div class="wc-sub-menu wc-container wc-about-sub-menu wc-mobile-collapse-box" id="wut2">
+								<ul role="menu" aria-labelledby="main-2">
+									<li ><a>Academic Calendar</a></li>
+									<li ><a href="section-front.html">Academic Resource Center</a></li>
+									<li ><a>Catalog</a></li>
+									<li ><a href="departments.html">Departments and Programs</a></li>
+									<li ><a>Encounters</a></li>
+									<li ><a href="profile-index.html">The Faculty</a></li>
+									<li ><a>Fellowships and Grants</a></li>
+									<li ><a>Liberal Arts Education</a></li>
+									<li ><a>Penrose Library</a></li>
+									<li ><a>Placement Tests</a></li>
+									<li ><a>Whitman Debate</a></li>
+								</ul>
+								<div class="wc-feature">
+									<img alt="Feature" src="images/NavbarFeatures/feature2.jpg" />
+									<div class="wc-feature-text">
+										<p>A featured page that will have just about this much text describing it.</p>
+										<a href="#" class="wc-box-button wc-bb-more-link wc-white">Learn More</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a class="wc-main-nav-primary-category wc-clickable" id="main-3">Admission & Aid</a>
+							<button class="wc-main-nav-expander collapsed" data-toggle="collapse" data-target="#wut3" aria-expanded="false" aria-controls="#wut3">
+								<svg viewBox="0 0 32 32"><use  xlink:href="images/svg/svg-defs.svg#icon-arrow-down"></use></svg>
+							</button>
+							<div class="wc-sub-menu wc-container wc-about-sub-menu wc-mobile-collapse-box" id="wut3">
+								<ul role="menu" aria-labelledby="main-3">
+									<li ><a>Apply</a></li>
+									<li ><a>Contact Us</a></li>
+									<li ><a>Financial Aid</a></li>
+									<li ><a>Learn More</a></li>
+									<li ><a>Request Information</a></li>
+									<li ><a>Visit Whitman</a></li>
+									<li ><a>Whitman on the Road</a></li>
+									<li ><a>Why Whitman?</a></li>
+								</ul>
+								<div class="wc-feature">
+									<img alt="Feature" src="images/NavbarFeatures/feature3.jpg" />
+									<div class="wc-feature-text">
+										<p>A featured page that will have just about this much text describing it.</p>
+										<a href="#" class="wc-box-button wc-bb-more-link wc-white">Learn More</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a class="wc-main-nav-primary-category wc-clickable" id="main-4">Athletics</a>
+							<button class="wc-main-nav-expander collapsed" data-toggle="collapse" data-target="#wut4" aria-expanded="false" aria-controls="#wut4">
+								<svg viewBox="0 0 32 32"><use  xlink:href="images/svg/svg-defs.svg#icon-arrow-down"></use></svg>
+							</button>
+							<div class="wc-sub-menu wc-container wc-about-sub-menu wc-mobile-collapse-box" id="wut4">
+								<ul role="menu" aria-labelledby="main-4">
+									<li ><a>Club Sports</a></li>
+									<li ><a>Intramural Sports</a></li>
+									<li ><a>Men's Basketball</a></li>
+									<li ><a>Swimming</a></li>
+									<li ><a>Varsity Sports</a></li>
+									<li ><a>W Club</a></li>
+									<li ><a>Women's Basketball</a></li>
+								</ul>
+								<div class="wc-col2 wc-feature">
+									<img alt="Feature" src="images/NavbarFeatures/feature6.png" />
+									<div class="wc-feature-text">
+										<p>A featured page that will have just about this much text describing it.</p>
+										<a href="#" class="wc-box-button wc-bb-more-link wc-white">Learn More</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a class="wc-main-nav-primary-category wc-clickable" id="main-5">Student Life</a>
+							<button class="wc-main-nav-expander collapsed" data-toggle="collapse" data-target="#wut5" aria-expanded="false" aria-controls="#wut5">
+								<svg viewBox="0 0 32 32"><use  xlink:href="images/svg/svg-defs.svg#icon-arrow-down"></use></svg>
+							</button>
+							<div class="wc-sub-menu wc-container wc-about-sub-menu wc-mobile-collapse-box" id="wut5">
+								<ul role="menu" aria-labelledby="main-5">
+									<li ><a>Career Services</a></li>
+									<li ><a>Club Sports and Intramurals</a></li>
+									<li ><a>Green Life</a></li>
+									<li ><a>Living at Whitman</a></li>
+									<li ><a>Orientation</a></li>
+									<li ><a>Student Activities</a></li>
+									<li ><a>Student Clubs and Organizations</a></li>
+									<li ><a>Student Services</a></li>
+								</ul>
+								<div class="wc-col2 wc-feature">
+									<img alt="Feature" src="images/NavbarFeatures/feature4.jpg" />
+									<div class="wc-feature-text">
+										<p>A featured page that will have just about this much text describing it.</p>
+										<a href="#" class="wc-box-button wc-bb-more-link wc-white">Learn More</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="wc-mobile-only">
+							<span class="wc-main-nav-primary-category wc-clickable wc-mobile-only">
+								<span class="wc-center-line">
+									<span id="mobile-menu-1">Audiences</span>
+								</span>
+							</span>
+							<div class="wc-sub-menu wc-indented">
+								<ul role="menu" aria-labelledby="mobile-menu-1">
+									<li ><a href="alumni.html">Alumni</a></li>
+									<li ><a>Parents</a></li>
+									<li ><a>Students</a></li>
+									<li ><a>Faculty & Staff</a></li>
+									<li ><a>Community</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="wc-mobile-only">
+							<span class="wc-main-nav-primary-category wc-clickable wc-mobile-only">
+								<span class="wc-center-line">
+									<span id="mobile-menu-2">Quick Links</span>
+								</span>
+							</span>
+							<!-- <a class="wc-main-nav-primary-category wc-clickable wc-mobile-only" ><span class="wc-center-line"><span id="mobile-menu-2">Quick Links</span></span></a> -->
+							<div class="wc-sub-menu wc-indented">
+								<ul role="menu" aria-labelledby="mobile-menu-2">
+									<li><a>A-Z Directory</a></li>
+									<li><a>Bookstore</a></li>
+									<li><a href="map.html">Campus Map</a></li>
+									<li><a>Contact Us</a></li>
+									<li><a>Employment</a></li>
+									<li><a>Event Calendar</a></li>
+									<li><a>Giving</a></li>
+									<li><a>Grievance and Sexual Misconduct Policy</a></li>
+									<li><a>Library</a></li>
+									<li><a>myWhitman</a></li>
+									<li><a>News</a></li>
+									<li><a>Right to Know</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</nav>
+
+				<!-- Search -->
+
+				<div class="wc-search-box wc-sm-collapse" id="wc-search-box" role="search">
+					<form id="wc-search-form" action="http://whitman.edu/search">
+						<div class="wc-search-field-box">
+							<input type="text" name="q" id="wc-search-input" class="wc-search-input searchField clearFocus" placeholder="Search Site/People" autocomplete="off" />
+							<button class="wc-mobile wc-search-submit-button" role="button" title="Submit Search" aria-label="Submit Search">
+								<svg viewbox= "0 0 32 32">
+									<use xlink:href="images/svg/svg-defs.svg#icon-search-b"></use>
+								</svg>
+							</button>
+						</div>
+						<div class="wc-search-options-box wc-hidden-alt" id="wc-search-options-box">
+							<div class="wc-search-options-inner-box">
+								<a class="wc-search-option wc-search-website wc-highlighted" id="wc-search-website" role="button">Site</a>
+								<a class="wc-search-option wc-search-people" id="wc-search-people" role="button">People</a>								
+							</div>
+						</div>
+						<button class="wc-desktop wc-search-submit-button" role="button" title="Submit Search" aria-label="Submit Search">
+							<svg viewbox= "0 0 32 32">
+								<use xlink:href="images/svg/svg-defs.svg#icon-search-b"></use>
+							</svg>
+							<span class="wc-fallback-search-button">Search</span>
+						</button>
+						<span class="wc-action-website" id="wc-action-website" style="display:none;">http://whitman.edu/search</span>
+						<span class="wc-action-people" id="wc-action-people" style="display:none;">https://webapp.whitman.edu/directory/</span>
+					</form>
+					<div id="wc-auto-search-results" class="wc-auto-search-results">
+						<img class="wc-ajax-loader" id="wc-ajax-loader" src="images/gif/ajax-loader.gif" alt="Loading search results">
+						<ul>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- Content -->
+	<div class="wc-content-wrap wc-standard-layout wc-magazine" >
+		<!-- Title  -->
+		<div class="wc-title-box">
+			<div class="wc-container">
+				<h1 class="wc-page-title">Whitman sophomore receives premier environmental scholarship</h1>
+			</div>
+		</div>
+
+		<div class="wc-container">
+
+			<!-- Breadcrumbs -->
+			<div class="wc-row wc-breadcrumbs" role="navigation">
+				<a href="index.html"><svg viewbox="0 0 21 21 "><use xlink:href="images/svg/svg-defs.svg#icon-home"></use></svg></a>
+				<span>&raquo;</span>
+				<a>Newsroom</a>
+				<span>&raquo;</span>
+				<span>News Detail</span>
+			</div>
+			<div class="wc-row wc-no-top-gutter">
+
+				<!-- NOTE: any changes to this won't affect the landing page, need to update that code separately  -->
+				<div class="wc-left-column wc-quarter-content-column" id="wc-left-column">
+					<div class="wc-left-column-contents"> <!-- just using this for the border on mobile -->
+						<h2 class="wc-off-screen">Section Navigation</h2>
+						<button class="wc-section-nav-mobile-button wc-collapse-toggle collapsed" data-toggle="collapse" data-target="#wc-left-column-inner-box" aria-expanded="false" aria-controls="wc-left-column-inner-box" aria-label="Expand Section Navigation">
+							<span class="wc-text">Section Navigation</span>
+							<svg class="wc-collapsed-icon" aria-hidden="true" viewbox="0 0 32 32"><use xlink:href="images/svg/svg-defs.svg#icon-menu-hamburger" /></svg>
+							<svg class="wc-not-collapsed-icon" aria-hidden="true" viewbox="0 0 32 32"><use xlink:href="images/svg/svg-defs.svg#icon-menu-x" /></svg>
+						</button>
+						<div class="wc-left-column-inner-box collapse" aria-expanded="false" id="wc-left-column-inner-box">
+
+							<div div class="wc-mobile-breadcrumbs wc-collapsed" id="wc-mobile-breadcrumbs" role="navigation">
+								<div class="wc-top-row">
+									<a class="wc-home-button" href="index.html">
+										<svg class="wc-icon" viewbox="0 0 32 32 "><use xlink:href="images/svg/svg-defs.svg#icon-home"></use></svg>
+									</a>
+									<a class="wc-close-button wc-collapse-button" data-target="#wc-mobile-breadcrumbs">
+										<svg class="wc-icon wc-close-button" viewbox="0 0 32 32"><use xlink:href="images/svg/svg-defs.svg#icon-menu-x" /></svg>
+									</a>
+								</div>
+								<a class="wc-ellipsis-link wc-collapse-button" data-target="#wc-mobile-breadcrumbs" >/ ... /</a>
+								<div class="wc-link-divider">
+									<svg class="wc-icon" viewbox="0 0 32 32"><use xlink:href="images/svg/svg-defs.svg#icon-arrow-down" /></svg>
+								</div>
+								<a class="wc-link">About Whitman</a>
+								<div class="wc-link-divider">
+									<svg class="wc-icon" viewbox="0 0 32 32"><use xlink:href="images/svg/svg-defs.svg#icon-arrow-down" /></svg>
+								</div>
+								<a class="wc-link">Whitman Dynamic Strategy & Messaging Culture</a>	
+								<div class="wc-link-divider">
+									<svg class="wc-icon" viewbox="0 0 32 32"><use xlink:href="images/svg/svg-defs.svg#icon-arrow-down" /></svg>
+								</div>
+								<span class="wc-current-page">Student Engagement Center</span>
+							</div>
+							<nav class="wc-section-nav" role="navigation">
+								<!-- Section  Navigation -->
+
+								<!-- <a href="#" class="wc-section-nav-heading">Art History and Visual Culture Studies</a> -->
+								<a href="#" class="wc-section-nav-heading">Academics</a>
+								<ul class="wc-section-nav-list" role="menubar">
+									<li>
+										<a class="wc-nav-link" href="/DssPreview/x36022.xml" title="Social Media Links - Test">Social Media Links</a>
+									</li>
+									<li>
+										<a class="wc-nav-link" href="/DssPreview/x35964.xml" title="Detail Test">Detail Test <svg class="wc-icon wc-link-info-icon" viewbox="0 0 32 32">
+										<use xlink:href="images/svg/svg-defs.svg#icon-external-link"></use></svg></a>
+									</li>
+									<li>
+										<a class="wc-nav-link" href="/DssPreview/x35964.xml" title="Detail Test">A Login Required Link
+											<svg class="wc-icon wc-link-info-icon" viewbox="0 0 32 32">
+												<use xlink:href="images/svg/svg-defs.svg#icon-lock"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<span aria-label="this aria label" class="wc-nav-link wc-nav-active-page" title="this title">Section Front Test 3</span>
+									</li>
+									<li>
+										<a class="wc-nav-link wc-sub-nav-header" href="/DssPreview/x29368.xml" title="Mission Statement">Mission Statement</a> <button aria-controls="#wc-sub-nav_x29368" aria-expanded="false" class="wc-nav-expander collapsed" data-target="#wc-sub-nav_x29368" data-toggle="collapse"><svg viewbox="0 0 32 32">
+										<use xlink:href="images/svg/svg-defs.svg#icon-arrow-down"></use></svg></button>
+										<ul aria-expanded="false" aria-labelledby="section-sub-1" class="wc-section-nav-level-2 wc-sub-nav collapse" id="wc-sub-nav_x29368" role="menu">
+											<li>
+												<a class="wc-nav-link" href="/DssPreview/x2580.xml" title="Charter">Charter</a>
+											</li>
+											<li>
+												<a class="wc-nav-link" href="/DssPreview/x2581.xml" title="Constitution">Constitution</a>
+											</li>
+											<li>
+												<a class="wc-nav-link" href="/DssPreview/x2582.xml" title="By-Laws">By-Laws</a>
+											</li>
+											<li>
+												<a class="wc-nav-link" href="/DssPreview/x2583.xml" title="Accreditation">Accreditation</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a class="wc-nav-link wc-sub-nav-header" href="/DssPreview/x2576.xml" title="Fast Facts">Fast Facts</a> <button aria-controls="#wc-sub-nav_x2576" aria-expanded="false" class="wc-nav-expander collapsed" data-target="#wc-sub-nav_x2576" data-toggle="collapse"><svg viewbox="0 0 32 32">
+										<use xlink:href="images/svg/svg-defs.svg#icon-arrow-down"></use></svg></button>
+										<ul aria-expanded="false" aria-labelledby="section-sub-1" class="wc-section-nav-level-2 wc-sub-nav collapse" id="wc-sub-nav_x2576" role="menu">
+											<li>
+												<a class="wc-nav-link" href="/DssPreview/x24232.xml" title="Rankings round-up">Rankings round-up</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a class="wc-nav-link" href="/DssPreview/x861.xml" title="Campus Map">Campus Map</a>
+									</li>
+									<li>
+										<a class="wc-nav-link wc-sub-nav-header" href="/DssPreview/x2586.xml" title="Campus and Community">Campus and Community</a> <button aria-controls="#wc-sub-nav_x2586" aria-expanded="false" class="wc-nav-expander collapsed" data-target="#wc-sub-nav_x2586" data-toggle="collapse"><svg viewbox="0 0 32 32">
+										<use xlink:href="images/svg/svg-defs.svg#icon-arrow-down"></use></svg></button>
+										<ul aria-expanded="false" aria-labelledby="section-sub-1" class="wc-section-nav-level-2 wc-sub-nav collapse" id="wc-sub-nav_x2586" role="menu">
+											<li>
+												<a class="wc-nav-link" href="/DssPreview/x2589.xml" title="Walla Walla">Walla Walla</a>
+											</li>
+											<li>
+												<a class="wc-nav-link" href="/DssPreview/x2590.xml" title="Visitor Information">Visitor Information</a>
+											</li>
+											<li>
+												<a class="wc-nav-link" href="/DssPreview/x2598.xml" title="Weather">Weather</a>
+											</li>
+											<li>
+												<a class="wc-nav-link" href="/DssPreview/x6517.xml" title="Webcams">Webcams</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a class="wc-nav-link wc-sub-nav-header" href="/DssPreview/x2577.xml" title="Whitman Hallmarks">Whitman Hallmarks</a> <button aria-controls="#wc-sub-nav_x2577" aria-expanded="false" class="wc-nav-expander collapsed" data-target="#wc-sub-nav_x2577" data-toggle="collapse"><svg viewbox="0 0 32 32">
+										<use xlink:href="images/svg/svg-defs.svg#icon-arrow-down"></use></svg></button>
+										<ul aria-expanded="false" aria-labelledby="section-sub-1" class="wc-section-nav-level-2 wc-sub-nav collapse" id="wc-sub-nav_x2577" role="menu">
+											<li>
+												<a class="wc-nav-link" href="/DssPreview/x2584.xml" title="Liberal Arts Education">Liberal Arts Education</a>
+											</li>
+											<li>
+												<a class="wc-nav-link" href="/DssPreview/x2578.xml" title="History of the College">History of the College</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a class="wc-nav-link wc-sub-nav-header" href="/DssPreview/x32759.xml" title="Leadership and Organization">Leadership and Organization</a> <button aria-controls="#wc-sub-nav_x32759" aria-expanded="true" class="wc-nav-expander collapsed" data-target="#wc-sub-nav_x32759" data-toggle="collapse"><svg viewbox="0 0 32 32">
+										<use xlink:href="images/svg/svg-defs.svg#icon-arrow-down"></use></svg></button>
+										<ul aria-expanded="true" aria-labelledby="section-sub-1" class="wc-section-nav-level-2 wc-sub-nav collapse" id="wc-sub-nav_x32759" role="menu">
+											<li>
+												<a class="wc-nav-link" href="/DssPreview/x29104.xml" title="Officers of the College">Officers of the College</a>
+											</li>
+											<li>
+												<a class="wc-nav-link wc-sub-nav-header" href="/DssPreview/x29209.xml" title="Governing Boards">Governing Boards</a> <button aria-controls="#wc-sub-nav_x29209" aria-expanded="true" class="wc-nav-expander" data-target="#wc-sub-nav_x29209" data-toggle="collapse"><svg viewbox="0 0 32 32">
+												<use xlink:href="images/svg/svg-defs.svg#icon-arrow-down"></use></svg></button>
+												<ul aria-expanded="true" aria-labelledby="section-sub-1" class="wc-section-nav-level-2 wc-sub-nav collapse in" id="wc-sub-nav_x29209" role="menu">
+													<li>
+														<a class="wc-nav-link" href="/DssPreview/x2613.xml" title="Trustees">Trustees</a>
+													</li>
+													<li>
+														<a class="wc-nav-link" href="/DssPreview/x2614.xml" title="Overseers">Overseers</a>
+													</li>
+													<li>
+														<a class="wc-nav-link" href="/DssPreview/x2616.xml" title="Committees">Committees</a>
+													</li>
+													<li>
+														<a class="wc-nav-link" href="/DssPreview/x2617.xml" title="Governing Boards Calendar">Governing Boards Calendar</a>
+													</li>
+													<li>
+														<a class="wc-nav-link" href="https://webapp.whitman.edu/boarddocs/" target="_blank" title="Governing Boards Materials">Governing Boards Materials</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<a class="wc-nav-link" href="/DssPreview/x29103.xml" title="Academic Divisions">Academic Divisions</a>
+											</li>
+											<li>
+												<a class="wc-nav-link" href="/DssPreview/x29102.xml" title="Organizational Charts">Organizational Charts</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a class="wc-nav-link" href="/DssPreview/x32850.xml" title="Contact Us">Contact Us</a>
+									</li>
+									<li>
+										<a class="wc-nav-link wc-sub-nav-header" href="/DssPreview/x35970.xml" title="Profile Index Test">Really Long Submenu</a> <button aria-controls="#wc-sub-nav_x35970" aria-expanded="false" aria-label="Expand Profile Index Submenu" class="wc-nav-expander collapsed" data-target="#wc-sub-nav_x35970" data-toggle="collapse"><svg viewbox="0 0 32 32">
+										<use xlink:href="images/svg/svg-defs.svg#icon-arrow-down"></use></svg></button>
+										<ul aria-expanded="false" aria-labelledby="section-sub-1" class="wc-section-nav-level-2 wc-sub-nav collapse" id="wc-sub-nav_x35970" role="menu">
+											<li>
+												<a class="wc-nav-link" href="/DssPreview/x36017.xml" title="Everything Axample">Everything Axample</a>
+											</li>
+											<li>
+												<a class="wc-nav-link" href="/DssPreview/x36015.xml" title="Nopage Alexander">Nopage Alexander</a>
+											</li>
+											<li>
+												<a class="wc-nav-link" href="/DssPreview/x35971.xml" title="Sharon Alker">Sharon Alker</a>
+											</li>
+											<li></li>
+											<li>
+												<a class="wc-nav-link" href="/DssPreview/x36009.xml" title="Null Check">Null Check</a>
+											</li>
+											<li>
+												<a class="wc-nav-link" href="/DssPreview/x35972.xml" title="Roberta Davidson">Roberta Davidson</a>
+											</li>
+											<li>
+												<a class="wc-nav-link" href="/DssPreview/x35973.xml" title="Scott A Elliott">Scott A Elliott</a>
+											</li>
+											<li>
+												<a class="wc-nav-link" href="/DssPreview/x35974.xml" title="Adam Gordon">Adam Gordon</a>
+											</li>
+											<li>
+												<a class="wc-nav-link" href="/DssPreview/x35975.xml" title="Christopher Leise">Christopher Leise</a>
+											</li>
+											<li>
+												<a class="wc-nav-link" href="/DssPreview/x35976.xml" title="Gaurav Majumdar">Gaurav Majumdar</a>
+											</li>
+											<li>
+												<a class="wc-nav-link" href="/DssPreview/x35981.xml" title="Theresa M. DiPasquale">Theresa M. DiPasquale</a>
+											</li>
+											<li>
+												<a class="wc-nav-link" href="/DssPreview/x35983.xml" title="Mary L. Raschko 6">Mary L. Raschko 6</a>
+											</li>
+											<li>
+												<a class="wc-nav-link" href="/DssPreview/x35977.xml" title="Katrina C. Roberts">Katrina C. Roberts</a>
+											</li>
+											<li>
+												<a class="wc-nav-link" href="/DssPreview/x35982.xml" title="Kisha Schlegel">Kisha Schlegel</a>
+											</li>
+											<li>
+												<a class="wc-nav-link" href="/DssPreview/x35980.xml" title="Rob Schlegel">Rob Schlegel</a>
+											</li>
+											<li>
+												<a class="wc-nav-link" href="/DssPreview/x35978.xml" title="Johanna Stoberock">Johanna Stoberock</a>
+											</li>
+											<li>
+												<a class="wc-nav-link" href="/DssPreview/x35979.xml" title="Jenna Terry">Jenna Terry</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</nav>
+
+
+							<!-- Side List Component -->
+							<div class="wc-row wc-component-row">
+								<div class="wc-link-list-component wc-list-component wc-component wc-half-component" role="complementary">
+									<h2>Related Links</h2>
+									<ul>
+										<li><a href="">Example Link</a></li>
+										<li><a href="">Another Link</a></li>
+										<li><a href="">A Link with a Longer Title</a></li>
+										<li><a href="">Short Title Link</a></li>
+										<li><a href="">Last Link</a></li>
+									</ul>
+								</div>	
+							</div>
+
+
+							<div class="wc-row wc-component-row">
+							    <div class="wc-component wc-flexible-component wc-full-component">
+							    	<h2>Left Flexible Component Header</h2>
+									<p>This is just some text in a component paragraph This is just some text in a component paragraph This is just some text in a component paragraph This is just some text in a component paragraph This is just some text in a component paragraph This is just some text in a component paragraph This is just some text in a component paragraph This is just some text in a component paragraph</p>
+							    </div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+
+				<div class="wc-main-content" id="wc-reader-content" role="main" itemscope="" itemtype="http://schema.org/NewsArticle">
+					<meta itemprop="name" content="Whitman sophomore receives premier environmental scholarship">
+					<div class="wc-article-info">
+						<div class="wc-share-links">
+							<a class="wc-dropdown-share-link collapsed" data-toggle="collapse" data-target="#wc-share-links" aria-expanded="false" aria-controls="wc-share-links">
+								<svg class="wc-icon" viewBox="0 0 32 32">
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/svg/svg-defs.svg#icon-share"></use>
+								</svg>
+								<span class="wc-text">
+								Share
+								</span>
+							</a>
+							<ul class="wc-article-info-dropdown collapse" id="wc-share-links" aria-expanded="false">
+								<!-- 
+									hide because we don't know if this will be ready
+									<li>
+									    <a class="wc-share-link">
+									        <svg class="wc-icon" viewbox="0 0 33 33">
+									            <use xlink:href="images/svg/svg-defs.svg#icon-link-circle"></use>
+									        </svg>
+									        <span class="wc-text">
+									            Get whit.mn URL
+									        </span>
+									    </a>
+									</li>
+								-->
+								<li>
+									<a href="mailto:?subject=Whitman%20News&amp;body=https://www.whitman.edu/newsroom/whitman-magazine/whitman-magazine-summer-2017/wm-feature-stories-summer-2017/good-chemistry" class="wc-share-link" target="_blank">
+										<svg class="wc-icon" viewBox="0 0 32 32">
+											<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/svg/svg-defs.svg#icon-email"></use>
+										</svg>
+										<span class="wc-text">
+										Email this page
+										</span>
+									</a>
+								</li>
+								<li>
+									<span class="wc-section-header">Share on...</span>
+								</li>
+								<li>
+									<a href="https://twitter.com/home?status=https://www.whitman.edu/newsroom/whitman-magazine/whitman-magazine-summer-2017/wm-feature-stories-summer-2017/good-chemistry" class="wc-share-link" target="_blank">
+										<svg class="wc-icon" viewBox="0 0 32 32">
+											<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/svg/svg-defs.svg#icon-twitter"></use>
+										</svg>
+										<span class="wc-text">
+										Twitter
+										</span>
+									</a>
+								</li>
+								<li>
+									<a href="https://www.facebook.com/sharer/sharer.php?u=https://www.whitman.edu/newsroom/whitman-magazine/whitman-magazine-summer-2017/wm-feature-stories-summer-2017/good-chemistry" class="wc-share-link" target="_blank">
+										<svg class="wc-icon" viewBox="0 0 32 32">
+											<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/svg/svg-defs.svg#icon-facebook"></use>
+										</svg>
+										<span class="wc-text">
+										Facebook
+										</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<p class="wc-author">Written by <a href="newsroom?author=691" itemprop="author">Gillian Frew '11</a><br>Photography by <a href="newsroom?author=697" itemprop="contributor">Matt Banderas '04</a><br>                                </p>
+					<div itemprop="articleBody">
+						<h2>Two Whitman Lecturers Make Science an Art—and Vice Versa</h2>
+						<p>
+							<figure style=" width:400px;" class="wc-caption-image-right">
+								<img alt="Simon and Hartman cyanotype" class="" height="587" src="https://www.whitman.edu/Images/Newsroom/News/Magazine/2017/Summer/CHEM-IN-ART_SIMON_HARTMAN_CYANOTYPE-400.jpg" title="This portrait of Simon (right) and Hartman was created using the cyanotype process they teach students. An early photographic method, it relies on moving electrons around to produce a pigment called Prussian blue, a non-toxic iron cyanide complex that forms when two different iron-containing chemicals are exposed to ultraviolet light. In this case, the image was first captured with a digital camera, then converted to analogue." width="400" style="">
+								<figcaption class="wc-image-caption">This portrait of Simon (right) and Hartman was created using the cyanotype process they teach students. An early photographic method, it relies on moving electrons around to produce a pigment called Prussian blue, a non-toxic iron cyanide complex that forms when two different iron-containing chemicals are exposed to ultraviolet light. In this case, the image was first captured with a digital camera, then converted to analogue.</figcaption>
+							</figure>
+							Senior Lecturers of Chemistry <strong>Deberah Simon ’72</strong> and Machelle Hartman mastermind a course so popular with Whitman students that there’s a three-year waitlist for it.
+						</p>
+						<p>The imaginative design of Chemistry in Art, a lab class for non-science majors, appeals to students across the disciplines not only because it fulfills distribution requirements, but also because it “relates results to something they’re familiar with,” as Chemistry Department Chair and Paul Garrett Fellow Marion Götz put it.</p>
+						<p>In fact, components of the ingeniously practical course—celebrating its 10<sup>th</sup> anniversary—have been incorporated into General Chemistry, which enrolls nearly half of Whitman’s incoming class each year.</p>
+						<p>“Chemistry in Art is the embodiment of interdisciplinary study and has encouraged my impulse to view subjects from every possible angle,” said history major <strong>Rachel Loe ’19</strong>, who took it last spring.</p>
+						<p>“We did a lab using shibori dyeing techniques with indigo [and] saw our pieces change from a yellow-green in the dye vat—thanks to the solution that is added to make it soluble enough to stick to the fabric—to a dark blue when exposed to oxygen, while learning a traditional method of pattern-making,” she said. “It was not only fun, but intriguing as well.”</p>
+						<p>The success of the course—which Simon developed after attending a National Science Foundation (NSF) workshop on the intersection of chemistry and art—extends far beyond the countless Whitties who vie to take it. Chemistry in Art has become a model for other programs: Simon and Hartman train about 20 professors each year on how to teach it through the NSF-sponsored Center for Workshops in the Chemical Sciences. Simon estimates that more than 250 colleges and universities nationwide have benefited from their instruction.</p>
+						<p>
+							<figure style=" width:300px;" class="wc-caption-image-left">
+								<img alt="ink-ethanol tiles" class="" height="399" src="https://www.whitman.edu/Images/Newsroom/News/Magazine/2017/Summer/170707_CHEMISTRY-IN-ART__tiles-300.jpg" title="The patterns that emerge on these coaster-sized tiles occur when students pour ink-ethanol mixtures across the glazed surface; the alcohol, driven by entropy, spreads and evaporates, leaving beautiful patterns in the ink behind." width="300" style="">
+								<figcaption class="wc-image-caption">The patterns that emerge on these coaster-sized tiles occur when students pour ink-ethanol mixtures across the glazed surface; the alcohol, driven by entropy, spreads and evaporates, leaving beautiful patterns in the ink behind.</figcaption>
+							</figure>
+						</p>
+						<p>“While we weren’t the first to do Chemistry in Art as a standalone class, we are the leaders in the country in putting it in Gen Chem,” explained Simon, who directs the General Chemistry lab. “That was the start of a whole sea change in how we taught Gen Chem—we made art one of the focuses. All the calculations are the same.”</p>
+						<p>Hartman directs the lecture portion of General Chemistry and collaborates with Simon daily. “Deb started using art to teach chemistry before I did, but as she and I ‘played’ in the lab with ideas and activities for her Chemistry in Art class, we realized that we could use some of the same activities to teach the principles and skills required in Gen Chem,” she recalled. “Our students have responded so much more enthusiastically”—to a methodology that, as Götz praised, includes how to “experimentally determine the taste of orange juice.”</p>
+						<p><strong>Lauren Wilson ’19</strong>, a biology and philosophy major, took General Chemistry with Hartman. She commended her teacher for “making clear how the lab pertained to real world problems.” Wilson continued, “Professor Hartman’s lab helped me realize the importance of what we were learning. The beauty of lab with Hartman was how abstract principles became concrete realities.”</p>
+						<h2>Origins</h2>
+						<p>This interdisciplinary approach led Simon when formulating Chemistry in Art to seek concrete ways for students to internalize information—making soap, for instance, dyeing scarves or crafting jewelry from anodized aluminum.</p>
+						<p>“Machelle and I joke that we’re the only people who have to go to our lab to get dressed in the morning, because we have all our accessories stored there,” Simon said with a laugh.</p>
+						<p>At first, Simon faced some pushback. “People would say, ‘Oh, that’s dumbing it down.’ Actually, the problem with the real world is that it’s too complicated, and so finding examples that would illustrate the points that you wanted to make was the really hard part,” she said. “The best part is that students get back to me years later and say things like, ‘I think of you every time I wash dishes!’ because we have a unit on detergents and emulsifiers.”</p>
+						<p>And, added Hartman, who shares Simon’s passion for hands-on learning, “In the process of redesigning the labs, we’ve also reduced our chemical waste; included more diverse lab reports that focus on writing and communication skills; and provided take-home art pieces that the students make” and sometimes showcase in end-of-the-semester exhibitions.</p>
+						<h2>Outlook</h2>
+						<p>
+							<figure style=" width:250px;" class="wc-caption-image-right">
+								<img alt="copper" class="" height="116" src="https://www.whitman.edu/Images/Newsroom/News/Magazine/2017/Summer/copper-things-1-250.jpg" title="In General Chemistry and Chemistry in Art, students learn that copper can be etched with ferric chloride or hammered into shapes because of its atomic structure (below). Practicing metallurgy, they etch pendants made of brass, an alloy of copper and zinc,  and reconfigure old pennies into jewelry (right). " width="250" style="">
+								<figcaption class="wc-image-caption">In General Chemistry and Chemistry in Art, students learn that copper can be etched with ferric chloride or hammered into shapes because of its atomic structure (below). Practicing metallurgy, they etch pendants made of brass, an alloy of copper and zinc,  and reconfigure old pennies into jewelry (right). </figcaption>
+							</figure>
+						</p>
+
+						<p>“I always tell students: You can go home and tell your parents that you were playing around with food coloring and yarn, or you can say that we’re protonating the amine groups on the side chains of the protein. It’s all a matter of perspective,” continued Simon. “As you’re creating something, you’re putting into your brain not just the rote steps of what you’re doing, but everything else around you. We teach our students how to shift points of view, and when you do that, that’s when the ideas come for other ways to approach a problem, which I think is what creativity is: a novel way to approach a problem.”</p>
+						<p>Hartman echoed these thoughts. “I value a liberal arts education because it exposes students to different ways of thinking within very different disciplines,” she said. “Processing scientific ideas requires understanding, practice and the ability to communicate with diverse audiences. We are bombarded with information every day on social media and on the internet, and much of it is presented as evidence-based science, when it is, in fact, pseudo-science. My goal is that our chemistry students—whether they are science majors or not—will be proficient users and sharers of the scientific process.”</p>
+						<h2>Communication</h2>
+						<p>In addition to crafting keepsakes, students learn to explain their work through speech, writing and visuals—because, as Simon summarized, “If you can’t explain to someone what you’ve just done, you might as well have not done it.”</p>
+						<p>This philosophy encourages clever interpretations: “One of the best was when a student drew the electrons as ninja warriors attacking,” Simon remembered. “You really have to understand the chemistry in order to be able to draw something like that, to turn it into a story.”</p>
+						<p>Another student wrote a lab report based on T. S. Eliot’s poem “The Love Song of J. Alfred Prufrock.” Someone else gave an oral presentation on arsenic in 19th-century Europe and how the metallic element was used not merely to kill sewer rats but also to dye silk, especially for ball gowns, leading to the inadvertent demise of more than one fashionable lady. Two others researched how to do a chemical analysis of sports memorabilia found in an old trunk, tracing a baseball jersey back to its original owner through forensic examination of a few threads.</p>
+						<p><strong><img alt="copper" class="wc-rightimage" height="122" src="https://www.whitman.edu/Images/Newsroom/News/Magazine/2017/Summer/copper-things-2-250.jpg" width="250">Daphne Gallegos ’19</strong>, a biology and French major who was Simon and Hartman’s TA last year, said she loved how they “would bring their own stories to class that related to what we were doing that day—stories that can’t be told in a textbook, but that make you want to ask questions and inspire you to dream big.”</p>
+						<p>Still, it sometimes takes a while for newbies and non-majors to warm up to doing college-level science in general and chemistry in particular.</p>
+						<p>“They dread it,” said Simon. “We oftentimes have people use the word ‘dread’: ‘I was dreading this class,’ ‘I’m not good in lab,’ they’d say. All these preconceived ideas. And we always have people say that it turned out to be their favorite even though we haven’t taken a single piece of the content out of it—if anything, we’ve made it more than it was before.”</p>
+						<p>Biology major and TA <strong>Johanna Au ’19</strong> confirmed, “Gen Chem can be difficult for many, but they understand how to engage students on a creative and applicable level.”</p>
+						<h2>Parallels</h2>
+						<p>Simon and Hartman have much more in common than the unconventional spellings of their first names and longstanding connections to Walla Walla.</p>
+						<p>Philosophically, they reject a strict separation between subjects. “I don’t see the world divided up into disciplines. Everything bleeds across. I don’t even understand how you can put up these artificial boundaries,” Simon argued. “Machelle and I would say the same thing: We’re endlessly fascinated by the puzzles and the problems in life and want to solve them and find ways to explain them better.”</p>
+						<p>Personally, they come from eclectic backgrounds. Simon planned to major in French and Hartman in music before pursuing science instead. Each had previous careers in other cities. And both enjoy a seemingly inexhaustible series of hobbies and side ventures.</p>
+						<p>“I’ve always liked to fiddle, as my mom put it,” Simon said. “I like to make things. I love paper and ink. I like to knit. I’ve made nine baby sweaters this year. I design knitting and embroidery patterns. I like to garden. I like to paint. My parlor trick is that I can write a transliteration of Middle Kingdom Egyptian hieroglyphs, which is like the King Tut era. And when I retire, Machelle and I are going to start a jewelry business.”</p>
+						<p>After graduating from Whitman and marrying physician<strong> Richard Simon ’72</strong>, a nationally recognized sleep disorders specialist, Simon worked as a quality control engineer at Boeing on the aluminum production lines, a medical research technician at the University of Chicago, a professional calligrapher and a bookbinder. In the late 1980s, she came in second in a national pumpkin-carving contest. Her son is Adjunct Instructor of Music <strong>Michael Simon ’02</strong>, whose wife is <strong>Leah Wilson-Velasco ’03</strong>; other Whittie relatives include her brother-in-law and sister-in-law, <strong>David ’79</strong> and <strong>Cynthia Simon ’79</strong>.</p>
+						<p>
+							<figure style=" width:846px;" class="wc-caption-image">
+								<img alt="anodized aluminum pendants" class="" height="704" src="https://www.whitman.edu/Images/Newsroom/News/Magazine/2017/Summer/CHEMISTRY-OF-ART_MARBLES_SIMON-846.jpg" title="In this project, students fashion anodized aluminum pendants as a way to study electrochemistry. This scaled-down version of an industrial process results in a coating of aluminum oxide, one of the world’s hardest substances. These pieces have been permanently dyed by inserting large acid dye molecules into the coating’s crystalline structure. " width="846" style="">
+								<figcaption class="wc-image-caption">In this project, students fashion anodized aluminum pendants as a way to study electrochemistry. This scaled-down version of an industrial process results in a coating of aluminum oxide, one of the world’s hardest substances. These pieces have been permanently dyed by inserting large acid dye molecules into the coating’s crystalline structure. </figcaption>
+							</figure>
+						</p>
+
+						<p>Hartman was born in Walla Walla and graduated from Walla Walla University in 2000. Afterward, she and her husband, Jerry, joined the Peace Corps and moved to the Philippines for two years; they returned when he received a job offer in the Walla Walla Valley and Simon reached out to her about working at Whitman. Since then, Hartman has completed an M.A. in environment and community from Antioch University in Seattle. She and her husband, who teaches film and television at Walla Walla University, are documentary filmmakers and founded a nonprofit focused on giving underrepresented communities a global voice. Their productions have screened at festivals in the U.S., Caribbean and South America. The First People of Suriname (2008) was shown at the United Nations Permanent Forum of Indigenous Issues.</p>
+						<p>Like Simon, she embraces a wide range of pastimes: travel, gardening, music, karate and “anything with water”—swimming, snorkeling, diving, boating.</p>
+						<p>Perhaps because of their history as Renaissance women, Simon and Hartman feel well-suited to be partners.</p>
+						<p>“She and I just ‘get’ each other—cheesy, but true,” Hartman said. “I feel like it’s the other half of my mind working when we collaborate. One of us starts an idea, and the other builds on it, and it just happens naturally. I’ll show up at the office and say, ‘I was thinking about such and such a lab, and she’ll interject with, ‘I was too! We need to change—’ sometimes before I’ve even finished my sentence. There’s a balance to tweaking things until they are just right and moving forward with something. I think we are able to do both because we value creativity in the lab, but we are also pragmatic.”</p>
+						<p>Simon agreed: “She is incredibly creative and I couldn’t do this without her. One of us comes up with an idea, the other one feeds on it, changes it, modifies it, to the point where we have no idea who’s done which part of it—we both do all of it.”</p>
+						<h2>Continuum</h2>
+						<p>Their mission is to make chemistry another context through which students make sense of their surroundings, because “what’s more exciting than trying to figure out how the world works?” Simon asked. “We tell the students that they’re stepping into an unbroken stream of scientists from the beginning of time, that now they’re taking their place. This is not just some academic exercise that they’re doing. It’s real and it will affect the trajectory of their life in ways they cannot imagine. They just have to be open to these experiences.”</p>
+					</div>
+				</div>
+			
+			</div>
+		</div>
+	</div>
+	
+	<!-- Footer -->
+	<footer class="wc-footer" id="wc-footer">
+		<div class="container">
+		
+			<!-- Footer Links -->
+			<div class="wc-row wc-footer-row1" role="navigation">
+				<div class="wc-footer-list-box">
+					<h4 class="wc-list-header" id="footer-menu-1">About Whitman</h4>
+					<ul class="wc-no-style-list" role="menu" aria-labelledby="footer-menu-1">
+						<li role="menuitem"><a>Campus and Community</a></li>
+						<li role="menuitem"><a>Campus Sustainability</a></li>
+						<li role="menuitem"><a>Contact Us</a></li>
+						<li role="menuitem"><a>Facilities</a></li>
+						<li role="menuitem"><a>Fast Facts</a></li>
+						<li role="menuitem"><a href="leadership-and-organization.html">Leadership and Organization</a></li>
+						<li role="menuitem"><a>Offices and Services</a></li>
+					</ul>
+				</div>
+				<div class="wc-footer-list-box">
+					<h4 class="wc-list-header" id="footer-menu-2">Academics</h4>
+					<ul class="wc-no-style-list" role="menu" aria-labelledby="footer-menu-2">
+						<li role="menuitem"><a>Academic Calendar</a></li>
+						<li role="menuitem"><a>Academic Support</a></li>
+						<li role="menuitem"><a>Catalog</a></li>
+						<li role="menuitem"><a href="departments.html">Departments and Programs</a></li>
+						<li role="menuitem"><a>The Faculty</a></li>
+						<li role="menuitem"><a>Liberal Arts Education</a></li>
+						<li role="menuitem"><a>Penrose Library</a></li>
+						<li role="menuitem"><a>Signature Programs</a></li>
+					</ul>
+				</div>
+				<div class="wc-footer-list-box">
+					<h4 class="wc-list-header" id="footer-menu-3">Admission & Aid</h4>
+					<ul class="wc-no-style-list" role="menu" aria-labelledby="footer-menu-3">
+						<li role="menuitem"><a>Apply</a></li>
+						<li role="menuitem"><a>Contact Us</a></li>
+						<li role="menuitem"><a>Financial Aid</a></li>
+						<li role="menuitem"><a>Learn More</a></li>
+						<li role="menuitem"><a>Request Information</a></li>
+						<li role="menuitem"><a>Visit Whitman</a></li>
+						<li role="menuitem"><a>Whitman on the Road</a></li>
+						<li role="menuitem"><a>Why Whitman?</a></li>
+					</ul>
+				</div>
+				<div class="wc-footer-list-box">
+					<h4 class="wc-list-header" id="footer-menu-4">Student Life</h4>
+					<ul class="wc-no-style-list" role="menu" aria-labelledby="footer-menu-4">
+						<li role="menuitem"><a>Career Services</a></li>
+						<li role="menuitem"><a>Club Sports and Intramurals</a></li>
+						<li role="menuitem"><a>Green Life</a></li>
+						<li role="menuitem"><a>Orientation</a></li>
+						<li role="menuitem"><a>Living at Whitman</a></li>
+						<li role="menuitem"><a>Student Activities</a></li>
+						<li role="menuitem"><a>Student Clubs and Organizations</a></li>
+						<li role="menuitem"><a>Student Services</a></li>
+					</ul>
+				</div>
+				<div class="wc-footer-list-box">
+					<h4 class="wc-list-header" id="footer-menu-5">Quick Links</h4>
+					<ul class="wc-no-style-list" role="menu" aria-labelledby="footer-menu-5">
+						<li role="menuitem"><a href="a-to-z-index.html">A to Z Index</a></li>
+						<li role="menuitem"><a>Bookstore</a></li>
+						<li role="menuitem"><a>Campus Map</a></li>
+						<li role="menuitem"><a>Contact Us</a></li>
+						<li role="menuitem"><a>Employment</a></li>
+						<li role="menuitem"><a>Giving</a></li>
+						<li role="menuitem"><a>Grievance and Sexual Misconduct Policy</a></li>
+						<li role="menuitem"><a>Penrose Library</a></li>
+						<li role="menuitem"><a>myWhitman</a></li>
+						<li role="menuitem"><a>Right to Know</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- Logo -->
+			<div class="wc-row wc-footer-row2">
+				<div class="wc-footer-row2-box-a" itemscope itemtype="http://schema.org/CollegeOrUniversity" aria-labelledby="title">
+					<hr />
+					<svg class="wc-footer-logo-flat" viewbox= "0 0 180 15">
+						<use xlink:href="images/svg/svg-defs.svg#logo-whitman-nc-flat"></use>
+						<title id="title">Whitman College</title>
+					</svg>
+					<svg class="wc-footer-logo-stacked" viewbox= "0 0 164 60" aria-hidden="true">
+						<use xlink:href="images/svg/svg-defs.svg#logo-whitman-nc-stacked"></use>
+					</svg>
+					<hr />
+				</div>
+			</div>
+
+
+			<!-- Contact Info -->
+			<div class="wc-row wc-footer-row3" itemscope itemtype="http://schema.org/CollegeOrUniversity">
+				<div class="wc-footer-row3-box-a wc-footer-row3-box" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+					<a href="https://www.google.com/maps/place/Whitman+College/@46.0717833,-118.3304355,16z/data=!4m2!3m1!1s0x0000000000000000:0x8704a8d5077eb801" target="_blank" class="wc-street-address">
+						<svg viewbox= "0 0 32 32">
+							<use xlink:href="images/svg/svg-defs.svg#icon-map-pin"></use>
+						</svg>
+						<span class="wc-text">
+							<span itemprop="streetAddress">345 Boyer Ave. </span>
+							<span><span itemprop="addressLocality">Walla Walla</span>, <span itemprop="addressRegion">WA</span> <span itemprop="postalCode">99362</span></span>
+						</span>
+					</a>
+				</div>
+				<div class="wc-footer-row3-box-b wc-footer-row3-box">
+					<span class="wc-phone-numbers">
+						<svg viewbox= "0 0 32 32">
+							<use xlink:href="images/svg/svg-defs.svg#icon-phone"></use>
+						</svg>
+						<span class="wc-text">
+							<span>General: <span itemprop="telephone">(509) 527-5111</span></span>
+							<span class="wc-bullet">&bull;</span>
+							<span>Admission: <span itemprop="telephone">(509) 527-5176</span></span>
+						</span>
+					</span>
+				</div>
+				<div class="wc-footer-row3-box-c wc-footer-row3-box">
+					<link itemprop="url" href="https://www.whitman.edu">
+					<a title="Whitman College Facebook" itemprop="sameAs" class="wc-social-link" href="https://facebook.com/whitmancollege" target="_blank">
+						<svg viewbox= "0 0 40 40">
+							<use xlink:href="images/svg/svg-defs.svg#icon-facebook"></use>
+						</svg>
+					</a>
+					<a title="Whitman College Twitter" itemprop="sameAs" class="wc-social-link" href="https://twitter.com/whitmancollege" target="_blank">
+						<svg viewbox= "0 0 40 40">
+							<use xlink:href="images/svg/svg-defs.svg#icon-twitter"></use>
+						</svg>
+					</a>
+					<a title="Whitman College YouTube" itemprop="sameAs" class="wc-social-link" href="https://youtube.com/whitmancollege" target="_blank">
+						<svg viewbox= "0 0 40 40">
+							<use xlink:href="images/svg/svg-defs.svg#icon-youtube"></use>
+						</svg>
+					</a>
+					<a title="Whitman College Instagram" itemprop="sameAs" class="wc-social-link" href="https://instagram.com/whitmancollege" target="_blank">
+						<svg viewbox= "0 0 40 40">
+							<use xlink:href="images/svg/svg-defs.svg#icon-instagram"></use>
+						</svg>
+					</a>
+					<a href="social-links.html" title="More Social Media Links" class="wc-more-social-links">
+						<svg viewbox= "0 0 32 32">
+							<use xlink:href="images/svg/svg-defs.svg#icon-arrow-right"></use>
+						</svg>
+					</a>
+				</div>
+			</div>
+
+
+
+
+
+
+
+			<div class="wc-row wc-footer-row4">
+				<div class="wc-footer-row4-box-a" role="contentinfo">
+					<span class="wc-copyright">© Whitman College</span>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="wc-breakpoint-check-box">
+		<div id="wc-breakpoint-check-lg" class="wc-breakpoint-check"></div>
+		<div id="wc-breakpoint-check-md" class="wc-breakpoint-check"></div>
+		<div id="wc-breakpoint-check-sm" class="wc-breakpoint-check"></div>
+		<div id="wc-breakpoint-check-xs" class="wc-breakpoint-check"></div>		
+	</div>
+	<span id="wc-svg-path" data-svg-path="images/svg/svg-defs.svg"></span>
+	<script id="wc-scripts-tag" src="js/wc-scripts.js" type="text/javascript"></script>	
+</body>
+</html>

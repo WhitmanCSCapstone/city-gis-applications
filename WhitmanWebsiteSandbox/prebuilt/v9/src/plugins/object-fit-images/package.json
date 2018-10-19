@@ -1,0 +1,131 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "object-fit-images",
+        "scope": null,
+        "escapedName": "object-fit-images",
+        "name": "object-fit-images",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/Users/meanspa/WebDev/whitman.edu/redesign"
+    ]
+  ],
+  "_from": "object-fit-images@latest",
+  "_id": "object-fit-images@3.1.3",
+  "_inCache": true,
+  "_location": "/object-fit-images",
+  "_nodeVersion": "7.2.0",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/object-fit-images-3.1.3.tgz_1488084083919_0.4745687269605696"
+  },
+  "_npmUser": {
+    "name": "bfred-it",
+    "email": "npm@bfred.it"
+  },
+  "_npmVersion": "3.10.9",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "object-fit-images",
+    "scope": null,
+    "escapedName": "object-fit-images",
+    "name": "object-fit-images",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/object-fit-images/-/object-fit-images-3.1.3.tgz",
+  "_shasum": "383946ef2fed1fdb2737fce761938c71056026ee",
+  "_shrinkwrap": null,
+  "_spec": "object-fit-images",
+  "_where": "/Users/meanspa/WebDev/whitman.edu/redesign",
+  "author": {
+    "name": "Federico Brigante",
+    "email": "bfred-it@users.noreply.github.com",
+    "url": "twitter.com/bfred_it"
+  },
+  "bugs": {
+    "url": "https://github.com/bfred-it/object-fit-images/issues"
+  },
+  "dependencies": {},
+  "description": "Polyfill object-fit and object-position on images on IE9, IE10, IE11, Edge, Safari, ...",
+  "devDependencies": {
+    "bfred-npm-bundler": "^8.0.3",
+    "browser-sync": "^2.17.5",
+    "npm-run-all": "^4.0.0",
+    "onchange": "^3.0.2",
+    "xo": "^0.17.0"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "383946ef2fed1fdb2737fce761938c71056026ee",
+    "tarball": "https://registry.npmjs.org/object-fit-images/-/object-fit-images-3.1.3.tgz"
+  },
+  "files": [
+    "dist",
+    "preprocessors"
+  ],
+  "gitHead": "5767d1939ec6c9772c909671d81137c1e3aa7aa1",
+  "homepage": "https://github.com/bfred-it/object-fit-images#readme",
+  "jsnext:main": "dist/ofi.es-modules.js",
+  "keywords": [
+    "polyfill",
+    "object-fit",
+    "covers",
+    "contains",
+    "css",
+    "styles",
+    "internet",
+    "explorer",
+    "ies",
+    "shim",
+    "shiv",
+    "fills",
+    "images",
+    "srcset",
+    "backgrounds"
+  ],
+  "license": "MIT",
+  "main": "dist/ofi.common-js.js",
+  "maintainers": [
+    {
+      "name": "bfred-it",
+      "email": "npm@bfred.it"
+    }
+  ],
+  "module": "dist/ofi.es-modules.js",
+  "name": "object-fit-images",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bfred-it/object-fit-images.git"
+  },
+  "scripts": {
+    "build": "npm-run-all --silent jsfix build:*",
+    "build:js": "bfred-npm-bundler ofi objectFitImages",
+    "jsfix": "xo --fix",
+    "prepublish": "npm run build",
+    "test": "npm run build",
+    "version": "npm run build; git add dist",
+    "watch": "npm-run-all --parallel --silent watch:*",
+    "watch:build": "onchange 'index.js' --initial -- npm run build -- --continue-on-error",
+    "watch:server": "browser-sync start --startPath demo --no-ghost-mode --reload-delay 300 --no-open  --server --files 'dist/*.min.js,demo/**'"
+  },
+  "version": "3.1.3",
+  "xo": {
+    "esnext": true,
+    "env": [
+      "browser"
+    ],
+    "rules": {
+      "prefer-template": 0
+    }
+  }
+}

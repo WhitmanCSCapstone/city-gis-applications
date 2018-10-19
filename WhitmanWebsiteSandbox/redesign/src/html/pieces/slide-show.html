@@ -1,0 +1,61 @@
+<div class="wc-slideshow-component wc-component wc-full-component">
+	<div class="wc-slideshow-content">
+		<div class="wc-desktop-slider wc-slider wc-invisible wc-dots-and-arrows" id="wc-slideshow-component-02f1a7ff81684aa3be1ee76f5e9e8b46">
+			<div class="wc-slide-box" style="background-image: url(images/misc/ARCSlide1.jpg)">
+				<div class="wc-overlay" style="background-color: rgba(0,0,0,.3);">
+					<div class="wc-caption">
+						<p class="wc-description" data-ellipsis-xs="80" data-ellipsis-sm="100" data-ellipsis-md="160" data-ellipsis-lg="220">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt quaerat aspernatur perferendis minima alias et architecto. 
+						</p>
+						<a href="/DssPreview/x11.xml" class="wc-box-button wc-bb-more-link wc-white" title="Whitman College">
+						Whitman College</a>
+					</div>
+				</div>
+			</div>
+			<div class="wc-slide-box" style="background-image: url(images/misc/ARCSlide1.jpg)">
+				<div class="wc-overlay" style="background-color: rgba(0,0,0,.3);">
+					<div class="wc-caption">
+						<p class="wc-description" data-ellipsis-xs="80" data-ellipsis-sm="100" data-ellipsis-md="160" data-ellipsis-lg="220">
+							Another caption
+						</p>
+						<a href="/DssPreview/x11.xml" class="wc-box-button wc-bb-more-link wc-white" title="Whitman College">
+						Whitman College</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="wc-slider-nav-box" id="wc-slideshow-component-02f1a7ff81684aa3be1ee76f5e9e8b46-nav-box">
+			<a class="wc-left-arrow">
+				<svg viewBox="0 0 32 32">
+					<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/svg/svg-defs.svg#icon-arrow-left"></use>
+				</svg>
+			</a>
+			<div class="wc-slider-dots-box" id="wc-slider-dots-box"></div>
+			<a class="wc-right-arrow">
+				<svg viewBox="0 0 32 32">
+					<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/svg/svg-defs.svg#icon-arrow-right"></use>
+				</svg>
+			</a>
+		</div>
+	</div>
+	<script>
+		(function(){
+			var wcParams = {
+				type: 'slideshow',
+				height: 310
+				};
+			var slickParams = {
+				dots: (('True').toLowerCase() == 'true'), //need to convert all of these  because c# uses 'False' instead of 'false'
+				arrows: (('True').toLowerCase() == 'true'),
+				draggable: (('True').toLowerCase() == 'true'),
+				swipe: (('True').toLowerCase() == 'true'),
+				autoplay:(('False').toLowerCase() == 'true'),
+				autoplaySpeed: 5000,
+				prevArrow: $('#wc-slideshow-component-02f1a7ff81684aa3be1ee76f5e9e8b46-nav-box').find('.wc-left-arrow').first(),
+				nextArrow: $('#wc-slideshow-component-02f1a7ff81684aa3be1ee76f5e9e8b46-nav-box').find('.wc-right-arrow').first(),
+				appendDots: $('#wc-slideshow-component-02f1a7ff81684aa3be1ee76f5e9e8b46-nav-box').find('.wc-slider-dots-box').first()
+			};
+			$('#wc-slideshow-component-02f1a7ff81684aa3be1ee76f5e9e8b46').data('wcParams',wcParams).data('slickParams',slickParams);
+		})();
+	</script>
+</div>

@@ -1,0 +1,70 @@
+/**********************************
+	
+#HEADER
+
+Info
+	General styles for the header that apply to all screen sizes.
+	See _header-sm.scss and _header-lg.scss for size-specific styles.
+**********************************/
+.wc-header{
+	color:$white;
+	*{
+		box-sizing: border-box;
+	}
+	a,p,span,li,h1,h2,h3,h4{
+		color:$white;
+	}
+	svg{
+		fill:$white;
+	}
+	a,span,p{
+		font-size: .8rem;
+		font-weight: 500;
+		-webkit-font-smoothing: subpixel-antialiased;
+	}
+	.wc-header-row1{
+		background-color: $medium-blue;
+	}
+}
+		/**********************************
+		#IE10-FALLBACK
+
+		Notes
+		[1] 	Hiding the main nav dropdowns for <IE10
+
+		**********************************/
+		html.no-csscolumns .wc-main-nav-level-1{
+			.wc-sub-menu{
+				display: none !important /*[1]*/
+			}
+		}
+		.wc-fallback-search-button{
+			display: none;
+		}
+
+		/**********************************
+		#IE8-FALLBACK
+		**********************************/
+		html.no-rgba{
+			.wc-search-options-box{
+				display: none;
+			}
+			.wc-search-submit-button{
+				float:right;
+				svg{
+					display: none;
+				}
+			}
+			.wc-fallback-search-button{
+				display: block;
+				font-weight: 600;
+			}
+			.wc-main-nav{
+				.wc-main-nav-level-1{
+					> li{
+						display: block;
+						float: left;
+					}
+				}
+			}
+		}

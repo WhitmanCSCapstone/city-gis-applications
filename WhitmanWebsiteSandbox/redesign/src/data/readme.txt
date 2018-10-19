@@ -1,0 +1,1 @@
+a folder for keeping js/json data that would otherwise be provided via ingeniux. need to keep this outside of the js folder so we can still easily update the js folder from prebuilt. combined with the other js with grunt. -meanspa 10.27.15

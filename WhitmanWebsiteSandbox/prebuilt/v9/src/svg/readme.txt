@@ -1,0 +1,1 @@
+These are SVG's that grunt compiles into svg-defs, to be rendered inline via <svg> tags (as opposed to with a <img> tag).

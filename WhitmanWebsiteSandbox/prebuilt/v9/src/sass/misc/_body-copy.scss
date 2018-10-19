@@ -1,0 +1,130 @@
+/**********************************
+	
+#BODY-COPY
+
+Info
+	Setting the class styles for body copy.
+
+Notes
+[1] 	No margin for the first element, or the first element after
+		the right column if it's there.
+**********************************/
+.wc-body-copy, .wc-body-copy-component{
+	@include clearfix();
+	>:last-child{
+		margin-bottom:0;
+	}
+	>:first-child,  .wc-right-content-column + * { /*[1]*/
+		margin-top:0;
+	}
+	h1,h2,h3,h4,h5,h6{
+		a {
+			font-size: inherit;
+		}
+	}
+	p{
+		font-size: 		$p-font-size-body-copy;
+		font-weight: 	$p-font-weight-body-copy;
+		color: 			$p-color-body-copy;
+		line-height: 	$p-line-height-body-copy;
+		margin-top: 	$p-top-margin-body-copy;
+		margin-bottom: 	$p-bottom-margin-body-copy;
+	}
+	a:not(.wc-box-button){
+		font-size: 		$a-font-size-body-copy;
+		font-weight: 	$a-font-weight-body-copy;
+		color: 			$a-color-body-copy;
+
+		&.wc-ad-button {
+			font-size: $h3-font-size;
+			color: $black;
+			font-weight: 700;
+			&:hover {
+				color: $black;
+			}
+		}
+
+		&:hover{
+			color:$a-hover-color;
+			cursor: pointer;
+		}
+	}
+	svg{
+		pointer-events: none;/*[2]*/
+	}
+	ul{
+		margin-top:		$ul-top-margin;
+		margin-bottom:	$ul-bottom-margin;
+		padding-left:	$ul-left-padding;
+	}
+	ol{
+		margin-top:		$ol-top-margin;
+		margin-bottom:	$ol-bottom-margin;
+		padding-left:	$ol-left-padding;
+	}
+	li{
+		font-size: 		$li-font-size;
+		font-weight: 	$li-font-weight;
+		color: 			$li-color;
+		line-height: 	$li-line-height;
+		margin-top: 	$li-top-margin;
+		@include responsiveMarginBottom($li-bottom-margin-mobile,$li-bottom-margin-mobile,$li-bottom-margin,$li-bottom-margin);
+	}
+
+	ol ol {
+		list-style-type: lower-alpha;
+	}
+
+	ol ol ol {
+		list-style-type: lower-roman;
+	}
+
+	ol ol ol ol {
+		list-style-type: decimal;
+	}
+
+	li ul, li ol {
+		margin-top: 0.2rem;
+		margin-bottom: 0.2rem;
+	}
+
+	nav ul{
+		list-style:none;
+	}
+
+	img {
+		max-width: 100%;
+		height:auto;
+	}
+}
+
+/**********************************
+#PULL-QUOTE-STYLES
+
+Notes
+[1]		Pullquote icon and its padding should be brought in using JavaScript, since it isn't part of the markup.
+[2]		This extra layer of specificity is required.
+**********************************/
+
+.wc-content-wrap .wc-pullquote { 
+	@include responsiveWidth(100%,45%,45%,35%);
+	@include responsiveFloat(none,right,right,right);
+	@include responsiveMargin($p-top-margin 0 $p-bottom-margin 0, 0, 0, 0);
+	@include responsivePadding(1.1rem 0.8rem 1.1rem 4.5rem, 1.1rem 0 1.1rem 4rem, 0.5rem 0 0.5rem 3.5rem, 0.5rem 0 0.5rem 3.5rem);
+	font-size: 1.8rem;
+	font-weight: 300;
+	font-style: italic;
+	line-height: 2.3rem;
+	position:relative;
+}
+.wc-content-wrap .wc-long-pullquote { 
+	font-weight: 300;
+	font-style: italic;
+	color: $h3-color;
+	@include responsiveFontSize(1.3rem, 1.5rem, 1.8rem, 1.8rem);
+	line-height: 1.2em;
+	padding: 1rem 0 1rem 0;
+	margin: 2rem 0 2rem 0;
+	border-top: 5px solid $h3-color;
+	border-bottom: 5px solid $h3-color;
+}

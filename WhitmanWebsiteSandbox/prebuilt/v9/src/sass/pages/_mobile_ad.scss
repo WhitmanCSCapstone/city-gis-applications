@@ -1,0 +1,139 @@
+/**********************************
+    
+#MOBILE-AD
+
+Info
+        Styles for the mobile ad page
+
+**********************************/
+.wc-mobile-ad-header {
+    //border: 1rem solid $medium-blue-2;
+    background: $medium-blue;
+    position: relative;
+    .wc-container {
+        padding: 0;
+    }
+    .wc-header-row1 {
+        background: inherit;
+        height: auto;
+    }
+    h1 {
+        color: #000;
+        background: $gold;
+        margin-top: 0.75rem;
+        font-weight: 700;
+        margin-left: auto;
+        margin-right:auto;
+        text-align:center;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+
+        &.wc-bk-pink {
+            background-color: $merlot;
+        }
+        &.wc-bk-ltblue {
+            background-color: $light-blue;
+        }
+        &.wc-bk-gold {
+             background-color: $gold;
+         }
+        &.wc-text-white {
+            color: $white;
+        }
+    }
+}
+.wc-mobile-ad-header + .wc-content-wrap {
+    margin-top: 0;
+    .wc-main-content {
+        background: #fff;
+        padding-bottom: 1rem;
+    }
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.wc-mobile-ad-logo-container {
+    background: $medium-blue;
+    text-align:center;
+    .wc-mobile-ad-header-logo {
+        width: 90%;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.wc-body-copy {
+    .wc-mobile-ad-tagline:first-child {
+        margin-top: 1rem;
+    }
+}
+.wc-mobile-ad-footer {
+    background: $medium-blue;
+    .wc-phone-numbers {
+        display: block;
+        margin-top: 1em;
+    }
+}
+.wc-ad-button, .wc-ad-button:visited, .wc-ad-button:link {
+    display: block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 12px 24px;
+    border: 1px solid darken($gold, 10%);
+    border-radius: 8px;
+    background: $gold;
+    text-shadow: darken($gold, 10%) 1px 1px 1px;
+    text-decoration: none;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-transform: uppercase;
+
+        &.wc-bk-pink {
+            background-color: $merlot;
+            border: 1px solid darken($merlot, 10%);
+            text-shadow: darken($merlot, 10%) 1px 1px 1px;
+        }
+        &.wc-bk-ltblue {
+            background-color: $light-blue;
+            border: 1px solid darken($light-blue, 10%);
+            text-shadow: darken($light-blue, 10%) 1px 1px 1px;
+        }
+        &.wc-bk-gold {
+            background-color: $gold;
+            border: 1px solid darken($gold, 10%);
+            text-shadow: darken($gold, 10%) 1px 1px 1px;
+         }
+        &.wc-text-white {
+            color: $white;
+        }
+
+    small {
+        display:block;
+        clear: both;
+        font-weight: $p-font-weight;
+        font-size: $p-font-size;
+    }
+}
+a.wc-ad-button:hover,a.wc-ad-button:active {
+    background: darken($gold, 10%);
+    text-shadow: lighten($gold, 10%) 1px 1px 1px;
+
+     &.wc-bk-pink {
+            background-color: darken($merlot, 10%);
+            text-shadow: lighten($merlot, 10%) 1px 1px 1px;
+        }
+        &.wc-bk-ltblue {
+            background-color: darken($light-blue, 10%);
+            text-shadow: lighten($light-blue, 10%) 1px 1px 1px;
+        }
+        &.wc-bk-gold {
+            background-color: darken($gold, 10%);
+            text-shadow: lighten($gold, 10%) 1px 1px 1px;
+         }
+        &.wc-text-white {
+            color: $white;
+        }
+}

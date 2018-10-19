@@ -1,0 +1,457 @@
+include "pieces/layout/header.html"
+	<!-- Content -->
+	<div class="wc-content-wrap wc-standard-layout wc-detail-page-content " >
+		<!-- Title  -->
+		<div class="wc-title-box">
+			<div class="wc-container">
+				<h1 class="wc-page-title">Section Front</h1>
+			</div>
+		</div>
+
+		<div class="wc-container">
+			<!-- Breadcrumbs -->
+			include "pieces/layout/breadcrumbs.html"
+
+			<div class="wc-row wc-no-top-gutter">
+
+				include "pieces/layout/left-column.html"
+
+
+
+
+					<div class="wc-main-content wc-yes-right-column" id="wc-reader-content" role="main">
+						<div class="wc-row wc-component-row">
+							<!-- Slide Show -->
+							<div class="wc-slideshow-component wc-component wc-full-component">
+								<div class="wc-slideshow-content">
+									<div class="wc-desktop-slider wc-slider wc-invisible wc-dots-and-arrows" id="wc-slideshow-component-02f1a7ff81684aa3be1ee76f5e9e8b46">
+									</div>
+									<div class="wc-slider-nav-box" id="wc-slideshow-component-02f1a7ff81684aa3be1ee76f5e9e8b46-nav-box">
+										<a class="wc-left-arrow">
+											<svg viewBox="0 0 32 32">
+												<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/svg/svg-defs.svg#icon-arrow-left"></use>
+											</svg>
+										</a>
+										<div class="wc-slider-dots-box" id="wc-slider-dots-box"></div>
+										<a class="wc-right-arrow">
+											<svg viewBox="0 0 32 32">
+												<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/svg/svg-defs.svg#icon-arrow-right"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
+								<script>
+									(function(){
+										var wcParams = {
+											type: 'slideshow',
+											height: 310
+											};
+										var slickParams = {
+											dots: (('True').toLowerCase() == 'true'), //need to convert all of these  because c# uses 'False' instead of 'false'
+											arrows: (('True').toLowerCase() == 'true'),
+											draggable: (('True').toLowerCase() == 'true'),
+											swipe: (('True').toLowerCase() == 'true'),
+											autoplay:(('False').toLowerCase() == 'true'),
+											autoplaySpeed: 5000,
+											prevArrow: $('#wc-slideshow-component-02f1a7ff81684aa3be1ee76f5e9e8b46-nav-box').find('.wc-left-arrow').first(),
+											nextArrow: $('#wc-slideshow-component-02f1a7ff81684aa3be1ee76f5e9e8b46-nav-box').find('.wc-right-arrow').first(),
+											appendDots: $('#wc-slideshow-component-02f1a7ff81684aa3be1ee76f5e9e8b46-nav-box').find('.wc-slider-dots-box').first()
+										};
+										$('#wc-slideshow-component-02f1a7ff81684aa3be1ee76f5e9e8b46').data('wcParams',wcParams).data('slickParams',slickParams);
+									})();
+								</script>
+							</div>
+						</div>
+						<div class="wc-row">
+							<!-- Middle Column-->
+							<div class="wc-middle-content-column">
+								<div class="wc-row">
+									<div class="wc-body-copy wc-12-col">
+										<p>JuxtaposeJS helps storytellers compare two pieces of similar media, including photos, and GIFs. It's ideal for highlighting then/now stories that explain slow changes over time (growth of a city skyline, regrowth of a forest, etc.) or before/after stories that show the impact of single dramatic events (natural disasters, protests, wars, etc.).</p>
+										<p>JuxtaposeJS helps storytellers compare two pieces of similar media, including photos, and GIFs. It's ideal for highlighting then/now stories that explain slow changes over time (growth of a city skyline, regrowth of a forest, etc.) or before/after stories that show the impact of single dramatic events (natural disasters, protests, wars, etc.).</p>
+										<div>
+											<p></p>
+										</div>
+										<div>
+											<p></p>
+										</div>
+									</div>
+								</div>
+								<div class="wc-row wc-component-row">
+									<div class="wc-small-feature-component wc-component wc-half-component">
+										<div class="wc-component-content">
+											
+											<a href="/DssPreview/x11.xml?Preview=true&amp;Site=&amp;IncludeAllPages=true&amp;tfrm=1&amp;PubTgt=PublishingTargets/1&amp;Site=&amp;UserAgent=">    <img src="https://www.whitman.edu/Images/TestImages/styx.jpg?_previewAsset_=true" alt="" class="wc-full-width">
+											</a>
+											<h3>Small Feature Component Test</h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam ad similique aliquid reiciendis, ex placeat doloremque quod dicta, sequi</p>
+										</div>
+										<a href="/DssPreview/x11.xml?Preview=true&amp;Site=&amp;IncludeAllPages=true&amp;tfrm=1&amp;PubTgt=PublishingTargets/1&amp;Site=&amp;UserAgent=" class="wc-box-button wc-bb-more-link" title="Whitman College">
+										Whitman College</a>
+									</div>
+									<!-- end wc-body-copy-component-->
+									<!--end model not null-->
+									<div class="wc-button-list-component wc-component wc-half-component wc-two-across">
+										<div class="wc-button-list-box wc-same-height-children_flexbox">
+											<a href="/DssPreview/x11.xml?Preview=true&amp;Site=&amp;IncludeAllPages=true&amp;tfrm=1&amp;PubTgt=PublishingTargets/1&amp;Site=&amp;UserAgent=" class="wc-box-button wc-small" title="Whitman College" data-tracking-label=" Whitman College">
+											<span class="wc-text">Whitman College</span>
+											</a>
+											<a href="/DssPreview/x11.xml?Preview=true&amp;Site=&amp;IncludeAllPages=true&amp;tfrm=1&amp;PubTgt=PublishingTargets/1&amp;Site=&amp;UserAgent=" class="wc-box-button wc-small" title="This one has a longer title so it will take two lines" data-tracking-label=" This one has a longer title so it will take two lines">
+											<span class="wc-text">This one has a longer title so it will take two lines</span>
+											</a>
+											<a href="/DssPreview/x11.xml?Preview=true&amp;Site=&amp;IncludeAllPages=true&amp;tfrm=1&amp;PubTgt=PublishingTargets/1&amp;Site=&amp;UserAgent=" class="wc-box-button wc-small" title="Whitman College" data-tracking-label=" Whitman College">
+											<span class="wc-text">Whitman College</span>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="wc-row wc-component-row">
+									<div class="wc-component wc-link-list-component wc-list-component wc-half-component">
+										<h2>Link List Test Component</h2>
+										<hr class="wc-divider">
+										<ul class="wc-no-style-list">
+											<li>
+												<a href="/DssPreview/x36517.xml?Preview=true&amp;Site=&amp;IncludeAllPages=true&amp;tfrm=1&amp;PubTgt=PublishingTargets/1&amp;Site=&amp;UserAgent=" title="Environmental Health and Safety">
+												Environmental Health and Safety</a>
+											</li>
+											<li>
+												<a href="/DssPreview/x36185.xml?Preview=true&amp;Site=&amp;IncludeAllPages=true&amp;tfrm=1&amp;PubTgt=PublishingTargets/1&amp;Site=&amp;UserAgent=" title="This link has a really long title so we can test line breaks">
+												This link has a really long title so we can test line breaks</a>
+											</li>
+											<li>
+												<a href="/DssPreview/x36188.xml?Preview=true&amp;Site=&amp;IncludeAllPages=true&amp;tfrm=1&amp;PubTgt=PublishingTargets/1&amp;Site=&amp;UserAgent=" title="Athletics">
+												Athletics</a>
+											</li>
+											<li>
+												<a href="/DssPreview/x30859.xml?Preview=true&amp;Site=&amp;IncludeAllPages=true&amp;tfrm=1&amp;PubTgt=PublishingTargets/1&amp;Site=&amp;UserAgent=" title="Human Resources">
+												Human Resources</a>
+											</li>
+											<li>
+												<a href="/DssPreview/x36441.xml?Preview=true&amp;Site=&amp;IncludeAllPages=true&amp;tfrm=1&amp;PubTgt=PublishingTargets/1&amp;Site=&amp;UserAgent=" title="Business Office">
+												Business Office</a>
+											</li>
+											<li>
+												<a href="/DssPreview/x25558.xml?Preview=true&amp;Site=&amp;IncludeAllPages=true&amp;tfrm=1&amp;PubTgt=PublishingTargets/1&amp;Site=&amp;UserAgent=" title="Off-Campus Studies">
+												Off-Campus Studies</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="wc-row wc-component-row">
+									<div class="wc-accordion-component wc-component wc-full-component" id="wc-accordion-component_c2e47b6c6b37a71f97775759d12cf168">
+										<div class="wc-accordion-box">
+											<button class="wc-accordion-header collapse " data-toggle="collapse" data-target="#wc-accordion-component_c2e47b6c6b37a71f97775759d12cf168_slide_0">
+												<h2 class="wc-text">First Section</h2>
+												<div class="wc-icon-box" aria-hidden="true">
+													<svg viewBox="0 0 32 32">
+														<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/svg/svg-defs.svg#icon-arrow-down"></use>
+													</svg>
+												</div>
+											</button>
+											<div class="wc-accordion-slide collapse " id="wc-accordion-component_c2e47b6c6b37a71f97775759d12cf168_slide_0">
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, reprehenderit illo cum debitis rerum nesciunt obcaecati velit quis. Illum assumenda quae ipsa, ratione vero ullam fuga ad eligendi asperiores quod.</p>
+												<div class="wc-button-list-component wc-component wc-full-component wc-two-across">
+													<div class="wc-button-list-box wc-same-height-children_flexbox"><a class="wc-box-button wc-small" href="https://www.whitman.edu"> <span class="wc-text">Test Link</span> </a> <a class="wc-box-button wc-small" href="https://www.whitman.edu"> <span class="wc-text">Test Link</span> </a></div>
+												</div>
+											</div>
+											<button class="wc-accordion-header collapse " data-toggle="collapse" data-target="#wc-accordion-component_c2e47b6c6b37a71f97775759d12cf168_slide_1">
+												<h2 class="wc-text">Second Section</h2>
+												<div class="wc-icon-box" aria-hidden="true">
+													<svg viewBox="0 0 32 32">
+														<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/svg/svg-defs.svg#icon-arrow-down"></use>
+													</svg>
+												</div>
+											</button>
+											<div class="wc-accordion-slide collapse " id="wc-accordion-component_c2e47b6c6b37a71f97775759d12cf168_slide_1">
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, reprehenderit illo cum debitis rerum nesciunt obcaecati velit quis. Illum assumenda quae ipsa, ratione vero ullam fuga ad eligendi asperiores quod.</p>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, reprehenderit illo cum debitis rerum nesciunt obcaecati velit quis. Illum assumenda quae ipsa, ratione vero ullam fuga ad eligendi asperiores quod.</p>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, reprehenderit illo cum debitis rerum nesciunt obcaecati velit quis. Illum assumenda quae ipsa, ratione vero ullam fuga ad eligendi asperiores quod.</p>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, reprehenderit illo cum debitis rerum nesciunt obcaecati velit quis. Illum assumenda quae ipsa, ratione vero ullam fuga ad eligendi asperiores quod.</p>
+											</div>
+											<button class="wc-accordion-header collapse " data-toggle="collapse" data-target="#wc-accordion-component_c2e47b6c6b37a71f97775759d12cf168_slide_2">
+												<h2 class="wc-text">Third Section</h2>
+												<div class="wc-icon-box" aria-hidden="true">
+													<svg viewBox="0 0 32 32">
+														<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/svg/svg-defs.svg#icon-arrow-down"></use>
+													</svg>
+												</div>
+											</button>
+											<div class="wc-accordion-slide collapse " id="wc-accordion-component_c2e47b6c6b37a71f97775759d12cf168_slide_2">
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, reprehenderit illo cum debitis rerum nesciunt obcaecati velit quis. Illum assumenda quae ipsa, ratione vero ullam fuga ad eligendi asperiores quod.</p>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, reprehenderit illo cum debitis rerum nesciunt obcaecati velit quis. Illum assumenda quae ipsa, ratione vero ullam fuga ad eligendi asperiores quod.</p>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, reprehenderit illo cum debitis rerum nesciunt obcaecati velit quis. Illum assumenda quae ipsa, ratione vero ullam fuga ad eligendi asperiores quod.</p>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, reprehenderit illo cum debitis rerum nesciunt obcaecati velit quis. Illum assumenda quae ipsa, ratione vero ullam fuga ad eligendi asperiores quod.</p>
+											</div>
+											<button class="wc-accordion-header collapse " data-toggle="collapse" data-target="#wc-accordion-component_c2e47b6c6b37a71f97775759d12cf168_slide_3">
+												<h2 class="wc-text">Fourth Section</h2>
+												<div class="wc-icon-box" aria-hidden="true">
+													<svg viewBox="0 0 32 32">
+														<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/svg/svg-defs.svg#icon-arrow-down"></use>
+													</svg>
+												</div>
+											</button>
+											<div class="wc-accordion-slide collapse " id="wc-accordion-component_c2e47b6c6b37a71f97775759d12cf168_slide_3">
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, reprehenderit illo cum debitis rerum nesciunt obcaecati velit quis. Illum assumenda quae ipsa, ratione vero ullam fuga ad eligendi asperiores quod.</p>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, reprehenderit illo cum debitis rerum nesciunt obcaecati velit quis. Illum assumenda quae ipsa, ratione vero ullam fuga ad eligendi asperiores quod.</p>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, reprehenderit illo cum debitis rerum nesciunt obcaecati velit quis. Illum assumenda quae ipsa, ratione vero ullam fuga ad eligendi asperiores quod.</p>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, reprehenderit illo cum debitis rerum nesciunt obcaecati velit quis. Illum assumenda quae ipsa, ratione vero ullam fuga ad eligendi asperiores quod.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- end middle content colum-->
+							<!-- Right Column-->
+							<div class="wc-right-content-column wc-quarter-content-column">
+								<div class="wc-row wc-component-row">
+									<div class="wc-office-info-component wc-component wc-full-component">
+										<h2 class="">
+											Office Info
+										</h2>
+										<div class="wc-info-item wc-info-item_location">
+											<div class="wc-icon-box">
+												<svg viewBox="0 0 32 32">
+													<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/svg/svg-defs.svg#icon-map-pin"></use>
+												</svg>
+											</div>
+											<div class="wc-text-box">
+												<span class="wc-text">
+												<span class="">
+												123 Boyer House
+												</span>
+												<br>
+												<span class="">
+												345 Boyer Avenue
+												</span>
+												<br>
+												<span>Walla Walla, WA 99362</span>
+												</span>
+											</div>
+										</div>
+										<div class="wc-info-item wc-info-item_hours">
+											<div class="wc-icon-box">
+												<svg viewBox="0 0 32 32">
+													<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/svg/svg-defs.svg#icon-clock"></use>
+												</svg>
+											</div>
+											<div class="wc-text-box">
+												<span class="wc-text-box">
+												3:00-6:00 M-F
+												</span>
+											</div>
+										</div>
+										<div class="wc-info-item wc-info-item_phone">
+											<div class="wc-icon-box">
+												<svg viewBox="0 0 32 32">
+													<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/svg/svg-defs.svg#icon-phone"></use>
+												</svg>
+											</div>
+											<div class="wc-text-box">
+												<span class="wc-text">
+												(509) 527-1234
+												</span>
+											</div>
+										</div>
+										<div class="wc-info-item wc-info-item_email">
+											<div class="wc-icon-box">
+												<svg viewBox="0 0 32 32">
+													<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/svg/svg-defs.svg#icon-email"></use>
+												</svg>
+											</div>
+											<div class="wc-text-box">
+												<a href="mailto:test@whitman.edu" class="wc-text wc-ellipsis">
+												test@whitman.edu
+												</a>
+											</div>
+										</div>
+										<a href="/DssPreview/x11.xml?Preview=true&amp;Site=&amp;IncludeAllPages=true&amp;tfrm=1&amp;PubTgt=PublishingTargets/1&amp;Site=&amp;UserAgent=" class="wc-box-button wc-bb-more-link" title="Whitman College">
+										Whitman College</a>
+									</div>
+								</div>
+								<div class="wc-row wc-component-row">
+									<div class="wc-social-links-component wc-component wc-full-component wc-icons-only ">
+										<div class="wc-social-links-box">
+											<a href="https://www.facebook.com/WhitmanAdmission" class="wc-social-link" title="Facebook" target="_blank" aria-label="Facebook">
+												<svg class="wc-icon" viewBox="0 0 32 32" aria-hidden="true">
+													<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/svg/svg-defs.svg#icon-facebook"></use>
+												</svg>
+											</a>
+											<a href="https://twitter.com/whitmanadmit" class="wc-social-link" title="Twitter" target="_blank" aria-label="Twitter">
+												<svg class="wc-icon" viewBox="0 0 32 32" aria-hidden="true">
+													<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/svg/svg-defs.svg#icon-twitter"></use>
+												</svg>
+											</a>
+											<a href="http://instagram.com/whitmanadmission" class="wc-social-link" title="Instagram" target="_blank" aria-label="Instagram">
+												<svg class="wc-icon" viewBox="0 0 32 32" aria-hidden="true">
+													<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/svg/svg-defs.svg#icon-instagram"></use>
+												</svg>
+											</a>
+											<a href="http://blogs.whitman.edu/admission/" class="wc-social-link" title="Blog" target="_blank" aria-label="Blog">
+												<svg class="wc-icon" viewBox="0 0 32 32" aria-hidden="true">
+													<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/svg/svg-defs.svg#icon-generic-blog"></use>
+												</svg>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="wc-row wc-component-row">
+									<div class="wc-small-feature-component wc-component wc-full-component">
+										<div class="wc-component-content">
+											<a href="/DssPreview/x11.xml?Preview=true&amp;Site=&amp;IncludeAllPages=true&amp;tfrm=1&amp;PubTgt=PublishingTargets/1&amp;Site=&amp;UserAgent=">    <img src="https://www.whitman.edu/Images/TestImages/styx.jpg?_previewAsset_=true" alt="" class="wc-full-width">
+											</a>
+											<h3>Small Feature Component Test</h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam ad similique aliquid reiciendis, ex placeat doloremque quod dicta, sequi</p>
+										</div>
+										<a href="/DssPreview/x11.xml?Preview=true&amp;Site=&amp;IncludeAllPages=true&amp;tfrm=1&amp;PubTgt=PublishingTargets/1&amp;Site=&amp;UserAgent=" class="wc-box-button wc-bb-more-link" title="Whitman College">
+										Whitman College</a>
+									</div>
+									<!-- end wc-body-copy-component-->
+									<!--end model not null-->
+								</div>
+								<div class="wc-row wc-component-row">
+									<div class="wc-contact-info-component wc-component wc-full-component">
+										<h2 class="">
+											Jane Doe
+										</h2>
+										<!-- position title -->
+										<h4 class="wc-position-title">Long job title to make sure it takes up two lines</h4>
+										<!-- location and address elements--> 
+										<div class="wc-info-item">
+											<div class="wc-icon-box">
+												<svg viewBox="0 0 32 32">
+													<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/svg/svg-defs.svg#icon-map-pin"></use>
+												</svg>
+											</div>
+											<div class="wc-text-box">
+												<span class="wc-text">
+												<span class="">
+												Olin Hall 123
+												</span>
+												<br>
+												<span class="">
+												345 Boyer Ave.
+												</span>
+												<br>
+												<span>Walla Walla, WA 99362</span>
+												</span>
+											</div>
+										</div>
+										<!-- end location or address not null-->
+										<!-- hours -->
+										<div class="wc-info-item">
+											<div class="wc-icon-box">
+												<svg viewBox="0 0 32 32">
+													<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/svg/svg-defs.svg#icon-clock"></use>
+												</svg>
+											</div>
+											<div class="wc-text-box">
+												<span class="wc-text-box">
+												M-F: 3:00-12:00
+												</span>
+											</div>
+										</div>
+										<!-- phone -->
+										<div class="wc-info-item">
+											<div class="wc-icon-box">
+												<svg viewBox="0 0 32 32">
+													<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/svg/svg-defs.svg#icon-phone"></use>
+												</svg>
+											</div>
+											<div class="wc-text-box">
+												<span class="wc-text">
+												(509) 527-123
+												</span>
+											</div>
+										</div>
+										<!-- email -->
+										<div class="wc-info-item">
+											<div class="wc-icon-box">
+												<svg viewBox="0 0 32 32">
+													<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/svg/svg-defs.svg#icon-email"></use>
+												</svg>
+											</div>
+											<div class="wc-text-box">
+												<a href="mailto:test@whitman.edu" class="wc-text wc-ellipsis">
+												test@whitman.edu
+												</a>
+											</div>
+										</div>
+										<!-- link -->
+									</div>
+									<!-- end wc-body-copy-component-->
+									<!--end model not null-->
+								</div>
+								<div class="wc-row wc-component-row">
+									<div class="wc-component wc-events-component wc-full-component wc-list-component" id="wc-events-component-e2c405a415cb653d2d402e016cbf1a4f">
+										<h2>Events</h2>
+										<hr class="wc-divider">
+										<ul class="wc-events-list"></ul>
+										<script>
+											(function(){
+											                   var params = {
+											                       types: ['33839','32681'],
+											                       excludes: [''],
+											                       match: 'Any',
+											                       count: '4',
+											                       format: 'default',
+											                       moreLinks: 'false',
+											                       showAbstracts: 'false',
+													recurringEvents: 'distinct'
+											                   };
+												$('#wc-events-component-e2c405a415cb653d2d402e016cbf1a4f').data('eventsParams',params);
+											})();
+											           
+										</script>
+									</div>
+								</div>
+								<div class="wc-row wc-component-row">
+									<div class="wc-component wc-link-list-component wc-list-component wc-full-component" role="complementary" name="Academic Requirements">
+										<h2>Academic Requirements</h2>
+										<ul>
+											<li>	<a href="/DssPreview/Documents/Offices/Registrar/Catalog/Rhetoric Studies III.pdf" title="Courses, Learning Goals &amp; Senior Assessment">
+												Courses, Learning Goals &amp; Senior Assessment</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="wc-row wc-component-row">
+									<div class="wc-component wc-rss-feed-display-component wc-list-component wc-full-component ">
+										<h2 class="">Blog</h2>
+										<ul class="wc-item-list wc-same-height-group-a">
+											<li>
+												<a href="http://blogs.whitman.edu/admission/2017/10/21/the-best-tradition-frolfing/" target="_blank">The Best Tradition: Frolfing</a>
+												<br><span class="wc-date">October 21, 2017</span>
+											</li>
+											<li>
+												<a href="http://blogs.whitman.edu/admission/2017/10/21/ways-to-stay-warm-in-winter-a-southerners-guide/" target="_blank">Ways to Stay Warm in Winter: A Southerner’s Guide</a>
+												<br><span class="wc-date">October 21, 2017</span>
+											</li>
+											<li>
+												<a href="http://blogs.whitman.edu/admission/2017/10/20/5-fall-break-destinations/" target="_blank">5 Fall Break Destinations</a>
+												<br><span class="wc-date">October 20, 2017</span>
+											</li>
+											<li>
+												<a href="http://blogs.whitman.edu/admission/2017/10/18/deeper-water/" target="_blank">Deeper Water</a>
+												<br><span class="wc-date">October 18, 2017</span>
+											</li>
+											<li>
+												<a href="http://blogs.whitman.edu/admission/2017/10/17/encounters-the-worst-and-the-best-class/" target="_blank">Encounters: The Worst and The Best Class</a>
+												<br><span class="wc-date">October 17, 2017</span>
+											</li>
+										</ul>
+										<div class="wc-bottom-box">
+											<a href="http://blogs.whitman.edu/admission/#.WNWXrBMrKEI" target="_blank" class="wc-box-button wc-bb-more-link" title="Admission Blog">
+											Admission Blog</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- end wc-right-content-column -->
+						</div>
+					</div>
+
+
+			</div>
+		</div>
+	</div>
+include "pieces/layout/footer.html"

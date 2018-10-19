@@ -1,0 +1,19 @@
+// Core variables and mixins
+@import "_wc-bootstrap-variables.scss"; //Whitman's customized variables - this needs to be first.
+@import "../../plugins/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+
+// Reset and dependencies
+//@import "../../plugins/bootstrap-sass/assets/stylesheets/bootstrap/normalize";
+
+// Core CSS
+@import "../../plugins/bootstrap-sass/assets/stylesheets/bootstrap/grid";
+
+// Components
+@import "../../plugins/bootstrap-sass/assets/stylesheets/bootstrap/component-animations";
+
+// Components w/ JavaScript
+@import "../../plugins/bootstrap-sass/assets/stylesheets/bootstrap/modals";
+
+// Utility classes
+@import "../../plugins/bootstrap-sass/assets/stylesheets/bootstrap/utilities";
+@import "../../plugins/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities";

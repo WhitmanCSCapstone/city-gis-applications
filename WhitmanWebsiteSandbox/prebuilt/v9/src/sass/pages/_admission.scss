@@ -1,0 +1,123 @@
+/**********************************
+#ADMISSION
+
+Info
+[-] 	Styles specific to the admission page.
+**********************************/	
+
+/**********************************
+#MORE-INF0-FORM	
+
+Notes
+[-] 	No actual componnet for this, just pasting the markup into a body copy component
+[-] 	Note that the form also has some inline styles in the markup.
+[1]		Markup for address form is different, need to style the inputs instead of
+		their boxes
+[2] 	Autocomplete suggestions. The Slate JS adds this to the end of the body when
+		it's needed.
+**********************************/
+.wc-admission-contact-form-box{
+	.form_question{
+		@include clearfix();
+	}
+	.form_question:not(.form_address) .form_responses{
+		float:left;
+		width: 410px;
+		max-width: 100%;
+		border: 1px solid $base-font-color;
+		input[type=text]{
+			width: 100%;
+		}
+		@extend .wc-input-box;
+	}
+	.form_address{ /*[1]*/
+		label{
+			display: block;
+			float: left;
+			width: 100%;
+		}
+		textarea,input,select{
+			float:left;
+			width: 410px;
+			max-width: 100%;
+			border: 1px solid $base-font-color;
+			input[type=text]{
+				width: 100%;
+			}
+			@extend .wc-input-box;
+		}
+
+	}
+	.form_select select{
+		width: 100%;
+		@extend .wc-rounded-dropdown;
+		border: none;
+	}
+	.action{
+		width: 100%;
+		padding-top: 1rem;
+		text-align: center;
+		button{
+			@extend .wc-box-button;
+			@extend .wc-solid-button-c;
+			min-width: 200px;
+		}
+	}
+}
+	.suggest{ /*[2]*/
+		.suggest_name{
+			font-size:1rem;
+		}
+		.suggest_data{
+			font-size: .8rem;
+		}
+	}
+
+
+/**********************************
+#CONTACT-ADMISSION-BOX
+
+Notes
+[-] 	No actual componnet for this, just pasting the markup into a body copy component
+**********************************/
+.wc-admission-custom-contact-box{
+	&>h2{
+		margin-top:0;
+	}
+	.wc-office-info-component{
+		margin-bottom: 1.2rem;
+		h2{
+			display: none;
+		}
+	}
+	.wc-info-item{
+		&.wc-info-item_location, &.wc-info-item_hours{
+			display: none;
+		}
+		.wc-icon-box{
+			@include responsiveFlexWidth(50px, 50px, 70px, 70px);
+			svg{
+				@include responsiveIcon(40px, 40px, 50px, 50px, $link-hover-color);
+			}
+		}		
+	}
+	.wc-social-links-box{
+		padding-top: .4rem;
+		text-align: center;
+		.wc-social-link{
+			padding: 0 .6rem;
+			display: inline-block;
+			float: none;
+		}
+		.wc-icon{
+			@include responsiveIcon(50px, 50px, 64px, 64px, $link-hover-color);
+		}
+		@media(max-width:$screen-xs-max){
+			text-align: center;
+			.wc-social-link{
+				display: inline-block;
+				float: none;
+			}
+		}
+	}
+}

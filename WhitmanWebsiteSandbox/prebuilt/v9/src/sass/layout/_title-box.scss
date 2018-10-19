@@ -1,0 +1,247 @@
+/**********************************
+#TITLE-BOX
+
+Info
+[-] 	Styles for the title box at the top of most pages. Most of this applies to 
+		the title boxes at the top of Landing and Constituent pages.
+**********************************/
+.wc-title-box{
+	width:100%;
+}
+	.wc-landing-page-layout .wc-title-box, .wc-full-width-layout-b .wc-title-box{
+		.wc-container{
+			position:relative;
+			@include responsiveMinHeight(220px,400px,400px,450px);
+		}
+		.wc-overlay{
+			position: relative;
+			width:100%;
+			height:100%;
+		}
+	}
+	.wc-page-title{
+		color:$dark-blue;
+		font-weight: 400;
+		margin: 2rem 0 0;
+		line-height: 1.2;
+		display: block;
+		width: 100%;
+	}
+
+/**********************************
+#IMAGE-TITLE-BOX
+
+Notes
+[1] 	Adding this for constituent pages that are still using background images
+		- meanspa 7.20.17
+[2] 	For the object-fit-images polyfill
+**********************************/
+.wc-image-title-box{
+	position: relative;
+	overflow: hidden;
+	background-size: cover; /*[1]*/
+	.wc-overlay{
+		z-index: 300;
+	}
+}
+	.wc-tb-hero-image{
+		margin:0;
+		padding:0;
+		display: block;
+		position:absolute;
+		z-index:100;
+		max-width:none;
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+		font-family: 'object-fit: cover;'; /*[2]*/
+		&.wc-vert-align-top{
+			&.wc-horiz-align-left{
+				object-position: 0 0;
+				font-family: 'object-fit: cover; object-position: 0 0;';
+			}
+			&.wc-horiz-align-right{
+				object-position: 100% 0;
+				font-family: 'object-fit: cover; object-position: 100% 0;';
+			}
+			&.wc-horiz-align-center{
+				object-position: 50% 0;
+				font-family: 'object-fit: cover; object-position: 50% 0;';
+			}
+		}
+		&.wc-vert-align-bottom{
+			&.wc-horiz-align-left{
+				object-position: 0 100%;
+				font-family: 'object-fit: cover; object-position: 0 100%;';
+			}
+			&.wc-horiz-align-right{
+				object-position: 100% 100%;
+				font-family: 'object-fit: cover; object-position: 100% 100%;';
+			}
+			&.wc-horiz-align-center{
+				object-position: 50% 100%;
+				font-family: 'object-fit: cover; object-position: 50% 100%;';
+			}
+		}
+		&.wc-vert-align-center{
+			&.wc-horiz-align-left{
+				object-position: 0 50%;
+				font-family: 'object-fit: cover; object-position: 0 50%;';
+			}
+			&.wc-horiz-align-right{
+				object-position: 100% 50%;
+				font-family: 'object-fit: cover; object-position: 100% 50%;';
+			}
+			&.wc-horiz-align-center{
+				object-position: 50% 50%;
+				font-family: 'object-fit: cover; object-position: 50% 50%;';
+			}
+		}
+	}
+	.wc-image-title-box .wc-page-title, .wc-video-title-box .wc-page-title{
+		color:$white;
+		font-weight:300;
+		bottom:12px;
+		text-shadow: 4px 4px 6px #000;
+		filter: progid:DXImageTransform.Microsoft.Shadow(color=#000000,direction=135);
+		@include responsiveFontSize(2.4rem, 3rem, 4rem, 4.2rem);
+	}
+
+/**********************************
+#VIDEO-TITLE-BOX
+**********************************/
+.wc-video-title-box{
+	position:relative;
+	overflow: hidden;
+
+	.wc-background-video{
+		position: absolute;
+		left:50%;
+		width: 100%;
+		min-width:1300px;
+		height: auto !important;
+		opacity: 0;
+		z-index: 200;
+		@extend .hidden-xs;
+		@extend .hidden-sm;
+		&.wc-vertical-align-middle{
+			transform: translateX(-50%) translateY(-50%);
+			top:50%;
+		}
+		&.wc-vertical-align-bottom{
+			transform: translateX(-50%);
+			bottom:0;
+		}
+		&.wc-vertical-align-top{
+			transform: translateX(-50%);
+			top:0;
+		}
+	}
+}
+
+
+/**********************************
+#IE8-FALLBACK
+**********************************/
+html.no-rgba .wc-image-title-box .wc-page-title{
+	height: 63px;
+	width:360px;
+	background-color: #222;
+}
+
+/**********************************
+#TITLE-BOX-FEATURE-BOX
+**********************************/
+.wc-tb-feature-box{
+	border-radius: $border-radius;
+	margin: 1rem 0;
+	@include responsivePadding(0,0, 1.3rem, 1.3rem);
+	@include responsiveWidth(100%,400px,400px,400px);
+	@media(min-width:$screen-lg-min){
+		position: absolute;
+		bottom: 0;
+		right: $horizontal-gutter;
+	}
+	@media(min-width:$screen-sm-min) and (max-width:$screen-md-max){
+		float: right;
+	}
+	p,h4,span,a{
+		color: $white;
+	}
+}
+	.wc-tb-feature{
+		width: 100%;
+		@include clearfix();
+		p{
+			margin-bottom: 0;
+		}
+		.wc-button-box{
+			width: 100%;
+			margin-top:1rem;
+			@include clearfix();
+
+		}
+		.wc-box-button{
+			float:left;
+		}
+		.wc-two-buttons .wc-box-button{
+			width: 160px;
+			@media(max-width:$screen-xs-max){
+				clear:both;
+				margin-bottom:8px;
+			}
+			@media(min-width:$screen-sm-min){
+				&:nth-child(2){
+					float: right;
+				}
+			}
+		}
+	}
+
+	/**********************************
+	#CAPTION-BOX
+	**********************************/
+	.wc-tb-caption-box{
+		width: 100%;
+		text-align: left;
+
+		@extend .hidden-xs;
+		&:not(:first-child){
+			margin-top:16px;
+			padding-top:14px;
+		}
+		.wc-icon{
+			@include icon(36px,$white);
+			margin: 0;
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 10px;
+		}
+		.wc-text-box{
+			display: inline-block;
+			vertical-align: middle;
+			max-width: calc(100% - 50px);
+		}
+		.wc-text-box p{
+			margin-bottom: 2px;
+			line-height: 1.3;
+			font-size: .8rem;
+		}
+		.wc-photo-credit{
+			font-style: italic;
+		}
+		&:not(:first-child){
+			border-top:1px solid $white;
+		}
+	}
+
+/**********************************
+#IE9-FALLBACK
+**********************************/
+html.no-csscolumns{
+	.wc-title-box{	
+		video{
+			display: none;
+		}
+	}
+}

@@ -1,0 +1,386 @@
+/**********************************
+#LEFT-COLUMN
+
+Info
+	Styles for the left column. See also _layouts.scss for its width
+
+Notes
+[1] 	This div is just being used to wrap the left column in a border on mobile
+		(without needing to interfear with the bootstrap padding for wc-left-column)
+
+**********************************/
+
+$mobile-section-nav-gutters: 18px;
+
+.wc-left-column{
+}
+	@media(max-width:$screen-xs-max){
+		.wc-left-column-contents{ /*[1]*/
+			border:1px solid $medium-blue;
+			border-radius: $border-radius;
+		}		
+	}
+
+/**********************************
+#SECTION-NAVIGATION
+
+Info
+	Styles for the side navigation.
+
+Notes
+[-] 	See _layouts.scss for the section nav's width and bootstap stuff.
+[1] 	For sizing links outside of the actual nav like the links within the nav
+[2] 	If there is no navigation list, the first component row should have no
+		top gutter.
+**********************************/
+.wc-landing-page-layout{
+	.wc-section-nav-mobile-button{
+		display: block;
+	}
+}
+
+.wc-section-nav{}
+	.wc-section-nav-heading{
+		@include responsiveFontSize(1.5rem,1.5rem,1.6rem,1.6rem);
+		@include clickable($medium-blue,$light-blue);
+		@include responsiveMargin(0 18px,0,0,0);
+		font-family: $font-family-serif;
+		font-weight: 400;
+		line-height: 1.9rem;
+		border-bottom: 1px solid $medium-blue;
+		text-decoration: none;
+		display: block;
+		padding-bottom:8px;
+	}
+	.wc-section-nav-list{
+		transition: all .1s;
+		margin:0;
+		clear:both;
+		overflow:hidden;
+		@include responsivePadding(0 $mobile-section-nav-gutters,0 0 .6rem 0,0 0 1rem 0,0 0 1rem 0);
+		ul{
+			margin:0;
+			clear:both;
+		}
+		li{
+			display:block;
+			padding:0;
+			margin:0;
+			transition: all .1s;
+			@include clearfix();
+		}
+		>li{
+			border-bottom:1px solid $light-gray-1;
+			&:last-child{
+				border-bottom:0;
+			}
+			>a,>span{
+				font-weight:600;
+			}
+		}
+	}
+		.wc-left-column .wc-component-row:nth-child(2){
+			@extend .wc-no-top-gutter;/*[2]*/
+		}
+		.wc-nav-link{
+			font-size:1rem;
+			display:block;
+			float:left;
+			&.wc-sub-nav-header{
+				width:85%;
+			}
+			@include responsivePadding(10px 0,10px 0,8px 0,8px 0);
+		}
+		.wc-nav-link:not(.wc-nav-active-page){
+			@include clickable($medium-blue,$light-blue);
+		}
+		.wc-nav-active-page{
+			color:$base-font-color;
+		}
+		.wc-nav-expander{
+			@media(max-width:$screen-sm-max){
+				@include button(26px,18px,$medium-blue,$light-blue);			
+			}
+			@media(min-width:$screen-md-min){
+				@include button(22px,18px,$medium-blue,$light-blue);
+			}
+			@include spinButton(180deg,.2s);
+			@include responsivePadding(10px 0,10px 0,10px 0,10px 0);
+			display:block;
+			float:right;
+			svg{
+				display:block;
+			}
+		}
+	.wc-sub-nav{
+		overflow:hidden;
+		padding-left:10px;
+		a{
+			font-weight:300;
+		}
+	}
+
+	/**********************************
+	#MOBILE-BREADCRUMBS
+	**********************************/
+	.wc-row:not(.wc-collapsed-nav-row) .wc-mobile-breadcrumbs{
+		@media(min-width:$screen-sm-min){
+			display: none;
+		}
+	}
+	.wc-mobile-breadcrumbs{
+		transition: all 1s;
+		padding: 6px $mobile-section-nav-gutters 2px;
+		margin: 0 0 10px;
+		border-top: 1px solid $light-gray-1;
+		border-bottom: 1px solid $light-gray-1;
+		@include clearfix();
+		span,a{
+			text-transform: uppercase;
+			font-size:1.1rem;
+			font-weight: 600;			
+		}
+		.wc-slash{
+			display: block;
+			float: left;
+			padding: 4px 0 0 4px;
+		}
+		.wc-home-button{
+			float: left;
+			display: block;
+			padding: 2px 4px 0 0;
+			.wc-icon{
+				@include icon(26px);
+				display:block;
+			}
+		}
+		.wc-current-page{
+			color:$dark-gray;
+		}
+		.wc-link{
+			color: $medium-blue;
+			&:hover,&:focus{
+				text-decoration: none;
+			}
+		}
+		&.wc-collapsed{
+			display: flex;
+			.wc-top-row{
+				// float: left;
+			}
+			.wc-ellipsis-link{
+				display: block;
+				flex-shrink:0;
+				color: $medium-blue;
+				padding: 4px;
+				&:hover,&:focus{
+					text-decoration: none;
+				}
+			}
+			.wc-close-button{
+				display: none;
+			}
+			.wc-link{
+				display: none;
+			}
+			.wc-link-divider{
+				display: none;
+			}
+			.wc-current-page{
+				padding: 4px;
+				white-space: nowrap;
+				overflow:hidden;
+				text-overflow:ellipsis;
+			}
+		}
+		&:not(.wc-collapsed){
+			.wc-top-row{
+				width: 100%;
+				padding: 0;
+				margin-bottom:5px;
+				@include clearfix();
+			}
+			.wc-ellipsis-link{
+				display: none;
+			}
+			.wc-close-button{
+				float: right;
+				display: block;
+				.wc-icon{
+					@include icon(20px);
+					margin: 6px 4px 0 0;
+					display:block;
+				}
+			}
+			a.wc-link{
+				display: block;
+				width: 100%;
+			}
+			.wc-link-divider{
+				.wc-icon{
+					@include icon(24px,$light-gray-1);
+					display: block;
+				}
+			}
+
+		}
+	}
+
+	/**********************************
+	#LEFT-COLUMN-COMPONENTS
+	**********************************/
+	@media(max-width:$screen-xs-max){
+		.wc-left-column{
+			.wc-component{
+				li{
+					line-height: 1.4;
+				}
+			}
+			.wc-row{
+				margin-left:0;
+				margin-right:0;
+			}
+			.wc-link-list-component{
+				h2{
+					margin-bottom:4px;
+				}
+				li{
+					display: block;
+					@include clearfix();
+					width: 100%;
+					border-bottom:1px solid $light-gray-1;
+					margin-bottom: 0;
+					&:last-child{
+						border-bottom:0;
+					}
+				}
+				a{
+					padding:10px 0;
+					@include clickable($medium-blue,$light-blue);
+
+					display:block;
+					width: 100%;
+					font-weight:600;
+				}
+			}
+		}
+	}
+	@media(min-width:$screen-sm-min){
+		.wc-left-column .wc-link-list-component{
+			li{
+				display: block;
+				width: 100%;
+			}
+			a{
+				display: inline;
+				padding: 0;
+				float: none;
+			}
+		}
+	}
+
+
+	/**********************************
+	#MOBILE-BUTTON
+	**********************************/
+	.wc-row:not(.wc-collapsed-nav-row) .wc-section-nav-mobile-button{
+		@extend .hidden-sm;
+		@extend .hidden-md;
+		@extend .hidden-lg;
+	}
+	.wc-row:not(.wc-collapsed-nav-row) .wc-left-column-inner-box {
+		@media(min-width: $screen-sm-min){
+			display: block;
+		}
+	}
+	.wc-section-nav-mobile-button{
+		width:100%;
+		@include clearfix();
+		@include button(20px, 1rem,$medium-blue, $medium-blue);
+		display: block;		
+		transition: all .1s;
+		@include responsivePadding($mobile-section-nav-gutters, 12px 0,12px 0,12px 0);
+		.wc-text{
+			display:block;
+			float:left;
+			font-size:1.1rem;
+			font-weight:600;
+		}
+		svg{
+			display: block;
+			float: right;
+			margin: 2px 2px 0 0;
+		}
+	}
+
+	/**********************************
+	#COLLAPSED-NAVIGATION
+
+	Notes
+	[1] 	Setting this transition up this way so it has an opaque background for 
+			most of the time it's open.
+	**********************************/
+	.wc-row.wc-collapsed-nav-row{
+		padding-top:0;
+		padding-bottom:0;
+		.wc-section-nav-heading{
+			margin: 0 18px;
+		}
+	}
+	.wc-row.wc-collapsed-nav-row{
+		@include responsiveHeight(auto,72px,72px,72px);
+		position: relative;
+
+		@media(min-width:$screen-sm-min){
+			.wc-left-column{
+				padding-left: 0;
+				padding-right: 0;
+				top: 1rem;
+				left: 1rem;
+				position: absolute;
+				border:1px solid $medium-blue;
+				border-radius: $border-radius;
+				border-radius: 8px;
+				z-index: 500;
+				
+				&:hover{
+					border-color: $link-color;
+				}
+				&.wc-collapsed{
+					background-color:$light-gray-2;
+				}
+				&:not(.wc-collapsed){
+					transition:background-color .5s;
+					transition-timing-function: cubic-bezier(0.57, 0.13, 0.83, 0.36); /*[1]*/
+				}
+				.wc-row{
+					margin-left:0;
+					margin-right:0;
+				}
+			}
+			.wc-section-nav-list{
+				padding: 0 1rem;
+			}
+			.wc-section-nav-heading{
+				display: none;
+			}
+		}
+
+		@media(min-width:$screen-sm-min){
+			.wc-section-nav-mobile-button{
+				padding-left:1rem;
+				padding-right:1rem;
+				&:hover{
+					.wc-text{
+						color: $link-color;
+					}
+					svg{
+						fill:  $link-color;
+					}
+				}
+			}
+		}
+	}
+	.wc-expand-for-nav{
+		transition: min-height .5s;
+	}

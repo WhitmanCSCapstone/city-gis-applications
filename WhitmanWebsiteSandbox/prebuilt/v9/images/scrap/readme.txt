@@ -1,0 +1,1 @@
+Just copied all of the images from the redesign repo into here. This includes a bunch of misc junk that I used for developing the site that we probably don't want in the live version, so just pull images out of here as we need them, then we'll delete this folder when we're confident we've got everything that's useful. -meanspa

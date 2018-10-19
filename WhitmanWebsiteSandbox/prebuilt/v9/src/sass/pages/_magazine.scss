@@ -1,0 +1,311 @@
+/**********************************
+#MAGAZINE-CENTERED-LAYOUT
+
+Info
+[-] 	Most of these styles are only for the "centered-layout"
+		option for magazine articles. Example: https://www.whitman.edu/at-the-hub
+**********************************/
+$mag-margin-offset_lg:180px; 
+$mag-margin-offset_md:100px; 
+
+.wc-centered-layout{
+	.wc-breadcrumbs, .wc-inner-content{
+		@include responsivePaddingLeft($horizontal-gutter,$horizontal-gutter,$mag-margin-offset_md,$mag-margin-offset_lg);
+		@include responsivePaddingRight($horizontal-gutter,$horizontal-gutter,$mag-margin-offset_md,$mag-margin-offset_lg);
+	}
+	.wc-author{
+		color:$dark-gray-2;
+	}
+	.wc-inner-content{
+		padding-top:1rem;
+	}
+	.wc-main-content{
+		p,span,a,button,li{
+			font-size:1.1rem;
+		}
+	}
+		.wc-wide{
+			display: block;
+			@include responsiveMargin(0,0,0 #{$mag-margin-offset_md * -1}, 0 #{$mag-margin-offset_lg * -1}) 
+			@include responsiveWidth(100%,100%,calc(100% + #{$mag-margin-offset_md *2}),calc(100% + #{$mag-margin-offset_lg *2}));
+			max-width: none;
+		}
+}
+
+/**********************************
+#SIDE-COMPONENTS
+
+Notes
+[1] 	Necessary to make sure the dropshadow stays visible
+[2] 	Note that this can't have a - because of how its handled
+		in the view.
+[3] 	Using this class for drop-shadow and hover stuff
+**********************************/
+.wc-mag-side-component-box{
+	display: block;
+	padding: 0;
+	overflow: visible; /*[1]*/
+	&:not(.wclarge){ /*[2]*/
+		@include responsiveWidth(100%,100%, 360px, 360px);
+	}
+	&.wclarge{
+		@include responsiveWidth(100%,100%, 500px, 500px);
+	}
+	@include responsiveMarginTop(1rem, 1rem, 0,0);
+	@include responsiveMarginBottom(1rem, 1rem, 1rem,1rem);
+	.wc-component, .wc-card-component{
+		width: 100%;
+	}
+	*{
+		transition: all .3s;
+	}
+	p,span,li{
+		font-size: .9rem;
+	}
+	.wc-title + .wc-sc-content{ 
+		padding-top:0;
+	}
+	.wc-sc-content{
+		padding: 1.4rem;
+		&.wc-title{
+			margin:0;
+			padding-bottom: .6rem;
+			font-size:1.6rem;
+		}
+	}
+	&.wc-right-side{
+		float: right;
+		@include responsiveMarginLeft(0,0,2rem,2rem);
+		@include responsiveMarginRight(0, 0,#{$mag-margin-offset_md * -1}, #{$mag-margin-offset_lg * -1}) 
+	}
+	&.wc-left-side{
+		float: left;
+		@include responsiveMarginRight(0,0,2rem,2rem);
+		@include responsiveMarginLeft(0, 0,#{$mag-margin-offset_md * -1}, #{$mag-margin-offset_lg * -1}) 
+	}
+}
+
+.wc-mag-box-component{ /*[3]*/
+	overflow: hidden; 
+	text-align: left;
+	background-color:$almost-white;
+	border-radius: 3px;
+	box-shadow: 0 3px 4px rgba(51,51,51,0.24), 0 3px 5px rgba(51,51,51,0.36);
+	padding: 0;
+	&:hover{
+		box-shadow: 0 8px 8px rgba(51,51,51,0.38), 0 5px 5px rgba(51,51,51,0.34), 0 5px 10px rgba(51,51,51,0.20);
+	}
+}
+
+
+
+/**********************************
+#CARD-COMPONENT
+
+Notes
+[1] 	Making these styles specific to the magazine layout
+		for now, not sure if we'll want to use them in other places.
+**********************************/
+.wc-mag-side-component-box .wc-card-component{ /*[1]*/
+	.wc-move-box{
+		width: 100%;
+		position: relative;
+		.wc-inner-box{
+			width: 100%;
+			color:$black;
+			font-size: 1rem;
+			font-weight:600;
+			text-align: center;
+			transition: .2s all;
+		}
+		.wc-text{
+			vertical-align: middle;
+		}
+		.wc-icon{
+			vertical-align: middle;
+			@include icon(15px,$black);
+		}
+	}
+	@media(min-width:$screen-md-min){
+		.wc-blurb{
+			margin-bottom:0;
+		}
+		.wc-move-box{
+			height: 23px;
+		}
+		.wc-inner-box{
+			position: absolute;
+			top: 30px;
+			opacity: 0;
+		}
+		&:hover{
+			.wc-inner-box{
+				top: 8px;
+				opacity: 1;
+			}
+		}
+	}
+}
+
+
+/**********************************
+#VIDEO-COMPONENTS
+**********************************/
+.wc-mag-box-component.wc-video-component{
+	display: block;
+	padding: 0;
+	border: 0;
+	overflow: hidden;
+	p{
+		padding: 10px;
+		margin: 0;
+	}
+	.wc-icon{
+		@include icon(60px, rgba(255,255,255,.7));
+		top: auto;
+		left: auto;
+		right: 6px;
+		bottom: 6px;
+		transform: none;
+	}
+	.wc-icon.wc-alt,.wc-icon.wc-alt2{
+	}
+	.wc-hover-state{
+		display: none;
+	}
+	&:hover{
+		p{
+			text-decoration: none;	
+		}
+		.wc-icon.wc-alt:not(.wc-hover-state){
+			display:none;
+		}
+		.wc-hover-state{
+			display: block;
+		}
+		.wc-icon.wc-alt2{
+			fill:$white;
+		}
+	}
+}
+
+
+/**********************************
+#MAGAZINE-LIGHTBOX
+
+Notes
+[-] 	Right now a lot of this code is duplicated from the card-gallery
+		modal (see _masonry-gallery.scss). It'd probably be worth making a modals.scss
+		file for these at some point. Also see globals.scss for default modal styles
+[1] 	Making sure the viewport is at least 750px tall in case the
+		content is a bit longer, otherwise you can't scroll to see all of it.
+**********************************/
+.wc-modal{
+	.wc-lightbox.wc-magazine-lightbox{
+		@media(min-width:$screen-md-min) and (min-height:950px){ /*[1]*/
+			margin-top:0;
+			display:block;
+			position: absolute;
+			top:45%;
+			left: 50%;
+			transform:translateX(-50%) translateY(-50%);
+		}
+		@media (max-width:$screen-sm-max), (max-height:750px) {
+			margin-top:0;
+			padding-top:1rem;
+		}
+
+		background-color:$white;
+		text-align:left;
+		&.wc-body-copy-lightbox{
+			@include responsiveWidth(90%, 80%, 70%, 900px);
+			@media (min-width:$screen-sm-min){
+				padding: 0 2rem 2rem 2rem;
+			}
+		}
+		.wc-magazine-lightbox-topbar + *{
+			margin-top:0;
+			padding-top:0;
+		}
+		img{
+			max-width: 100%;
+		}
+	}
+	.wc-magazine-lightbox-topbar{
+		width: 100%;
+		margin-top:10px;
+		@include clearfix();
+
+		.wc-lightbox-close-button{
+			@include button(26px,18px,$black,$light-gray-1);
+			float:right;
+			display:block;
+			padding:12px;
+			@include responsiveMarginRight(0,-44px,-44px,-44px);
+		}
+	}
+}
+
+
+/**********************************
+#IMAGES
+**********************************/
+body .wc-main-content .wc-mag-image-box{
+	display: block;
+	width: calc(100% + 16px);
+	margin: 0 -8px;
+	padding: 0;
+	@include clearfix();
+	img,a{
+		display:block;
+		display:block;
+		float: left;
+		padding:0 8px 16px;
+	}
+	.wc-full-width-image{
+		width: 100%
+	}
+	.wc-half-width-image{
+		width: 50%;
+	}
+}
+	.wc-mag-image-caption{
+		padding: 0 0 1rem 0;
+	}
+	body .wc-main-content .wc-mag-image-caption{
+		font-size:1rem;
+		line-height: 1.2;
+		color:$dark-gray-2;
+	}
+
+
+
+/**********************************
+#TITLE
+**********************************/
+.wc-full-width-title{
+	background-size:cover;
+	.wc-page-title{
+		color:$white;
+	}
+	.wc-author{
+		color:$white;
+		font-weight: 200;
+		a{
+			color:$white;
+			text-decoration: underline;
+			&:hover{
+				text-decoration: none;
+			}
+		}
+	}
+	hr.wc-title-divider{
+		border-top: 1px solid $white;
+		width: 75%;
+	}
+}
+.wc-subtitle{
+	font-style:italic;
+	margin-top:1rem;
+	margin-bottom:2.2rem;
+}

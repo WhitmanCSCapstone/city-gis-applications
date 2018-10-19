@@ -1,0 +1,219 @@
+/**********************************
+#MASONRY-GALLERY
+
+Info
+[-] 	Styles for galleries that use the masonry layout.
+[-] 	Tiles: generic term for the elements that masonry arranges
+		(thumbnails, cards, etc.)
+
+Notes
+[1] 	Masonry works by measuring the wc-mg-gutter-sizer and using that
+		for spacing between the elements.
+[2] 	Need to set the width for these taking into account the gutters
+		that will be between them.
+[3] 	Note that these don't yield perfect results, the tiles are slightly
+		narrower than we want them to be. I'm guessing this has something to
+		do with these calculations dealing with percentages and pixels, and
+		the results being pulled by the masonry JS and then re-applied as in-line
+		CSS (sheesh). Not sure what we can do about it at this point.
+**********************************/
+.wc-masonry-gallery{
+	.wc-box-button.wc-masonry-more-button{
+		min-width: 200px;
+		margin: 1rem auto;
+		display: block;
+	}
+	.wc-loader{
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+	.wc-masonry-gallery-box{
+		overflow: visible;
+	}
+	.wc-mg-gutter-sizer{ /*[1]*/
+		width: 1rem;
+		height: 0;
+		position: absolute;
+		visibility: hidden;
+	}
+	.wc-mg-tile{
+		transition: .5s opacity;
+	}
+	.wc-mg-tile, .wc-mg-tile-sizer{
+		display: block;
+		margin-bottom:1rem;
+		img{
+			display: block;
+			width: 100%;
+		}
+	}
+		/**********************************
+		2-columns
+		**********************************/
+		.wc-mg-2-col .wc-mg-tile, .wc-mg-2-col .wc-mg-tile-sizer{ /*[2]*/
+			@include responsiveWidth(calc(50% - #{$base-font-size-xs * (1/2)}),calc(50% - #{$base-font-size-sm * (1/2)}),calc(50% - #{$base-font-size-md * (1/2)}),calc(50% - #{$base-font-size-lg * (1/2)})); /*[3]*/
+		}
+
+		/**********************************
+		3-columns
+		**********************************/
+		.wc-mg-3-col .wc-mg-tile, .wc-mg-3-col .wc-mg-tile-sizer{
+			@include responsiveWidth(calc(50% - #{$base-font-size-xs * (1/2)}),calc(50% - #{$base-font-size-sm * (1/2)}),calc(50% - #{$base-font-size-md * (1/2)}),calc(33% - #{$base-font-size-lg * (2/3)}));
+		}
+
+		/**********************************
+		4-columns
+		**********************************/
+		.wc-mg-4-col{
+			.wc-mg-tile, .wc-mg-tile-sizer{
+				@include responsiveWidth(calc(50% - #{$base-font-size-xs * (1/2)}),calc(50% - #{$base-font-size-sm * (1/2)}),calc(33% - #{$base-font-size-md * (2/3)}),calc(25% - #{$base-font-size-lg * (3/4)}));
+			}
+		}
+
+
+/**********************************
+#IE-FALLBACKS
+
+Info
+[-] 	Fallback styles for ie9 since it has trouble with masonry
+
+Notes
+[1] 	For cards, this just stacks them all vertically in a single column.
+		Not ideal, but it works.
+**********************************/
+		.wc-masonry-gallery.wc-ie-fallback{
+			.wc-masonry-gallery-box{
+				width: 100%;
+				@include clearfix();
+			}
+			.wc-mg-tile{
+				float: left;
+				overflow: hidden;
+				margin:8px;
+			}
+			.wc-ig-tile{
+				height:200px;
+			}
+			.wc-card-link{
+				clear: both; /*[1]*/
+			}
+		}
+
+
+/**********************************
+#PHOTOSWIPE-GALLERY
+
+Info
+[-] 	Styles for photoswipe
+**********************************/
+.wc-content-wrap .pswp__caption__center{
+	font-size:1rem;
+	line-height:1.2rem;
+	max-width: 600px;
+}
+
+
+/**********************************
+#CARD-GALLERY
+
+Notes
+[1] 	Overriding the width styles so we can have these be full width on mobile
+[2] 	For keeping 4-across on the mobile breakpoint
+[3] 	A fix because bottom padding won't work here in browsers other than Chrome
+**********************************/
+.wc-card-gallery-component{
+	&.wc-mg-3-col .wc-mg-tile, &.wc-cg-3-col .wc-mg-tile-sizer{
+		@include responsiveWidth(100%,calc(50% - #{$base-font-size-sm * (1/2)}),calc(50% - #{$base-font-size-md * (1/2)}),calc(33% - #{$base-font-size-lg * (2/3)})); /*[1]*/
+	}
+	&.wc-mg-4-col.wc-mg-md-4-col{ /*[2]*/
+		.wc-mg-tile, .wc-mg-tile-sizer{
+			@include responsiveWidth(100%,calc(50% - #{$base-font-size-sm * (1/2)}),calc(25% - #{$base-font-size-md * (3/4)}),calc(25% - #{$base-font-size-lg * (3/4)}));
+		}
+	}
+
+	.wc-card-link{
+		padding:0;
+		text-align: left;
+	}
+	.wc-card-subtitle{
+		font-size: 1.1rem;
+		color:$dark-gray-2;
+		padding-top: 5px;
+		line-height: 1.3;
+	}
+	.wc-card-author{
+		text-transform: uppercase;
+		color:$dark-gray;
+		padding-top: 5px;
+	}
+	&.wc-promo{
+		.wc-body-copy{
+			@include responsivePadding(1rem 0, 1rem 0, 2rem 10%, 2rem 10%);
+		}
+		.wc-bottom-box{
+			margin-top:2rem;
+		}
+	}
+}
+	.wc-card-lightbox{
+		background-color:$white;
+		@include responsiveWidth(90%, 80%, 70%, 70%);
+		border-radius: $border-radius;
+		text-align: left;
+		overflow: hidden;
+		box-shadow: 0 12px 12px rgba(51,51,51,0.38), 0 8px 8px rgba(51,51,51,0.34);
+		.wc-card-lightbox-text-container{
+		}
+		.wc-card-lightbox-image-container{
+			@include responsiveMaxWidth(100%, 40%, 250px, 250px);
+			@include responsiveMargin(0 auto, 0 1.5rem 0 0, 0 1.5rem 0 0, 0 1.5rem 0 0);
+			@include responsiveFloat(none, left, left, left);
+		}
+		.wc-card-title{
+			margin: 0 0 .4rem 0;
+		}
+		.wc-card-subtitle{
+			font-size: 1.2rem;
+			color:$dark-gray;
+			padding-top: 0;
+		}
+		.wc-card-author{
+			display: inline-block;
+		}
+		.wc-card-author-title{
+			display: inline-block;
+			font-style: italic;
+		}
+		.wc-card-quote{
+			border-left: 5px solid $light-gray-1;
+			padding: 0 1.5rem 0 1.5rem;
+			font-style: italic;
+		}
+	}
+		.wc-card-lightbox-topbar{
+			width: 100%;
+			border-bottom: 1px solid $light-gray-2;
+			@include clearfix();
+			.wc-lightbox-close-button{
+				@include button(26px,18px,$medium-blue,$light-blue);
+				float:right;
+				display:block;
+				padding:12px;
+			}
+			svg{
+				color: $medium-blue;
+				display:block !important;
+			}
+		}
+		.wc-card-lightbox-content{
+			max-height: 75vh;
+			overflow-y: auto;
+			padding: 1.5rem 1.5rem 0 1.5rem;
+			&:after{/*[3]*/
+				content: "";
+				display: block;
+				height: 3rem;
+				width: 100%;
+			}
+		}

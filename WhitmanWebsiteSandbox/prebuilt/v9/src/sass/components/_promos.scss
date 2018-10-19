@@ -1,0 +1,825 @@
+/**********************************
+#PROMOS
+
+Info
+	Styles for the various promo components (the big, spaced out
+	components on the home and landing pages)
+**********************************/
+
+/**********************************
+#GENERAL
+
+Notes
+[1] 	Just using this here to add a layer of specificity
+**********************************/
+.wc-promo{
+	&.wc-component{ /*[1]*/
+		&,p,a,.wc-text, .wc-text span, label, option{
+			font-size: 1.2rem;
+		}
+		@include responsivePaddingTop($vertical-promo-gutter * .7,$vertical-promo-gutter * .9,$vertical-promo-gutter * .7,$vertical-promo-gutter);
+		@include responsivePaddingBottom($vertical-promo-gutter * .7,$vertical-promo-gutter * .9,$vertical-promo-gutter * .7,$vertical-promo-gutter);		
+	}
+	.wc-promo-heading{
+		display: block;
+		width: 100%;
+		text-align: center;
+		line-height: 1;
+		padding-bottom: 1rem;
+		margin-bottom: 0;
+		font-size: 38px;
+	}
+	.wc-promo-description{
+		color:$dark-gray;
+		@media(max-width:$screen-md-max){
+			font-size:16px;
+		}
+		@media(min-width:$screen-lg-min){
+			font-size:20px;
+		}
+	}
+	@media(max-width:$screen-xs-max){
+		.wc-box-button{
+			display: block;
+			width: 100%;
+			clear: both;
+		}
+	}
+	.wc-bottom-box{
+		width: 100%;
+		text-align: center;
+		@include clearfix();
+		.wc-box-button{
+			width: auto;
+			display: inline-block;
+			text-align: center;
+			float: none;
+			min-width: 200px;
+			@media(min-width:$screen-sm-min){
+				&:not(:first-child){
+					margin-left: 1rem;
+				}
+			}
+			@media(max-width:$screen-xs-max){
+				width: 100%;
+				&:not(:first-child){
+					margin-top: 1rem;
+				}
+			}
+		}
+	}
+	&.wc-half-component.wc-extra-space{
+		&:first-child{
+			padding-right:2rem;
+		}
+		&:last-child{
+			padding-left:2rem;
+		}
+	}
+}
+
+
+/**********************************
+#LARGE-PROMO
+
+Info
+	Full-width promo with a picture on the left. 
+
+Notes
+[1] 	Just gives us more control over the spacing for whatever
+		is below this.
+[2] 	Remember to sync this with the sizes attribute of the img
+		element.
+**********************************/
+.wc-promo{
+}
+.wc-large-promo{
+	@include clearfix();
+	@media(min-width:$screen-sm-min){
+		.wc-content-row{
+			display: flex;
+	    	align-items: center;
+		}
+	}
+}
+	.wc-large-promo-feature-box{
+		@include responsiveWidth(100%,33%,25%,25%);
+		@media(max-width:$screen-xs-max){
+			text-align: center;
+			margin-bottom:20px;
+		}
+		img{
+			width:100%;
+			max-width:260px; /*[2]*/
+			display: block;
+			margin-left:auto;
+			margin-right:auto;
+		}
+		img[src*=".svg"]{
+			width: 80%;
+		}
+		img:not([src*=".svg"]) {
+			@extend .wc-circle-image;
+		}
+	}
+	.wc-large-promo-content{
+		position:relative;
+		@include responsiveWidth(100%,66%,75%,75%);
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+		.wc-large-promo-main-content{
+			overflow:auto;
+			@include clearfix();
+			*:last-child{
+				margin-bottom:0; /*[1]*/
+			}
+		}
+			.wc-promo-description{
+				display:block;
+			}
+			.wc-large-promo .wc-promo-subheading{
+				margin: 0;
+				padding: 0;
+				font-size: 1.8rem;
+				line-height: 1.2;
+			}
+		.wc-large-promo .wc-bottom-box{
+			padding-top:1.5rem;		
+
+		}
+			.wc-promo-image-caption{
+				margin-bottom:10px;
+				margin-top: 10px;
+				@media(max-width:$screen-xs-max){
+					display:none;
+				}
+			}
+
+
+	/**********************************
+	#LEFT/RIGHT-IMAGE-ALIGNMENT
+	**********************************/
+	.wc-large-promo{
+		&:not(.wc-right-aligned){
+			.wc-large-promo-feature-box{
+				@include responsivePaddingRight(0,1rem,1rem,1rem);
+			}
+			.wc-large-promo-content{
+				@include responsivePaddingLeft(0,1rem,1rem,1rem);
+			}
+			@media(min-width:$screen-sm-min){
+				&.wc-no-image .wc-large-promo-content{
+					border-left:1px solid $light-gray-1;
+				}
+			}
+		}
+		&.wc-right-aligned{
+			.wc-large-promo-content{
+				@include responsivePaddingRight(0,1rem,1rem,1rem);
+				padding-left:0;
+			}
+			.wc-large-promo-feature-box{
+				@include responsivePaddingLeft(0,1rem,1rem,1rem);
+				padding-right: 0;
+			}
+			@media(min-width:$screen-sm-min){
+				.wc-content-row{
+				    flex-direction: row-reverse;
+				}
+				&.wc-no-image .wc-large-promo-content{
+					border-right:1px solid $light-gray-1;
+				}
+			}
+		}
+	}
+
+	/**********************************
+	#MULTI-USE-PROMO
+
+	Notes
+	[-] 	This is an extension of the large promo, not a 
+			promo class by itself
+	**********************************/
+	.wc-large-promo.wc-multi-use-promo{
+		.wc-large-promo-main-content{
+			padding-bottom: 0;
+		}
+		.wc-mup-component-box{
+			padding-bottom:2rem;
+			@include clearfix();
+			.wc-component{
+				@include responsivePadding(0,0 1rem,0 1rem,0 1rem);
+				@include responsiveWidth(100%,50%,50%,50%);
+				float: left;
+				&:first-child{
+					padding-left: 0;
+				}
+				&:last-child{
+					padding-right: 0;
+				}
+			}
+		}
+	}
+
+	/**********************************
+	#NO-FLEXBOX-FALLBACK
+	**********************************/
+	html.no-flexbox .wc-promo.wc-large-promo{
+		&:not(.wc-right-aligned){
+			.wc-large-promo-content, .wc-large-promo-feature-box{
+				float: left;
+			}
+		}
+		&.wc-right-aligned{
+			.wc-large-promo-content, .wc-large-promo-feature-box{
+				float: right;
+			}
+		}
+	}
+
+
+/**********************************
+#LIST-PROMO
+
+Info
+	Half-width promo with the icon header
+**********************************/
+.wc-list-promo{
+	.wc-promo-icon-header{
+		width:100%;
+		font-size: 0;
+		margin-bottom:14px;
+		hr{
+			@media (max-width:$screen-xs-max){
+				width:38%;
+			}
+			@media (min-width:$screen-sm-min){
+				width:40%;
+			}
+			border-bottom:2px solid $medium-blue;
+			display:inline-block;
+			margin-bottom:26px;
+			vertical-align: middle;
+		}
+		.wc-icon-box{
+			@media (max-width:$screen-xs-max){
+				width:24%;
+			}
+			@media (min-width:$screen-sm-min){
+				width:20%;
+			}
+			display:inline-block;
+			text-align: center;
+			vertical-align: middle;
+		}
+			.wc-icon{
+				@include icon(60px, $medium-blue);
+				display:inline-block;
+				vertical-align: middle;
+			}
+	}
+}
+
+	.wc-list-promo-content{
+		@include make-row();
+		margin-bottom:14px;
+	}
+	.wc-content-wrap .wc-list-promo-footer{
+		@media(max-width:$screen-xs-max){
+			text-align: center;
+		}
+		@media(min-width:$screen-sm-min){
+			text-align: center;
+		}
+	}
+
+
+	/**********************************
+	#EVENTS-PROMO
+
+	Info
+		A half-width lists promo
+
+	Notes
+	[-] 	See the events component styles in _list-components.scss for
+			most of what's going on here.
+	**********************************/
+	.wc-promo.wc-events-promo{
+		ul{
+			@include make-xs-column(12);
+		}
+	}
+
+	/**********************************
+	#NEWS-PROMO
+
+	Info
+		A half-width lists promo
+	**********************************/
+	.wc-news-list{
+		@include make-xs-column(12);
+		list-style: none;
+		li{
+			display:block;
+			width:100%;
+			padding:0;
+		}
+	}
+		.wc-news-link{
+			color: $link-color;
+		    &:hover, &:focus{
+				color: $light-blue;
+				text-decoration: none;
+		    }
+		}
+			.wc-news-title{
+				display:block;
+			}
+			.wc-news-category{
+				display:block;
+				font-style: italic;
+				color:$medium-gray;
+			}
+			.wc-news-abstract{
+				margin-bottom: 0;
+			}
+
+/**********************************
+#BIG-IMAGE-PROMO
+
+Info
+	For big, full-width images that are sometimes links.
+**********************************/
+.wc-promo.wc-big-image-promo{
+	@include noVerticalGutterMd();
+	@include noVerticalGutterLg();
+	img{
+		width:100%;
+	}
+}
+
+
+/**********************************
+#STATS-PROMO #SLIDER-PROMO #HORIZONTAL-LIST-PROMO-COMPONENT
+
+*IMPORTANT NOTE*
+This got pretty complicated, and I'm sorry to say it probably won't be fun to try and 
+change later. If you just want to adjust the font size, look at the variables
+$slide-promo-base-font-size-3-col and $slide-promo-base-font-size-4-col, you should
+just be able to make adjustments to those, and all of the font sizes for the small, medium,
+and large text for all of the different breakpoints should adjust accordingly.
+
+Notes
+[-] 	See wc-slider-control.js for the javascript
+[1] 	Necessary because of setting 140px font on wc-slide-box
+[3][4] 	Note that the font sizes change for 3 vs. 4 column layout. Using variables
+		and em's to help accommodate this, so you can just change the
+		$slide-promo-base-font-size-3-col or $slide-promo-base-font-size-4-col variables
+		to change all of the font sizes for the slider.
+**********************************/
+$slide-promo-base-font-size-3-col: 90px;
+$slide-promo-base-font-size-4-col: 84px;
+$stats-promo-line-1-font-size:1em;
+$stats-promo-line-1-font-size-sm:.35em;
+$stats-promo-line-1-font-size-md:.60em;
+$stats-promo-line-1-font-size-md-text:1em;
+$stats-promo-line-1-line-height-sm:.35em;
+$stats-promo-line-1-horizontal-margin-sm:8px;
+
+.wc-slider-promo{
+	.wc-mobile-slider{
+		width:100%;
+		@include clearfix();
+	}
+	.slick-dots{
+		bottom:-30px;
+	}
+	.wc-bottom-box{
+		margin-top: 60px;
+	}
+}
+html.no-inlinesvg .wc-slider-promo{
+	display: none;
+}
+	.wc-slide-box{
+		text-align: center;
+		@include clearfix();
+		&.wc-grayed-out, &.wc-grayed-out p, &.wc-grayed-out span{
+			color: $medium-gray;
+		}
+	}
+	.wc-3-col-slider .wc-slide-box{
+		@include make-xs-column(12);
+		@include make-sm-column(4);
+		font-size: $slide-promo-base-font-size-3-col; /*[3]*/
+	}
+	.wc-4-col-slider .wc-slide-box{
+		@include make-xs-column(12);
+		@include make-sm-column(3);
+		font-size: $slide-promo-base-font-size-4-col; /*[4]*/
+	}
+		.wc-3-col-slider .wc-slide-image{
+			@include responsivePadding(20px 70px,0 30px,18px 50px,36px 70px);
+		}
+		.wc-4-col-slider .wc-slide-image{
+			@include responsivePadding(20px 70px,0 10px,28px,36px);
+		}
+		.wc-slide-image{
+			margin-right:auto;
+			margin-left:auto;
+			margin-bottom:10px;
+			display: block;
+		}
+
+	.wc-slide-line-1, .wc-slide-line-2{
+		display:block;
+		width:100%;
+		margin:0;
+		vertical-align: bottom; /*[1]*/
+		span,p{
+			font-weight:300;
+			display: inline;
+		}
+	}
+	.wc-slider-promo .wc-slide-line-1{
+		p{
+			font-size: 1em;
+		}
+		.wc-stats-big{
+			font-size: 1em;
+		}
+		.wc-stats-small{
+			line-height:normal;
+			font-size: $stats-promo-line-1-font-size-sm;
+			margin-left:-.5em;
+			margin-right:-.5em;
+		}
+		.wc-stats-medium{
+			font-size: $stats-promo-line-1-font-size-md;
+		}
+	}
+	.wc-slider-promo{
+		background-color: transparent;
+	}
+	.wc-slide-line-2{
+		font-size:1.2rem;
+	}
+	@media(max-width:$screen-xs-max){
+		.wc-slide-line-1{
+			font-size:$stats-promo-line-1-font-size *.7; /*[4]*/
+		}
+	}
+	@media(min-width:$screen-sm-min)and(max-width:$screen-sm-max){
+		.wc-slide-line-1{
+			font-size:$stats-promo-line-1-font-size *.6;
+		}
+	}
+	@media(min-width:$screen-md-min)and(max-width:$screen-md-max){
+		.wc-slide-line-1{
+			font-size:$stats-promo-line-1-font-size *.8;
+		}
+	}
+	@media(min-width:$screen-lg-min){
+		.wc-slide-line-1{
+			font-size:$stats-promo-line-1-font-size;
+		}
+	}
+
+	/**********************************
+	#CATEGORY-SLIDER
+
+	Notes
+		[1] 	Styles taken from .wc-box-button, but we wanted this styled independently.
+	**********************************/
+	.wc-desktop-slider.wc-category-slider{
+		margin-bottom:0;
+		.wc-mobile-slider .slick-dots{
+			position: static;
+			bottom: auto;
+		}
+		.wc-mobile-slider {
+			margin-bottom:0;
+		}
+	}
+	.wc-slider-categories{
+		width:100%;
+		margin-bottom:14px;
+		position: relative;
+		@media(max-width:$screen-xs-max){
+			display: block;
+			@include clearfix();
+		}
+		@media(min-width:$screen-sm-min){
+			display: flex;
+			justify-content:space-between;
+		}
+		.wc-slider-category{ /* [1] */
+			z-index: 100;
+			flex:1;
+			margin:0 .5rem;
+			border: 0;
+			font-size: 1.4rem;
+			font-weight:400;
+			text-align: center;
+			display: inline-block;
+			@include responsiveFontSize(1.1em, 1.1em, 1.1em, 1.1em);
+			@include responsivePadding(0.4rem 1.5rem,0.2rem 1rem,0.2rem 1rem,0.2rem 1rem);
+			@include roundedCorners();
+			@media(max-width:$screen-xs-max){
+				&.wc-active{
+					background-color:transparent;
+					color: $dark-gray;
+					margin: 0;
+				    width: 100%;
+				    padding-top:0;
+				    padding-bottom:0;
+				    font-size: 1.6rem;
+				}
+				&:not(.wc-active){
+					display: none;
+				}
+			}
+			@media(min-width:$screen-sm-min){
+				&.wc-active {
+					background-color:$medium-blue-2;
+					color:$white;
+					border: 1px solid $medium-blue-2;
+				}
+				&:not(.wc-active){
+					color: $dark-gray;
+					border: 1px solid $powder-blue;
+					&:hover{
+						background-color: $powder-blue;
+						border: 1px solid $powder-blue;
+					}
+				}
+			}
+		}
+		.wc-nav-arrow{
+			@include button($iconSize:30px, $color:$dark-gray);
+			position: absolute;
+			top: 0;
+			z-index: 200;
+			@include responsiveDisplay(block,none,none,none);
+		}
+			.wc-left-arrow{
+				left: 0;
+			}
+			.wc-right-arrow{
+				right: 0;
+			}
+	}
+		/**********************************
+		#NO-FLEXBOX-FALLBACK
+		**********************************/
+		html.no-flexbox {
+			.wc-slider-categories{ 
+				display: block;
+				width: 100%;
+				text-align: center;
+				@include clearfix();
+			}		
+			.wc-slider-categories{ 
+				display: block;
+				width: 100%;
+			}		
+		}
+		
+		/**********************************
+		#IE9-HIDING
+		**********************************/
+		html.ie-9{
+			.wc-slider-categories{
+				display: none;
+			}
+			.wc-category-slider{
+				display: none;
+			}
+		}
+
+
+
+/**********************************
+#ACTION-LINKS-PROMO
+
+Info
+	Big call-to-action links
+**********************************/
+.wc-action-links-promo{
+}
+	.wc-action-links-promo.wc-3-col .wc-action-link-box{
+		@include make-xs-column(12);
+		@include make-sm-column(4);
+	}
+	.wc-action-links-promo.wc-4-col .wc-action-link-box{
+		@include make-xs-column(12);
+		@include make-sm-column(3);
+	}
+	.wc-action-link-box{
+		text-align: center;
+		@media(max-width:$screen-xs-max){
+			hr{
+				border:1px solid $medium-blue;
+				width:50%;
+				display:block;
+				margin-top: 30px;
+				margin-bottom: 30px;
+			}
+			&:last-child{
+				hr{
+					display:none;
+				}
+			}
+		}
+		@media(min-width:$screen-sm-min){
+			hr{
+				display:none;
+			}
+			border-right:2px solid $medium-blue;
+			&:last-child{
+				border-right:0;
+			}
+		}
+	}
+	.wc-action-link{
+		display:block;
+		color:$medium-blue;
+		text-transform: uppercase;
+
+		&:hover, &:focus, &:active{
+			color:$light-blue;
+			text-decoration: none;
+		}
+	}
+		.wc-action-link-line-1, .wc-action-link-line-2{
+			display:block;
+			text-align: center;
+		}
+		.wc-action-link-line-1{
+			font-weight: 800;
+			@include responsiveFontSize(50px,40px,60px,70px);
+			@media(max-width:$screen-sm-max){
+				line-height: 40px;
+			}
+			@media(min-width:$screen-md-min){
+				line-height: 60px;
+			}
+		}
+		.wc-action-link-line-2{
+			@media(max-width:$screen-sm-max){
+				font-size:18px;
+			}
+			@media(min-width:$screen-md-min){
+				font-size:21px;
+			}
+		}
+
+/**********************************
+#HOME-PROMO-OVERRIDES
+
+Notes
+[1] 	Because the bottom box is absolutely positioned at the bottom this
+		is necessary to prevent overlap.
+**********************************/
+.wc-home-page{
+	.wc-promo-heading{
+		text-align: left;
+		margin-top: 0;
+		margin-bottom: 1rem;
+		@include responsiveMarginTop(0,-6px,-6px,-10px);
+		@media(max-width:$screen-xs-max){
+			font-size:34px;
+		}
+		@media(min-width:$screen-sm-min) and (max-width:$screen-md-max){
+			font-size:40px;
+		}
+		@media(min-width:$screen-lg-min){
+			font-size:58px;
+		}
+	}
+	.wc-large-promo-content{
+		padding-top: 0;
+		padding-bottom: 0;
+		@include responsiveMinHeight(0, 220px, 220px, 260px);
+	}
+	.wc-large-promo-main-content{
+		@media(min-width:$screen-sm-min){
+			padding-bottom:4rem; /*[1]*/
+		}
+	}
+
+	.wc-large-promo .wc-bottom-box{
+		@media(min-width:$screen-sm-min){
+			position: absolute;
+			bottom:0;
+			padding-top:1rem;
+			text-align: left;
+		}
+	}
+		.wc-large-promo:not(.wc-right-aligned) .wc-large-promo-bottom-box{
+			@media(min-width:$screen-sm-min){
+				left: 1rem;
+			}
+		}
+
+	.wc-large-promo{
+		.wc-large-promo-content{
+			border:0;
+		}
+		&:not(.wc-right-aligned){
+			.wc-large-promo-content, .wc-large-promo-feature-box{
+				float: left;
+			}
+		}
+		&.wc-right-aligned{
+			.wc-large-promo-content, .wc-large-promo-feature-box{
+				float: right;
+			}
+		}
+	}
+}
+
+	/**********************************
+	#ATHLETICS-PROMO
+	**********************************/
+	.wc-athletics-news-list-box{
+		width: 100%;
+		float:left;
+		margin-top: 0;
+		@media(max-width:$screen-xs-max){
+			float:none;
+			width:100%;
+			margin-bottom:1rem;
+		}
+		h4{
+			text-transform:uppercase;
+			font-weight:600;
+			margin-top: 6px 0 0 0;
+			@media (max-width:$screen-md-max){
+				font-size:22px;
+			}
+			@media(min-width:$screen-lg-min){
+				font-size:30px;
+			}
+		}
+		ul{
+			display:block;
+			list-style: none;
+			margin:0;
+			padding:0;
+		}
+			li{
+				width: 100%;
+				@media(max-width:$screen-md-max){
+					margin-bottom:10px;
+				}
+				@media(min-width:$screen-lg-min){
+					margin-bottom:10px;
+				}
+			}
+	}
+
+/**********************************
+#INSTAGRAM-GALLERY 
+
+Notes
+[-] 	The thumbnail versions of these images that Instagram provides are pretty low
+		resolution, so I decided to go with the "small" versions they provide which meant
+		that they would have different aspec-ratios and orientations. This is why I
+		decided to use them as a background images and give the links explicit height/widths so
+		we could easily crop them to be square.
+[1] 	Necessary for the object-fit polyfill we're using to handle IE.
+**********************************/
+.wc-instagram-box{
+	margin-bottom:1rem;
+	display: flex;
+	flex-wrap:wrap;
+	align-content:flex-start;
+	@media(max-width:$screen-xs-max){justify-content:center;}
+	@media(min-width:$screen-sm-min){justify-content:space-between;}
+	a.wc-instagram-thumbnail{
+		float: none;
+		flex-shrink:0;
+		overflow: hidden;
+		padding: 0;
+		@include responsiveWidth(140px,190px,140px,170px);
+		@include responsiveHeight(140px,190px,140px,170px);
+		@include responsiveMarginLeft(8px,0,0,0);
+		@include responsiveMarginRight(8px,0,0,0);
+		@include responsiveMarginBottom(10px,10px,14px,18px);
+		img{
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: center;
+			font-family: 'object-fit: cover; object-position: center;'; /*[1]*/
+		}
+	}
+}
+	.no-flexbox .wc-instagram-box{
+		a.wc-instagram-thumbnail{
+			float: left;
+			margin-right:10px;
+	  	}
+	}

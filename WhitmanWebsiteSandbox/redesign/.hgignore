@@ -1,0 +1,9 @@
+syntax: regexp
+
+/.DS_Store$
+.DS_Store$
+^node_modules$
+^bower_components$
+^dist$
+/scrap.html$
+/settings.json$
