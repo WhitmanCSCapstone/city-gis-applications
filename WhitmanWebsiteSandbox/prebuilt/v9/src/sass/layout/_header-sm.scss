@@ -1,0 +1,389 @@
+/**********************************
+#HEADER-SM
+
+Info
+	Styles for the header on mobile
+
+**********************************/
+@media(max-width:$screen-sm-max){
+	.wc-header{
+		top: 0;
+		right: 0;
+		left: 0;
+		position: absolute; /*[2]*/
+		z-index: 1000;
+		@include clearfix();
+	}
+		/**********************************
+		#ROW1
+
+		Info
+		[-] 	First row of the header, contains the logo, the constituent links and quick links
+
+		Notes
+		[1] 	Specificity bump
+		**********************************/
+		.wc-header-row1{
+			height: $header-height-mobile;
+			@include clearfix();
+
+			.wc-container:first-child{
+				@include clearfix();
+				padding-top:.3rem;
+				padding-bottom:.3rem;
+				position:relative;
+			}
+		}
+			/**********************************
+			#LOGO
+			**********************************/
+			.wc-header-logo-link{
+				display:block;
+				float:left;
+				width: auto;
+				width: 60%;
+				max-width:  350px;
+				height:60px;
+			}
+			.wc-mobile-header-logo{
+				width:100%;
+				padding: 0;
+				display:inline-block;
+				height:100%;
+			}
+			.wc-desktop-header-logo{
+				display: none;
+			}
+		.wc-header{ /*[1]*/
+			.wc-constituent-links, .wc-quick-links-button, .wc-special-button.wc-box-button, .wc-quick-links-links{
+				display: none;
+			}			
+		}
+		
+		/**********************************
+		#QUICK-LINKS
+		**********************************/
+		.wc-mobile-quick-links{
+			width: 100%;
+			padding: 8px 0;
+			@include clearfix();
+			.wc-icon-quick-link{
+				padding: 10px 10px 10px 0;
+				width: auto;
+				display: block;
+				float: left;
+				.wc-icon{
+					display: block;
+					float: left;
+					width: 38px;
+					height: 38px;
+					fill:white;
+				}
+				.wc-text{
+					display: block;
+					float: left;
+					padding: 8px 0 0 7px;
+					font-size: .8rem;
+					font-weight: 400;
+				}
+			}
+			.wc-icon-inline{
+				@include icon(14px,$white);
+				display: inline-block;
+				margin: 0 auto;
+			}
+		}
+		/**********************************
+		#MOBILE-BUTTONS (search and menu)
+		**********************************/
+		.wc-mobile-button{
+			@include button(48px,13px,$white,$light-gray-2);
+			padding:0;
+			margin: 4px 1px;
+			svg{
+				display: block;
+			}
+		}
+	
+	/**********************************
+	#ROW2
+	**********************************/
+	.wc-header-row2{
+		@media (max-width:$screen-xs-max){
+			background-color: $mobile-header-row2-background-color;
+		}
+		@media(min-width:$screen-sm-min){
+			background-color: $mobile-header-row2-background-color;
+		}
+	}
+
+		/**********************************
+		#MAIN-NAVIGATION
+		Notes
+		[1]		Gets rid of horizontal sroll bar
+		[2]		Gives it "momentum" scolling on iOS
+		[3]		Bottom padding accounts for the address bar on mobile browsers.
+		**********************************/
+		.wc-main-nav{
+			padding-right:10px;
+			padding-left:10px;
+			overflow-y:auto;
+			overflow-x:auto;
+			width:102%; /*[1]*/
+			-webkit-overflow-scrolling: touch; /*[2]*/ 
+			a,span{
+				font-size:18px;
+				font-weight:400;
+			}
+			a{
+				padding:10px;
+				display:block;
+				width: calc(100% - 28px);
+				float: left;
+				&:hover{
+					background-color:transparent;
+					text-decoration: none;
+				}
+			}
+			li{
+				list-style: none;
+				@include clearfix();
+			}
+			.wc-main-nav-expander{
+				@include button(28px,18px,$white,$white);			
+				@include spinButton(180deg,.2s);
+				padding:11px 0;
+				display:block;
+				float:right;
+				svg{
+					display:block;
+				}
+			}
+			.wc-main-nav-level-1{
+				margin:0;
+				padding:0 0 80px; /*[3]*/
+			}
+			.wc-main-nav-primary-category{
+				text-transform: uppercase;
+			}
+				a.wc-main-nav-primary-category{
+					padding-left: 0;
+				}
+				span.wc-main-nav-primary-category{
+					display: block;
+					padding: 10px;
+				}
+			.wc-center-line{
+				border-bottom:2px solid $white;
+				display:inline-block;
+				width:100%;
+				line-height: 0;
+				margin-left:-18px;
+				padding-left:10px;
+				span{
+					background-color:$mobile-header-row2-background-color;
+					padding: 0 8px;
+				}
+			}
+			.wc-sub-menu{
+				clear: both;
+				ul{
+					padding:0;
+				}
+				a{
+					padding:10px 10px 10px 2px;
+				}
+				&.wc-indented a{
+					padding:10px 10px 10px 20px;
+				}
+			}
+			.wc-feature{
+				display:none;
+			}
+		}
+
+
+		/**********************************
+		#SEARCH
+
+		Notes
+		[1] 	Necessary to deal with the inline-block phantom space bug.
+		**********************************/
+		.wc-search-box {
+			@include roundedCorners();
+			@include clearfix();
+			background-color: $mobile-header-row2-background-color;
+			position: relative;
+			overflow: hidden;
+
+			form{
+				display: block;
+				float:left;
+				width: 100%;
+				@include clearfix();
+				font-size: 0; /*[1]*/
+			}
+			margin: 9px 0;
+			&.wc-collapsed{
+				margin:0;
+			}
+			$mobileSearchHeight: 54px;
+			.wc-search-field-box{
+				background-color: $white;
+				width: 56%;
+				@media(min-width:$screen-sm-min){
+					width:70%;
+				}
+				float:left;
+				input[type=text] {
+					display:inline-block;
+					vertical-align: middle;
+					border:0;
+					font-size: 1rem;
+					height:$mobileSearchHeight;
+					width:100%;
+					padding: 20px 10px;
+					color: $dark-blue;
+				}
+			}
+			.wc-search-options-box{
+				@media(max-width:$screen-xs-max){
+					width:44%;
+				}
+				@media(min-width:$screen-sm-min){
+					width:30%;
+				}
+				overflow: hidden;
+				position: absolute;
+				height: $mobileSearchHeight;
+				right: 0;
+			}
+			.wc-search-submit-button.wc-mobile{
+				display: none; 
+			}
+			.wc-search-submit-button.wc-desktop{
+				display:none;
+			}
+			.wc-search-option{
+				display:inline-block;
+				width: 50%;
+				text-align: center;
+				padding-top: $mobileSearchHeight/2 - 11px;
+				padding-bottom: 0;
+				vertical-align: middle;
+				background-color: #fff;
+				color: $mobile-header-row2-background-color;
+				font-size:1rem;
+				font-weight:400;
+				height: $mobileSearchHeight + 2px;
+				&:hover{
+					text-decoration: none;
+				}
+				&.wc-highlighted {
+					text-decoration: none;
+					background-color: $mobile-header-row2-background-color;
+					color: $white;
+				}
+			}
+
+		}
+			.wc-auto-search-results{
+				display:none;
+				float:left;
+				width: 100%;
+				border-top:6px solid $mobile-header-row2-background-color;
+				background-color:$white;
+				z-index:100;
+				padding:.5rem 1rem;
+				.wc-ajax-loader{
+					display: none;
+					margin: 8px auto;
+				}
+				ul{
+					padding:0;
+					margin:0;
+				}
+				li {
+					width:100%;
+					margin:0;
+					display:block;
+					padding:8px;
+				}
+				a{
+					display: block;
+				}
+				
+				/**********************************
+				#PAGE-RESULTS
+				**********************************/
+				.wc-link-title{
+					display: block;
+					font-size:1.2rem;
+					font-weight: 600;
+					color:$link-color;
+					.wc-note{
+						&:before{
+							content:"(";
+						}
+						&:after{
+							content:")";
+						}
+						color:$merlot;
+						font-size:1.1rem;
+						text-transform:uppercase;
+						margin-right:5px;
+						font-weight: 400;
+						display:inline-block;
+					}
+				}
+				.wc-link-desc{
+					color:$base-font-color;
+					display: block;
+					font-size: 1.1rem;
+					font-weight: 400;
+				}
+
+				/**********************************
+				#PEOPLE-RESULTS
+				**********************************/
+				.wc-person-name{
+					display: block;
+					color: $base-font-color;
+					font-size: 1.2rem;
+					font-weight: 600;
+				}
+				.wc-person-title{
+					display: block;
+					color:$dark-gray-2;
+					font-size: 1rem;
+					font-weight: 400;
+				}
+				.wc-person-email{
+					font-size: 1.2rem;
+					display: block;
+					color:$link-color;
+				}
+				.wc-person-phone{
+					font-size: 1.2rem;
+					display: block;
+					color:$link-color;
+				}
+			}
+}
+
+
+/**********************************
+#MOBILE-MENU-COLLAPSE-CLASSES
+
+Notes
+[-] 	These are classes used for collapsing the mobile menus, see
+		MenuControl.autoShrink()
+**********************************/
+.wc-mm-collapse{
+	height:0 !important;
+	overflow:hidden !important;
+	flex: none !important;
+}
+.wc-body-go-blue{
+	background-color:$dark-blue !important;
+}

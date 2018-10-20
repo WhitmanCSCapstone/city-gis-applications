@@ -1,0 +1,4564 @@
+<!DOCTYPE html>
+<!--**********************************
+	
+THE HEADER
+
+**********************************-->
+<html lang="en" class="no-js">
+<head>
+
+	<meta name="APIKey" content="GoogleMaps:AIzaSyCtN93T96IPFqtNyCUBZs7FdWMROgAKdb0"/>
+	<meta name="APIKey" content="GoogleDrive:AIzaSyCg1OVTbVSAKzsejkwzOflQxxjzH38ojg0"/>
+	<meta name="SearchURL" content="https://www.whitman.edu/xsd/customsearch4/?q=">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Whitman Redesign</title>
+
+	<!--meta tags-->
+	<meta name="robots" content="NOODP,NOYDIR">
+	<link rel="canonical" href="">
+	
+	<meta name="description" content="">
+
+	<!-- Jquery -->
+	<script src="js/jquery.min.js"></script>
+		
+	<!-- Whitman Styles -->
+	<link id="wc-main-css" href="css/wc-style.css" rel="stylesheet"/>
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,&amp;subset=latin-ext" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,700,700i&amp;subset=latin-ext" rel="stylesheet">
+	
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body > 
+	<a class="wc-skip-to-content-link" href="#wc-reader-content">Skip to main content</a>
+	<!-- Header -->	
+	<header class="wc-header" id="wc-site-header" role="banner">
+		<!-- Header Row 1 -->
+		<div class="wc-header-row1" id="wc-header-row1" role="navigation">
+			<div class="wc-container">
+				<!-- Logo -->
+				<a href="index.html" class="wc-header-logo-link" title="Whitman College home">
+					<!-- Desktop Logo -->
+					<img alt="Whitman College logo" class="wc-desktop-header-logo" src="images/svg/not-inline/whitman-logo-header.svg"  onerror="this.src='images/misc/whitman-logo-header.png'"/>
+					
+					<!-- Mobile Logo-->
+					<svg class="wc-mobile-header-logo" viewBox="0 0 180 15">
+						<use xlink:href="images/svg/svg-defs.svg#logo-whitman-nc-flat"></use>
+						<title>Whitman College logo</title>
+					</svg>
+				</a>
+				
+				<div class="wc-right-box">
+					<!-- Constituent Links -->
+					<div class="wc-constituent-links">
+						<ul role="menubar">
+							<li >
+								<a href="/alumni.html" class="wc-clickable" title="Alumni" data-tracking-category="Header Link" data-tracking-action="Click" data-tracking-label="Constituent Link - Alumni">Alumni</a>
+								<span class="wc-bullet" aria-hidden="true">•</span>
+							</li>
+							<li >
+								<a href="/community.html" class="wc-clickable" title="Community" data-tracking-category="Header Link" data-tracking-action="Click" data-tracking-label="Constituent Link - Community">Community</a>
+								<span class="wc-bullet" aria-hidden="true">•</span>
+							</li>
+							<li >
+								<a href="https://my.whitman.edu/faculty" class="wc-clickable" title="Faculty" data-tracking-category="Header Link" data-tracking-action="Click" data-tracking-label="Constituent Link - Faculty">Faculty</a>
+								<span class="wc-bullet" aria-hidden="true">•</span>
+							</li>
+							<li >
+								<a href="/parents" class="wc-clickable" title="Parents" data-tracking-category="Header Link" data-tracking-action="Click" data-tracking-label="Constituent Link - Parents">Parents</a>
+								<span class="wc-bullet" aria-hidden="true">•</span>
+							</li>
+							<li >
+								<a href="https://my.whitman.edu/staff" class="wc-clickable" title="Staff" data-tracking-category="Header Link" data-tracking-action="Click" data-tracking-label="Constituent Link - Staff">Staff</a>
+								<span class="wc-bullet" aria-hidden="true">•</span>
+							</li>
+							<li >
+								<a href="https://my.whitman.edu/students" class="wc-clickable" title="Students" data-tracking-category="Header Link" data-tracking-action="Click" data-tracking-label="Constituent Link - Students">Students</a>
+							</li>
+						</ul>
+					</div>
+					<a href="https://whitman.edu/giving" class="wc-special-button wc-box-button wc-white">Give Now</a>
+
+					<!-- Quick Links - Button -->
+					<button class="wc-quick-links-button collapsed" data-toggle="collapse" data-target="#wc-quick-links-links" id="wc-quick-links-button" role="button" tabindex="0" aria-haspopup="true">
+						<div class="wc-svg-box">
+						</div>
+						<div class="wc-svg-box wc-spins">
+							<svg viewbox= "0 0 32 32" class="icon-arrow-circle-down">
+								<use xlink:href="images/svg/svg-defs.svg#icon-arrow-circle-down"></use>
+							</svg>
+						</div>
+						<span class="wc-text" id="quicklinks">Quick Links</span>
+					</button>
+
+					<!-- Mobile Buttons -->
+	 				<button class="wc-toggle wc-mobile-button" id="wc-mobile-nav-button" aria-label="Menu" aria-expanded="false" >
+						<svg class="wc-not-toggled-icon" viewbox= "0 0 32 32"><use xlink:href="images/svg/svg-defs.svg#icon-menu-mobile-a"></use></svg>
+						<svg class="wc-toggled-icon" viewbox= "0 0 32 32"><use xlink:href="images/svg/svg-defs.svg#icon-menu-mobile-b"></use></svg>
+					</button> 
+ 					<button class="wc-toggle wc-mobile-button" id="wc-mobile-search-button" aria-label="Search" aria-expanded="false" >
+						<svg class="wc-not-toggled-icon" viewbox= "0 0 32 32"><use xlink:href="images/svg/svg-defs.svg#icon-search-mobile-a"></use></svg>
+						<svg class="wc-toggled-icon" viewbox= "0 0 32 32"><use xlink:href="images/svg/svg-defs.svg#icon-search-mobile-b"></use></svg>
+					</button>
+				</div>
+			</div>
+			<!-- Quick Links - Desktop -->
+			<div class="wc-quick-links-links wc-container collapse" id="wc-quick-links-links">
+				<div class="wc-quick-links-section">
+					<ul class="wc-quick-link-columns-text" aria-labelledby="quicklinks" role="menu">
+						<li ><a>Bookstore</a></li>
+						<li ><a>Sexual Misconduct Policy Something Something</a></li>
+						<li ><a>Center for Writing and Speaking</a></li>
+						<li ><a>Employment</a></li>
+						<li ><a>Giving</a></li>
+						<li ><a>Grievance Policy</a></li>
+						<li ><a>News</a></li>
+						<li ><a>Right to Know</a></li>
+						<li ><a>Sexual Misconduct Policy</a></li>
+					</ul>
+				</div>
+				<div class="wc-quick-links-section" role="menubar">
+					<a class="wc-icon-quick-link" href="a-to-z-index.html" >
+						<svg class="wc-icon" viewbox= "0 0 32 32">
+							<use xlink:href="images/svg/svg-defs.svg#icon-a-to-z"></use>
+						</svg>
+						<span class="wc-text">A-to-Z Index</span>
+					</a>
+					<a href="map.html" class="wc-icon-quick-link" >
+						<svg class="wc-icon" viewbox= "0 0 32 32">
+							<use xlink:href="images/svg/svg-defs.svg#icon-map-pin"></use>
+						</svg>
+						<span class="wc-text">Campus Map</span>
+					</a>
+					<a class="wc-icon-quick-link" >
+						<svg class="wc-icon" viewbox= "0 0 32 32">
+							<use xlink:href="images/svg/svg-defs.svg#icon-calendar-no-circle"></use>
+						</svg>
+						<span class="wc-text">Event Calendar</span>
+					</a>
+					<a class="wc-icon-quick-link" >
+						<svg class="wc-icon" viewbox= "0 0 32 32">
+							<use xlink:href="images/svg/svg-defs.svg#icon-library"></use>
+						</svg>
+						<span class="wc-text">Library</span>
+					</a>
+					<a class="wc-icon-quick-link" >
+						<svg class="wc-icon" viewbox= "0 0 32 32">
+							<use xlink:href="images/svg/svg-defs.svg#icon-mywhitman-cog"></use>
+						</svg>
+						<span class="wc-text">myWhitman</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!-- Header Row 2 -->
+		<div class="wc-header-row2" id="wc-header-row2" role="navigation">
+			<div class="wc-container">
+				<!-- Main Nav-->
+
+
+
+
+				<nav class="wc-main-nav wc-sm-collapse" id="wc-main-nav">
+					<!-- Quick Links - Mobile -->
+					<div class="wc-mobile-only wc-mobile-quick-links">
+						<a class="wc-icon-quick-link" href="a-to-z-index.html">
+							<svg class="wc-icon" aria-hidden="true" viewbox= "0 0 32 32">
+								<use xlink:href="images/svg/svg-defs.svg#icon-a-to-z"></use>
+							</svg>
+							<span class="wc-text">A-to-Z</span>
+						</a>
+						<a href="map.html" class="wc-icon-quick-link">
+							<svg class="wc-icon" aria-hidden="true" viewbox= "0 0 32 32">
+								<use xlink:href="images/svg/svg-defs.svg#icon-map-pin"></use>
+							</svg>
+							<span class="wc-text">Map</span>
+						</a>
+						<a class="wc-icon-quick-link">
+							<svg class="wc-icon" aria-hidden="true" viewbox= "0 0 32 32">
+								<use xlink:href="images/svg/svg-defs.svg#icon-calendar-no-circle"></use>
+							</svg>
+							<span class="wc-text">Events</span>
+						</a>
+						<a class="wc-icon-quick-link">
+							<svg class="wc-icon" aria-hidden="true" viewbox= "0 0 32 32">
+								<use xlink:href="images/svg/svg-defs.svg#icon-library"></use>
+							</svg>
+							<span class="wc-text">Library</span>
+						</a>
+						<a class="wc-icon-quick-link">
+							<svg class="wc-icon" aria-hidden="true" viewbox= "0 0 32 32">
+								<use xlink:href="images/svg/svg-defs.svg#icon-mywhitman-cog"></use>
+							</svg>
+							<span class="wc-text">
+								myWhitman
+								<svg class="wc-icon-inline" viewbox= "0 0 32 32">
+									<use xlink:href="images/svg/svg-defs.svg#icon-lock"></use>
+								</svg>
+							</span>
+						</a>
+					</div>
+
+					<ul class="wc-main-nav-level-1">
+						<li>
+							<a class="wc-main-nav-primary-category wc-clickable" href="landing.html" id="main-1">About</a>
+							<button class="wc-main-nav-expander collapsed" data-toggle="collapse" data-target="#wut1" aria-expanded="false" aria-controls="#wut1" aria-label="About sub-menu">
+								<svg viewBox="0 0 32 32"><use  xlink:href="images/svg/svg-defs.svg#icon-arrow-down"></use></svg>
+							</button>
+							<div class="wc-sub-menu wc-container wc-about-sub-menu wc-mobile-collapse-box" id="wut1">
+								<ul role="menu" aria-labelledby="main-1">
+									<li ><a href="map.html">Campus Map</a></li>
+									<li ><a href="detail.html">Campus and Community</a></li>
+									<li ><a>Campus Sustainability</a></li>
+									<li ><a>This link is going to be a long one to test the line breaks</a></li>
+									<li ><a>Fast Facts</a></li>
+									<li ><a href="section-index.html">Leadership and Organization</a></li>
+									<li ><a>Contact Us</a></li>
+									<li ><a>Portaits of the Past</a></li>
+									<li ><a href="style-guide.html">Whitman Hallmarks</a></li>
+								</ul>
+								<div class="wc-feature">
+									<img alt="Feature" src="images/NavbarFeatures/feature1.jpg" />
+									<div class="wc-feature-text">
+										<p>A featured page that will have just about this much text describing it.</p>
+										<a href="#" class="wc-box-button wc-bb-more-link wc-white">Learn More</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a class="wc-main-nav-primary-category wc-clickable" id="main-2">Academics & Library</a>
+							<button class="wc-main-nav-expander collapsed" data-toggle="collapse" data-target="#wut2" aria-expanded="false" aria-controls="#wut2" aria-label="Academics and Library sub-menu">
+								<svg viewBox="0 0 32 32"><use  xlink:href="images/svg/svg-defs.svg#icon-arrow-down"></use></svg>
+							</button>
+							<div class="wc-sub-menu wc-container wc-about-sub-menu wc-mobile-collapse-box" id="wut2">
+								<ul role="menu" aria-labelledby="main-2">
+									<li ><a>Academic Calendar</a></li>
+									<li ><a href="section-front.html">Academic Resource Center</a></li>
+									<li ><a>Catalog</a></li>
+									<li ><a href="departments.html">Departments and Programs</a></li>
+									<li ><a>Encounters</a></li>
+									<li ><a href="profile-index.html">The Faculty</a></li>
+									<li ><a>Fellowships and Grants</a></li>
+									<li ><a>Liberal Arts Education</a></li>
+									<li ><a>Penrose Library</a></li>
+									<li ><a>Placement Tests</a></li>
+									<li ><a>Whitman Debate</a></li>
+								</ul>
+								<div class="wc-feature">
+									<img alt="Feature" src="images/NavbarFeatures/feature2.jpg" />
+									<div class="wc-feature-text">
+										<p>A featured page that will have just about this much text describing it.</p>
+										<a href="#" class="wc-box-button wc-bb-more-link wc-white">Learn More</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a class="wc-main-nav-primary-category wc-clickable" id="main-3">Admission & Aid</a>
+							<button class="wc-main-nav-expander collapsed" data-toggle="collapse" data-target="#wut3" aria-expanded="false" aria-controls="#wut3">
+								<svg viewBox="0 0 32 32"><use  xlink:href="images/svg/svg-defs.svg#icon-arrow-down"></use></svg>
+							</button>
+							<div class="wc-sub-menu wc-container wc-about-sub-menu wc-mobile-collapse-box" id="wut3">
+								<ul role="menu" aria-labelledby="main-3">
+									<li ><a>Apply</a></li>
+									<li ><a>Contact Us</a></li>
+									<li ><a>Financial Aid</a></li>
+									<li ><a>Learn More</a></li>
+									<li ><a>Request Information</a></li>
+									<li ><a>Visit Whitman</a></li>
+									<li ><a>Whitman on the Road</a></li>
+									<li ><a>Why Whitman?</a></li>
+								</ul>
+								<div class="wc-feature">
+									<img alt="Feature" src="images/NavbarFeatures/feature3.jpg" />
+									<div class="wc-feature-text">
+										<p>A featured page that will have just about this much text describing it.</p>
+										<a href="#" class="wc-box-button wc-bb-more-link wc-white">Learn More</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a class="wc-main-nav-primary-category wc-clickable" id="main-4">Athletics</a>
+							<button class="wc-main-nav-expander collapsed" data-toggle="collapse" data-target="#wut4" aria-expanded="false" aria-controls="#wut4">
+								<svg viewBox="0 0 32 32"><use  xlink:href="images/svg/svg-defs.svg#icon-arrow-down"></use></svg>
+							</button>
+							<div class="wc-sub-menu wc-container wc-about-sub-menu wc-mobile-collapse-box" id="wut4">
+								<ul role="menu" aria-labelledby="main-4">
+									<li ><a>Club Sports</a></li>
+									<li ><a>Intramural Sports</a></li>
+									<li ><a>Men's Basketball</a></li>
+									<li ><a>Swimming</a></li>
+									<li ><a>Varsity Sports</a></li>
+									<li ><a>W Club</a></li>
+									<li ><a>Women's Basketball</a></li>
+								</ul>
+								<div class="wc-col2 wc-feature">
+									<img alt="Feature" src="images/NavbarFeatures/feature6.png" />
+									<div class="wc-feature-text">
+										<p>A featured page that will have just about this much text describing it.</p>
+										<a href="#" class="wc-box-button wc-bb-more-link wc-white">Learn More</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a class="wc-main-nav-primary-category wc-clickable" id="main-5">Student Life</a>
+							<button class="wc-main-nav-expander collapsed" data-toggle="collapse" data-target="#wut5" aria-expanded="false" aria-controls="#wut5">
+								<svg viewBox="0 0 32 32"><use  xlink:href="images/svg/svg-defs.svg#icon-arrow-down"></use></svg>
+							</button>
+							<div class="wc-sub-menu wc-container wc-about-sub-menu wc-mobile-collapse-box" id="wut5">
+								<ul role="menu" aria-labelledby="main-5">
+									<li ><a>Career Services</a></li>
+									<li ><a>Club Sports and Intramurals</a></li>
+									<li ><a>Green Life</a></li>
+									<li ><a>Living at Whitman</a></li>
+									<li ><a>Orientation</a></li>
+									<li ><a>Student Activities</a></li>
+									<li ><a>Student Clubs and Organizations</a></li>
+									<li ><a>Student Services</a></li>
+								</ul>
+								<div class="wc-col2 wc-feature">
+									<img alt="Feature" src="images/NavbarFeatures/feature4.jpg" />
+									<div class="wc-feature-text">
+										<p>A featured page that will have just about this much text describing it.</p>
+										<a href="#" class="wc-box-button wc-bb-more-link wc-white">Learn More</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="wc-mobile-only">
+							<span class="wc-main-nav-primary-category wc-clickable wc-mobile-only">
+								<span class="wc-center-line">
+									<span id="mobile-menu-1">Audiences</span>
+								</span>
+							</span>
+							<div class="wc-sub-menu wc-indented">
+								<ul role="menu" aria-labelledby="mobile-menu-1">
+									<li ><a href="alumni.html">Alumni</a></li>
+									<li ><a>Parents</a></li>
+									<li ><a>Students</a></li>
+									<li ><a>Faculty & Staff</a></li>
+									<li ><a>Community</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="wc-mobile-only">
+							<span class="wc-main-nav-primary-category wc-clickable wc-mobile-only">
+								<span class="wc-center-line">
+									<span id="mobile-menu-2">Quick Links</span>
+								</span>
+							</span>
+							<!-- <a class="wc-main-nav-primary-category wc-clickable wc-mobile-only" ><span class="wc-center-line"><span id="mobile-menu-2">Quick Links</span></span></a> -->
+							<div class="wc-sub-menu wc-indented">
+								<ul role="menu" aria-labelledby="mobile-menu-2">
+									<li><a>A-Z Directory</a></li>
+									<li><a>Bookstore</a></li>
+									<li><a href="map.html">Campus Map</a></li>
+									<li><a>Contact Us</a></li>
+									<li><a>Employment</a></li>
+									<li><a>Event Calendar</a></li>
+									<li><a>Giving</a></li>
+									<li><a>Grievance and Sexual Misconduct Policy</a></li>
+									<li><a>Library</a></li>
+									<li><a>myWhitman</a></li>
+									<li><a>News</a></li>
+									<li><a>Right to Know</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</nav>
+
+				<!-- Search -->
+
+				<div class="wc-search-box wc-sm-collapse" id="wc-search-box" role="search">
+					<form id="wc-search-form" action="http://whitman.edu/search">
+						<div class="wc-search-field-box">
+							<input type="text" name="q" id="wc-search-input" class="wc-search-input searchField clearFocus" placeholder="Search Site/People" autocomplete="off" />
+							<button class="wc-mobile wc-search-submit-button" role="button" title="Submit Search" aria-label="Submit Search">
+								<svg viewbox= "0 0 32 32">
+									<use xlink:href="images/svg/svg-defs.svg#icon-search-b"></use>
+								</svg>
+							</button>
+						</div>
+						<div class="wc-search-options-box wc-hidden-alt" id="wc-search-options-box">
+							<div class="wc-search-options-inner-box">
+								<a class="wc-search-option wc-search-website wc-highlighted" id="wc-search-website" role="button">Site</a>
+								<a class="wc-search-option wc-search-people" id="wc-search-people" role="button">People</a>								
+							</div>
+						</div>
+						<button class="wc-desktop wc-search-submit-button" role="button" title="Submit Search" aria-label="Submit Search">
+							<svg viewbox= "0 0 32 32">
+								<use xlink:href="images/svg/svg-defs.svg#icon-search-b"></use>
+							</svg>
+							<span class="wc-fallback-search-button">Search</span>
+						</button>
+						<span class="wc-action-website" id="wc-action-website" style="display:none;">http://whitman.edu/search</span>
+						<span class="wc-action-people" id="wc-action-people" style="display:none;">https://webapp.whitman.edu/directory/</span>
+					</form>
+					<div id="wc-auto-search-results" class="wc-auto-search-results">
+						<img class="wc-ajax-loader" id="wc-ajax-loader" src="images/gif/ajax-loader.gif" alt="Loading search results">
+						<ul>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- Google Maps - this will be in the head on the live site -->
+	<!-- <script src="https://maps.googleapis.com/maps/api/js"></script> -->
+
+	<div class="wc-content-wrap wc-full-width-layout-a wc-map-page" id="wc-content-wrap" >
+		<!-- asdf - add this -->
+		<div id="wc-fallback-content" style="display: none;"> 
+			<div class="wc-title-box">
+				<div class="wc-container">
+					<h1 class="wc-page-title">Campus Map</h1>
+				</div>
+			</div>
+			<div class="wc-container">
+				<!-- Breadcrumbs -->
+				<div class="wc-row wc-breadcrumbs">
+					<a href="index.html" title="Whitman College home"><svg viewBox="0 0 21 21 "><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/svg/svg-defs.svg#icon-home"></use></svg></a>
+					<span>»</span>
+					<span>Campus Map</span>
+				</div>
+				<div class="wc-row" id="wc-reader-content" role="main">
+					<!-- Content -->
+					<div class="wc-main-content">
+						<p>So you don't want a map? Well I guess we should give you this thing instead.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="wc-map" id="wc-map">
+			<!-- Geolocation Prompt -->
+			<div id="wc-map-message-box" class="wc-map-message-box">
+				<img class="wc-loader-gif" src="images/gif/ajax-loader.gif" alt="Loading geolocation">
+			</div>
+
+			<!-- Controls -->
+			<div class="wc-map-controls wc-mc-hidden" id="wc-map-controls">
+				<div class="wc-mc-content-box" id="wc-mc-content">
+					<div class="wc-mc-slide-track" id="wc-mc-slide-track">
+						<div class="wc-mc-detail-box wc-mc-detail-box-base" id="wc-mc-detail-box-base">
+							<div class="wc-mc-header-box">
+								<div class="wc-button-toggle">
+									<a id="wc-map-categories-button" class="wc-toggled wc-mc-button">Categories</a>
+									<a id="wc-map-places-button" class="wc-mc-button">Places</a>
+								</div>
+								<a class="wc-mc-mobile-hide-button wc-mc-hide-button wc-mc-header-box wc-mc-button wc-main-menu-button wc-toggle">
+									<span class="wc-text">Menu</span>
+									<svg class="wc-not-toggled-icon" viewbox="0 0 32 32"><use xlink:href="images/svg/svg-defs.svg#icon-menu-hamburger" /></svg>
+									<svg class="wc-toggled-icon" viewbox="0 0 32 32"><use xlink:href="images/svg/svg-defs.svg#icon-menu-x" /></svg>
+								</a>
+							</div>
+
+							<div class="wc-mc-detail-box-content">
+								<ul class="wc-mc-items-list wc-map-categories-list" id="wc-map-categories-list">
+									<!-- CATEGORIES - populated by JS -->
+								</ul>
+								<ul class="wc-mc-items-list wc-map-places-list wc-hidden" id="wc-map-places-list">
+									<!-- PLACES - populated by JS -->
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a class="wc-mc-desktop-hide-button wc-mc-hide-button wc-mc-button" id="wc-mc-desktop-hide-button">
+					<svg class="wc-icon" viewbox="0 0 32 32">
+						<use xlink:href="images/svg/svg-defs.svg#icon-arrow-circle-up" />
+					</svg>
+				</a>
+			</div>
+
+			<!--**********************************
+			The Map
+
+			Notes
+			[1]		Doing this so it formats the page and hides the footer without relying on
+					JS, trying to minimize how much it flashes the footer before updating
+			**********************************-->
+		
+			<style>
+				html.no-js #wc-fallback-content, html.ie-9 #wc-fallback-content, html.ie-old #wc-fallback-content{
+					display: block !important;
+				}
+				html:not(.no-js):not(.ie-9):not(.ie-old){
+					height: 100%;
+				}
+				html:not(.no-js):not(.ie-9):not(.ie-old) body{
+					height: 100%;
+				}
+				html:not(.no-js):not(.ie-9):not(.ie-old) body footer.wc-footer{/*[1]*/
+					display: none;
+				}
+				html:not(.no-js):not(.ie-9):not(.ie-old) .wc-content-wrap.wc-map-page{
+					height: 100%;
+					margin-top: 0;
+				}
+				html.no-js #wc-map, html.ie-9 #wc-map, html.ie-old #wc-map{
+					display: none;
+				}
+			</style>
+
+			<script type="text/javascript">
+				var mapPoints = {
+					"type": "FeatureCollection",
+					"features": [
+						{
+							"type": "Feature",
+							"geometry": {
+								"type": "Point",
+								"coordinates": [-118.329942,46.072256]
+							},
+							"properties": {
+								"id":"1",
+								"polygonId":"x37181",
+								"name": "Hall of Science"
+							}
+						},
+						{
+							"type": "Feature",
+							"geometry": {
+								"type": "Point",
+								"coordinates": [-118.283776,46.190315]
+							},
+							"properties": {
+								"id":"2",
+								"polygonId":"x37167",
+								"name": "Bracher Observatory"
+							}
+						},
+						{
+							"type": "Feature",
+							"geometry": {
+								"type": "Point",
+								"coordinates": [-118.892713,46.004539]
+							},
+							"properties": {
+								"id":"3",
+								"polygonId":"x37197",
+								"name": "Pacific Northwest Regional Observatory"
+							}
+						}
+					]
+				};
+
+
+				var mapPlaces =
+				{
+				  "type": "FeatureCollection",
+				  "features": [
+				    {
+				      "type": "Feature",
+				      "geometry": {
+				        "type": "Polygon",
+				        "coordinates": [
+				          [
+				            [
+				              -118.326225,
+				              46.07145
+				            ],
+				            [
+				              -118.326246,
+				              46.071449
+				            ],
+				            [
+				              -118.326266,
+				              46.071445
+				            ],
+				            [
+				              -118.326285,
+				              46.071439
+				            ],
+				            [
+				              -118.326302,
+				              46.07143
+				            ],
+				            [
+				              -118.326317,
+				              46.07142
+				            ],
+				            [
+				              -118.326329,
+				              46.071408
+				            ],
+				            [
+				              -118.326338,
+				              46.071395
+				            ],
+				            [
+				              -118.326344,
+				              46.071381
+				            ],
+				            [
+				              -118.326345,
+				              46.071366
+				            ],
+				            [
+				              -118.326344,
+				              46.071352
+				            ],
+				            [
+				              -118.326338,
+				              46.071337
+				            ],
+				            [
+				              -118.326329,
+				              46.071324
+				            ],
+				            [
+				              -118.326317,
+				              46.071312
+				            ],
+				            [
+				              -118.326302,
+				              46.071302
+				            ],
+				            [
+				              -118.326285,
+				              46.071294
+				            ],
+				            [
+				              -118.326266,
+				              46.071287
+				            ],
+				            [
+				              -118.326246,
+				              46.071284
+				            ],
+				            [
+				              -118.326225,
+				              46.071282
+				            ],
+				            [
+				              -118.326204,
+				              46.071284
+				            ],
+				            [
+				              -118.326183,
+				              46.071287
+				            ],
+				            [
+				              -118.326164,
+				              46.071294
+				            ],
+				            [
+				              -118.326147,
+				              46.071302
+				            ],
+				            [
+				              -118.326132,
+				              46.071312
+				            ],
+				            [
+				              -118.32612,
+				              46.071324
+				            ],
+				            [
+				              -118.326111,
+				              46.071337
+				            ],
+				            [
+				              -118.326106,
+				              46.071352
+				            ],
+				            [
+				              -118.326104,
+				              46.071366
+				            ],
+				            [
+				              -118.326106,
+				              46.071381
+				            ],
+				            [
+				              -118.326111,
+				              46.071395
+				            ],
+				            [
+				              -118.32612,
+				              46.071408
+				            ],
+				            [
+				              -118.326132,
+				              46.07142
+				            ],
+				            [
+				              -118.326147,
+				              46.07143
+				            ],
+				            [
+				              -118.326164,
+				              46.071439
+				            ],
+				            [
+				              -118.326183,
+				              46.071445
+				            ],
+				            [
+				              -118.326204,
+				              46.071449
+				            ],
+				            [
+				              -118.326225,
+				              46.07145
+				            ]
+				          ],
+				          [
+				            [
+				              -118.32631009458163,
+				              46.071560095525946
+				            ],
+				            [
+				              -118.3262420332394,
+				              46.07156815236679
+				            ],
+				            [
+				              -118.32617397189716,
+				              46.07157620920641
+				            ],
+				            [
+				              -118.32617120503232,
+				              46.07147624891443
+				            ],
+				            [
+				              -118.32625720073321,
+				              46.071470692120805
+				            ],
+				            [
+				              -118.32631092741974,
+				              46.071458609668845
+				            ],
+				            [
+				              -118.32635254291256,
+				              46.071431169107264
+				            ],
+				            [
+				              -118.32637335065897,
+				              46.07140442313205
+				            ],
+				            [
+				              -118.32638375453217,
+				              46.07137616363018
+				            ],
+				            [
+				              -118.3265229044381,
+				              46.071388842025975
+				            ],
+				            [
+				              -118.32649294246676,
+				              46.071455860733145
+				            ],
+				            [
+				              -118.32643772834581,
+				              46.07150983896363
+				            ],
+				            [
+				              -118.32636988815011,
+				              46.07154427129257
+				            ],
+				            [
+				              -118.32631009458163,
+				              46.071560095525946
+				            ]
+				          ]
+				        ]
+				      },
+				      "properties": {
+				        "id": "x37157",
+				        "name": "Amphitheatre",
+				        "tags": [
+				          "Auditoriums",
+				          "Landmarks",
+				          ""
+				        ],
+				        "objectType": "outdoor",
+				        "highlighted": false
+				      }
+				    },
+				    {
+				      "type": "Feature",
+				      "geometry": {
+				        "type": "Polygon",
+				        "coordinates": [
+				          [
+				            [
+				              -118.32923186871722,
+				              46.06901007878146
+				            ],
+				            [
+				              -118.32923186871722,
+				              46.068826112802824
+				            ],
+				            [
+				              -118.33006541964329,
+				              46.068827973702646
+				            ],
+				            [
+				              -118.33007078406132,
+				              46.069013522359086
+				            ],
+				            [
+				              -118.32990288773152,
+				              46.06901355713529
+				            ],
+				            [
+				              -118.3298932417336,
+				              46.06895776507597
+				            ],
+				            [
+				              -118.32938846990584,
+				              46.0689559737329
+				            ],
+				            [
+				              -118.32939063558194,
+				              46.06900628744156
+				            ],
+				            [
+				              -118.32923186871722,
+				              46.06901007878146
+				            ]
+				          ]
+				        ]
+				      },
+				      "properties": {
+				        "id": "x37158",
+				        "name": "Anderson Hall",
+				        "tags": [
+				          "Residence Halls",
+				          ""
+				        ],
+				        "objectType": "building",
+				        "highlighted": false
+				      }
+				    },
+				    {
+				      "type": "Feature",
+				      "geometry": {
+				        "type": "Polygon",
+				        "coordinates": [
+				          [
+				            [
+				              -118.32868180489345,
+				              46.071585238127334
+				            ],
+				            [
+				              -118.32877420122338,
+				              46.071600130807155
+				            ],
+				            [
+				              -118.32882636441798,
+				              46.071616884288815
+				            ],
+				            [
+				              -118.3288999852848,
+				              46.07165782822829
+				            ],
+				            [
+				              -118.32894923590521,
+				              46.07170295427393
+				            ],
+				            [
+				              -118.32896093559947,
+				              46.072133264825545
+				            ],
+				            [
+				              -118.32897092394262,
+				              46.07243936678178
+				            ],
+				            [
+				              -118.32892676174362,
+				              46.07249536383446
+				            ],
+				            [
+				              -118.32884835425466,
+				              46.07251778001341
+				            ],
+				            [
+				              -118.32809568291236,
+				              46.072555038944174
+				            ],
+				            [
+				              -118.32792051291727,
+				              46.07253459214171
+				            ],
+				            [
+				              -118.32774266071328,
+				              46.072532753084126
+				            ],
+				            [
+				              -118.32754757713235,
+				              46.07257656814677
+				            ],
+				            [
+				              -118.32733640029727,
+				              46.07265015551821
+				            ],
+				            [
+				              -118.32724087016356,
+				              46.07267438897006
+				            ],
+				            [
+				              -118.32715287196146,
+				              46.072692088000956
+				            ],
+				            [
+				              -118.32706755596837,
+				              46.07268187548462
+				            ],
+				            [
+				              -118.32695784274642,
+				              46.07265095103496
+				            ],
+				            [
+				              -118.3268695871966,
+				              46.072605140389996
+				            ],
+				            [
+				              -118.32677086015855,
+				              46.07253770906331
+				            ],
+				            [
+				              -118.32672360978711,
+				              46.07247727728496
+				            ],
+				            [
+				              -118.32657860118877,
+				              46.07189093991088
+				            ],
+				            [
+				              -118.32658924536906,
+				              46.07175779801095
+				            ],
+				            [
+				              -118.32661061838542,
+				              46.071693505552155
+				            ],
+				            [
+				              -118.32667584587801,
+				              46.07166186124038
+				            ],
+				            [
+				              -118.32680614663428,
+				              46.07161533845154
+				            ],
+				            [
+				              -118.32686939216518,
+				              46.0715930061147
+				            ],
+				            [
+				              -118.32693666100965,
+				              46.07158276901536
+				            ],
+				            [
+				              -118.32702538752619,
+				              46.07156881029941
+				            ],
+				            [
+				              -118.3275098941013,
+				              46.07156878900361
+				            ],
+				            [
+				              -118.32791027894035,
+				              46.07157618964134
+				            ],
+				            [
+				              -118.3282604375039,
+				              46.07159099091378
+				            ],
+				            [
+				              -118.32868180489345,
+				              46.071585238127334
+				            ]
+				          ]
+				        ]
+				      },
+				      "properties": {
+				        "id": "x37159",
+				        "name": "Ankeny Field",
+				        "tags": [
+				          "Landmarks",
+				          ""
+				        ],
+				        "objectType": "outdoor",
+				        "highlighted": false
+				      }
+				    },
+				    {
+				      "type": "Feature",
+				      "geometry": {
+				        "type": "Polygon",
+				        "coordinates": [
+				          [
+				            [
+				              -118.328459411045,
+				              46.06912035692095
+				            ],
+				            [
+				              -118.3282393644181,
+				              46.06912035692095
+				            ],
+				            [
+				              -118.32824168220901,
+				              46.06900130447076
+				            ],
+				            [
+				              -118.32846209325402,
+				              46.069003304470414
+				            ],
+				            [
+				              -118.328459411045,
+				              46.06912035692095
+				            ]
+				          ]
+				        ]
+				      },
+				      "properties": {
+				        "id": "x37160",
+				        "name": "Asian Studies House",
+				        "tags": [
+				          "Interest Houses",
+				          ""
+				        ],
+				        "objectType": "building",
+				        "highlighted": false
+				      }
+				    },
+				    {
+				      "type": "Feature",
+				      "geometry": {
+				        "type": "Polygon",
+				        "coordinates": [
+				          [
+				            [
+				              -118.3337241845473,
+				              46.07794177545593
+				            ],
+				            [
+				              -118.33379038463465,
+				              46.078064913423866
+				            ],
+				            [
+				              -118.33026242464189,
+				              46.07913694092456
+				            ],
+				            [
+				              -118.33004077322664,
+				              46.07882876636906
+				            ],
+				            [
+				              -118.3291254016093,
+				              46.07909432159094
+				            ],
+				            [
+				              -118.32974619741441,
+				              46.08000869724017
+				            ],
+				            [
+				              -118.33415549870307,
+				              46.07867540759606
+				            ],
+				            [
+				              -118.33440645784947,
+				              46.078571821746664
+				            ],
+				            [
+				              -118.33457695072548,
+				              46.07846079340305
+				            ],
+				            [
+				              -118.3346872665021,
+				              46.078357813199744
+				            ],
+				            [
+				              -118.33475232993271,
+				              46.07826348723167
+				            ],
+				            [
+				              -118.3348073549414,
+				              46.078123210080285
+				            ],
+				            [
+				              -118.33483555785989,
+				              46.07801270202288
+				            ],
+				            [
+				              -118.33484230310631,
+				              46.077876145423616
+				            ],
+				            [
+				              -118.33474053805918,
+				              46.0776424977766
+				            ],
+				            [
+				              -118.3337241845473,
+				              46.07794177545593
+				            ]
+				          ]
+				        ]
+				      },
+				      "properties": {
+				        "id": "x37161",
+				        "name": "Athletic Fields",
+				        "tags": [
+				          "Athletics",
+				          ""
+				        ],
+				        "objectType": "outdoor",
+				        "highlighted": false
+				      }
+				    },
+				    {
+				      "type": "Feature",
+				      "geometry": {
+				        "type": "Polygon",
+				        "coordinates": [
+				          [
+				            [
+				              -118.32878341104504,
+				              46.07013807798285
+				            ],
+				            [
+				              -118.32878341104504,
+				              46.07006507803449
+				            ],
+				            [
+				              -118.32883445767197,
+				              46.07006379975465
+				            ],
+				            [
+				              -118.32883682209007,
+				              46.06999277377712
+				            ],
+				            [
+				              -118.32879172883611,
+				              46.06999277377712
+				            ],
+				            [
+				              -118.32878609325405,
+				              46.069955912934184
+				            ],
+				            [
+				              -118.32868172883599,
+				              46.069957191208246
+				            ],
+				            [
+				              -118.32867668220888,
+				              46.07000419118764
+				            ],
+				            [
+				              -118.3285604576721,
+				              46.070006330325825
+				            ],
+				            [
+				              -118.32855541104504,
+				              46.07013607798426
+				            ],
+				            [
+				              -118.32878341104504,
+				              46.07013807798285
+				            ]
+				          ]
+				        ]
+				      },
+				      "properties": {
+				        "id": "x37162",
+				        "name": "Baker Center",
+				        "tags": [
+				          "Administration",
+				          "Dining Halls",
+				          ""
+				        ],
+				        "objectType": "building",
+				        "highlighted": false
+				      }
+				    },
+				    {
+				      "type": "Feature",
+				      "geometry": {
+				        "type": "Polygon",
+				        "coordinates": [
+				          [
+				            [
+				              -118.33270858895492,
+				              46.07199207667017
+				            ],
+				            [
+				              -118.33233458895495,
+				              46.07179407681032
+				            ],
+				            [
+				              -118.33236458895493,
+				              46.07176607683016
+				            ],
+				            [
+				              -118.33210258895485,
+				              46.071629076927145
+				            ],
+				            [
+				              -118.33233654232788,
+				              46.07139046895168
+				            ],
+				            [
+				              -118.33260258895496,
+				              46.07152660809164
+				            ],
+				            [
+				              -118.33274222453679,
+				              46.07138888651
+				            ],
+				            [
+				              -118.3328776822089,
+				              46.07145446892799
+				            ],
+				            [
+				              -118.33282036441801,
+				              46.071515051335545
+				            ],
+				            [
+				              -118.333072317791,
+				              46.07164746885636
+				            ],
+				            [
+				              -118.33270858895492,
+				              46.07199207667017
+				            ]
+				          ]
+				        ]
+				      },
+				      "properties": {
+				        "id": "x37163",
+				        "name": "Baker Ferguson Fitness Center",
+				        "tags": [
+				          "Athletics",
+				          ""
+				        ],
+				        "objectType": "building",
+				        "highlighted": false
+				      }
+				    },
+				    {
+				      "type": "Feature",
+				      "geometry": {
+				        "type": "Polygon",
+				        "coordinates": [
+				          [
+				            [
+				              -118.32832717790984,
+				              46.07350763262417
+				            ],
+				            [
+				              -118.328302953373,
+				              46.07332874673543
+				            ],
+				            [
+				              -118.32793627116394,
+				              46.07335372149467
+				            ],
+				            [
+				              -118.32795486011901,
+				              46.073530075581274
+				            ],
+				            [
+				              -118.32832717790984,
+				              46.07350763262417
+				            ]
+				          ]
+				        ]
+				      },
+				      "properties": {
+				        "id": "x37164",
+				        "name": "Beta Theta Pi",
+				        "tags": [
+				          "Greek Housing",
+				          ""
+				        ],
+				        "objectType": "building",
+				        "highlighted": false
+				      }
+				    },
+				    {
+				      "type": "Feature",
+				      "geometry": {
+				        "type": "Polygon",
+				        "coordinates": [
+				          [
+				            [
+				              -118.33611281588674,
+				              46.07755484224261
+				            ],
+				            [
+				              -118.33669887855649,
+				              46.07755019072844
+				            ],
+				            [
+				              -118.33686852827668,
+				              46.07740831935717
+				            ],
+				            [
+				              -118.3368675224483,
+				              46.07732621985601
+				            ],
+				            [
+				              -118.33696894347668,
+				              46.07732982479422
+				            ],
+				            [
+				              -118.3369713742286,
+				              46.076736227850766
+				            ],
+				            [
+				              -118.33672790089622,
+				              46.07672458435589
+				            ],
+				            [
+				              -118.33672582637519,
+				              46.07669061324613
+				            ],
+				            [
+				              -118.33662719232962,
+				              46.07669385482062
+				            ],
+				            [
+				              -118.33661996817682,
+				              46.07658023606751
+				            ],
+				            [
+				              -118.33653588982997,
+				              46.07653272980436
+				            ],
+				            [
+				              -118.3365394482098,
+				              46.07644385418866
+				            ],
+				            [
+				              -118.33644108264707,
+				              46.07636614230513
+				            ],
+				            [
+				              -118.3358365483582,
+				              46.07636590245622
+				            ],
+				            [
+				              -118.33561392500997,
+				              46.07636404181046
+				            ],
+				            [
+				              -118.33549054339528,
+				              46.076388230200024
+				            ],
+				            [
+				              -118.33540203049779,
+				              46.076430094695176
+				            ],
+				            [
+				              -118.3353309519589,
+				              46.07648079720792
+				            ],
+				            [
+				              -118.33529004827142,
+				              46.076543361253485
+				            ],
+				            [
+				              -118.33527060225606,
+				              46.07660592522801
+				            ],
+				            [
+				              -118.33527596667409,
+				              46.07747297553549
+				            ],
+				            [
+				              -118.3361074514687,
+				              46.07747855736031
+				            ],
+				            [
+				              -118.33611281588674,
+				              46.07755484224261
+				            ]
+				          ]
+				        ]
+				      },
+				      "properties": {
+				        "id": "x37165",
+				        "name": "Borleske Stadium",
+				        "tags": [
+				          "Athletics",
+				          ""
+				        ],
+				        "objectType": "outdoor",
+				        "highlighted": false
+				      }
+				    },
+				    {
+				      "type": "Feature",
+				      "geometry": {
+				        "type": "Polygon",
+				        "coordinates": [
+				          [
+				            [
+				              -118.33396115211485,
+				              46.0696760436407
+				            ],
+				            [
+				              -118.33351324900434,
+				              46.0697429827298
+				            ],
+				            [
+				              -118.33345690360062,
+				              46.06956300889529
+				            ],
+				            [
+				              -118.33366476529216,
+				              46.06953815245265
+				            ],
+				            [
+				              -118.33365536805343,
+				              46.06950399161433
+				            ],
+				            [
+				              -118.33390515211488,
+				              46.06947340901072
+				            ],
+				            [
+				              -118.33396115211485,
+				              46.0696760436407
+				            ]
+				          ]
+				        ]
+				      },
+				      "properties": {
+				        "id": "x37166",
+				        "name": "Boyer House",
+				        "tags": [
+				          "Administration",
+				          ""
+				        ],
+				        "objectType": "building",
+				        "highlighted": false
+				      }
+				    },
+				    {
+				      "type": "Feature",
+				      "geometry": {
+				        "type": "Polygon",
+				        "coordinates": [
+				          [
+				            [
+				              -118.283788,
+				              46.190411
+				            ],
+				            [
+				              -118.283776,
+				              46.190315
+				            ],
+				            [
+				              -118.283701,
+				              46.190317
+				            ],
+				            [
+				              -118.283717,
+				              46.190411
+				            ],
+				            [
+				              -118.283784,
+				              46.190409
+				            ],
+				            [
+				              -118.283788,
+				              46.190411
+				            ]
+				          ]
+				        ]
+				      },
+				      "properties": {
+				        "id": "x37167",
+				        "name": "Bracher Observatory",
+				        "tags": [
+				          "Observatories",
+				          ""
+				        ],
+				        "objectType": "building",
+				        "highlighted": false
+				      }
+				    },
+				    {
+				      "type": "Feature",
+				      "geometry": {
+				        "type": "Polygon",
+				        "coordinates": [
+				          [
+				            [
+				              -118.33375610185249,
+				              46.0703018868032
+				            ],
+				            [
+				              -118.33350110185245,
+				              46.070031608595706
+				            ],
+				            [
+				              -118.33277477546306,
+				              46.07034633018834
+				            ],
+				            [
+				              -118.33302941104512,
+				              46.070620051758
+				            ],
+				            [
+				              -118.33375610185249,
+				              46.0703018868032
+				            ]
+				          ]
+				        ]
+				      },
+				      "properties": {
+				        "id": "x37168",
+				        "name": "Bratton Tennis Center",
+				        "tags": [
+				          "Athletics",
+				          ""
+				        ],
+				        "objectType": "building",
+				        "highlighted": false
+				      }
+				    },
+				    {
+				      "type": "Feature",
+				      "geometry": {
+				        "type": "Polygon",
+				        "coordinates": [
+				          [
+				            [
+				              -118.33326022453684,
+				              46.071488520273064
+				            ],
+				            [
+				              -118.3329004490738,
+				              46.071304494704364
+				            ],
+				            [
+				              -118.33304322453694,
+				              46.07116716492697
+				            ],
+				            [
+				              -118.33340804662708,
+				              46.07135719059465
+				            ],
+				            [
+				              -118.33326522453689,
+				              46.071488520273064
+				            ],
+				            [
+				              -118.33326022453684,
+				              46.071488520273064
+				            ]
+				          ]
+				        ]
+				      },
+				      "properties": {
+				        "id": "x37169",
+				        "name": "College House",
+				        "tags": [
+				          "Residence Halls",
+				          ""
+				        ],
+				        "objectType": "building",
+				        "highlighted": false
+				      }
+				    },
+				    {
+				      "type": "Feature",
+				      "geometry": {
+				        "type": "Polygon",
+				        "coordinates": [
+				          [
+				            [
+				              -118.32779113988107,
+				              46.06949549580214
+				            ],
+				            [
+				              -118.32778813988119,
+				              46.06933974794582
+				            ],
+				            [
+				              -118.32764368220899,
+				              46.069338165297054
+				            ],
+				            [
+				              -118.32764604662702,
+				              46.069496356680126
+				            ],
+				            [
+				              -118.32779113988107,
+				              46.06949549580214
+				            ]
+				          ]
+				        ]
+				      },
+				      "properties": {
+				        "id": "x37170",
+				        "name": "Community Service Interest House",
+				        "tags": [
+				          "Interest Houses",
+				          ""
+				        ],
+				        "objectType": "building",
+				        "highlighted": false
+				      }
+				    },
+				    {
+				      "type": "Feature",
+				      "geometry": {
+				        "type": "Polygon",
+				        "coordinates": [
+				          [
+				            [
+				              -118.326844,
+				              46.070973
+				            ],
+				            [
+				              -118.32638,
+				              46.070973
+				            ],
+				            [
+				              -118.32637,
+				              46.070666
+				            ],
+				            [
+				              -118.32684,
+				              46.070666
+				            ],
+				            [
+				              -118.326844,
+				              46.070973
+				            ]
+				          ]
+				        ]
+				      },
+				      "properties": {
+				        "id": "x37213",
+				        "name": "Cordiner Glen",
+				        "tags": [
+				          "Landmarks",
+				          ""
+				        ],
+				        "objectType": "outdoor",
+				        "highlighted": false
+				      }
+				    },
+				    {
+				      "type": "Feature",
+				      "geometry": {
+				        "type": "Polygon",
+				        "coordinates": [
+				          [
+				            [
+				              -118.33248513988104,
+				              46.070774190850166
+				            ],
+				            [
+				              -118.33157013128272,
+				              46.070897216614014
+				            ],
+				            [
+				              -118.33148208465576,
+				              46.070564
+				            ],
+				            [
+				              -118.33239372883617,
+				              46.07044527830951
+				            ],
+				            [
+				              -118.33248513988104,
+				              46.070774190850166
+				            ]
+				          ]
+				        ]
+				      },
+				      "properties": {
+				        "id": "x37171",
+				        "name": "Cordiner Hall",
+				        "tags": [
+				          "Auditoriums",
+				          ""
+				        ],
+				        "objectType": "building",
+				        "highlighted": false
+				      }
+				    },
+				    {
+				      "type": "Feature",
+				      "geometry": {
+				        "type": "Polygon",
+				        "coordinates": [
+				          [
+				            [
+				              -118.33462813988115,
+				              46.06962821746963
+				            ],
+				            [
+				              -118.33448036441803,
+				              46.06964880007631
+				            ],
+				            [
+				              -118.33442709325396,
+				              46.06946105230505
+				            ],
+				            [
+				              -118.33452604662699,
+				              46.069385721762174
+				            ],
+				            [
+				              -118.33459013988113,
+				              46.06943974791545
+				            ],
+				            [
+				              -118.33462813988115,
+				              46.06962821746963
+				            ]
+				          ]
+				        ]
+				      },
+				      "properties": {
+				        "id": "x37172",
+				        "name": "Dance Studio",
+				        "tags": [
+				          "Academics",
+				          ""
+				        ],
+				        "objectType": "building",
+				        "highlighted": false
+				      }
+				    },
+				    {
+				      "type": "Feature",
+				      "geometry": {
+				        "type": "Polygon",
+				        "coordinates": [
+				          [
+				            [
+				              -118.32787018650822,
+				              46.069960078108906
+				            ],
+				            [
+				              -118.32786582209013,
+				              46.06980588693693
+				            ],
+				            [
+				              -118.32767000000001,
+				              46.069802165203086
+				            ],
+				            [
+				              -118.32766763558197,
+				              46.069962078107466
+				            ],
+				            [
+				              -118.32787018650822,
+				              46.069960078108906
+				            ]
+				          ]
+				        ]
+				      },
+				      "properties": {
+				        "id": "x37173",
+				        "name": "Das Deutsche Haus",
+				        "tags": [
+				          "Interest Houses",
+				          ""
+				        ],
+				        "objectType": "building",
+				        "highlighted": false
+				      }
+				    },
+				    {
+				      "type": "Feature",
+				      "geometry": {
+				        "type": "Polygon",
+				        "coordinates": [
+				          [
+				            [
+				              -118.32914004662706,
+				              46.069946660708986
+				            ],
+				            [
+				              -118.32892804662703,
+				              46.069946660708986
+				            ],
+				            [
+				              -118.32892804662703,
+				              46.06987966076318
+				            ],
+				            [
+				              -118.32867804662703,
+				              46.06987966076318
+				            ],
+				            [
+				              -118.32867604662715,
+				              46.069782634759164
+				            ],
+				            [
+				              -118.32877409325403,
+				              46.069781634759714
+				            ],
+				            [
+				              -118.32878113988113,
+				              46.06964260872689
+				            ],
+				            [
+				              -118.32895504662696,
+				              46.06964533047187
+				            ],
+				            [
+				              -118.32895772883597,
+				              46.069663913081854
+				            ],
+				            [
+				              -118.32914004662706,
+				              46.06966291308239
+				            ],
+				            [
+				              -118.32914004662706,
+				              46.069946660708986
+				            ]
+				          ]
+				        ]
+				      },
+				      "properties": {
+				        "id": "x37174",
+				        "name": "Douglas Hall",
+				        "tags": [
+				          "Residence Halls",
+				          ""
+				        ],
+				        "objectType": "building",
+				        "highlighted": false
+				      }
+				    },
+				    {
+				      "type": "Feature",
+				      "geometry": {
+				        "type": "Polygon",
+				        "coordinates": [
+				          [
+				            [
+				              -118.32706836441793,
+				              46.07042619100273
+				            ],
+				            [
+				              -118.32692490674594,
+				              46.07042619100273
+				            ],
+				            [
+				              -118.32692190674578,
+				              46.070265025961326
+				            ],
+				            [
+				              -118.32706704662701,
+				              46.070265886812955
+				            ],
+				            [
+				              -118.32706836441793,
+				              46.07042619100273
+				            ]
+				          ]
+				        ]
+				      },
+				      "properties": {
+				        "id": "x37175",
+				        "name": "Environmental House",
+				        "tags": [
+				          "Interest Houses",
+				          ""
+				        ],
+				        "objectType": "building",
+				        "highlighted": false
+				      }
+				    },
+				    {
+				      "type": "Feature",
+				      "geometry": {
+				        "type": "Polygon",
+				        "coordinates": [
+				          [
+				            [
+				              -118.32767804662706,
+				              46.07041719100661
+				            ],
+				            [
+				              -118.32767872883608,
+				              46.0702551651114
+				            ],
+				            [
+				              -118.32781841104514,
+				              46.07025702596313
+				            ],
+				            [
+				              -118.32781504662705,
+				              46.07041719100661
+				            ],
+				            [
+				              -118.32767804662706,
+				              46.07041719100661
+				            ]
+				          ]
+				        ]
+				      },
+				      "properties": {
+				        "id": "x37176",
+				        "name": "Fine Arts House",
+				        "tags": [
+				          "Interest Houses",
+				          ""
+				        ],
+				        "objectType": "building",
+				        "highlighted": false
+				      }
+				    },
+				    {
+				      "type": "Feature",
+				      "geometry": {
+				        "type": "Polygon",
+				        "coordinates": [
+				          [
+				            [
+				              -118.33226511373903,
+				              46.06912205773172
+				            ],
+				            [
+				              -118.33203955421448,
+				              46.06925987642406
+				            ],
+				            [
+				              -118.33196726612789,
+				              46.0691939053213
+				            ],
+				            [
+				              -118.33190034245945,
+				              46.069150264811846
+				            ],
+				            [
+				              -118.33179331721271,
+				              46.069103923296424
+				            ],
+				            [
+				              -118.3316865550799,
+				              46.0690670669303
+				            ],
+				            [
+				              -118.33159373021977,
+				              46.06904545913897
+				            ],
+				            [
+				              -118.33151000444218,
+				              46.06915669751374
+				            ],
+				            [
+				              -118.3313801038131,
+				              46.06910748425901
+				            ],
+				            [
+				              -118.33152459881245,
+				              46.06893125293677
+				            ],
+				            [
+				              -118.33148133918081,
+				              46.06890761482922
+				            ],
+				            [
+				              -118.33157184571252,
+				              46.06880265069246
+				            ],
+				            [
+				              -118.33161070169831,
+				              46.068814169400234
+				            ],
+				            [
+				              -118.33169646029654,
+				              46.06872183091748
+				            ],
+				            [
+				              -118.33228371989054,
+				              46.06896702194177
+				            ],
+				            [
+				              -118.33218151618576,
+				              46.06906943171021
+				            ],
+				            [
+				              -118.33226511373903,
+				              46.06912205773172
+				            ]
+				          ]
+				        ]
+				      },
+				      "properties": {
+				        "id": "x37177",
+				        "name": "Fouts Center for the Visual Arts",
+				        "tags": [
+				          "Art Galleries",
+				          "Academics",
+				          ""
+				        ],
+				        "objectType": "building",
+				        "highlighted": false
+				      }
+				    },
+				    {
+				      "type": "Feature",
+				      "geometry": {
+				        "type": "Polygon",
+				        "coordinates": [
+				          [
+				            [
+				              -118.32719541104512,
+				              46.06949233053376
+				            ],
+				            [
+				              -118.32719572883599,
+				              46.06936986088161
+				            ],
+				            [
+				              -118.32696527116389,
+				              46.06936972176331
+				            ],
+				            [
+				              -118.32696495337291,
+				              46.06948846965706
+				            ],
+				            [
+				              -118.32719541104512,
+				              46.06949233053376
+				            ]
+				          ]
+				        ]
+				      },
+				      "properties": {
+				        "id": "x37178",
+				        "name": "Global Awareness House",
+				        "tags": [
+				          "Interest Houses",
+				          ""
+				        ],
+				        "objectType": "building",
+				        "highlighted": false
+				      }
+				    },
+				    {
+				      "type": "Feature",
+				      "geometry": {
+				        "type": "Polygon",
+				        "coordinates": [
+				          [
+				            [
+				              -118.33418109325407,
+				              46.06962393922125
+				            ],
+				            [
+				              -118.33400409325407,
+				              46.069649939201916
+				            ],
+				            [
+				              -118.33394236441802,
+				              46.06945188703251
+				            ],
+				            [
+				              -118.33411972883607,
+				              46.06942874791884
+				            ],
+				            [
+				              -118.33418109325407,
+				              46.06962393922125
+				            ]
+				          ]
+				        ]
+				      },
+				      "properties": {
+				        "id": "x37179",
+				        "name": "Glover Alston Center",
+				        "tags": [
+				          "Administration",
+				          "Academics",
+				          ""
+				        ],
+				        "objectType": "building",
+				        "highlighted": false
+				      }
+				    },
+				    {
+				      "type": "Feature",
+				      "geometry": {
+				        "type": "Polygon",
+				        "coordinates": [
+				          [
+				            [
+				              -118.330879682209,
+				              46.0692382177327
+				            ],
+				            [
+				              -118.33087668220895,
+				              46.069172913330235
+				            ],
+				            [
+				              -118.33089668220902,
+				              46.0691709133312
+				            ],
+				            [
+				              -118.33089468220902,
+				              46.069145913343846
+				            ],
+				            [
+				              -118.33090868220904,
+				              46.06914291334533
+				            ],
+				            [
+				              -118.33090868220904,
+				              46.069117913357985
+				            ],
+				            [
+				              -118.33091768220902,
+				              46.069117913357985
+				            ],
+				            [
+				              -118.330922682209,
+				              46.06909091337164
+				            ],
+				            [
+				              -118.33093868220897,
+				              46.0690889133727
+				            ],
+				            [
+				              -118.33093968220908,
+				              46.06906391338533
+				            ],
+				            [
+				              -118.33095468220904,
+				              46.06906091338684
+				            ],
+				            [
+				              -118.33095568220904,
+				              46.06903691339896
+				            ],
+				            [
+				              -118.33099768220904,
+				              46.06903591339944
+				            ],
+				            [
+				              -118.33099768220904,
+				              46.06892502627752
+				            ],
+				            [
+				              -118.33079359755317,
+				              46.0689250262776
+				            ],
+				            [
+				              -118.33080064418027,
+				              46.068980774323
+				            ],
+				            [
+				              -118.33071068220897,
+				              46.06898091342729
+				            ],
+				            [
+				              -118.33070968220909,
+				              46.06883488719886
+				            ],
+				            [
+				              -118.330437317791,
+				              46.06883588719867
+				            ],
+				            [
+				              -118.33044336441804,
+				              46.06897274805719
+				            ],
+				            [
+				              -118.33036358895492,
+				              46.068971887162
+				            ],
+				            [
+				              -118.33037268220897,
+				              46.06925491328873
+				            ],
+				            [
+				              -118.33071336441799,
+				              46.06925449594843
+				            ],
+				            [
+				              -118.33071168220908,
+				              46.06920391331451
+				            ],
+				            [
+				              -118.33079359755317,
+				              46.06920777420055
+				            ],
+				            [
+				              -118.33079527976224,
+				              46.06923821773276
+				            ],
+				            [
+				              -118.33083676686476,
+				              46.069239356844776
+				            ],
+				            [
+				              -118.330879682209,
+				              46.0692382177327
+				            ]
+				          ]
+				        ]
+				      },
+				      "properties": {
+				        "id": "x37180",
+				        "name": "Hall of Music",
+				        "tags": [
+				          "Auditoriums",
+				          "Academics",
+				          ""
+				        ],
+				        "objectType": "building",
+				        "highlighted": false
+				      }
+				    },
+				    {
+				      "type": "Feature",
+				      "geometry": {
+				        "type": "Polygon",
+				        "coordinates": [
+				          [
+				            [-118.33056163558194,  46.072156911821075],[-118.33041417790986,  46.0720918863203],[-118.33038244907374,  46.07212349420729],[-118.33025827116398,  46.07212549420605],[-118.33025117790976,  46.072062190285656],[-118.32962822453692,  46.072060468703114],[-118.3296392711639,  46.072415494030054],[-118.32968427116396,  46.07241949402762],[-118.32968522453677,  46.072448911673376],[-118.32956627116386,  46.0724504940088],[-118.32956127116393,  46.07240488623591],[-118.32933854232783,  46.072406607794946],[-118.329341588955,  46.07244439895013],[-118.32924713128284,  46.07244319011862],[-118.32924842576028,  46.0725759370316],[-118.32933081349177,  46.07257563315827],[-118.3293358134917,  46.07260935468594],[-118.329556271164,  46.07260907623334],[-118.32955827116393,  46.07257549393293],[-118.32968024785049,  46.07257707625598],[-118.32968427116401,  46.07270251924971],[-118.32996136441795,  46.072700658480464],[-118.32995568220895,  46.07242077246731],[-118.33017027116387,  46.072415494030054],[-118.33017335581968,  46.0723483293783],[-118.33033127116391,  46.07241349403129],[-118.3304412539672,  46.07228930600498],[-118.33056163558194,  46.072156911821075]
+				          ]
+				        ]
+				      },
+				      "properties": {
+				        "id": "x37181",
+				        "name": "Hall of Science",
+				        "tags": [
+				          "Observatories",
+				          "Auditoriums",
+				          "Academics",
+				          ""
+				        ],
+				        "objectType": "building",
+				        "highlighted": false
+				      }
+				    },
+				    {
+				      "type": "Feature",
+				      "geometry": {
+				        "type": "Polygon",
+				        "coordinates": [
+				          [
+				            [
+				              -118.33069831779096,
+				              46.071900355140194
+				            ],
+				            [
+				              -118.33038176686478,
+				              46.07189872159275
+				            ],
+				            [
+				              -118.33030186011888,
+				              46.071515329715325
+				            ],
+				            [
+				              -118.3310790846557,
+				              46.07140372162616
+				            ],
+				            [
+				              -118.3311440846557,
+				              46.07142713918779
+				            ],
+				            [
+				              -118.33103835581971,
+				              46.071527164854196
+				            ],
+				            [
+				              -118.33109603802865,
+				              46.07154644323329
+				            ],
+				            [
+				              -118.33080086011887,
+				              46.071860886382716
+				            ],
+				            [
+				              -118.33074158895494,
+				              46.071831443194846
+				            ],
+				            [
+				              -118.33069831779096,
+				              46.071900355140194
+				            ]
+				          ]
+				        ]
+				      },
+				      "properties": {
+				        "id": "x37182",
+				        "name": "Harper Joy Theatre",
+				        "tags": [
+				          "Auditoriums",
+				          "Academics",
+				          ""
+				        ],
+				        "objectType": "building",
+				        "highlighted": false
+				      }
+				    },
+				    {
+				      "type": "Feature",
+				      "geometry": {
+				        "type": "Polygon",
+				        "coordinates": [
+				          [
+				            [
+				              -118.33076131779092,
+				              46.06992777381216
+				            ],
+				            [
+				              -118.33045331779095,
+				              46.06997277378789
+				            ],
+				            [
+				              -118.33039995337299,
+				              46.06979316520491
+				            ],
+				            [
+				              -118.330472224537,
+				              46.06978488694266
+				            ],
+				            [
+				              -118.3304559067459,
+				              46.0697084434811
+				            ],
+				            [
+				              -118.33059490674589,
+				              46.06969116522558
+				            ],
+				            [
+				              -118.33061790674594,
+				              46.0697610260802
+				            ],
+				            [
+				              -118.330710953373,
+				              46.06974816521402
+				            ],
+				            [
+				              -118.33076131779092,
+				              46.06992777381216
+				            ]
+				          ]
+				        ]
+				      },
+				      "properties": {
+				        "id": "x37183",
+				        "name": "Hunter Conservatory",
+				        "tags": [
+				          "Administration",
+				          "Auditoriums",
+				          "Academics",
+				          ""
+				        ],
+				        "objectType": "building",
+				        "highlighted": false
+				      }
+				    },
+				    {
+				      "type": "Feature",
+				      "geometry": {
+				        "type": "Polygon",
+				        "coordinates": [
+				          [
+				            [
+				              -118.32727493718266,
+				              46.07272449870651
+				            ],
+				            [
+				              -118.32709657028317,
+				              46.0727412456202
+				            ],
+				            [
+				              -118.32711199298501,
+				              46.07286591692876
+				            ],
+				            [
+				              -118.3268809877336,
+				              46.07288452456261
+				            ],
+				            [
+				              -118.326874114573,
+				              46.07284917005294
+				            ],
+				            [
+				              -118.32676531746984,
+				              46.072860334637376
+				            ],
+				            [
+				              -118.32671971991658,
+				              46.07261471325788
+				            ],
+				            [
+				              -118.32648368552327,
+				              46.072635181747884
+				            ],
+				            [
+				              -118.32654001191258,
+				              46.07292732209658
+				            ],
+				            [
+				              -118.32645820453763,
+				              46.07293755628458
+				            ],
+				            [
+				              -118.32648368552327,
+				              46.073065018285206
+				            ],
+				            [
+				              -118.32732321694493,
+				              46.07298314491716
+				            ],
+				            [
+				              -118.32727493718266,
+				              46.07272449870651
+				            ]
+				          ]
+				        ]
+				      },
+				      "properties": {
+				        "id": "x37184",
+				        "name": "Jewett Hall",
+				        "tags": [
+				          "Residence Halls",
+				          "Dining Halls",
+				          ""
+				        ],
+				        "objectType": "building",
+				        "highlighted": false
+				      }
+				    },
+				    {
+				      "type": "Feature",
+				      "geometry": {
+				        "type": "Polygon",
+				        "coordinates": [
+				          [
+				            [
+				              -118.32758545767217,
+				              46.07041474761962
+				            ],
+				            [
+				              -118.32743399999998,
+				              46.0704147476197
+				            ],
+				            [
+				              -118.32743199999999,
+				              46.07027030425693
+				            ],
+				            [
+				              -118.32758277546316,
+				              46.07026944340551
+				            ],
+				            [
+				              -118.32758545767217,
+				              46.07041474761962
+				            ]
+				          ]
+				        ]
+				      },
+				      "properties": {
+				        "id": "x37185",
+				        "name": "La Casa Hispana",
+				        "tags": [
+				          "Interest Houses",
+				          ""
+				        ],
+				        "objectType": "building",
+				        "highlighted": false
+				      }
+				    },
+				    {
+				      "type": "Feature",
+				      "geometry": {
+				        "type": "Polygon",
+				        "coordinates": [
+				          [
+				            [
+				              -118.327350728836,
+				              46.070428469308446
+				            ],
+				            [
+				              -118.32717327116393,
+				              46.07042660846254
+				            ],
+				            [
+				              -118.32716858895492,
+				              46.07025172170397
+				            ],
+				            [
+				              -118.32734972883611,
+				              46.070252721703774
+				            ],
+				            [
+				              -118.327350728836,
+				              46.070428469308446
+				            ]
+				          ]
+				        ]
+				      },
+				      "properties": {
+				        "id": "x37186",
+				        "name": "La Maison Française",
+				        "tags": [
+				          "Interest Houses",
+				          ""
+				        ],
+				        "objectType": "building",
+				        "highlighted": false
+				      }
+				    },
+				    {
+				      "type": "Feature",
+				      "geometry": {
+				        "type": "Polygon",
+				        "coordinates": [
+				          [
+				            [
+				              -118.32804014484407,
+				              46.0708637923016
+				            ],
+				            [
+				              -118.32799241523526,
+				              46.07088844727806
+				            ],
+				            [
+				              -118.32795005004442,
+				              46.0709056589248
+				            ],
+				            [
+				              -118.32788677733504,
+				              46.070906587276674
+				            ],
+				            [
+				              -118.32783533376869,
+				              46.07090472232091
+				            ],
+				            [
+				              -118.3278021840701,
+				              46.07088982742831
+				            ],
+				            [
+				              -118.32777880001743,
+				              46.070867480955926
+				            ],
+				            [
+				              -118.32776958283807,
+				              46.0708339529784
+				            ],
+				            [
+				              -118.32777797056963,
+				              46.070804113638985
+				            ],
+				            [
+				              -118.32781016355716,
+				              46.07077532886775
+				            ],
+				            [
+				              -118.32786381421681,
+				              46.07075770909131
+				            ],
+				            [
+				              -118.32796038670011,
+				              46.070729912864806
+				            ],
+				            [
+				              -118.32804624330612,
+				              46.07070595459982
+				            ],
+				            [
+				              -118.32810530373956,
+				              46.070678507254264
+				            ],
+				            [
+				              -118.32813759391792,
+				              46.070657107619446
+				            ],
+				            [
+				              -118.32835843574736,
+				              46.07065862367643
+				            ],
+				            [
+				              -118.32841566282701,
+				              46.070721547355454
+				            ],
+				            [
+				              -118.32842819304369,
+				              46.07075063116225
+				            ],
+				            [
+				              -118.32842106696893,
+				              46.070779025392945
+				            ],
+				            [
+				              -118.32839072156526,
+				              46.07079859715513
+				            ],
+				            [
+				              -118.32833003075791,
+				              46.07082285400003
+				            ],
+				            [
+				              -118.32824350359948,
+				              46.07082052795927
+				            ],
+				            [
+				              -118.32817843411345,
+				              46.07082936691368
+				            ],
+				            [
+				              -118.32812339699365,
+				              46.070847044818265
+				            ],
+				            [
+				              -118.32804014484407,
+				              46.0708637923016
+				            ]
+				          ]
+				        ]
+				      },
+				      "properties": {
+				        "id": "x37187",
+				        "name": "Lakum Duckum",
+				        "tags": [
+				          "Landmarks",
+				          ""
+				        ],
+				        "objectType": "water",
+				        "highlighted": false
+				      }
+				    },
+				    {
+				      "type": "Feature",
+				      "geometry": {
+				        "type": "Polygon",
+				        "coordinates": [
+				          [
+				            [
+				              -118.32664890674596,
+				              46.0726126331371
+				            ],
+				            [
+				              -118.3265215423279,
+				              46.072623911584905
+				            ],
+				            [
+				              -118.32635463558216,
+				              46.071872025582046
+				            ],
+				            [
+				              -118.32649436441807,
+				              46.07185974718118
+				            ],
+				            [
+				              -118.32664890674596,
+				              46.0726126331371
+				            ]
+				          ]
+				        ]
+				      },
+				      "properties": {
+				        "id": "x37188",
+				        "name": "Lyman House",
+				        "tags": [
+				          "Residence Halls",
+				          ""
+				        ],
+				        "objectType": "building",
+				        "highlighted": false
+				      }
+				    },
+				    {
+				      "type": "Feature",
+				      "geometry": {
+				        "type": "Polygon",
+				        "coordinates": [
+				          [
+				            [
+				              -118.33314341104506,
+				              46.06948663492875
+				            ],
+				            [
+				              -118.33289627116392,
+				              46.06951777403333
+				            ],
+				            [
+				              -118.33285799999993,
+				              46.069376522053226
+				            ],
+				            [
+				              -118.33277231779084,
+				              46.069386661162106
+				            ],
+				            [
+				              -118.33273995337288,
+				              46.069269887081525
+				            ],
+				            [
+				              -118.33298768220897,
+				              46.069238608863124
+				            ],
+				            [
+				              -118.33301236441804,
+				              46.06931833060414
+				            ],
+				            [
+				              -118.3331044576721,
+				              46.06931019149184
+				            ],
+				            [
+				              -118.33314341104506,
+				              46.06948663492875
+				            ]
+				          ]
+				        ]
+				      },
+				      "properties": {
+				        "id": "x37189",
+				        "name": "Marcus House",
+				        "tags": [
+				          "Residence Halls",
+				          ""
+				        ],
+				        "objectType": "building",
+				        "highlighted": false
+				      }
+				    },
+				    {
+				      "type": "Feature",
+				      "geometry": {
+				        "type": "Polygon",
+				        "coordinates": [
+				          [
+				            [
+				              -118.32842113988113,
+				              46.069413774089384
+				            ],
+				            [
+				              -118.32841845767211,
+				              46.06931516530159
+				            ],
+				            [
+				              -118.32825268220904,
+				              46.06931516530162
+				            ],
+				            [
+				              -118.328258,
+				              46.06941563496951
+				            ],
+				            [
+				              -118.32842113988113,
+				              46.069413774089384
+				            ]
+				          ]
+				        ]
+				      },
+				      "properties": {
+				        "id": "x37190",
+				        "name": "MECCA",
+				        "tags": [
+				          "Interest Houses",
+				          ""
+				        ],
+				        "objectType": "building",
+				        "highlighted": false
+				      }
+				    },
+				    {
+				      "type": "Feature",
+				      "geometry": {
+				        "type": "Polygon",
+				        "coordinates": [
+				          [
+				            [
+				              -118.32793744280934,
+				              46.07151498595049
+				            ],
+				            [
+				              -118.32793744280934,
+				              46.07126935858356
+				            ],
+				            [
+				              -118.32782479003072,
+				              46.07115584859773
+				            ],
+				            [
+				              -118.3278221078217,
+				              46.07111677133552
+				            ],
+				            [
+				              -118.32762094214559,
+				              46.07111304969007
+				            ],
+				            [
+				              -118.32762094214559,
+				              46.07115770941901
+				            ],
+				            [
+				              -118.32755656912923,
+				              46.071279593079055
+				            ],
+				            [
+				              -118.32748549059033,
+				              46.07128005828334
+				            ],
+				            [
+				              -118.32747811451554,
+				              46.07118166748794
+				            ],
+				            [
+				              -118.32670899108052,
+				              46.07117817844943
+				            ],
+				            [
+				              -118.32671167328954,
+				              46.07146660488891
+				            ],
+				            [
+				              -118.3274439163506,
+				              46.07146288326702
+				            ],
+				            [
+				              -118.3274439163506,
+				              46.07137170345263
+				            ],
+				            [
+				              -118.32753511145711,
+				              46.07137077304558
+				            ],
+				            [
+				              -118.32753511145711,
+				              46.07142427142527
+				            ],
+				            [
+				              -118.32764776423573,
+				              46.071421247605244
+				            ],
+				            [
+				              -118.32764642313123,
+				              46.0715109154302
+				            ],
+				            [
+				              -118.32793744280934,
+				              46.07151498595049
+				            ],
+				            [
+				              -118.32793744280934,
+				              46.07151498595049
+				            ]
+				          ]
+				        ]
+				      },
+				      "properties": {
+				        "id": "x37191",
+				        "name": "Maxey Hall",
+				        "tags": [
+				          "Art Galleries",
+				          "Auditoriums",
+				          "Academics",
+				          ""
+				        ],
+				        "objectType": "building",
+				        "highlighted": false
+				      }
+				    },
+				    {
+				      "type": "Feature",
+				      "geometry": {
+				        "type": "Polygon",
+				        "coordinates": [
+				          [
+				            [
+				              -118.32992186011887,
+				              46.07098402579161
+				            ],
+				            [
+				              -118.3297611312828,
+				              46.07098588661871
+				            ],
+				            [
+				              -118.32975744907378,
+				              46.070968608279856
+				            ],
+				            [
+				              -118.32965363558174,
+				              46.07096860827983
+				            ],
+				            [
+				              -118.32964558895469,
+				              46.070991164962656
+				            ],
+				            [
+				              -118.32951808465577,
+				              46.07099216496251
+				            ],
+				            [
+				              -118.32951976686479,
+				              46.070964025796364
+				            ],
+				            [
+				              -118.3294102245369,
+				              46.07096202579684
+				            ],
+				            [
+				              -118.32941390674591,
+				              46.07099432992616
+				            ],
+				            [
+				              -118.32924913128272,
+				              46.07098960827279
+				            ],
+				            [
+				              -118.3292578601189,
+				              46.07074294831242
+				            ],
+				            [
+				              -118.32942427116387,
+				              46.070746669982704
+				            ],
+				            [
+				              -118.32942695337289,
+				              46.070769530825714
+				            ],
+				            [
+				              -118.329523131283,
+				              46.070769530825714
+				            ],
+				            [
+				              -118.32952749570063,
+				              46.07072683498624
+				            ],
+				            [
+				              -118.32965836441792,
+				              46.07072869582207
+				            ],
+				            [
+				              -118.32966641104497,
+				              46.07077053082618
+				            ],
+				            [
+				              -118.32975444907368,
+				              46.0707705308261
+				            ],
+				            [
+				              -118.3297598134917,
+				              46.07074953081831
+				            ],
+				            [
+				              -118.32992254232772,
+				              46.070751391653324
+				            ],
+				            [
+				              -118.32992454232789,
+				              46.07090959265554
+				            ],
+				            [
+				              -118.32992186011887,
+				              46.07098402579161
+				            ]
+				          ]
+				        ]
+				      },
+				      "properties": {
+				        "id": "x37192",
+				        "name": "Memorial Building",
+				        "tags": [
+				          "Administration",
+				          ""
+				        ],
+				        "objectType": "building",
+				        "highlighted": false
+				      }
+				    },
+				    {
+				      "type": "Feature",
+				      "geometry": {
+				        "type": "Polygon",
+				        "coordinates": [
+				          [
+				            [
+				              -118.32647177546312,
+				              46.07595823782766
+				            ],
+				            [
+				              -118.32646841104508,
+				              46.075848352611004
+				            ],
+				            [
+				              -118.32578984292212,
+				              46.075851409953614
+				            ],
+				            [
+				              -118.32578315277863,
+				              46.075814795020555
+				            ],
+				            [
+				              -118.32560009970274,
+				              46.07581416385848
+				            ],
+				            [
+				              -118.32559976827133,
+				              46.07584547956151
+				            ],
+				            [
+				              -118.32540363558189,
+				              46.07584888530702
+				            ],
+				            [
+				              -118.3254096355821,
+				              46.07596396711643
+				            ],
+				            [
+				              -118.32549640856371,
+				              46.07596325809965
+				            ],
+				            [
+				              -118.3254941975012,
+				              46.076083846311676
+				            ],
+				            [
+				              -118.32560038033057,
+				              46.076084599385425
+				            ],
+				            [
+				              -118.32559714535591,
+				              46.07612218901295
+				            ],
+				            [
+				              -118.32579132912667,
+				              46.07612423793516
+				            ],
+				            [
+				              -118.32578649706943,
+				              46.07607502472068
+				            ],
+				            [
+				              -118.32588090674597,
+				              46.07607790983809
+				            ],
+				            [
+				              -118.32588363558204,
+				              46.07596235253794
+				            ],
+				            [
+				              -118.32647177546312,
+				              46.07595823782766
+				            ]
+				          ]
+				        ]
+				      },
+				      "properties": {
+				        "id": "x37193",
+				        "name": "North Hall",
+				        "tags": [
+				          "Administration",
+				          "Residence Halls",
+				          ""
+				        ],
+				        "objectType": "building",
+				        "highlighted": false
+				      }
+				    },
+				    {
+				      "type": "Feature",
+				      "geometry": {
+				        "type": "Polygon",
+				        "coordinates": [
+				          [
+				            [
+				              -118.32923417790983,
+				              46.07285663299725
+				            ],
+				            [
+				              -118.3290841779098,
+				              46.072867632990985
+				            ],
+				            [
+				              -118.32907817790988,
+				              46.07283763300814
+				            ],
+				            [
+				              -118.32866590674598,
+				              46.07287335451683
+				            ],
+				            [
+				              -118.32866317790985,
+				              46.07290463296979
+				            ],
+				            [
+				              -118.328245635582,
+				              46.072941632948535
+				            ],
+				            [
+				              -118.32824090674586,
+				              46.07297135445404
+				            ],
+				            [
+				              -118.32802727116393,
+				              46.07299479748171
+				            ],
+				            [
+				              -118.32803290674588,
+				              46.07305407591826
+				            ],
+				            [
+				              -118.32759781349182,
+				              46.07308535438101
+				            ],
+				            [
+				              -118.32755127116388,
+				              46.07266386077054
+				            ],
+				            [
+				              -118.32862627116396,
+				              46.07259074695934
+				            ],
+				            [
+				              -118.32864090674593,
+				              46.07270130384704
+				            ],
+				            [
+				              -118.32904544907376,
+				              46.07267574693358
+				            ],
+				            [
+				              -118.32904381349181,
+				              46.072634721543196
+				            ],
+				            [
+				              -118.3292099067458,
+				              46.07262286077196
+				            ],
+				            [
+				              -118.32922344907377,
+				              46.0727301008995
+				            ],
+				            [
+				              -118.32923417790983,
+				              46.07285663299725
+				            ]
+				          ]
+				        ]
+				      },
+				      "properties": {
+				        "id": "x37194",
+				        "name": "Olin Hall",
+				        "tags": [
+				          "Art Galleries",
+				          "Auditoriums",
+				          "Academics",
+				          ""
+				        ],
+				        "objectType": "building",
+				        "highlighted": false
+				      }
+				    },
+				    {
+				      "type": "Feature",
+				      "geometry": {
+				        "type": "Polygon",
+				        "coordinates": [
+				          [
+				            [
+				              -118.33055649570076,
+				              46.07405486072365
+				            ],
+				            [
+				              -118.33056158895494,
+				              46.0743561392866
+				            ],
+				            [
+				              -118.33070349570085,
+				              46.07435686071347
+				            ],
+				            [
+				              -118.33070649570078,
+				              46.07405886072351
+				            ],
+				            [
+				              -118.33055649570076,
+				              46.07405486072365
+				            ]
+				          ]
+				        ]
+				      },
+				      "properties": {
+				        "id": "x37196",
+				        "name": "Organic Garden",
+				        "tags": [
+				          "Landmarks",
+				          ""
+				        ],
+				        "objectType": "outdoor",
+				        "highlighted": false
+				      }
+				    },
+				    {
+				      "type": "Feature",
+				      "geometry": {
+				        "type": "Polygon",
+				        "coordinates": [
+				          [
+				            [
+				              -118.32809110681535,
+				              46.071563460398096
+				            ],
+				            [
+				              -118.32809261847217,
+				              46.0712326678464
+				            ],
+				            [
+				              -118.32849109706308,
+				              46.07122937840571
+				            ],
+				            [
+				              -118.3284941203766,
+				              46.070893433560954
+				            ],
+				            [
+				              -118.3289449388314,
+				              46.070893433560954
+				            ],
+				            [
+				              -118.32892816336823,
+				              46.07156532120568
+				            ],
+				            [
+				              -118.32809110681535,
+				              46.071563460398096
+				            ]
+				          ]
+				        ]
+				      },
+				      "properties": {
+				        "id": "x37212",
+				        "name": "Outdoor Tennis Courts",
+				        "tags": [
+				          "Athletics",
+				          ""
+				        ],
+				        "objectType": "outdoor",
+				        "highlighted": false
+				      }
+				    },
+				    {
+				      "type": "Feature",
+				      "geometry": {
+				        "type": "Polygon",
+				        "coordinates": [
+				          [
+				            [
+				              -118.892713,
+				              46.004539
+				            ],
+				            [
+				              -118.892565,
+				              46.004537
+				            ],
+				            [
+				              -118.892557,
+				              46.004448
+				            ],
+				            [
+				              -118.892707,
+				              46.004442
+				            ],
+				            [
+				              -118.892713,
+				              46.004539
+				            ]
+				          ]
+				        ]
+				      },
+				      "properties": {
+				        "id": "x37197",
+				        "name": "Pacific Northwest Regional Observatory",
+				        "tags": [
+				          "Observatories",
+				          ""
+				        ],
+				        "objectType": "building",
+				        "highlighted": false
+				      }
+				    },
+				    {
+				      "type": "Feature",
+				      "geometry": {
+				        "type": "Polygon",
+				        "coordinates": [
+				          [
+				            [
+				              -118.32627272883605,
+				              46.070856608317605
+				            ],
+				            [
+				              -118.32598031779094,
+				              46.07087100000005
+				            ],
+				            [
+				              -118.32599908465573,
+				              46.07105930412387
+				            ],
+				            [
+				              -118.32628917790981,
+				              46.07104232990668
+				            ],
+				            [
+				              -118.32627272883605,
+				              46.070856608317605
+				            ]
+				          ]
+				        ]
+				      },
+				      "properties": {
+				        "id": "x37198",
+				        "name": "Penrose House",
+				        "tags": [
+				          "Administration",
+				          ""
+				        ],
+				        "objectType": "building",
+				        "highlighted": false
+				      }
+				    },
+				    {
+				      "type": "Feature",
+				      "geometry": {
+				        "type": "Polygon",
+				        "coordinates": [
+				          [
+				            [
+				              -118.3297411663093,
+				              46.071920226536605
+				            ],
+				            [
+				              -118.32930378651224,
+				              46.07192497599542
+				            ],
+				            [
+				              -118.32930897120286,
+				              46.07162455418717
+				            ],
+				            [
+				              -118.32931219497516,
+				              46.07136918120956
+				            ],
+				            [
+				              -118.32948708012441,
+				              46.07136873918121
+				            ],
+				            [
+				              -118.32948493947868,
+				              46.07141481748797
+				            ],
+				            [
+				              -118.3296303203287,
+				              46.07141437545993
+				            ],
+				            [
+				              -118.32963516879084,
+				              46.071248855587484
+				            ],
+				            [
+				              -118.32998282405094,
+				              46.071249040989095
+				            ],
+				            [
+				              -118.32996945466999,
+				              46.071755403475066
+				            ],
+				            [
+				              -118.32975153072744,
+				              46.071749033077495
+				            ],
+				            [
+				              -118.3297411663093,
+				              46.071920226536605
+				            ]
+				          ]
+				        ]
+				      },
+				      "properties": {
+				        "id": "x37199",
+				        "name": "Penrose Library",
+				        "tags": [
+				          "Academics",
+				          ""
+				        ],
+				        "objectType": "building",
+				        "highlighted": false
+				      }
+				    },
+				    {
+				      "type": "Feature",
+				      "geometry": {
+				        "type": "Polygon",
+				        "coordinates": [
+				          [
+				            [
+				              -118.32713100000001,
+				              46.074047328690895
+				            ],
+				            [
+				              -118.32703704662703,
+				              46.074032467971875
+				            ],
+				            [
+				              -118.32702172883603,
+				              46.07409793590272
+				            ],
+				            [
+				              -118.32688204662702,
+				              46.07407379664502
+				            ],
+				            [
+				              -118.3269329533731,
+				              46.07386546803376
+				            ],
+				            [
+				              -118.32707500000004,
+				              46.073887328755625
+				            ],
+				            [
+				              -118.32705904662714,
+				              46.07393986072755
+				            ],
+				            [
+				              -118.32715231779105,
+				              46.07395772145393
+				            ],
+				            [
+				              -118.32713100000001,
+				              46.074047328690895
+				            ]
+				          ]
+				        ]
+				      },
+				      "properties": {
+				        "id": "x37200",
+				        "name": "Phi Delta Theta",
+				        "tags": [
+				          "Greek Housing",
+				          ""
+				        ],
+				        "objectType": "building",
+				        "highlighted": false
+				      }
+				    },
+				    {
+				      "type": "Feature",
+				      "geometry": {
+				        "type": "Polygon",
+				        "coordinates": [
+				          [
+				            [
+				              -118.33014981349174,
+				              46.074336746429545
+				            ],
+				            [
+				              -118.32993181349178,
+				              46.07429274644286
+				            ],
+				            [
+				              -118.32990608465576,
+				              46.07434146785725
+				            ],
+				            [
+				              -118.3294578134919,
+				              46.07425074645562
+				            ],
+				            [
+				              -118.3294838601189,
+				              46.074190721438235
+				            ],
+				            [
+				              -118.3296406736107,
+				              46.074221139282045
+				            ],
+				            [
+				              -118.32975040244673,
+				              46.073968025087346
+				            ],
+				            [
+				              -118.32995281349179,
+				              46.07400874652906
+				            ],
+				            [
+				              -118.32996081349177,
+				              46.073987746535444
+				            ],
+				            [
+				              -118.33026681349179,
+				              46.07404674651751
+				            ],
+				            [
+				              -118.33014981349174,
+				              46.074336746429545
+				            ]
+				          ]
+				        ]
+				      },
+				      "properties": {
+				        "id": "x37203",
+				        "name": "Physical Plant Services",
+				        "tags": [
+				          "Administration",
+				          ""
+				        ],
+				        "objectType": "building",
+				        "highlighted": false
+				      }
+				    },
+				    {
+				      "type": "Feature",
+				      "geometry": {
+				        "type": "Polygon",
+				        "coordinates": [
+				          [
+				            [
+				              -118.3299928220901,
+				              46.06973238262418
+				            ],
+				            [
+				              -118.32986982209019,
+				              46.069731382625065
+				            ],
+				            [
+				              -118.32986445767216,
+				              46.069550495768766
+				            ],
+				            [
+				              -118.32945782209015,
+				              46.06954963489272
+				            ],
+				            [
+				              -118.3294578220902,
+				              46.069731382625065
+				            ],
+				            [
+				              -118.32933109325415,
+				              46.06973324349453
+				            ],
+				            [
+				              -118.32932606994063,
+				              46.06966229249075
+				            ],
+				            [
+				              -118.32920151777375,
+				              46.069659382220976
+				            ],
+				            [
+				              -118.32919825028853,
+				              46.06927365571021
+				            ],
+				            [
+				              -118.32924891962176,
+				              46.06927246291641
+				            ],
+				            [
+				              -118.32925399140174,
+				              46.06923405241219
+				            ],
+				            [
+				              -118.32946450429927,
+				              46.069233191525605
+				            ],
+				            [
+				              -118.3294658687172,
+				              46.06943133055851
+				            ],
+				            [
+				              -118.32986245767205,
+				              46.06943133055851
+				            ],
+				            [
+				              -118.32986245767205,
+				              46.0692304697528
+				            ],
+				            [
+				              -118.32999482209027,
+				              46.0692304697528
+				            ],
+				            [
+				              -118.3299928220901,
+				              46.06973238262418
+				            ]
+				          ]
+				        ]
+				      },
+				      "properties": {
+				        "id": "x37204",
+				        "name": "Prentiss Hall",
+				        "tags": [
+				          "Greek Housing",
+				          "Residence Halls",
+				          "Dining Halls",
+				          ""
+				        ],
+				        "objectType": "building",
+				        "highlighted": false
+				      }
+				    },
+				    {
+				      "type": "Feature",
+				      "geometry": {
+				        "type": "Polygon",
+				        "coordinates": [
+				          [
+				            [
+				              -118.33195258895483,
+				              46.069904495553914
+				            ],
+				            [
+				              -118.33126358895481,
+				              46.06999691291351
+				            ],
+				            [
+				              -118.33122695337289,
+				              46.0698616347139
+				            ],
+				            [
+				              -118.33127031779094,
+				              46.06984905212193
+				            ],
+				            [
+				              -118.33123768220895,
+				              46.06970430435227
+				            ],
+				            [
+				              -118.3313855423279,
+				              46.06968588696931
+				            ],
+				            [
+				              -118.33137690674579,
+				              46.06963502611008
+				            ],
+				            [
+				              -118.3316342245368,
+				              46.069600886992255
+				            ],
+				            [
+				              -118.33162822453687,
+				              46.06957274787514
+				            ],
+				            [
+				              -118.33186936441797,
+				              46.06954074788484
+				            ],
+				            [
+				              -118.33195258895483,
+				              46.069904495553914
+				            ]
+				          ]
+				        ]
+				      },
+				      "properties": {
+				        "id": "x37205",
+				        "name": "Reid Campus Center",
+				        "tags": [
+				          "Art Galleries",
+				          "Administration",
+				          "Auditoriums",
+				          "Dining Halls",
+				          ""
+				        ],
+				        "objectType": "building",
+				        "highlighted": false
+				      }
+				    },
+				    {
+				      "type": "Feature",
+				      "geometry": {
+				        "type": "Polygon",
+				        "coordinates": [
+				          [
+				            [
+				              -118.33125400594315,
+				              46.07131010850396
+				            ],
+				            [
+				              -118.33107545138154,
+				              46.07133626534414
+				            ],
+				            [
+				              -118.33107066368467,
+				              46.07138190800941
+				            ],
+				            [
+				              -118.33056430290208,
+				              46.0714424371325
+				            ],
+				            [
+				              -118.33031800594324,
+				              46.07057516504673
+				            ],
+				            [
+				              -118.33051365375894,
+				              46.07054929940804
+				            ],
+				            [
+				              -118.33048675494774,
+				              46.070442393971135
+				            ],
+				            [
+				              -118.33100572403157,
+				              46.070378706514326
+				            ],
+				            [
+				              -118.33116795931636,
+				              46.070986781638425
+				            ],
+				            [
+				              -118.33125400594315,
+				              46.07131010850396
+				            ]
+				          ]
+				        ]
+				      },
+				      "properties": {
+				        "id": "x37206",
+				        "name": "Sherwood Athletic Center",
+				        "tags": [
+				          "Athletics",
+				          ""
+				        ],
+				        "objectType": "building",
+				        "highlighted": false
+				      }
+				    },
+				    {
+				      "type": "Feature",
+				      "geometry": {
+				        "type": "Polygon",
+				        "coordinates": [
+				          [
+				            [
+				              -118.32388022453688,
+				              46.07534623838482
+				            ],
+				            [
+				              -118.32361444907383,
+				              46.075398238337385
+				            ],
+				            [
+				              -118.32355003802883,
+				              46.07526835298267
+				            ],
+				            [
+				              -118.32382654232788,
+				              46.07521993507044
+				            ],
+				            [
+				              -118.32388022453688,
+				              46.07534623838482
+				            ]
+				          ]
+				        ]
+				      },
+				      "properties": {
+				        "id": "x37207",
+				        "name": "Sherwood House",
+				        "tags": [
+				          ""
+				        ],
+				        "objectType": "building",
+				        "highlighted": false
+				      }
+				    },
+				    {
+				      "type": "Feature",
+				      "geometry": {
+				        "type": "Polygon",
+				        "coordinates": [
+				          [
+				            [
+				              -118.32647295668721,
+				              46.073660457308094
+				            ],
+				            [
+				              -118.32645418122411,
+				              46.073450193636866
+				            ],
+				            [
+				              -118.32622887566686,
+				              46.07346507958686
+				            ],
+				            [
+				              -118.32625301554799,
+				              46.07367348246496
+				            ],
+				            [
+				              -118.32647295668721,
+				              46.073660457308094
+				            ],
+				            [
+				              -118.32647295668721,
+				              46.073660457308094
+				            ]
+				          ]
+				        ]
+				      },
+				      "properties": {
+				        "id": "x37208",
+				        "name": "Sigma Chi",
+				        "tags": [
+				          "Greek Housing",
+				          ""
+				        ],
+				        "objectType": "building",
+				        "highlighted": false
+				      }
+				    },
+				    {
+				      "type": "Feature",
+				      "geometry": {
+				        "type": "Polygon",
+				        "coordinates": [
+				          [
+				            [
+				              -118.33228121824635,
+				              46.07221609224111
+				            ],
+				            [
+				              -118.33206628207017,
+				              46.07210836150993
+				            ],
+				            [
+				              -118.3321902820702,
+				              46.0719915024615
+				            ],
+				            [
+				              -118.3324129470825,
+				              46.07210151140176
+				            ],
+				            [
+				              -118.33228621824645,
+				              46.07221609224111
+				            ],
+				            [
+				              -118.33228121824635,
+				              46.07221609224111
+				            ]
+				          ]
+				        ]
+				      },
+				      "properties": {
+				        "id": "x38160",
+				        "name": "Tamarac House",
+				        "tags": [
+				          "Residence Halls",
+				          ""
+				        ],
+				        "objectType": "building",
+				        "highlighted": false
+				      }
+				    },
+				    {
+				      "type": "Feature",
+				      "geometry": {
+				        "type": "Polygon",
+				        "coordinates": [
+				          [
+				            [
+				              -118.32745893386846,
+				              46.07353928993174
+				            ],
+				            [
+				              -118.32698556448747,
+				              46.07356731485317
+				            ],
+				            [
+				              -118.32696886144652,
+				              46.07339971894547
+				            ],
+				            [
+				              -118.32744386640945,
+				              46.073372554913576
+				            ],
+				            [
+				              -118.32745893386846,
+				              46.07353928993174
+				            ]
+				          ]
+				        ]
+				      },
+				      "properties": {
+				        "id": "x37209",
+				        "name": "Tau Kappa Epsilon",
+				        "tags": [
+				          "Greek Housing",
+				          ""
+				        ],
+				        "objectType": "building",
+				        "highlighted": false
+				      }
+				    },
+				    {
+				      "type": "Feature",
+				      "geometry": {
+				        "type": "Polygon",
+				        "coordinates": [
+				          [
+				            [
+				              -118.32563417790982,
+				              46.071833633583594
+				            ],
+				            [
+				              -118.32540954232792,
+				              46.07184602558815
+				            ],
+				            [
+				              -118.32537995337287,
+				              46.07164
+				            ],
+				            [
+				              -118.32561363558204,
+				              46.07163074725063
+				            ],
+				            [
+				              -118.32563417790982,
+				              46.071833633583594
+				            ]
+				          ]
+				        ]
+				      },
+				      "properties": {
+				        "id": "x37210",
+				        "name": "Tekisuijuku",
+				        "tags": [
+				          "Interest Houses",
+				          ""
+				        ],
+				        "objectType": "building",
+				        "highlighted": false
+				      }
+				    },
+				    {
+				      "type": "Feature",
+				      "geometry": {
+				        "type": "Polygon",
+				        "coordinates": [
+				          [
+				            [
+				              -118.32635295337298,
+				              46.070372051875054
+				            ],
+				            [
+				              -118.32620290674595,
+				              46.07037391272284
+				            ],
+				            [
+				              -118.32620895337288,
+				              46.07021563451101
+				            ],
+				            [
+				              -118.32614390674593,
+				              46.07021563451096
+				            ],
+				            [
+				              -118.32613654232779,
+				              46.07000986086007
+				            ],
+				            [
+				              -118.32654931779098,
+				              46.07001186085997
+				            ],
+				            [
+				              -118.32655199999999,
+				              46.07021263451268
+				            ],
+				            [
+				              -118.32635595337297,
+				              46.0702183562176
+				            ],
+				            [
+				              -118.32635295337298,
+				              46.070372051875054
+				            ]
+				          ]
+				        ]
+				      },
+				      "properties": {
+				        "id": "x37211",
+				        "name": "Welty Student Health Center",
+				        "tags": [
+				          "Administration",
+				          ""
+				        ],
+				        "objectType": "building",
+				        "highlighted": false
+				      }
+				    },
+				    {
+				      "type": "Feature",
+				      "geometry": {
+				        "type": "Polygon",
+				        "coordinates": [
+				          [
+				            [
+				              -118.32779472883607,
+				              46.06883363530302
+				            ],
+				            [
+				              -118.32779404662716,
+				              46.06873230451608
+				            ],
+				            [
+				              -118.32757763558197,
+				              46.06873244361273
+				            ],
+				            [
+				              -118.32757795337295,
+				              46.068834635302466
+				            ],
+				            [
+				              -118.32779472883607,
+				              46.06883363530302
+				            ]
+				          ]
+				        ]
+				      },
+				      "properties": {
+				        "id": "x37156",
+				        "name": "Writing House",
+				        "tags": [
+				          "Interest Houses",
+				          ""
+				        ],
+				        "objectType": "building",
+				        "highlighted": false
+				      }
+				    },
+				    {
+				      "type": "Feature",
+				      "geometry": {
+				        "type": "Polygon",
+				        "coordinates": [
+				          [
+				            [
+				              -118.33386915973279,
+				              46.070930500703426
+				            ],
+				            [
+				              -118.33331356714245,
+				              46.070647864820955
+				            ],
+				            [
+				              -118.33367613163,
+				              46.070467236167254
+				            ],
+				            [
+				              -118.33413180027782,
+				              46.070715100220006
+				            ],
+				            [
+				              -118.33386915973279,
+				              46.070930500703426
+				            ]
+				          ]
+				        ]
+				      },
+				      "properties": {
+				        "id": "x38977",
+				        "name": "WCTS Building",
+				        "tags": [
+				          ""
+				        ],
+				        "objectType": "building",
+				        "highlighted": true
+				      }
+				    }
+				  ]
+				};
+			</script>
+
+			<script type="text/javascript">
+				(function(){
+					var mapParams = {
+						places:mapPlaces,
+						points:mapPoints,
+						mapTileFolder:'images_map/map/MapTiles111617',
+						imagesUrl:'images_map/',
+						center:{lat:46.070919,long:-118.330110}
+					};
+					$('#wc-map').data('mapParams',mapParams);
+				})();
+			</script>
+		
+			<div class="wc-map-box" id="wc-map-box">
+			</div>
+
+			<div aria-hidden="true" class="wc-hidden" id="wc-mc-descriptions-queue">
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37156">
+				<p>The Writing House provides a strong creative atmosphere for students to live together and improve their writing abilities. The house has four bedrooms with space for an average of six residents and one Resident Assistant.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37157">
+				<img alt="Amphitheatre" class="wc-mc-feature-image" src="https://www.whitman.edu/assets/images/Map/amphitheatre.jpg?_previewAsset_=true">
+				<p>Many plays and musical performances take place at Whitman's outdoor amphitheatre. It's also a wonderful place for studying or quiet reflection.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37158">
+				<img alt="Anderson Hall" class="wc-mc-feature-image" src="https://www.whitman.edu/assets/images/Map/anderson.jpg?_previewAsset_=true">
+				<p>Anderson Hall houses mostly first-year students. Anderson features a large central lounge with floor-to-ceiling windows, a fireplace, and a big backyard complete with a sand volleyball court.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37159">
+				<p>Ankeny Field is a gathering place for students. It's used as a sporting field and a place to study and hang out with friends.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37160">
+				<p>The Asian Studies House is a residential house affiliated with the Chinese and Asian Studies departments and is assigned an adviser from the Chinese department.</p>
+				<h4>More Information</h4>
+				<ul>
+					<li>
+						<a href="x4255.xml" title="Asian Studies House">Asian Studies House</a>
+					</li>
+				</ul>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37161">
+				<p>The Athletics Fields are located about three blocks north of Whitman's campus, next to DeSales High School and at the end of Penrose Street.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37162">
+				<img alt="Baker Center" class="wc-mc-feature-image" src="https://www.whitman.edu/assets/images/Map/baker-center.jpg?_previewAsset_=true">
+				<p>Baker Center is home to the Alumni Relations and Annual Giving offices. Dining services are offered during the academic year to faculty and staff members and their guests.</p>
+				<h4>More Information</h4>
+				<ul>
+					<li>
+						<a href="x36198.xml" title="Alumni Relations">Alumni Relations</a>
+					</li>
+					<li>
+						<a href="x36198.xml" title="Alumni Relations"></a><a href="x10040.xml" title="Annual Giving">Annual Giving</a>
+					</li>
+				</ul>
+				<p></p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37163">
+				<img alt="Baker Ferguson Fitness Center" class="wc-mc-feature-image" src="https://www.whitman.edu/assets/images/Map/bffc.jpg?_previewAsset_=true">
+				<p>The Baker Ferguson Fitness Center is a 38,000-square-foot, state-of-the-art facility which is open to Whitman students, faculty and staff members, and alumni.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37164">
+				<p>The Beta Theta Pi chapter at Whitman College was founded in 1913. The chapter house was built in 1938 and houses approximately 24 students.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37165">
+				<p>Borleske Stadium is home to Whitman College's basebal team. The stadium was named for legendary athlete and coach Raymond V. Borleske '10.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37166">
+				<p>The staff members of Whitman's Office of Communications work in Boyer House. Mailing Services is located on the ground floor.</p>
+				<h4>More Information</h4>
+				<ul>
+					<li>
+						<a href="x36486.xml" title="Office of Communications">Office of Communications</a>
+					</li>
+					<li>
+						<a href="x25033.xml" title="Printing Services">Printing Services</a>
+					</li>
+					<li>
+						<a href="x25036.xml" title="Mailing Services">Mailing Services</a>
+					</li>
+				</ul>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37167">
+				<p>The Bracher Observatory, which is 9 miles north of town on Erickson Farm, has a 16-inch Newtonian telescope.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37168">
+				<img alt="Bratton Indoor Tennis Center" class="wc-mc-feature-image" src="https://www.whitman.edu/assets/images/Map/bratton.jpg?_previewAsset_=true">
+				<p>The Bratton Tennis Center, named in honor of former Whitman College president Walter A. Bratton, has four indoor tennis courts.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37169">
+				<img alt="College House" class="wc-mc-feature-image" src="https://www.whitman.edu/assets/images/Map/college.jpg?_previewAsset_=true">
+				<p>College House is a residence hall available to sophomores, juniors, and seniors. It houses approximately 35 students.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37170">
+				<p>The Community Service Interest House focuses on promoting community service to Whitman students. The house has five bedrooms and houses an average of seven residents and one resident assistant.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37213">
+				<img alt="Cordiner Glen" class="wc-mc-feature-image" src="https://www.whitman.edu/assets/images/Map/narnia1.jpg?_previewAsset_=true">
+				<p>A beautiful, park-like location along College Creek near Penrose House. It is often referred to as "Narnia."</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37171">
+				<img alt="Cordiner Hal" class="wc-mc-feature-image" src="https://www.whitman.edu/assets/images/Map/cordiner.jpg?_previewAsset_=true">
+				<p>Cordiner Hall is the main auditorium for the Whitman campus. The building is used for ceremonies, speeches, and performances.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37172">
+				<p>The Dance Studio serves as both a classroom and a performance space for Whitman's dance program.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37173">
+				<p>Das Deutsche Haus (The German House) has five bedrooms and comfortably houses an average of seven residents, one Resident Assistant, and a language assistant. This house focuses on German culture-oriented interests.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37174">
+				<img alt="William O. Douglas Hall" class="wc-mc-feature-image" src="https://www.whitman.edu/assets/images/Map/douglas.jpg?_previewAsset_=true">
+				<p>Douglas Hall, named for Supreme Court justice and Whitman alumnus William O. Douglas, is a residence hall for upperclass students. There are 10 single rooms available in the hall, and nine suites which house eight students each. Each suite has two bathrooms, a kitchenette, lounge, and laundry facilities.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37175">
+				<p>The Environmental House, more commonly known as the “Outhouse,” has six bedrooms and houses an average of eight residents and one Resident Assistant. The Outhouse focuses on environmental and ecological issues and spearheads the campus’ recycling program.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37176">
+				<p>The Fine Arts House (FAH) has four bedrooms and houses an average of six to eight residents and one Resident Assistant. The residents of the Fine Arts House work to promote programs emphasizing studio art, theatre, and music.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37177">
+				<img alt="Fouts Center for Visual Arts" class="wc-mc-feature-image" src="https://www.whitman.edu/assets/images/Map/fouts-center-for-the-arts.jpg?_previewAsset_=true">
+				<p>The Fouts Center for the Visual Arts is a 38,000-square-foot facility that provides space for the college's visual arts program. Fouts has studio space for different disciplines, a digital arts lab, student studio spaces, and a gallery where student work is often exhibited.</p>
+				<h4>More Information</h4>
+				<ul>
+					<li>
+						<a href="x26125.xml" title="Fouts Center for Visual Arts">Fouts Center for Visual Arts</a>
+					</li>
+					<li>
+						<a href="x36373.xml" title="Art Department">Art Department</a>
+					</li>
+				</ul>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37178">
+				<p>The Global Awareness House has four bedrooms and &nbsp;houses an average of five residents and one Resident Assistant. Residents of the Global Awareness House focus on raising campus awareness about world issues such as hunger, population, and human rights.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37179">
+				<p>The Glover Alston Center provides a safe space for meaningful conversation and interaction to facilitate Whitman’s commitment to sustaining a diverse community. Many programs that are sponsored by the Intercultural Center and various student groups take place at the GAC.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37180">
+				<img alt="Hall of Music" class="wc-mc-feature-image" src="https://www.whitman.edu/assets/images/Map/music.jpg?_previewAsset_=true">
+				<p>The Hall of Music features Chism Recital Hall, a 300-seat performance space, as well as a listening center, an electronic music studio, 14 teaching studios, and 25 practice rooms.</p>
+				<h4>More Information</h4>
+				<ul>
+					<li>
+						<a href="x27982.xml" title="Music Department">Music Department</a>
+					</li>
+				</ul>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37181">
+				<img alt="Hall of Science" class="wc-mc-feature-image" src="https://www.whitman.edu/assets/images/Map/science2.jpg?_previewAsset_=true">
+				<p>The Hall of Science houses the departments of astronomy, biology, chemistry, geology and physics. Facilities include a roof-top garden, a greenhouse, Brattain Auditorium, an astronomy observation lab, and state-of-the art science equipment such as a scanning electron microscope and confocal microscope.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37182">
+				<img alt="Harper Joy Theatre" class="wc-mc-feature-image" src="https://www.whitman.edu/assets/images/Map/harper-joy.jpg?_previewAsset_=true">
+				<p>The Harper Joy Theatre has two performance spaces, the 310-seat Alexander Stage and the Freimann Studio Theatre. HJT also has an acting studio which serves as its primary acting classroom, a scene shop, a design classroom and computer lab, and a costume shop.</p>
+				<h4>More Information</h4>
+				<ul>
+					<li>
+						<a href="https://www.whitman.edu/hjt/" title="Harper Joy Theatre">Harper Joy Theatre</a>
+					</li>
+					<li>
+						<a href="x9996.xml" title="Theatre and Dance">Theatre and Dance Department</a>
+					</li>
+				</ul>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37183">
+				<img alt="Hunter Conservatory" class="wc-mc-feature-image" src="https://www.whitman.edu/assets/images/Map/hunter.jpg?_previewAsset_=true">
+				<p>Hunter Conservatory houses the 75-seat Kimball Auditorium as well as offices for Whitman's Film and Media Studies professors and for part of the Whitman College Technology Services department.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37184">
+				<img alt="Jewett Hall" class="wc-mc-feature-image" src="https://www.whitman.edu/assets/images/Map/jewett.jpg?_previewAsset_=true">
+				<p>Jewett Hall is a traditional residence hall which houses approximately 170 first year students. It has spacious lounges with kitchen space, a recreation room, and a free laundry room.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37185">
+				<p>La Casa Hispana (The Spanish House) has five bedrooms and houses an average of seven residents and one Resident Assistant. A native speaker also resides in La Casa.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37186">
+				<p>La Maison Française (The French House) has seven bedrooms and comfortably houses an average of eight to nine residents, one Resident Assistant, and a native speaker.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37187">
+				<img alt="Lakum Duckum" class="wc-mc-feature-image" src="https://www.whitman.edu/assets/images/Map/lakum-duckum.jpg?_previewAsset_=true">
+				<p>Lakum Duckum is a pond located between Maxey Hall and Mem which is heated by a nearby geothermal spring. Stone benches provide a peaceful place to relax or study.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37188">
+				<img alt="Lyman House" class="wc-mc-feature-image" src="https://www.whitman.edu/assets/images/Map/lyman.jpg?_previewAsset_=true">
+				<p>Lyman House is a mixed-class residence hall with two-room suites. Lyman houses 89 students.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37189">
+				<p>Marcus House is a residence hall that houses up to 27 upper-class students. The house has single, double and triple rooms.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37190">
+				<p>The MECCA (Multi-Ethnic Center for Cultural Affairs) House has four bedrooms and comfortably houses an average of four residents and one Resident Assistant. This house focuses on raising diversity awareness on Whitman's campus by celebrating and promoting different cultures.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37191">
+				<img alt="Maxey Hall" class="wc-mc-feature-image" src="https://www.whitman.edu/assets/images/Map/maxey.jpg?_previewAsset_=true">
+				<p>Many of the social sciences hold their classes in Maxey Hall. Maxey also has an Auditorium and a museum space.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37193">
+				<p>North Hall is a residence hall choice for up to 70 new, returning, and transfer students who like the feel of a residential neighborhood but still enjoy being part of a larger living community.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37194">
+				<img alt="Olin Hall" class="wc-mc-feature-image" src="https://www.whitman.edu/assets/images/Map/olin.jpg?_previewAsset_=true">
+				<p>Olin Hall is where most mathematics and humanities classes take place. Olin Hall is also home to the Sheehan Art Gallery, and Auditorium, and part of the Whitman College Technology Services Staff.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37196">
+				<p>Whitman's organic garden was created in 1997 by four students. The garden is a space dedicated to spiritual renewal, meaningful labor, community vitality, and sharing healthy practices of cultivating the land. An ASWC sponsored club maintains the garden and organizes events to open the space up to everyone.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37197">
+				<p>The Pacific Northwest Regional Observatory located at Braden Farm near Wallula Gap provides astronomy students the opportunity to use a 30-inch Cassegrain telescope.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37198">
+				<img alt="Penrose House" class="wc-mc-feature-image" src="https://www.whitman.edu/assets/images/Map/penrose-house.jpg?_previewAsset_=true">
+				<p>Penrose House is home to the Admission office. All campus tours start here.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37199">
+				<img alt="Penrose Library" class="wc-mc-feature-image" src="https://www.whitman.edu/assets/images/Map/library.jpg?_previewAsset_=true">
+				<p>Penrose Library serves as a bridge between the Whitman College community—students, faculty, administration, and staff—and the information resources that promote teaching, research and learning.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37200">
+				<p>Whitman's Phi Delta Theta Chapter was established in 1914. The chapter house has a dining room, a study room and a recreation hall with a pool table and ping pong table.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37203">
+				<p>The Physical Plant Services Department is located on Penrose Avenue north of Isaacs. The department is responsible for keeping Whitman working efficiently - from cutting the grass to fixing the heating system, painting the walls to vacuuming the residence halls, and repairing vehicles.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37204">
+				<img alt="Prentiss Hall" class="wc-mc-feature-image" src="https://www.whitman.edu/assets/images/Map/Prentiss.jpg?_previewAsset_=true">
+				<p>Prentiss is an all-women's residence hall that features an attractive arrangement of inner and outer rooms for all doubles, many study rooms, and an AV seminar room. About 145 women live here including sorority members and new students.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37205">
+				<img alt="" class="wc-mc-feature-image" src="https://www.whitman.edu/assets/images/Map/Reid.jpg?_previewAsset_=true">
+				<p>Whitman College's Campus Center is one of the hubs of campus life. It has a cafe, an espresso cart, a tv lounge, and more. The Bookstore, Outdoor Program Rental Shop, Stevens Art Gallery, radio station and Campus Post Office are all located in Reid, as are several administrative offices and student offices.</p>
+				<h4>More Information</h4>
+				<ul>
+					<li>
+						<a href="http://whitman.cafebonappetit.com/cafe/cafe-66/" target="_blank" title="Café '66">Café '66</a>
+					</li>
+					<li>
+						<a href="http://bookstore.whitman.edu/home.aspx" title="Whitman Bookstore">Whitman Book Store</a>
+					</li>
+					<li>
+						<a href="x20485.xml" title="Whitman Outdoor Program">Outdoor Program</a>
+					</li>
+					<li>
+						<a href="http://kwcwradio.tumblr.com/" target="_blank" title="KWCW">KWCW</a>
+					</li>
+					<li>
+						<a href="x34252.xml" title="Campus Post Office">Campus Post Office</a>
+					</li>
+					<li>
+						<a href="x18706.xml" title="Student Engagement Center">Student Engagement Center</a>
+					</li>
+					<li>
+						<a href="x26568.xml" title="Reid Campus Center">Reid Campus Center</a>
+					</li>
+				</ul>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37206">
+				<img alt="Sherwood Athletic Center" class="wc-mc-feature-image" src="https://www.whitman.edu/assets/images/Map/sherwood.jpg?_previewAsset_=true">
+				<p>The Sherwood Athletic Center features a main gym, a multipurpose use space, raquetball courts, and more. The 71,000-square-foot center also has a state-of-the-art indoor climbing wall, team locker room space for varsity programs, and modern athletic training room facilities.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37207">
+				<p>Sherwood House was built in 1922. The house was acquired by Whitman College, and became the residence of the President of Whitman College in 1995.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37208">
+				<p>The Gamma Epsilon Chapter of Sigma Chi was formally installed as a chapter of Sigma Chi at Whitman in 1923.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37209">
+				<p>The Alpha Theta Chapter of Tau Kappa Epsilon was founded at Whitman College in 1930.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37210">
+				<img alt="Tekisuijuku" class="wc-mc-feature-image" src="https://www.whitman.edu/assets/images/Map/tekisuijuku.jpg?_previewAsset_=true">
+				<p>Tekisuijuku (Japanese House) has five bedrooms and comfortably houses an average of five residents, one Resident Assistant and a native speaker. This house focuses on Japanese-oriented interests.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37211">
+				<img alt="Welty Health Center" class="wc-mc-feature-image" src="https://www.whitman.edu/assets/images/Map/Welty0.jpg?_previewAsset_=true">
+				<p>The Welty Student Health Center is a full-service clinic with 12 overnight beds and a nursing staff. A physician is available for examinations and consultations.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37212">
+				<img alt="Outdoor Tennis Courts" class="wc-mc-feature-image" src="https://www.whitman.edu/assets/images/Map/tennis.jpg?_previewAsset_=true">
+				<p>The outdoor tennis courts are located between the Memorial Building and Maxey Hall.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x38160">
+				<p>Tamarac House, a three-story apartment building turned residence hall, is a gateway to the world of nature. Perched on the corner of Park and Main, Tamarac is home to 20 students with a deep and abiding love for outdoor adventure.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37192">
+				<img src="https://www.whitman.edu/assets/images/Map/memorial.jpg?_previewAsset_=true" alt="Whitman Memorial Building" class="wc-mc-feature-image">
+				<p>Whitman College's main administrative building, <a href="www.google.com">but what about this?</a> also known as "Mem," is the oldest building on campus. Mem serves as the administrative hub for the college.</p>
+				<h4>More Information</h4>
+				<ul>
+				<li><a class="wc-mobile-friendly" href="x36441.xml" title="Business Office">Business Office</a></li>
+				<li><a class="wc-mobile-friendly" href="x36305.xml" title="Financial Aid">Financial Aid</a></li>
+				<li><a href="x387.xml" title="Giving">Giving</a></li>
+				<li><a href="x30859.xml" title="Human Resources">Human Resources</a></li>
+				<li><a href="x36533.xml" title="Institutional Research">Institutional Research</a></li>
+				<li><a href="x25558.xml" title="Off Campus Studies">Off Campus Studies</a></li>
+				<li><a href="x36567.xml" title="President's Office">President's Office</a></li>
+				<li><a href="x27702.xml" title="Registrar">Registrar</a></li>
+				</ul>
+			</div>
+</div>
+		</div>
+
+	</div>
+	
+	<!-- Footer -->
+	<footer class="wc-footer" id="wc-footer">
+		<div class="container">
+		
+			<!-- Footer Links -->
+			<div class="wc-row wc-footer-row1" role="navigation">
+				<div class="wc-footer-list-box">
+					<h4 class="wc-list-header" id="footer-menu-1">About Whitman</h4>
+					<ul class="wc-no-style-list" role="menu" aria-labelledby="footer-menu-1">
+						<li role="menuitem"><a>Campus and Community</a></li>
+						<li role="menuitem"><a>Campus Sustainability</a></li>
+						<li role="menuitem"><a>Contact Us</a></li>
+						<li role="menuitem"><a>Facilities</a></li>
+						<li role="menuitem"><a>Fast Facts</a></li>
+						<li role="menuitem"><a href="leadership-and-organization.html">Leadership and Organization</a></li>
+						<li role="menuitem"><a>Offices and Services</a></li>
+					</ul>
+				</div>
+				<div class="wc-footer-list-box">
+					<h4 class="wc-list-header" id="footer-menu-2">Academics</h4>
+					<ul class="wc-no-style-list" role="menu" aria-labelledby="footer-menu-2">
+						<li role="menuitem"><a>Academic Calendar</a></li>
+						<li role="menuitem"><a>Academic Support</a></li>
+						<li role="menuitem"><a>Catalog</a></li>
+						<li role="menuitem"><a href="departments.html">Departments and Programs</a></li>
+						<li role="menuitem"><a>The Faculty</a></li>
+						<li role="menuitem"><a>Liberal Arts Education</a></li>
+						<li role="menuitem"><a>Penrose Library</a></li>
+						<li role="menuitem"><a>Signature Programs</a></li>
+					</ul>
+				</div>
+				<div class="wc-footer-list-box">
+					<h4 class="wc-list-header" id="footer-menu-3">Admission & Aid</h4>
+					<ul class="wc-no-style-list" role="menu" aria-labelledby="footer-menu-3">
+						<li role="menuitem"><a>Apply</a></li>
+						<li role="menuitem"><a>Contact Us</a></li>
+						<li role="menuitem"><a>Financial Aid</a></li>
+						<li role="menuitem"><a>Learn More</a></li>
+						<li role="menuitem"><a>Request Information</a></li>
+						<li role="menuitem"><a>Visit Whitman</a></li>
+						<li role="menuitem"><a>Whitman on the Road</a></li>
+						<li role="menuitem"><a>Why Whitman?</a></li>
+					</ul>
+				</div>
+				<div class="wc-footer-list-box">
+					<h4 class="wc-list-header" id="footer-menu-4">Student Life</h4>
+					<ul class="wc-no-style-list" role="menu" aria-labelledby="footer-menu-4">
+						<li role="menuitem"><a>Career Services</a></li>
+						<li role="menuitem"><a>Club Sports and Intramurals</a></li>
+						<li role="menuitem"><a>Green Life</a></li>
+						<li role="menuitem"><a>Orientation</a></li>
+						<li role="menuitem"><a>Living at Whitman</a></li>
+						<li role="menuitem"><a>Student Activities</a></li>
+						<li role="menuitem"><a>Student Clubs and Organizations</a></li>
+						<li role="menuitem"><a>Student Services</a></li>
+					</ul>
+				</div>
+				<div class="wc-footer-list-box">
+					<h4 class="wc-list-header" id="footer-menu-5">Quick Links</h4>
+					<ul class="wc-no-style-list" role="menu" aria-labelledby="footer-menu-5">
+						<li role="menuitem"><a href="a-to-z-index.html">A to Z Index</a></li>
+						<li role="menuitem"><a>Bookstore</a></li>
+						<li role="menuitem"><a>Campus Map</a></li>
+						<li role="menuitem"><a>Contact Us</a></li>
+						<li role="menuitem"><a>Employment</a></li>
+						<li role="menuitem"><a>Giving</a></li>
+						<li role="menuitem"><a>Grievance and Sexual Misconduct Policy</a></li>
+						<li role="menuitem"><a>Penrose Library</a></li>
+						<li role="menuitem"><a>myWhitman</a></li>
+						<li role="menuitem"><a>Right to Know</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- Logo -->
+			<div class="wc-row wc-footer-row2">
+				<div class="wc-footer-row2-box-a" itemscope itemtype="http://schema.org/CollegeOrUniversity" aria-labelledby="title">
+					<hr />
+					<svg class="wc-footer-logo-flat" viewbox= "0 0 180 15">
+						<use xlink:href="images/svg/svg-defs.svg#logo-whitman-nc-flat"></use>
+						<title id="title">Whitman College</title>
+					</svg>
+					<svg class="wc-footer-logo-stacked" viewbox= "0 0 164 60" aria-hidden="true">
+						<use xlink:href="images/svg/svg-defs.svg#logo-whitman-nc-stacked"></use>
+					</svg>
+					<hr />
+				</div>
+			</div>
+
+
+			<!-- Contact Info -->
+			<div class="wc-row wc-footer-row3" itemscope itemtype="http://schema.org/CollegeOrUniversity">
+				<div class="wc-footer-row3-box-a wc-footer-row3-box" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+					<a href="https://www.google.com/maps/place/Whitman+College/@46.0717833,-118.3304355,16z/data=!4m2!3m1!1s0x0000000000000000:0x8704a8d5077eb801" target="_blank" class="wc-street-address">
+						<svg viewbox= "0 0 32 32">
+							<use xlink:href="images/svg/svg-defs.svg#icon-map-pin"></use>
+						</svg>
+						<span class="wc-text">
+							<span itemprop="streetAddress">345 Boyer Ave. </span>
+							<span><span itemprop="addressLocality">Walla Walla</span>, <span itemprop="addressRegion">WA</span> <span itemprop="postalCode">99362</span></span>
+						</span>
+					</a>
+				</div>
+				<div class="wc-footer-row3-box-b wc-footer-row3-box">
+					<span class="wc-phone-numbers">
+						<svg viewbox= "0 0 32 32">
+							<use xlink:href="images/svg/svg-defs.svg#icon-phone"></use>
+						</svg>
+						<span class="wc-text">
+							<span>General: <span itemprop="telephone">(509) 527-5111</span></span>
+							<span class="wc-bullet">&bull;</span>
+							<span>Admission: <span itemprop="telephone">(509) 527-5176</span></span>
+						</span>
+					</span>
+				</div>
+				<div class="wc-footer-row3-box-c wc-footer-row3-box">
+					<link itemprop="url" href="https://www.whitman.edu">
+					<a title="Whitman College Facebook" itemprop="sameAs" class="wc-social-link" href="https://facebook.com/whitmancollege" target="_blank">
+						<svg viewbox= "0 0 40 40">
+							<use xlink:href="images/svg/svg-defs.svg#icon-facebook"></use>
+						</svg>
+					</a>
+					<a title="Whitman College Twitter" itemprop="sameAs" class="wc-social-link" href="https://twitter.com/whitmancollege" target="_blank">
+						<svg viewbox= "0 0 40 40">
+							<use xlink:href="images/svg/svg-defs.svg#icon-twitter"></use>
+						</svg>
+					</a>
+					<a title="Whitman College YouTube" itemprop="sameAs" class="wc-social-link" href="https://youtube.com/whitmancollege" target="_blank">
+						<svg viewbox= "0 0 40 40">
+							<use xlink:href="images/svg/svg-defs.svg#icon-youtube"></use>
+						</svg>
+					</a>
+					<a title="Whitman College Instagram" itemprop="sameAs" class="wc-social-link" href="https://instagram.com/whitmancollege" target="_blank">
+						<svg viewbox= "0 0 40 40">
+							<use xlink:href="images/svg/svg-defs.svg#icon-instagram"></use>
+						</svg>
+					</a>
+					<a href="social-links.html" title="More Social Media Links" class="wc-more-social-links">
+						<svg viewbox= "0 0 32 32">
+							<use xlink:href="images/svg/svg-defs.svg#icon-arrow-right"></use>
+						</svg>
+					</a>
+				</div>
+			</div>
+
+
+
+
+
+
+
+			<div class="wc-row wc-footer-row4">
+				<div class="wc-footer-row4-box-a" role="contentinfo">
+					<span class="wc-copyright">© Whitman College</span>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="wc-breakpoint-check-box">
+		<div id="wc-breakpoint-check-lg" class="wc-breakpoint-check"></div>
+		<div id="wc-breakpoint-check-md" class="wc-breakpoint-check"></div>
+		<div id="wc-breakpoint-check-sm" class="wc-breakpoint-check"></div>
+		<div id="wc-breakpoint-check-xs" class="wc-breakpoint-check"></div>		
+	</div>
+	<span id="wc-svg-path" data-svg-path="images/svg/svg-defs.svg"></span>
+	<script id="wc-scripts-tag" src="js/wc-scripts.js" type="text/javascript"></script>	
+</body>
+</html>

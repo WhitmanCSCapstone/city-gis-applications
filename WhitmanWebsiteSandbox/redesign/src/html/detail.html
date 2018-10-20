@@ -1,0 +1,43 @@
+include "pieces/layout/header.html"
+	<!-- Content -->
+	<div class="wc-content-wrap wc-standard-layout wc-detail-page-content " >
+		<!-- Title  -->
+		<div class="wc-title-box">
+			<div class="wc-container">
+				<h1 class="wc-page-title">A Detail Page</h1>
+			</div>
+		</div>
+
+		<div class="wc-container">
+			<!-- Breadcrumbs -->
+			include "pieces/layout/breadcrumbs.html"
+
+			<div class="wc-row wc-no-top-gutter">
+
+				include "pieces/layout/left-column.html"
+
+				<!-- Body Copy -->
+				<div class="wc-main-content" role="main" id="wc-reader-content">
+					<div class="wc-row">
+						<div class="wc-body-copy wc-12-col">
+							<style>
+								.wc-body-copy p.bigger{
+									font-size:50px;
+								}
+								.wc-body-copy p.italicsss{
+									font-style:italic;
+								}
+							</style>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam vitae porro quidem repudiandae optio, in temporibus deserunt nesciunt nihil voluptates, saepe sapiente laudantium tempora itaque neque? Amet provident dolore neque.</p>
+							<p class="bigger ">What a thing</p>
+							<p class="bigger italicsss">What a thing</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam vitae porro quidem repudiandae optio, in temporibus deserunt nesciunt nihil voluptates, saepe sapiente laudantium tempora itaque neque? Amet provident dolore neque.</p>
+
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+include "pieces/layout/footer.html"

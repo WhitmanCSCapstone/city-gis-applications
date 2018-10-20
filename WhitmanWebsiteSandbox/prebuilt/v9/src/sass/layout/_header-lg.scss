@@ -1,0 +1,529 @@
+/**********************************
+
+#HEADER-LG
+
+Info
+	Styles for the header on desktop
+
+Notes
+[1] 	Link for skipping to main content
+[2] 	Decided to lose the sticky header on mobile to avoid scrolling problems 
+
+**********************************/
+@media(min-width:$screen-md-min){
+	.wc-header{
+		top: 0;
+		border-width: 0 0 1px;
+		position: fixed;
+		right: 0;
+		left: 0;
+		z-index: 1000;
+	}
+
+	/**********************************
+	#ROW1
+
+	First row of the header, contains the logo, the constituent links and quick links
+	**********************************/
+	.wc-header-row1{
+		overflow: hidden;
+		transition: all 0.5s;
+		.wc-right-box{
+			margin-top:16px;
+		}
+		.wc-container:first-child{
+			@include clearfix();
+			padding-top:.3rem;
+			padding-bottom:.3rem;
+			position:relative;
+		}
+	}
+		
+		/**********************************
+		#LOGO
+
+		Notes
+		[1] 	because IE
+		**********************************/
+		.wc-header-logo-link{
+			display:block;
+			float:left;
+			width: auto;
+		}
+			.wc-desktop-header-logo{
+				padding: 3px 0;
+				height: 63px;
+				max-width:1000px; /*[1]*/
+				display:block;
+				float:left;
+			}
+			.wc-mobile-header-logo{
+				display: none;
+			}
+
+		/**********************************
+		#CONSTITUENT-LINKS
+
+		Notes
+		[1][2] 	Necessary to get rid of the mystery space between inline-block elements
+		**********************************/
+		.wc-constituent-links{
+			display: block;
+			float: left;
+			margin: 8px 12px 0 0;
+			ul{
+				padding:0;
+				margin:0;
+				font-size: 0; /*[1]*/
+			}
+				li{
+						display:inline-block;
+						padding:0;
+						font-size: 0; /*[2]*/ 
+					a{
+						@include clickable($light-gray-2,$white, none);
+						font-weight: 500;
+						text-transform: uppercase;
+						font-size:.65rem;
+						&:hover{
+							text-decoration: underline;
+						}
+					}
+					.wc-bullet{
+						padding: 0 4px;
+					}
+				}
+		}
+		
+		/**********************************
+		#GIVING-BUTTON
+		**********************************/
+		.wc-special-button.wc-box-button{
+			margin: 3px 2px 0 0;
+			padding: .3rem;
+			display: block;
+			float: left;
+			text-transform: uppercase;
+			font-size:.65rem;
+			&:hover{
+				background-color:$gold; //was $white
+				color:$medium-blue;
+				border: 1px solid $gold; // was not previously defined as a hover state
+			}
+		}
+		
+		/**********************************
+		#QUICK-LINKS
+
+		Notes
+		[1] 	Needs to be in a box to deal with firefox's bug with rotating
+				svg's.
+		[2] 	Fixes a bug with chrome's focus box that makes the links in 
+				the move around in their columns
+		**********************************/
+		.wc-quick-links-button{
+			@include button(34px, .65rem, $white,$white);
+			@include spinButtonContainer();
+			display: block;
+			float: left;
+			text-transform: uppercase;
+			.wc-text{
+				margin-left:4px;
+			}
+			.wc-svg-box{ /*[1]*/
+				transform-origin: 50% 50%;
+				display: inline-block;
+			}
+			&:hover{
+				text-decoration: none;
+				svg{
+					fill:$header-icon-hover-color;
+				}
+				.wc-text{
+					color:$header-icon-hover-color;
+				}
+			}
+			&:focus{
+				text-decoration:none;
+			}
+		}
+			.wc-quick-links-section{
+				@include clearfix();
+				float:left;
+				width: 50%;
+				padding:15px 0;
+				.wc-quick-link-columns-text{
+					padding: 0;
+					columns: 140px 3;
+					column-gap: 15px;
+					list-style: none;
+					margin-bottom: 0;
+					li{
+						line-height: 1;
+						margin-bottom: 0.4rem;
+						break-inside:avoid;
+					}
+					a{
+						font-weight:300;
+						&:focus{ /*[2]*/
+							outline:none;
+							color: $powder-blue;
+						}
+					}
+
+				}
+				.wc-icon-quick-link{
+					display:block;
+					float:left;
+					width: 20%;
+					text-decoration: none;				
+					.wc-icon{
+						@include responsiveIcon(66px, 66px, 66px, 72px, $white);
+						display: block;
+						margin: 0 auto;
+					}
+					.wc-icon-inline{
+						@include icon(16px,$white);
+						display: inline-block;
+						margin: 0 auto;
+					}
+					.wc-text{
+						display:block;
+						padding-top: 10px;
+						text-align: center;
+						text-decoration: none;
+					}
+					&:hover{
+						svg{
+							fill:$header-icon-hover-color;
+						}
+						.wc-text{
+							color:$header-icon-hover-color;
+							text-decoration: none;
+						}
+					}
+				}
+				h2, p {
+					font-size: 1rem;
+					margin-top: 0;
+					margin-bottom: $h4-bottom-margin;
+				}
+			}
+			
+			/**********************************
+			#IE8-FALLBACK
+			**********************************/
+			html.no-inlinesvg .wc-quick-links-button, html.no-inlinesvg .wc-quick-links-links{
+				display: none;
+			}
+			.wc-mobile-button{
+				display: none;
+			}
+	
+	/**********************************
+	#ROW2
+	**********************************/
+	.wc-header-row2{
+		background-color:$dark-blue;
+		box-shadow: 0 2px 5px #333;
+		.wc-container:first-child{
+			position:relative;
+		}
+	}
+			
+			/**********************************
+			#MAIN-NAVIGATION
+
+			Notes
+			[1] 	This is the hacky way we're getting these submenus to appear
+					edge-to-edge. The box-shadow can't be any bigger than the box
+					itself, so I'm setting it to 800px conservatively and using multiple
+					of them.
+			**********************************/
+			.wc-main-nav{
+				float:left;
+				ul>li:first-child{
+					.wc-main-nav-primary-category{
+						padding-left:0;
+					}
+				}
+				.wc-main-nav-level-1{
+					margin:0;
+					padding:0 0;
+					> li{
+						display:inline-block;
+						position:static;
+						&:hover{
+							.wc-sub-menu{
+								display:block;
+							}
+						}
+					}
+				}
+				.wc-main-nav-expander{
+					display: none;
+				}
+				.wc-main-nav-primary-category, .wc-main-nav-primary-category span{
+					display: block;
+					font-size: .8rem;
+					letter-spacing: 1px;
+					text-transform: uppercase;
+					@media(min-width:$screen-lg-min){
+						padding:14px 10px;
+					}
+					@media(max-width:$screen-md-max){
+						padding:14px 5px;
+					}
+					&:hover, &:active, &:focus{
+						color:$gold;
+						background-color:inherit;
+						text-decoration: none;
+						cursor: pointer;
+					}
+				}
+				.wc-sub-menu{
+					position:absolute;
+					left:0;
+					top:46px;
+					padding-top:10px;
+					padding-bottom:30px;
+					display:none;
+					max-height:230px;
+					background-color: $dark-blue;
+					box-shadow: $dark-blue 800px 0 0,
+								$dark-blue 1600px 0 0,
+								$dark-blue -800px 0 0,
+								$dark-blue -1600px 0 0; /*[1]*/
+					ul{
+						columns: 4 200px;
+						padding:0 .5rem 0 0;
+						margin: 0;
+						display:block;
+						width:60%;
+						float:left;
+					}
+
+					li{
+						line-height: 1;
+						list-style: none;
+						margin-bottom: 0.4rem;
+						break-inside:avoid;
+					}
+					a{
+						font-weight:300;
+						&:focus{
+							outline:none;
+							color:$powder-blue;
+						}
+					}
+					.wc-feature{
+						width:40%;
+						padding:0;
+						float:left;
+						@include clearfix();
+						img{
+							display:block;
+							float:left;
+							width:150px;
+						}
+						.wc-bb-more-link{
+							width: 100%;
+							display: block;
+							&:hover{
+								text-decoration: none;
+							}
+						}
+					}
+						.wc-feature-text{
+							display:block;
+							float:left;
+							width:222px;
+							padding: 0 0 0 20px;
+							margin:0;
+							p{
+								font-style: italic;
+							}
+						}
+				}
+			}
+
+			/**********************************
+			#SEARCH
+			**********************************/
+			.wc-search-box {
+				background-color: $white;
+				overflow:hidden;
+				position:absolute;
+				right:.5*($grid-gutter-width);
+				margin-top:7px;
+				border:3px solid $dark-blue;
+				padding-right:0;
+				padding-left:0;
+				background-clip: padding-box;
+				@media(max-width:$screen-md-max){
+					width:244px;
+				}
+				@media(min-width:$screen-lg-min){
+					width:358px;
+				}
+				@include roundedCorners();
+				@include clearfix();
+				form{
+					margin:0;
+				    white-space: nowrap;
+				    @include clearfix();
+				}
+				.wc-search-field-box{
+					display: block;
+					float: left;
+					margin-top: 6px;
+					padding: 0 8px;
+					@media(max-width:$screen-md-max){
+						width:96px;
+					}
+					@media(min-width:$screen-lg-min){
+						width:210px;
+					}
+					[type=text] {
+						display: block;
+						width: 100%;
+						border:0;
+						color: $dark-blue;
+						box-sizing: border-box;
+						@media(min-width:$screen-md-min) and (max-width:$screen-md-max){
+							&::placeholder{
+								color:$white;
+							}
+						}
+					}
+				}
+				.wc-search-options-box{
+					width:110px;
+					display: block;
+					float: left;
+					overflow-x:hidden;
+					position: relative;
+					&.wc-hidden-alt{
+						.wc-search-options-inner-box{
+							left:100%;
+						}
+					}
+				}
+					.wc-search-options-inner-box{
+						transition: left 0.5s;
+						position: relative;
+						@include clearfix();
+						left:0;
+						width: 100%;
+					}
+
+				.wc-search-option{
+					display: block;
+					float: left;
+					width: 50%;
+					text-align: center;
+					padding:5px 0;
+					background-color: $white;
+					color: $dark-blue;
+					cursor:pointer;
+					&:hover{
+						background-color: $dark-blue;
+						text-decoration: none;
+						color: $white;
+					}
+					&.wc-highlighted {
+						background-color: $dark-blue;
+						color: $white;
+						text-decoration: none;
+					}
+				}
+				.wc-search-submit-button{
+					&.wc-mobile{
+						display:none;
+					}
+					@include button($iconSize:20px,$color:$dark-blue,$hoverColor:$medium-blue);
+					display: block;
+					float: left;
+				    padding: 2px 6px;
+					vertical-align: middle;
+				}
+				.wc-auto-search-results{
+					display:none;
+					background-color:$white;
+					top:34px;
+					z-index:100;
+					padding:0;
+					border-top:3px solid $dark-blue;
+					a,span{
+						font-size:14px;
+					}
+					ul{
+						padding:0;
+						margin:0;
+					}
+					li {
+						width:100%;
+						display:block;
+						padding:8px;
+						&:hover, &.wc-selected{
+							background-color:$powder-blue;
+							.wc-link-title, &.wc-email-link{
+								text-decoration:underline;
+								.wc-note{
+									text-decoration:none;
+								}
+							}
+						}
+					}
+					a{
+						cursor: pointer;
+						display:block;
+						width:100%;
+						text-decoration: none;
+					}
+					.wc-link-title, .wc-person-name, .wc-more-results{
+						font-size:16px;
+						font-weight:600;
+						color:$medium-blue;
+						display:block;
+						.wc-note{
+							&:before{
+								content:"(";
+							}
+							&:after{
+								content:")";
+							}
+							color:$merlot;
+							text-transform:uppercase;
+							margin-right:5px;
+							font-weight:normal;
+							display:inline-block;
+						}
+					}
+					.wc-person-email, .wc-person-phone{
+						padding:0;
+						display:block;
+						width:100%;
+					}
+					.wc-link-desc, .wc-person-title, .wc-person-phone{
+						color:$dark-gray;
+						font-weight:400;
+					}
+					.wc-person-email{
+						color:$medium-blue;
+					}
+					.wc-ajax-loader{
+						display: none;
+						margin: 8px auto;
+					}
+					.wc-more-results{
+						padding-bottom:14px;
+						&:hover{
+							text-decoration: underline;
+						}
+					}
+				}
+			}
+}
+
+

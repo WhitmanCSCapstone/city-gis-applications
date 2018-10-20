@@ -1,0 +1,194 @@
+<!-- Note that this doesn't have its own schema or view in Ingeniux, we're just pasting it into a body copy component  -->
+<div class="wc-body-copy-component wc-component wc-half-component wc-promo wc-extra-space">
+	<h2 class="wc-promo-heading">More Information</h2>
+	<script>
+		/**********************************
+		Admission more information form
+
+		Info
+		[-] 	Using this JS to load the second form after the first
+				one is submitted, and then hide a few things to make
+				it flow nice. The two forms are seperate in slate, so we're
+				copying the email address from the first form and then pasting
+				it into the second form and hiding the email field, so they can
+				use this to match up the data on the Slate side.
+		[-]		Putting these commnets up here so they're not on the live page
+
+		Notes
+		[1] 	Store the value of the email here.
+		[2] 	There's a test and a live verstion of each of the two forms, these
+				objects hold the info for them.
+		[3]	 	The ID for the div.form_question that the email field is in
+		[4]		To detect when the form has been submitted we're using ID's within
+				the span of the "thanks for submitting..." messages. These are those
+				ID's
+		[5] 	Use this to switch between the live or test forms
+		[6] 	We're using mutation observers to detect when elements have been
+				added to the page so we can know when the forms have been loaded.
+				In this case "when the email address field has been added then we know
+				the first form is loaded"
+		[8] 	For some reason the form scrolls down the page after it's submitted
+				so we're trying to fix that here
+		[9] 	Removes the "Address" title for the form
+		[10] 	Fixes bug where the school suggestion box sticks
+
+		Toubleshooting Notes
+		[ts1][ts2]	Fields for checking to make sure the email address is being 
+					captured.
+		[ts3] 		Writing the email address to the test field to make sure that
+					it's being recorded ok. If we're not having any trouble with
+					the email address being carried over to the second form, 
+					feel free to remove this.
+		**********************************/	
+	</script>
+
+	<!-- begin body copy field -->
+	<script>
+		$(function(){
+			var firstFormSubmitted = false;
+			var secondFormSubmitted = false;
+			var emailValue = '';/*[1]*/
+			var $theBox = $('#wc-admission-contact-form-box');
+			var $stuffToHide = $();
+			var form2Header = '#wc-form2-header';
+			var form2Blurb = '.wc-form2-blurb';
+
+			var testForm1 = { /*[2]*/
+				emailField:'#form_828a9464-d464-46aa-ac71-581dc386ef9a',
+				emailFieldBox:'#form_question_828a9464-d464-46aa-ac71-581dc386ef9a', /*[3]*/
+				testDataField:'#form_fa87079b-9608-4b03-b95c-f4686bdc36c5', /*[ts1]*/
+				formBox:'#wc-form1-box',
+				script:'https://whi.test.technolutions.net/register/?id=645c8181-0b75-43fd-ac97-ad3097601f55&amp;output=embed&amp;div=wc-form1-box',
+				completionMessage:'#wc-admission-form-1' /*[4]*/
+			}
+			var testForm2 = {
+				emailField:'#form_11d18654-6615-4146-8758-09166974465b',
+				emailFieldBox:'#form_question_11d18654-6615-4146-8758-09166974465b',
+				formBox:'#wc-form2-box',
+				script:'https://whi.test.technolutions.net/register/?id=8d3b79b9-0df1-4d2f-88f2-aa9f8063dad6&amp;output=embed&amp;div=wc-form2-box',
+				completionMessage:'#wc-admission-form-2'
+			}
+
+			var liveForm1 = {
+				emailField:'#form_828a9464-d464-46aa-ac71-581dc386ef9a',
+				emailFieldBox:'#form_question_828a9464-d464-46aa-ac71-581dc386ef9a',
+				testDataField:'#form_68c49338-35cc-4859-8f8a-c21a3d477e7a', /*[ts2]*/
+				formBox:'#wc-form1-box',
+				script:'https://engage.whitman.edu/register/?id=645c8181-0b75-43fd-ac97-ad3097601f55&amp;output=embed&amp;div=wc-form1-box',
+				completionMessage:'#wc-admission-form-1'
+			}
+			var liveForm2 = {
+				emailField:'#form_11d18654-6615-4146-8758-09166974465b',
+				emailFieldBox:'#form_question_11d18654-6615-4146-8758-09166974465b',
+				formBox:'#wc-form2-box',
+				script:'https://engage.whitman.edu/register/?id=8d3b79b9-0df1-4d2f-88f2-aa9f8063dad6&amp;output=embed&amp;div=wc-form2-box',
+				completionMessage:'#wc-admission-form-2'
+			}
+
+			var form1 = testForm1; /*[5]*/
+			var form2 = testForm2;
+
+			if(!Globals.s.isIE || Globals.s.ieVersion > 10){
+				var config = { childList: true, subtree:true};
+				var theObserver = new MutationObserver(function(mutations){ /*[6]*/
+					mutations.forEach(function(mutation){
+						if(firstFormSubmitted === false){
+							if($(mutation.addedNodes).find(form1.emailField).length >0 ){ /*[7]*/
+								$stuffToHide = $stuffToHide
+									.add('#wc-form1-blurb');
+								$(form1.emailField).on('input',function(){
+									emailValue = $(form1.emailField).val();
+									if(form1.testDataField && $(form1.testDataField)){ /*[ts3]*/
+										$(form1.testDataField).val(emailValue);
+									}
+								});
+							}
+							else if($(mutation.addedNodes).find(form1.completionMessage).length >0 ){
+								firstFormSubmitted = true;
+								$(form1.emailField).off('input');
+								if(Globals.s.breakpointChecks.sm){
+									window.scrollTo(0,$theBox.offset().top - 400); /*[8]*/
+								}
+								else{
+									window.scrollTo(0,$theBox.offset().top - 200);
+								}
+								Globals.addScript(form2.script);
+							}
+						}
+						else if(firstFormSubmitted === true){
+							if($(mutation.addedNodes).find(form2.emailField).length >0){
+								$(form2.emailField).val(emailValue);
+								$('#wc-form2-outer-box').removeClass('wc-hidden');
+								$stuffToHide = $stuffToHide
+											.add(form2.emailFieldBox)
+											.add(form2.formBox + ' legend') /*[9]*/
+											.add('.suggest'); /*[10]*/
+								$stuffToHide.addClass('wc-hidden');
+							}
+							else if($(mutation.addedNodes).find(form2.completionMessage).length >0){
+								$stuffToHide = $(form1.formBox);
+								$stuffToHide.addClass('wc-hidden');
+								$(form2Blurb).remove();
+								$(form2Header).remove();
+								if(Globals.s.breakpointChecks.sm){
+									window.scrollTo(0,$theBox.offset().top - 400);
+								}
+								else{
+									window.scrollTo(0,$theBox.offset().top - 200);
+								}
+							}
+						}
+					})
+				});
+
+				theObserver.observe($theBox[0],config);
+			}
+
+			setTimeout(function() {
+				Globals.addScript(form1.script);
+			}, 1000);
+		});
+	</script>
+	<p id="wc-form1-blurb">Fill out the form below and we'll send you more information about Whitman.</p>
+	<div class="wc-admission-contact-form-box" id="wc-admission-contact-form-box">
+		<div class="wc-no-fastclick" id="wc-form1-box">Loading...</div>
+		<div class="wc-hidden wc-form2-outer-box" id="wc-form2-outer-box">
+			<p class="wc-form2-blurb">
+				<img src="../../../images/viewbookcover.jpg" class="wc-info-form-viewbook-image" alt="">
+				<!-- <img alt="Whitman College Viewbook" class="wc-info-form-viewbook-image" src="Images/Admissions/Promos/viewbookcover.jpg" title="Whitman College Viewbook" /> -->
+				If you'd like a copy of the Whitman College Viewbook, fill out the address form below and we'll send one your way.
+			</p>
+			<button class="wc-form2-header wc-text-spin-button collapsed" id="wc-form2-header" data-toggle="collapse" data-target="#wc-form2-box" aria-expanded="false">
+				<h3 class="wc-text">Address Form</h3>
+				<svg class="wc-icon" viewBox="0 0 32 32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/svg/svg-defs.svg#icon-arrow-down"></use></svg>	
+				<!-- <svg class="wc-icon" viewBox="0 0 32 32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/prebuilt/v9/dist/svg/svg-defs.svg?v=10#icon-arrow-down"></use></svg>	 -->
+			</button>
+			<div class="wc-no-fastclick collapse" id="wc-form2-box">Loading...</div>
+		</div>
+	</div>
+	<style type="text/css">
+		button:focus{
+			background-color:transparent;
+		}
+		.wc-info-form-viewbook-image{
+			float:left;
+			width: 150px;
+			margin:6px 18px 0 0;
+		}
+		.wc-form2-outer-box{
+			margin-top:1rem;
+		}
+		.wc-form2-header{
+			display:block;
+			width: 280px;
+			margin-right:auto;
+			margin-left:auto;
+			clear:both;
+		}
+		.wc-form2-header .wc-text{
+			max-width:100%;
+			margin: 0;
+		}
+	</style>
+	<!-- end body copy field -->
+</div>

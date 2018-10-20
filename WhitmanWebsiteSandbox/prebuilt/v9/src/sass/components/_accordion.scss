@@ -1,0 +1,75 @@
+/**********************************
+#ACCORDION-COMPONENT
+
+Info
+	Styles for the accordion component
+**********************************/
+
+
+/**********************************
+#ACCORDION 
+
+Notes
+[1] 	Yes, this is its only purpose.
+[2] 	It's necessary to put the svg in a box because
+		firefox fails at rotating svg's
+**********************************/
+.wc-accordion-component{
+	.wc-accordion-box{
+		border-bottom:1px solid $medium-blue; /*[1]*/
+	}
+	.wc-accordion-header{
+		display:block;
+		width:100%;
+		padding:.6em .4rem;
+		border-top:1px solid $medium-blue;
+		font-weight:400;
+		text-align: left;
+		@include button(28px,$h2-font-size,$medium-blue,$medium-blue);
+		@include clearfix();
+		.wc-text{
+			margin: 0;
+			max-width: 80%;
+			line-height: 1.2;
+		}
+		&:hover,&:focus{
+			background-color:$light-gray-2;
+		}
+		&.wc-mobile-only{
+			@extend .hidden-md;
+			@extend .hidden-lg;
+		}
+		&:not(.collapsed){
+			.wc-icon-box{
+				transform:rotate(180deg);
+			}
+		}
+		.wc-icon-box{
+			transition:.3s all;
+			float: right;
+			margin-top: 6px;
+			svg{
+				display:block;
+			}
+		}
+	}
+	.wc-accordion-slide{
+		@include clearfix();
+		padding: .4rem 1rem;
+		>*{
+			margin-top:0;
+		}
+	}
+}
+
+/**********************************
+#IE8-FALLBACK
+**********************************/
+html.no-rgba .wc-accordion-component{
+	.wc-accordion-header{
+		display: block !important;
+	}
+	.collapse{
+		display: block;
+	}
+}

@@ -1,0 +1,29 @@
+<!--Note that this doesn't have its own schema or view in Ingeniux, we're just pasting it into a body copy component   -->
+<div class="wc-body-copy-component wc-component wc-full-component wc-promo wc-light-heading">
+	<h2 class="wc-promo-heading">Instagram</h2>
+	<!-- begin body copy field -->
+	<div class="wc-instagram-box wc-same-height-group-a" id="instagrammmm">
+	</div>
+	<script>
+		(function(){
+			var params = {
+				userOptions:{ /*For the user method*/
+					userID:'378868466' /*only required for user-based queries*/
+				},
+				tagOptions:{ /*For the tag method*/
+					tag:'whitmancollege', /*Search for this tag*/
+					users:['378868466','278631599','504704385'] /*Filter by these users (not required) */
+				},
+				method:'user', //'user',
+				accessToken:'378868466.ba4c844.2e8c3dce467f4295a66837cc26be8937',
+				imageCount:6
+			}
+			$('#instagrammmm').data('instagramParams',params);
+		})();
+	</script>
+	<!-- end body copy field -->
+	<div class="wc-bottom-box">
+		<a href="http://whitman-math.tumblr.com" target="_blank" class="wc-box-button wc-bb-more-link" title="More Posts">More Posts</a>	
+	</div>
+</div>
+

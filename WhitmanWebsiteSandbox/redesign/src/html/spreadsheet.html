@@ -1,0 +1,55 @@
+include "pieces/layout/header.html"
+
+	<!-- Content -->
+	<div class="wc-content-wrap wc-standard-layout" >
+		<!-- Title  -->
+		<div class="wc-title-box">
+			<div class="wc-container">
+				<h1 class="wc-page-title">Data data data</h1>
+			</div>
+		</div>
+
+		<div class="wc-container">
+			<!-- Breadcrumbs -->
+			<div class="wc-row wc-breadcrumbs" role="navigation">
+				<a href="index.html"><svg viewbox="0 0 21 21 "><use xlink:href="images/svg/svg-defs.svg#icon-home"></use></svg></a>
+				<span>&raquo;</span>
+				<span>About Whitman</span>
+				<span>&raquo;</span>
+				<span>Campus and Community</span>
+			</div>
+			<div class="wc-row wc-no-top-gutter">
+			
+				include "pieces/layout/left-column.html"
+				
+				<!-- Body Copy -->
+				<div class="wc-main-content" id="wc-reader-content" role="main">
+
+					<div class="wc-row wc-component-row">
+						<div class="wc-spreadsheet-component wc-component wc-full-component" id="whatASpreadsheet">	
+							<script>
+								(function(){
+									var params = {
+										docID:'1Q69YsIXzU_544EkMd02_rZGenbPWjEb-fu9ThKwgw5s',
+										sheetName:'wcSheet2',
+										rangeStart:'A',
+										rangeEnd:'E',
+										responsive:'true',
+										paging:'true',
+										truncateColumns:'E', //ex. B,E
+										hideColumns:'C,E', //ex. B,E
+										truncateLength:'40',
+										searching:'true'
+									};
+									$('#whatASpreadsheet').data('sParams',params);
+								})();
+							</script>
+							<table class="wc-spreadsheet-table wc-no-mobile-collapse wc-no-stripes" id="first-table"></table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+include "pieces/layout/footer.html"

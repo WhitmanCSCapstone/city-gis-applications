@@ -1,0 +1,619 @@
+/**********************************
+	
+#BASE-STYLES
+
+Info
+	Setting the default styles for elements.
+
+Notes
+[-] 	A lot of this is taken from Bootstrap.
+[1]     Used for sticky footer. Also see .wc-content-wrap in _content.scsss
+[2]     Necessary for certain JS events to work on links with inline svg. Note
+		that I'm pretty sure this means you can't setup any JS event handling
+		on svg's themselves, so always use a parent element (like the <button>
+		or <a> that contains it). See the "Gotcha Four" section
+		here - https://css-tricks.com/gotchas-on-getting-svg-into-production/
+**********************************/
+* {
+	@include box-sizing(border-box);
+}
+
+*:before,
+*:after {
+	@include box-sizing(border-box);
+}
+
+body {
+	margin: 0;
+	min-height: 100%; /*[1]*/
+	background-color: $white;
+	font-size: $font-size-base;
+	line-height: $line-height-base;
+	color: $base-font-color;
+}
+
+html {
+	font-family: $font-family-sans-serif;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	min-height: 100%; /*[1]*/
+	@include responsiveFontSize($base-font-size-xs,$base-font-size-sm,$base-font-size-md,$base-font-size-lg);
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+//
+// Correct `block` display not defined for any HTML5 element in IE 8/9.
+// Correct `block` display not defined for `details` or `summary` in IE 10/11
+// and Firefox.
+// Correct `block` display not defined for `main` in IE 11.
+//
+
+article,
+aside,
+details,
+figcaption,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+	display: block;
+}
+
+canvas,
+progress,
+video {
+	display: inline-block; // Correct `inline-block` display not defined in IE 8/9.
+	vertical-align: baseline; // Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+}
+//
+// Prevent modern browsers from displaying `audio` without controls.
+// Remove excess height in iOS 5 devices.
+//
+
+audio {
+	display: inline-block; // Correct `inline-block` display not defined in IE 8/9.
+	vertical-align: baseline; // Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+	&:not([controls]) {
+		display: none;
+		height: 0;
+	}
+}
+
+//
+// Address `[hidden]` styling not present in IE 8/9/10.
+// Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+//
+
+[hidden],
+template {
+	display: none;
+}
+// Forms
+// ==========================================================================
+
+//
+// Known limitation: by default, Chrome and Safari on OS X allow very limited
+// styling of `select`, unless a `border` property is set.
+//
+
+
+textarea {
+	color: inherit;
+	font: inherit;
+	margin: 0;
+	overflow: auto;
+}
+
+optgroup {
+  color: inherit; 
+  font: inherit; 
+  margin: 0;
+  font-weight: bold;
+}
+
+select {
+	color: inherit;
+  font: inherit; 
+  margin: 0; 
+  text-transform: none; //force select not to inherit text-transform values in all browsers, consistent with other form elements
+}
+
+input {
+	color: inherit;
+	font: inherit;
+	margin: 0;
+	line-height: normal;
+}
+
+button {
+  color: inherit; 
+  font: inherit; 
+  margin: 0; 
+	overflow: visible;
+	background-color: inherit;
+	border: 0;
+  text-transform: none; //force button not to inherit text-transform values in all browsers, consistent with other form elements
+  -webkit-appearance: button; // 2
+  cursor: pointer; // 3
+}
+
+//
+// 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+//    and `video` controls.
+// 2. Correct inability to style clickable `input` types in iOS.
+// 3. Improve usability and consistency of cursor style between image-type
+//    `input` and others.
+//
+
+html input[type="button"], // 1
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button; // 2
+  cursor: pointer; // 3
+}
+
+//
+// Re-set default cursor for disabled elements.
+//
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+//
+// Remove inner padding and border in Firefox 4+.
+//
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+
+//
+// It's recommended that you don't attempt to style these elements.
+// Firefox's implementation doesn't respect box-sizing, padding, or width.
+//
+// 1. Address box sizing set to `content-box` in IE 8/9/10.
+// 2. Remove excess padding in IE 8/9/10.
+//
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box; // 1
+  padding: 0; // 2
+}
+
+//
+// Fix the cursor style for Chrome's increment/decrement buttons. For certain
+// `font-size` values of the `input`, it causes the cursor style of the
+// decrement button to change from `default` to `text`.
+//
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+//
+// 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+// 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+//    (include `-moz` to future-proof).
+//
+
+input[type="search"] {
+  -webkit-appearance: textfield; // 1
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box; // 2
+  box-sizing: content-box;
+}
+
+//
+// Remove inner padding and search cancel button in Safari and Chrome on OS X.
+// Safari (but not Chrome) clips the cancel button when the search input has
+// padding (and `textfield` appearance).
+//
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+//
+// Define consistent border, margin, and padding.
+//
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+//
+// 1. Correct `color` not being inherited in IE 8/9/10/11.
+// 2. Remove padding so people aren't caught out if they zero out fieldsets.
+//
+
+legend {
+  border: 0; // 1
+  padding: 0; // 2
+}
+
+//
+// Remove default vertical scrollbar in IE 8/9/10/11.
+//
+
+
+// Links
+
+a {
+	background-color: transparent;
+	font-size: $a-font-size;
+	font-weight: $a-font-weight;
+	color: $a-color;
+	text-decoration: none;
+	margin: 0;
+
+	&:active {
+		outline: 0;
+	}
+
+	&:hover {
+		outline: 0;
+		color: $a-hover-color;
+		text-decoration: underline;
+		cursor: pointer;
+	}
+
+	&:focus {
+		color: $a-hover-color;
+		text-decoration: underline;
+		cursor: pointer;
+		@include tab-focus;
+	}
+}
+
+// Text-level semantics
+// ==========================================================================
+
+//
+// Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+//
+
+abbr[title] {
+	border-bottom: 1px dotted;
+}
+
+//
+// Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+//
+
+b,
+strong {
+	font-weight: bold;
+}
+
+//
+// Address styling not present in Safari and Chrome.
+//
+
+dfn {
+	font-style: italic;
+}
+
+mark {
+	background: $gold;
+	color: $black;
+}
+
+//
+// Address inconsistent and variable font size in all browsers.
+//
+
+small {
+	font-size: 80%;
+}
+
+//
+// Prevent `sub` and `sup` affecting `line-height` in all browsers.
+//
+
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+	top: -0.5em;
+}
+
+sub {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+	bottom: -0.25em;
+}
+
+pre {
+  overflow: auto;
+}
+
+//
+// Address odd `em`-unit font size rendering in all browsers.
+//
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+// Figures
+//
+// We reset the margin here because previously Normalize had no `figure` margins. This
+// ensures we don't break anyone's use of the element.
+
+figure {
+	display: block;
+	margin: 0;
+}
+
+// Horizontal rules
+// first 3 declarations address differences between firefox and other browsers
+hr {
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	height: 0;
+	margin-top: $line-height-computed;
+	margin-bottom: $line-height-computed;
+	border: 0;
+	border-top: 1px solid $light-gray-2;
+}
+
+.wc-content-wrap hr{
+	border-top: 1px solid $dark-gray;
+}
+
+// iOS "clickable elements" fix for role="button"
+//
+// Fixes "clickability" issue (and more generally, the firing of events such as focus as well)
+// for traditionally non-focusable elements with role="button"
+// see https://developer.mozilla.org/en-US/docs/Web/Events/click#Safari_Mobile
+// Upstream patch for normalize.css submitted: https://github.com/necolas/normalize.css/pull/379 - remove this fix once that is merged
+
+[role="button"] {
+	cursor: pointer;
+}
+
+h5, h6 {
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $font-family-serif;
+	font-weight: $heading-font-weight;
+	a {
+		font-size: inherit;
+	}
+}
+
+h1 {
+	@include responsiveFontSize($h1-xs-font-size, $h1-font-size,$h1-font-size,$h1-font-size);
+	font-weight: $h1-font-weight;
+	color: $h1-color;
+	margin: $h1-top-margin 0 $h1-bottom-margin 0;
+}
+
+h2 {
+	font-size: $h2-font-size;
+	font-weight: $h2-font-weight;
+	color: $h2-color;
+	margin: $h2-top-margin 0 $h2-bottom-margin 0;
+	line-height: $h2-line-height;
+}
+
+h3 {
+	font-size: $h3-font-size;
+	font-weight: $h3-font-weight;
+	color: $h3-color;
+	margin: $h3-top-margin 0 $h3-bottom-margin 0;
+	line-height:$h3-line-height;
+}
+
+h4 {
+	font-size: $h4-font-size;
+	font-weight: $h4-font-weight;
+	color: $h4-color;
+	margin: $h4-top-margin 0 $h4-bottom-margin 0;
+}
+
+.wc-content-wrap h2 + h3 {
+	margin-top: 1rem;
+}
+
+.wc-content-wrap h3 + h4 {
+	margin-top: .8rem;
+}
+
+p {
+	font-size: $p-font-size;
+	font-weight: $p-font-weight;
+	color: $p-color;
+	line-height: $p-line-height;
+	margin: $p-top-margin 0 $p-bottom-margin 0;
+}
+
+
+svg {
+	pointer-events: none; /*[2]*/
+}
+
+ul {
+	margin: $ul-top-margin 0 $ul-bottom-margin 0;
+	padding-left: $ul-left-padding;
+}
+
+ol {
+	margin: $ol-top-margin 0 $ol-bottom-margin 0;
+	padding-left: $ol-left-padding;
+}
+
+li {
+	font-size: $li-font-size;
+	font-weight: $li-font-weight;
+	color: $li-color;
+	line-height: $li-line-height;
+	margin: $li-top-margin 0 $li-bottom-margin 0;
+}
+
+ol ol {
+	list-style-type: lower-alpha;
+}
+
+ol ol ol {
+	list-style-type: lower-roman;
+}
+
+ol ol ol ol {
+	list-style-type: decimal;
+}
+
+li ul, li ol {
+	margin-top: 0.2rem;
+	margin-bottom: 0.2rem;
+}
+
+nav ul {
+	list-style: none;
+}
+
+// Images
+
+img {
+	border: 0;
+	max-width: 100%;
+	height: auto;
+}
+
+
+//
+// Correct overflow not hidden in IE 9/10/11.
+//
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+
+
+/**********************************
+#TABLE-STYLES
+
+Notes
+[1]     We want all tables to be 100% wide on mobile, !important
+		is the only way to override the inline css Ingeniux generates.
+[2]     Fancy styles for collapsing tables on mobile
+[3]     If they're not collapsing, add the default styles back
+**********************************/
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+	border: none;
+	margin: 0.8rem 0;
+}
+
+td {
+	width: auto;
+	border: none;
+	padding: 0;
+}
+
+th {
+	width: auto;
+	border: none;
+	padding: 0;
+	color: $white;
+	background-color: $table-th-color;
+	font-weight: 600;
+}
+
+table:not(.wc-no-stripes) {
+	tr:nth-child(even){
+		background-color: $transparent-blue;
+	}
+	tr:nth-child(odd){
+		background-color: $table-bg-color-1;
+	}
+}
+
+@media (max-width: $screen-xs-max) {
+	table {
+		width: 100% !important;
+
+		&:not(.wc-no-mobile-collapse) { /*[1]*/
+			td:first-child {
+				font-weight: 600;
+			}
+			td {
+				display: block;
+			}
+			th {
+				display: none;
+			}
+			th, td {
+				padding: 0.3em 0.5em;
+			}
+			tr {
+				display: block;
+				padding: 0.6em 0;
+			}
+		}
+
+		.wc-no-mobile-collapse { /*[2]*/
+			td:first-child {
+				font-weight: 400;
+			}
+			td {
+				display: table-cell;
+			}
+			th, td {
+				padding: 0.5em 1em;
+			}
+		}
+	}
+	b, strong {
+		font-weight: 600
+		i, em {
+			font-style: italic;
+		}
+	}
+	i, em {
+		font-style: italic;
+		b, strong {
+			font-weight: 600;
+		}
+	}
+}
+
+
+@media (min-width: $screen-sm-min) {
+	td:first-child {
+		font-weight: 400;
+	}
+	td {
+		display: table-cell;
+	}
+	th, td {
+		padding: 0.5em 1em;
+	}
+}

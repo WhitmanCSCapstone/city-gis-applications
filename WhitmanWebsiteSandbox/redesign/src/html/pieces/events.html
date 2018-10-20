@@ -1,0 +1,21 @@
+<div class="wc-component wc-events-component wc-full-component wc-list-component" id="wc-events-list-wut1">
+	<h2>Events</h2>
+	<hr class="wc-divider" />
+	<ul class="wc-events-list"></ul>
+	<script>
+		(function(){
+			var params = {
+				types: ['33755'],//['33755'],
+				excludes: [''],//['32673'],
+				match: '',
+				count: '2',
+				format: 'default',
+				// svgPath: 'images/svg/svg-defs.svg',
+				moreLinks: 'true',
+				showAbstracts: 'true',
+				recurringEvents: 'compact' //distinct, separate, compact
+			};
+			$('#wc-events-list-wut1').data('eventsParams',params);
+		})();
+	</script>
+</div>

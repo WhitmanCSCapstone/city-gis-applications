@@ -1,0 +1,33 @@
+/**********************************
+#PAGINATION
+**********************************/
+.wc-arrow-pagination-box{
+	width:100%;
+	text-align: center;
+	div,a,p{
+		vertical-align: middle;
+	}
+}
+	.wc-pagination-arrow{
+		display:inline-block;
+	}
+	.wc-pagination-arrow:not(.wc-pagination-inactive){
+		@include button(32px,1rem,$link-hover-color,$link-color);
+	}
+	.wc-pagination-arrow.wc-pagination-inactive{
+		@include button(32px,1rem,$light-gray-1,$light-gray-1);
+	}
+	.wc-pagination-next{
+		.wc-icon{
+			transform:rotate(-90deg);
+		}
+	}
+	.wc-pagination-prev{
+		.wc-icon{
+			transform:rotate(90deg);
+		}
+	}
+	.wc-pagination-text{
+		display: inline-block;
+		margin: 0 .5rem 0 .5rem;
+	}

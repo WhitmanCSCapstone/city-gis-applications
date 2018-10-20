@@ -1,0 +1,52 @@
+include "pieces/layout/header.html"
+	<!-- Content -->
+	<div class="wc-content-wrap wc-standard-layout wc-detail-page-content " >
+		<!-- Title  -->
+		<div class="wc-title-box">
+			<div class="wc-container">
+				<h1 class="wc-page-title">A Detail Page</h1>
+			</div>
+		</div>
+
+		<div class="wc-container">
+			<!-- Breadcrumbs -->
+			include "pieces/layout/breadcrumbs.html"
+
+			<div class="wc-row wc-no-top-gutter">
+
+				include "pieces/layout/left-column.html"
+
+				<!-- Body Copy -->
+				<div class="wc-main-content" id="wc-reader-content" role="main">
+					<div class="wc-row">
+						<div class="wc-body-copy wc-12-col">
+							<p>This is some body copy. This is some body copy. This is some body copy. This is some body copy. This is some body copy. This is some body copy. This is some body copy. This is some body copy. This is some body copy.&nbsp;</p>
+						</div>
+					</div>
+					<div class="wc-row wc-component-row">
+						<div class="wc-component wc-full-component wc-masonry-gallery wc-image-gallery-component wc-mg-2-col" id="wc-image-gallery-component-de75274f15db5739dc69dc7834f0cdbf">
+							<h2>Putting the Study in Study Abroad</h2>
+							<div class="wc-masonry-gallery-box">
+								<div class="wc-mg-tile-sizer"></div>
+								<div class="wc-mg-gutter-sizer"></div>
+							</div>
+							<script>
+								(function(){
+									var igParams = {
+										folderID: '0B_kjM2Ygn4qiOFExMy1oa1JpNm8',
+										captions:'true',
+										groupSize:4,
+										order:'Random',
+										reverseOrder:''
+									};
+									$('#wc-image-gallery-component-de75274f15db5739dc69dc7834f0cdbf').data('igParams',igParams);
+								})();
+							</script>
+						</div>
+					</div>
+					<!--end if pages any-->
+				</div>
+			</div>
+		</div>
+	</div>
+include "pieces/layout/footer.html"

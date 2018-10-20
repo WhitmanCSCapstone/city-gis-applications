@@ -1,0 +1,204 @@
+/**********************************
+#AT-THE-HUB-STYLES
+
+Info
+[-] 	The Styles are used on the "At The Hub" article published in
+		Feb. 2018  https://www.whitman.edu/at-the-hub
+**********************************/
+
+
+/**********************************
+#TITLE
+**********************************/
+@media(min-width:$screen-lg-min){
+  .wc-full-width-title {
+	height: 676px;
+  }
+  .wc-full-width-title .wc-page-title {
+	margin-top: 7rem;
+	font-size: 4.5rem;
+	text-align: center;
+  }
+  .wc-full-width-title .wc-author {
+	text-align: center;
+  }
+  .wc-full-width-title hr.wc-title-divider {
+	border-top: 1px solid #fff;
+	width: 100%;
+  }
+}
+@media(min-width:$screen-md-min) and (max-width:$screen-md-max){
+  .wc-full-width-title {
+	height: 676px;
+  }
+  .wc-full-width-title .wc-page-title {
+	margin-top: 7rem;
+	font-size: 4.5rem;
+	text-align: center;
+  }
+  .wc-full-width-title .wc-author {
+	text-align: center;
+  }
+  .wc-full-width-title hr.wc-title-divider {
+	border-top: 1px solid #fff;
+	width: 100%;
+  }
+}
+@media(min-width:$screen-sm-min) and (max-width:$screen-sm-max){
+  .wc-full-width-title {
+	height: 676px;
+  }
+  .wc-full-width-title .wc-page-title {
+	margin-top: 7rem;
+	font-size: 4.5rem;
+	text-align: center;
+  }
+  .wc-full-width-title .wc-author {
+	text-align: center;
+  }
+  .wc-full-width-title hr.wc-title-divider {
+	border-top: 1px solid #fff;
+	width: 100%;
+  }
+}
+@media(max-width:$screen-xs-max){
+  .wc-full-width-title {
+	height: 558px;
+  }
+  .wc-full-width-title .wc-page-title {
+	font-size: 4.5rem;
+	margin-top: 0.8rem;
+  }
+  .wc-full-width-title hr.wc-title-divider {
+	border-top: 1px solid #fff;
+	width: 100%;
+  }
+}
+
+
+/**********************************
+ACES DATA VISUALIZATION
+
+Info
+[-] 	These are styles for the ACEs data visualization
+**********************************/
+$hbar-border-radius: 19px;
+$hbar-bar-height: 38px;
+.wc-hbar-graph-content-area{
+	width:100%;
+	@include clearfix();
+}
+
+.wc-hbar-graph-section{
+	width: 100%;
+	@include responsivePaddingBottom(0,14px,14px,14px);
+	@include clearfix();
+}
+
+.wc-hbar-graph-section-row{
+	width: 100%;
+	@include clearfix();
+}
+
+.wc-hbar-graph-section-title{
+	@include responsiveWidth(100%,20%,20%,20%);
+}
+.wc-hbar-graph-gray-bar,.wc-hbar-graph-descriptor{
+	@include responsiveWidth(100%,80%,80%,80%);
+}
+.wc-hbar-graph-section-title{
+	float:left;
+	text-transform: uppercase;
+	font-size: 1rem;
+	font-weight: bold;
+	padding: 7px 15px 0 0;
+	@media(max-width:$screen-xs-max){
+		text-align: left;
+	}
+	@media(min-width:$screen-sm-min){
+		text-align: right;
+	}
+}
+
+.wc-hbar-graph-gray-bar{
+	float:left;
+	height: $hbar-bar-height;
+	position: relative;
+	background-color: #eee;
+	border-radius: $hbar-border-radius;
+}
+	.wc-hbar-graph-red-bar{
+		position: absolute;
+		z-index: 100;
+		left: 0;
+		background-color: #ff1d25;
+		height: $hbar-bar-height;
+		border-radius: $hbar-border-radius;
+		transition: width 1s;
+	}
+	.wc-hbar-graph-baseline-line{
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: 200;
+		border-right: 8px solid #fff;
+		height: $hbar-bar-height;
+		background-color: #ff1d25;
+		border-radius: $hbar-border-radius 0 0 $hbar-border-radius;
+	}
+	.wc-hbar-graph-bar-total{
+		position: absolute;
+		right: 0;
+		z-index: 300;
+		display: block;
+		padding: 6px 15px 0 15px;
+		font-weight: bold;
+		font-size: 1rem;
+	}
+.wc-hbar-graph-descriptor{
+	text-align: right;
+	display: block;
+	margin-top:4px;
+	float: right;
+	font-size: 16px;
+	clear:both;
+}
+.wc-hbar-modal-box{
+	width: 100%;
+	@include responsivePaddingRight(0,1rem,1rem,1rem);
+}
+.wc-hbar-graph-button-section{
+	width: 440px;
+	max-width:100%;
+	@include responsiveMargin(1rem auto,0 auto,0 auto,0 auto);
+}
+.wc-list-filter-box.wc-radio-filter-box{
+	text-align: center;
+	.wc-radio-option-box, .wc-options-title{
+		display: inline-block;
+		float: none;
+		margin:0 10px 0 0;
+		padding: 0;
+	}
+	.wc-options-title{
+		font-weight:bold;
+		@media(max-width:$screen-xs-max){
+			margin-bottom:10px;
+			width: 100%;
+		}
+	}
+}
+.wc-hbar-graph-title{
+	text-align: center;
+	font-size:2rem;
+	margin: 0 0 2rem 0;
+}
+.wc-hbar-graph-subtitle{
+	text-align:center;
+	font-weight:bold;
+	color:$medium-blue;
+}
+.wc-hbar-graph-reference{
+	font-style:italic;
+	font-size:.9rem;
+}

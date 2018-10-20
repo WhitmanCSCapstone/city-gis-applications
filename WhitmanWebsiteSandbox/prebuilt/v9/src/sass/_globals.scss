@@ -1,0 +1,730 @@
+/**********************************
+	
+#GLOBALS
+
+**********************************/ 
+.wc-subhead{
+	font-size: 1rem;
+	font-weight:400;
+	color:$light-gray-1;
+	margin-top:$subhead-top-margin;
+	margin-bottom:$subhead-bottom-margin;
+}
+.wc-svg-sprite{
+	display:none;
+}
+.wc-hidden{
+	display:none !important;
+}
+.wc-invisible{
+	visibility: hidden !important;
+}
+.wc-shadowed{
+	text-shadow:0 0 2px;
+}
+.wc-full-width{
+	display:block;
+	width:100%;
+}
+.wc-no-padding{
+	padding:0;
+}
+.wc-no-margin{
+	margin:0;
+}
+.wc-clearfix{
+	@include clearfix();
+}
+
+/**********************************
+#TYPOGRAPHY
+**********************************/
+.wc-no-focus-outline{
+	&:focus{
+		outline:none;
+	}
+}
+.wc-light-gray{
+	color:$dark-gray-2;
+}
+.wc-bold{
+	font-weight:600;
+}
+.wc-thin{
+	font-weight: 200;
+}
+
+/**********************************
+#GRID and #BOOTSTRAP stuff
+
+Notes
+[1] 	Giving these higher specificity so they can override
+		default styles.
+**********************************/
+.wc-container{
+	@extend .container;
+	&.wc-full-browser-width{
+		width: 100%;
+		padding: 0;
+		.wc-row{
+			padding: 0;
+		}
+	}
+}
+.wc-row{
+	@include make-row();
+}
+body .wc-content-wrap { /*[1]*/
+	.wc-no-gutter{ 
+		padding-left:0;
+		padding-right: 0;
+	}
+	.wc-no-top-gutter{
+		padding-top:0;
+	}
+	.wc-no-bottom-gutter{
+		padding-bottom:0;
+	}
+}
+@media(max-width:$screen-sm-max){
+	.wc-header, .wc-content-wrap, .wc-footer{
+		overflow:hidden;
+	}	
+}
+.wc-right-box{
+	float:right;
+}
+.wc-xs-collapse{
+	@include responsiveDisplay(none,block,block,block);
+}
+.wc-sm-collapse{
+	@include responsiveDisplay(none,none,block,block);
+}
+.wc-md-collapse{
+	@include responsiveDisplay(none,none,none,block);
+}
+.wc-mobile-only{
+	@extend .hidden-md;
+	@extend .hidden-lg;
+}
+.wc-3-col{
+	@include make-xs-column(12);
+	@include make-md-column(3);
+}
+.wc-6-col{
+	@include make-xs-column(12);
+	@include make-md-column(6);
+}
+.wc-9-col{
+	@include make-xs-column(12);
+	@include make-md-column(9);
+}
+.wc-12-col{
+	@include make-xs-column(12);
+}
+
+
+/**********************************
+#MISC
+
+Notes
+[1] 	Used with the JS function  Globals.addCaptions() 
+**********************************/
+.wc-ellipsis{ 
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.wc-icon{
+	@include icon(24px, $medium-blue);
+}
+.wc-icon-small{
+	@include icon(1rem, $medium-blue);
+}
+.wc-small-caption, .wc-body-copy .wc-small-caption{
+	font-size:15px;
+	font-style: italic;
+	color:$dark-gray;
+}
+.wc-small-text-box  > p {
+    font-size: .8rem;
+    a {
+        font-size: inherit;
+    }
+}
+body .wc-content-wrap .wc-image-caption{ /*[1]*/
+	font-size: .8rem;
+	color: $dark-gray-2;
+	padding: .2rem .2rem 0 .2rem;
+	margin-bottom: 0;
+}
+
+
+html.flexbox .wc-flex-center-vertically-inline{
+	display: inline-flex;
+	flex-direction:column;
+	justify-content:center;
+}
+html.flexbox .wc-flex-center-vertically-block{
+	display: flex;
+	flex-direction:column;
+	justify-content:center;
+}
+
+.wc-same-height .wc-box-button{
+	@extend .wc-flex-center-vertically-inline;
+}
+
+/**********************************
+#BROWSER-FIXES
+
+Notes
+[1] 	No rounded borders for firefox's select elements because
+		their dropdown arrows just look super dumb.
+**********************************/
+html.firefox{
+	select{
+		border-radius: 0 !important; /*[1]*/
+	}
+}
+.wc-default-button{
+	@include button($default-icon-size, $default-icon-size, $medium-blue-2, $medium-blue);
+}
+
+
+/**********************************
+#LISTS
+**********************************/
+.wc-no-style-list, .wc-body-copy ul.wc-no-style-list{
+	padding:0;
+	margin:0;
+	list-style: none;
+}
+	
+	/**********************************
+	#ITEM-LIST
+	
+	Info
+		Intended to be a class for a general purupose list. Right now there isn't
+		much to it, not sure if we want to just get rid of it or not.
+	**********************************/
+    .wc-right-content-column {
+        .wc-item-list {
+            li {
+                margin-bottom: .5rem;
+            }
+        } 
+    }
+	.wc-item-list{
+		@extend .wc-no-style-list;
+		li{
+			@include responsivePaddingTop(0.2rem,0.2rem,0.2rem,0.2rem);
+			@include responsivePaddingBottom(0.2rem,0.2rem,0.2rem,0.2rem);
+			@include responsiveMarginTop(0.2rem,0.2rem,0,0);
+			@include responsiveMarginBottom(0.2rem,0.2rem,0,0);			
+		}
+	}
+
+	/**********************************
+	#HIGHLIGHT-LINK-LIST
+
+	Info
+		Link lists that highlight when you hover over them and zebra-stripe on mobile. Used
+		in taxonomy indexes.
+	**********************************/
+	.wc-highlight-link-list{
+		a{
+			display:block;
+			width:100%;
+			@include clearfix();
+			@media(min-width:$screen-md-min){
+				&:hover{
+					background-color:$transparent-blue;
+					color: $link-hover-color;
+				}
+			}
+		}
+		@media(max-width:$screen-sm-max){
+			li:nth-child(odd) {
+				background-color: $table-bg-color-2;
+			}
+			li:nth-child(even) {
+				background-color: $table-bg-color-1;
+			}
+		}
+	}
+
+	/**********************************
+	#COLUMNED-LIST
+	
+	Notes
+	[1] 	Fixes a bug where the li's will break over multiple columns,
+			even though we've told them not to
+	**********************************/
+	.wc-columned-list{
+		padding-left:0;
+		margin-left:0;
+		list-style: none;
+		column-gap:2em;
+		position:relative;
+		&>li{
+			display:block;
+			position:relative;
+			break-inside: avoid;
+			overflow:auto;/*[1]*/
+		}
+		h2{
+			color:$dark-gray;
+			margin-top: 1.5rem;
+			margin-bottom: 0.7rem;
+		}
+		&.wc-2-col-list, &:not(.wc-3-col-list){
+			columns:2 300px;
+		}
+		&.wc-3-col-list{
+			columns:3 300px;
+		}
+	}
+
+
+/**********************************
+#DATE-BOX
+
+Notes
+[1] 	Needs to be in a flexbox'd parent
+**********************************/
+
+//try making`wc-day` `font-size: 39px; line-height:1;` make `wc-month` `font-size:19px; line-height:0.7;`
+.wc-date-box{
+	flex-shrink:0;
+	background-color:$medium-blue;
+	color:$white;
+	@include responsiveWidth(50px, 50px, 62px, 62px);
+	@include responsiveHeight(50px, 50px, 62px, 62px);
+	padding: .3rem;
+	.wc-month{
+		text-transform: uppercase;
+		display:block;
+		width:100%;
+		@include responsiveFontSize(16px, 16px, 19px, 19px); 
+		@include responsiveFontWeight(400,200,100,100);
+		line-height: .7;
+		text-align: center;
+	}
+	.wc-day{
+		display:block;
+		width:100%;
+		text-align: center;
+		@include responsiveFontSize(30px,30px,38px,38px); 
+		line-height: 1;
+		overflow: hidden;
+		font-weight: 500;
+	}
+}
+.no-flexbox .wc-date-box{
+	display:none;
+}
+
+
+/**********************************
+#INFO-ITEMS
+
+Notes
+[-] 	These are the text-icon pairs that you see in places like the contact components
+		and profile detail pages.
+[1] 	Using flexbox and just hiding the icons for the lame browsers
+
+[2][3] 	Yes of course youd think of just using display:inline-block for these,
+		but then you realize you never (never ever) want .wc-text to skip to
+		the next line below the icon, so you make them block so the text will 
+		wrap within .wc-text element instead.
+[4][5] 	Doing this to center the content vertically.
+**********************************/
+.wc-info-item{
+	padding:0 0 .8rem 0;
+	&:not(.wc-no-flex){
+		display:flex;/*[1]*/
+	}
+	.wc-icon-box{/*[2]*/
+		@include responsiveFlexWidth(40px, 40px, 46px, 46px);
+		svg{
+			display:block;
+			@include responsiveIcon(34px, 34px, 36px, 36px, $medium-blue);
+		}
+		&.wc-centered{
+			display: flex;
+			flex-direction: column; /*[4]*/
+			justify-content: center;
+		}
+	}
+	.wc-text-box{/*[3]*/
+		flex:auto;
+		display: flex; 
+		flex-direction: column; /*[5]*/
+		justify-content: center;
+		.wc-text{
+			display:block;
+			text-align: left;
+		}
+	}
+}
+.no-flexbox .wc-info-item .wc-icon-box{
+	display:none;
+}
+
+
+/**********************************
+#MOBILE-SLIDER
+
+Notes
+[-]		Uses Slick Slider - http://kenwheeler.github.io/slick/
+[1]		The slick js shows it automatically
+**********************************/
+.wc-mobile-slider{
+	@media(max-width:$screen-xs-max){
+		display:none; /*[1]*/
+	}
+	.slick-dots{
+		li{
+			margin:0 10px;
+		}
+		li button:before{
+			font-size:68px;
+		}
+	}
+}
+.slick-track .wc-mobile-slider{
+	margin-bottom:50px;
+}
+
+
+
+/**********************************
+#FORMS
+
+Notes
+[1] 	Divs that go around inputs to give them rounded corners and
+		a nice white background.
+**********************************/
+.wc-input-box{ /*[1]*/
+	background-color:$white;
+	padding: 4px;
+	@include roundedCorners();
+	input{
+		border:none;
+	}
+}
+.wc-rounded-dropdown{
+	height:40px;
+	border:1px solid $light-gray-1;
+	background-color:$white;
+	padding: 4px;
+	@include roundedCorners();
+}
+
+
+/**********************************
+#FIGURES
+**********************************/
+figure{
+	padding-bottom: 1.1rem;
+}
+
+figcaption{
+	font-size: .8rem;
+	padding-top: .4rem;
+}
+
+
+/**********************************
+#PAGINATION
+**********************************/
+.wc-pagination{
+	width:100%;
+	position: relative;
+	.wc-page-list{
+		@include responsiveWidth(100%,60%,40%,40%);
+		list-style: none;
+		margin-left:auto;
+		margin-right:auto;
+		padding:0;
+		text-align: center;
+		li{
+			display: inline-block;
+			@include responsivePaddingLeft(.2rem,.2rem,.1rem,.1rem);
+			@include responsivePaddingRight(.2rem,.2rem,.1rem,.1rem);
+		}
+		a,span,li{
+			@include responsiveFontSize(1.6rem,1.3rem,1.3rem,1.3rem);			
+			text-decoration: none;
+			font-weight:300;
+		}
+			a:hover{
+				text-decoration: underline;
+			}
+		
+	}
+	.wc-prev-link{
+		@extend .hidden-xs;
+		position: absolute;
+		left:0;
+		bottom:0;
+	}
+	.wc-next-link{
+		@extend .hidden-xs;
+		position: absolute;
+		right:0;
+		bottom:0;
+	}
+}
+
+
+/**********************************
+#OLD STUFF
+
+Classes we had to bring over from the old design
+**********************************/
+.rightimage, .caption_right{
+	display: block;
+	@include responsiveFloat(none,right,right,right);
+	@include responsiveMargin(10px auto 10px auto,0 0 5px 20px,0 0 5px 20px,0 0 5px 20px);
+}
+.leftimage, .caption_left{
+	display: block;
+	@include responsiveFloat(none,left,left,left);
+	@include responsiveMargin(10px 0 10px 0,0 20px 5px 0,0 20px 5px 0,0 20px 5px 0);
+}
+
+/**********************************
+#IMAGES
+
+Classes that will replace the right/left image floats above
+**********************************/
+.wc-rightimage, .wc-caption-image-right{
+	display: block;
+	@include responsiveFloat(none,right,right,right);
+	@include responsiveMargin(10px auto 10px auto,0 0 5px 20px,0 0 5px 20px,0 0 5px 20px);
+}
+.wc-leftimage, .wc-caption-image-left{
+	display: block;
+	@include responsiveFloat(none,left,left,left);
+	@include responsiveMargin(10px auto 10px auto,0 20px 5px 0,0 20px 5px 0,0 20px 5px 0);
+}
+.wc-caption-image, .wc-caption-image-left, .wc-caption-image-right{
+	padding-bottom: 0;
+}
+.wc-circle-image{
+	border-radius: 50%;
+}
+
+
+
+/**********************************
+#BREAKPOINT-CHECKS
+
+Notes
+[-] 	This is sort of a hack for JS to know what breakpoint we're at. See
+		globals.js for how they're used
+**********************************/
+.wc-breakpoint-check-box{
+	position: relative;
+	height: 0;
+	width: 0;
+	overflow: hidden;
+}
+	.wc-breakpoint-check{
+		display: none;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		visibility: hidden;
+		width: 1px;
+		height: 1px;
+	}
+	#wc-breakpoint-check-xs{
+		@include responsiveDisplay(block, block, block, block);
+	}
+	#wc-breakpoint-check-sm{
+		@include responsiveDisplay(none, block, block, block);
+	}
+	#wc-breakpoint-check-md{
+		@include responsiveDisplay(none, none, block, block);
+	}
+	#wc-breakpoint-check-lg{
+		@include responsiveDisplay(none, none, none, block);
+	}
+
+	/**********************************
+	#MODAL-WINDOWS / #LIGHTBOX
+
+	Info
+	[-] 	Using Bootstrap's modal windows here as a lightbox for images. See Globals.lightboxSetup() and modal.js
+			for the JS we're using.
+	[1] 	Adding .modal-dialog here to make sure these override the default styles for bootstrap's .modal-dialog. 
+			Note that we have to use their .modal-dialog class for the js to work that allows the modals to close when
+			you hit escape.
+	[2] 	This is a fix for a scrollbar issue that bootstrap has - https://github.com/twbs/bootstrap/issues/14040
+			This solution works, with the drawback that it allows for scrolling while the modal window is open
+	[3] 	....actually this turns out to fix that issue, so the background doesn't scroll anymore. - meanspa 11.23.16
+	[4] 	Another option for fixing the modal issue, taken from tallpaullewis's suggestion near the bottom of that
+			same github issue. This also works, but it results in a white, empty scroll bar on the right of chrome :(
+	[5] 	For use with photoswipe
+	**********************************/
+	.wc-modal{
+		text-align: center;
+		.wc-image-caption{
+			color: $white;
+			position: absolute;
+			text-align: left;
+		}
+	}
+		.modal-dialog.wc-lightbox{/*[1]*/
+			@include responsiveMarginTop(1rem, 1rem, 3rem, 3rem);
+			position: relative;
+			display: inline-block;
+			margin-left: 0;
+			margin-right: 0;
+			margin-bottom: 0;
+			&:note(.wc-video-modal-box){
+				max-width: 1000px;
+			}
+		}
+	body .modal-backdrop.in{
+		opacity: .7;
+	}
+	
+	html.wc-white-modal .modal-backdrop.in{
+		background-color:$white;
+		opacity: 1;
+	}
+
+	body.modal-open{/*[2]*/
+		padding-right:0!important;
+		overflow-y:visible;
+		overflow: hidden;/*[3]*/
+	}
+	.wc-ps-lightbox{ /*[5]*/
+		max-width: 90%;
+		margin-top:3rem;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	/*[4]*/
+	/**********************************
+	body.modal-open{
+	    width:100%!important;
+	    padding-right:0!important;
+	    overflow-y:scroll!important;
+	    position:fixed!important;
+	}
+	**********************************/
+
+/**********************************
+#ANCHOR-FIX
+
+Notes
+[-] 	This fixes in-page anchors so they're not hidden by the hovering header. Also see anchorTagFix()
+		in globals.js
+**********************************/
+.wc-anchor-fix:before{
+	@media(min-width:$screen-md-min){
+		display: block; 
+		content: " "; 
+		margin-top: -140px; 
+		height: 140px; 
+		visibility: hidden;
+	}
+}
+
+/**********************************
+#STYLE-BOX - hidden boxes added by JS for extra css
+**********************************/
+.wc-style-box{
+	position: absolute;
+	left: -999em;
+	top: -999em;
+}
+
+/**********************************
+#ASPECT-RATIOS
+
+Notes
+[-] 	Use these for maintaining a given aspect ratio
+[1] 	This works, because padding-bottom's % is calculated relative
+		to the containing box's width (this is also why width %100 is 
+		necessary)
+[2] 	All content needs to go in here
+**********************************/
+.wc-fixed-ar{
+	width: 100%;
+	position: relative;
+
+	&.wc-ar-16-9{
+		padding-bottom:56%; /*[1]*/
+	}
+	.wc-ar-content{ /*[2]*/
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		overflow: hidden;
+	}
+}
+
+/**********************************
+#RIGHT-AND-LEFT-COLUMN-ADJUSTMENTS
+
+Notes
+[1] 	For the left and right columns (excluding full-width-layout-b)....
+[2][4] 	Making h2's smaller just because it looks better. Reverting to
+		the standard h2 size for mobile though because when everything stacks
+		you want it to look the same.
+[3] 	Ignore any component width, we want them to all be full-width
+**********************************/
+.wc-content-wrap{
+	/**********************************
+	Right Column
+	**********************************/
+	&:not(.wc-full-width-layout-b) .wc-right-content-column{ /*[1]*/
+		@media(min-width:$screen-md-min){
+			h2{
+				font-size: 1.7rem; /*[2]*/
+			}
+		}
+		.wc-full-component,.wc-half-component,.wc-quarter-component,.wc-third-component{
+			@include make-xs-column(12);/*[3]*/
+		}
+	}
+	/**********************************
+	Left Column
+	**********************************/
+	.wc-left-column{
+		h2{
+			font-size: 1.7rem; /*[4]*/
+		}
+		.wc-full-component,.wc-half-component,.wc-quarter-component,.wc-third-component{
+			@include make-xs-column(12);/*[3]*/
+		}
+	}
+}
+
+/**********************************
+#ACCESSIBILITY
+
+Notes
+[1] 	When you want something to be invisible but still located at its
+		natural place in the page.
+**********************************/
+.wc-off-screen {
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+}
+.wc-hidden-in-place{ /*[1]*/
+	width: 1px;
+	height: 1px;
+	display: block;
+	float: right;
+	overflow: hidden;
+}

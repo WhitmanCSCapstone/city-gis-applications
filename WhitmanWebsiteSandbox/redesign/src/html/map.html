@@ -1,0 +1,408 @@
+include "pieces/layout/header.html"
+
+	<!-- Google Maps - this will be in the head on the live site -->
+	<!-- <script src="https://maps.googleapis.com/maps/api/js"></script> -->
+
+	<div class="wc-content-wrap wc-full-width-layout-a wc-map-page" id="wc-content-wrap" >
+		<!-- asdf - add this -->
+		<div id="wc-fallback-content" style="display: none;"> 
+			<div class="wc-title-box">
+				<div class="wc-container">
+					<h1 class="wc-page-title">Campus Map</h1>
+				</div>
+			</div>
+			<div class="wc-container">
+				<!-- Breadcrumbs -->
+				<div class="wc-row wc-breadcrumbs">
+					<a href="index.html" title="Whitman College home"><svg viewBox="0 0 21 21 "><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/svg/svg-defs.svg#icon-home"></use></svg></a>
+					<span>»</span>
+					<span>Campus Map</span>
+				</div>
+				<div class="wc-row" id="wc-reader-content" role="main">
+					<!-- Content -->
+					<div class="wc-main-content">
+						<p>So you don't want a map? Well I guess we should give you this thing instead.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="wc-map" id="wc-map">
+			<!-- Geolocation Prompt -->
+			<div id="wc-map-message-box" class="wc-map-message-box">
+				<img class="wc-loader-gif" src="images/gif/ajax-loader.gif" alt="Loading geolocation">
+			</div>
+
+			<!-- Controls -->
+			<div class="wc-map-controls wc-mc-hidden" id="wc-map-controls">
+				<div class="wc-mc-content-box" id="wc-mc-content">
+					<div class="wc-mc-slide-track" id="wc-mc-slide-track">
+						<div class="wc-mc-detail-box wc-mc-detail-box-base" id="wc-mc-detail-box-base">
+							<div class="wc-mc-header-box">
+								<div class="wc-button-toggle">
+									<a id="wc-map-categories-button" class="wc-toggled wc-mc-button">Categories</a>
+									<a id="wc-map-places-button" class="wc-mc-button">Places</a>
+								</div>
+								<a class="wc-mc-mobile-hide-button wc-mc-hide-button wc-mc-header-box wc-mc-button wc-main-menu-button wc-toggle">
+									<span class="wc-text">Menu</span>
+									<svg class="wc-not-toggled-icon" viewbox="0 0 32 32"><use xlink:href="images/svg/svg-defs.svg#icon-menu-hamburger" /></svg>
+									<svg class="wc-toggled-icon" viewbox="0 0 32 32"><use xlink:href="images/svg/svg-defs.svg#icon-menu-x" /></svg>
+								</a>
+							</div>
+
+							<div class="wc-mc-detail-box-content">
+								<ul class="wc-mc-items-list wc-map-categories-list" id="wc-map-categories-list">
+									<!-- CATEGORIES - populated by JS -->
+								</ul>
+								<ul class="wc-mc-items-list wc-map-places-list wc-hidden" id="wc-map-places-list">
+									<!-- PLACES - populated by JS -->
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a class="wc-mc-desktop-hide-button wc-mc-hide-button wc-mc-button" id="wc-mc-desktop-hide-button">
+					<svg class="wc-icon" viewbox="0 0 32 32">
+						<use xlink:href="images/svg/svg-defs.svg#icon-arrow-circle-up" />
+					</svg>
+				</a>
+			</div>
+
+			<!--**********************************
+			The Map
+
+			Notes
+			[1]		Doing this so it formats the page and hides the footer without relying on
+					JS, trying to minimize how much it flashes the footer before updating
+			**********************************-->
+		
+			<style>
+				html.no-js #wc-fallback-content, html.ie-9 #wc-fallback-content, html.ie-old #wc-fallback-content{
+					display: block !important;
+				}
+				html:not(.no-js):not(.ie-9):not(.ie-old){
+					height: 100%;
+				}
+				html:not(.no-js):not(.ie-9):not(.ie-old) body{
+					height: 100%;
+				}
+				html:not(.no-js):not(.ie-9):not(.ie-old) body footer.wc-footer{/*[1]*/
+					display: none;
+				}
+				html:not(.no-js):not(.ie-9):not(.ie-old) .wc-content-wrap.wc-map-page{
+					height: 100%;
+					margin-top: 0;
+				}
+				html.no-js #wc-map, html.ie-9 #wc-map, html.ie-old #wc-map{
+					display: none;
+				}
+			</style>
+
+			include "pieces/map-data.html"
+
+			<script type="text/javascript">
+				(function(){
+					var mapParams = {
+						places:mapPlaces,
+						points:mapPoints,
+						mapTileFolder:'images_map/map/MapTiles111617',
+						imagesUrl:'images_map/',
+						center:{lat:46.070919,long:-118.330110}
+					};
+					$('#wc-map').data('mapParams',mapParams);
+				})();
+			</script>
+		
+			<div class="wc-map-box" id="wc-map-box">
+			</div>
+
+			<div aria-hidden="true" class="wc-hidden" id="wc-mc-descriptions-queue">
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37156">
+				<p>The Writing House provides a strong creative atmosphere for students to live together and improve their writing abilities. The house has four bedrooms with space for an average of six residents and one Resident Assistant.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37157">
+				<img alt="Amphitheatre" class="wc-mc-feature-image" src="https://www.whitman.edu/assets/images/Map/amphitheatre.jpg?_previewAsset_=true">
+				<p>Many plays and musical performances take place at Whitman's outdoor amphitheatre. It's also a wonderful place for studying or quiet reflection.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37158">
+				<img alt="Anderson Hall" class="wc-mc-feature-image" src="https://www.whitman.edu/assets/images/Map/anderson.jpg?_previewAsset_=true">
+				<p>Anderson Hall houses mostly first-year students. Anderson features a large central lounge with floor-to-ceiling windows, a fireplace, and a big backyard complete with a sand volleyball court.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37159">
+				<p>Ankeny Field is a gathering place for students. It's used as a sporting field and a place to study and hang out with friends.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37160">
+				<p>The Asian Studies House is a residential house affiliated with the Chinese and Asian Studies departments and is assigned an adviser from the Chinese department.</p>
+				<h4>More Information</h4>
+				<ul>
+					<li>
+						<a href="x4255.xml" title="Asian Studies House">Asian Studies House</a>
+					</li>
+				</ul>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37161">
+				<p>The Athletics Fields are located about three blocks north of Whitman's campus, next to DeSales High School and at the end of Penrose Street.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37162">
+				<img alt="Baker Center" class="wc-mc-feature-image" src="https://www.whitman.edu/assets/images/Map/baker-center.jpg?_previewAsset_=true">
+				<p>Baker Center is home to the Alumni Relations and Annual Giving offices. Dining services are offered during the academic year to faculty and staff members and their guests.</p>
+				<h4>More Information</h4>
+				<ul>
+					<li>
+						<a href="x36198.xml" title="Alumni Relations">Alumni Relations</a>
+					</li>
+					<li>
+						<a href="x36198.xml" title="Alumni Relations"></a><a href="x10040.xml" title="Annual Giving">Annual Giving</a>
+					</li>
+				</ul>
+				<p></p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37163">
+				<img alt="Baker Ferguson Fitness Center" class="wc-mc-feature-image" src="https://www.whitman.edu/assets/images/Map/bffc.jpg?_previewAsset_=true">
+				<p>The Baker Ferguson Fitness Center is a 38,000-square-foot, state-of-the-art facility which is open to Whitman students, faculty and staff members, and alumni.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37164">
+				<p>The Beta Theta Pi chapter at Whitman College was founded in 1913. The chapter house was built in 1938 and houses approximately 24 students.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37165">
+				<p>Borleske Stadium is home to Whitman College's basebal team. The stadium was named for legendary athlete and coach Raymond V. Borleske '10.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37166">
+				<p>The staff members of Whitman's Office of Communications work in Boyer House. Mailing Services is located on the ground floor.</p>
+				<h4>More Information</h4>
+				<ul>
+					<li>
+						<a href="x36486.xml" title="Office of Communications">Office of Communications</a>
+					</li>
+					<li>
+						<a href="x25033.xml" title="Printing Services">Printing Services</a>
+					</li>
+					<li>
+						<a href="x25036.xml" title="Mailing Services">Mailing Services</a>
+					</li>
+				</ul>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37167">
+				<p>The Bracher Observatory, which is 9 miles north of town on Erickson Farm, has a 16-inch Newtonian telescope.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37168">
+				<img alt="Bratton Indoor Tennis Center" class="wc-mc-feature-image" src="https://www.whitman.edu/assets/images/Map/bratton.jpg?_previewAsset_=true">
+				<p>The Bratton Tennis Center, named in honor of former Whitman College president Walter A. Bratton, has four indoor tennis courts.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37169">
+				<img alt="College House" class="wc-mc-feature-image" src="https://www.whitman.edu/assets/images/Map/college.jpg?_previewAsset_=true">
+				<p>College House is a residence hall available to sophomores, juniors, and seniors. It houses approximately 35 students.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37170">
+				<p>The Community Service Interest House focuses on promoting community service to Whitman students. The house has five bedrooms and houses an average of seven residents and one resident assistant.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37213">
+				<img alt="Cordiner Glen" class="wc-mc-feature-image" src="https://www.whitman.edu/assets/images/Map/narnia1.jpg?_previewAsset_=true">
+				<p>A beautiful, park-like location along College Creek near Penrose House. It is often referred to as "Narnia."</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37171">
+				<img alt="Cordiner Hal" class="wc-mc-feature-image" src="https://www.whitman.edu/assets/images/Map/cordiner.jpg?_previewAsset_=true">
+				<p>Cordiner Hall is the main auditorium for the Whitman campus. The building is used for ceremonies, speeches, and performances.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37172">
+				<p>The Dance Studio serves as both a classroom and a performance space for Whitman's dance program.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37173">
+				<p>Das Deutsche Haus (The German House) has five bedrooms and comfortably houses an average of seven residents, one Resident Assistant, and a language assistant. This house focuses on German culture-oriented interests.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37174">
+				<img alt="William O. Douglas Hall" class="wc-mc-feature-image" src="https://www.whitman.edu/assets/images/Map/douglas.jpg?_previewAsset_=true">
+				<p>Douglas Hall, named for Supreme Court justice and Whitman alumnus William O. Douglas, is a residence hall for upperclass students. There are 10 single rooms available in the hall, and nine suites which house eight students each. Each suite has two bathrooms, a kitchenette, lounge, and laundry facilities.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37175">
+				<p>The Environmental House, more commonly known as the “Outhouse,” has six bedrooms and houses an average of eight residents and one Resident Assistant. The Outhouse focuses on environmental and ecological issues and spearheads the campus’ recycling program.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37176">
+				<p>The Fine Arts House (FAH) has four bedrooms and houses an average of six to eight residents and one Resident Assistant. The residents of the Fine Arts House work to promote programs emphasizing studio art, theatre, and music.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37177">
+				<img alt="Fouts Center for Visual Arts" class="wc-mc-feature-image" src="https://www.whitman.edu/assets/images/Map/fouts-center-for-the-arts.jpg?_previewAsset_=true">
+				<p>The Fouts Center for the Visual Arts is a 38,000-square-foot facility that provides space for the college's visual arts program. Fouts has studio space for different disciplines, a digital arts lab, student studio spaces, and a gallery where student work is often exhibited.</p>
+				<h4>More Information</h4>
+				<ul>
+					<li>
+						<a href="x26125.xml" title="Fouts Center for Visual Arts">Fouts Center for Visual Arts</a>
+					</li>
+					<li>
+						<a href="x36373.xml" title="Art Department">Art Department</a>
+					</li>
+				</ul>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37178">
+				<p>The Global Awareness House has four bedrooms and &nbsp;houses an average of five residents and one Resident Assistant. Residents of the Global Awareness House focus on raising campus awareness about world issues such as hunger, population, and human rights.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37179">
+				<p>The Glover Alston Center provides a safe space for meaningful conversation and interaction to facilitate Whitman’s commitment to sustaining a diverse community. Many programs that are sponsored by the Intercultural Center and various student groups take place at the GAC.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37180">
+				<img alt="Hall of Music" class="wc-mc-feature-image" src="https://www.whitman.edu/assets/images/Map/music.jpg?_previewAsset_=true">
+				<p>The Hall of Music features Chism Recital Hall, a 300-seat performance space, as well as a listening center, an electronic music studio, 14 teaching studios, and 25 practice rooms.</p>
+				<h4>More Information</h4>
+				<ul>
+					<li>
+						<a href="x27982.xml" title="Music Department">Music Department</a>
+					</li>
+				</ul>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37181">
+				<img alt="Hall of Science" class="wc-mc-feature-image" src="https://www.whitman.edu/assets/images/Map/science2.jpg?_previewAsset_=true">
+				<p>The Hall of Science houses the departments of astronomy, biology, chemistry, geology and physics. Facilities include a roof-top garden, a greenhouse, Brattain Auditorium, an astronomy observation lab, and state-of-the art science equipment such as a scanning electron microscope and confocal microscope.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37182">
+				<img alt="Harper Joy Theatre" class="wc-mc-feature-image" src="https://www.whitman.edu/assets/images/Map/harper-joy.jpg?_previewAsset_=true">
+				<p>The Harper Joy Theatre has two performance spaces, the 310-seat Alexander Stage and the Freimann Studio Theatre. HJT also has an acting studio which serves as its primary acting classroom, a scene shop, a design classroom and computer lab, and a costume shop.</p>
+				<h4>More Information</h4>
+				<ul>
+					<li>
+						<a href="https://www.whitman.edu/hjt/" title="Harper Joy Theatre">Harper Joy Theatre</a>
+					</li>
+					<li>
+						<a href="x9996.xml" title="Theatre and Dance">Theatre and Dance Department</a>
+					</li>
+				</ul>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37183">
+				<img alt="Hunter Conservatory" class="wc-mc-feature-image" src="https://www.whitman.edu/assets/images/Map/hunter.jpg?_previewAsset_=true">
+				<p>Hunter Conservatory houses the 75-seat Kimball Auditorium as well as offices for Whitman's Film and Media Studies professors and for part of the Whitman College Technology Services department.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37184">
+				<img alt="Jewett Hall" class="wc-mc-feature-image" src="https://www.whitman.edu/assets/images/Map/jewett.jpg?_previewAsset_=true">
+				<p>Jewett Hall is a traditional residence hall which houses approximately 170 first year students. It has spacious lounges with kitchen space, a recreation room, and a free laundry room.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37185">
+				<p>La Casa Hispana (The Spanish House) has five bedrooms and houses an average of seven residents and one Resident Assistant. A native speaker also resides in La Casa.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37186">
+				<p>La Maison Française (The French House) has seven bedrooms and comfortably houses an average of eight to nine residents, one Resident Assistant, and a native speaker.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37187">
+				<img alt="Lakum Duckum" class="wc-mc-feature-image" src="https://www.whitman.edu/assets/images/Map/lakum-duckum.jpg?_previewAsset_=true">
+				<p>Lakum Duckum is a pond located between Maxey Hall and Mem which is heated by a nearby geothermal spring. Stone benches provide a peaceful place to relax or study.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37188">
+				<img alt="Lyman House" class="wc-mc-feature-image" src="https://www.whitman.edu/assets/images/Map/lyman.jpg?_previewAsset_=true">
+				<p>Lyman House is a mixed-class residence hall with two-room suites. Lyman houses 89 students.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37189">
+				<p>Marcus House is a residence hall that houses up to 27 upper-class students. The house has single, double and triple rooms.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37190">
+				<p>The MECCA (Multi-Ethnic Center for Cultural Affairs) House has four bedrooms and comfortably houses an average of four residents and one Resident Assistant. This house focuses on raising diversity awareness on Whitman's campus by celebrating and promoting different cultures.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37191">
+				<img alt="Maxey Hall" class="wc-mc-feature-image" src="https://www.whitman.edu/assets/images/Map/maxey.jpg?_previewAsset_=true">
+				<p>Many of the social sciences hold their classes in Maxey Hall. Maxey also has an Auditorium and a museum space.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37193">
+				<p>North Hall is a residence hall choice for up to 70 new, returning, and transfer students who like the feel of a residential neighborhood but still enjoy being part of a larger living community.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37194">
+				<img alt="Olin Hall" class="wc-mc-feature-image" src="https://www.whitman.edu/assets/images/Map/olin.jpg?_previewAsset_=true">
+				<p>Olin Hall is where most mathematics and humanities classes take place. Olin Hall is also home to the Sheehan Art Gallery, and Auditorium, and part of the Whitman College Technology Services Staff.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37196">
+				<p>Whitman's organic garden was created in 1997 by four students. The garden is a space dedicated to spiritual renewal, meaningful labor, community vitality, and sharing healthy practices of cultivating the land. An ASWC sponsored club maintains the garden and organizes events to open the space up to everyone.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37197">
+				<p>The Pacific Northwest Regional Observatory located at Braden Farm near Wallula Gap provides astronomy students the opportunity to use a 30-inch Cassegrain telescope.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37198">
+				<img alt="Penrose House" class="wc-mc-feature-image" src="https://www.whitman.edu/assets/images/Map/penrose-house.jpg?_previewAsset_=true">
+				<p>Penrose House is home to the Admission office. All campus tours start here.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37199">
+				<img alt="Penrose Library" class="wc-mc-feature-image" src="https://www.whitman.edu/assets/images/Map/library.jpg?_previewAsset_=true">
+				<p>Penrose Library serves as a bridge between the Whitman College community—students, faculty, administration, and staff—and the information resources that promote teaching, research and learning.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37200">
+				<p>Whitman's Phi Delta Theta Chapter was established in 1914. The chapter house has a dining room, a study room and a recreation hall with a pool table and ping pong table.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37203">
+				<p>The Physical Plant Services Department is located on Penrose Avenue north of Isaacs. The department is responsible for keeping Whitman working efficiently - from cutting the grass to fixing the heating system, painting the walls to vacuuming the residence halls, and repairing vehicles.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37204">
+				<img alt="Prentiss Hall" class="wc-mc-feature-image" src="https://www.whitman.edu/assets/images/Map/Prentiss.jpg?_previewAsset_=true">
+				<p>Prentiss is an all-women's residence hall that features an attractive arrangement of inner and outer rooms for all doubles, many study rooms, and an AV seminar room. About 145 women live here including sorority members and new students.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37205">
+				<img alt="" class="wc-mc-feature-image" src="https://www.whitman.edu/assets/images/Map/Reid.jpg?_previewAsset_=true">
+				<p>Whitman College's Campus Center is one of the hubs of campus life. It has a cafe, an espresso cart, a tv lounge, and more. The Bookstore, Outdoor Program Rental Shop, Stevens Art Gallery, radio station and Campus Post Office are all located in Reid, as are several administrative offices and student offices.</p>
+				<h4>More Information</h4>
+				<ul>
+					<li>
+						<a href="http://whitman.cafebonappetit.com/cafe/cafe-66/" target="_blank" title="Café '66">Café '66</a>
+					</li>
+					<li>
+						<a href="http://bookstore.whitman.edu/home.aspx" title="Whitman Bookstore">Whitman Book Store</a>
+					</li>
+					<li>
+						<a href="x20485.xml" title="Whitman Outdoor Program">Outdoor Program</a>
+					</li>
+					<li>
+						<a href="http://kwcwradio.tumblr.com/" target="_blank" title="KWCW">KWCW</a>
+					</li>
+					<li>
+						<a href="x34252.xml" title="Campus Post Office">Campus Post Office</a>
+					</li>
+					<li>
+						<a href="x18706.xml" title="Student Engagement Center">Student Engagement Center</a>
+					</li>
+					<li>
+						<a href="x26568.xml" title="Reid Campus Center">Reid Campus Center</a>
+					</li>
+				</ul>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37206">
+				<img alt="Sherwood Athletic Center" class="wc-mc-feature-image" src="https://www.whitman.edu/assets/images/Map/sherwood.jpg?_previewAsset_=true">
+				<p>The Sherwood Athletic Center features a main gym, a multipurpose use space, raquetball courts, and more. The 71,000-square-foot center also has a state-of-the-art indoor climbing wall, team locker room space for varsity programs, and modern athletic training room facilities.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37207">
+				<p>Sherwood House was built in 1922. The house was acquired by Whitman College, and became the residence of the President of Whitman College in 1995.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37208">
+				<p>The Gamma Epsilon Chapter of Sigma Chi was formally installed as a chapter of Sigma Chi at Whitman in 1923.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37209">
+				<p>The Alpha Theta Chapter of Tau Kappa Epsilon was founded at Whitman College in 1930.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37210">
+				<img alt="Tekisuijuku" class="wc-mc-feature-image" src="https://www.whitman.edu/assets/images/Map/tekisuijuku.jpg?_previewAsset_=true">
+				<p>Tekisuijuku (Japanese House) has five bedrooms and comfortably houses an average of five residents, one Resident Assistant and a native speaker. This house focuses on Japanese-oriented interests.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37211">
+				<img alt="Welty Health Center" class="wc-mc-feature-image" src="https://www.whitman.edu/assets/images/Map/Welty0.jpg?_previewAsset_=true">
+				<p>The Welty Student Health Center is a full-service clinic with 12 overnight beds and a nursing staff. A physician is available for examinations and consultations.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37212">
+				<img alt="Outdoor Tennis Courts" class="wc-mc-feature-image" src="https://www.whitman.edu/assets/images/Map/tennis.jpg?_previewAsset_=true">
+				<p>The outdoor tennis courts are located between the Memorial Building and Maxey Hall.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x38160">
+				<p>Tamarac House, a three-story apartment building turned residence hall, is a gateway to the world of nature. Perched on the corner of Park and Main, Tamarac is home to 20 students with a deep and abiding love for outdoor adventure.</p>
+			</div>
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37192">
+				<img src="https://www.whitman.edu/assets/images/Map/memorial.jpg?_previewAsset_=true" alt="Whitman Memorial Building" class="wc-mc-feature-image">
+				<p>Whitman College's main administrative building, <a href="www.google.com">but what about this?</a> also known as "Mem," is the oldest building on campus. Mem serves as the administrative hub for the college.</p>
+				<h4>More Information</h4>
+				<ul>
+				<li><a class="wc-mobile-friendly" href="x36441.xml" title="Business Office">Business Office</a></li>
+				<li><a class="wc-mobile-friendly" href="x36305.xml" title="Financial Aid">Financial Aid</a></li>
+				<li><a href="x387.xml" title="Giving">Giving</a></li>
+				<li><a href="x30859.xml" title="Human Resources">Human Resources</a></li>
+				<li><a href="x36533.xml" title="Institutional Research">Institutional Research</a></li>
+				<li><a href="x25558.xml" title="Off Campus Studies">Off Campus Studies</a></li>
+				<li><a href="x36567.xml" title="President's Office">President's Office</a></li>
+				<li><a href="x27702.xml" title="Registrar">Registrar</a></li>
+				</ul>
+			</div>
+</div>
+		</div>
+
+	</div>
+	
+include "pieces/layout/footer.html"

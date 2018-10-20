@@ -1,0 +1,85 @@
+include "pieces/layout/header.html"
+	<!-- Content -->
+	<div class="wc-content-wrap wc-landing-page wc-landing-page-layout" >
+		<!-- STATIC IMAGE TITLE BOX -->
+		<div class="wc-title-box wc-image-title-box">
+			<!-- Example with text: https://res.cloudinary.com/whitman-college/image/fetch/h_390,w_750,c_fill,q_30/l_text:helvetica_80_bold:w-750,co_white,f_auto/https://www.whitman.edu/assets/images/TestImages/HeroImages/campus1.jpg 750w, -->
+			<img 	src = "https://res.cloudinary.com/whitman-college/image/fetch/w_2000,c_fill,q_40/https://www.whitman.edu/assets/images/Admissions/HomePage/DSC_4145.JPG" 
+					sizes = "100vw" 
+					srcset = "https://res.cloudinary.com/whitman-college/image/fetch/w_750,c_fill,q_40/https://www.whitman.edu/assets/images/Admissions/HomePage/DSC_4145.JPG 750w, 
+							https://res.cloudinary.com/whitman-college/image/fetch/w_1000,c_fill,q_40/https://www.whitman.edu/assets/images/Admissions/HomePage/DSC_4145.JPG 1000w, 
+							https://res.cloudinary.com/whitman-college/image/fetch/w_2000,c_fill,q_40/https://www.whitman.edu/assets/images/Admissions/HomePage/DSC_4145.JPG 2000w" 
+					class = "wc-tb-hero-image wc-vert-align-center wc-horiz-align-center">
+			<!-- NO-CDN EXAMPLE -->
+			<!-- <img class="wc-tb-hero-image wc-vert-align-bottom wc-horiz-align-right"
+				src="https://www.whitman.edu/assets/images/TestImages/HeroImages/campus1.jpg"
+				alt="">-->
+			<div class="wc-overlay wc-desktop-shade-gradient-top wc-desktop-shade-5 wc-mobile-shade-4">
+				<div class="wc-container">
+					<h1 class="wc-page-title">Admission &amp; Aid</h1>
+					<div class="wc-tb-feature-box wc-desktop-shade-5">
+						<div class="wc-tb-feature">
+							<p>Your summer vacation is an ideal time to visit Whitman. We invite you to come take a tour and get a feel for campus life!</p>
+							<div class="wc-button-box wc-same-height-children wc-two-buttons">
+								<a class="wc-box-button wc-white wc-small" 
+								href="https://www.google.com" 
+								title="Something!" target="_blank">Visit Whitman Now</a>
+								<a class="wc-box-button wc-white wc-small" href="https://www.google.com" title="Something!" target="_blank">More Events</a>
+							</div>
+						</div>
+						<div class="wc-tb-caption-box">
+							<svg class="wc-icon" viewbox="0 0 32 32"><use xlink:href="images/svg/svg-defs.svg#icon-camera" /></svg>
+							<div class="wc-text-box">
+								<p>This is gonna be the best thing ever, but not short, seriously. This is gonna be the best thing ever, but not short. </p>
+								<p class="wc-photo-credit">By Tom Tommerson</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="wc-container wc-expand-for-nav">
+			<div class="wc-row wc-collapsed-nav-row">
+				include "pieces/layout/left-column.html"
+			</div>
+
+			<div class="wc-row wc-component-row">
+				include "pieces/large-promo.html"
+			</div>
+			<div class="wc-divider-row">
+				<div class="wc-divider-box"><hr class="wc-divider"></div>
+			</div>
+			<div class="wc-row wc-component-row">
+				include "pieces/admission/instagram-component.html"
+				<!-- include "pieces/admission/rss-component.html" -->
+			</div>
+			<div class="wc-divider-row">
+				<div class="wc-divider-box"><hr class="wc-divider"></div>
+			</div>
+			<div class="wc-row wc-component-row">
+				include "pieces/taxonomy-index-component.html"
+			</div>
+			<div class="wc-divider-row">
+				<div class="wc-divider-box"><hr class="wc-divider"></div>
+			</div>
+			<div class="wc-row wc-component-row">
+				include "pieces/horizontal-slider_icons.html"
+			</div>
+			<div class="wc-divider-row">
+				<div class="wc-divider-box"><hr class="wc-divider"></div>
+			</div>
+
+			<div class="wc-row wc-component-row">
+				include "pieces/horizontal-category-slider.html"
+			</div>
+			<div class="wc-row wc-component-row">
+				include "pieces/admission/more-information-component.html"
+				<hr class="wc-vertical-divider">
+				include "pieces/admission/contact-admission-component.html"
+			</div>
+
+
+		</div>
+	</div>
+include "pieces/layout/footer.html"

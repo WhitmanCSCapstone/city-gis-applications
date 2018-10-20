@@ -1,0 +1,50 @@
+/*********************
+ * Custom styles for the After Whitman Page
+ *********************/
+
+/*********************
+ * Linked In Custom Promo (licp)
+ *********************/
+.wc-licp{
+	.wc-licp-content-row{
+		width: 100%;
+		padding: 1rem 0;
+		@include clearfix();
+	}
+	.wc-licp-left-content{
+		@include clearfix();
+		//background-color:#9999cc;
+		float: left;
+		@include responsiveWidth(100%,50%,65%,70%);
+		@include responsivePaddingTop(1rem,1rem,2rem,3rem);
+	}
+	.wc-licp-right-content{
+		@include clearfix();
+		//background-color:#ff9999;
+		float: left;
+		@include responsiveWidth(100%,50%,35%,30%);
+		@include responsiveTextAlign(center,right,right,right);
+		@include responsivePaddingTop(1rem,2rem,0,0);
+		span{
+			box-sizing:content-box;
+		}
+
+		/*********************
+		 * LinkedIn fallback image stuff
+		 *********************/
+		.wc-licp-fallback img{
+			border:1px solid #999;
+		}
+		&.wc-load-succeeded{
+			.wc-licp-wc-content{
+				display:none;
+			}
+		}
+		&:not(.wc-load-succeeded){
+			.wc-licp-li-content{
+				display:none;
+			}
+		}
+
+	}
+}

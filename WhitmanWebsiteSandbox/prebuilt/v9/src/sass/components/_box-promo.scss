@@ -1,0 +1,71 @@
+/**********************************
+	
+#BOX-PROMO
+
+Info
+	Full width promo of 3 boxes with blurbs, links, and sometimes 
+	background images. Intended for use at the bottom of a page for
+	things like related links.
+**********************************/
+
+.wc-box-promo{
+	@include responsiveFontSize(18px,16px,18px,22px);
+
+	.wc-slide-box{
+		@include make-xs-column(12);
+		@include make-sm-column(4);
+	}
+	.wc-slide-content{
+		@include clearfix();
+		width:100%;
+		position:relative;
+		display:block;
+		float:left;
+		height:230px;
+		padding:1em;
+		background-color:$medium-blue;
+
+		p{
+			color:$white;
+			display:block;
+			font-size:1em;
+			text-align: left;
+			font-weight:100;
+			&.wc-big{
+				font-size:1.4em;
+				padding:0 .4em;
+			}
+		}
+		.wc-more-link{
+			font-size: 1em;
+			display:block;
+			position:absolute;
+			bottom:22px;
+			right:20px;
+			text-transform: uppercase;
+			.wc-text{
+				font-weight: 400;
+				color:$white;
+			}
+			svg{
+				fill:$white;
+			}
+			&:hover{
+				text-decoration: none;
+				.wc-text{
+					color:$light-gray-1;
+				}
+				svg{
+					fill:$light-gray-1;
+				}
+			}
+		}
+	}
+}
+
+/**********************************
+#IE8-FALLBACK
+**********************************/
+html.no-rgba .wc-box-promo{
+	display: none;
+}

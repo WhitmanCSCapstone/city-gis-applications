@@ -1,0 +1,90 @@
+/**********************************
+	
+#DROPDOWN-SLIDER
+
+Info
+	Styles for the dropdown slider component.
+
+Notes
+[-]		See wc-hider-control.js for the javascript
+
+**********************************/
+.wc-dropdown-slider-component{
+	width:100%;
+}
+	.wc-dropdown-slider-buttons{
+		@extend .hidden-xs;
+		@extend .hidden-sm;
+		display:flex;
+		padding:0 0 20px 0;
+		margin-left:-4px;
+		margin-right:-4px;
+		button{
+			padding:12px 0;
+			margin:0 4px;
+			flex:1;
+			position:relative;
+			color:$white;
+			font-size:18px;
+			font-weight: 200;
+			background-color:$dark-gray;
+			@extend .wc-no-focus-outline;
+			&:focus{
+				background-color:$medium-blue;
+			}
+			&.wc-active,&:hover{
+				background-color:$medium-blue;
+				fill:$medium-blue;
+				svg{
+					display:block;
+				}
+			}
+			svg{
+				display:none;
+				width:40px;
+				height:18px;
+				position:absolute;
+				margin-left:auto;
+				margin-right:auto;
+				left:0;
+				right:0;
+				top:99%;
+			}
+		}
+	}
+	.wc-dropdown-slide-group{
+		@include clearfix();
+	}
+		.wc-dropdown-slide{
+			>:last-child{
+				margin-bottom:0;
+			}
+			>:first-child{
+				margin-top:0;
+			}
+		}
+
+/**********************************
+#FLEXBOX-FALLBACKS
+**********************************/
+.no-flexbox {
+	.wc-dropdown-slider-buttons{
+		button{
+			padding:12px;
+		}
+	}
+}
+
+/**********************************
+#IE8-FALLBACK
+**********************************/
+html.no-rgba .wc-dropdown-slider-component{
+	.wc-dropdown-slider-buttons{
+		display: none;
+	}
+	.collapse{
+		display: block;
+	}
+}
+
+

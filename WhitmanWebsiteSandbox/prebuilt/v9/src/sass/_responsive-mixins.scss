@@ -1,0 +1,509 @@
+/**********************************
+	
+#RESPONSIVE-MIXINS
+
+Info
+	Just some mixins to make creating responsive styles quicker. Each
+	mixin takes 4 arguments for the four breakpoints (xs, sm, md, lg).
+
+Notes
+[1] 	This is necessary for some reason
+
+**********************************/
+@mixin responsiveIcon($xs-size:24px,$sm-size:24px,$md-size:24px,$lg-size:24px,$color:$medium-blue){
+	@media(max-width:$screen-xs-max){
+		width:$xs-size;//assumes a square icon
+		height:$xs-size;
+	}
+	@media(min-width:$screen-sm-min) and (max-width:$screen-sm-max){
+		width:$sm-size;
+		height:$sm-size;
+	}
+	@media(min-width:$screen-md-min) and (max-width:$screen-md-max){
+		width:$md-size;
+		height:$md-size;
+	}
+	@media(min-width:$screen-lg-min){
+		width:$lg-size;
+		height:$lg-size;
+	}
+	fill:$color;
+}
+
+/**********************************
+#WIDTH #HEIGHT
+**********************************/
+@mixin responsiveWidth($xs-width,$sm-width,$md-width,$lg-width){
+	@media(max-width:$screen-xs-max){
+		width:$xs-width;
+	}
+	@media(min-width:$screen-sm-min) and (max-width:$screen-sm-max){
+		width:$sm-width;
+	}
+	@media(min-width:$screen-md-min) and (max-width:$screen-md-max){
+		width:$md-width;
+	}
+	@media(min-width:$screen-lg-min){
+		width:$lg-width;
+	}
+}
+@mixin responsiveMaxWidth($xs-width,$sm-width,$md-width,$lg-width){
+	@media(max-width:$screen-xs-max){
+		max-width:$xs-width;
+	}
+	@media(min-width:$screen-sm-min) and (max-width:$screen-sm-max){
+		max-width:$sm-width;
+	}
+	@media(min-width:$screen-md-min) and (max-width:$screen-md-max){
+		max-width:$md-width;
+	}
+	@media(min-width:$screen-lg-min){
+		max-width:$lg-width;
+	}
+}
+@mixin responsiveHeight($xs-height,$sm-height,$md-height,$lg-height){
+	@media(max-width:$screen-xs-max){
+		height:$xs-height;
+	}
+	@media(min-width:$screen-sm-min) and (max-width:$screen-sm-max){
+		height:$sm-height;
+	}
+	@media(min-width:$screen-md-min) and (max-width:$screen-md-max){
+		height:$md-height;
+	}
+	@media(min-width:$screen-lg-min){
+		height:$lg-height;
+	}
+}
+@mixin responsiveMaxHeight($xs-height,$sm-height,$md-height,$lg-height){
+	@media(max-width:$screen-xs-max){
+		max-height:$xs-height;
+	}
+	@media(min-width:$screen-sm-min) and (max-width:$screen-sm-max){
+		max-height:$sm-height;
+	}
+	@media(min-width:$screen-md-min) and (max-width:$screen-md-max){
+		max-height:$md-height;
+	}
+	@media(min-width:$screen-lg-min){
+		max-height:$lg-height;
+	}
+}
+@mixin responsiveMinHeight($xs-height,$sm-height,$md-height,$lg-height){
+	@media(max-width:$screen-xs-max){
+		min-height:$xs-height;
+	}
+	@media(min-width:$screen-sm-min) and (max-width:$screen-sm-max){
+		min-height:$sm-height;
+	}
+	@media(min-width:$screen-md-min) and (max-width:$screen-md-max){
+		min-height:$md-height;
+	}
+	@media(min-width:$screen-lg-min){
+		min-height:$lg-height;
+	}
+}
+
+
+/**********************************
+#FONT
+**********************************/
+@mixin responsiveFontSize($xs-size,$sm-size,$md-size,$lg-size){
+	@media(max-width:$screen-xs-max){
+		font-size:$xs-size;
+	}
+	@media(min-width:$screen-sm-min) and (max-width:$screen-sm-max){
+		font-size:$sm-size;
+	}
+	@media(min-width:$screen-md-min) and (max-width:$screen-md-max){
+		font-size:$md-size;
+	}
+	@media(min-width:$screen-lg-min){
+		font-size:$lg-size;
+	}
+}
+@mixin responsiveFontWeight($xs-weight,$sm-weight,$md-weight,$lg-weight){
+	@media(max-width:$screen-xs-max){
+		font-weight:$xs-weight;
+	}
+	@media(min-width:$screen-sm-min) and (max-width:$screen-sm-max){
+		font-weight:$sm-weight;
+	}
+	@media(min-width:$screen-md-min) and (max-width:$screen-md-max){
+		font-weight:$md-weight;
+	}
+	@media(min-width:$screen-lg-min){
+		font-weight:$lg-weight;
+	}
+}
+@mixin responsiveTextAlign($xs-align,$sm-align,$md-align,$lg-align){
+	@media(max-width:$screen-xs-max){
+		text-align:$xs-align;
+	}
+	@media(min-width:$screen-sm-min) and (max-width:$screen-sm-max){
+		text-align:$sm-align;
+	}
+	@media(min-width:$screen-md-min) and (max-width:$screen-md-max){
+		text-align:$md-align;
+	}
+	@media(min-width:$screen-lg-min){
+		text-align:$lg-align;
+	}
+}
+
+/**********************************
+#MARGIN
+**********************************/
+@mixin responsiveMargin($xs-margin,$sm-margin,$md-margin,$lg-margin){
+	@media(max-width:$screen-xs-max){
+		margin:$xs-margin;
+	}
+	@media(min-width:$screen-sm-min) and (max-width:$screen-sm-max){
+		margin:$sm-margin;
+	}
+	@media(min-width:$screen-md-min) and (max-width:$screen-md-max){
+		margin:$md-margin;
+	}
+	@media(min-width:$screen-lg-min){
+		margin:$lg-margin;
+	}
+}
+@mixin responsiveMarginTop($xs-margin,$sm-margin,$md-margin,$lg-margin){
+	@media(max-width:$screen-xs-max){
+		margin-top:$xs-margin;
+	}
+	@media(min-width:$screen-sm-min) and (max-width:$screen-sm-max){
+		margin-top:$sm-margin;
+	}
+	@media(min-width:$screen-md-min) and (max-width:$screen-md-max){
+		margin-top:$md-margin;
+	}
+	@media(min-width:$screen-lg-min){
+		margin-top:$lg-margin;
+	}
+}
+@mixin responsiveMarginBottom($xs-margin,$sm-margin,$md-margin,$lg-margin){
+	@media(max-width:$screen-xs-max){
+		margin-bottom:$xs-margin;
+	}
+	@media(min-width:$screen-sm-min) and (max-width:$screen-sm-max){
+		margin-bottom:$sm-margin;
+	}
+	@media(min-width:$screen-md-min) and (max-width:$screen-md-max){
+		margin-bottom:$md-margin;
+	}
+	@media(min-width:$screen-lg-min){
+		margin-bottom:$lg-margin;
+	}
+}
+@mixin responsiveMarginLeft($xs-margin,$sm-margin,$md-margin,$lg-margin){
+	@media(max-width:$screen-xs-max){
+		margin-left:$xs-margin;
+	}
+	@media(min-width:$screen-sm-min) and (max-width:$screen-sm-max){
+		margin-left:$sm-margin;
+	}
+	@media(min-width:$screen-md-min) and (max-width:$screen-md-max){
+		margin-left:$md-margin;
+	}
+	@media(min-width:$screen-lg-min){
+		margin-left:$lg-margin;
+	}
+}
+@mixin responsiveMarginRight($xs-margin,$sm-margin,$md-margin,$lg-margin){
+	@media(max-width:$screen-xs-max){
+		margin-right:$xs-margin;
+	}
+	@media(min-width:$screen-sm-min) and (max-width:$screen-sm-max){
+		margin-right:$sm-margin;
+	}
+	@media(min-width:$screen-md-min) and (max-width:$screen-md-max){
+		margin-right:$md-margin;
+	}
+	@media(min-width:$screen-lg-min){
+		margin-right:$lg-margin;
+	}
+}
+
+
+/**********************************
+#PADDING
+**********************************/
+@mixin responsivePadding($xs-padding,$sm-padding,$md-padding,$lg-padding){
+	@media(max-width:$screen-xs-max){
+		padding:$xs-padding;
+	}
+	@media(min-width:$screen-sm-min) and (max-width:$screen-sm-max){
+		padding:$sm-padding;
+	}
+	@media(min-width:$screen-md-min) and (max-width:$screen-md-max){
+		padding:$md-padding;
+	}
+	@media(min-width:$screen-lg-min){
+		padding:$lg-padding;
+	}
+}
+@mixin responsivePaddingTop($xs-padding,$sm-padding,$md-padding,$lg-padding){
+	@media(max-width:$screen-xs-max){
+		padding-top:$xs-padding;
+	}
+	@media(min-width:$screen-sm-min) and (max-width:$screen-sm-max){
+		padding-top:$sm-padding;
+	}
+	@media(min-width:$screen-md-min) and (max-width:$screen-md-max){
+		padding-top:$md-padding;
+	}
+	@media(min-width:$screen-lg-min){
+		padding-top:$lg-padding;
+	}
+}
+@mixin responsivePaddingBottom($xs-padding,$sm-padding,$md-padding,$lg-padding){
+	@media(max-width:$screen-xs-max){
+		padding-bottom:$xs-padding;
+	}
+	@media(min-width:$screen-sm-min) and (max-width:$screen-sm-max){
+		padding-bottom:$sm-padding;
+	}
+	@media(min-width:$screen-md-min) and (max-width:$screen-md-max){
+		padding-bottom:$md-padding;
+	}
+	@media(min-width:$screen-lg-min){
+		padding-bottom:$lg-padding;
+	}
+}
+@mixin responsivePaddingLeft($xs-padding,$sm-padding,$md-padding,$lg-padding){
+	@media(max-width:$screen-xs-max){
+		padding-left:$xs-padding;
+	}
+	@media(min-width:$screen-sm-min) and (max-width:$screen-sm-max){
+		padding-left:$sm-padding;
+	}
+	@media(min-width:$screen-md-min) and (max-width:$screen-md-max){
+		padding-left:$md-padding;
+	}
+	@media(min-width:$screen-lg-min){
+		padding-left:$lg-padding;
+	}
+}
+@mixin responsivePaddingRight($xs-padding,$sm-padding,$md-padding,$lg-padding){
+	@media(max-width:$screen-xs-max){
+		padding-right:$xs-padding;
+	}
+	@media(min-width:$screen-sm-min) and (max-width:$screen-sm-max){
+		padding-right:$sm-padding;
+	}
+	@media(min-width:$screen-md-min) and (max-width:$screen-md-max){
+		padding-right:$md-padding;
+	}
+	@media(min-width:$screen-lg-min){
+		padding-right:$lg-padding;
+	}
+}
+
+/**********************************
+#POSITIONING
+**********************************/
+@mixin responsivePosition($xs-position,$sm-position,$md-position,$lg-position){
+	@media(max-width:$screen-xs-max){
+		position:$xs-position;
+	}
+	@media(min-width:$screen-sm-min) and (max-width:$screen-sm-max){
+		position:$sm-position;
+	}
+	@media(min-width:$screen-md-min) and (max-width:$screen-md-max){
+		position:$md-position;
+	}
+	@media(min-width:$screen-lg-min){
+		position:$lg-position;
+	}
+}
+@mixin responsiveBottom($xs-bottom,$sm-bottom,$md-bottom,$lg-bottom){
+	@media(max-width:$screen-xs-max){
+		bottom:$xs-bottom;
+	}
+	@media(min-width:$screen-sm-min) and (max-width:$screen-sm-max){
+		bottom:$sm-bottom;
+	}
+	@media(min-width:$screen-md-min) and (max-width:$screen-md-max){
+		bottom:$md-bottom;
+	}
+	@media(min-width:$screen-lg-min){
+		bottom:$lg-bottom;
+	}
+}
+@mixin responsiveTop($xs-top,$sm-top,$md-top,$lg-top){
+	@media(max-width:$screen-xs-max){
+		top:$xs-top;
+	}
+	@media(min-width:$screen-sm-min) and (max-width:$screen-sm-max){
+		top:$sm-top;
+	}
+	@media(min-width:$screen-md-min) and (max-width:$screen-md-max){
+		top:$md-top;
+	}
+	@media(min-width:$screen-lg-min){
+		top:$lg-top;
+	}
+}
+@mixin responsiveLeft($xs-left,$sm-left,$md-left,$lg-left){
+	@media(max-width:$screen-xs-max){
+		left:$xs-left;
+	}
+	@media(min-width:$screen-sm-min) and (max-width:$screen-sm-max){
+		left:$sm-left;
+	}
+	@media(min-width:$screen-md-min) and (max-width:$screen-md-max){
+		left:$md-left;
+	}
+	@media(min-width:$screen-lg-min){
+		left:$lg-left;
+	}
+}
+@mixin responsiveRight($xs-right,$sm-right,$md-right,$lg-right){
+	@media(max-width:$screen-xs-max){
+		right:$xs-right;
+	}
+	@media(min-width:$screen-sm-min) and (max-width:$screen-sm-max){
+		right:$sm-right;
+	}
+	@media(min-width:$screen-md-min) and (max-width:$screen-md-max){
+		right:$md-right;
+	}
+	@media(min-width:$screen-lg-min){
+		right:$lg-right;
+	}
+}
+
+/**********************************
+#FLEX
+**********************************/
+@mixin responsiveFlexWidth($xs-width,$sm-width,$md-width,$lg-width){
+	min-width: 1px; /*[1]*/
+	flex-grow:0;
+	flex-shrink: 0;
+	@media(max-width:$screen-xs-max){
+		flex-basis: $xs-width;
+	}
+	@media(min-width:$screen-sm-min) and (max-width:$screen-sm-max){
+		flex-basis: $sm-width;
+	}
+	@media(min-width:$screen-md-min) and (max-width:$screen-md-max){
+		flex-basis: $md-width;
+	}
+	@media(min-width:$screen-lg-min){
+		flex-basis: $lg-width;
+	}
+}
+
+/**********************************
+#GUTTERS
+**********************************/
+@mixin noGutterXs(){
+	@media(max-width:$screen-xs-max){
+		padding-left:0;
+		padding-right:0;
+	}	
+}
+@mixin noGutterSm(){
+	@media(min-width:$screen-sm-min) and (max-width:$screen-sm-max){
+		padding-left:0;
+		padding-right:0;
+	}
+}
+@mixin noGutterMd(){
+	@media(min-width:$screen-md-min) and (max-width:$screen-md-max){
+		padding-left:0;
+		padding-right:0;
+	}
+}
+@mixin noGutterLg(){
+	@media(min-width:$screen-lg-min){
+		padding-left:0;
+		padding-right:0;
+	}
+}
+@mixin noVerticalGutterXs(){
+	@media(max-width:$screen-xs-max){
+		padding-top:0;
+		padding-bottom:0;
+	}	
+}
+@mixin noVerticalGutterSm(){
+	@media(min-width:$screen-sm-min) and (max-width:$screen-sm-max){
+		padding-top:0;
+		padding-bottom:0;
+	}
+}
+@mixin noVerticalGutterMd(){
+	@media(min-width:$screen-md-min) and (max-width:$screen-md-max){
+		padding-top:0;
+		padding-bottom:0;
+	}
+}
+@mixin noVerticalGutterLg(){
+	@media(min-width:$screen-lg-min){
+		padding-top:0;
+		padding-bottom:0;
+	}
+}
+
+/**********************************
+#MISC
+**********************************/
+@mixin responsiveDisplay($xs-display,$sm-display,$md-display,$lg-display){
+	@media(max-width:$screen-xs-max){
+		display:$xs-display;
+	}
+	@media(min-width:$screen-sm-min) and (max-width:$screen-sm-max){
+		display:$sm-display;
+	}
+	@media(min-width:$screen-md-min) and (max-width:$screen-md-max){
+		display:$md-display;
+	}
+	@media(min-width:$screen-lg-min){
+		display:$lg-display;
+	}
+}
+@mixin responsiveFloat($xs-float,$sm-float,$md-float,$lg-float){
+	@media(max-width:$screen-xs-max){
+		float:$xs-float;
+	}
+	@media(min-width:$screen-sm-min) and (max-width:$screen-sm-max){
+		float:$sm-float;
+	}
+	@media(min-width:$screen-md-min) and (max-width:$screen-md-max){
+		float:$md-float;
+	}
+	@media(min-width:$screen-lg-min){
+		float:$lg-float;
+	}
+}
+@mixin responsiveBackgroundColor($xs-bg-color,$sm-bg-color,$md-bg-color,$lg-bg-color){
+	@media(max-width:$screen-xs-max){
+		background-color:$xs-bg-color;
+	}
+	@media(min-width:$screen-sm-min) and (max-width:$screen-sm-max){
+		background-color:$sm-bg-color;
+	}
+	@media(min-width:$screen-md-min) and (max-width:$screen-md-max){
+		background-color:$md-bg-color;
+	}
+	@media(min-width:$screen-lg-min){
+		background-color:$lg-bg-color;
+	}
+}
+@mixin responsiveTransition($xs-transition,$sm-transition,$md-transition,$lg-transition){
+	@media(max-width:$screen-xs-max){
+		transition:$xs-transition;
+	}
+	@media(min-width:$screen-sm-min) and (max-width:$screen-sm-max){
+		transition:$sm-transition;
+	}
+	@media(min-width:$screen-md-min) and (max-width:$screen-md-max){
+		transition:$md-transition;
+	}
+	@media(min-width:$screen-lg-min){
+		transition:$lg-transition;
+	}
+}
+

@@ -1,0 +1,312 @@
+/**********************************
+	
+#FOOTER
+
+Info
+	Styles for the footer
+**********************************/
+.wc-footer{
+	a,h4,h3,h2,p,span{
+		color:$white;
+	}
+	a,p,span{
+		@include responsiveFontSize(1.2rem,.8rem,.8rem,.8rem);
+	}
+	h4 {
+		@include responsiveFontSize(1.4rem,1rem,1rem,1rem);
+	}
+	color:$white;
+	background-color:$medium-blue;
+	// font-size:14px;
+	@include responsivePaddingTop($vertical-footer-gutter * .5,$vertical-footer-gutter * .5,$vertical-footer-gutter * .7,$vertical-footer-gutter);
+	@include responsivePaddingBottom($vertical-footer-gutter * .5,$vertical-footer-gutter * .5,$vertical-footer-gutter * .7,$vertical-footer-gutter);
+	hr{
+		color:$white;
+	}
+	.wc-row{
+		@include responsivePaddingTop($vertical-footer-gutter,$vertical-footer-gutter * .5,$vertical-footer-gutter * .7,$vertical-footer-gutter);
+		@include responsivePaddingBottom($vertical-footer-gutter * .5,$vertical-footer-gutter * .5,$vertical-footer-gutter * .7,$vertical-footer-gutter);
+		&.wc-no-gutter{
+			padding-top:0;
+			padding-bottom:0;
+		}
+		&.wc-no-top-gutter{
+			padding-top:0;
+		}
+		&.wc-no-bottom-gutter{
+			padding-bottom:0;
+		}
+	}
+}
+
+	/**********************************
+	#FOOTER-LINKS
+
+	Notes
+	[1] Moved to .wc-list-header and .wc-menu to _globals.scss
+	**********************************/
+	.wc-footer-row1{
+		@media(max-width:$screen-sm-max){
+			display:none;
+		}
+	}
+		.wc-footer-list-box{
+			width:20%;
+			float:left;
+			@media(min-width:$screen-md-min)and(max-width:$screen-md-max){
+				padding:0 $grid-gutter-width/5;
+			}
+			@media(min-width:$screen-lg-min){
+				padding:0 $grid-gutter-width;
+			}
+			li {
+				line-height: 1;
+				margin-bottom: 0.4rem;
+			}
+			a{
+				font-weight:300;
+			}
+			.wc-list-header{
+				display:block;
+				width:100%;
+				border-bottom:1px solid $white;
+				padding: 0 0 6px 0;
+			}
+		}
+
+
+	/**********************************
+	#LOGO
+	**********************************/
+	.wc-row.wc-footer-row2{
+	}
+    .wc-footer-logo-link{
+			display:block;
+			@media(max-width:$screen-sm-max){
+				margin-left:auto;
+                margin-right:auto;
+			}
+		}
+		.wc-footer-row2-box-a{
+			@include make-xs-column(12);
+			@include noGutterSm();
+			text-align: center;
+			hr{
+				@media(max-width:$screen-xs-max){
+					display:none;
+				}
+				@media(min-width:$screen-sm-min){
+					display:inline-block;
+					vertical-align: middle;
+					@media(max-width:$screen-sm-max){
+						// width:28%;
+						display:none;
+					}
+					@media(min-width:$screen-md-min){
+						width:34%;
+					}
+				}
+			}
+		}
+			@media(max-width:$screen-xs-max){
+				.wc-footer-logo-flat{
+					display:none;
+				}
+				.wc-footer-logo-stacked{
+					width:200px;
+					max-height:200px;
+					display:inline-block;
+					fill:$white;
+				}
+			}
+			@media(min-width:$screen-sm-min){
+				.wc-footer-logo-flat{
+					@include responsiveWidth(42%,42%,31%,31%);
+					max-height:40px;
+					display:inline-block;
+					vertical-align: middle;
+					fill:$white;
+					padding: 0 14px;
+				}
+				.wc-footer-logo-stacked{
+					display:none;
+				}
+			}
+
+
+
+
+	/**********************************
+	#CONTACT-INFO
+
+	Notes
+	[1] 	Lines it up with the phone number for mobile screens
+	**********************************/
+	.wc-row.wc-footer-row3{
+		display: flex;
+		@media(min-width:$screen-md-min){
+			flex-direction:row;
+		}
+		@media(max-width:$screen-sm-max){
+			flex-direction:column-reverse;
+		}
+	}
+		.wc-footer-row3-box{
+			@media(min-width:$screen-md-min){
+				padding-left:$horizontal-gutter;
+				padding-right:$horizontal-gutter;
+			}
+			@media(max-width:$screen-sm-max){
+				text-align: center;
+				padding-top:$vertical-gutter * 1;
+				padding-bottom:$vertical-gutter * 1;
+			}
+			@media(max-width:$screen-xs-max){
+				&:first-child{
+					padding-top:0;
+				}
+				&:last-child{
+					padding-bottom:0;
+				}
+			}
+		}
+
+		.wc-footer-row3-box-a{
+			@media(min-width:$screen-md-min){
+				text-align: left;
+				flex:1;
+			}
+		}
+			.wc-street-address{
+				@include button(36px, 1.1em, $white,$light-gray-2);
+				.wc-text{
+					font-weight:100;
+					margin-left:8px;
+					@media(max-width:$screen-md-max){
+						span{
+							display:block;
+							padding-left:4px;
+							text-align: left;
+							> span {
+								display:inline;
+								padding-left:0;
+							}
+						}
+					}
+				}
+				&:hover{
+					text-decoration: none;
+					.wc-text{
+						text-decoration: underline;
+					}
+				}
+				&:focus{
+					text-decoration: none;
+					.wc-text{
+						text-decoration: underline;
+					}
+				}
+				@media(max-width:$screen-xs-max){
+					margin-left:-26px; /*[1]*/
+				}
+			}
+
+		.wc-footer-row3-box-b{
+			@media(min-width:$screen-md-min){
+				text-align: center;
+				flex: 0 0 36%;
+			}
+		}
+			.wc-phone-numbers{
+				svg{
+					@include icon(36px,white);
+					display:inline-block;
+					vertical-align: middle;
+				}
+				.wc-text{
+					font-weight:100;
+					font-size:1.1em;
+					display:inline-block;
+					vertical-align: middle;
+					@media(min-width:$screen-md-min){
+						color:$white;
+					}
+					@media(max-width:$screen-md-max){
+						span{
+							display:block;
+							padding-left:4px;
+							text-align: left;
+							> span {
+								display:inline;
+								padding-left:0;
+							}
+						}
+						.wc-bullet{
+							display:none;
+						}
+					}
+				}
+				.wc-bullet{
+					padding:0 2px;
+				}
+			}
+		.wc-footer-row3-box-c{
+			img{
+				@include responsiveWidth(48px, 38px, 40px, 40px);
+			}
+			@media(min-width:$screen-md-min){
+				text-align: right;
+				flex:1;
+			}
+		}
+			.wc-footer .wc-social-link{
+				display:inline-block;
+				@media(max-width:$screen-xs-max){
+					padding:0 8px; //was 4
+				}
+				@media(min-width:$screen-sm-min){
+					padding:0 2px; //was 2
+				}
+				svg{
+					@include icon(40px,$white);
+					vertical-align: middle;
+				}
+				&:hover{
+					svg{
+						fill:$gold;
+					}
+					.wc-text{
+						color:$gold;
+						text-decoration: none;							
+					}
+				}
+			}
+			.wc-more-social-links{
+				padding:0 0 0 3px;
+				display:inline-block;
+				@media(min-width:$screen-sm-min)and(max-width:$screen-md-max){
+					margin-top:6px;
+				}
+				@include button(32px, 16px, $white, $light-gray-2);
+				&:hover{
+					svg{
+						fill:$gold;
+					}
+					.wc-text{
+						color:$gold;
+						text-decoration: underline;
+					}
+				}
+			}
+
+	.wc-footer-row4{
+	}
+		.wc-footer-row4-box-a{
+			@include make-xs-column(12);
+			text-align: center;
+		}
+			.wc-copyright{
+				font-weight:100;	
+			}
+
+

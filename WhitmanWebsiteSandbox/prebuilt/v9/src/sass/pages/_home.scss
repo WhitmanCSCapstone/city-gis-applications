@@ -1,0 +1,70 @@
+/**********************************
+#HOME-PAGE
+**********************************/
+
+/**********************************
+#HOME-PAGE-TITLE-BOX
+
+Notes
+[-] 	See _title-box.scss and _shades.scss foar most of the imge and overlay styles
+[1] 	This is for using js to trigger a fade-in because safari/firefox have a
+		a bug with playing the video at random spots. See the loadVideo function in globals.js
+**********************************/
+.wc-home-page-layout .wc-title-box{
+	.wc-container{
+		position:relative;
+		@include responsiveHeight(520px, 520px, 620px, 620px);
+	}
+	.wc-overlay{
+		position: relative;
+		width:100%;
+		height:100%;
+	}
+}
+.wc-home-feature-caption{
+	@media(min-width:$screen-sm-min){
+		position: absolute;
+		transform: translateY(-50%);
+		&.wc-left-caption{
+			left: $horizontal-gutter;
+		}
+		&.wc-right-caption{	
+			right: $horizontal-gutter;
+		}
+	}
+	@include responsiveTop(0, 50%, 50%, 50%);
+	@include responsiveWidth(100%,100%,80%,60%);
+	@include responsivePaddingTop(1.5rem,0,0,0);
+	h2, a, p{
+		color:$white;
+		text-shadow:1px 1px 6px #000;
+	}
+	h2{
+		@include responsiveFontSize(2em, 2.8em, 3em, 3em);
+		@include responsiveMarginTop(.2em,0,0,0);
+		margin-bottom: .1em;
+	}
+	p{
+		@include responsiveFontSize(1em, 1em, 1em, 1em);
+	}
+	.wc-box-button{
+        margin: 0 1rem .5rem 0;
+	}
+}
+
+	/**********************************
+	#ANNOUNCEMENT-HACK
+	**********************************/
+	.wc-home-page{
+		.wc-announcement-component{
+			@include responsivePaddingTop($vertical-promo-gutter * .7,$vertical-promo-gutter * .9,$vertical-promo-gutter * .7,$vertical-promo-gutter);
+		}
+	}
+
+	/**********************************
+	#IE8-FALLBACK
+	**********************************/
+	html.no-rgba .wc-home-feature-caption{
+		background-color: #222;
+		padding: 20px;
+	}

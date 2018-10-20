@@ -1,0 +1,70 @@
+/**********************************
+
+#STYLE-GUIDE STYLES
+
+**********************************/
+
+.wc-sg-color-card {
+	width:10rem;
+	height: 20rem;
+	max-width: 45%;
+	float:left;
+	padding:0.8rem 0.3rem;
+	margin: 0.5rem;
+	background-color: $white;
+	border-radius: 5px;
+	overflow: hidden;
+	.wc-sg-medium-blue {
+		border-top:40px solid $medium-blue;
+	}
+	.wc-sg-extra-medium-blue {
+		border-top:40px solid $medium-blue-2;
+	}
+	.wc-sg-dark-blue {
+		border-top:40px solid $dark-blue;
+	}
+	.wc-sg-light-gray {
+		border-top:40px solid $light-gray-2;
+	}
+	.wc-sg-dark-gray {
+		border-top:40px solid $dark-gray;
+	}
+	.wc-sg-light-blue {
+		border-top:40px solid $light-blue;
+	}
+	.wc-sg-super-light-blue {
+		border-top:40px solid $powder-blue;
+	}
+	.wc-sg-gold {
+		border-top:40px solid $gold;
+	}
+	p {
+		padding: 0.3rem 0.3rem;
+	}
+	ul, ol {
+		padding: 0.2rem 1.5rem;
+	}
+	li {
+		padding-bottom: 0.4rem;
+		font-size: 0.8rem;
+		line-height: 0.9rem;
+	}
+}
+
+.wc-sg-info-box {
+	padding: 1rem;
+	margin-bottom: 1.2rem;
+	background-color: $light-gray-1;
+}
+
+.wc-sg-clear {
+	clear:both;
+}
+
+.wc-sg-helvetica {
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+.wc-sg-arial {
+	font-family: Arial, sans-serif;
+}

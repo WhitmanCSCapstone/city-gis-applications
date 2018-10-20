@@ -1,0 +1,35 @@
+/**********************************
+#SOCIAL-LINKS
+
+Info
+		Styles for the social links page.
+
+Notes
+[-] 	For most of the styles dictating the social links components, see 
+		the _components.scss file
+**********************************/
+
+.wc-social-links{
+	.wc-accordion-slide{
+		padding:0;
+	}
+
+	/**********************************
+	#SOCIAL-LINKS-GROUP
+	**********************************/
+	.wc-social-links-group{
+		padding:0;
+		margin:0;
+		li{
+			display:block;
+			padding:.1rem .4rem;
+			@include clearfix();
+			&:nth-child(even) {
+				background-color: $transparent-blue;
+			}
+			&:nth-child(odd) {
+				background-color: $table-bg-color-1;
+			}
+		}
+	}
+}

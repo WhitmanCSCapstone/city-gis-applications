@@ -1,0 +1,111 @@
+/**********************************
+	
+#NEWS-DETAIL
+
+Info
+		Styles for the news detail and magazine detail pages
+
+**********************************/
+.wc-article-info{
+	@include clearfix();
+	padding-bottom: .4rem;
+	span, a{
+		color:$dark-gray;
+		font-weight: 200; 
+	}
+	a:hover{
+		color:$medium-gray;
+		text-decoration:none;
+		svg{
+			fill:$medium-gray;
+		}	
+	}
+	.wc-date,.wc-tagged-as,.wc-tags{
+		display: block;
+		float: left;
+	}
+	.wc-date{
+		margin-right:1rem;
+	}
+	.wc-tag-dropdown-button{
+		@include spinButton();
+		display: inline-block;
+		vertical-align: middle;
+		svg{
+			@include icon(20px,$dark-gray);
+			display: block;
+		}
+	}
+}
+	.wc-article-info-dropdown{
+		@extend .wc-no-style-list;
+		z-index: 100;
+		position: absolute;
+		background-color: $dark-gray;
+		padding: .3rem 0;
+		margin-top:.1rem;
+		a, .wc-section-header{
+			display: block;
+			padding: .4rem .5rem;
+			color:$light-gray-1;
+		}
+			a:hover{
+				color:$white;
+			}
+	}
+	.wc-news-detail .wc-main-content{
+		>div:nth-of-type(2){
+			@extend .wc-no-top-gutter;
+		}
+	}
+
+
+	/**********************************
+	#TAGS
+	**********************************/
+	.wc-tags-box{
+		@extend .hidden-xs;
+		.wc-tags{
+			position: relative;
+			min-width: 160px;
+			.wc-article-info-dropdown{
+				width:100%;
+			}
+		}
+		.wc-first-tag{
+			padding: 0 .5rem;
+		}
+	}
+
+
+	
+	/**********************************
+	#SHARE-LINKS
+	**********************************/
+	.wc-share-links{
+		float: right;
+		position: relative;
+		.wc-dropdown-share-link{
+			@include button(24px,1rem, $a-color,$a-hover-color);
+			display: block;
+			.wc-text{
+				@include responsiveFontWeight(400,200,200,200);
+				font-size: 1rem;
+			}
+		}
+		.wc-article-info-dropdown{
+			right:0;
+		}
+	}
+		.wc-share-link{
+			white-space: nowrap;
+			@include button(30px,1rem, $white,$light-gray-1);
+			.wc-text{
+				@include responsiveFontWeight(400,200,200,200);
+				margin-left:.3rem;
+			}
+		}
+	.wc-author{
+		font-weight: 200;
+		color:$dark-gray;
+	}
