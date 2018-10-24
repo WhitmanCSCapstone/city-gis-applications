@@ -999,6 +999,18 @@ var MapControl = (function($){
 		};
 		MessageControl.init(params);
 	}
+
+	/**********************************
+	 * CAPSTONE WORK
+	 * Using Papaparse data until ingenuix data is available
+	 */
+	function addTrees() {
+		
+	}
+
+
+
+
 	
 	/**********************************
 	Geolocation
