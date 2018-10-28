@@ -531,6 +531,20 @@ THE HEADER
 								"name": "Hall of Science"
 							}
 						},
+						//TREE EXAMPLE  vvvvvvvvvv
+						{
+							"type": "Feature",
+							"geometry": {
+								"type": "Point",
+								"coordinates": [-118.32682,46.07182]
+							},
+							"properties": {
+								"id":"4",
+								"polygonId":"x37593",
+								"name": "Example Tree"
+							}
+						},
+						//TREE EXAMPLE ^^^^^^^^^^^^
 						{
 							"type": "Feature",
 							"geometry": {
@@ -2252,7 +2266,31 @@ THE HEADER
 				        "objectType": "building",
 				        "highlighted": false
 				      }
-				    },
+						},
+						//TREE EXAMPLE vvvvvvv
+						{
+							"type": "Feature",
+							"geometry": {
+								"type": "Polygon",	
+								"coordinates": [
+				          [
+				            [-118.32682, 46.07182],[-118.32692, 46.07182],[-118.32682, 46.07192],[-118.32692, 46.07192], [-118.32682, 46.07182]
+				          ]
+				        ]
+							},
+							"properties": {
+								"id":"x37593",
+								"polygonId":"x37593",
+								"name": "Example Tree",
+								"tags": [
+									"Trees",
+									"Redwoods",
+									"Nature"
+								],
+								"objectType": "outdoor"
+							}
+						},
+						//TREE EXAMPLE ^^^^^^^^
 				    {
 				      "type": "Feature",
 				      "geometry": {
@@ -4101,6 +4139,7 @@ THE HEADER
 					$('#wc-map').data('mapParams',mapParams);
 				})();
 			</script>
+
 		
 			<div class="wc-map-box" id="wc-map-box">
 			</div>
@@ -4238,6 +4277,15 @@ THE HEADER
 					</li>
 				</ul>
 			</div>
+			<!-- TREE EXAMPLE vvvvvvvvvv-->
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37593">
+					<img alt="Redbud" class="wc-mc-feature-image" src="https://mk0gardengoodsd3tst9.kinstacdn.com/wp-content/uploads/2017/09/EASTERN-REDBUD.jpg?_previewAsset_=true">
+				<p>Common Name: Eastern Redbud</p><br>
+				<p>Latin Name: Cercis Canadensis</p><br>
+				<p>Family: Fabaceae (Leguminosae)</p><br>
+				<p>Tree Height: 25 Feet</p><br>
+			</div>
+			<!-- TREE EXAMPLE ^^^^^^^^^^-->
 			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37181">
 				<img alt="Hall of Science" class="wc-mc-feature-image" src="https://www.whitman.edu/assets/images/Map/science2.jpg?_previewAsset_=true">
 				<p>The Hall of Science houses the departments of astronomy, biology, chemistry, geology and physics. Facilities include a roof-top garden, a greenhouse, Brattain Auditorium, an astronomy observation lab, and state-of-the art science equipment such as a scanning electron microscope and confocal microscope.</p>

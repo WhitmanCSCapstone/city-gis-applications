@@ -111,13 +111,16 @@ var MapControl = (function($){
 	function init(){
 		if($('#wc-map').length > 0){
 			var params = $('#wc-map').data('mapParams');
+			console.log(params);
 			var promise = Globals.addScript('https://maps.googleapis.com/maps/api/js?key='+Globals.s.apiKeys.GoogleMaps);
 			promise.then(function(){
 				if (!(Globals.s.isIE && Globals.s.ieVersion <10)) {
 					$('html').addClass('wc-map-page');
 					s.isMobile = !Globals.s.breakpointChecks.sm;
 					s.placesGeoJson = dataCleanUp(params.places,'places');
+					console.log(s.placesGeoJson);
 					s.pointsGeoJson = params.points;
+					console.log(s.pointsGeoJson);
 					s.imagesUrl = params.imagesUrl;
 					s.mapTileFolder = params.mapTileFolder;
 					s.initCenter = new google.maps.LatLng(params.center.lat,params.center.long);
@@ -1002,7 +1005,6 @@ var MapControl = (function($){
 
 	/**********************************
 	 * CAPSTONE WORK
-	 * Using Papaparse data until ingenuix data is available
 	 */
 	function addTrees() {
 		
