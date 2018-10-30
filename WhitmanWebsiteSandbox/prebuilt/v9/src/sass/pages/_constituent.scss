@@ -1,0 +1,137 @@
+/**********************************
+#CONSTITUENT-PAGE
+
+Info
+		Styles for the constituent page type.
+
+Notes
+[-] 	See the .wc-full-width-layout-b section of _layouts.scss for the layout styles.
+**********************************/
+
+
+/**********************************
+#SECTION-NAVIGATION
+
+Info
+		Same section navigation as other pages, but customized so it's horizontally laid out
+		and not collapsed on desktop. Right now the alumni page is the only place we're using it, 
+		but if we start using this elsewhere we should probably move this to either _layouts.scss
+		or maybe _left-column.scss
+
+Notes
+[-]		There are two .wc-sub-nav-headers here
+		- The standard link that we're only using for the mobile view
+		- An h3 that's only used for the desktop view
+[1] 	See the #FULL-WIDTH-B section of _layouts.scss for more styles for this 
+		section nav.
+[2]		Hide the standard nav-header links and their expander buttons for the desktop
+		view.
+[3]		Hide the h2 nav-header for the mobile view.
+**********************************/
+.wc-constituent-page{
+	.wc-left-column{
+		@extend .wc-component;
+		@extend .hidden-sm;
+		@extend .hidden-md;
+		@extend .hidden-lg;
+	}
+	.wc-alt-section-nav{/*[1]*/
+		@extend .wc-component;
+		@extend .hidden-xs;
+		@media(min-width:$screen-sm-min){
+			padding-left:0;
+			padding-right:0;
+		}
+		@media(min-width:$screen-sm-min){
+			a.wc-sub-nav-header,.wc-nav-expander{
+				display:none; /*[2]*/
+			}
+			.wc-section-nav-level-1{
+				width:100%;
+				margin:0;
+				padding:0;
+				@include clearfix();
+				>li{
+					@include make-md-column(4);
+					list-style: none;
+					display:block;
+					width:33%;
+					float:left;
+					border:none;
+				}
+				h2.wc-sub-nav-header{
+					margin-top:0;
+					margin-bottom: 1.2rem;
+				}
+			}
+			.wc-section-nav-level-2{
+				margin:0;
+				padding:0;
+				&.collapse{
+					display:block;
+				}
+				>li{
+					list-style: none;
+					padding:0;
+					margin:0;
+					@include clearfix();
+					a{
+						font-weight:400;
+						padding:0;
+						margin:0;
+					}
+				}
+			}
+		}
+		@media(max-width:$screen-xs-max){
+			h2.wc-sub-nav-header{
+				display:none;/*[3]*/
+			}
+		}
+	}
+}
+
+/**********************************
+#MISC
+**********************************/
+.wc-constituent-page{
+	.wc-component .wc-divider{
+		display: block;
+	}
+	.wc-contact-info{
+		@include make-sm-column(3);
+
+        .wc-sub-nav-header{
+		    margin-top:0;
+            margin-bottom: 1.2rem;
+		}
+	}
+}
+
+
+/**********************************
+#CONTENT-COLUMNS
+
+Notes
+[1] 	Swapping columns for mobile so they can have events on top
+[2] 	Because these columns go to full width at the small breakpoint, 
+		we want the half-components to stay at half-width until it gets
+		down to the xs breakpoint.
+**********************************/
+.wc-constituent-page{
+	.wc-right-content-column{
+		@extend .col-md-push-6; /*[1]*/
+	}
+	.wc-left-content-column{
+		@extend .col-md-pull-6; /*[1]*/
+	}
+	.wc-right-content-column, .wc-left-content-column{
+		.wc-half-component{
+			@include make-sm-column(6); /*[2]*/
+		}
+		.wc-divider-box{
+			padding-top:.8rem;
+			padding-bottom:.8rem;
+		}
+	}
+}

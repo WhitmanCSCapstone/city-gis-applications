@@ -1,0 +1,156 @@
+/**********************************
+	
+#CONTENT
+
+Info
+		General styles for the common elements in the content of a page, basically everything
+		between the header and the footer.
+
+**********************************/
+
+
+/**********************************
+#CONTENT-WRAP
+
+Info
+	Wrapper for everything between the header and the footer
+
+Notes
+[1] 	Adding this so the expanding left navigation can stick out the bottom.
+**********************************/
+.wc-content-wrap{
+	@include responsiveMarginTop(60px, 60px, 118px, 122px);
+	font-size:1rem;
+	width:100%;
+	&.wc-landing-page-layout{
+		overflow:visible; /*[1]*/
+	}
+
+	&.wc-no-header {
+		margin-top: 0;
+		.wc-page-title {
+			margin-bottom: 1rem;
+		}
+	}
+
+	@media(min-width:$screen-md-min){
+		background-color: $content-wrap-bg-color;
+	}
+
+	/**********************************
+	#ROWS
+
+	Notes
+	[1] 	Components have their own vertical gutters, so component rows don't have any.
+			This makes it a lot easier to have components stack at smaller breakpoints
+			while mainting a vertical gutter between them.
+	**********************************/
+	.wc-row{
+		@include responsivePaddingTop($vertical-gutter-xs,$vertical-gutter-sm,$vertical-gutter-md,$vertical-gutter-lg);
+		@include responsivePaddingBottom($vertical-gutter-xs,$vertical-gutter-sm,$vertical-gutter-md,$vertical-gutter-lg);
+		position: relative;
+
+		&.wc-no-vertical-gutter{
+			padding-top:0;
+			padding-bottom:0;
+		}
+		&.wc-no-top-gutter{
+			padding-top:0;
+		}
+		&.wc-no-bottom-gutter{
+			padding-bottom:0;
+		}
+		&.wc-component-row{
+			padding-top:0; /*[1]*/
+			padding-bottom:0;
+		}
+	}
+}
+
+/**********************************
+#MISC
+
+Notes
+[1]     Used by newsletter.cshtml (fountain) for the right aligned images
+[2] 	Yes, it's ridiculous to put an hr in two div's, but we want it behave
+		correctly in the bootstrap grid so it's necessary. You might think that
+		you could do without .wc-divider-box and just style the hr itself like a 
+		column, but you'd be wrong. You want that .wc-divider-box there becuase
+		you can't limit the HR's border to within its padding, so you need to put
+		it in a parent div that has padding :(
+[3] 	Vertical dividers - basically just for two promos that are half-width and
+		need a divider between them. Note that it's absolute positioned, so if there's
+		more than one they might just stack on top of each other and you wouldn't even
+		know it.
+**********************************/
+.wc-right-image-box {/*[1]*/
+	padding-bottom:1rem;
+}
+.wc-header-image-figure{
+	padding: 0;
+	margin: 0;
+}
+.wc-header-image{
+	width:100%;
+	padding: 0;
+}
+
+
+
+.wc-divider-row{
+	@include make-row();
+}
+	.wc-divider-box{/*[2]*/
+		@include make-sm-column(12);		
+	}
+		.wc-divider{
+			border-top:2px solid $medium-blue;
+			margin:0;
+		}
+
+.wc-content-wrap hr.wc-vertical-divider {/*[3]*/
+	border-left: 1px solid $dark-gray;
+	width: 0;
+	height: calc(100% - #{$vertical-promo-gutter*2});
+	margin: 0;
+	position: absolute;
+	left: 50%;
+	top: $vertical-promo-gutter;
+	@include responsiveDisplay(none,none,block,block);
+}
+
+
+/**********************************
+#BREADCRUMBS
+**********************************/
+.wc-row.wc-breadcrumbs{
+	@include make-row();
+	margin:0;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	@media(max-width:$screen-xs-max){display:none;}
+	svg{
+		@include icon(24px);
+		display:inline-block;
+		vertical-align: middle;
+	}
+	a,span{
+		display:inline-block;
+		vertical-align: middle;
+		font-size:0.8rem;
+		text-transform: uppercase;
+	}
+	span{
+		color:$dark-gray;
+	}
+	a{
+		color:$medium-blue;
+	}
+		a:hover{
+			color:$medium-blue-2;
+			svg{
+				fill:$medium-blue-2;
+			}
+		}
+}
+

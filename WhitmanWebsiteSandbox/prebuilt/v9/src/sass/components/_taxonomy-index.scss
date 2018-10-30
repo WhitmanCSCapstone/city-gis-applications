@@ -1,0 +1,151 @@
+/**********************************
+#TAXONOMY-INDEX
+
+Info
+	Styles for the taxonomy index component
+**********************************/
+.wc-taxonomy-index-component.wc-promo .wc-promo-heading{
+	padding-bottom:2rem;
+}
+
+/**********************************
+#FILTER-BOX
+**********************************/
+.wc-list-filter-box{
+	@media(max-width:$screen-xs-max){
+		text-align: left;
+	}
+	@media(min-width:$screen-sm-min){
+		text-align: center;
+	}
+	@include clearfix();
+
+	h3{
+		display:inline-block;
+		vertical-align: middle;
+		padding-right:1rem;
+		margin-top:0;
+		@include responsiveMarginBottom(.6rem, 0, 0, 0);
+		font-size: $h3-font-size;
+		font-weight: $h3-font-weight;
+	}
+	&.wc-dropdown-filter-box label{
+		font-size: $h3-font-size;
+		font-weight: $h3-font-weight;
+		display: inline-block;
+		vertical-align: middle;
+		margin-right: 1rem;
+	}
+	&.wc-radio-filter-box{
+		font-size: 1.2rem;
+	}
+	
+	.wc-category-filter-dropdown{
+		width: 300px;
+		display: inline-block;
+		vertical-align: middle;
+	}
+}
+	.wc-list-filter-box, .wc-alphabet-list-box{
+		padding-bottom: .5rem;
+	}
+	.wc-taxonomy-index-component .wc-alphabet-list-box {
+		a, span{
+				display:inline-block;
+				font-size: 1.5rem;
+		}
+	}
+	.wc-alphabet-list-box{
+		@media(max-width:$screen-xs-max){
+			display:none;
+		}
+		@media(min-width:$screen-sm-min){
+			display:block;
+			width: 100%;
+		}
+		text-align: center;
+		a, span{
+			padding: 0 .2rem;
+			text-transform: capitalize;
+		}
+			a:hover{
+				text-decoration: none;
+				color:$light-blue;
+			}
+			.wc-no-link{
+				color:$light-gray-1;
+			}
+			.wc-current-letter{
+			}
+			.wc-dash{
+				font-weight:100;
+				padding:0;
+			}
+	}
+.wc-taxonomy-index-component{
+	&.wc-promo{
+		a:hover{
+			text-decoration: none;
+		}
+	}
+	.wc-item-list li{
+		line-height:1.1;
+	}
+
+	.wc-collapse-button{
+		@include button(50px,1rem,$link-hover-color,$link-color);
+		@include spinButton();
+		margin-top: 2rem;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	/**********************************
+	#LIST-BOX
+
+	Notes
+	[1] 	Using the .wc-shadow-box element here because Chrome renders box shadows differently
+			from Firefox and Safari :(. Otherwise, we could just give .wc-taxonomy-list-box
+			something like this - box-shadow: inset 0px -40px 10px -32px gb(0,0,0); 
+			#thisiswhywecanthavenicethings
+	**********************************/
+	.wc-taxonomy-list-box{
+		width: 100%;
+		position: relative;
+		@include clearfix();
+		a{
+			font-size: 1.2rem;
+		}
+		&:not(.wc-inner-shadow) .wc-shadow-box{
+			display: none;
+		}
+		&.wc-inner-shadow .wc-shadow-box{
+			width: 97%;
+			height: 10px;
+			position: absolute;
+			bottom:-18px;
+			transition: bottom .5s;
+			left:50%;
+			transform:translateX(-50%);
+			box-shadow: 0px 0 20px 0 rgb(0,0,0);
+		}
+		&.wc-inner-shadow:not(.wc-collapsed) .wc-shadow-box{
+			bottom: -40px;
+		}
+	}
+		&.wc-lt-invisible{
+			opacity:0;
+		}
+	.wc-taxonomy-list-box{
+		transition: height .5s;
+		overflow: hidden;
+	}
+	.wc-category{
+		margin-bottom:2.2rem;
+		h2{
+			margin-bottom:0;
+			margin-top:0;
+		}
+	}
+}

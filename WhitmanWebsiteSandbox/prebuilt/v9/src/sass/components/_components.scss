@@ -1,0 +1,563 @@
+/**********************************
+	
+#COMPONENTS
+
+Info
+		Styles for all of the components that aren't complex enough to warrant their
+		own .scss file
+
+*** IMPORTANT NOTES FOR USING COMPONENTS ***
+[-] 	Components pretty much always need to be in a component
+		row <div class="wc-row wc-component-row"></div>
+[-] 	Always give your component the following classes
+		- "wc-component"
+		- a size class ("wc-full-component", "wc-half-component", etc.) so they'll behave like bootstrap columns
+		- when necessary, a type class ("wc-small-feature-component", "wc-accordion-component", etc.)
+
+**********************************/
+
+
+/**********************************
+#BASE-COMPONENT
+
+Notes
+[1] 	In the section nav, we want everything to be full-width
+**********************************/
+.wc-component{
+	@include responsivePaddingTop($vertical-gutter-xs,$vertical-gutter-sm,$vertical-gutter-md,$vertical-gutter-lg);
+	@include responsivePaddingBottom($vertical-gutter-xs,$vertical-gutter-sm,$vertical-gutter-md,$vertical-gutter-lg);
+	>:first-child{
+		margin-top:0;
+	}
+	.wc-divider{
+		padding-bottom:1.2rem;
+		display: none;
+	}
+}
+	.wc-full-component{
+		@include make-xs-column(12);
+	}
+	.wc-half-component{
+		@include make-xs-column(12);
+		@include make-md-column(6);
+	}
+	.wc-quarter-component{
+		@include make-xs-column(12);
+		@include make-sm-column(6);
+		@include make-md-column(3);
+	}
+	.wc-third-component{
+		@include make-xs-column(12);
+		@include make-md-column(4);
+	}
+	.wc-section-nav{/*[1]*/
+		.wc-full-component,.wc-half-component, .wc-quarter-component{
+			@include make-xs-column(12);
+		}
+	}
+.wc-component-row.wc-no-vertical-gutter{
+	.wc-component{
+		padding-top:0;
+		padding-bottom:0;
+	}
+}
+.wc-component-row.wc-no-top-gutter{
+	.wc-component{
+		padding-top:0;
+	}
+}
+.wc-component-row.wc-no-top-gutter-md{
+	.wc-component{
+		@media(min-width: $screen-md-min){
+			padding-top:0;
+		}
+	}
+}
+	.wc-component-header{
+		margin-bottom:.3rem;
+	}
+	.wc-bottom-box{
+		width: 100%;
+		@include clearfix();
+	}
+
+/**********************************
+#NO-ROW-COMPONENT
+
+Info
+[-] 	For components that are used outside of a row, like in the 
+		component group component.
+**********************************/ 
+.wc-component.wc-no-row{
+	padding:0;
+	float: none;
+}
+
+/**********************************
+#SMALL-FEATURE-COMPONENT
+
+Info
+	The little box components with a picture and a blurb, typically
+	1/4 the width of the page.
+
+Notes
+[1] 	Static height for the content to keep the more link is at the bottom.
+**********************************/
+.wc-small-feature-component{ 
+	h3{
+		margin-top:.6rem;
+	}
+	.wc-component-content{
+		width:100%;
+	}
+	.wc-bb-more-link{
+		margin-top:1rem;
+	}
+}
+	.wc-quarter-content-column .wc-small-feature-component{
+		.wc-component-content{
+			height:auto;
+		}
+	}
+
+/**********************************
+#ANNOUNCEMENT
+
+Info
+	An announcement componet. 
+
+Notes
+[1] 	Making the specificity this high so I can use an announcement
+		component inside a body copy.
+**********************************/
+.wc-announcement-component{
+	.wc-component-content{
+		h4,p{ /*[1]*/
+			color:$white;
+		}
+		@include roundedCorners();
+		padding: 1rem;
+		background-color:$dark-blue-trans;
+		>:first-child{
+			margin-top:0;	
+		}
+		>:last-child{
+			margin-bottom: 0;
+		}
+		a {
+			color:inherit;
+			text-decoration: underline;
+			&:hover {
+				color:$gold;
+			}
+		}
+	}
+}
+
+/**********************************
+#FLEXIBLE-COMPONENTS
+
+Info
+	Styles for Right Column Flexible Component, Left Column Flexible Component, and Flexible Component. 
+**********************************/
+.wc-flexible-component {
+	img{
+		padding-bottom: 0.5rem;
+	}
+}
+
+/**********************************
+#CONTACT-INFO-COMPONENT
+**********************************/
+.wc-contact-info-component{
+	.wc-position-title{
+		display:block;
+		margin-top:0;
+		margin-bottom:14px;
+		font-style: italic;
+		color:$dark-gray;
+		font-size:1em;
+		font-weight:200;
+		width:100%;
+	}
+}
+
+/**********************************
+#BUTTON-LIST-COMPONENT
+
+Notes
+[1] 	Necessary to fix the inline white space issue (bane of my existence)
+[2][3] 	For just this component, removing the side padding to make them go edge
+		to edge.
+[4] 	Becuase of the 0 side padding, we have to use the $horizontal-gutter for this 
+		spacing for everything to line up right.
+
+**********************************/
+.wc-button-list-component{
+	font-size: 0;/*[1]*/
+	@media(min-width: $screen-sm-min){
+		padding-left: 0;/*[2]*/
+		padding-right: 0;/*[3]*/
+	}
+	.wc-button-list-box{
+		width: 100%;
+		justify-content:center;
+	}
+	.wc-box-button{
+		display: flex;
+		justify-content:center;
+		flex-direction:column;
+		width: calc(100% - #{$horizontal-gutter * 2});
+		@include responsiveMargin(.5rem 0, .5rem $horizontal-gutter,.5rem $horizontal-gutter,.5rem $horizontal-gutter);/*[4]*/
+	}
+		.wc-text{
+			font-size: 1rem;
+			font-weight: 600;
+		}
+	&.wc-full-component.wc-three-across{
+		.wc-box-button{
+			@include responsiveWidth(100%, calc(50% - #{$horizontal-gutter * 2}), calc(33% - #{$horizontal-gutter * 2}), calc(33% - #{$horizontal-gutter * 2}));
+		}
+	}
+	&.wc-full-component.wc-two-across{
+		.wc-box-button{
+			@include responsiveWidth(100%, calc(50% - #{$horizontal-gutter * 2}), calc(50% - #{$horizontal-gutter * 2}), calc(50% - #{$horizontal-gutter * 2}));
+			width: calc(50% - #{$horizontal-gutter * 2});
+		}
+	}
+}
+	.wc-quarter-content-column .wc-button-list-component{
+		&.wc-full-component.wc-three-across, &.wc-full-component.wc-two-across{
+			.wc-box-button{
+				width: calc(100% - #{$horizontal-gutter * 2});
+			}
+		}
+	}
+
+/**********************************
+#SOCIAL-LINKS-COMPONENT
+
+Notes
+[1] 	Alternate layout for the social links page. Here it won't really behave like
+		a component at all, so none of the full/half width or standard padding.
+**********************************/
+.wc-social-links-component{
+	a{
+		color:$link-hover-color;
+		&:hover{
+			color:$link-color;
+		}
+	}
+	.wc-icon{
+		@include icon(36px,$link-hover-color)
+	}
+	&.wc-icons-only{
+		.wc-social-links-box{
+			width: 100%;
+			@include clearfix();
+		}
+		.wc-social-link{
+			display: block;
+			float: left;
+			width: auto;
+			padding: 0 .4rem;
+			&:first-of-type{
+				padding-left:0;
+			}
+			&:last-of-type{
+				padding-right:0;
+			}
+		}
+	}
+	a:hover{
+		text-decoration: none;
+		.wc-text{
+			text-decoration: none;
+		}
+		.wc-icon{
+			fill:$link-color;
+		}		
+	}
+	&.wc-alt-layout{/*[1]*/
+		h3 {
+			margin:0;
+			padding-top:10px;
+			display:block;
+			float:left;
+			width:70%;
+		}
+		.wc-social-links-box{
+			float:right;
+			width: 30%;
+			@include clearfix();
+		}
+			.wc-social-link{
+				float: right;
+				padding: 6px 0 6px 4px;
+			}
+			.wc-icon{
+				display: block;
+			}
+
+		&.wc-main-social-links{
+			padding: .4rem;
+			@include clearfix();
+			h2{
+				display:block;
+				float:left;
+				padding-top:8px;
+				width:40%;
+				margin-top: 0;
+				margin-bottom: 0;
+			}
+			.wc-social-links-box{
+				width: 60%;
+			}
+		}
+	}
+}
+
+/**********************************
+#OFFICE-INFO-COMPONENT
+
+Notes
+[1] 	At this point, we need all this specificity :(
+**********************************/
+.wc-content-wrap .wc-office-info-component{
+	.wc-component.wc-social-links-component{ /*[1]*/
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+/**********************************
+#LIST-COMPONENT
+
+Info
+	There isn't actually a "wc-list-component" by itself, this is a
+	general group of styles that's used by a few other components,
+	like the events and news components. Not sure if this was the best
+	approach in hind-sight, might want to do away with this.
+
+Notes
+[1] 	Adding wc-component for a bump in specificity
+**********************************/
+.wc-list-component{
+	&.wc-component >ul{ /*[1]*/
+		padding-left:0;
+	}
+	li{
+		margin: 0 0 1.3em 0;
+	}
+	.wc-item-content > :first-child{
+		margin-top:0;
+		padding-top:0;
+	}
+	.wc-item-title{
+		margin: 0 0 .2em 0;
+		line-height: 1.2;
+		// font-weight: 600;
+	}
+	.wc-item-description{
+		padding-bottom:0;
+	}
+	.wc-more-link-alt{
+		display:block;
+		margin-top:.2rem;
+	}
+}
+	.wc-right-content-column {
+		.wc-list-component a, .wc-list-component .wc-item-header{
+			font-size: 1rem;
+		}
+	}
+
+/**********************************
+#LINK-LIST-COMPONENT
+**********************************/
+.wc-component.wc-link-list-component{
+	ul{
+		@extend .wc-no-style-list;
+	}
+	li{
+		margin-bottom:.4rem;
+	}
+}
+
+/**********************************
+#RSS-FEED-COMPONENT
+**********************************/
+.wc-rss-feed-display-component{
+	.wc-item-list{
+		margin-bottom:1rem;
+	}
+}
+
+/**********************************
+#BODY-NEWS-COMPONENT
+**********************************/
+.wc-news-body-component{
+	.wc-item-header{
+		font-size: 1.3rem;
+	}
+	.wc-item-date-detail{
+		color: $black;
+	}
+
+}
+
+/**********************************
+#SPREADSHEET-COMPONENT
+**********************************/
+.wc-spreadsheet-component{
+	th{
+		font-weight: 600;
+		text-align: left;
+		background-color: transparent;
+		color: $base-font-color;
+	}
+	td{
+		vertical-align: top;
+	}
+	tr.even, tr.even + tr.child{
+		background-color: $transparent-blue;
+	}
+	tr.odd, tr.odd + tr.child {
+		background-color: $table-bg-color-1;
+	}
+	.wc-loader{
+		margin-left:auto;
+		margin-right:auto;
+	}
+}
+
+/**********************************
+#IMAGE-HOVER-BOX-GALLERY-COMPONENT
+**********************************/
+.wc-img-hov-box-row {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+}
+
+.wc-img-hov-box-col { // creates four equal columns next to each other
+  	display: block;
+  	flex: 25%;
+  	max-width: 25%;
+  	padding: 0 4px;
+}
+
+.wc-img-hov-box {
+  	position: relative;
+  	width:  100%;
+}
+
+.wc-img-hov-box-col img {
+  	display: block;
+  	height: auto;
+  	margin-top: 8px;
+  	vertical-align: middle;
+  	width: 100%;
+}
+
+.wc-img-hov-box-overlay-blu, .wc-img-hov-box-overlay-gol {
+  	position: absolute;
+  	top: 0;
+  	bottom: 0;
+  	left: 0;
+  	right: 0;
+  	height: 100%;
+  	width: 100%;
+  	opacity: 0;
+  	transition: .5s ease;
+}
+
+.wc-img-hov-box-overlay-blu { background-color: #001f5b; }
+.wc-img-hov-box-overlay-gol { background-color: #ffc627; }
+.wc-img-hov-box-overlay-blu:hover, .wc-img-hov-box-overlay-gol:hover { opacity: 1; }
+
+.wc-img-hov-box-text-top-blu, .wc-img-hov-box-text-bottom-blu, .wc-img-hov-box-text-top-gol, .wc-img-hov-box-text-bottom-gol {
+  	font-size: .8rem !important;
+  	position: absolute;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	text-align: center;
+  	width: 80%;
+}
+
+.wc-img-hov-box-text-top-blu, .wc-img-hov-box-text-top-gol {
+  	color: #fff;
+  	top: 50%;
+  	font-weight: 600;
+}
+
+.wc-img-hov-box-text-bottom-blu, .wc-img-hov-box-text-bottom-gol {
+  	top: 90%;
+  	font-weight: 500;
+}
+
+.wc-img-hov-box-text-bottom-blu { color: #ffc627; }
+.wc-img-hov-box-text-bottom-gol { color: #001f5b; }
+
+/* make a two column layout instead of four column */
+
+// 
+// @media screen and (max-width: 1100px) {
+@media screen and (min-width:601px) and (max-width: 1100px)  {
+    .wc-img-hov-box-col {
+        flex: 50%;
+        max-width: 50%;
+    }
+    .wc-img-hov-box-text-top-blu, .wc-img-hov-box-text-top-gol { font-size: 1.5rem; }
+    .wc-img-hov-box-text-bottom-blu, .wc-img-hov-box-text-bottom-gol { font-size: 1.2rem; }
+}
+
+/* make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .wc-img-hov-box-col {
+        flex: 100%;
+        max-width: 100%;
+    }
+    .wc-img-hov-box-text-top-blu, .wc-img-hov-box-text-top-gol { font-size: 3rem; }
+    .wc-img-hov-box-text-bottom-blu, .wc-img-hov-box-text-bottom-gol { font-size: 1.5rem; }
+}
+
+/**********************************
+#MISC
+
+Notes
+[1] 	Making this smaller for components in the right column (ex. we don't
+		want the Office Information component to have its h2 break to 2 lines).
+		Reverting to the same size for mobile though because when everything stacks
+		you want it to look the same.
+[2] 	... but not on pages that are full-width-layout-b
+[3] 	Using this in the body copy of some pages as a stand-in for a floating right column
+		until we can build a real one.
+**********************************/
+.wc-content-wrap{
+	&:not(.wc-full-width-layout-b){ /*[2]*/
+		.wc-right-content-column h2{
+			@include responsiveFontSize($h2-font-size,1.7rem,1.7rem,1.7rem);	/*[1]*/
+		}		
+	}
+}
+.wc-float-right-box{ /*[3]*/
+	float: right;
+	@include responsiveWidth(100%,33%,33%,33%);
+	margin-bottom: $horizontal-gutter;
+	@include responsivePaddingBottom($horizontal-gutter,0,0,0);
+	@include responsiveMarginLeft(0,$horizontal-gutter,$horizontal-gutter,$horizontal-gutter);
+	@include responsivePaddingLeft(0,$horizontal-gutter,$horizontal-gutter,$horizontal-gutter);
+	@media(min-width:$screen-sm-min){
+		border-left:1px solid $light-gray-1;
+	}
+	@media(max-width:$screen-xs-max){
+		border-bottom:1px solid $light-gray-1;
+	}
+}
+
+
+
+
+
+

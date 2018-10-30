@@ -1,0 +1,326 @@
+include "pieces/layout/header.html"
+
+
+<!--- **********************************
+	
+STYLE-GUIDE
+
+Notes
+[1]		Pullquote icon and its padding should be brought in using JavaScript, since it isn't part of the markup.
+********************************** -->
+
+	<!-- Content -->
+	<div class="wc-content-wrap wc-standard-layout" >
+		<!-- Title  -->
+		<div class="wc-title-box">
+			<div class="wc-container">
+				<h1 class="wc-page-title">Style Guide</h1>
+			</div>
+		</div>
+
+		<div class="wc-container">
+
+			<!-- Breadcrumbs -->
+			<div class="wc-row wc-breadcrumbs" role="navigation">
+				<a href="index.html"><svg viewbox="0 0 21 21 "><use xlink:href="images/svg/svg-defs.svg#icon-home"></use></svg></a>
+				<span>&raquo;</span>
+				<span><a>Some Department</a></span>
+				<span>&raquo;</span>
+				<span>title</span>
+			</div>
+			<div class="wc-row wc-no-top-gutter" role="navigation">
+
+				include "pieces/layout/left-column.html"
+
+
+				<!-- Content -->
+				<div class="wc-main-content" id="wc-reader-content" role="main">
+					<div class="wc-row">
+						<div class="wc-body-copy wc-12-col">
+							<h2>Fonts</h2>
+								<h3>Source Sans Pro</h3>
+									<p>Source Sans Pro is the primary font on the Whitman website. It can be seen in the body text, components and navigation elements throughout the site.</p>
+								<h3><span class="wc-sg-helvetica">Helvetica</span> / <span class="wc-sg-arial">Arial</span></h3>
+									<p><span class="wc-sg-helvetica">Helvetica</span> is a secondary font on the Whitman website, used primarily for page titles. Since not all devices use Helvetica, a smililar font, <span class="wc-sg-arial">Arial</span>, or another sans-serif font may appear in its place.</p>
+							<h2>Headings and Paragraphs</h2>
+							<p>Heading and paragraph text size and spacing comparison:</p>
+							<div class="wc-sg-info-box">
+								<h2>Heading 2 &lt;h2&gt;</h2>
+								<h3>Heading 3 &lt;h3&gt;</h3>
+								<h4>Heading 4 &lt;h4&gt;</h4>
+								<p>Paragraph &lt;p&gt;</p>
+								<p>*Please note that Heading 1 (&lt;h1&gt;) tags are automatically used for page titles by the content management system, and are only necessary once per page. They should not be manually added anywhere else.</p>
+							</div>
+							<p>It is important to remember that headings are for accessibility and organization and should always be used in the correct hierarchical order. They are not styling elements, and are not to be used based on visual preference.</p>
+							<p>For instance, &lt;h3&gt; headings must follow an &lt;h2&gt; heading or another &lt;h3&gt;. You cannot have &lt;h3&gt; or &lt;h4&gt; be the first heading of a page, nor can &lt;h4&gt; come before &lt;h3&gt; or &lt;h2&gt;.</p>
+							<!---<div class="wc-sg-info-box">
+								<h1>Page Title (&lt;h1&gt;)</h1>
+								<h2>Main Section Heading (&lt;h2&gt;)</h2>
+								<h3>Sub-Section Heading (&lt;h3&gt;)</h3>
+								<p>Paragraph (&lt;p&gt;)</p>
+								<p>Paragraph (&lt;p&gt;)</p>
+								<h4>Minor Heading (&lt;h4&gt;)</h4>
+								<h3>Sub-Section Heading</h3>
+								<h2>Main Section Heading</h2>
+							</div>-->
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat optio ratione aliquam qui eos a atque, recusandae, sit explicabo quasi aut++ amet quos voluptas praesentium, quia illo cumque rerum! Molestiae.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse perferendis, natus officia. Unde hic rerum vero maiores adipisci iste explicabo quis architecto nam iusto. Nemo facilis sint magnam tempore eum.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, accusamus incidunt fuga rerum deserunt pariatur facilis tenetur, libero delectus culpa repudiandae ad quidem qui! Eos illum consequatur maxime accusamus nisi.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus illum, fugit molestias? Unde voluptates dignissimos sequi similique laborum sint veniam. Error delectus accusantium provident ipsum maiores reprehenderit, iusto laborum, eveniet!</p>
+							<h2>Heading 2</h2>
+							<!-- ************ [1] ************* -->	
+							<p class="wc-pullquote">
+								<span class="wc-quote-icon">
+									<svg class="wc-icon" viewbox= "0 0 48 48">
+										<use xlink:href="images/svg/svg-defs.svg#icon-quote"></use>
+									</svg>
+								</span>
+								This is a pull quote. It looks like this. <span class="wc-pullquote-source">Your friendly neighborhood Webteam<br>Whitman College</span></p>				
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat optio ratione aliquam qui eos a atque, recusandae, sit explicabo quasi aut amet quos voluptas praesentium, quia illo cumque rerum! Molestiae.</p>					
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse perferendis, natus officia. Unde hic rerum vero maiores adipisci iste explicabo quis architecto nam iusto. Nemo facilis sint magnam tempore eum.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, accusamus incidunt fuga rerum deserunt pariatur facilis tenetur, libero delectus culpa repudiandae ad quidem qui! Eos illum consequatur maxime accusamus nisi.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus illum, fugit molestias? Unde voluptates dignissimos sequi similique laborum sint veniam. Error delectus accusantium provident ipsum maiores reprehenderit, iusto laborum, eveniet!</p>
+							<h3>Lorem Ipsum</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat optio ratione aliquam qui eos a atque, recusandae, sit explicabo quasi aut amet quos voluptas praesentium, quia illo cumque rerum! Molestiae.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse perferendis, natus officia. Unde hic rerum vero maiores adipisci iste explicabo quis architecto nam iusto. Nemo facilis sint magnam tempore eum.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, accusamus incidunt fuga rerum deserunt pariatur facilis tenetur, libero delectus culpa repudiandae ad quidem qui! Eos illum consequatur maxime accusamus nisi.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus illum, fugit molestias? Unde voluptates dignissimos sequi similique laborum sint veniam. Error delectus accusantium provident ipsum maiores reprehenderit, iusto laborum, eveniet!</p>
+							<h4>Lorem Ipsum</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat optio ratione aliquam qui eos a atque, recusandae, sit explicabo quasi aut amet quos voluptas praesentium, quia illo cumque rerum! Molestiae.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse perferendis, natus officia. Unde hic rerum vero maiores adipisci iste explicabo quis architecto nam iusto. Nemo facilis sint magnam tempore eum.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, accusamus incidunt fuga rerum deserunt pariatur facilis tenetur, libero delectus culpa repudiandae ad quidem qui! Eos illum consequatur maxime accusamus nisi.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus illum, fugit molestias? Unde voluptates dignissimos sequi similique laborum sint veniam. Error delectus accusantium provident ipsum maiores reprehenderit, iusto laborum, eveniet!</p>
+							
+							<h2>Lists</h2>
+							<h3>Unordered lists</h3>
+							<ul>
+								<li>An Important Item</li>
+								<li>An Important Item
+									<ul>
+										<li>An Important Item
+											<ul>
+												<li>An Important Item</li>
+											</ul>
+										</li>
+										<li>An Important Item</li>
+									</ul>
+								</li>
+								<li>An Important Item</li>
+								<li>An Important Item</li>
+							</ul>
+							<h3>Here comes a list of links</h3>
+							<ul>
+								<li><a href="">An Important Item</a></li>
+								<li><a href="">An Important Item</a></li>
+								<li><a href="">An Important Item</a></li>
+								<li><a href="">An Important Item</a></li>
+								<li><a href="">An Important Item</a></li>					
+							</ul>
+							<h3>Ordered list</h3>
+							<ol>
+								<li>An Important Item</li>
+								<li>An Important Item
+									<ol>
+										<li>An Important Sub-Item</li>
+										<li>An Important Sub-Item
+											<ol>
+												<li>An Important Third-Level Item</li>										
+												<li>An Important Third-Level Item
+													<ol>
+														<li>Numbering format returns to decimal numbering after three levels of lists
+															<ol>
+																<li>There is no additional list formatting because this is getting ridiculous.</li>
+															</ol>
+														</li>
+														<li>An Unimportant Item</li>
+													</ol>
+												</li>
+												<li>An Important Third-Level Item</li>
+											</ol>
+										</li>
+										<li>An Important Sub-Item</li>
+										<li>An Important Sub-Item</li>
+									</ol>
+								</li>							
+								<li>An Important Item</li>
+								<li>An Important Item</li>
+							</ol>
+							<h3>Ordered list starting with Roman numerals</h3>
+							<ol style="list-style-type:upper-roman;">
+								<li>An Important Item</li>
+								<li>An Important Item</li>
+								<li>An Important Item</li>
+								<li>An Important Item</li>
+								<li>An Important Item</li>
+							</ol>
+
+							<h2>Tables</h2>
+							<p>Tables should only be used to represent tabular data as necessary, and <em>never</em> used for page layout or positioning.</p>
+
+							<p>Tip: When pasting tables from Microsoft Word, always choose the "Use Desitination Formatting - Paste from Word" option in Ingeniux. Failing to do so may produce unexpected results.</p>
+							<table>
+								<tr>
+									<th>Column Heading 1</th>
+									<th>Column Heading 2</th>
+									<th>Column Heading 3</th>
+								</tr>
+								<tr>
+									<td>Row 1</td>
+									<td>Row 1 Content A</td>
+									<td>Row 1 Content B</td>
+								</tr>
+								<tr>
+									<td>Row 2</td>
+									<td>Row 2 Content A</td>
+									<td>Row 2 Content B</td>
+								</tr>
+								<tr>
+									<td>Row 3</td>
+									<td>Row 3 Content A</td>
+									<td>Row 3 Content B</td>
+								</tr>
+								<tr>
+									<td>Row 4</td>
+									<td>Row 4 Content A</td>
+									<td>Row 4 Content B</td>
+								</tr>
+								<tr>
+									<td>Row 5</td>
+									<td>Row 5 Content A</td>
+									<td>Row 5 Content B</td>
+								</tr>
+								<tr>
+									<td>Row 6</td>
+									<td>Row 6 Content A</td>
+									<td>Row 6 Content B</td>
+								</tr>
+								<tr>
+									<td>Row 7</td>
+									<td>Row 7 Content A</td>
+									<td>Row 7 Content B</td>
+								</tr>
+								<tr>
+									<td>Row 8</td>
+									<td>Row 8 Content A</td>
+									<td>Row 8 Content B</td>
+								</tr>
+								<tr>
+									<td>Row 9</td>
+									<td>Row 9 Content A</td>
+									<td>Row 9 Content B</td>
+								</tr>
+							</table>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat optio ratione aliquam qui eos a atque, recusandae, sit explicabo quasi aut amet quos voluptas praesentium, quia illo cumque rerum! Molestiae.</p>
+
+							<h2>Colors</h2>
+							<h3>Primary Colors</h3>
+								<div class="wc-sg-color-card">
+									<p class="wc-sg-medium-blue">Whitman Blue<br>RGB: 0,61,125<br>HEX: #003d7d</p>
+									<p>Usage:</p>
+										<ul>
+											<li>Header and Footer background</li>
+											<li>Body text link hover color</li>
+											<li>Icon color when on light background</li>
+											<li>Table headings</li>
+										</ul>
+								</div>
+								<div class="wc-sg-color-card">
+									<p class="wc-sg-dark-blue">Navigation Navy<br>RGB: 0,13,50<br>HEX: #000d32</p>
+									<p>Usage:</p>
+										<ul>
+											<li>Main navigation background</li>
+										</ul>
+								</div>
+								<div class="wc-sg-color-card">
+									<p class="wc-sg-light-gray">Light Gray<br>RGB: 230,230,230<br>HEX: #e6e6e6</p>
+									<p>Usage:</p>
+										<ul>
+											<li>Background image duotone color</li>
+											<li>Mobile view solid background color</li>
+										</ul>
+								</div>
+
+							<h3 class="wc-sg-clear">Secondary Colors</h3>
+								<div class="wc-sg-color-card">
+									<p class="wc-sg-dark-gray">Dark Gray<br>RGB: 51,51,51<br>HEX: #333333</p>
+									<p>Usage:</p>
+										<ul>
+											<li>Body text color</li>
+										</ul>
+								</div>
+								<div class="wc-sg-color-card">
+									<p class="wc-sg-light-blue">Light Blue<br>RGB: 50,152,254<br>HEX: #3298fe</p>
+									<p>Usage:</p>
+										<ul>
+											<li>Main navigation link hover color</li>
+										</ul>							
+								</div>	
+								<div class="wc-sg-color-card">
+									<p class="wc-sg-extra-medium-blue">Extra Medium Blue<br>RGB: 0, 102, 204<br>HEX: #0066cc</p>
+									<p>Usage:</p>
+										<ul>
+											<li>Link color</li>
+										</ul>
+								</div>
+							<h3 class="wc-sg-clear">Accent Colors</h3>
+								<div class="wc-sg-color-card">
+									<p class="wc-sg-light-blue">Light Blue<br>RGB: ## ## ##<br>HEX: #xxx</p>
+									<p>Usage:</p>
+										<ul>
+											<li>Additional color as needed</li>
+										</ul>
+								</div>
+								<div class="wc-sg-color-card">
+									<p class="wc-sg-super-light-blue">Super Light Blue<br>RGB: 200, 222, 255<br>HEX: #c8deff</p>
+									<p>Usage:</p>
+										<ul>
+											<li>Additional color as needed</li>
+										</ul>
+								</div>
+								<div class="wc-sg-color-card">
+									<p class="wc-sg-dark-gray">Dark Gray<br>RGB: 51,51,51<br>HEX: #333333</p>
+									<p>Usage:</p>
+										<ul>
+											<li>Additional color as needed</li>
+										</ul>
+								</div>
+								<div class="wc-sg-color-card">
+									<p class="wc-sg-gold">Wheat<br>RGB: 252, 194, 18<br>HEX: #fcc212</p>
+									<p>Usage:</p>
+										<ul>
+											<li>Additional color as needed</li>
+										</ul>
+								</div>
+
+							<h2 class="wc-sg-clear">Images</h2>
+							<p>Images should be sized based on the area or component they occupy. They should be cropped to the appropriate size <em>before</em> being uploaded into Ingeniux. Having images that are too large drastically increase page load times and can create an unpleasant user experience. In most cases, the largest an image needs to be is the page content width: 882px wide. See below for the maximum image size for a given situation:</p>
+							<h3>Maximum Image Sizes</h3>
+								<table>
+									<tr>
+										<th>Image Type</th>
+										<th>Dimensions</th>
+									</tr>
+									<tr>
+										<td>Main header image</td>
+										<td><mark>2400 x 1163px</mark></td>
+									</tr>
+									<tr>
+										<td>Full-width body image</td>
+										<td>882px wide</td>
+									</tr>
+									<tr>
+										<td>Profile image</td>
+										<td>134 x 170px</td>
+									</tr>
+									<tr>
+										<td>Left/Right Column Component Image</td>
+										<td>294px wide</td>
+									</tr>
+								</table>
+								<p>By default, images are displayed at the maximum size of the containing content area, regardless of actual size. Despite this, images should be no larger than the area or component they are used within.</p>
+								<p>Images should be chosen based on if they improve or assist the message of a webpage as necessary. Unless your page is a photo gallery, never use five images when just one will do &mdash; again, keep page load times and user experience in mind. </p>
+								<img src="images/CirclePictures/SemesterInTheWest.jpg" alt="Students looking at mountain">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+include "pieces/layout/footer.html"

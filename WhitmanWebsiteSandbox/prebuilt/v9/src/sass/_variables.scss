@@ -1,0 +1,227 @@
+/********************************
+
+#VARIABLES
+
+Notes
+[1] A.K.A  #002868 (Pre-Visual Identity: rgb(0,61,125) / #003d7d)
+[2] A.K.A. #0072CE (Pre-Visual Identity: rgb(0,102,204))
+[3] A.K.A. #3298FE
+[4] A.K.A. #6E6E6E This is the lightest "dark" gray that can contrast with our common light gray backgrounds
+[5] A.K.A. #E6E6E6
+[6] A.K.A. #333333
+[7] Pre-Visual Identity: $light-gray; (now changed to $light-gray-2)
+[8] Pre-Visual Identity: $super-light-gray;
+[9] Pre-Visual Identity: $super-light-blue;
+[10] Not in use
+[11] Replaces $super-light-blue
+
+[VI] Colors added for visual identity revision.
+
+**********************************/
+
+
+/**********************************
+#COLORS
+**********************************/
+$dark-blue:					rgb(0,13,50);
+$dark-blue-trans:			rgba(0,13,50,.7);
+$medium-blue:				rgb(0,40,104); /*[1] [VI]*/
+$medium-blue-2:				rgb(0,114,206); /*[2] [VI]*/ 
+$light-blue:				rgb(50,152,254); /*[3]*/
+$powder-blue:				rgb(162,203,237); /*[11] [VI]*/
+$transparent-blue:			rgba(200, 222, 255,.5);
+
+$dark-gray:					rgb(51,51,51); /*[6]*/
+$dark-gray-2:				rgb(110,110,110); /*[4]*/
+$medium-gray:				rgb(160,160,160);
+$light-gray-1:				rgb(205,205,205); /*[VI]*/
+$light-gray-2:				rgb(230,230,230); /*[5]*/
+$almost-white:				rgb(248,248,248);
+
+$warm-gray:					rgb(230,228,220); /*[VI]*/
+
+$merlot:					rgb(108,46,74); /*[VI]*/
+$gold:						rgb(255,199,44); /*[VI]*/
+$gold-dark:					rgb(184,145,33); /*[VI]*/
+$forest-green:				rgb(2,73,48);
+
+$black:						rgb(0,0,0);
+$white:						rgb(255,255,255);
+
+
+$base-font-color:							$dark-gray;
+$body-background-color:						$medium-blue;
+$mobile-header-row2-background-color:		$dark-blue;
+
+$link-color:								$medium-blue-2;
+$link-hover-color: 							$medium-blue;
+
+$content-wrap-bg-color:						$white; /*[VI] [7]*/
+$content-wrap-bg-color-sm:					$white; /* [VI] [8] */
+$header-icon-hover-color:					$gold;  /* [VI] [9] */
+
+
+/**********************************
+#HIGH CONTRAST COLORS
+**********************************/
+
+$hc-white:				 	$white;
+$hc-black:					$black;
+
+/**********************************
+#TYPOGRAPHY
+**********************************/
+$font-family-serif: "Merriweather", serif;
+$font-family-sans-serif: "Raleway", sans-serif;
+
+$base-font-size-lg:			18px;
+$base-font-size-md:			18px;
+$base-font-size-sm:			18px;
+$base-font-size-xs:			17px;
+
+$base-line-height:			1.4;
+
+$heading-font-weight:		400;
+
+$h1-font-size:				3rem;
+$h1-xs-font-size:			2.6rem;
+$h1-font-weight:			500;
+$h1-color:					$dark-gray;
+$h1-top-margin:				0;
+$h1-bottom-margin:			0.75rem;
+
+$h2-font-size:				2rem;
+$h2-font-weight:			500;
+$h2-color:					$dark-gray;
+$h2-line-height:			1.2;
+$h2-top-margin:				2.2rem;
+$h2-bottom-margin:			0.8rem;
+
+$h3-font-size:				1.5rem;
+$h3-font-weight:			400;
+$h3-color:					$dark-gray;
+$h3-top-margin:				2rem;
+$h3-bottom-margin:			0.6rem;
+$h3-line-height: 			1.3;
+
+$h4-font-size:				1.2rem;
+$h4-font-weight:			500;
+$h4-color:					$dark-gray;
+$h4-top-margin:				1.2rem;
+$h4-bottom-margin:			0.4rem;
+
+$p-font-size:				1rem;
+$p-font-weight:				400;
+$p-color:					$dark-gray;
+$p-line-height:				$base-line-height;
+$p-top-margin:				0;
+$p-bottom-margin:			1.1rem;
+
+$a-font-size:				1rem;
+$a-font-weight:				400;
+$a-color:					$link-color;
+$a-hover-color:				$link-hover-color;
+
+$ul-top-margin:				0;
+$ul-bottom-margin:			.6rem;
+$ul-left-padding:			2.2rem;
+
+$ol-top-margin:				.6rem;
+$ol-bottom-margin:			.6rem;
+$ol-left-padding:			2.2rem;
+
+
+$li-font-size:				1rem;
+$li-font-weight:			400;
+$li-color:					$dark-gray;
+$li-line-height:			$base-line-height;
+$li-top-margin: 			0;
+$li-bottom-margin:	 		0;
+$li-bottom-margin-mobile:	.3rem;
+
+$table-th-color:			$medium-blue;
+$table-bg-color-1:			transparent;
+$table-bg-color-2:			$transparent-blue; //was $super-light-blue-trans-2
+
+
+$subhead-top-margin: 		.2rem;
+$subhead-bottom-margin:		$h3-bottom-margin;
+
+
+/**********************************
+#BODY-COPY-TYPOGRAPHY
+**********************************/
+$base-line-height-body-copy:		$base-line-height;
+
+$p-font-size-body-copy:				1rem;
+$p-font-weight-body-copy:			$p-font-weight;
+$p-color-body-copy:					$p-color;
+$p-line-height-body-copy:			$p-line-height;
+$p-top-margin-body-copy:			$p-top-margin;
+$p-bottom-margin-body-copy:			$p-bottom-margin;
+
+$a-font-size-body-copy:				$a-font-size;
+$a-font-weight-body-copy:			$a-font-weight;
+$a-color-body-copy:					$a-color;
+$a-hover-color-body-copy:			$a-hover-color;
+
+$ul-top-margin-body-copy:			$ul-top-margin;
+$ul-bottom-margin-body-copy:		$ul-bottom-margin;
+$ul-left-padding-body-copy:			$ul-left-padding;
+
+$ol-top-margin-body-copy:			$ol-top-margin;
+$ol-bottom-margin-body-copy:		$ol-bottom-margin;
+$ol-left-padding-body-copy:			$ol-left-padding;
+
+
+$li-font-size-body-copy:			$li-font-size;
+$li-font-weight-body-copy:			$li-font-weight;
+$li-color-body-copy:				$li-color;
+$li-line-height-body-copy:			$li-line-height;
+$li-top-margin-body-copy:			$li-top-margin;
+$li-bottom-margin-body-copy:		$li-bottom-margin;
+
+$table-th-color-body-copy:			$table-th-color;
+$table-bg-color-1-body-copy:		$table-bg-color-1;
+$table-bg-color-2-body-copy:		$table-bg-color-2;
+
+
+$subhead-top-margin-body-copy:		$subhead-top-margin;
+$subhead-bottom-margin-body-copy:	$subhead-bottom-margin;
+
+
+/**********************************
+#GUTTERS / #SPACING / #GRID
+
+Notes
+[-] 	For bootstrap's grid variables, see the wc-variables file
+		in the bootstrap folder.
+**********************************/
+$vertical-gutter:				.8rem;
+$vertical-gutter-lg: 			$vertical-gutter;
+$vertical-gutter-md: 			$vertical-gutter * .7;
+$vertical-gutter-sm: 			$vertical-gutter;
+$vertical-gutter-xs: 			$vertical-gutter;
+
+$vertical-content-gutter: 		.8rem;
+$vertical-footer-gutter: 		.8rem;
+$vertical-promo-gutter: 		3rem;
+$vertical-promo-extra-gutter: 	$vertical-promo-gutter * 1.5;
+
+$horizontal-gutter:				$grid-gutter-width / 2;
+
+
+/**********************************
+#MISC
+**********************************/
+$border-radius: 		8px;
+$default-icon-size: 	1rem;
+
+
+/**********************************
+#HEADER
+
+Notes
+[1] 	Putting this here because it's referenced in various places
+**********************************/
+$header-height-mobile: 		70px; /*[1]*/

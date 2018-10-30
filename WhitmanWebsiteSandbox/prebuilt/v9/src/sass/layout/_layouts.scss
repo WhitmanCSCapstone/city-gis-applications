@@ -1,0 +1,292 @@
+/**********************************
+#LAYOUTS
+
+Info
+	Styles for the various layouts. These only define the broad structure of a page, the
+	page type will use one of these and then define the details of a page's structure.
+	
+
+TODO
+[TD1] 	Definitely have some specificity creep here that would be good
+		to deal with at some point
+**********************************/
+.wc-content-wrap{
+	overflow-x: hidden;
+}
+
+html{
+	&:not(.no-flexbox){
+		body{
+			display: flex;
+			flex-direction: column;
+			height: 100vh; 
+		}
+		.wc-content-wrap{
+		  flex: 1 0 auto;
+		}
+		.wc-footer{
+			flex-shrink: 0;
+		}
+	}
+	
+	&.no-flexbox{
+		.wc-content-wrap{
+			min-height: 900px;
+		}
+	}
+}
+
+
+/**********************************
+#STANDARD
+
+INFO
+[-] Has a left column, a middle column, and can have a right column.
+[-] Examples: detail and section front pages
+[-] LC - Left Column, MC - Main Content, MCC - Middle Content, Column, RCC - Right Content Column
+
+----------------- 			-----------------
+|LC |    MC     |           |LC |     MC    |
+|   |           |           |   |  MCC  |RCC|
+|   |           |           |   |       |   |
+|   |           |           |   |       |   |
+|   |           |           |   |       |   |
+|   |           |           |   |       |   |
+|   |           |           |   |       |   |
+|   |           |           |   |       |   |
+|   |           |           |   |       |   |
+----------------- 			-----------------
+**********************************/
+.wc-standard-layout{
+	/**********************************
+	With Left Column
+	**********************************/
+	&:not(.wc-no-left-column){
+		.wc-left-column{ 
+			@include responsivePaddingTop(1rem,0,0,0);
+			@include make-xs-column(12);
+			@include make-sm-column(4);
+			@include make-lg-column(3);
+		}
+		.wc-main-content{
+			@include make-xs-column(12);
+			@include make-sm-column(8);
+			@include make-lg-column(9);
+			@include responsivePaddingTop($vertical-gutter-xs,0,0,0);
+			@include responsivePaddingBottom($vertical-gutter-xs,0,0,0);
+		}
+		.wc-main-content, .wc-middle-content-column{
+			>:first-child{
+				margin-top:0;
+				padding-top:0;
+				&.wc-component-row{/*[TD1]*/
+					.wc-component{
+						padding-top:0;
+					}
+				}
+			}
+		}
+		.wc-yes-right-column{
+			.wc-middle-content-column{
+				@include make-xs-column(12);
+				@include make-md-column(8);
+			}
+		}
+		.wc-main-content:not(.wc-inner-right-column){
+			.wc-right-content-column{
+				@include make-xs-column(12);
+				@include make-md-column(4);
+			}
+		}
+		.wc-no-right-column,.wc-inner-right-column{
+			.wc-middle-content-column{
+				@include make-xs-column(12);
+			}
+		}
+	}
+	/**********************************
+	Without Left Column
+	**********************************/
+	&.wc-no-left-column{
+		.wc-left-column{ 
+			display: none;
+		}
+		.wc-main-content{
+			@include make-xs-column(12);
+		}
+		.wc-yes-right-column{
+			.wc-middle-content-column{
+				@include make-xs-column(12);
+				@include make-md-column(9);
+				&.wc-pull{
+					@extend .col-md-pull-3; /*[1]*/
+				}
+			}
+			.wc-right-content-column{
+				@include make-xs-column(12);
+				@include make-md-column(3);
+				&.wc-push{
+					@extend .col-md-push-9; /*[2]*/
+				}
+			}
+		}
+		.wc-no-right-column{
+			.wc-middle-content-column{
+				@include make-xs-column(12);
+			}
+		}
+	}
+	/**********************************
+	Misc
+	**********************************/
+	.wc-middle-content-column,.wc-right-content-column{
+		>:first-child{
+			@extend .wc-no-top-gutter;
+		}
+	}
+	.wc-inner-right-column{
+		.wc-right-content-column{
+			float: right;
+			@include responsivePaddingLeft(0,0,$horizontal-gutter,$horizontal-gutter)
+			@include responsiveMarginLeft(0,0,$horizontal-gutter,$horizontal-gutter)
+			@include responsiveWidth(100%,100%,33%,33%);
+		}
+	}
+	&.wc-detail-page-content .wc-right-content-column{
+		>div:last-of-type .wc-component{
+			padding-bottom:0;
+		}
+		@media(min-width:$screen-md-min){
+			border-left:1px solid $dark-gray;
+		}
+	}
+}
+
+
+/**********************************
+#FULL-WIDTH-A
+
+INFO
+[-] Just a standard full-width page.
+[-] Examples: the a-to-z-index
+[-] MC - Main Content
+
+-----------------
+|      MC       |
+|               |
+|               |
+|               |
+|               |
+|               |
+|               |
+|               |
+-----------------
+**********************************/
+.wc-full-width-layout-a{
+	.wc-main-content{
+		@include make-xs-column(12);
+	}
+}
+
+
+/**********************************
+#FULL-WIDTH-B
+
+INFO
+[-] Full-width, 2 column layout, with an optional section nav on top
+[-] Examples: the alumni page
+[-] ASN - Alt Section Nav,
+	* - some component,
+	LCC - left content column,
+	RRC - Right content column
+[1] Note that in the cshtml view, we're using the normal left column for
+	mobile, and only using the alt-section-nav for desktop so we didn't have
+	to make the alt-section-nav code completely responsive.
+
+-----------------
+|      MC       |
+|   ASN     |*  |
+-----------------
+|  LCC  |  RCC  |
+|       |       |
+|       |       |
+|       |       |
+|       |       |
+|       |       |
+|       |       |
+-----------------
+**********************************/
+.wc-full-width-layout-b{
+	.wc-left-column{ /*[1]*/
+		@include responsivePaddingTop(1rem,0,0,0);
+		@include make-xs-column(12);
+		@include make-sm-column(4);
+		@include make-lg-column(3);
+	}
+	.wc-alt-section-nav{
+		@include make-sm-column(9);
+	}
+	.wc-left-content-column{
+		@include make-xs-column(12);
+		@include make-md-column(6);
+	}
+	.wc-right-content-column{
+		@include make-xs-column(12);
+		@include make-md-column(6);
+	}
+}
+
+
+/**********************************
+#LANDING-PAGE-LAYOUT
+**********************************/
+.wc-landing-page-layout{
+	.wc-left-column{
+		@include responsivePaddingTop(1rem,0,0,0);
+		@include make-xs-column(12);
+		@include make-sm-column(4);
+		@include make-lg-column(3);
+	}
+	.wc-collapsed-nav-row{
+		.wc-left-column{
+			@include make-xs-column(12);
+			@include make-sm-column(6);
+			@include make-md-column(4);
+			@include make-lg-column(3);
+		}
+	}
+	.wc-main-content{
+		@include make-xs-column(12);
+		@include make-sm-column(8);
+		@include make-lg-column(9);
+		@include responsivePaddingTop($vertical-gutter-xs,0,0,0);
+		@include responsivePaddingBottom($vertical-gutter-xs,0,0,0);
+		>:first-child{
+			margin-top:0;
+			padding-top:0;
+		}
+	}
+}
+
+
+/**********************************
+#HOME-PAGE-LAYOUT
+
+INFO
+[-] Full-width layout for the home page.
+
+-----------------
+|               |
+|               |
+|               |
+|               |
+|               |
+|               |
+|               |
+|               |
+-----------------
+
+Notes
+[1] 	Nothing to do here since there are no columns or content sections.
+**********************************/
+.wc-home-page-layout{} /*[1]*/

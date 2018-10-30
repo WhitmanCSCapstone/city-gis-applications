@@ -1,0 +1,390 @@
+include "pieces/layout/header.html"
+	<!-- Content -->
+	<div class="wc-content-wrap wc-standard-layout wc-detail-page-content " >
+		<!-- Title  -->
+		<div class="wc-title-box">
+			<div class="wc-container">
+				<h1 class="wc-page-title">A Detail Page</h1>
+			</div>
+		</div>
+
+		<div class="wc-container">
+			<!-- Breadcrumbs -->
+			include "pieces/layout/breadcrumbs.html"
+
+			<div class="wc-row wc-no-top-gutter">
+
+				include "pieces/layout/left-column.html"
+
+
+
+
+<div class="wc-main-content " id="wc-reader-content" role="main">
+	<div class="wc-row">
+		<div class="wc-body-copy wc-12-col">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus consequatur, earum iusto nemo aperiam incidunt eaque nostrum sint quae totam cumque error iure consequuntur unde minus culpa, dolor pariatur vero.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus consequatur, earum iusto nemo aperiam incidunt eaque nostrum sint quae totam cumque error iure consequuntur unde minus culpa, dolor pariatur vero.</p>
+			<p></p>
+		</div>
+	</div>
+	<div class="wc-row wc-component-row">
+		<!-- Slide Show -->
+		<div class="wc-slideshow-component wc-component wc-full-component">
+			<div class="wc-slideshow-content">
+				<div class="wc-desktop-slider wc-slider wc-invisible wc-dots-and-arrows" id="wc-slideshow-component-x41772">
+					<div class="wc-slide-box" style="background-image:url(https://www.whitman.edu/assets/images/Offices/HR/FALL-AROUND-CAMPUS-SCIENCE-STUDIES-882.jpg?_previewAsset_=true)">
+						<div class="wc-overlay" style="background-color: rgba(0,0,0,.3);">
+							<div class="wc-caption">
+								<p class="wc-description" data-ellipsis-xs="80" data-ellipsis-sm="100" data-ellipsis-md="160" data-ellipsis-lg="220">
+									This is the caption for this slide, it's pretty short
+								</p>
+								<a href="/DssPreview/x11.xml?Preview=true&amp;Site=&amp;IncludeAllPages=true&amp;tfrm=1&amp;PubTgt=PublishingTargets/1&amp;Site=&amp;UserAgent=" class="wc-box-button wc-bb-more-link wc-white" title="Whitman College">
+								Whitman College</a>
+							</div>
+						</div>
+					</div>
+					<div class="wc-slide-box" style="background-image:url(https://www.whitman.edu/assets/images/Offices/HR/Campus-Biles882.jpg?_previewAsset_=true)">
+						<div class="wc-overlay" style="background-color: rgba(0,0,0,.3);">
+							<div class="wc-caption">
+								<p class="wc-description" data-ellipsis-xs="80" data-ellipsis-sm="100" data-ellipsis-md="160" data-ellipsis-lg="220">
+									This slide has a longer caption though, so long that it might break onto a second line. Ok now it does, no now it does
+								</p>
+								<a href="/DssPreview/x11.xml?Preview=true&amp;Site=&amp;IncludeAllPages=true&amp;tfrm=1&amp;PubTgt=PublishingTargets/1&amp;Site=&amp;UserAgent=" class="wc-box-button wc-bb-more-link wc-white" title="Whitman College">
+								Whitman College</a>
+							</div>
+						</div>
+					</div>
+					<div class="wc-slide-box" style="background-image:url(https://www.whitman.edu/assets/images/Offices/HR/FALL-AROUND-CAMPUS_MEM-882.jpg?_previewAsset_=true)">
+						<div class="wc-overlay" style="background-color: rgba(0,0,0,.3);">
+						</div>
+					</div>
+				</div>
+				<div class="wc-slider-nav-box" id="wc-slideshow-component-x41772-nav-box">
+					<a class="wc-left-arrow">
+						<svg viewBox="0 0 32 32">
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/svg/svg-defs.svg#icon-arrow-left"></use>
+						</svg>
+					</a>
+					<div class="wc-slider-dots-box" id="wc-slider-dots-box"></div>
+					<a class="wc-right-arrow">
+						<svg viewBox="0 0 32 32">
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/svg/svg-defs.svg#icon-arrow-right"></use>
+						</svg>
+					</a>
+				</div>
+			</div>
+			<script>
+				(function(){
+					var wcParams = {
+						type: 'slideshow',
+						height: 310
+						};
+					var slickParams = {
+						dots: (('True').toLowerCase() == 'true'), //need to convert all of these  because c# uses 'False' instead of 'false'
+						arrows: (('True').toLowerCase() == 'true'),
+						draggable: (('True').toLowerCase() == 'true'),
+						swipe: (('True').toLowerCase() == 'true'),
+						autoplay:(('False').toLowerCase() == 'true'),
+						autoplaySpeed: 5000,
+						prevArrow: $('#wc-slideshow-component-x41772-nav-box').find('.wc-left-arrow').first(),
+						nextArrow: $('#wc-slideshow-component-x41772-nav-box').find('.wc-right-arrow').first(),
+						appendDots: $('#wc-slideshow-component-x41772-nav-box').find('.wc-slider-dots-box').first()
+					};
+					$('#wc-slideshow-component-x41772').data('wcParams',wcParams).data('slickParams',slickParams);
+				})();
+			</script>
+		</div>
+	</div>
+	<div class="wc-row wc-component-row">
+		<div class="wc-component wc-full-component wc-announcement-component">
+			<div class="wc-component-content">
+				<h4>This is an announcement component</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis eos possimus earum, at soluta! Maxime, dolore enim aut reiciendis molestias laudantium iure illo perferendis, debitis dolorem quaerat laboriosam dicta maiores?</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis eos possimus earum, at soluta! Maxime, dolore enim aut reiciendis molestias laudantium iure illo perferendis, debitis dolorem quaerat laboriosam dicta maiores?</p>
+			</div>
+		</div>
+	</div>
+	<div class="wc-row wc-component-row">
+		<div class="wc-small-feature-component wc-component wc-half-component">
+			<div class="wc-component-content">
+				<a href="/DssPreview/x11.xml?Preview=true&amp;Site=&amp;IncludeAllPages=true&amp;tfrm=1&amp;PubTgt=PublishingTargets/1&amp;Site=&amp;UserAgent=">    <img src="https://www.whitman.edu/assets/images/TestImages/styx.jpg?_previewAsset_=true" alt="" class="wc-full-width">
+				</a>
+				<h3>Small Feature Component Test</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam ad similique aliquid reiciendis, ex placeat doloremque quod dicta, sequi</p>
+			</div>
+			<a href="/DssPreview/x11.xml?Preview=true&amp;Site=&amp;IncludeAllPages=true&amp;tfrm=1&amp;PubTgt=PublishingTargets/1&amp;Site=&amp;UserAgent=" class="wc-box-button wc-bb-more-link" title="Whitman College">
+			Whitman College</a>
+		</div>
+		<!-- end wc-body-copy-component-->
+		<!--end model not null-->
+		<div class="wc-small-feature-component wc-component wc-half-component">
+			<div class="wc-component-content">
+				<h3>Small feature component without an image test</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam ad similique aliquid reiciendis, ex placeat doloremque quod dicta, sequi</p>
+			</div>
+			<a href="/DssPreview/x11.xml?Preview=true&amp;Site=&amp;IncludeAllPages=true&amp;tfrm=1&amp;PubTgt=PublishingTargets/1&amp;Site=&amp;UserAgent=" class="wc-box-button wc-bb-more-link" title="Whitman College">
+			Whitman College</a>
+		</div>
+		<!-- end wc-body-copy-component-->
+		<!--end model not null-->
+	</div>
+	<div class="wc-row wc-component-row">
+		<div class="wc-component wc-events-component wc-half-component wc-list-component" id="wc-events-component-6280c128d807febcbf161b28637d04d5">
+			<h2>Events</h2>
+			<hr class="wc-divider">
+			<ul class="wc-events-list"></ul>
+			<script>
+				(function(){
+				                   var params = {
+				                       types: ['33849'],
+				                       excludes: [''],
+				                       match: 'any',
+				                       count: '4',
+				                       format: 'default',
+				                       moreLinks: 'false',
+				                       showAbstracts: 'true',
+						recurringEvents: 'distinct'
+				                   };
+					$('#wc-events-component-6280c128d807febcbf161b28637d04d5').data('eventsParams',params);
+				})();
+				           
+			</script>
+			<a href="/DssPreview/x11.xml?Preview=true&amp;Site=&amp;IncludeAllPages=true&amp;tfrm=1&amp;PubTgt=PublishingTargets/1&amp;Site=&amp;UserAgent=" class="wc-box-button wc-bb-more-link" title="More Events">
+			More Events</a>
+		</div>
+		<div class="wc-component wc-events-component wc-half-component wc-list-component" id="wc-events-component-ba35a03e80146867650dbc3b3cbc6945">
+			<h2>Theatre Events with Multiple Dates</h2>
+			<hr class="wc-divider">
+			<ul class="wc-events-list"></ul>
+			<script>
+				(function(){
+				                   var params = {
+				                       types: ['33849'],
+				                       excludes: [''],
+				                       match: '',
+				                       count: '15',
+				                       format: 'default',
+				                       moreLinks: 'false',
+				                       showAbstracts: 'true',
+						recurringEvents: 'compact'
+				                   };
+					$('#wc-events-component-ba35a03e80146867650dbc3b3cbc6945').data('eventsParams',params);
+				})();
+				           
+			</script>
+			<a href="/DssPreview/x11.xml?Preview=true&amp;Site=&amp;IncludeAllPages=true&amp;tfrm=1&amp;PubTgt=PublishingTargets/1&amp;Site=&amp;UserAgent=" class="wc-box-button wc-bb-more-link" title="More Events">
+			More Events</a>
+		</div>
+	</div>
+	<div class="wc-row wc-component-row">
+		<div class="wc-component wc-link-list-component wc-list-component wc-half-component">
+			<h2>Link List Test Component</h2>
+			<hr class="wc-divider">
+			<ul class="wc-no-style-list">
+				<li>
+					<a href="/DssPreview/x36517.xml?Preview=true&amp;Site=&amp;IncludeAllPages=true&amp;tfrm=1&amp;PubTgt=PublishingTargets/1&amp;Site=&amp;UserAgent=" title="Environmental Health and Safety">
+					Environmental Health and Safety</a>
+				</li>
+				<li>
+					<a href="/DssPreview/x36185.xml?Preview=true&amp;Site=&amp;IncludeAllPages=true&amp;tfrm=1&amp;PubTgt=PublishingTargets/1&amp;Site=&amp;UserAgent=" title="This link has a really long title so we can test line breaks">
+					This link has a really long title so we can test line breaks</a>
+				</li>
+				<li>
+					<a href="/DssPreview/x36188.xml?Preview=true&amp;Site=&amp;IncludeAllPages=true&amp;tfrm=1&amp;PubTgt=PublishingTargets/1&amp;Site=&amp;UserAgent=" title="Athletics">
+					Athletics</a>
+				</li>
+				<li>
+					<a href="/DssPreview/x30859.xml?Preview=true&amp;Site=&amp;IncludeAllPages=true&amp;tfrm=1&amp;PubTgt=PublishingTargets/1&amp;Site=&amp;UserAgent=" title="Human Resources">
+					Human Resources</a>
+				</li>
+				<li>
+					<a href="/DssPreview/x36441.xml?Preview=true&amp;Site=&amp;IncludeAllPages=true&amp;tfrm=1&amp;PubTgt=PublishingTargets/1&amp;Site=&amp;UserAgent=" title="Business Office">
+					Business Office</a>
+				</li>
+				<li>
+					<a href="/DssPreview/x25558.xml?Preview=true&amp;Site=&amp;IncludeAllPages=true&amp;tfrm=1&amp;PubTgt=PublishingTargets/1&amp;Site=&amp;UserAgent=" title="Off-Campus Studies">
+					Off-Campus Studies</a>
+				</li>
+			</ul>
+		</div>
+		<div class="wc-button-list-component wc-component wc-half-component wc-two-across">
+			<div class="wc-button-list-box wc-same-height-children_flexbox">
+				<a href="/DssPreview/x11.xml?Preview=true&amp;Site=&amp;IncludeAllPages=true&amp;tfrm=1&amp;PubTgt=PublishingTargets/1&amp;Site=&amp;UserAgent=" class="wc-box-button wc-small" title="Whitman College" data-tracking-label=" Whitman College">
+				<span class="wc-text">Whitman College</span>
+				</a>
+				<a href="/DssPreview/x11.xml?Preview=true&amp;Site=&amp;IncludeAllPages=true&amp;tfrm=1&amp;PubTgt=PublishingTargets/1&amp;Site=&amp;UserAgent=" class="wc-box-button wc-small" title="This one has a longer title so it will take two lines" data-tracking-label=" This one has a longer title so it will take two lines">
+				<span class="wc-text">This one has a longer title so it will take two lines</span>
+				</a>
+				<a href="/DssPreview/x11.xml?Preview=true&amp;Site=&amp;IncludeAllPages=true&amp;tfrm=1&amp;PubTgt=PublishingTargets/1&amp;Site=&amp;UserAgent=" class="wc-box-button wc-small" title="Whitman College" data-tracking-label=" Whitman College">
+				<span class="wc-text">Whitman College</span>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="wc-row wc-component-row">
+		<div class="wc-button-list-component wc-component wc-full-component wc-three-across">
+			<div class="wc-button-list-box wc-same-height-children_flexbox">
+				<a href="/DssPreview/x11.xml?Preview=true&amp;Site=&amp;IncludeAllPages=true&amp;tfrm=1&amp;PubTgt=PublishingTargets/1&amp;Site=&amp;UserAgent=" class="wc-box-button wc-small" title="Whitman College" data-tracking-label=" Whitman College">
+				<span class="wc-text">Whitman College</span>
+				</a>
+				<a href="/DssPreview/x11.xml?Preview=true&amp;Site=&amp;IncludeAllPages=true&amp;tfrm=1&amp;PubTgt=PublishingTargets/1&amp;Site=&amp;UserAgent=" class="wc-box-button wc-small" title="Whitman College" data-tracking-label=" Whitman College">
+				<span class="wc-text">Whitman College</span>
+				</a>
+				<a href="/DssPreview/x11.xml?Preview=true&amp;Site=&amp;IncludeAllPages=true&amp;tfrm=1&amp;PubTgt=PublishingTargets/1&amp;Site=&amp;UserAgent=" class="wc-box-button wc-small" title="Whitman College" data-tracking-label=" Whitman College">
+				<span class="wc-text">Whitman College</span>
+				</a>
+				<a href="/DssPreview/x11.xml?Preview=true&amp;Site=&amp;IncludeAllPages=true&amp;tfrm=1&amp;PubTgt=PublishingTargets/1&amp;Site=&amp;UserAgent=" class="wc-box-button wc-small" title="Whitman College" data-tracking-label=" Whitman College">
+				<span class="wc-text">Whitman College</span>
+				</a>
+				<a href="/DssPreview/x11.xml?Preview=true&amp;Site=&amp;IncludeAllPages=true&amp;tfrm=1&amp;PubTgt=PublishingTargets/1&amp;Site=&amp;UserAgent=" class="wc-box-button wc-small" title="Whitman College" data-tracking-label=" Whitman College">
+				<span class="wc-text">Whitman College</span>
+				</a>
+				<a href="/DssPreview/x11.xml?Preview=true&amp;Site=&amp;IncludeAllPages=true&amp;tfrm=1&amp;PubTgt=PublishingTargets/1&amp;Site=&amp;UserAgent=" class="wc-box-button wc-small" title="Whitman College" data-tracking-label=" Whitman College">
+				<span class="wc-text">Whitman College</span>
+				</a>
+				<a href="/DssPreview/x11.xml?Preview=true&amp;Site=&amp;IncludeAllPages=true&amp;tfrm=1&amp;PubTgt=PublishingTargets/1&amp;Site=&amp;UserAgent=" class="wc-box-button wc-small" title="Whitman College" data-tracking-label=" Whitman College">
+				<span class="wc-text">Whitman College</span>
+				</a>
+				<a href="/DssPreview/x11.xml?Preview=true&amp;Site=&amp;IncludeAllPages=true&amp;tfrm=1&amp;PubTgt=PublishingTargets/1&amp;Site=&amp;UserAgent=" class="wc-box-button wc-small" title="Whitman College" data-tracking-label=" Whitman College">
+				<span class="wc-text">Whitman College</span>
+				</a>
+				<a href="/DssPreview/x11.xml?Preview=true&amp;Site=&amp;IncludeAllPages=true&amp;tfrm=1&amp;PubTgt=PublishingTargets/1&amp;Site=&amp;UserAgent=" class="wc-box-button wc-small" title="This one has a longer title so it will take two lines" data-tracking-label=" This one has a longer title so it will take two lines">
+				<span class="wc-text">This one has a longer title so it will take two lines</span>
+				</a>
+				<a href="/DssPreview/x11.xml?Preview=true&amp;Site=&amp;IncludeAllPages=true&amp;tfrm=1&amp;PubTgt=PublishingTargets/1&amp;Site=&amp;UserAgent=" class="wc-box-button wc-small" title="Whitman College" data-tracking-label=" Whitman College">
+				<span class="wc-text">Whitman College</span>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="wc-row wc-component-row">
+		<div class="wc-accordion-component wc-component wc-full-component" id="wc-accordion-component_d6ae8362aa2d06a76c9dd878a47c008e">
+			<div class="wc-accordion-box">
+				<button class="wc-accordion-header collapse " data-toggle="collapse" data-target="#wc-accordion-component_d6ae8362aa2d06a76c9dd878a47c008e_slide_0">
+					<h2 class="wc-text">First Section</h2>
+					<div class="wc-icon-box" aria-hidden="true">
+						<svg viewBox="0 0 32 32">
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/svg/svg-defs.svg#icon-arrow-down"></use>
+						</svg>
+					</div>
+				</button>
+				<div class="wc-accordion-slide collapse " id="wc-accordion-component_d6ae8362aa2d06a76c9dd878a47c008e_slide_0">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, reprehenderit illo cum debitis rerum nesciunt obcaecati velit quis. Illum assumenda quae ipsa, ratione vero ullam fuga ad eligendi asperiores quod.</p>
+					<div class="wc-button-list-component wc-component wc-full-component wc-two-across">
+						<div class="wc-button-list-box wc-same-height-children_flexbox"><a class="wc-box-button wc-small" href="https://www.whitman.edu"> <span class="wc-text">Test Link</span> </a> <a class="wc-box-button wc-small" href="https://www.whitman.edu"> <span class="wc-text">Test Link</span> </a></div>
+					</div>
+				</div>
+				<button class="wc-accordion-header collapse " data-toggle="collapse" data-target="#wc-accordion-component_d6ae8362aa2d06a76c9dd878a47c008e_slide_1">
+					<h2 class="wc-text">Second Section</h2>
+					<div class="wc-icon-box" aria-hidden="true">
+						<svg viewBox="0 0 32 32">
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/svg/svg-defs.svg#icon-arrow-down"></use>
+						</svg>
+					</div>
+				</button>
+				<div class="wc-accordion-slide collapse " id="wc-accordion-component_d6ae8362aa2d06a76c9dd878a47c008e_slide_1">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, reprehenderit illo cum debitis rerum nesciunt obcaecati velit quis. Illum assumenda quae ipsa, ratione vero ullam fuga ad eligendi asperiores quod.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, reprehenderit illo cum debitis rerum nesciunt obcaecati velit quis. Illum assumenda quae ipsa, ratione vero ullam fuga ad eligendi asperiores quod.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, reprehenderit illo cum debitis rerum nesciunt obcaecati velit quis. Illum assumenda quae ipsa, ratione vero ullam fuga ad eligendi asperiores quod.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, reprehenderit illo cum debitis rerum nesciunt obcaecati velit quis. Illum assumenda quae ipsa, ratione vero ullam fuga ad eligendi asperiores quod.</p>
+				</div>
+				<button class="wc-accordion-header collapse " data-toggle="collapse" data-target="#wc-accordion-component_d6ae8362aa2d06a76c9dd878a47c008e_slide_2">
+					<h2 class="wc-text">Third Section</h2>
+					<div class="wc-icon-box" aria-hidden="true">
+						<svg viewBox="0 0 32 32">
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/svg/svg-defs.svg#icon-arrow-down"></use>
+						</svg>
+					</div>
+				</button>
+				<div class="wc-accordion-slide collapse " id="wc-accordion-component_d6ae8362aa2d06a76c9dd878a47c008e_slide_2">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, reprehenderit illo cum debitis rerum nesciunt obcaecati velit quis. Illum assumenda quae ipsa, ratione vero ullam fuga ad eligendi asperiores quod.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, reprehenderit illo cum debitis rerum nesciunt obcaecati velit quis. Illum assumenda quae ipsa, ratione vero ullam fuga ad eligendi asperiores quod.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, reprehenderit illo cum debitis rerum nesciunt obcaecati velit quis. Illum assumenda quae ipsa, ratione vero ullam fuga ad eligendi asperiores quod.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, reprehenderit illo cum debitis rerum nesciunt obcaecati velit quis. Illum assumenda quae ipsa, ratione vero ullam fuga ad eligendi asperiores quod.</p>
+				</div>
+				<button class="wc-accordion-header collapse " data-toggle="collapse" data-target="#wc-accordion-component_d6ae8362aa2d06a76c9dd878a47c008e_slide_3">
+					<h2 class="wc-text">Fourth Section</h2>
+					<div class="wc-icon-box" aria-hidden="true">
+						<svg viewBox="0 0 32 32">
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/svg/svg-defs.svg#icon-arrow-down"></use>
+						</svg>
+					</div>
+				</button>
+				<div class="wc-accordion-slide collapse " id="wc-accordion-component_d6ae8362aa2d06a76c9dd878a47c008e_slide_3">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, reprehenderit illo cum debitis rerum nesciunt obcaecati velit quis. Illum assumenda quae ipsa, ratione vero ullam fuga ad eligendi asperiores quod.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, reprehenderit illo cum debitis rerum nesciunt obcaecati velit quis. Illum assumenda quae ipsa, ratione vero ullam fuga ad eligendi asperiores quod.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, reprehenderit illo cum debitis rerum nesciunt obcaecati velit quis. Illum assumenda quae ipsa, ratione vero ullam fuga ad eligendi asperiores quod.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, reprehenderit illo cum debitis rerum nesciunt obcaecati velit quis. Illum assumenda quae ipsa, ratione vero ullam fuga ad eligendi asperiores quod.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="wc-row wc-component-row">
+		<div class="wc-index-list-component wc-component wc-full-component">
+			<h2 class="wc-subheader">This is an index list component test</h2>
+			<ul class="wc-index-list wc-with-images">
+				<li class="wc-index-list-item">
+					<div class="wc-item-info">
+						<a href="/DssPreview/x36548.xml?Preview=true&amp;Site=&amp;IncludeAllPages=true&amp;tfrm=1&amp;PubTgt=PublishingTargets/1&amp;Site=&amp;UserAgent=" class="wc-item-main-link" title="Language Learning Center">
+						Language Learning Center</a>
+						<p>The Language Learning Center provides support to anyone in the Whitman community who either speaks a foreign language or is seeking to acquire or improve skills in a foreign language.</p>
+					</div>
+				</li>
+				<li class="wc-index-list-item">
+					<div class="wc-item-info">
+						<a href="/DssPreview/x36441.xml?Preview=true&amp;Site=&amp;IncludeAllPages=true&amp;tfrm=1&amp;PubTgt=PublishingTargets/1&amp;Site=&amp;UserAgent=" class="wc-item-main-link" title="Business Office">
+						Business Office</a>
+						<p>Whitman College Business Office</p>
+					</div>
+				</li>
+				<li class="wc-index-list-item">
+					<div class="wc-item-info">
+						<a href="/DssPreview/x36563.xml?Preview=true&amp;Site=&amp;IncludeAllPages=true&amp;tfrm=1&amp;PubTgt=PublishingTargets/1&amp;Site=&amp;UserAgent=" class="wc-item-main-link" title="Physical Plant">
+						Physical Plant</a>
+						<p>Physical Plant Services</p>
+					</div>
+				</li>
+				<li class="wc-index-list-item">
+					<div class="wc-item-info">
+						<a href="/DssPreview/x36679.xml?Preview=true&amp;Site=&amp;IncludeAllPages=true&amp;tfrm=1&amp;PubTgt=PublishingTargets/1&amp;Site=&amp;UserAgent=" class="wc-item-main-link" title="Residence Life">
+						Residence Life</a>
+						<p>The residence life program at Whitman College depends upon student involvement at many levels in an attempt to enhance the classroom experience and bring what is learned there to life.</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!--end model not null-->
+	</div>
+	<div class="wc-row wc-component-row">
+		<div class="wc-spreadsheet-component wc-component wc-full-component" id="wc-image-gallery-component-143cd56627a9a759abaf4048ad1d3655">
+			<h2>WIG Database</h2>
+			<script>
+				(function(){
+					var params = {
+						docID:'1ouUmd-aIl-RvWpQCtub6QCrmE2mA6IVw4dWfZkIftmQ',
+						sheetName:'Sheet1',
+						rangeStart:'A',
+						rangeEnd:'G',
+						responsive:'true',
+						paging:'true',
+						truncateColumns:'',
+						hideColumns:'G',
+						truncateLength:'40',
+						searching:'true'
+					};
+					$('#wc-image-gallery-component-143cd56627a9a759abaf4048ad1d3655').data('sParams',params);
+				})();
+			</script>
+			<table class="wc-spreadsheet-table wc-no-mobile-collapse wc-no-stripes"></table>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+			</div>
+		</div>
+	</div>
+include "pieces/layout/footer.html"

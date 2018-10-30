@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<!--**********************************
+	
+THE HEADER
+
+**********************************-->
+<html lang="en" class="no-js">
+<head>
+
+	<meta name="APIKey" content="GoogleMaps:AIzaSyCtN93T96IPFqtNyCUBZs7FdWMROgAKdb0"/>
+	<meta name="APIKey" content="GoogleDrive:AIzaSyCg1OVTbVSAKzsejkwzOflQxxjzH38ojg0"/>
+	<meta name="SearchURL" content="https://www.whitman.edu/xsd/customsearch4/?q=">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Whitman Redesign</title>
+
+	<!--meta tags-->
+	<meta name="robots" content="NOODP,NOYDIR">
+	<link rel="canonical" href="">
+	
+	<meta name="description" content="">
+
+	<!-- Jquery -->
+	<script src="js/jquery.min.js"></script>
+		
+	<!-- Whitman Styles -->
+	<link id="wc-main-css" href="css/wc-style.css" rel="stylesheet"/>
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,&amp;subset=latin-ext" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,700,700i&amp;subset=latin-ext" rel="stylesheet">
+	
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body > 
+	<a class="wc-skip-to-content-link" href="#wc-reader-content">Skip to main content</a>
+	<!-- Header -->	
+	<header class="wc-header" id="wc-site-header" role="banner">
+		<!-- Header Row 1 -->
+		<div class="wc-header-row1" id="wc-header-row1" role="navigation">
+			<div class="wc-container">
+				<!-- Logo -->
+				<a href="index.html" class="wc-header-logo-link" title="Whitman College home">
+					<!-- Desktop Logo -->
+					<img alt="Whitman College logo" class="wc-desktop-header-logo" src="images/svg/not-inline/whitman-logo-header.svg"  onerror="this.src='images/misc/whitman-logo-header.png'"/>
+					
+					<!-- Mobile Logo-->
+					<svg class="wc-mobile-header-logo" viewBox="0 0 180 15">
+						<use xlink:href="images/svg/svg-defs.svg#logo-whitman-nc-flat"></use>
+						<title>Whitman College logo</title>
+					</svg>
+				</a>
+				
+				<div class="wc-right-box">
+					<!-- Constituent Links -->
+					<div class="wc-constituent-links">
+						<ul role="menubar">
+							<li >
+								<a href="/alumni.html" class="wc-clickable" title="Alumni" data-tracking-category="Header Link" data-tracking-action="Click" data-tracking-label="Constituent Link - Alumni">Alumni</a>
+								<span class="wc-bullet" aria-hidden="true">•</span>
+							</li>
+							<li >
+								<a href="/community.html" class="wc-clickable" title="Community" data-tracking-category="Header Link" data-tracking-action="Click" data-tracking-label="Constituent Link - Community">Community</a>
+								<span class="wc-bullet" aria-hidden="true">•</span>
+							</li>
+							<li >
+								<a href="https://my.whitman.edu/faculty" class="wc-clickable" title="Faculty" data-tracking-category="Header Link" data-tracking-action="Click" data-tracking-label="Constituent Link - Faculty">Faculty</a>
+								<span class="wc-bullet" aria-hidden="true">•</span>
+							</li>
+							<li >
+								<a href="/parents" class="wc-clickable" title="Parents" data-tracking-category="Header Link" data-tracking-action="Click" data-tracking-label="Constituent Link - Parents">Parents</a>
+								<span class="wc-bullet" aria-hidden="true">•</span>
+							</li>
+							<li >
+								<a href="https://my.whitman.edu/staff" class="wc-clickable" title="Staff" data-tracking-category="Header Link" data-tracking-action="Click" data-tracking-label="Constituent Link - Staff">Staff</a>
+								<span class="wc-bullet" aria-hidden="true">•</span>
+							</li>
+							<li >
+								<a href="https://my.whitman.edu/students" class="wc-clickable" title="Students" data-tracking-category="Header Link" data-tracking-action="Click" data-tracking-label="Constituent Link - Students">Students</a>
+							</li>
+						</ul>
+					</div>
+					<a href="https://whitman.edu/giving" class="wc-special-button wc-box-button wc-white">Give Now</a>
+
+					<!-- Quick Links - Button -->
+					<button class="wc-quick-links-button collapsed" data-toggle="collapse" data-target="#wc-quick-links-links" id="wc-quick-links-button" role="button" tabindex="0" aria-haspopup="true">
+						<div class="wc-svg-box">
+						</div>
+						<div class="wc-svg-box wc-spins">
+							<svg viewbox= "0 0 32 32" class="icon-arrow-circle-down">
+								<use xlink:href="images/svg/svg-defs.svg#icon-arrow-circle-down"></use>
+							</svg>
+						</div>
+						<span class="wc-text" id="quicklinks">Quick Links</span>
+					</button>
+
+					<!-- Mobile Buttons -->
+	 				<button class="wc-toggle wc-mobile-button" id="wc-mobile-nav-button" aria-label="Menu" aria-expanded="false" >
+						<svg class="wc-not-toggled-icon" viewbox= "0 0 32 32"><use xlink:href="images/svg/svg-defs.svg#icon-menu-mobile-a"></use></svg>
+						<svg class="wc-toggled-icon" viewbox= "0 0 32 32"><use xlink:href="images/svg/svg-defs.svg#icon-menu-mobile-b"></use></svg>
+					</button> 
+ 					<button class="wc-toggle wc-mobile-button" id="wc-mobile-search-button" aria-label="Search" aria-expanded="false" >
+						<svg class="wc-not-toggled-icon" viewbox= "0 0 32 32"><use xlink:href="images/svg/svg-defs.svg#icon-search-mobile-a"></use></svg>
+						<svg class="wc-toggled-icon" viewbox= "0 0 32 32"><use xlink:href="images/svg/svg-defs.svg#icon-search-mobile-b"></use></svg>
+					</button>
+				</div>
+			</div>
+			<!-- Quick Links - Desktop -->
+			<div class="wc-quick-links-links wc-container collapse" id="wc-quick-links-links">
+				<div class="wc-quick-links-section">
+					<ul class="wc-quick-link-columns-text" aria-labelledby="quicklinks" role="menu">
+						<li ><a>Bookstore</a></li>
+						<li ><a>Sexual Misconduct Policy Something Something</a></li>
+						<li ><a>Center for Writing and Speaking</a></li>
+						<li ><a>Employment</a></li>
+						<li ><a>Giving</a></li>
+						<li ><a>Grievance Policy</a></li>
+						<li ><a>News</a></li>
+						<li ><a>Right to Know</a></li>
+						<li ><a>Sexual Misconduct Policy</a></li>
+					</ul>
+				</div>
+				<div class="wc-quick-links-section" role="menubar">
+					<a class="wc-icon-quick-link" href="a-to-z-index.html" >
+						<svg class="wc-icon" viewbox= "0 0 32 32">
+							<use xlink:href="images/svg/svg-defs.svg#icon-a-to-z"></use>
+						</svg>
+						<span class="wc-text">A-to-Z Index</span>
+					</a>
+					<a href="map.html" class="wc-icon-quick-link" >
+						<svg class="wc-icon" viewbox= "0 0 32 32">
+							<use xlink:href="images/svg/svg-defs.svg#icon-map-pin"></use>
+						</svg>
+						<span class="wc-text">Campus Map</span>
+					</a>
+					<a class="wc-icon-quick-link" >
+						<svg class="wc-icon" viewbox= "0 0 32 32">
+							<use xlink:href="images/svg/svg-defs.svg#icon-calendar-no-circle"></use>
+						</svg>
+						<span class="wc-text">Event Calendar</span>
+					</a>
+					<a class="wc-icon-quick-link" >
+						<svg class="wc-icon" viewbox= "0 0 32 32">
+							<use xlink:href="images/svg/svg-defs.svg#icon-library"></use>
+						</svg>
+						<span class="wc-text">Library</span>
+					</a>
+					<a class="wc-icon-quick-link" >
+						<svg class="wc-icon" viewbox= "0 0 32 32">
+							<use xlink:href="images/svg/svg-defs.svg#icon-mywhitman-cog"></use>
+						</svg>
+						<span class="wc-text">myWhitman</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!-- Header Row 2 -->
+		<div class="wc-header-row2" id="wc-header-row2" role="navigation">
+			<div class="wc-container">
+				<!-- Main Nav-->
+
+
+
+
+				<nav class="wc-main-nav wc-sm-collapse" id="wc-main-nav">
+					<!-- Quick Links - Mobile -->
+					<div class="wc-mobile-only wc-mobile-quick-links">
+						<a class="wc-icon-quick-link" href="a-to-z-index.html">
+							<svg class="wc-icon" aria-hidden="true" viewbox= "0 0 32 32">
+								<use xlink:href="images/svg/svg-defs.svg#icon-a-to-z"></use>
+							</svg>
+							<span class="wc-text">A-to-Z</span>
+						</a>
+						<a href="map.html" class="wc-icon-quick-link">
+							<svg class="wc-icon" aria-hidden="true" viewbox= "0 0 32 32">
+								<use xlink:href="images/svg/svg-defs.svg#icon-map-pin"></use>
+							</svg>
+							<span class="wc-text">Map</span>
+						</a>
+						<a class="wc-icon-quick-link">
+							<svg class="wc-icon" aria-hidden="true" viewbox= "0 0 32 32">
+								<use xlink:href="images/svg/svg-defs.svg#icon-calendar-no-circle"></use>
+							</svg>
+							<span class="wc-text">Events</span>
+						</a>
+						<a class="wc-icon-quick-link">
+							<svg class="wc-icon" aria-hidden="true" viewbox= "0 0 32 32">
+								<use xlink:href="images/svg/svg-defs.svg#icon-library"></use>
+							</svg>
+							<span class="wc-text">Library</span>
+						</a>
+						<a class="wc-icon-quick-link">
+							<svg class="wc-icon" aria-hidden="true" viewbox= "0 0 32 32">
+								<use xlink:href="images/svg/svg-defs.svg#icon-mywhitman-cog"></use>
+							</svg>
+							<span class="wc-text">
+								myWhitman
+								<svg class="wc-icon-inline" viewbox= "0 0 32 32">
+									<use xlink:href="images/svg/svg-defs.svg#icon-lock"></use>
+								</svg>
+							</span>
+						</a>
+					</div>
+
+					<ul class="wc-main-nav-level-1">
+						<li>
+							<a class="wc-main-nav-primary-category wc-clickable" href="landing.html" id="main-1">About</a>
+							<button class="wc-main-nav-expander collapsed" data-toggle="collapse" data-target="#wut1" aria-expanded="false" aria-controls="#wut1" aria-label="About sub-menu">
+								<svg viewBox="0 0 32 32"><use  xlink:href="images/svg/svg-defs.svg#icon-arrow-down"></use></svg>
+							</button>
+							<div class="wc-sub-menu wc-container wc-about-sub-menu wc-mobile-collapse-box" id="wut1">
+								<ul role="menu" aria-labelledby="main-1">
+									<li ><a href="map.html">Campus Map</a></li>
+									<li ><a href="detail.html">Campus and Community</a></li>
+									<li ><a>Campus Sustainability</a></li>
+									<li ><a>This link is going to be a long one to test the line breaks</a></li>
+									<li ><a>Fast Facts</a></li>
+									<li ><a href="section-index.html">Leadership and Organization</a></li>
+									<li ><a>Contact Us</a></li>
+									<li ><a>Portaits of the Past</a></li>
+									<li ><a href="style-guide.html">Whitman Hallmarks</a></li>
+								</ul>
+								<div class="wc-feature">
+									<img alt="Feature" src="images/NavbarFeatures/feature1.jpg" />
+									<div class="wc-feature-text">
+										<p>A featured page that will have just about this much text describing it.</p>
+										<a href="#" class="wc-box-button wc-bb-more-link wc-white">Learn More</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a class="wc-main-nav-primary-category wc-clickable" id="main-2">Academics & Library</a>
+							<button class="wc-main-nav-expander collapsed" data-toggle="collapse" data-target="#wut2" aria-expanded="false" aria-controls="#wut2" aria-label="Academics and Library sub-menu">
+								<svg viewBox="0 0 32 32"><use  xlink:href="images/svg/svg-defs.svg#icon-arrow-down"></use></svg>
+							</button>
+							<div class="wc-sub-menu wc-container wc-about-sub-menu wc-mobile-collapse-box" id="wut2">
+								<ul role="menu" aria-labelledby="main-2">
+									<li ><a>Academic Calendar</a></li>
+									<li ><a href="section-front.html">Academic Resource Center</a></li>
+									<li ><a>Catalog</a></li>
+									<li ><a href="departments.html">Departments and Programs</a></li>
+									<li ><a>Encounters</a></li>
+									<li ><a href="profile-index.html">The Faculty</a></li>
+									<li ><a>Fellowships and Grants</a></li>
+									<li ><a>Liberal Arts Education</a></li>
+									<li ><a>Penrose Library</a></li>
+									<li ><a>Placement Tests</a></li>
+									<li ><a>Whitman Debate</a></li>
+								</ul>
+								<div class="wc-feature">
+									<img alt="Feature" src="images/NavbarFeatures/feature2.jpg" />
+									<div class="wc-feature-text">
+										<p>A featured page that will have just about this much text describing it.</p>
+										<a href="#" class="wc-box-button wc-bb-more-link wc-white">Learn More</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a class="wc-main-nav-primary-category wc-clickable" id="main-3">Admission & Aid</a>
+							<button class="wc-main-nav-expander collapsed" data-toggle="collapse" data-target="#wut3" aria-expanded="false" aria-controls="#wut3">
+								<svg viewBox="0 0 32 32"><use  xlink:href="images/svg/svg-defs.svg#icon-arrow-down"></use></svg>
+							</button>
+							<div class="wc-sub-menu wc-container wc-about-sub-menu wc-mobile-collapse-box" id="wut3">
+								<ul role="menu" aria-labelledby="main-3">
+									<li ><a>Apply</a></li>
+									<li ><a>Contact Us</a></li>
+									<li ><a>Financial Aid</a></li>
+									<li ><a>Learn More</a></li>
+									<li ><a>Request Information</a></li>
+									<li ><a>Visit Whitman</a></li>
+									<li ><a>Whitman on the Road</a></li>
+									<li ><a>Why Whitman?</a></li>
+								</ul>
+								<div class="wc-feature">
+									<img alt="Feature" src="images/NavbarFeatures/feature3.jpg" />
+									<div class="wc-feature-text">
+										<p>A featured page that will have just about this much text describing it.</p>
+										<a href="#" class="wc-box-button wc-bb-more-link wc-white">Learn More</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a class="wc-main-nav-primary-category wc-clickable" id="main-4">Athletics</a>
+							<button class="wc-main-nav-expander collapsed" data-toggle="collapse" data-target="#wut4" aria-expanded="false" aria-controls="#wut4">
+								<svg viewBox="0 0 32 32"><use  xlink:href="images/svg/svg-defs.svg#icon-arrow-down"></use></svg>
+							</button>
+							<div class="wc-sub-menu wc-container wc-about-sub-menu wc-mobile-collapse-box" id="wut4">
+								<ul role="menu" aria-labelledby="main-4">
+									<li ><a>Club Sports</a></li>
+									<li ><a>Intramural Sports</a></li>
+									<li ><a>Men's Basketball</a></li>
+									<li ><a>Swimming</a></li>
+									<li ><a>Varsity Sports</a></li>
+									<li ><a>W Club</a></li>
+									<li ><a>Women's Basketball</a></li>
+								</ul>
+								<div class="wc-col2 wc-feature">
+									<img alt="Feature" src="images/NavbarFeatures/feature6.png" />
+									<div class="wc-feature-text">
+										<p>A featured page that will have just about this much text describing it.</p>
+										<a href="#" class="wc-box-button wc-bb-more-link wc-white">Learn More</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a class="wc-main-nav-primary-category wc-clickable" id="main-5">Student Life</a>
+							<button class="wc-main-nav-expander collapsed" data-toggle="collapse" data-target="#wut5" aria-expanded="false" aria-controls="#wut5">
+								<svg viewBox="0 0 32 32"><use  xlink:href="images/svg/svg-defs.svg#icon-arrow-down"></use></svg>
+							</button>
+							<div class="wc-sub-menu wc-container wc-about-sub-menu wc-mobile-collapse-box" id="wut5">
+								<ul role="menu" aria-labelledby="main-5">
+									<li ><a>Career Services</a></li>
+									<li ><a>Club Sports and Intramurals</a></li>
+									<li ><a>Green Life</a></li>
+									<li ><a>Living at Whitman</a></li>
+									<li ><a>Orientation</a></li>
+									<li ><a>Student Activities</a></li>
+									<li ><a>Student Clubs and Organizations</a></li>
+									<li ><a>Student Services</a></li>
+								</ul>
+								<div class="wc-col2 wc-feature">
+									<img alt="Feature" src="images/NavbarFeatures/feature4.jpg" />
+									<div class="wc-feature-text">
+										<p>A featured page that will have just about this much text describing it.</p>
+										<a href="#" class="wc-box-button wc-bb-more-link wc-white">Learn More</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="wc-mobile-only">
+							<span class="wc-main-nav-primary-category wc-clickable wc-mobile-only">
+								<span class="wc-center-line">
+									<span id="mobile-menu-1">Audiences</span>
+								</span>
+							</span>
+							<div class="wc-sub-menu wc-indented">
+								<ul role="menu" aria-labelledby="mobile-menu-1">
+									<li ><a href="alumni.html">Alumni</a></li>
+									<li ><a>Parents</a></li>
+									<li ><a>Students</a></li>
+									<li ><a>Faculty & Staff</a></li>
+									<li ><a>Community</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="wc-mobile-only">
+							<span class="wc-main-nav-primary-category wc-clickable wc-mobile-only">
+								<span class="wc-center-line">
+									<span id="mobile-menu-2">Quick Links</span>
+								</span>
+							</span>
+							<!-- <a class="wc-main-nav-primary-category wc-clickable wc-mobile-only" ><span class="wc-center-line"><span id="mobile-menu-2">Quick Links</span></span></a> -->
+							<div class="wc-sub-menu wc-indented">
+								<ul role="menu" aria-labelledby="mobile-menu-2">
+									<li><a>A-Z Directory</a></li>
+									<li><a>Bookstore</a></li>
+									<li><a href="map.html">Campus Map</a></li>
+									<li><a>Contact Us</a></li>
+									<li><a>Employment</a></li>
+									<li><a>Event Calendar</a></li>
+									<li><a>Giving</a></li>
+									<li><a>Grievance and Sexual Misconduct Policy</a></li>
+									<li><a>Library</a></li>
+									<li><a>myWhitman</a></li>
+									<li><a>News</a></li>
+									<li><a>Right to Know</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</nav>
+
+				<!-- Search -->
+
+				<div class="wc-search-box wc-sm-collapse" id="wc-search-box" role="search">
+					<form id="wc-search-form" action="http://whitman.edu/search">
+						<div class="wc-search-field-box">
+							<input type="text" name="q" id="wc-search-input" class="wc-search-input searchField clearFocus" placeholder="Search Site/People" autocomplete="off" />
+							<button class="wc-mobile wc-search-submit-button" role="button" title="Submit Search" aria-label="Submit Search">
+								<svg viewbox= "0 0 32 32">
+									<use xlink:href="images/svg/svg-defs.svg#icon-search-b"></use>
+								</svg>
+							</button>
+						</div>
+						<div class="wc-search-options-box wc-hidden-alt" id="wc-search-options-box">
+							<div class="wc-search-options-inner-box">
+								<a class="wc-search-option wc-search-website wc-highlighted" id="wc-search-website" role="button">Site</a>
+								<a class="wc-search-option wc-search-people" id="wc-search-people" role="button">People</a>								
+							</div>
+						</div>
+						<button class="wc-desktop wc-search-submit-button" role="button" title="Submit Search" aria-label="Submit Search">
+							<svg viewbox= "0 0 32 32">
+								<use xlink:href="images/svg/svg-defs.svg#icon-search-b"></use>
+							</svg>
+							<span class="wc-fallback-search-button">Search</span>
+						</button>
+						<span class="wc-action-website" id="wc-action-website" style="display:none;">http://whitman.edu/search</span>
+						<span class="wc-action-people" id="wc-action-people" style="display:none;">https://webapp.whitman.edu/directory/</span>
+					</form>
+					<div id="wc-auto-search-results" class="wc-auto-search-results">
+						<img class="wc-ajax-loader" id="wc-ajax-loader" src="images/gif/ajax-loader.gif" alt="Loading search results">
+						<ul>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- Content -->
+	<div class="wc-content-wrap wc-full-width-layout-a" >
+		<!-- Title  -->
+		<div class="wc-title-box">
+			<div class="wc-container">
+				<h1 class="wc-page-title">Mini Profile Gallery Page</h1>
+			</div>
+		</div>
+
+		<div class="wc-container">
+			<!-- Breadcrumbs -->
+			<div class="wc-row wc-breadcrumbs" role="navigation">
+				<a href="index.html" aria-label="home"><svg viewbox="0 0 21 21 "><use xlink:href="images/svg/svg-defs.svg#icon-home"></use></svg></a>
+				<span aria-hidden="true">&raquo;</span>
+				<a href="www.whitman.edu/about">About Whitman</a>
+				<span aria-hidden="true">&raquo;</span>
+				<span>Campus and Community</span>
+			</div>
+
+
+			<div class="wc-row wc-no-top-gutter">
+
+
+				<div class="wc-main-content" id="wc-reader-content" role="main">
+					<div class="wc-row">
+						<!-- Body Copy -->
+						<div class="wc-body-copy wc-12-col">
+							<p>Whitman College embraces internships as a valued addition to a liberal arts education. Students who participate in internships:</p>
+							<ul>
+								<li>Explore their interests</li>
+								<li>Apply academic and theoretic work from their classes in organizations, businesses and government offices</li>
+								<li>Develop professional skills</li>
+								<li>Learn from professionals in the career field of their choice</li>
+								<li>Have a chance to "test drive a career"</li>
+							</ul>
+							<p>This summer, 120 Whitman students were awarded grants to help them have extraordinary internship experiences. Learn about some of them below.</p>
+							<p>For more about Whitman's internship programs, please visit the SEC's internships page <strong><a href="/student-life/student-engagement-center/internships">here</a>.</strong></p>
+						</div>
+					</div>
+
+
+<div class="wc-component-row wc-row">
+	<div class="wc-component wc-quarter-component wc-mini-profile-component">
+		<div class="wc-mini-profile" style="background-image:url('https://www.whitman.edu/assets/images/Student_Life/Internships2014/Kangqiao-Liao.jpg')">
+			<div class="wc-slide wc-slide1">
+				<div class="wc-shaded wc-slide-content wc-bottom-half">
+					<div class="wc-mp-row1 wc-mp-row">
+						<h3>Kangqiao Liao '16</h3>
+						<h3>Biology</h3>
+					</div>
+					<div class="wc-mp-row2 wc-mp-row">
+						<span class="wc-mp-divider"></span>
+					</div>
+					<div class="wc-mp-row3 wc-mp-row">
+						<h4>Thompson Family Acupuncture</h4>
+						<h4>Walla Walla, WA</h4>
+					</div>
+					<div class="wc-mp-row3 wc-mp-row">
+						<svg class="wc-down-arrow" viewBox="0 0 32 32">
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/svg/svg-defs.svg#icon-arrow-circle-down"></use>
+						</svg>
+					</div>
+				</div>
+			</div>
+			<div class="wc-slide wc-slide2">
+				<div class="wc-shaded wc-slide-content wc-whole-thing">
+					<p>Kangqiao Liao '16</p>
+					<p><a href="http://www.thompsonacupuncture.org/" target="_blank">Thompson Family Acupuncture</a></p>
+					<p>Throughout the summer, I interned at and explored the daily running of the Thompson Family Acupuncture Clinic in Walla Walla. There, I was able to expose myself to the full range of an acupuncture clinic's operations, researching and making herbal formulas, designing brochures and introducing Traditional Chinese Medicine to patients, assisting the clinic in the process of buying another business and running cash flow analysis, dealing with insurance companies and basic reception work, performing moxa on patients, and changing linens for treatment rooms. This internship also gave me an opportunity to understand how Chinese medical services translate into an American context. I also worked at the Saturday farmer's market to introduce acupuncture and other traditional Chinese therapies to a wider community, attracting people to give acupuncture a try. There, I was able not only to feel the pulses of patients, but also to feel the pulse of Walla Walla's trend towards seeking alternative medicine.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="wc-component wc-quarter-component wc-mini-profile-component">
+		<div class="wc-mini-profile" style="background-image:url('https://www.whitman.edu/assets/images/Student_Life/Internships2014/MeghanMalloy.jpg')">
+			<div class="wc-slide wc-slide1">
+				<div class="wc-shaded wc-slide-content wc-bottom-half">
+					<div class="wc-mp-row1 wc-mp-row">
+						<h3>Meghan Malloy '15</h3>
+						<h3>Biology</h3>
+					</div>
+					<div class="wc-mp-row2 wc-mp-row">
+						<span class="wc-mp-divider"></span>
+					</div>
+					<div class="wc-mp-row3 wc-mp-row">
+						<h4>University of California Cooperative Extension</h4>
+						<h4>Ventura, CA</h4>
+					</div>
+					<div class="wc-mp-row3 wc-mp-row">
+						<svg class="wc-down-arrow" viewBox="0 0 32 32">
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/svg/svg-defs.svg#icon-arrow-circle-down"></use>
+						</svg>
+					</div>
+				</div>
+			</div>
+			<div class="wc-slide wc-slide2">
+				<div class="wc-shaded wc-slide-content wc-whole-thing">
+					<p>Meghan Malloy '15</p>
+					<p><a href="http://ceventura.ucanr.edu/" target="_blank">University of California Cooperative Extension, Ventura County</a></p>
+					<p>The UCCE Ventura County office provides and distributes solutions backed by research to help sustain farms and nurseries and to create educational programs for home gardeners, and youth development organizations like 4-H. This summer I have been doing a variety of experimental trials on the two spot spider mite pest that threaten crops grown in Ventura County. We are testing the effects of residual toxicity of pesticides on beneficial predatory mites in an effort to control these pests on strawberry plants. Farmers must rely on biological agents for pest management when they have exhausted their allowed pesticide usages. Our results will be shared with growers to help them manage the pests in an environmentally and sustainable way.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="wc-component wc-quarter-component wc-mini-profile-component">
+		<div class="wc-mini-profile" style="background-image:url('https://www.whitman.edu/assets/images/Student_Life/Internships2014/GeorginaDadson.jpg')">
+			<div class="wc-slide wc-slide1">
+				<div class="wc-shaded wc-slide-content wc-bottom-half">
+					<div class="wc-mp-row1 wc-mp-row">
+						<h3>Georgina Dadson ‘17</h3>
+						<h3>Undeclared</h3>
+					</div>
+					<div class="wc-mp-row2 wc-mp-row">
+						<span class="wc-mp-divider"></span>
+					</div>
+					<div class="wc-mp-row3 wc-mp-row">
+						<h4>Volta River Authority</h4>
+						<h4>Akosombo, Ghana</h4>
+					</div>
+					<div class="wc-mp-row3 wc-mp-row">
+						<svg class="wc-down-arrow" viewBox="0 0 32 32">
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/svg/svg-defs.svg#icon-arrow-circle-down"></use>
+						</svg>
+					</div>
+				</div>
+			</div>
+			<div class="wc-slide wc-slide2">
+				<div class="wc-shaded wc-slide-content wc-whole-thing">
+					<p>Georgina Dadson ‘17</p>
+					<p>Volta River Authority</p>
+					<p>This summer, I have been interning with the Corporate Communications Department of the Volta River Authority in Ghana. I have gotten the opportunity to work with their Community Relations officer as well as their publications and Media-Monitoring officers. As of now, I have been placed in the Akosombo location, where the second largest man-made lake, the Volta, and the biggest dam in Ghana are located. As a result, I interact with a lot of tourists that come to visit the dam. I also get to interact with people from the communities that were impacted by the building of the dam. It has been really interesting getting to see how such a big corporation created by the government is progressing despite the hardship of being a third world country. This is a picture of me visiting one of the Volta River Authority farms created and located in the impacted communities.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="wc-component wc-quarter-component wc-mini-profile-component">
+		<div class="wc-mini-profile" style="background-image:url('https://www.whitman.edu/assets/images/Student_Life/Internships2014/AnastasiaGreeley.jpg')">
+			<div class="wc-slide wc-slide1">
+				<div class="wc-shaded wc-slide-content wc-bottom-half">
+					<div class="wc-mp-row1 wc-mp-row">
+						<h3>Anastasia Greeley '15</h3>
+						<h3>Biology</h3>
+					</div>
+					<div class="wc-mp-row2 wc-mp-row">
+						<span class="wc-mp-divider"></span>
+					</div>
+					<div class="wc-mp-row3 wc-mp-row">
+						<h4>Pontificia Universidad Católica de Valparaíso</h4>
+						<h4>Valparaíso, Chile</h4>
+					</div>
+					<div class="wc-mp-row3 wc-mp-row">
+						<svg class="wc-down-arrow" viewBox="0 0 32 32">
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/svg/svg-defs.svg#icon-arrow-circle-down"></use>
+						</svg>
+					</div>
+				</div>
+			</div>
+			<div class="wc-slide wc-slide2">
+				<div class="wc-shaded wc-slide-content wc-whole-thing">
+					<p>Anastasia Greeley '15</p>
+					<p><a href="http://www.ucv.cl/" target="_blank">Pontificia Universidad Católica de Valparaíso Chile</a></p>
+					<p>I'm currently living in Valparaíso and working in PUCV's biochemistry laboratory, testing gastric cancer cell lines and saponins extracted from the native Chilean tree, the Quillay, to develop alternative treatments to cancer. By analyzing the death rates of cancerous and normal cells treated with saponins as well as the genes being expressed at the time of death, I hope to be able to prove that saponins selectively kill cancerous cells, most of which can be done using techniques taught within Whitman's own laboratory courses!</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="wc-component wc-quarter-component wc-mini-profile-component">
+		<div class="wc-mini-profile" style="background-image:url('https://www.whitman.edu/assets/images/Student_Life/Internships2014/WesleySparagon.jpg')">
+			<div class="wc-slide wc-slide1">
+				<div class="wc-shaded wc-slide-content wc-bottom-half">
+					<div class="wc-mp-row1 wc-mp-row">
+						<h3>Wesley Sparagon '15</h3>
+						<h3>Biology</h3>
+					</div>
+					<div class="wc-mp-row2 wc-mp-row">
+						<span class="wc-mp-divider"></span>
+					</div>
+					<div class="wc-mp-row3 wc-mp-row">
+						<h4>San Francisco State University</h4>
+						<h4>San Francisco, CA</h4>
+					</div>
+					<div class="wc-mp-row3 wc-mp-row">
+						<svg class="wc-down-arrow" viewBox="0 0 32 32">
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/svg/svg-defs.svg#icon-arrow-circle-down"></use>
+						</svg>
+					</div>
+				</div>
+			</div>
+			<div class="wc-slide wc-slide2">
+				<div class="wc-shaded wc-slide-content wc-whole-thing">
+					<p>Wesley Sparagon '15</p>
+					<p><a href="http://online.sfsu.edu/vancev/Vredenburg_Lab/Home.html" target="_blank">Vredenburg lab, San Francisco State University</a><br> <a href="http://online.sfsu.edu/zink/" target="_blank">Zink lab, San Francisco State University</a></p>
+					<p>Batrachochytrium dendrobatidis, also known as Bd, is a worldwide fungal pathogen that has been linked with devastating amphibian population declines across the globe. The joint Vredenburg-Zink lab at San Francisco State University focuses on Bd and its relationship to a wide variety of California amphibians. As part of this lab, I am working with two species of salamanders (the adorable Batrachoseps luciae and equally adorable Aneides lugubris) to study the effects of Bd infection on their health and to determine if their symbiotic skin bacteria have Bd-inhibitory properties which may help the salamanders to better cope with the fungal parasite.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="wc-component wc-quarter-component wc-mini-profile-component">
+		<div class="wc-mini-profile" style="background-image:url('https://www.whitman.edu/assets/images/Student_Life/Internships2014/EmilyKlein.jpg')">
+			<div class="wc-slide wc-slide1">
+				<div class="wc-shaded wc-slide-content wc-bottom-half">
+					<div class="wc-mp-row1 wc-mp-row">
+						<h3>Emily Klein '16</h3>
+						<h3>BBMB</h3>
+					</div>
+					<div class="wc-mp-row2 wc-mp-row">
+						<span class="wc-mp-divider"></span>
+					</div>
+					<div class="wc-mp-row3 wc-mp-row">
+						<h4>UCSF Department of Pediatrics</h4>
+						<h4>San Francisco, CA</h4>
+					</div>
+					<div class="wc-mp-row3 wc-mp-row">
+						<svg class="wc-down-arrow" viewBox="0 0 32 32">
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/svg/svg-defs.svg#icon-arrow-circle-down"></use>
+						</svg>
+					</div>
+				</div>
+			</div>
+			<div class="wc-slide wc-slide2">
+				<div class="wc-shaded wc-slide-content wc-whole-thing">
+					<p>Emily Klein '16</p>
+					<p>UCSF Department of Pediatrics, Division of Pediatric Nephrology</p>
+					<p>This summer I have been working on clinical research trials in Pediatric Nephrology at UCSF Benioff Children’s Hospital. I have gone through numerous patient charts and abstracted the necessary information regarding kidney function for a longitudinal Transplant Surveillance Biopsy Study, created forms for that same study to be used by nurses during biopsies and therefore streamline the entry of data into a master database, and met with a handful of representatives from drug companies for trials involving the administration of medication to pediatric renal patients. I am enjoying working in a hospital, interacting with doctors and nurses on a daily basis, and learning about the various aspects of pediatric kidney disease.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="wc-component wc-quarter-component wc-mini-profile-component">
+		<div class="wc-mini-profile" style="background-image:url('https://www.whitman.edu/assets/images/Student_Life/Internships2014/HaleyCase.jpg')">
+			<div class="wc-slide wc-slide1">
+				<div class="wc-shaded wc-slide-content wc-bottom-half">
+					<div class="wc-mp-row1 wc-mp-row">
+						<h3>Haley Case '17</h3>
+						<h3>Undeclared</h3>
+					</div>
+					<div class="wc-mp-row2 wc-mp-row">
+						<span class="wc-mp-divider"></span>
+					</div>
+					<div class="wc-mp-row3 wc-mp-row">
+						<h4>Multnomah County Health Department</h4>
+						<h4>Portland, OR</h4>
+					</div>
+					<div class="wc-mp-row3 wc-mp-row">
+						<svg class="wc-down-arrow" viewBox="0 0 32 32">
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/svg/svg-defs.svg#icon-arrow-circle-down"></use>
+						</svg>
+					</div>
+				</div>
+			</div>
+			<div class="wc-slide wc-slide2">
+				<div class="wc-shaded wc-slide-content wc-whole-thing">
+					<p>Haley Case '17</p>
+					<p><a href="https://multco.us/health" target="_blank">Multnomah County Health Department</a></p>
+					<p>The Multnomah County Health Department serves the citizens of Multnomah County with the mission to work in partnership with the communities to assure, promote and protect the health of the people of Multnomah County. As an intern with the Quality Team I support projects that aim to improve the quality of the integrated clinical services provided by the health department. My work includes ensuring the CPR certification of clinical employees, improving efficiency within the clinics, mapping healthcare delivery processes and protocols, and creating health education materials.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="wc-component wc-quarter-component wc-mini-profile-component">
+		<div class="wc-mini-profile" style="background-image:url('https://www.whitman.edu/assets/images/Student_Life/Internships2014/KyleDonald.jpg')">
+			<div class="wc-slide wc-slide1">
+				<div class="wc-shaded wc-slide-content wc-bottom-half">
+					<div class="wc-mp-row1 wc-mp-row">
+						<h3>Kyle Donald '16</h3>
+						<h3>Music</h3>
+					</div>
+					<div class="wc-mp-row2 wc-mp-row">
+						<span class="wc-mp-divider"></span>
+					</div>
+					<div class="wc-mp-row3 wc-mp-row">
+						<h4>RAPtivism</h4>
+						<h4>San Francisco, CA</h4>
+					</div>
+					<div class="wc-mp-row3 wc-mp-row">
+						<svg class="wc-down-arrow" viewBox="0 0 32 32">
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/svg/svg-defs.svg#icon-arrow-circle-down"></use>
+						</svg>
+					</div>
+				</div>
+			</div>
+			<div class="wc-slide wc-slide2">
+				<div class="wc-shaded wc-slide-content wc-whole-thing">
+					<p>Kyle Donald '16</p>
+					<p><a href="http://aishafukushima.com/?page_id=17" target="_blank">RAPtivism</a></p>
+					<p>This summer, I am working with an organization called RAPtivism. I am interning for Aisha Fukushima, head of RAPtivism and a 2009 graduate of Whitman College. Aisha Fukushima obtained a Watson Fellowship to travel the world and collaborate with international Hip-Hop artists to help create social awareness and social justice on a more global scale. Her RAPtivism project took her to connecting with Hip-Hop artists and activists from France, Morocco, Kazakhstan, Japan, Germany, England, South Africa, Senegal, India, Denmark, Capetown, and beyond. She also interviewed these artists and activists, and that's where I come in. I am working on creating short documentary type clips of these interviews that she will then send out through social media to let their voices be heard. The interviews focus on their opinions and ways in which to create social awareness and social justice within their own community and how Hip-Hop has the ability to achieve that goal. I also help Aisha (as she is a singer/emcee) manage her schedule and her promotion for upcoming shows, workshops, and performances, occasionally helping out at the events themselves.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="wc-component wc-quarter-component wc-mini-profile-component">
+		<div class="wc-mini-profile" style="background-image:url('https://www.whitman.edu/assets/images/Student_Life/Internships2014/DrewEdmonds.jpg')">
+			<div class="wc-slide wc-slide1">
+				<div class="wc-shaded wc-slide-content wc-bottom-half">
+					<div class="wc-mp-row1 wc-mp-row">
+						<h3>Drew Edmonds '17</h3>
+						<h3>Undeclared</h3>
+					</div>
+					<div class="wc-mp-row2 wc-mp-row">
+						<span class="wc-mp-divider"></span>
+					</div>
+					<div class="wc-mp-row3 wc-mp-row">
+						<h4>GEAR UP</h4>
+						<h4>Portland, OR</h4>
+					</div>
+					<div class="wc-mp-row3 wc-mp-row">
+						<svg class="wc-down-arrow" viewBox="0 0 32 32">
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/svg/svg-defs.svg#icon-arrow-circle-down"></use>
+						</svg>
+					</div>
+				</div>
+			</div>
+			<div class="wc-slide wc-slide2">
+				<div class="wc-shaded wc-slide-content wc-whole-thing">
+					<p>Drew Edmonds '17</p>
+					<p>Portland Public Schools - GEAR UP</p>
+					<p>I started out this summer in the GEAR UP administrative offices helping to recruit targeted incoming 9th graders for a three week summer challenge camp. When the camp started I joined the GEAR UP team on site to assist with attendance and support teachers in the classroom. I am also working on compiling parent engagement and college preparation resources.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="wc-component wc-quarter-component wc-mini-profile-component">
+		<div class="wc-mini-profile" style="background-image:url('https://www.whitman.edu/assets/images/Student_Life/Internships2014/HarrisonWills.jpg')">
+			<div class="wc-slide wc-slide1">
+				<div class="wc-shaded wc-slide-content wc-bottom-half">
+					<div class="wc-mp-row1 wc-mp-row">
+						<h3>Harrison Wills '16</h3>
+						<h3>Env. Studies &amp; Politics</h3>
+					</div>
+					<div class="wc-mp-row2 wc-mp-row">
+						<span class="wc-mp-divider"></span>
+					</div>
+					<div class="wc-mp-row3 wc-mp-row">
+						<h4>Liberty Tree Foundation</h4>
+						<h4>Madison, WI</h4>
+					</div>
+					<div class="wc-mp-row3 wc-mp-row">
+						<svg class="wc-down-arrow" viewBox="0 0 32 32">
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/svg/svg-defs.svg#icon-arrow-circle-down"></use>
+						</svg>
+					</div>
+				</div>
+			</div>
+			<div class="wc-slide wc-slide2">
+				<div class="wc-shaded wc-slide-content wc-whole-thing">
+					<p>Harrison Wills '16</p>
+					<p>Federation of United Tribes<br> <a href="http://globalclimateconvergence.org/" target="_blank">Global Climate Convergence</a><br> <a href="https://www.libertytreefoundation.org/" target="_blank">Liberty Tree Foundation</a></p>
+					<p>I have spent the past two months working in collaboration with Liberty Tree Foundation, Global Climate Convergence and the United Federation of Tribes. At Liberty Tree Foundation I am conducting public policy research in the following areas: community sovereignty, participatory democracy, environmental policy and electoral reforms including publicly financed elections, instant runoff voting and proportional representation. With the Global Climate Convergence, I helped with community outreach to promote what’s expected to be the largest climate justice demonstration in history, which is taking place in NYC this upcoming September 19th-21st of 2014. My work with the Federation of United Tribes has involved advocacy and community outreach to support the unification of all Native American Tribes and to promote the recognition and protection of Native American Treaty Rights, which will help to protect their ancestral lands and environmental sustainability for future generations. The Federation of United Tribes is working in solidarity with other related indigenous movements such as the Idle No More movement. In summary, my primary focus this summer has been to build bridges of dialogue, solidarity, cooperation and collaboration between these various organizations, since they all work to protect the environment, address climate change and promote human rights.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="wc-component wc-quarter-component wc-mini-profile-component">
+		<div class="wc-mini-profile" style="background-image:url('https://www.whitman.edu/assets/images/Student_Life/Internships2014/MarlenaSloss.jpg')">
+			<div class="wc-slide wc-slide1">
+				<div class="wc-shaded wc-slide-content wc-bottom-half">
+					<div class="wc-mp-row1 wc-mp-row">
+						<h3>Marlena Sloss '16</h3>
+						<h3>Psychology</h3>
+					</div>
+					<div class="wc-mp-row2 wc-mp-row">
+						<span class="wc-mp-divider"></span>
+					</div>
+					<div class="wc-mp-row3 wc-mp-row">
+						<h4> Juneau Empire</h4>
+						<h4>Juneau, AK</h4>
+					</div>
+					<div class="wc-mp-row3 wc-mp-row">
+						<svg class="wc-down-arrow" viewBox="0 0 32 32">
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/svg/svg-defs.svg#icon-arrow-circle-down"></use>
+						</svg>
+					</div>
+				</div>
+			</div>
+			<div class="wc-slide wc-slide2">
+				<div class="wc-shaded wc-slide-content wc-whole-thing">
+					<p>Marlena Sloss '16</p>
+					<p><a href="http://juneauempire.com/" target="_blank">Juneau Empire</a></p>
+					<p>As a photography intern at the Juneau Empire, Juneau, Alaska's local newspaper, I am developing my photojournalism skills by working closely with experienced photographers and reporters. I am out in the community daily documenting news and daily life, covering interviews and events of all kinds, searching to find my own stories, and overall developing my eye for making powerful images. The ever-changing nature of the job keeps it exciting, and also pushes me to be prepared for the unknown. I am really enjoying seeing my photos in print daily, as well as producing online slideshows and videos. Recently I took a float plane trip to Pack Creek on Admiralty Island near Juneau, AK, to photograph and film brown bears; opportunities like these are definitely a highlight!</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="wc-component wc-quarter-component wc-mini-profile-component">
+
+		<div class="wc-mini-profile" style="background-image:url('https://www.whitman.edu/assets/images/Student_Life/Internships2014/GrantRommel.jpg')">
+			<div class="wc-slide wc-slide1">
+				<div class="wc-shaded wc-slide-content wc-bottom-half">
+					<div class="wc-mp-row1 wc-mp-row">
+						<h3>Grant Rommel '15</h3>
+						<h3>History</h3>
+					</div>
+					<div class="wc-mp-row2 wc-mp-row">
+						<span class="wc-mp-divider"></span>
+					</div>
+					<div class="wc-mp-row3 wc-mp-row">
+						<h4>Fort Walla Walla Museum</h4>
+						<h4>Walla Walla, WA</h4>
+					</div>
+					<div class="wc-mp-row3 wc-mp-row">
+						<svg class="wc-down-arrow" viewBox="0 0 32 32">
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/svg/svg-defs.svg#icon-arrow-circle-down"></use>
+						</svg>
+					</div>
+				</div>
+			</div>
+			<div class="wc-slide wc-slide2">
+				<div class="wc-shaded wc-slide-content wc-whole-thing">
+					<p>Grant Rommel '15</p>
+					<p><a href="http://www.fwwm.org/" target="_blank">Fort Walla Walla Museum</a></p>
+					<p>This summer I am in Walla Walla working at the Fort Walla Walla Museum! I've been researching historical artifacts and helping to design new exhibits for the museum, including exhibits on World War I and II, hats, Walla Walla County Centennial Farms, and toys. I also help catalog new artifacts and scan images into the computer database. This internship is allowing me to gain experience working in a museum setting, an opportunity that not many people get to have as an undergrad.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+					<div class="wc-row">
+						<div class="wc-12-col">
+							<div class="wc-arrow-pagination-box">
+								<div class="wc-pagination-arrow wc-pagination-prev wc-pagination-inactive">
+									<svg class="wc-icon" viewBox="0 0 32 32" aria-hidden="true">
+										<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/svg/svg-defs.svg#icon-arrow-circle-down"></use>
+									</svg>
+								</div>
+								<p class="wc-pagination-text">Page 1 of 5</p>
+								<a href="/student-life/student-engagement-center/internships/2014-summer-internships?page=2" class="wc-pagination-arrow wc-pagination-next">
+									<svg class="wc-icon" viewBox="0 0 32 32" aria-hidden="true">
+										<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/svg/svg-defs.svg#icon-arrow-circle-down"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+	<!-- Footer -->
+	<footer class="wc-footer" id="wc-footer">
+		<div class="container">
+		
+			<!-- Footer Links -->
+			<div class="wc-row wc-footer-row1" role="navigation">
+				<div class="wc-footer-list-box">
+					<h4 class="wc-list-header" id="footer-menu-1">About Whitman</h4>
+					<ul class="wc-no-style-list" role="menu" aria-labelledby="footer-menu-1">
+						<li role="menuitem"><a>Campus and Community</a></li>
+						<li role="menuitem"><a>Campus Sustainability</a></li>
+						<li role="menuitem"><a>Contact Us</a></li>
+						<li role="menuitem"><a>Facilities</a></li>
+						<li role="menuitem"><a>Fast Facts</a></li>
+						<li role="menuitem"><a href="leadership-and-organization.html">Leadership and Organization</a></li>
+						<li role="menuitem"><a>Offices and Services</a></li>
+					</ul>
+				</div>
+				<div class="wc-footer-list-box">
+					<h4 class="wc-list-header" id="footer-menu-2">Academics</h4>
+					<ul class="wc-no-style-list" role="menu" aria-labelledby="footer-menu-2">
+						<li role="menuitem"><a>Academic Calendar</a></li>
+						<li role="menuitem"><a>Academic Support</a></li>
+						<li role="menuitem"><a>Catalog</a></li>
+						<li role="menuitem"><a href="departments.html">Departments and Programs</a></li>
+						<li role="menuitem"><a>The Faculty</a></li>
+						<li role="menuitem"><a>Liberal Arts Education</a></li>
+						<li role="menuitem"><a>Penrose Library</a></li>
+						<li role="menuitem"><a>Signature Programs</a></li>
+					</ul>
+				</div>
+				<div class="wc-footer-list-box">
+					<h4 class="wc-list-header" id="footer-menu-3">Admission & Aid</h4>
+					<ul class="wc-no-style-list" role="menu" aria-labelledby="footer-menu-3">
+						<li role="menuitem"><a>Apply</a></li>
+						<li role="menuitem"><a>Contact Us</a></li>
+						<li role="menuitem"><a>Financial Aid</a></li>
+						<li role="menuitem"><a>Learn More</a></li>
+						<li role="menuitem"><a>Request Information</a></li>
+						<li role="menuitem"><a>Visit Whitman</a></li>
+						<li role="menuitem"><a>Whitman on the Road</a></li>
+						<li role="menuitem"><a>Why Whitman?</a></li>
+					</ul>
+				</div>
+				<div class="wc-footer-list-box">
+					<h4 class="wc-list-header" id="footer-menu-4">Student Life</h4>
+					<ul class="wc-no-style-list" role="menu" aria-labelledby="footer-menu-4">
+						<li role="menuitem"><a>Career Services</a></li>
+						<li role="menuitem"><a>Club Sports and Intramurals</a></li>
+						<li role="menuitem"><a>Green Life</a></li>
+						<li role="menuitem"><a>Orientation</a></li>
+						<li role="menuitem"><a>Living at Whitman</a></li>
+						<li role="menuitem"><a>Student Activities</a></li>
+						<li role="menuitem"><a>Student Clubs and Organizations</a></li>
+						<li role="menuitem"><a>Student Services</a></li>
+					</ul>
+				</div>
+				<div class="wc-footer-list-box">
+					<h4 class="wc-list-header" id="footer-menu-5">Quick Links</h4>
+					<ul class="wc-no-style-list" role="menu" aria-labelledby="footer-menu-5">
+						<li role="menuitem"><a href="a-to-z-index.html">A to Z Index</a></li>
+						<li role="menuitem"><a>Bookstore</a></li>
+						<li role="menuitem"><a>Campus Map</a></li>
+						<li role="menuitem"><a>Contact Us</a></li>
+						<li role="menuitem"><a>Employment</a></li>
+						<li role="menuitem"><a>Giving</a></li>
+						<li role="menuitem"><a>Grievance and Sexual Misconduct Policy</a></li>
+						<li role="menuitem"><a>Penrose Library</a></li>
+						<li role="menuitem"><a>myWhitman</a></li>
+						<li role="menuitem"><a>Right to Know</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- Logo -->
+			<div class="wc-row wc-footer-row2">
+				<div class="wc-footer-row2-box-a" itemscope itemtype="http://schema.org/CollegeOrUniversity" aria-labelledby="title">
+					<hr />
+					<svg class="wc-footer-logo-flat" viewbox= "0 0 180 15">
+						<use xlink:href="images/svg/svg-defs.svg#logo-whitman-nc-flat"></use>
+						<title id="title">Whitman College</title>
+					</svg>
+					<svg class="wc-footer-logo-stacked" viewbox= "0 0 164 60" aria-hidden="true">
+						<use xlink:href="images/svg/svg-defs.svg#logo-whitman-nc-stacked"></use>
+					</svg>
+					<hr />
+				</div>
+			</div>
+
+
+			<!-- Contact Info -->
+			<div class="wc-row wc-footer-row3" itemscope itemtype="http://schema.org/CollegeOrUniversity">
+				<div class="wc-footer-row3-box-a wc-footer-row3-box" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+					<a href="https://www.google.com/maps/place/Whitman+College/@46.0717833,-118.3304355,16z/data=!4m2!3m1!1s0x0000000000000000:0x8704a8d5077eb801" target="_blank" class="wc-street-address">
+						<svg viewbox= "0 0 32 32">
+							<use xlink:href="images/svg/svg-defs.svg#icon-map-pin"></use>
+						</svg>
+						<span class="wc-text">
+							<span itemprop="streetAddress">345 Boyer Ave. </span>
+							<span><span itemprop="addressLocality">Walla Walla</span>, <span itemprop="addressRegion">WA</span> <span itemprop="postalCode">99362</span></span>
+						</span>
+					</a>
+				</div>
+				<div class="wc-footer-row3-box-b wc-footer-row3-box">
+					<span class="wc-phone-numbers">
+						<svg viewbox= "0 0 32 32">
+							<use xlink:href="images/svg/svg-defs.svg#icon-phone"></use>
+						</svg>
+						<span class="wc-text">
+							<span>General: <span itemprop="telephone">(509) 527-5111</span></span>
+							<span class="wc-bullet">&bull;</span>
+							<span>Admission: <span itemprop="telephone">(509) 527-5176</span></span>
+						</span>
+					</span>
+				</div>
+				<div class="wc-footer-row3-box-c wc-footer-row3-box">
+					<link itemprop="url" href="https://www.whitman.edu">
+					<a title="Whitman College Facebook" itemprop="sameAs" class="wc-social-link" href="https://facebook.com/whitmancollege" target="_blank">
+						<svg viewbox= "0 0 40 40">
+							<use xlink:href="images/svg/svg-defs.svg#icon-facebook"></use>
+						</svg>
+					</a>
+					<a title="Whitman College Twitter" itemprop="sameAs" class="wc-social-link" href="https://twitter.com/whitmancollege" target="_blank">
+						<svg viewbox= "0 0 40 40">
+							<use xlink:href="images/svg/svg-defs.svg#icon-twitter"></use>
+						</svg>
+					</a>
+					<a title="Whitman College YouTube" itemprop="sameAs" class="wc-social-link" href="https://youtube.com/whitmancollege" target="_blank">
+						<svg viewbox= "0 0 40 40">
+							<use xlink:href="images/svg/svg-defs.svg#icon-youtube"></use>
+						</svg>
+					</a>
+					<a title="Whitman College Instagram" itemprop="sameAs" class="wc-social-link" href="https://instagram.com/whitmancollege" target="_blank">
+						<svg viewbox= "0 0 40 40">
+							<use xlink:href="images/svg/svg-defs.svg#icon-instagram"></use>
+						</svg>
+					</a>
+					<a href="social-links.html" title="More Social Media Links" class="wc-more-social-links">
+						<svg viewbox= "0 0 32 32">
+							<use xlink:href="images/svg/svg-defs.svg#icon-arrow-right"></use>
+						</svg>
+					</a>
+				</div>
+			</div>
+
+
+
+
+
+
+
+			<div class="wc-row wc-footer-row4">
+				<div class="wc-footer-row4-box-a" role="contentinfo">
+					<span class="wc-copyright">© Whitman College</span>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="wc-breakpoint-check-box">
+		<div id="wc-breakpoint-check-lg" class="wc-breakpoint-check"></div>
+		<div id="wc-breakpoint-check-md" class="wc-breakpoint-check"></div>
+		<div id="wc-breakpoint-check-sm" class="wc-breakpoint-check"></div>
+		<div id="wc-breakpoint-check-xs" class="wc-breakpoint-check"></div>		
+	</div>
+	<span id="wc-svg-path" data-svg-path="images/svg/svg-defs.svg"></span>
+	<script id="wc-scripts-tag" src="js/wc-scripts.js" type="text/javascript"></script>	
+</body>
+</html>
+
+
+
+
+
+
+
+

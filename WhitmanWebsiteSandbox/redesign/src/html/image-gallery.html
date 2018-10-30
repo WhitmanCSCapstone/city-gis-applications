@@ -1,0 +1,78 @@
+include "pieces/layout/header.html"
+
+	<!-- Content -->
+	<div class="wc-content-wrap wc-standard-layout" >
+		<!-- Title  -->
+		<div class="wc-title-box">
+			<div class="wc-container">
+				<h1 class="wc-page-title">Image Gallery</h1>
+			</div>
+		</div>
+
+		<div class="wc-container">
+			<!-- Breadcrumbs -->
+			<div class="wc-row wc-breadcrumbs" role="navigation">
+				<a href="index.html" aria-label="home"><svg viewbox="0 0 21 21 "><use xlink:href="images/svg/svg-defs.svg#icon-home"></use></svg></a>
+				<span aria-hidden="true">&raquo;</span>
+				<a href="www.whitman.edu/about">About Whitman</a>
+				<span aria-hidden="true">&raquo;</span>
+				<span>Campus and Community</span>
+			</div>
+			<div class="wc-row wc-no-top-gutter">
+				
+				include "pieces/layout/left-column.html"
+				
+				<div class="wc-main-content" role="main" id="wc-reader-content">
+
+					<!-- Body Copy Components -->
+					<div class="wc-component-row">
+						<div class="wc-component wc-full-component wc-masonry-gallery wc-image-gallery-component wc-mg-3-col" id="wc-image-gallery-component_234">
+							<h2>Gallery A</h2>
+							<div class="wc-masonry-gallery-box">
+								<div class="wc-mg-tile-sizer"></div>
+								<div class="wc-mg-gutter-sizer"></div>
+							</div>
+							<script>
+								(function(){
+									var igParams = {
+										// https://drive.google.com/folderview?id=0B5TM8rlMR5oHQ3dqU2FEbWVIX0E
+										folderID: '0B5TM8rlMR5oHa0J3T3E5WTNkRmc', 
+										captions:'true',
+										groupSize:80,
+										order:'fileName',
+										reverseOrder:'false'
+									};
+									$('#wc-image-gallery-component_234').data('igParams',igParams);
+								})();
+							</script>
+						</div>
+					</div>
+					<div class="wc-component-row">
+						<div class="wc-component wc-full-component wc-masonry-gallery wc-image-gallery-component wc-mg-3-col" id="wc-image-gallery-component_WHAT">
+							<h2>Gallery B</h2>
+							<div class="wc-masonry-gallery-box">
+								<div class="wc-mg-tile-sizer"></div>
+								<div class="wc-mg-gutter-sizer"></div>
+							</div>
+							<script>
+								(function(){
+									var igParams = {
+										// https://drive.google.com/folderview?id=0B5TM8rlMR5oHQ3dqU2FEbWVIX0E
+										folderID: '0B5TM8rlMR5oHQXN3MXJqLWZvNnc', 
+										captions:'true',
+										groupSize:6,
+										order:'fileName'
+									};
+									$('#wc-image-gallery-component_WHAT').data('igParams',igParams);
+								})();
+							</script>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+include "pieces/layout/footer.html"
+
+

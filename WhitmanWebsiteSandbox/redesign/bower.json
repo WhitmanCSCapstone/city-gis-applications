@@ -1,0 +1,14 @@
+{
+  "name": "WebsiteRedesign",
+  "version": "0.1",
+  "dependencies": {
+    "bootstrap-sass": "latest",
+    "imagesloaded": "~4.1.1",
+    "datatables.net": "~1.10.12",
+    "es6-promise": "~4.0.5",
+    "jquery": "latest",
+    "jquery-throttle-debounce": "*",
+    "masonry": "~4.1.0",
+    "slick.js": "latest"
+  }
+}

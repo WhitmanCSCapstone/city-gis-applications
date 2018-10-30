@@ -1,0 +1,90 @@
+include "pieces/layout/header.html"
+
+	<!-- CONTENT -->
+	<div class="wc-content-wrap wc-home-page wc-home-page-layout" id="wc-reader-content" role="main">		
+
+		<!-- MAIN FEATURE -->
+		<!-- Example with text: https://res.cloudinary.com/whitman-college/image/fetch/w_750,c_fill,q_30/l_text:helvetica_80_bold:w-750,co_white,f_auto/https://www.whitman.edu/assets/images/TestImages/HeroImages/campus1.jpg 750w, -->
+		<div class="wc-title-box wc-image-title-box">
+			<img class="wc-tb-hero-image wc-vert-align-bottom wc-horiz-align-right"
+				src="https://res.cloudinary.com/whitman-college/image/fetch/w_2000,c_fill,q_30/l_text:helvetica_80_bold:DEFAULTTT,co_white,f_auto/https://www.whitman.edu/assets/images/TestImages/HeroImages/campus2.jpg""
+				sizes="100vw"
+				srcset = "
+					https://res.cloudinary.com/whitman-college/image/fetch/w_750,c_fill,q_30/l_text:helvetica_80_bold:w-750,co_white,f_auto/https://www.whitman.edu/assets/images/TestImages/HeroImages/campus2.jpg 750w,
+					https://res.cloudinary.com/whitman-college/image/fetch/w_1000,c_fill,q_30/l_text:helvetica_80_bold:w-1000,co_white,f_auto/https://www.whitman.edu/assets/images/TestImages/HeroImages/campus2.jpg 1000w,
+					https://res.cloudinary.com/whitman-college/image/fetch/w_2000,c_fill,q_30/l_text:helvetica_80_bold:w-2000,co_white,f_auto/https://www.whitman.edu/assets/images/TestImages/HeroImages/campus2.jpg 2000w"
+				alt="">
+			<div class="wc-overlay wc-desktop-shade-gradient-bottom wc-desktop-shade-5 wc-mobile-shade-6">
+				<div class="wc-container">
+					<div class="wc-home-feature-caption wc-left-caption">
+						<h2>Find your place here</h2>
+						<p>From the classroom to the climbing wall, in the great outdoors and across the globe: At Whitman, your horizons are limitless.</p>
+						<a href="#" class="wc-box-button wc-white" title="Plan your visit" data-tracking-category="Home Body Link" data-tracking-action="Click" data-tracking-label="Main feature Plan your visit">Plan your visit</a>
+						<a href="#" class="wc-box-button wc-white" title="Take a video tour" data-tracking-category="Home Body Link 2" data-tracking-action="Click" data-tracking-label="Main feature Take a video tour">Take a video tour</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="wc-container">
+
+			<!--NEWS & EVENTS-->
+			<div class="wc-row wc-component-row">
+
+				<!--NEWS-->
+				include "pieces/home-news.html"
+
+
+				<!--EVENTS-->
+				include "pieces/home-events.html"
+
+			</div>
+			<div class="wc-divider-row" aria-hidden="true">
+				<div class="wc-divider-box">
+					<hr class="wc-divider">
+				</div>
+			</div>
+			<div class="wc-row wc-component-row ">
+				include "pieces/large-promo_home.html"
+			</div>
+			<div class="wc-divider-row" aria-hidden="true">
+				<div class="wc-divider-box">
+					<hr class="wc-divider">
+				</div>
+			</div>
+			<div class="wc-promo wc-large-promo wc-featured-program-component wc-component wc-right-aligned wc-full-component ">
+				<div class="wc-large-promo-feature-box">
+					<img src="images/CirclePictures/SemesterInTheWest.jpg" alt="Moringa tree orchard in Haiti">
+				</div>
+				<div class="wc-large-promo-content">
+					<h2 class="wc-promo-heading">Large Promo Component with a long title</h2>
+					<div class="wc-large-promo-main-content">
+						<p>From Whitman Magazine: What will residence life be like for future Whitties? Here's how the new Living at Whitman Initiative will bring a new sophomore residence hall and dining facilities to life, in the biggest change to campus in decades.</p>
+					</div>
+					<div class="wc-bottom-box">
+						<a href="https://www.google.com" class="wc-box-button" title="Whitman College" data-tracking-category="Home Promo Link" data-tracking-action="Click" data-tracking-label="Large Promo Component Link - Whitman College">Whitman College</a>
+						<a href="https://www.google.com" class="wc-box-button" title="Another Link" data-tracking-category="Home Promo Link" data-tracking-action="Click" data-tracking-label="Large Promo Component Link - Another Link">Another Link</a>
+					</div>
+				</div>
+			</div>
+			<div class="wc-divider-row" aria-hidden="true">
+				<div class="wc-divider-box">
+					<hr class="wc-divider">
+				</div>
+			</div>
+
+			<div class="wc-row wc-component-row ">
+				include "pieces/athletics-promo.html"
+			</div>
+
+			<div class="wc-divider-row" aria-hidden="true">
+				<div class="wc-divider-box">
+					<hr class="wc-divider">
+				</div>
+			</div>
+			<div class="wc-row wc-component-row ">
+				include "pieces/call-to-action.html"
+			</div>
+		</div>
+	</div>
+
+include "pieces/layout/footer.html"

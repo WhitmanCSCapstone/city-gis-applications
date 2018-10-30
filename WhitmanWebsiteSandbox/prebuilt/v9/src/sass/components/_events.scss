@@ -1,0 +1,94 @@
+/**********************************
+#EVENTS-LIST-COMPONENT
+**********************************/
+.wc-events-component{
+	.wc-events-list{
+		list-style: none;
+	}
+	li{
+		list-style: none;
+		display:flex;
+	}
+	.wc-date-box{
+		margin-right:1em;
+	}
+	.wc-item-content{
+		flex:1;
+	}
+	.wc-event-details{
+		margin-bottom:10px;
+		&.wc-small{
+			font-weight:400;
+			font-size: 1rem;
+		}
+	}
+	.wc-item-description{
+		margin-bottom:.4rem;
+	}
+	&.wc-events-promo{
+		li{
+			margin: 0 0 .8rem 0;
+		}
+	}
+	&.wc-full-component{
+		@media(min-width:$screen-sm-min){
+			.wc-more-dates-box{
+				float: left;
+			}
+			.wc-more-dates-box + *{
+				clear:both;
+			}
+		}
+	}
+}
+	.wc-more-dates-box{
+		border-top: 1px solid rgb(180,180,180);
+		border-bottom: 1px solid rgb(180,180,180);
+		margin: 4px 0;
+		padding: 4px 0;
+		.wc-date-range{
+			vertical-align: middle;
+		}
+		.wc-more-dates-button{
+			float: none;
+			display:inline-block;
+			vertical-align: middle;
+			padding-top: 0;
+			@include spinButtonContainer(90deg,.2s);
+		}
+		ul{
+			margin: 0;
+			padding: 0;
+		}
+			li{
+				margin: 2px 0;
+			}
+	}
+	.wc-quarter-content-column .wc-events-component{
+		.wc-date-box{
+			margin-right:.6rem;
+		}
+	}
+	.wc-content-wrap:not(.wc-full-width-layout-b) .wc-events-component{
+		.wc-divider{
+			display: none;
+		}
+	}
+	html.flexbox .wc-no-flex-date{
+		display: none;
+	}
+	html.no-flexbox{
+		.wc-events-list li{
+			display: block;
+			width: 100%;
+			clear: both;
+		}
+		.wc-events-component .wc-bb-more-link{
+			clear: both;
+		}
+		.wc-no-flex-date{
+			font-weight: bold;
+			display: inline;
+		}
+	}
+

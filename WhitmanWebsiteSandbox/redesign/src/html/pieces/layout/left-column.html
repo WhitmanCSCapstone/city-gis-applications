@@ -1,0 +1,26 @@
+<!-- NOTE: any changes to this won't affect the landing page, need to update that code separately  -->
+<div class="wc-left-column wc-quarter-content-column" id="wc-left-column">
+	<div class="wc-left-column-contents"> <!-- just using this for the border on mobile -->
+		<h2 class="wc-off-screen">Section Navigation</h2>
+		<button class="wc-section-nav-mobile-button wc-collapse-toggle collapsed" data-toggle="collapse" data-target="#wc-left-column-inner-box" aria-expanded="false" aria-controls="wc-left-column-inner-box" aria-label="Expand Section Navigation">
+			<span class="wc-text">Section Navigation</span>
+			<svg class="wc-collapsed-icon" aria-hidden="true" viewbox="0 0 32 32"><use xlink:href="images/svg/svg-defs.svg#icon-menu-hamburger" /></svg>
+			<svg class="wc-not-collapsed-icon" aria-hidden="true" viewbox="0 0 32 32"><use xlink:href="images/svg/svg-defs.svg#icon-menu-x" /></svg>
+		</button>
+		<div class="wc-left-column-inner-box collapse" aria-expanded="false" id="wc-left-column-inner-box">
+
+			include "section-nav.html"
+
+			include "../list-component.html"
+
+			<div class="wc-row wc-component-row">
+			    <div class="wc-component wc-flexible-component wc-full-component">
+			    	<h2>Left Flexible Component Header</h2>
+					<p>This is just some text in a component paragraph This is just some text in a component paragraph This is just some text in a component paragraph This is just some text in a component paragraph This is just some text in a component paragraph This is just some text in a component paragraph This is just some text in a component paragraph This is just some text in a component paragraph</p>
+			    </div>
+			</div>
+		</div>
+	</div>
+</div>
+
+

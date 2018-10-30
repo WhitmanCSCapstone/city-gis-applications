@@ -1,0 +1,108 @@
+/**********************************
+	
+#NEWS-COMPONENTS
+
+Info
+	Styles for the various different news components.
+**********************************/
+
+/**********************************
+#NEWS-FILTER-BAR
+**********************************/
+.wc-news-filter-bar{
+	@extend .hidden-xs;
+	@extend .hidden-sm;
+	@include clearfix();
+	.wc-button{
+		&.wc-toggled{
+			@include button(2.3rem, 1rem, $a-hover-color, $a-color);			
+		}
+		&:not(.wc-toggled){
+			@include button(2.3rem, 1rem, $light-gray-1, $a-color);
+		}
+		padding-right:2rem;
+		display: block;
+		float:left;
+	}
+	.wc-rounded-dropdown{
+		display: block;
+		float:left;
+	}
+    .wc-help-text {
+        font-size: .8rem;
+        font-style: italic;
+    }
+}
+.no-flexbox .wc-button-bar-component{
+	.wc-button, .wc-rounded-dropdown{
+		float: left;
+		margin-right: 1rem;
+	}
+}
+
+/**********************************
+#FEATURED-ARTICLE
+**********************************/
+.wc-featured-article{
+	@media(max-width:$screen-sm-max){
+		padding-top:0;
+	}
+	.wc-title{
+		display: block;
+		margin-top: 1rem;
+		margin-bottom:.2rem;
+		font-size: 1.4rem;
+		font-weight: 500;
+	}
+	.wc-date{
+		display: inline;
+		font-weight: 600;
+		margin-right: .3rem;
+	}
+	.wc-description{
+		display: block;
+		margin-bottom: 0;
+	}
+	.wc-more-link{
+		clear: both;
+	}
+}
+
+/**********************************
+#ARTICLE-LIST
+**********************************/
+.wc-index-list-component.wc-article-list{
+	.wc-index-list-item{
+		margin-bottom:3rem;
+	}
+	.wc-image-box{
+		@include responsiveFlexWidth(100%,140px,200px,300px);
+		@include responsivePaddingRight(1rem,1rem,1.6rem,2rem); 
+	}
+	.wc-item-info{
+		position: relative;
+		padding-bottom:1.5rem;
+		.wc-more-link{
+			position: absolute;
+			bottom: 0;
+			right: 0;
+		}
+	}
+	.wc-item-main-link{
+		font-size: 1.2rem;
+		font-weight: 400;
+		margin-bottom:0;
+	}
+	.wc-tags{
+		margin:0 0 .6rem;
+		color:$dark-gray-2; 
+	}
+		.wc-tag{
+			color:inherit;
+			font-weight: 300;
+		}
+	.wc-date{
+		font-weight: 600;
+		margin-right:.5rem;
+	}
+}

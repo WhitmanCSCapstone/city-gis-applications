@@ -1,0 +1,36 @@
+include "pieces/layout/header.html"
+	<!-- Content -->
+	<div class="wc-content-wrap wc-standard-layout wc-detail-page-content wc-no-left-column" >
+		<!-- Title  -->
+		<div class="wc-title-box">
+			<div class="wc-container">
+				<h1 class="wc-page-title">A Detail Page</h1>
+			</div>
+		</div>
+
+		<div class="wc-container">
+			<!-- Breadcrumbs -->
+			include "pieces/layout/breadcrumbs.html"
+
+			<div class="wc-row wc-no-top-gutter">
+
+				<!-- Body Copy -->
+				<div class="wc-main-content" role="main" id="wc-reader-content">
+					<div class="wc-row wc-component-row">
+						<div class="wc-component wc-full-component wc-chart-component">
+							<div class="wc-chart-box">
+								<canvas id="wc-wut-chart" width="400" height="400"></canvas>
+							</div>
+							<div class="wc-info-box">
+								<p class="wc-chart-blurb" id="default">default</p>
+								<p class="wc-chart-blurb" id="wc-chart-blurb-0"><strong>First Blurb - </strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam unde, ea atque porro magnam delectus architecto aliquid culpa sequi recusandae consectetur ullam obcaecati eligendi consequuntur provident incidunt impedit ut, eos!</p>
+								<p class="wc-chart-blurb" id="wc-chart-blurb-1"><strong>Second Blurb - </strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam unde, ea atque porro magnam delectus architecto aliquid culpa sequi recusandae consectetur ullam obcaecati eligendi consequuntur provident incidunt impedit ut, eos!</p>
+								<p class="wc-chart-blurb" id="wc-chart-blurb-2"><strong>Third Blurb - </strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam unde, ea atque porro magnam delectus architecto aliquid culpa sequi recusandae consectetur ullam obcaecati eligendi consequuntur provident incidunt impedit ut, eos!</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+include "pieces/layout/footer.html"

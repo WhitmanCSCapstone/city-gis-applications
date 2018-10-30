@@ -1,0 +1,139 @@
+/**********************************
+	
+#slideshow
+
+Info
+	Slideshow component, uses slick slider. See slider-control.js for 
+	the javascript.
+
+Notes
+[1] 	Using this so the position of the nav box can be independent of the
+	 	component's bottom padding.
+**********************************/
+
+.wc-slideshow-component{
+	@include make-xs-column(12);
+	a,p,span{
+		color: $white;
+	}
+	.wc-slideshow-content{ /*[1]*/
+		position: relative;
+	}
+	.wc-desktop-slider{
+		margin: 0;
+	}
+	.wc-slide-box{
+		width: 100%;
+		height: 300px;
+		position: relative;
+		background-size: cover;
+		img{
+			width: 100%;
+		}
+	}
+	.wc-overlay{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	.wc-caption{
+		@include colorEverything($white);
+		text-align: left;
+		position: absolute;
+		padding: 0rem 1rem;
+		p{
+			text-align: left;
+			margin:0;
+		}
+		.wc-description{
+			display: inline;
+			margin-right: .4rem; 
+			@include responsiveFontWeight(400,400,300,300);
+		}
+		.wc-bb-more-link{
+			border: 1px solid $white;
+			display: inline-block;
+			float: none;
+			padding-top:0;
+			padding-bottom:0;
+			font-size: 1rem;
+			width: auto;
+		}
+	}
+}
+	.wc-slideshow-component .wc-dots-and-arrows .wc-caption{
+		@include responsiveBottom(.6rem,.6rem,3rem,3rem);
+	}
+	.wc-slideshow-component .wc-no-nav .wc-caption{
+		bottom:.3rem;
+		// @include responsiveBottom(.3rem,.3rem,3rem,3rem);
+	}
+
+	.wc-slider-nav-box{
+		@include responsivePosition(static,static,absolute,absolute);
+		@include clearfix();
+		@include responsiveBottom(auto,auto,1rem,1rem);
+		@include responsiveLeft(auto,auto,1rem,1rem);
+
+		.wc-left-arrow,.wc-right-arrow{
+			display: block;
+			float: left;
+			@extend .hidden-xs;
+			@extend .hidden-sm;
+			@include icon(24px, rgba(255,255,255,.7));
+			svg{
+				display: block;
+			}
+			&:hover{
+				svg{
+					fill:$white;
+				}
+			}
+		}
+		.wc-slider-dots-box{
+			float:left;
+			padding: 0 1rem;
+			@include clearfix();
+			@include responsiveWidth(100%,100%,auto,auto);
+		}
+			.slick-dots{
+				position:static;
+				margin: 0;
+				line-height:24px;
+				li{
+					vertical-align: middle;
+					@include responsiveMargin(8px,8px, 0 3px,0 3px);
+				}
+				button{
+					&::before{
+						content:"";
+					}
+					display: block;
+					height: 18px;
+					width: 18px;
+					border-radius: 10px;
+					opacity: 1;
+				}
+				@media(min-width:$screen-md-min){
+					button{
+						border: 1px solid $white;
+						&:hover{
+							opacity: .7;
+						}
+					}
+					.slick-active button{
+						background-color: $white;
+					}
+				}
+				@media(max-width:$screen-sm-max){
+					button{
+						background-color: $medium-gray;
+					}
+					.slick-active button{
+						background-color: $dark-gray;
+					}
+				}
+			}
+	}

@@ -1,0 +1,104 @@
+/**********************************
+	
+#PROFILE-INDEX
+
+Notes
+[-]		See _profile-detail.scss for a lot of the styles that you'll see on
+		profile-index.
+[1][2] 	Treating .wc-image-box's like a column. These classes are for
+		hiding/showing them dependent on whether there are any images:
+			nobody has images => hide all image-boxes
+			at least one person has an image => show all image-boxes
+
+
+TODO
+[-]		There's more consolidation that could happen between this document and 
+		_profile-detail.scss
+**********************************/
+
+.wc-profile-group{
+	margin: 1rem 0;
+	:first-child{
+		margin-top:0;
+		padding-top: 0;
+	}
+
+	.wc-profile-list{
+		list-style:none;
+		margin:20px 0;
+		padding:0;
+	}
+
+	.wc-profile{
+		display:block;
+		width:100%;
+		margin:0;
+		padding: 0 0 30px 0;
+		@include clearfix();
+	}
+		&.wc-no-images{ /*[1]*/
+			.wc-profile-image-box{
+				display:none;
+			}
+			.wc-profile-info{
+				width:100%;
+			}
+		}
+		
+		&.wc-with-images{ /*[2]*/
+			.wc-profile-image-box{
+				min-height: 1px;
+				@include responsiveWidth(25%,25%,25%,20%);
+			}
+			.wc-profile-info{
+				@include responsiveWidth(75%,75%,75%,80%);
+			}
+		}
+
+		.wc-profile-image-box{
+			float:left;
+			padding:0 1em 0 0;
+			margin:0;
+			img{
+				width:100%;
+				@include responsiveMaxWidth(120px,100px,134px,134px);
+			}
+			.wc-no-image{
+				width:1px;
+				height:1px;
+			}
+		}
+
+		.wc-profile-info{
+			padding:0;
+			margin:0;
+			float:left;
+			@include clearfix();
+		}
+			.wc-profile-name-bar{
+				@include clearfix();
+			}
+				.wc-profile-name{
+					font-size: 1.4rem;
+					margin-bottom: 6px;
+					margin-top:0;
+					display:block;
+					float:left;
+				}
+}
+
+	.wc-profile-group.wc-profile-group-columns{
+		padding-right: 1rem;
+		.wc-profile-list{
+			columns: 2 260px;
+			min-height: 0;
+		}
+			.wc-profile{
+				break-inside: avoid;
+				padding: 0 1rem 30px 0;
+				overflow: hidden; //fixes firefox break-inside bug
+			}
+				 .wc-info-item{
+					width: 100%;
+				}
+	}

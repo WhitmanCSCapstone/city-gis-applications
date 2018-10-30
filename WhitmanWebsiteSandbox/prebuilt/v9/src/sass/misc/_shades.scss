@@ -1,0 +1,267 @@
+/**********************************
+#SHADES
+
+Info
+[-] 	Use these classes to apply a semi-transparent color to the background
+		of an element.
+
+Notes
+[-] 	Each shade class determines the opacity of the background color 
+		and whether it applies to mobile or desktop. The gradient classes
+		make the background color a gradient that goes from top to bottom 
+		or vice versa.
+[-] 	Examples
+			<div class="wc-overlay wc-desktop-shade-6 wc-mobile-shade-2">
+				- 	desktop opacity of .6
+				- 	mobile opacity of .2
+				- 	no gradient 
+			<div class="wc-overlay wc-desktop-shade-6 wc-mobile-shade-2 wc-desktop-shade-gradient-bottom wc-mobile-shade-gradient-bottom">
+				- 	desktop opacity of .6
+				- 	mobile opacity of 0.2
+				- 	both of these are gradients going from bottom (darker) to top (lighter)
+[1] 	Using modernizr to detect gradient support
+**********************************/
+@media(max-width:$screen-sm-max){
+	.wc-mobile-shade-1{
+		background-color: rgba(0,0,0,.1);
+	}
+	.wc-mobile-shade-2{
+		background-color: rgba(0,0,0,.2);
+	}
+	.wc-mobile-shade-3{
+		background-color: rgba(0,0,0,.3);
+	}
+	.wc-mobile-shade-4{
+		background-color: rgba(0,0,0,.4);
+	}
+	.wc-mobile-shade-5{
+		background-color: rgba(0,0,0,.5);
+	}
+	.wc-mobile-shade-6{
+		background-color: rgba(0,0,0,.6);
+	}
+	.wc-mobile-shade-7{
+		background-color: rgba(0,0,0,.7);
+	}
+	.wc-mobile-shade-8{
+		background-color: rgba(0,0,0,.8);
+	}
+	.wc-mobile-shade-9{
+		background-color: rgba(0,0,0,.9);
+	}
+	.wc-mobile-shade-10{
+		background-color: rgba(0,0,0,1);
+	}
+}
+@media(min-width:$screen-md-min){
+	.wc-desktop-shade-1{
+		background-color: rgba(0,0,0,.1);
+	}
+	.wc-desktop-shade-2{
+		background-color: rgba(0,0,0,.2);
+	}
+	.wc-desktop-shade-3{
+		background-color: rgba(0,0,0,.3);
+	}
+	.wc-desktop-shade-4{
+		background-color: rgba(0,0,0,.4);
+	}
+	.wc-desktop-shade-5{
+		background-color: rgba(0,0,0,.5);
+	}
+	.wc-desktop-shade-6{
+		background-color: rgba(0,0,0,.6);
+	}
+	.wc-desktop-shade-7{
+		background-color: rgba(0,0,0,.7);
+	}
+	.wc-desktop-shade-8{
+		background-color: rgba(0,0,0,.8);
+	}
+	.wc-desktop-shade-9{
+		background-color: rgba(0,0,0,.9);
+	}
+	.wc-desktop-shade-10{
+		background-color: rgba(0,0,0,1);
+	}
+}
+
+
+html.cssgradients .wc-desktop-shade-gradient-bottom{ /*[1]*/
+	@media(min-width:$screen-md-min){
+		&.wc-desktop-shade-1{
+			background-color: rgba(0,0,0,0);
+			background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 100%);
+		}
+		&.wc-desktop-shade-2{
+			background-color: rgba(0,0,0,0);
+			background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%);
+		}
+		&.wc-desktop-shade-3{
+			background-color: rgba(0,0,0,0);
+			background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 100%);
+		}
+		&.wc-desktop-shade-4{
+			background-color: rgba(0,0,0,0);
+			background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.4) 100%);
+		}
+		&.wc-desktop-shade-5{
+			background-color: rgba(0,0,0,0);
+			background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%);
+		}
+		&.wc-desktop-shade-6{
+			background-color: rgba(0,0,0,0);
+			background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 100%);
+		}
+		&.wc-desktop-shade-7{
+			background-color: rgba(0,0,0,0);
+			background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%);
+		}
+		&.wc-desktop-shade-8{
+			background-color: rgba(0,0,0,0);
+			background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%);
+		}
+		&.wc-desktop-shade-9{
+			background-color: rgba(0,0,0,0);
+			background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.9) 100%);
+		}
+		&.wc-desktop-shade-10{
+			background-color: rgba(0,0,0,0);
+			background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+		}
+	}
+}
+html.cssgradients .wc-mobile-shade-gradient-bottom{
+	@media(max-width:$screen-sm-max){
+		&.wc-mobile-shade-1{
+			background-color: rgba(0,0,0,0);
+			background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 100%);
+		}
+		&.wc-mobile-shade-2{
+			background-color: rgba(0,0,0,0);
+			background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%);
+		}
+		&.wc-mobile-shade-3{
+			background-color: rgba(0,0,0,0);
+			background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 100%);
+		}
+		&.wc-mobile-shade-4{
+			background-color: rgba(0,0,0,0);
+			background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.4) 100%);
+		}
+		&.wc-mobile-shade-5{
+			background-color: rgba(0,0,0,0);
+			background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%);
+		}
+		&.wc-mobile-shade-6{
+			background-color: rgba(0,0,0,0);
+			background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 100%);
+		}
+		&.wc-mobile-shade-7{
+			background-color: rgba(0,0,0,0);
+			background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%);
+		}
+		&.wc-mobile-shade-8{
+			background-color: rgba(0,0,0,0);
+			background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%);
+		}
+		&.wc-mobile-shade-9{
+			background-color: rgba(0,0,0,0);
+			background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.9) 100%);
+		}
+		&.wc-mobile-shade-10{
+			background-color: rgba(0,0,0,0);
+			background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+		}
+	}
+}
+
+html.cssgradients .wc-desktop-shade-gradient-top{ /*[1]*/
+	@media(min-width:$screen-md-min){
+		&.wc-desktop-shade-1{
+			background-color: rgba(0,0,0,0);
+			background: linear-gradient(to top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 100%);
+		}
+		&.wc-desktop-shade-2{
+			background-color: rgba(0,0,0,0);
+			background: linear-gradient(to top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%);
+		}
+		&.wc-desktop-shade-3{
+			background-color: rgba(0,0,0,0);
+			background: linear-gradient(to top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 100%);
+		}
+		&.wc-desktop-shade-4{
+			background-color: rgba(0,0,0,0);
+			background: linear-gradient(to top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.4) 100%);
+		}
+		&.wc-desktop-shade-5{
+			background-color: rgba(0,0,0,0);
+			background: linear-gradient(to top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%);
+		}
+		&.wc-desktop-shade-6{
+			background-color: rgba(0,0,0,0);
+			background: linear-gradient(to top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 100%);
+		}
+		&.wc-desktop-shade-7{
+			background-color: rgba(0,0,0,0);
+			background: linear-gradient(to top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%);
+		}
+		&.wc-desktop-shade-8{
+			background-color: rgba(0,0,0,0);
+			background: linear-gradient(to top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%);
+		}
+		&.wc-desktop-shade-9{
+			background-color: rgba(0,0,0,0);
+			background: linear-gradient(to top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.9) 100%);
+		}
+		&.wc-desktop-shade-10{
+			background-color: rgba(0,0,0,0);
+			background: linear-gradient(to top,  rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+		}
+	}
+}
+html.cssgradients .wc-mobile-shade-gradient-top{
+	@media(max-width:$screen-sm-max){
+		&.wc-mobile-shade-1{
+			background-color: rgba(0,0,0,0);
+			background: linear-gradient(to top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 100%);
+		}
+		&.wc-mobile-shade-2{
+			background-color: rgba(0,0,0,0);
+			background: linear-gradient(to top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%);
+		}
+		&.wc-mobile-shade-3{
+			background-color: rgba(0,0,0,0);
+			background: linear-gradient(to top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 100%);
+		}
+		&.wc-mobile-shade-4{
+			background-color: rgba(0,0,0,0);
+			background: linear-gradient(to top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.4) 100%);
+		}
+		&.wc-mobile-shade-5{
+			background-color: rgba(0,0,0,0);
+			background: linear-gradient(to top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%);
+		}
+		&.wc-mobile-shade-6{
+			background-color: rgba(0,0,0,0);
+			background: linear-gradient(to top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 100%);
+		}
+		&.wc-mobile-shade-7{
+			background-color: rgba(0,0,0,0);
+			background: linear-gradient(to top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%);
+		}
+		&.wc-mobile-shade-8{
+			background-color: rgba(0,0,0,0);
+			background: linear-gradient(to top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%);
+		}
+		&.wc-mobile-shade-9{
+			background-color: rgba(0,0,0,0);
+			background: linear-gradient(to top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.9) 100%);
+		}
+		&.wc-mobile-shade-10{
+			background-color: rgba(0,0,0,0);
+			background: linear-gradient(to top,  rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+		}
+	}
+}
+

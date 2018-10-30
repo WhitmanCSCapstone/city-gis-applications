@@ -1,0 +1,140 @@
+/**********************************
+
+#MIXINS
+
+**********************************/
+
+@mixin clickable($color:$medium-blue,$hoverColor:$light-gray-2,$hoverDecoration:none){
+	cursor:pointer;
+	color:$color;
+	svg{
+		fill:$color;
+	}
+	&:hover,&:focus{
+		&,span{
+			color:$hoverColor;
+			text-decoration: $hoverDecoration;
+		}
+		svg{
+			fill:$hoverColor;
+		}
+	}
+}
+/**********************************
+#BUTTON
+
+Notes
+[1][2]		Assumes a square icon
+[3] 		Prevents awkward extra bit of underline after text
+**********************************/
+@mixin button($iconSize:24px,$fontSize:12px,$color:inherit,$hoverColor:inherit,$backgroundColor:transparent,$hoverBackgroundColor:transparent,$hoverTextDecoration:none){
+	background-color:$backgroundColor;
+	cursor:pointer;
+	&,span{
+		color:$color;
+	}
+	svg{
+		height:$iconSize;/*[1]*/
+		width:$iconSize;
+		fill:$color;
+	}
+	svg,.wc-text{
+		display:inline-block;
+		vertical-align: middle;
+	}
+	.wc-text{
+		color:$color;
+		font-size:$fontSize;
+	}
+	&:hover{
+		background-color: $hoverBackgroundColor;
+		text-decoration: none; /*[3]*/
+		&,span,.wc-text{
+			color:$hoverColor;
+		}
+		svg{
+			fill:$hoverColor;
+		}
+		.wc-text{
+			text-decoration: $hoverTextDecoration;
+		}
+	}
+	&:focus {
+		outline: none;
+		.wc-text{
+			text-decoration: $hoverTextDecoration;
+		}
+	}
+}
+@mixin roundedCorners ($radius:$border-radius) {
+	border-radius: $radius;
+}
+@mixin columns($column-count, $column-width: auto, $column-gap:normal){
+	columns: $column-count $column-width;
+	column-gap: $column-gap;
+}
+@mixin icon($size:24px,$color:$medium-blue){
+	width:$size;/*[2]*/
+	height:$size;
+	fill:$color;
+}
+@mixin colorEverything($color){
+	a,p,h1,h2,h3,h4,span,li{
+		color: $color;
+	}
+}
+
+
+/**********************************
+#SPIN-BUTTON
+
+Info
+	For those buttons that spin when you click them. Depends on the bootstrap
+	collapse function.  
+
+Notes
+[1] 	This one is for when the whole button spins
+[2] 	This one is for when you have text and an svg, and you just want the svg
+		to spin (like with the quick links button). 
+**********************************/ 
+@mixin spinButton($angle:180deg, $time:.5s){ /*[1]*/
+	transition: all $time;
+	&:not(.collapsed):not(.wc-collapsed){
+		transform:rotate($angle);
+	}
+}
+@mixin spinButtonContainer($angle:180deg, $time:.5s){ /*[2]*/
+	.wc-spins{
+		transition: all $time;
+	}
+	&:not(.collapsed):not(.wc-collapsed){
+		.wc-spins{
+			transform:rotate($angle);
+		}
+	}
+}
+
+
+/**********************************
+#FLEX-WIDTH
+
+Info
+	Use this for giving something a staic width in a flexbox situation.
+
+Notes
+[1] 	This is necessary for some reason.
+**********************************/ 
+@mixin flexWidth($width){
+	min-width: 1px; /*[1]*/
+	flex-grow:0;
+	flex-shrink: 0;
+	flex-basis: $width;
+}
+
+
+/**********************************
+#HIDDEN-NOT-IMPORTANT
+
+Info
+	Use this for giving something a staic width in a flexbox situation.
+**********************************/ 

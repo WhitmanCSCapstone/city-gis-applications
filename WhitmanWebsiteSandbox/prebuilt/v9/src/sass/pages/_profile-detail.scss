@@ -1,0 +1,71 @@
+/**********************************
+	
+#PROFILE-DETAIL
+
+Notes
+[1]		Flexbox fallback (using modernizr)
+[2] 	This would be an ideal place for css columns, except there's a chrome bug that ruins
+		it. Once that's fixed maybe give it a try?
+**********************************/
+
+.wc-profile-detail{
+	display:flex;
+	width:100%;
+
+	.wc-profile-image-box{
+		padding-right:1em;
+		margin:0;
+		@include responsiveFlexWidth(30%,40%,25%,25%);
+		img{
+			max-width:100%;
+		}
+	}
+	
+	.wc-profile-info{
+		flex:auto;
+		margin:0;
+	}
+}
+	.wc-profile-info-items{
+		width:100%;
+		padding:0;
+		margin:0;
+		@include clearfix();
+		@media(min-width:$screen-lg-min){/*[2]*/
+			// columns:2;
+		}
+		.wc-info-item{
+			float:left;
+			@include responsiveWidth(100%,100%,100%,50%);
+		}
+	}
+	.wc-profile-title{
+		display:block;
+		margin-top:0;
+		margin-bottom:14px;
+		font-style: italic;
+		color:$dark-gray;
+		font-size:1em;
+		font-weight:200;
+		@include responsiveWidth(70%,100%,100%,100%);
+	}
+
+
+.no-flexbox { /*[1]*/
+	.wc-profile-detail{
+		@include clearfix();
+	}
+	.wc-profile-image-box{
+		float:left;
+	}
+	.wc-profile-info{
+		float:left;
+		width:60%;
+	}
+}
+
+.wc-dropdown-slide-group.wc-accordion-box{
+	@media(min-width:$screen-md-min){
+		border-bottom:none;
+	}
+}

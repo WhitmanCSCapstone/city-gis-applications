@@ -1,0 +1,33 @@
+/**********************************
+	
+#SEARCH-RESULTS
+
+
+notes
+[-] 	These are just styles for the search results page, for
+		the auto-results that are in the header, see _header.scss
+**********************************/
+
+.wc-main-search-form{
+	margin-bottom:2rem;
+	form{
+		display: block;
+		float: left;
+		@include responsiveWidth(100%,auto,auto,auto);
+	}
+	width: 100%;
+	@include clearfix();
+}
+	.wc-main-search-options{
+		display: block;
+		@include responsiveFloat(left,right,right,right);
+		@include responsiveMarginTop(1rem,0,0,0);
+		@extend .wc-no-style-list;
+		li{
+			display: inline-block;
+		}
+	}
+
+.wc-main-search-results-list{
+
+}

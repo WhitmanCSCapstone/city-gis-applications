@@ -1,0 +1,242 @@
+<div class="wc-component wc-no-row wc-full-component ">
+	<!--
+		This is the html for the ACEs side component for the 
+		teen center/at the hub article - https://www.whitman.edu/newsroom/at-the-hub
+	 -->
+
+	<!-- ASDF - begin content to copy -->
+	<script>
+		var HBarControl = (function(){
+			var aceScore,chartData,basewidth,$baselines,$buttonBox;
+
+			function setup(){
+				baseWidth 	= 11;
+				$baselines  = $('.wc-hbar-graph-baseline-line');
+				aceScore 	= $('input[name=wc-hbar-graph-button]:checked').val();
+				$buttonBox 	= $('.wc-hbar-modal-box .wc-hbar-graph-button-section .wc-radio-filter-box');
+				chartData 	= [
+					{
+						name:"Alcoholism",
+						$bar: $('.wc-hbar-modal-box .wc-hbar-red-bar_1').first(),
+						$dataValue: $('.wc-hbar-modal-box .wc-hbar-graph-bar-total_1').first(),
+						$descriptor:$('.wc-hbar-modal-box .wc-hbar-graph-descriptor_1').first(),
+						$title:$('.wc-hbar-modal-box .wc-hbar-graph-section-title_1').first(),
+						descriptorText: 'as likely to consider themselves an alcoholic than those without ACEs',
+						data:[1,2,4,4.9,7.4]
+					},
+					{
+						name:"Depression",
+						$bar: $('.wc-hbar-modal-box .wc-hbar-red-bar_2').first(),
+						$dataValue: $('.wc-hbar-modal-box .wc-hbar-graph-bar-total_2').first(),
+						$descriptor:$('.wc-hbar-modal-box .wc-hbar-graph-descriptor_2').first(),
+						$title:$('.wc-hbar-modal-box .wc-hbar-graph-section-title_2').first(),
+						descriptorText: 'as likely to report feeling depressed for two or more weeks in a given year than those without ACEs',
+						data:[1,1.5,2.4,2.6,4.6]
+					},
+					{
+						name:"Drug Use",
+						$bar: $('.wc-hbar-modal-box .wc-hbar-red-bar_3').first(),
+						$dataValue: $('.wc-hbar-modal-box .wc-hbar-graph-bar-total_3').first(),
+						$descriptor:$('.wc-hbar-modal-box .wc-hbar-graph-descriptor_3').first(),
+						$title:$('.wc-hbar-modal-box .wc-hbar-graph-section-title_3').first(),
+						descriptorText: 'as likely to have used illicit drugs than those without ACEs',
+						data:[1,1.7,2.9,3.6,4.7]
+					},
+					{
+						name:"Missing Work",
+						$bar: $('.wc-hbar-modal-box .wc-hbar-red-bar_4').first(),
+						$dataValue: $('.wc-hbar-modal-box .wc-hbar-graph-bar-total_4').first(),
+						$descriptor:$('.wc-hbar-modal-box .wc-hbar-graph-descriptor_4').first(),
+						$title:$('.wc-hbar-modal-box .wc-hbar-graph-section-title_4').first(),
+						descriptorText: 'as likely to have missed 14 or more days of work in a given month due to mental illness than those without ACEs',
+						data:[1,1.6,2.3,2.9,5.5]
+					},
+					{
+						name:"Smoking",
+						$bar: $('.wc-hbar-modal-box .wc-hbar-red-bar_5').first(),
+						$dataValue: $('.wc-hbar-modal-box .wc-hbar-graph-bar-total_5').first(),
+						$descriptor:$('.wc-hbar-modal-box .wc-hbar-graph-descriptor_5').first(),
+						$title:$('.wc-hbar-modal-box .wc-hbar-graph-section-title_5').first(),
+						descriptorText: 'as likely to smoke than those without ACEs',
+						data:[1,1.1,1.5,2,2.2]
+					}
+				];
+				$baselines.css({'width':baseWidth + '%'})
+				for (var i = 0; i < chartData.length; i++) {
+					var s = chartData[i];
+					s.$title.text(s.name);
+					s.$descriptor.text(s.descriptorText);
+				}
+				update(0);
+				setupButtons();
+				bindings();
+			}
+
+			function setupButtons(){
+				var checked,plusSign = '';
+				for (var i = 0; i < 5; i++) {
+					checked = i===0?'checked':'';
+					plusSign = i===4?'+':'';
+					var buttonMarkup =
+						'<div class="wc-radio-option-box">'+
+							'<input type="radio" name="wc-hbar-graph-button" id="wc-hbar-graph-button_'+i+'" value="'+i+'" '+checked+'>'+
+							'<label for="wc-hbar-graph-button_'+i+'" id="wc-hbar-graph-button_'+i+'_label">'+i+plusSign+'</label>'+
+							'<div class="wc-radio-btn" data-target="#wc-hbar-graph-button_'+i+'_label">'+
+								'<div class="wc-radio-btn-inner"></div>'+
+							'</div>'+
+						'</div>';
+					$buttonBox.append(buttonMarkup);
+				}
+			}
+
+			function update(v){
+				for (var i = 0; i < chartData.length; i++) {
+					var s = chartData[i];
+					s.$dataValue.html('<strong>'+ s.data[v]  + '</strong> times');
+					s.$bar.css({'width':''+(s.data[v]*baseWidth)+'%'});
+				}
+			}
+
+			function bindings(){
+				$('input[name=wc-hbar-graph-button]').change(function(){
+					aceScore = $('input[name=wc-hbar-graph-button]:checked').val();
+					update(aceScore);
+				});
+			}
+
+			return {
+				setup: setup
+			}
+		})();
+
+		function moveAcesThing(){
+			var $acesThing = $('#wc-hbar-graph-box');
+			var $box = $('#wc-hbar-modal-box');
+			$acesThing.clone().appendTo($box);
+		}
+
+	</script>
+
+	<div class="wc-component wc-full-component wc-hidden" id="wc-hbar-holding-box">
+		<div class="wc-hbar-graph-content-area" id="wc-hbar-graph-box">
+			<h2 class="wc-hbar-graph-title">The Lasting Effects of ACEs</h2>
+			<p class="wc-hbar-graph-subtitle">Select an ACE score to compare risk factors across the continuum below*</p>
+			<div class="wc-hbar-graph-section">
+				<div class="wc-hbar-graph-section-row">
+					<div class="wc-hbar-graph-section-title wc-hbar-graph-section-title_1"></div>
+					<div class="wc-hbar-graph-gray-bar">
+						<div class="wc-hbar-graph-baseline-line"></div>
+						<div class="wc-hbar-graph-red-bar wc-hbar-red-bar_1">
+						</div>
+						<div class="wc-hbar-graph-bar-total wc-hbar-graph-bar-total_1"></div>
+					</div>
+				</div>
+				<div class="wc-hbar-graph-section-row">
+					<div class="wc-hbar-graph-descriptor wc-hbar-graph-descriptor_1"></div>
+				</div>
+			</div>
+
+
+			<div class="wc-hbar-graph-section">
+				<div class="wc-hbar-graph-section-row">
+					<div class="wc-hbar-graph-section-title wc-hbar-graph-section-title_2"></div>
+					<div class="wc-hbar-graph-gray-bar">
+						<div class="wc-hbar-graph-baseline-line"></div>
+						<div class="wc-hbar-graph-red-bar wc-hbar-red-bar_2">
+						</div>
+						<div class="wc-hbar-graph-bar-total wc-hbar-graph-bar-total_2"></div>
+					</div>
+				</div>
+				<div class="wc-hbar-graph-section-row">
+					<div class="wc-hbar-graph-descriptor wc-hbar-graph-descriptor_2"></div>
+				</div>
+			</div>
+
+			<div class="wc-hbar-graph-section">
+				<div class="wc-hbar-graph-section-row">
+					<div class="wc-hbar-graph-section-title wc-hbar-graph-section-title_3"></div>
+					<div class="wc-hbar-graph-gray-bar">
+						<div class="wc-hbar-graph-baseline-line"></div>
+						<div class="wc-hbar-graph-red-bar wc-hbar-red-bar_3">
+						</div>
+						<div class="wc-hbar-graph-bar-total wc-hbar-graph-bar-total_3"></div>
+					</div>
+				</div>
+				<div class="wc-hbar-graph-section-row">
+					<div class="wc-hbar-graph-descriptor wc-hbar-graph-descriptor_3"></div>
+				</div>
+			</div>
+
+			<div class="wc-hbar-graph-section">
+				<div class="wc-hbar-graph-section-row">
+					<div class="wc-hbar-graph-section-title wc-hbar-graph-section-title_4"></div>
+					<div class="wc-hbar-graph-gray-bar">
+						<div class="wc-hbar-graph-baseline-line"></div>
+						<div class="wc-hbar-graph-red-bar wc-hbar-red-bar_4">
+						</div>
+						<div class="wc-hbar-graph-bar-total wc-hbar-graph-bar-total_4"></div>
+					</div>
+				</div>
+				<div class="wc-hbar-graph-section-row">
+					<div class="wc-hbar-graph-descriptor wc-hbar-graph-descriptor_4"></div>
+				</div>
+			</div>
+
+
+			<div class="wc-hbar-graph-section">
+				<div class="wc-hbar-graph-section-row">
+					<div class="wc-hbar-graph-section-title wc-hbar-graph-section-title_5"></div>
+					<div class="wc-hbar-graph-gray-bar">
+						<div class="wc-hbar-graph-baseline-line"></div>
+						<div class="wc-hbar-graph-red-bar wc-hbar-red-bar_5">
+						</div>
+						<div class="wc-hbar-graph-bar-total wc-hbar-graph-bar-total_5"></div>
+					</div>
+				</div>
+				<div class="wc-hbar-graph-section-row">
+					<div class="wc-hbar-graph-descriptor wc-hbar-graph-descriptor_5"></div>
+				</div>
+			</div>
+
+
+			<!-- BUTTONS -->
+			<div class="wc-hbar-graph-section wc-hbar-graph-button-section">
+				<div class="wc-list-filter-box wc-radio-filter-box">
+					<p class="wc-options-title">ACE Score:</p>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<button class="wc-card-component wc-component wc-mag-box-component" id="wc-card-component_d9b1fab355c208fa4caee10144dd0c4a">
+		<img src="https://www.whitman.edu/Images/Newsroom/News/Magazine/2018/TeenCenter/ACEsThumbnail.png" alt="ACEs chart" class="wc-full-width">
+		<h2 class="wc-title wc-sc-content">ACEs</h2>
+		<div class="wc-sc-content">
+			<p class="wc-blurb">An ACE score measures one’s exposure to harmful experiences before the age of 18 and is an important metric for public health.</p>
+			<div class="wc-move-box">
+				<div class="wc-inner-box">
+					<span class="wc-text">Read More</span>
+					<svg class="wc-icon" viewBox="0 0 32 32" aria-hidden="true">
+	<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.whitman.edu/assets/prebuilt/v9/dist/svg/svg-defs.svg?v=12#icon-arrow-right"></use>
+					</svg>
+				</div>
+			</div>
+		</div>
+		<script>
+			(function(){
+				var mc = '<div class="wc-hbar-modal-box" id="wc-hbar-modal-box"></div><p>The <a target="_blank" href="https://www.cdc.gov/violenceprevention/acestudy/">Adverse Childhood Experiences (ACEs) Study</a> links <a target="_blank" href="https://www.npr.org/sections/health-shots/2015/03/02/387007941/take-the-ace-quiz-and-learn-what-it-does-and-doesnt-mean">10 types of childhood traumas</a> to negative health outcomes later in life. The average ACE score for Lincoln High School students-between four and five-is elevated compared to most survey participants\' range of zero to one and, therefore, more cause for concern.</p> <p class="wc-hbar-graph-reference">*Data provided by the <a target="_blank" href="https://vetoviolence.cdc.gov/apps/phl/resource_center_infographic.html">CDC.</a></p>';
+				$('#wc-card-component_d9b1fab355c208fa4caee10144dd0c4a').data('mcParams',{
+					modalContent:mc,
+					button:'#wc-card-component_d9b1fab355c208fa4caee10144dd0c4a', 
+					modalAriaLabel:'ACE&#39;s',
+					openCallback:function(){
+						moveAcesThing();
+						HBarControl.setup();
+					}
+				});
+			})();
+		</script>
+	</button>
+	<!-- ASDF - end content to copy -->
+</div>
