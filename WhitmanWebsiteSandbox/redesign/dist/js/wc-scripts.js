@@ -9969,7 +9969,12 @@ var MapControl = (function($){
 		places accordingly
 		**********************************/
 		s.map.addListener('zoom_changed',function(){
-			if(s.map.getZoom() > 13){
+			//BOGUS BOOLEAN FOR TESTING
+			var showTrees = true;
+			if (showTrees) {
+				s.pointsLayer.setMap(s.map);
+				s.placesLayer.setMap(null);
+			} else if(s.map.getZoom() > 13){
 				s.pointsLayer.setMap(null);
 				s.placesLayer.setMap(s.map);
 			}
@@ -10026,6 +10031,7 @@ var MapControl = (function($){
 		s.placesLayer.setMap(s.map);/*[1]*/
 		s.pointsLayer = new google.maps.Data();
 		s.pointsLayer.addGeoJson(s.pointsGeoJson);
+		s.pointsLayer.setMap(s.map);
 		
 		/**********************************
 		Style the polygons
@@ -10531,11 +10537,18 @@ var MapControl = (function($){
 	[1] 	Just using the polygons, not the points
 	**********************************/
 	function populatePlacesList(){
+		//PLACES
 		var data = s.placesGeoJson;
+		var points = s.pointsGeoJson;
 		for(var i=0; i<data.features.length;i++){
 			var feature = data.features[i];
 			s.controls.featuresList.push(feature.properties);
 		}
+		for(var i = 0; i < points.features.length; i++) {
+			var feature = points.features[i];
+			s.controls.featuresList.push(feature.properties);
+		}
+
 		s.controls.featuresList = alphabetize('features',s.controls.featuresList);
 
 		s.controls.featuresListLookup = {};
@@ -10561,11 +10574,18 @@ var MapControl = (function($){
 	**********************************/
 	function populateCategoriesList(){
 		var data = s.placesGeoJson;
+		var points = s.pointsGeoJson;
 		for (var i=0;i<data.features.length;i++){
 			var feature = data.features[i];
 			var tags = feature.properties.tags;
 			s.controls.categoriesList = s.controls.categoriesList.concat(tags);
 		}
+		for(var i = 0; i < points.features.length; i++) {
+			var feature = points.features[i];
+			var tags = feature.properties.tags;
+			s.controls.categoriesList = s.controls.categoriesList.concat(tags);
+		}
+
 		s.controls.categoriesList = alphabetize('default',s.controls.categoriesList);
 		for (var k = 0; k < s.controls.categoriesList.length; k++) {
 			var category = s.controls.categoriesList[k];
@@ -10587,6 +10607,7 @@ var MapControl = (function($){
 	[1] 	Need to add a bit of delay to make sure the slide happens
 	**********************************/
 	function showCategory(category){
+		console.log(category);
 		var box = newDetailBox({
 					selectedCategory:category,
 					boxType:'categoryBox'
@@ -10625,6 +10646,8 @@ var MapControl = (function($){
 	**********************************/
 	function showPlace(id){
 		focusMap('Polygon',id);
+		console.log(s.controls.featuresListLookup)
+		console.log(s.controls.featuresListLookup[id]);
 		var feature 	= s.controls.featuresListLookup[id],
 			box 		= newDetailBox({
 							customClass:'wc-mc-place-detail-box',
@@ -10758,6 +10781,12 @@ var MapControl = (function($){
 
 	/**********************************
 	 * CAPSTONE WORK
+	 * Things to do:
+	 * 1. Write out function call map
+	 * 		- Look carefully for how to input the data in such a way to enable the disabling of trees or enabiling or trees
+	 * 2. Convert tree data into json file like city-gis-applications/WhitmanWebsiteSandbox/redesign/src/html/pieces/map-data.html
+	 * 3. put tree data into use using map-control.js and map.html
+	 * 4. Add to command panel tree data, or some sort of button that enables tree view or disables it (Make sure it uses a url)
 	 */
 	function addTrees() {
 		

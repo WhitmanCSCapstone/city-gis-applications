@@ -515,6 +515,7 @@ THE HEADER
 				}
 			</style>
 
+			<!-- TRIGGER CHANGE TO TREE-DATA.html needs to happen-->
 			<script type="text/javascript">
 				var mapPoints = {
 					"type": "FeatureCollection",
@@ -528,7 +529,10 @@ THE HEADER
 							"properties": {
 								"id":"1",
 								"polygonId":"x37181",
-								"name": "Hall of Science"
+								"name": "Hall of Science",
+								"tags": [
+									"Observatories"
+								]
 							}
 						},
 						//TREE EXAMPLE  vvvvvvvvvv
@@ -539,12 +543,88 @@ THE HEADER
 								"coordinates": [-118.32682,46.07182]
 							},
 							"properties": {
-								"id":"4",
-								"polygonId":"x37593",
-								"name": "Example Tree"
+								"id":"4x",
+								"polygonId":"4",
+								"name": "Example Tree",
+								"objectType": "outdoor"
 							}
 						},
 						//TREE EXAMPLE ^^^^^^^^^^^^
+						//TREE EXAMPLE  vvvvvvvvvv
+						{
+							"type": "Feature",
+							"geometry": {
+								"type": "Point",
+								"coordinates": [-118.33012,46.07249]
+							},
+							"properties": {
+								"id":"5x",
+								"polygonId":"5",
+								"name": "Western White Pine",
+								"objectType": "outdoor"
+							}
+						},
+						//TREE EXAMPLE ^^^^^^^^^^^^
+						//TREE EXAMPLE  vvvvvvvvvv
+						{
+							"type": "Feature",
+							"geometry": {
+								"type": "Point",
+								"coordinates": [-118.32729,46.07267]
+							},
+							"properties": {
+								"id":"6x",
+								"polygonId":"6",
+								"name": "Sycamore",
+								"objectType": "outdoor"
+							}
+						},
+						//TREE EXAMPLE ^^^^^^^^^^^^
+						//TREE EXAMPLE  vvvvvvvvvv
+						{
+							"type": "Feature",
+							"geometry": {
+								"type": "Point",
+								"coordinates": [-118.32615,46.07175]
+							},
+							"properties": {
+								"id":"7x",
+								"polygonId":"7",
+								"name": "Evergreen Dogwood",
+								"objectType": "outdoor"
+							}
+						},
+						//TREE EXAMPLE ^^^^^^^^^^^^
+						//TREE EXAMPLE  vvvvvvvvvv
+						{
+							"type": "Feature",
+							"geometry": {
+								"type": "Point",
+								"coordinates": [-118.32751,46.07108]
+							},
+							"properties": {
+								"id":"8x",
+								"polygonId":"8",
+								"name": "Hackberry",
+								"objectType": "outdoor"
+							}
+						},
+						//TREE EXAMPLE ^^^^^^^^^^^^
+						//TREE EXAMPLE  vvvvvvvvvv
+						{
+							"type": "Feature",
+							"geometry": {
+								"type": "Point",
+								"coordinates": [-118.32887,46.07192]
+							},
+							"properties": {
+								"id":"9x",
+								"polygonId":"9",
+								"name": "Liberty Elm",
+								"objectType": "outdoor"
+							}
+						},
+						//TREE EXAMPLE ^^^^^^^^^^^^			
 						{
 							"type": "Feature",
 							"geometry": {
@@ -554,7 +634,10 @@ THE HEADER
 							"properties": {
 								"id":"2",
 								"polygonId":"x37167",
-								"name": "Bracher Observatory"
+								"name": "Bracher Observatory",
+								"tags": [
+									"Observatories"
+								]
 							}
 						},
 						{
@@ -566,7 +649,10 @@ THE HEADER
 							"properties": {
 								"id":"3",
 								"polygonId":"x37197",
-								"name": "Pacific Northwest Regional Observatory"
+								"name": "Pacific Northwest Regional Observatory",
+								"tags": [
+									"Observatories"
+								]
 							}
 						}
 					]
@@ -2268,19 +2354,42 @@ THE HEADER
 				      }
 						},
 						//TREE EXAMPLE vvvvvvv
+						// {
+						// 	"type": "Feature",
+						// 	"geometry": {
+						// 		"type": "Polygon",	
+						// 		"coordinates": [
+				    //       [
+				    //         [-118.32682, 46.07182],[-118.32692, 46.07182],[-118.32682, 46.07192],[-118.32692, 46.07192], [-118.32682, 46.07182]
+				    //       ]
+				    //     ]
+						// 	},
+						// 	"properties": {
+						// 		"id":"x37593",
+						// 		"polygonId":"x37593",
+						// 		"name": "Example Tree",
+						// 		"tags": [
+						// 			"Trees",
+						// 			"Redwoods",
+						// 			"Nature"
+						// 		],
+						// 		"objectType": "outdoor"
+						// 	}
+						// },
+						// //TREE EXAMPLE ^^^^^^^^
+						//TREE EXAMPLE  vvvvvvvvvv
 						{
 							"type": "Feature",
 							"geometry": {
-								"type": "Polygon",	
+								"type": "Polygon",
 								"coordinates": [
-				          [
-				            [-118.32682, 46.07182],[-118.32692, 46.07182],[-118.32682, 46.07192],[-118.32692, 46.07192], [-118.32682, 46.07182]
-				          ]
-				        ]
+									[
+										[-118.32682,46.07182],[-118.32682, 46.07182]
+									]
+								]
 							},
 							"properties": {
-								"id":"x37593",
-								"polygonId":"x37593",
+								"id":"4",
 								"name": "Example Tree",
 								"tags": [
 									"Trees",
@@ -2290,7 +2399,102 @@ THE HEADER
 								"objectType": "outdoor"
 							}
 						},
-						//TREE EXAMPLE ^^^^^^^^
+						//TREE EXAMPLE ^^^^^^^^^^^^
+						//TREE EXAMPLE  vvvvvvvvvv
+						{
+							"type": "Feature",
+							"geometry": {
+								"type": "Polygon",
+								"coordinates": [[[-118.33012,46.07249], [-118.33012,46.07249]]]
+							},
+							"properties": {
+								"id":"5",
+								"name": "Western White Pine",
+								"tags": [
+									"Trees",
+									"Redwoods",
+									"Nature"
+								],
+								"objectType": "outdoor"
+							}
+						},
+						//TREE EXAMPLE ^^^^^^^^^^^^
+						//TREE EXAMPLE  vvvvvvvvvv
+						{
+							"type": "Feature",
+							"geometry": {
+								"type": "Polygon",
+								"coordinates": [[[-118.32729,46.07267], [-118.32729,46.07267]]]
+							},
+							"properties": {
+								"id":"6",
+								"name": "Sycamore",
+								"tags": [
+									"Trees",
+									"Redwoods",
+									"Nature"
+								],
+								"objectType": "outdoor"
+							}
+						},
+						//TREE EXAMPLE ^^^^^^^^^^^^
+						//TREE EXAMPLE  vvvvvvvvvv
+						{
+							"type": "Feature",
+							"geometry": {
+								"type": "Polygon",
+								"coordinates": [[[-118.32615,46.07175], [-118.32615,46.07175]]]
+							},
+							"properties": {
+								"id":"7",
+								"name": "Evergreen Dogwood",
+								"tags": [
+									"Trees",
+									"Redwoods",
+									"Nature"
+								],
+								"objectType": "outdoor"
+							}
+						},
+						//TREE EXAMPLE ^^^^^^^^^^^^
+						//TREE EXAMPLE  vvvvvvvvvv
+						{
+							"type": "Feature",
+							"geometry": {
+								"type": "Polygon",
+								"coordinates": [[[-118.32751,46.07108], [-118.32751,46.07108]]]
+							},
+							"properties": {
+								"id":"8",
+								"name": "Hackberry",
+								"tags": [
+									"Trees",
+									"Redwoods",
+									"Nature"
+								],
+								"objectType": "outdoor"
+							}
+						},
+						//TREE EXAMPLE ^^^^^^^^^^^^
+						//TREE EXAMPLE  vvvvvvvvvv
+						{
+							"type": "Feature",
+							"geometry": {
+								"type": "Polygon",
+								"coordinates": [[[-118.32887,46.07192], [-118.32887,46.07192]]]
+							},
+							"properties": {
+								"id":"9",
+								"name": "Liberty Elm",
+								"tags": [
+									"Trees",
+									"Redwoods",
+									"Nature"
+								],
+								"objectType": "outdoor"
+							}
+						},
+						//TREE EXAMPLE ^^^^^^^^^^^^	
 				    {
 				      "type": "Feature",
 				      "geometry": {
@@ -4278,12 +4482,57 @@ THE HEADER
 				</ul>
 			</div>
 			<!-- TREE EXAMPLE vvvvvvvvvv-->
-			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37593">
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-4">
 					<img alt="Redbud" class="wc-mc-feature-image" src="https://mk0gardengoodsd3tst9.kinstacdn.com/wp-content/uploads/2017/09/EASTERN-REDBUD.jpg?_previewAsset_=true">
 				<p>Common Name: Eastern Redbud</p><br>
 				<p>Latin Name: Cercis Canadensis</p><br>
 				<p>Family: Fabaceae (Leguminosae)</p><br>
 				<p>Tree Height: 25 Feet</p><br>
+			</div>
+			<!-- TREE EXAMPLE ^^^^^^^^^^-->
+			<!-- TREE EXAMPLE vvvvvvvvvv-->
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-5">
+					<img alt="Redbud" class="wc-mc-feature-image" src="https://mk0gardengoodsd3tst9.kinstacdn.com/wp-content/uploads/2017/09/EASTERN-REDBUD.jpg?_previewAsset_=true">
+				<p>Common Name: Western White Pine</p><br>
+				<p>Latin Name: Pinus Monticola</p><br>
+				<p>Family: Pinaceae (Leguminosae)</p><br>
+				<p>Tree Height: 15 Feet</p><br>
+			</div>
+			<!-- TREE EXAMPLE ^^^^^^^^^^-->
+			<!-- TREE EXAMPLE vvvvvvvvvv-->
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-6">
+					<img alt="Redbud" class="wc-mc-feature-image" src="https://mk0gardengoodsd3tst9.kinstacdn.com/wp-content/uploads/2017/09/EASTERN-REDBUD.jpg?_previewAsset_=true">
+				<p>Common Name: Sycamore</p><br>
+				<p>Latin Name: Platanus</p><br>
+				<p>Family: Platanaceae</p><br>
+				<p>Tree Height: 90 Feet</p><br>
+			</div>
+			<!-- TREE EXAMPLE ^^^^^^^^^^-->
+			<!-- TREE EXAMPLE vvvvvvvvvv-->
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-7">
+					<img alt="Redbud" class="wc-mc-feature-image" src="https://mk0gardengoodsd3tst9.kinstacdn.com/wp-content/uploads/2017/09/EASTERN-REDBUD.jpg?_previewAsset_=true">
+				<p>Common Name: Evergreen Dogwood</p><br>
+				<p>Latin Name: Cornus capitata</p><br>
+				<p>Family: Cornaceae</p><br>
+				<p>Tree Height: 8 Feet</p><br>
+			</div>
+			<!-- TREE EXAMPLE ^^^^^^^^^^-->
+			<!-- TREE EXAMPLE vvvvvvvvvv-->
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-8">
+					<img alt="Redbud" class="wc-mc-feature-image" src="https://mk0gardengoodsd3tst9.kinstacdn.com/wp-content/uploads/2017/09/EASTERN-REDBUD.jpg?_previewAsset_=true">
+				<p>Common Name: Hackberry</p><br>
+				<p>Latin Name: Celtis occidentalis</p><br>
+				<p>Family: Cannabaceae</p><br>
+				<p>Tree Height: 35 Feet</p><br>
+			</div>
+			<!-- TREE EXAMPLE ^^^^^^^^^^-->
+			<!-- TREE EXAMPLE vvvvvvvvvv-->
+			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-9">
+					<img alt="Redbud" class="wc-mc-feature-image" src="https://mk0gardengoodsd3tst9.kinstacdn.com/wp-content/uploads/2017/09/EASTERN-REDBUD.jpg?_previewAsset_=true">
+				<p>Common Name: Liberty Elm</p><br>
+				<p>Latin Name: Ulmus</p><br>
+				<p>Family: Ulmaceae</p><br>
+				<p>Tree Height: 10 Feet</p><br>
 			</div>
 			<!-- TREE EXAMPLE ^^^^^^^^^^-->
 			<div class="wc-mc-description wc-mc-detail-box-content" id="wc-mc-desc-x37181">
