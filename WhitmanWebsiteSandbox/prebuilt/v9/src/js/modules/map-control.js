@@ -66,6 +66,7 @@ var MapControl = (function($){
 		mapBoxID:'wc-map-box',
 		placesLayer:null,
 		pointsLayer:null,
+		treeLayer:null, // added for tree layer
 		hoverID:null,
 		highlightMarkers:[],
 		selectedFeatureIDs:[], /*[2]*/
@@ -121,6 +122,9 @@ var MapControl = (function($){
 					console.log(s.placesGeoJson);
 					s.pointsGeoJson = params.points;
 					console.log(s.pointsGeoJson);
+					s.treesGeoJson = params.trees;
+					console.log(s.treesGeoJson);
+					var cat = true;
 					s.imagesUrl = params.imagesUrl;
 					s.mapTileFolder = params.mapTileFolder;
 					s.initCenter = new google.maps.LatLng(params.center.lat,params.center.long);
@@ -217,11 +221,10 @@ var MapControl = (function($){
 		**********************************/
 		s.map.addListener('zoom_changed',function(){
 			//BOGUS BOOLEAN FOR TESTING
-			var showTrees = true;
-			if (showTrees) {
-				s.pointsLayer.setMap(s.map);
-				s.placesLayer.setMap(null);
-			} else if(s.map.getZoom() > 13){
+			s.treeLayer.setMap(null); // attempting to mirror places layer, which should be visible all the time
+			s.pointsLayer.setMap(s.map);
+			s.placesLayer.setMap(null);
+			if(s.map.getZoom() > 13){
 				s.pointsLayer.setMap(null);
 				s.placesLayer.setMap(s.map);
 			}
@@ -273,6 +276,9 @@ var MapControl = (function($){
 			checkZoom to switch that if you zoom out enough.
 	**********************************/
 	function addFeatures(){
+		s.treeLayer = new google.maps.Data();
+		s.treeLayer.addGeoJson(s.placesGeoJson);
+		s.treeLayer.setMap(s.map); 
 		s.placesLayer = new google.maps.Data();
 		s.placesLayer.addGeoJson(s.placesGeoJson);
 		s.placesLayer.setMap(s.map);/*[1]*/
@@ -387,6 +393,9 @@ var MapControl = (function($){
 			var polygonId	= feature.getProperty('polygonId');
 			showPlace(polygonId,'boxB','boxA');
 		});
+		s.treeLayer.addListener('click', function(event){
+			console.log("hello world");
+		})
 	}
 
 	/**********************************
