@@ -29,6 +29,8 @@ var MapControl = (function($){
 		map:null,
 		placesGeoJson:null,
 		pointsGeoJson:null,
+		featureGeoJson:null,
+		tagsDictionary:null,
 		imagesUrl:null,
 		initCenter: undefined,
 		currentCenter: undefined,
@@ -66,6 +68,7 @@ var MapControl = (function($){
 		mapBoxID:'wc-map-box',
 		placesLayer:null,
 		pointsLayer:null,
+		additionalFeatureLayer:null,
 		hoverID:null,
 		highlightMarkers:[],
 		selectedFeatureIDs:[], /*[2]*/
@@ -118,9 +121,15 @@ var MapControl = (function($){
 					$('html').addClass('wc-map-page');
 					s.isMobile = !Globals.s.breakpointChecks.sm;
 					s.placesGeoJson = dataCleanUp(params.places,'places');
-					console.log(s.placesGeoJson);
 					s.pointsGeoJson = params.points;
-					console.log(s.pointsGeoJson);
+					s.featureGeoJson = params.additionalFeatures;
+					s.tagsDictionary = [];
+					// for(var i = 0; i < s.featureGeoJson; i++) {
+						
+					// 	// s.tagsDictionary[i] = 
+					// 	//Store tags in dictionary for later showing specific data
+					// }
+					console.log(s.featureGeoJson);
 					s.imagesUrl = params.imagesUrl;
 					s.mapTileFolder = params.mapTileFolder;
 					s.initCenter = new google.maps.LatLng(params.center.lat,params.center.long);
@@ -217,15 +226,16 @@ var MapControl = (function($){
 		**********************************/
 		s.map.addListener('zoom_changed',function(){
 			//BOGUS BOOLEAN FOR TESTING
-			var showTrees = true;
-			if (showTrees) {
-				s.pointsLayer.setMap(s.map);
-				s.placesLayer.setMap(null);
-			} else if(s.map.getZoom() > 13){
+			// var showTrees = true;
+			// if (showTrees) {
+			// 	s.pointsLayer.setMap(s.map);
+			// 	s.placesLayer.setMap(null);
+			// } else 
+			if(s.map.getZoom() > 13) {
 				s.pointsLayer.setMap(null);
 				s.placesLayer.setMap(s.map);
 			}
-			else{
+			else {
 				s.pointsLayer.setMap(s.map);
 				s.placesLayer.setMap(null);
 			}
@@ -278,7 +288,9 @@ var MapControl = (function($){
 		s.placesLayer.setMap(s.map);/*[1]*/
 		s.pointsLayer = new google.maps.Data();
 		s.pointsLayer.addGeoJson(s.pointsGeoJson);
-		s.pointsLayer.setMap(s.map);
+		// s.pointsLayer.setMap(s.map);
+		s.additionalFeatureLayer = new google.maps.Data();
+		s.additionalFeatureLayer.addGeoJson(s.featureGeoJson);
 		
 		/**********************************
 		Style the polygons
@@ -786,13 +798,13 @@ var MapControl = (function($){
 	function populatePlacesList(){
 		//PLACES
 		var data = s.placesGeoJson;
-		var points = s.pointsGeoJson;
+		var additionalFeatures = s.featureGeoJson;
 		for(var i=0; i<data.features.length;i++){
 			var feature = data.features[i];
 			s.controls.featuresList.push(feature.properties);
 		}
-		for(var i = 0; i < points.features.length; i++) {
-			var feature = points.features[i];
+		for(var i = 0; i < additionalFeatures.features.length; i++) {
+			var feature = additionalFeatures.features[i];
 			s.controls.featuresList.push(feature.properties);
 		}
 
@@ -821,14 +833,14 @@ var MapControl = (function($){
 	**********************************/
 	function populateCategoriesList(){
 		var data = s.placesGeoJson;
-		var points = s.pointsGeoJson;
+		var additionalFeatures = s.featureGeoJson;
 		for (var i=0;i<data.features.length;i++){
 			var feature = data.features[i];
 			var tags = feature.properties.tags;
 			s.controls.categoriesList = s.controls.categoriesList.concat(tags);
 		}
-		for(var i = 0; i < points.features.length; i++) {
-			var feature = points.features[i];
+		for(var i = 0; i < additionalFeatures.features.length; i++) {
+			var feature = additionalFeatures.features[i];
 			var tags = feature.properties.tags;
 			s.controls.categoriesList = s.controls.categoriesList.concat(tags);
 		}
@@ -878,6 +890,16 @@ var MapControl = (function($){
 		categoryListMarkup += '</ul></div>';
 		box.append(categoryListMarkup);
 		setTimeout(function() {showDetailBox(box);}, 100);/*[1]*/
+		showFeature(category);
+	}
+
+	function showFeature(category) {
+		// if(category == "Trees") {
+		// 	s.pointsLayer.setMap(null);
+		// 	s.placesLayer.setMap(null);
+		// 	s.additionalFeatureLayer.setMap(s.map);
+			
+		// }
 	}
 
 	/**********************************
