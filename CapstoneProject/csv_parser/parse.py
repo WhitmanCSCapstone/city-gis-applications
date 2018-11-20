@@ -62,20 +62,21 @@ class Parser:
         for row in reader:
 
             new_obj = {}
-            new_obj["type"] = "feature"
+            new_obj["type"] = "Feature"
             new_obj["geometry"] = {}
             new_obj["geometry"]["type"] = "Point"
 
             # get Latitude and Longitude and add to new_obj
             new_obj["geometry"]["coordinates"] = []
-            new_obj["geometry"]["coordinates"].append(list(row.values())[self.Lat])
-            new_obj["geometry"]["coordinates"].append(list(row.values())[self.Long])
+            new_obj["geometry"]["coordinates"].append(float(list(row.values())[self.Long]))
+            new_obj["geometry"]["coordinates"].append(float(list(row.values())[self.Lat]))
 
             # add id and parse and add name of object
             new_obj["properties"] = {}
-            new_obj["properties"]["id"] = self.id
-            new_obj["properties"]["polygonId"] = self.id
+            new_obj["properties"]["id"] = str(self.id)
+            new_obj["properties"]["polygonId"] = str(self.id)
             new_obj["properties"]["name"] = list(row.values())[self.Name]
+            new_obj["properties"]["tags"] = ["Trees", "Nature"]
 
             # add to outFile, seperate each object with a comma for easy integration into map-data.html
             json.dump(new_obj, jsonfile)

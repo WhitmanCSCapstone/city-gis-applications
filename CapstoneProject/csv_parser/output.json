@@ -3,21 +3,6 @@
     "geometry": {
         "type": "Point",
         "coordinates": [
-            "Lat",
-            "Long"
-        ]
-    },
-    "properties": {
-        "id": 5,
-        "polygonId": 5,
-        "name": "Common_Name"
-    }
-},
-{
-    "type": "feature",
-    "geometry": {
-        "type": "Point",
-        "coordinates": [
             "46.0727500",
             "-118.33053"
         ]
