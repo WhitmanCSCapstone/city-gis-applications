@@ -9876,7 +9876,7 @@ var MapControl = (function($){
 					s.placesGeoJson = dataCleanUp(params.places,'places');
 					s.pointsGeoJson = params.points;
 					s.featureGeoJson = params.additionalFeatures;
-					s.tagsDictionary = [];
+					//s.tagsDictionary = [];
 					// for(var i = 0; i < s.featureGeoJson; i++) {
 						
 					// 	// s.tagsDictionary[i] = 
@@ -9979,10 +9979,14 @@ var MapControl = (function($){
 		**********************************/
 		s.map.addListener('zoom_changed',function(){
 			//BOGUS BOOLEAN FOR TESTING
+			// s.pointsLayer.setMap(s.map);
+			// s.placesLayer.setMap(s.map);
+			// s.additionalFeatureLayer.setMap(s.map);
 			// var showTrees = true;
 			// if (showTrees) {
-			// 	s.pointsLayer.setMap(s.map);
+			// 	s.pointsLayer.setMap(null);
 			// 	s.placesLayer.setMap(null);
+			// 	s.additionalFeatureLayer.setMap(s.map);
 			// } else 
 			if(s.map.getZoom() > 13) {
 				s.pointsLayer.setMap(null);
@@ -9990,6 +9994,7 @@ var MapControl = (function($){
 			}
 			else {
 				s.pointsLayer.setMap(s.map);
+				s.additionalFeatureLayer.setMap(null);
 				s.placesLayer.setMap(null);
 			}
 		});
@@ -10044,6 +10049,7 @@ var MapControl = (function($){
 		// s.pointsLayer.setMap(s.map);
 		s.additionalFeatureLayer = new google.maps.Data();
 		s.additionalFeatureLayer.addGeoJson(s.featureGeoJson);
+
 		
 		/**********************************
 		Style the polygons
@@ -10152,6 +10158,17 @@ var MapControl = (function($){
 			var polygonId	= feature.getProperty('polygonId');
 			showPlace(polygonId,'boxB','boxA');
 		});
+
+		/**********************************
+		AdditionalFeatures - Click
+		**********************************/
+		s.additionalFeatureLayer.addListener('click',function(event){
+			console.log("CLICK LISTENER");
+			var feature 	= event.feature;
+			var polygonId	= feature.getProperty('polygonId');
+			showPlace(polygonId,'boxB','boxA');
+			feature.setAnimation(google.maps.Animation.BOUNCE);
+		});
 	}
 
 	/**********************************
@@ -10230,6 +10247,10 @@ var MapControl = (function($){
 			});
 			s.map.fitBounds(tempBounds);
 			if(s.map.getZoom() > s.initZoom){s.map.setZoom(s.initZoom); } /*[4]*/
+			s.currentCenter = s.map.getCenter();
+		}
+		else if (type = 'additionalFeature') {
+			s.map.setZoom(s.initZoom);
 			s.currentCenter = s.map.getCenter();
 		}
 	}
@@ -10399,7 +10420,9 @@ var MapControl = (function($){
 	function refocus(){
 		var theBox = topDetailBox();
 		if(typeof theBox.data().boxOptions !== 'undefined' && theBox.data().boxOptions.selectedCategory !== 'undefined'){
-			focusMap('Group','',theBox.data().boxOptions.selectedCategory);
+			showFeature(theBox.data().boxOptions.selectedCategory);
+		} else {
+			s.additionalFeatureLayer.setMap(null);
 		}
 	}
 
@@ -10624,7 +10647,7 @@ var MapControl = (function($){
 					selectedCategory:category,
 					boxType:'categoryBox'
 				});
-		focusMap('Group','',category);
+		showFeature(category);
 		var categoryListMarkup =
 			'<div class="wc-mc-detail-box-content">'+
 				'<ul class="wc-mc-items-list">';
@@ -10643,16 +10666,20 @@ var MapControl = (function($){
 		categoryListMarkup += '</ul></div>';
 		box.append(categoryListMarkup);
 		setTimeout(function() {showDetailBox(box);}, 100);/*[1]*/
-		showFeature(category);
+		
 	}
 
 	function showFeature(category) {
-		// if(category == "Trees") {
-		// 	s.pointsLayer.setMap(null);
-		// 	s.placesLayer.setMap(null);
-		// 	s.additionalFeatureLayer.setMap(s.map);
-			
-		// }
+		if(category === "Trees") {
+			s.pointsLayer.setMap(null);
+			s.placesLayer.setMap(null);
+			s.additionalFeatureLayer.setMap(s.map);
+			focusMap('additionalFeature', '', category);
+		} else {
+			focusMap('Group','',category);
+			s.additionalFeatureLayer.setMap(null);
+			s.placesLayer.setMap(s.map);
+		}
 	}
 
 	/**********************************
