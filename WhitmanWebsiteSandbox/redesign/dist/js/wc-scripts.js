@@ -9783,7 +9783,7 @@ var MapControl = (function($){
 		placesGeoJson:null,
 		pointsGeoJson:null,
 		featureGeoJson:null,
-		tagsDictionary:null,
+		uniqueTags:null,
 		imagesUrl:null,
 		initCenter: undefined,
 		currentCenter: undefined,
@@ -9876,13 +9876,33 @@ var MapControl = (function($){
 					s.placesGeoJson = dataCleanUp(params.places,'places');
 					s.pointsGeoJson = params.points;
 					s.featureGeoJson = params.additionalFeatures;
-					// s.tagsDictionary = {};
-					// for(var i = 0; i < s.featureGeoJson; i++) {
-						
-					// 	// s.tagsDictionary[i] = 
-					// 	//Store tags in dictionary for later showing specific data
-					// }
-					console.log(s.featureGeoJson);
+					var allTags = [];
+					var index = 0;
+					//Store tags in dictionary for later showing specific data
+					for(var i = 0; i < s.featureGeoJson.features.length; i++) {
+						for(var j = 0; j < s.featureGeoJson.features[i].properties.tags.length; j++) {
+							allTags[index] = s.featureGeoJson.features[i].properties.tags[j];
+							index++;
+						}						
+					}
+
+					//Remove Duplicates from allTags
+					function removeDups(tags) {
+						let unique = {};
+						tags.forEach(function(i) {
+						  if(!unique[i]) {
+							unique[i] = true;
+						  }
+						});
+						return Object.keys(unique);
+					}
+					  
+					s.uniqueTags = removeDups(allTags);
+
+
+					// console.log("TAGS DICTIONARY");
+					// console.log(s.uniqueTags);
+					// console.log(s.featureGeoJson);
 					s.imagesUrl = params.imagesUrl;
 					s.mapTileFolder = params.mapTileFolder;
 					s.initCenter = new google.maps.LatLng(params.center.lat,params.center.long);
@@ -10682,14 +10702,49 @@ var MapControl = (function($){
 	}
 
 	function showAdditionalFeatures(category) {
-		if(category === "Trees") {
+		var isAdditionalFeatureTag = false;
+		for (var i = 0; i < s.uniqueTags.length; i++) {
+			if (category === s.uniqueTags[i]) {
+				isAdditionalFeatureTag = true;
+				break;
+			}
+		}
+		
+		s.additionalFeatureLayer = new google.maps.Data();
+
+		if(isAdditionalFeatureTag) {
 			s.pointsLayer.setMap(null);
 			s.placesLayer.setMap(null);
+			console.log("FEATURE GEO JSON");
+			console.log(s.featureGeoJson);
+			var chosenFeaturesGeoJson = {
+				"type": "FeatureCollection",
+				"features": []
+			}
+			var j = 0;
+			for (var i = 0; i < s.featureGeoJson.features.length; i++) {
+				for(var p = 0; p < s.featureGeoJson.features[i].properties.tags.length; p++) {
+					if(s.featureGeoJson.features[i].properties.tags[p] == category) {
+						chosenFeaturesGeoJson.features[j] = s.featureGeoJson.features[i];
+						j++;
+					}
+				}
+				
+			}
+			console.log("CHOSEN FEATURES: ");
+			console.log(chosenFeaturesGeoJson);
+			
+			s.additionalFeatureLayer.addGeoJson(chosenFeaturesGeoJson);
+			s.placesLayer.setMap(null);
+			s.pointsLayer.setMap(null);
+
 			s.additionalFeatureLayer.setMap(s.map);
+			
 			focusMap('additionalFeatures', '', category);
 		} else {
 			focusMap('Group','',category);
 			s.additionalFeatureLayer.setMap(null);
+			newFeatureLayer.setMap(null);
 			s.placesLayer.setMap(s.map);
 		}
 	}
