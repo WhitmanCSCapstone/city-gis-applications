@@ -123,7 +123,7 @@ var MapControl = (function($){
 					s.placesGeoJson = dataCleanUp(params.places,'places');
 					s.pointsGeoJson = params.points;
 					s.featureGeoJson = params.additionalFeatures;
-					//s.tagsDictionary = [];
+					// s.tagsDictionary = {};
 					// for(var i = 0; i < s.featureGeoJson; i++) {
 						
 					// 	// s.tagsDictionary[i] = 
@@ -413,8 +413,8 @@ var MapControl = (function($){
 			console.log("CLICK LISTENER");
 			var feature 	= event.feature;
 			var polygonId	= feature.getProperty('polygonId');
+			
 			showPlace(polygonId,'boxB','boxA');
-			feature.setAnimation(google.maps.Animation.BOUNCE);
 		});
 	}
 
@@ -496,9 +496,21 @@ var MapControl = (function($){
 			if(s.map.getZoom() > s.initZoom){s.map.setZoom(s.initZoom); } /*[4]*/
 			s.currentCenter = s.map.getCenter();
 		}
-		else if (type = 'additionalFeature') {
+		else if (type === 'additionalFeatures') {
+			console.log('additionalFeatures');
 			s.map.setZoom(s.initZoom);
 			s.currentCenter = s.map.getCenter();
+		}
+		else if (type == 'additionalFeature') {
+			console.log("additionalFeature");
+			console.log("ID", id);
+			s.additionalFeatureLayer.forEach(function(feature){
+				if (feature.getProperty('id') === id){
+					var geometry = feature.getGeometry().get();
+					s.map.panTo(geometry);
+					s.map.setZoom(s.initZoom);
+				}
+			});
 		}
 	}
 
@@ -667,7 +679,7 @@ var MapControl = (function($){
 	function refocus(){
 		var theBox = topDetailBox();
 		if(typeof theBox.data().boxOptions !== 'undefined' && theBox.data().boxOptions.selectedCategory !== 'undefined'){
-			showFeature(theBox.data().boxOptions.selectedCategory);
+			showAdditionalFeatures(theBox.data().boxOptions.selectedCategory);
 		} else {
 			s.additionalFeatureLayer.setMap(null);
 		}
@@ -894,7 +906,7 @@ var MapControl = (function($){
 					selectedCategory:category,
 					boxType:'categoryBox'
 				});
-		showFeature(category);
+		showAdditionalFeatures(category);
 		var categoryListMarkup =
 			'<div class="wc-mc-detail-box-content">'+
 				'<ul class="wc-mc-items-list">';
@@ -916,12 +928,12 @@ var MapControl = (function($){
 		
 	}
 
-	function showFeature(category) {
+	function showAdditionalFeatures(category) {
 		if(category === "Trees") {
 			s.pointsLayer.setMap(null);
 			s.placesLayer.setMap(null);
 			s.additionalFeatureLayer.setMap(s.map);
-			focusMap('additionalFeature', '', category);
+			focusMap('additionalFeatures', '', category);
 		} else {
 			focusMap('Group','',category);
 			s.additionalFeatureLayer.setMap(null);
@@ -941,9 +953,16 @@ var MapControl = (function($){
 	[4] 	Need to add this clause for it to work properly when the user hits "back"
 	**********************************/
 	function showPlace(id){
-		focusMap('Polygon',id);
-		console.log(s.controls.featuresListLookup)
-		console.log(s.controls.featuresListLookup[id]);
+		//DOING FIRST ONE FOR DEBUGGING SHOULD BE A LOOP OVER ALL TAGS ON OBJECT AND IF
+		//ANY ARE IN THE DICTIONARY CALL SHOW ADDITIONAL FEATURE WITH THAT FEATURE
+		if(s.controls.featuresListLookup[id].tags[0] == "Trees") {
+			console.log("IN SHOW PLACE CORRECT");
+			focusMap('additionalFeature', id, "Trees");
+		} else {
+			focusMap('Polygon',id);
+		}
+		console.log("COMMENT1", s.controls.featuresListLookup)
+		console.log("COMMENT2", s.controls.featuresListLookup[id]);
 		var feature 	= s.controls.featuresListLookup[id],
 			box 		= newDetailBox({
 							customClass:'wc-mc-place-detail-box',
