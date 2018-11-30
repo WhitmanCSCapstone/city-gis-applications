@@ -10729,7 +10729,6 @@ var MapControl = (function($){
 						j++;
 					}
 				}
-				
 			}
 			console.log("CHOSEN FEATURES: ");
 			console.log(chosenFeaturesGeoJson);
@@ -10738,7 +10737,19 @@ var MapControl = (function($){
 			s.placesLayer.setMap(null);
 			s.pointsLayer.setMap(null);
 
+			/**********************************
+			AdditionalFeatures - Click
+			**********************************/
+			s.additionalFeatureLayer.addListener('click',function(event){
+				console.log("CLICK LISTENER");
+				var feature 	= event.feature;
+				var polygonId	= feature.getProperty('polygonId');
+				
+				showPlace(polygonId,'boxB','boxA');
+			});
+
 			s.additionalFeatureLayer.setMap(s.map);
+			
 			
 			focusMap('additionalFeatures', '', category);
 		} else {
@@ -10763,7 +10774,16 @@ var MapControl = (function($){
 	function showPlace(id){
 		//DOING FIRST ONE FOR DEBUGGING SHOULD BE A LOOP OVER ALL TAGS ON OBJECT AND IF
 		//ANY ARE IN THE DICTIONARY CALL SHOW ADDITIONAL FEATURE WITH THAT FEATURE
-		if(s.controls.featuresListLookup[id].tags[0] == "Trees") {
+		var isFeature = false;
+		for (var i = 0; i < s.controls.featuresListLookup[id].tags.length; i++) {
+			for (var j = 0; j < s.uniqueTags.length; j++) {
+				if (s.controls.featuresListLookup[id].tags[i] === s.uniqueTags[j]) {
+					isFeature = true;
+					break;
+				}
+			}
+		}
+		if(isFeature) {
 			console.log("IN SHOW PLACE CORRECT");
 			focusMap('additionalFeature', id, "Trees");
 		} else {
