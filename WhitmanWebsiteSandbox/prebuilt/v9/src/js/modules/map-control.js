@@ -123,31 +123,6 @@ var MapControl = (function($){
 					s.placesGeoJson = dataCleanUp(params.places,'places');
 					s.pointsGeoJson = params.points;
 					s.featureGeoJson = params.additionalFeatures;
-<<<<<<< HEAD
-					s.tagsDictionary = [];
-					var isInDict;
-					var tagIndex = 0;
-					//Sets up tags dictionary to contain all tags in the additional features
-					for (var i = 0; i < s.featureGeoJson.features.length; i++) {
-						 for (var j = 0; j < s.featureGeoJson.features[i].properties.tags.length; j++) {
-							var tag = s.featureGeoJson.features[i].properties.tags[j]
-							isInDict = false;
-							for (var p = 0; p < s.tagsDictionary.length; p++) {
-								if (tag == s.tagsDictionary[p]) {
-									isInDict = true;
-									break;
-								}
-							}
-							if (!isInDict) {
-								s.tagsDictionary[tagIndex] = tag;
-								tagIndex = tagIndex + 1;
-							}
-						 }
-					}
-					console.log("FEATURES");
-					console.log(s.tagsDictionary);
-					console.log(s.featureGeoJson);
-=======
 					var allTags = [];
 					var index = 0;
 					//Store tags in dictionary for later showing specific data
@@ -175,7 +150,6 @@ var MapControl = (function($){
 					// console.log("TAGS DICTIONARY");
 					// console.log(s.uniqueTags);
 					// console.log(s.featureGeoJson);
->>>>>>> master
 					s.imagesUrl = params.imagesUrl;
 					s.mapTileFolder = params.mapTileFolder;
 					s.initCenter = new google.maps.LatLng(params.center.lat,params.center.long);
@@ -974,17 +948,6 @@ var MapControl = (function($){
 		
 	}
 
-<<<<<<< HEAD
-	function showFeature(category) {
-		//COMMENT
-		var isFeatureCategory = false;
-		for (var i = 0; i < s.tagsDictionary.length; i++) {
-			if (category == s.tagsDictionary[i]) {
-				isFeatureCategory = true;
-			}
-		}
-		if(isFeatureCategory) {
-=======
 	function showAdditionalFeatures(category) {
 		var isAdditionalFeatureTag = false;
 		for (var i = 0; i < s.uniqueTags.length; i++) {
@@ -997,7 +960,6 @@ var MapControl = (function($){
 		s.additionalFeatureLayer = new google.maps.Data();
 
 		if(isAdditionalFeatureTag) {
->>>>>>> master
 			s.pointsLayer.setMap(null);
 			s.placesLayer.setMap(null);
 			console.log("FEATURE GEO JSON");
