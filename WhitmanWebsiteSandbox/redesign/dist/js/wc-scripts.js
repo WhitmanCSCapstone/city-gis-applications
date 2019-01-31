@@ -9783,7 +9783,7 @@ var MapControl = (function($){
 		placesGeoJson:null,
 		pointsGeoJson:null,
 		featureGeoJson:null,
-		tagsDictionary:null,
+		uniqueTags:null,
 		imagesUrl:null,
 		initCenter: undefined,
 		currentCenter: undefined,
@@ -9876,6 +9876,7 @@ var MapControl = (function($){
 					s.placesGeoJson = dataCleanUp(params.places,'places');
 					s.pointsGeoJson = params.points;
 					s.featureGeoJson = params.additionalFeatures;
+<<<<<<< HEAD
 					s.tagsDictionary = [];
 					var isInDict;
 					var tagIndex = 0;
@@ -9899,6 +9900,35 @@ var MapControl = (function($){
 					console.log("FEATURES");
 					console.log(s.tagsDictionary);
 					console.log(s.featureGeoJson);
+=======
+					var allTags = [];
+					var index = 0;
+					//Store tags in dictionary for later showing specific data
+					for(var i = 0; i < s.featureGeoJson.features.length; i++) {
+						for(var j = 0; j < s.featureGeoJson.features[i].properties.tags.length; j++) {
+							allTags[index] = s.featureGeoJson.features[i].properties.tags[j];
+							index++;
+						}						
+					}
+
+					//Remove Duplicates from allTags
+					function removeDups(tags) {
+						let unique = {};
+						tags.forEach(function(i) {
+						  if(!unique[i]) {
+							unique[i] = true;
+						  }
+						});
+						return Object.keys(unique);
+					}
+					  
+					s.uniqueTags = removeDups(allTags);
+
+
+					// console.log("TAGS DICTIONARY");
+					// console.log(s.uniqueTags);
+					// console.log(s.featureGeoJson);
+>>>>>>> master
 					s.imagesUrl = params.imagesUrl;
 					s.mapTileFolder = params.mapTileFolder;
 					s.initCenter = new google.maps.LatLng(params.center.lat,params.center.long);
@@ -10182,8 +10212,8 @@ var MapControl = (function($){
 			console.log("CLICK LISTENER");
 			var feature 	= event.feature;
 			var polygonId	= feature.getProperty('polygonId');
+			
 			showPlace(polygonId,'boxB','boxA');
-			feature.setAnimation(google.maps.Animation.BOUNCE);
 		});
 	}
 
@@ -10265,9 +10295,21 @@ var MapControl = (function($){
 			if(s.map.getZoom() > s.initZoom){s.map.setZoom(s.initZoom); } /*[4]*/
 			s.currentCenter = s.map.getCenter();
 		}
-		else if (type = 'additionalFeature') {
+		else if (type === 'additionalFeatures') {
+			console.log('additionalFeatures');
 			s.map.setZoom(s.initZoom);
 			s.currentCenter = s.map.getCenter();
+		}
+		else if (type == 'additionalFeature') {
+			console.log("additionalFeature");
+			console.log("ID", id);
+			s.additionalFeatureLayer.forEach(function(feature){
+				if (feature.getProperty('id') === id){
+					var geometry = feature.getGeometry().get();
+					s.map.panTo(geometry);
+					s.map.setZoom(s.initZoom);
+				}
+			});
 		}
 	}
 
@@ -10436,7 +10478,7 @@ var MapControl = (function($){
 	function refocus(){
 		var theBox = topDetailBox();
 		if(typeof theBox.data().boxOptions !== 'undefined' && theBox.data().boxOptions.selectedCategory !== 'undefined'){
-			showFeature(theBox.data().boxOptions.selectedCategory);
+			showAdditionalFeatures(theBox.data().boxOptions.selectedCategory);
 		} else {
 			s.additionalFeatureLayer.setMap(null);
 		}
@@ -10663,7 +10705,7 @@ var MapControl = (function($){
 					selectedCategory:category,
 					boxType:'categoryBox'
 				});
-		showFeature(category);
+		showAdditionalFeatures(category);
 		var categoryListMarkup =
 			'<div class="wc-mc-detail-box-content">'+
 				'<ul class="wc-mc-items-list">';
@@ -10685,6 +10727,7 @@ var MapControl = (function($){
 		
 	}
 
+<<<<<<< HEAD
 	function showFeature(category) {
 		//COMMENT
 		var isFeatureCategory = false;
@@ -10694,13 +10737,63 @@ var MapControl = (function($){
 			}
 		}
 		if(isFeatureCategory) {
+=======
+	function showAdditionalFeatures(category) {
+		var isAdditionalFeatureTag = false;
+		for (var i = 0; i < s.uniqueTags.length; i++) {
+			if (category === s.uniqueTags[i]) {
+				isAdditionalFeatureTag = true;
+				break;
+			}
+		}
+		
+		s.additionalFeatureLayer = new google.maps.Data();
+
+		if(isAdditionalFeatureTag) {
+>>>>>>> master
 			s.pointsLayer.setMap(null);
 			s.placesLayer.setMap(null);
+			console.log("FEATURE GEO JSON");
+			console.log(s.featureGeoJson);
+			var chosenFeaturesGeoJson = {
+				"type": "FeatureCollection",
+				"features": []
+			}
+			var j = 0;
+			for (var i = 0; i < s.featureGeoJson.features.length; i++) {
+				for(var p = 0; p < s.featureGeoJson.features[i].properties.tags.length; p++) {
+					if(s.featureGeoJson.features[i].properties.tags[p] == category) {
+						chosenFeaturesGeoJson.features[j] = s.featureGeoJson.features[i];
+						j++;
+					}
+				}
+			}
+			console.log("CHOSEN FEATURES: ");
+			console.log(chosenFeaturesGeoJson);
+			
+			s.additionalFeatureLayer.addGeoJson(chosenFeaturesGeoJson);
+			s.placesLayer.setMap(null);
+			s.pointsLayer.setMap(null);
+
+			/**********************************
+			AdditionalFeatures - Click
+			**********************************/
+			s.additionalFeatureLayer.addListener('click',function(event){
+				console.log("CLICK LISTENER");
+				var feature 	= event.feature;
+				var polygonId	= feature.getProperty('polygonId');
+				
+				showPlace(polygonId,'boxB','boxA');
+			});
+
 			s.additionalFeatureLayer.setMap(s.map);
-			focusMap('additionalFeature', '', category);
+			
+			
+			focusMap('additionalFeatures', '', category);
 		} else {
 			focusMap('Group','',category);
 			s.additionalFeatureLayer.setMap(null);
+			newFeatureLayer.setMap(null);
 			s.placesLayer.setMap(s.map);
 		}
 	}
@@ -10717,9 +10810,25 @@ var MapControl = (function($){
 	[4] 	Need to add this clause for it to work properly when the user hits "back"
 	**********************************/
 	function showPlace(id){
-		focusMap('Polygon',id);
-		console.log(s.controls.featuresListLookup)
-		console.log(s.controls.featuresListLookup[id]);
+		//DOING FIRST ONE FOR DEBUGGING SHOULD BE A LOOP OVER ALL TAGS ON OBJECT AND IF
+		//ANY ARE IN THE DICTIONARY CALL SHOW ADDITIONAL FEATURE WITH THAT FEATURE
+		var isFeature = false;
+		for (var i = 0; i < s.controls.featuresListLookup[id].tags.length; i++) {
+			for (var j = 0; j < s.uniqueTags.length; j++) {
+				if (s.controls.featuresListLookup[id].tags[i] === s.uniqueTags[j]) {
+					isFeature = true;
+					break;
+				}
+			}
+		}
+		if(isFeature) {
+			console.log("IN SHOW PLACE CORRECT");
+			focusMap('additionalFeature', id, "Trees");
+		} else {
+			focusMap('Polygon',id);
+		}
+		console.log("COMMENT1", s.controls.featuresListLookup)
+		console.log("COMMENT2", s.controls.featuresListLookup[id]);
 		var feature 	= s.controls.featuresListLookup[id],
 			box 		= newDetailBox({
 							customClass:'wc-mc-place-detail-box',
