@@ -9899,10 +9899,6 @@ var MapControl = (function($){
 					  
 					s.uniqueTags = removeDups(allTags);
 
-
-					// console.log("TAGS DICTIONARY");
-					// console.log(s.uniqueTags);
-					// console.log(s.featureGeoJson);
 					s.imagesUrl = params.imagesUrl;
 					s.mapTileFolder = params.mapTileFolder;
 					s.initCenter = new google.maps.LatLng(params.center.lat,params.center.long);
@@ -10365,7 +10361,7 @@ var MapControl = (function($){
 		**********************************/
 		if(s.isMobile){
 			$(s.controls.mapControlsBox).css({'top':'2000px'}); /*[1]*/
-			toggleCategories('places');
+			// toggleCategories('places');
 			s.controls.mobileDetailBoxContentHeight = Globals.s.windowHeight - (Globals.s.headerHeight + 140); /*[2]*/
 			var styleString = '.wc-map-controls .wc-mc-detail-box .wc-mc-detail-box-content{height: '+s.controls.mobileDetailBoxContentHeight+'px;} ';
 			styleString += '.wc-map-controls.wc-mc-hidden{bottom: -'+s.controls.mobileDetailBoxContentHeight+'px;} ';
@@ -10755,7 +10751,7 @@ var MapControl = (function($){
 		} else {
 			focusMap('Group','',category);
 			s.additionalFeatureLayer.setMap(null);
-			newFeatureLayer.setMap(null);
+			// newFeatureLayer.setMap(null);
 			s.placesLayer.setMap(s.map);
 		}
 	}
