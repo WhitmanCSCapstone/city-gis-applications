@@ -39,6 +39,14 @@ class Parser:
     # TitleName is the index of the column in the csv being parsed that refers to what the point will be called
     def setTitle(self, NameIndex): 
         self.Name = NameIndex
+    
+    # TitleName is the index of the column in the csv being parsed that refers to what the point will be called
+    def setChampion(self, championIndex): 
+        self.Champion = championIndex
+    
+    # TitleName is the index of the column in the csv being parsed that refers to what the point will be called
+    def setStaked(self, stakeIndex): 
+        self.Staked = stakeIndex
 
     # set the names of all columns in csv. Pass in ordered tuple of strings.
     def setAllFields(self, strings): 
@@ -76,7 +84,20 @@ class Parser:
             new_obj["properties"]["id"] = str(self.id)
             new_obj["properties"]["polygonId"] = str(self.id)
             new_obj["properties"]["name"] = list(row.values())[self.Name]
-            new_obj["properties"]["tags"] = ["Trees", "Nature"]
+            if (list(row.values())[21] == "") :
+                if (str(list(row.values())[25][0]) == 'Yes') :
+                    new_obj["properties"]["tags"] = ["Trees", "Nature", "Staked"]
+                else :
+                    new_obj["properties"]["tags"] = ["Trees", "Nature"]
+            else :
+                if (str(list(row.values())[25][0]) == "Yes") :
+                    new_obj["properties"]["tags"] = ["Trees", "Nature", "Staked", "Champion"]
+                else :
+                    new_obj["properties"]["tags"] = ["Trees", "Nature", "Champion"]
+            
+            
+
+            
 
             # add to outFile, seperate each object with a comma for easy integration into map-data.html
             json.dump(new_obj, jsonfile)
@@ -92,16 +113,24 @@ def main():
     p = Parser("tree_data")
 
     # Latitude column
-    p.setLat(2)
+    p.setLat(0)
 
     # Longitude column
-    p.setLong(3)
+    p.setLong(1)
 
     # Common Name column
-    p.setTitle(7)
+    p.setTitle(8)
+
+    p.setChampion(20)
+
+    p.setStaked(24)
 
     # ordered tuple of all column names in the CSV
-    p.setAllFields(("ID", "Waypoint_Number", "Lat","Long","Common_Name", "Alt_ft", "Zone", "Tree_Number"))
+    p.setAllFields(("Lat", "Long", "Alt_ft","Tree_ID", "Zone", "Tree_Number", 
+                    "Group", "Leaf_Fall", "Common_Name", "Genus", "Species_Name", 
+                    "Family", "Origin", "Age_Class", "CBH_in", "DBH", "Tree_Height_ft", 
+                    "Canopy_Radius_ft", "Condition_Class", "Priority", "Champion_Tree", 
+                    "Memorial_Tree", "BlueMtnNative", "PacificSlopeNative", "Staked"))
 
     # parse the file at that path (from current directory)
     p.parse('../Data/TreeData.csv')

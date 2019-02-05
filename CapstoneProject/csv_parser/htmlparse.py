@@ -65,8 +65,6 @@ class Parser:
             treeHTML = "<div class=\"wc-mc-description wc-mc-detail-box-content\" id=\"wc-mc-desc-" + str(self.id) + "\">" + "\n"
             treeHTML = treeHTML + "<p>Common Name: " + list(row.values())[self.Name] + "</p><br>\n"
             treeHTML = treeHTML + "<p>Latin Name: " + list(row.values())[self.latinName] + "</p><br>\n"
-            treeHTML = treeHTML + "<p>Family: " + list(row.values())[self.family] + "</p><br>\n"
-            treeHTML = treeHTML + "<p>Tree Height: " + list(row.values())[self.height] + "</p><br>\n"
             treeHTML = treeHTML + "</div>\n"
 
             # add to outFile, seperate each object with a comma for easy integration into map-data.html
@@ -82,16 +80,16 @@ def main():
     p = Parser("tree_data")
 
     # Common Name column
-    p.setTitle(7)
+    p.setTitle(8)
 
-    p.setLatinName(8)
-
-    p.setFamily(9)
+    p.setLatinName(10)
     
-    p.setHeight(10)
-
     # ordered tuple of all column names in the CSV
-    p.setAllFields(("ID", "Waypoint_Number", "Lat","Long","Common_Name", "Alt_ft", "Zone", "Tree_Number", "Latin_Name", "Family", "Tree_Height_ft"))
+    p.setAllFields(("Lat", "Long", "Alt_ft","Tree_ID", "Zone", "Tree_Number", 
+                    "Group", "Leaf_Fall", "Common_Name", "Genus", "Species_Name", 
+                    "Family", "Origin", "Age_Class", "CBH_in", "DBH", "Tree_Height_ft", 
+                    "Canopy_Radius_ft", "Condition_Class", "Priority", "Champion_Tree", 
+                    "Memorial_Tree", "BlueMtnNative", "PacificSlopeNative", "Staked"))
 
     # parse the file at that path (from current directory)
     p.parse('../Data/TreeData.csv')
