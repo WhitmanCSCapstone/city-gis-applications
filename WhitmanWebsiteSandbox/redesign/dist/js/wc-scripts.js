@@ -10145,6 +10145,7 @@ var MapControl = (function($){
 				clearHighlights();
 				s.placesLayer.revertStyle();
 				s.pointsLayer.revertStyle();
+				s.additionalFeatureLayer.revertStyle();
 				s.hoverID = null;
 			}
 		});
@@ -10162,6 +10163,7 @@ var MapControl = (function($){
 		Points - Hover
 		**********************************/
 		s.pointsLayer.addListener('mouseover',function(event){
+			console.log("Hover");
 			var id = event.feature.getProperty('id');
 			s.hoverID	= id;
 		});
@@ -10175,16 +10177,6 @@ var MapControl = (function($){
 			showPlace(polygonId,'boxB','boxA');
 		});
 
-		/**********************************
-		AdditionalFeatures - Click
-		**********************************/
-		s.additionalFeatureLayer.addListener('click',function(event){
-			console.log("CLICK LISTENER");
-			var feature 	= event.feature;
-			var polygonId	= feature.getProperty('polygonId');
-			
-			showPlace(polygonId,'boxB','boxA');
-		});
 	}
 
 	/**********************************
@@ -10742,6 +10734,13 @@ var MapControl = (function($){
 				var polygonId	= feature.getProperty('polygonId');
 				
 				showPlace(polygonId,'boxB','boxA');
+			});
+			/**********************************
+			AdditionalFeatures - hover
+			**********************************/
+			s.additionalFeatureLayer.addListener('mouseover',function(event){
+				console.log("Hover LISTENER");
+
 			});
 
 			s.additionalFeatureLayer.setMap(s.map);
