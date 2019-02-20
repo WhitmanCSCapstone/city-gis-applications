@@ -9839,6 +9839,7 @@ var MapControl = (function($){
 			categoriesDOMList:$('#wc-map-categories-list'),
 			placesButton:$('#wc-map-places-button'),
 			categoriesButton:$('#wc-map-categories-button'),
+			toursButton:$('#wc-map-categories-button'),
 			allDetailBoxes:$('.wc-mc-detail-box'),
 			baseDetailBox:'#wc-mc-detail-box-base',
 			hideButtonClass:'wc-mc-hide-button',
