@@ -4,52 +4,95 @@
 //       property which points to the next object in the tour
 //    2. Array tours which are arrays of ids and use currently existing functionality
 //       Tour functionality would be triggered upon clicking the tour category.
-// var tours = {
-//    "type": "FeatureCollection",
-//    "features": [
-//       {
-//          "type":"Feature",
-//          "geometry":{  
-//             "type":"Point",
-//             "coordinates":[  
-//                -118.33053,
-//                46.07275
-//             ]
-//          },
-//          "properties":{  
-//             "id":"5",
-//             "nextStop":"6",
-//             "polygonId":"5",
-//             "name":"Eastern Redbud",
-//             "tags":[  
-//                "Trees",
-//                "Nature",
-//                "Other"
-//             ]
-//          }
-//       },
-//       {  
-//          "type":"Feature",
-//          "geometry":{  
-//             "type":"Point",
-//             "coordinates":[  
-//                -118.33056,
-//                46.07273
-//             ]
-//          },
-//          "properties":{  
-//             "id":"6",
-//             "nextStop":"7",
-//             "polygonId":"6",
-//             "name":"Eastern Redbud",
-//             "tags":[  
-//                "Trees",
-//                "Nature"
-//             ]
-//          }
-//       },
-//    ]
-// }
+var tours = {
+   "type": "FeatureCollection",
+   "features": [
+      {
+         "type":"FeatureCollection",
+         "features": [
+            {
+               "geometry":{  
+                  "type":"Point",
+                  "coordinates":[  
+                     -118.33053,
+                     46.07275
+                  ]
+               },
+               "properties":{  
+                  "id":"5",
+                  "nextStop":"6",
+                  "polygonId":"5",
+                  "name":"First Eastern Redbud",
+               }
+            },
+            {
+               "geometry":{  
+                  "type":"Point",
+                  "coordinates":[  
+                     -118.33037,
+                     46.07249
+                  ]
+               },
+               "properties":{  
+                  "id":"6",
+                  "nextStop":"7",
+                  "polygonId":"6",
+                  "name":"Second Eastern Redbud",
+               }
+            },
+         ],
+         "properties":{  
+            "name":"First Tree Tour",
+            "first":"5",
+            "tags":[  
+               "Tours"
+            ]
+         } 
+      },
+      {
+         "type":"FeatureCollection",
+         "features": [
+            {
+               "geometry":{  
+                  "type":"Point",
+                  "coordinates":[  
+                     -118.32964,
+                     46.07227
+                  ]
+               },
+               "properties":{  
+                  "id":"10",
+                  "nextStop":"14",
+                  "polygonId":"10",
+                  "name":"Eastern Redbud",
+               }
+            },
+            {
+               "geometry":{  
+                  "type":"Point",
+                  "coordinates":[  
+                     -118.32643,
+                     46.07164
+                  ]
+               },
+               "properties":{  
+                  "id":"14",
+                  "nextStop":"21",
+                  "polygonId":"14",
+                  "name":"Eastern Redbud",
+               }
+            },
+         ],
+         "properties":{  
+            "name":"Second Tree Tour",
+            "first":"10",
+            "tags":[  
+               "Tours"
+            ]
+         } 
+      },
+   ]
+}
 	var featurePoints = {
 		"type": "FeatureCollection",
 		"features": [
@@ -68,8 +111,7 @@
       "name":"Western Larch (tamarack)",
       "tags":[  
          "Trees",
-         "Nature",
-         "Staked"
+         "Staked Trees"
       ]
    }
 },
@@ -88,8 +130,7 @@
       "name":"Bosnian Pine",
       "tags":[  
          "Trees",
-         "Nature",
-         "Staked"
+         "Staked Trees"
       ]
    }
 },
@@ -107,8 +148,7 @@
       "polygonId":"7",
       "name":"London Plane Tree",
       "tags":[  
-         "Trees",
-         "Nature"
+         "Trees"
       ]
    }
 },
@@ -126,8 +166,7 @@
       "polygonId":"8",
       "name":"Tulip Tree",
       "tags":[  
-         "Trees",
-         "Nature"
+         "Trees"
       ]
    }
 },
@@ -145,8 +184,7 @@
       "polygonId":"9",
       "name":"Japanese Maple",
       "tags":[  
-         "Trees",
-         "Nature"
+         "Trees"
       ]
    }
 },
@@ -164,8 +202,7 @@
       "polygonId":"10",
       "name":"Smoke Tree",
       "tags":[  
-         "Trees",
-         "Nature"
+         "Trees"
       ]
    }
 },
@@ -184,8 +221,7 @@
       "name":"Pine",
       "tags":[  
          "Trees",
-         "Nature",
-         "Staked"
+         "Staked Trees"
       ]
    }
 },
@@ -203,8 +239,7 @@
       "polygonId":"12",
       "name":"Silver Maple",
       "tags":[  
-         "Trees",
-         "Nature"
+         "Trees"
       ]
    }
 },
@@ -222,8 +257,7 @@
       "polygonId":"13",
       "name":"Maidenhair Tree",
       "tags":[  
-         "Trees",
-         "Nature"
+         "Trees"
       ]
    }
 },
@@ -241,8 +275,7 @@
       "polygonId":"14",
       "name":"Double Weeping Cherry",
       "tags":[  
-         "Trees",
-         "Nature"
+         "Trees"
       ]
    }
 },
@@ -260,8 +293,7 @@
       "polygonId":"15",
       "name":"Mimosa, Silk",
       "tags":[  
-         "Trees",
-         "Nature"
+         "Trees"
       ]
    }
 },
@@ -279,8 +311,7 @@
       "polygonId":"16",
       "name":"Elderberry",
       "tags":[  
-         "Trees",
-         "Nature"
+         "Trees"
       ]
    }
 },
@@ -298,8 +329,7 @@
       "polygonId":"17",
       "name":"Group of Hiba Cedars (2)",
       "tags":[  
-         "Trees",
-         "Nature"
+         "Trees"
       ]
    }
 },
@@ -318,8 +348,7 @@
       "name":"Norway Maple",
       "tags":[  
          "Trees",
-         "Nature",
-         "Staked"
+         "Staked Trees"
       ]
    }
 },
@@ -337,8 +366,7 @@
       "polygonId":"19",
       "name":"Black Locust",
       "tags":[  
-         "Trees",
-         "Nature"
+         "Trees"
       ]
    }
 },
@@ -357,9 +385,8 @@
       "name":"Hackberry",
       "tags":[  
          "Trees",
-         "Nature",
-         "Staked",
-         "Champion"
+         "Staked Trees",
+         "Champion Trees"
       ]
    }
 },
@@ -378,8 +405,7 @@
       "name":"Pine",
       "tags":[  
          "Trees",
-         "Nature",
-         "Staked"
+         "Staked Trees"
       ]
    }
 },
@@ -397,8 +423,7 @@
       "polygonId":"22",
       "name":"Southern Magnolia",
       "tags":[  
-         "Trees",
-         "Nature"
+         "Trees"
       ]
    }
 },
@@ -416,8 +441,7 @@
       "polygonId":"23",
       "name":"Sycamore Maple",
       "tags":[  
-         "Trees",
-         "Nature"
+         "Trees"
       ]
    }
 },
@@ -435,8 +459,7 @@
       "polygonId":"24",
       "name":"Japanese Maple",
       "tags":[  
-         "Trees",
-         "Nature"
+         "Trees"
       ]
    }
 },
@@ -455,9 +478,8 @@
       "name":"Golden Rain Tree",
       "tags":[  
          "Trees",
-         "Nature",
-         "Staked",
-         "Champion"
+         "Staked Trees",
+         "Champion Trees"
       ]
    }
 },
@@ -476,8 +498,7 @@
       "name":"Black Mulberry",
       "tags":[  
          "Trees",
-         "Nature",
-         "Staked"
+         "Staked Trees"
       ]
    }
 },
@@ -496,8 +517,7 @@
       "name":"Crack Willow",
       "tags":[  
          "Trees",
-         "Nature",
-         "Staked"
+         "Staked Trees"
       ]
    }
 },
@@ -515,8 +535,7 @@
       "polygonId":"28",
       "name":"American Sweet Gum",
       "tags":[  
-         "Trees",
-         "Nature"
+         "Trees"
       ]
    }
 },
@@ -534,8 +553,7 @@
       "polygonId":"29",
       "name":"Big Leaf Maple",
       "tags":[  
-         "Trees",
-         "Nature"
+         "Trees"
       ]
    }
 },
@@ -553,8 +571,7 @@
       "polygonId":"30",
       "name":"India Horse Chestnut",
       "tags":[  
-         "Trees",
-         "Nature"
+         "Trees"
       ]
    }
 },
@@ -573,8 +590,7 @@
       "name":"Elm",
       "tags":[  
          "Trees",
-         "Nature",
-         "Staked"
+         "Staked Trees"
       ]
    }
 },
@@ -593,8 +609,7 @@
       "name":"American Sycamore",
       "tags":[  
          "Trees",
-         "Nature",
-         "Staked"
+         "Staked Trees"
       ]
    }
 },
@@ -612,8 +627,7 @@
       "polygonId":"33",
       "name":"Birch",
       "tags":[  
-         "Trees",
-         "Nature"
+         "Trees"
       ]
    }
 },
@@ -632,8 +646,7 @@
       "name":"Alaska Cedar",
       "tags":[  
          "Trees",
-         "Nature",
-         "Staked"
+         "Staked Trees"
       ]
    }
 },
@@ -652,8 +665,7 @@
       "name":"Giant Sequioa",
       "tags":[  
          "Trees",
-         "Nature",
-         "Staked"
+         "Staked Trees"
       ]
    }
 },
@@ -672,8 +684,7 @@
       "name":"Hawthorne",
       "tags":[  
          "Trees",
-         "Nature",
-         "Staked"
+         "Staked Trees"
       ]
    }
 },
@@ -692,8 +703,7 @@
       "name":"Kentucky Coffee Tree",
       "tags":[  
          "Trees",
-         "Nature",
-         "Staked"
+         "Staked Trees"
       ]
    }
 },
@@ -712,9 +722,8 @@
       "name":"Weeping Cherry",
       "tags":[  
          "Trees",
-         "Nature",
-         "Staked",
-         "Champion"
+         "Staked Trees",
+         "Champion Trees"
       ]
    }
 },
@@ -732,8 +741,7 @@
       "polygonId":"39",
       "name":"European Hornbeam",
       "tags":[  
-         "Trees",
-         "Nature"
+         "Trees"
       ]
    }
 },
@@ -752,8 +760,7 @@
       "name":"Wych Elm",
       "tags":[  
          "Trees",
-         "Nature",
-         "Staked"
+         "Staked Trees"
       ]
    }
 },
@@ -771,8 +778,7 @@
       "polygonId":"41",
       "name":"Ash",
       "tags":[  
-         "Trees",
-         "Nature"
+         "Trees"
       ]
    }
 },
@@ -790,8 +796,7 @@
       "polygonId":"42",
       "name":"Elm",
       "tags":[  
-         "Trees",
-         "Nature"
+         "Trees"
       ]
    }
 },
@@ -809,8 +814,7 @@
       "polygonId":"43",
       "name":"Western Red Cedar",
       "tags":[  
-         "Trees",
-         "Nature"
+         "Trees"
       ]
    }
 },
@@ -828,8 +832,7 @@
       "polygonId":"44",
       "name":"Western Red Cedar",
       "tags":[  
-         "Trees",
-         "Nature"
+         "Trees"
       ]
    }
 },
@@ -847,8 +850,7 @@
       "polygonId":"45",
       "name":"Pine",
       "tags":[  
-         "Trees",
-         "Nature"
+         "Trees"
       ]
    }
 },
@@ -866,8 +868,7 @@
       "polygonId":"46",
       "name":"Alaska Cedar",
       "tags":[  
-         "Trees",
-         "Nature"
+         "Trees"
       ]
    }
 },
@@ -885,8 +886,7 @@
       "polygonId":"47",
       "name":"Bur Oak",
       "tags":[  
-         "Trees",
-         "Nature"
+         "Trees"
       ]
    }
 },
@@ -904,8 +904,7 @@
       "polygonId":"48",
       "name":"Western Red Cedar",
       "tags":[  
-         "Trees",
-         "Nature"
+         "Trees"
       ]
    }
 },
@@ -923,8 +922,7 @@
       "polygonId":"49",
       "name":"Spruce",
       "tags":[  
-         "Trees",
-         "Nature"
+         "Trees"
       ]
    }
 },
@@ -942,8 +940,7 @@
       "polygonId":"50",
       "name":"Fern-leaf Beech",
       "tags":[  
-         "Trees",
-         "Nature"
+         "Trees"
       ]
    }
 },
@@ -962,8 +959,7 @@
       "name":"Spruce",
       "tags":[  
          "Trees",
-         "Nature",
-         "Staked"
+         "Staked Trees"
       ]
    }
 },
@@ -981,8 +977,7 @@
       "polygonId":"52",
       "name":"Western Larch (tamarack)",
       "tags":[  
-         "Trees",
-         "Nature"
+         "Trees"
       ]
    }
 },
@@ -1000,8 +995,7 @@
       "polygonId":"53",
       "name":"Japanese White Pine",
       "tags":[  
-         "Trees",
-         "Nature"
+         "Trees"
       ]
    }
 },	

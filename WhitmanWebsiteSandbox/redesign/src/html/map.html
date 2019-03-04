@@ -42,7 +42,6 @@ include "pieces/layout/header.html"
 								<div class="wc-button-toggle">
 									<a id="wc-map-categories-button" class="wc-toggled wc-mc-button">Categories</a>
 									<a id="wc-map-places-button" class="wc-mc-button">Places</a>
-									<a id="wc-map-tours-button" class="wc-mc-button">Tours</a>
 								</div>
 								<a class="wc-mc-mobile-hide-button wc-mc-hide-button wc-mc-header-box wc-mc-button wc-main-menu-button wc-toggle">
 									<span class="wc-text">Menu</span>
@@ -56,9 +55,6 @@ include "pieces/layout/header.html"
 									<!-- CATEGORIES - populated by JS -->
 								</ul>
 								<ul class="wc-mc-items-list wc-map-places-list wc-hidden" id="wc-map-places-list">
-									<!-- PLACES - populated by JS -->
-								</ul>
-								<ul class="wc-mc-items-list wc-map-tours-list wc-hidden" id="wc-map-tours-list">
 									<!-- PLACES - populated by JS -->
 								</ul>
 							</div>
@@ -111,6 +107,7 @@ include "pieces/layout/header.html"
 						places:mapPlaces,
 						points:mapPoints,
 						additionalFeatures:featurePoints,
+						tours:tours,
 						mapTileFolder:'images_map/map/MapTiles111617',
 						imagesUrl:'images_map/',
 						center:{lat:46.070919,long:-118.330110}

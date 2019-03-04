@@ -69,6 +69,7 @@ var MapControl = (function($){
 		placesLayer:null,
 		pointsLayer:null,
 		additionalFeatureLayer:null,
+		tourLayer:null,
 		hoverID:null,
 		highlightMarkers:[],
 		selectedFeatureIDs:[], /*[2]*/
@@ -86,7 +87,6 @@ var MapControl = (function($){
 			categoriesDOMList:$('#wc-map-categories-list'),
 			placesButton:$('#wc-map-places-button'),
 			categoriesButton:$('#wc-map-categories-button'),
-			toursButton:$('#wc-map-categories-button'),
 			allDetailBoxes:$('.wc-mc-detail-box'),
 			baseDetailBox:'#wc-mc-detail-box-base',
 			hideButtonClass:'wc-mc-hide-button',
@@ -124,6 +124,8 @@ var MapControl = (function($){
 					s.placesGeoJson = dataCleanUp(params.places,'places');
 					s.pointsGeoJson = params.points;
 					s.featureGeoJson = params.additionalFeatures;
+					s.tours = params.tours;
+					console.log(s.tours);
 					var allTags = [];
 					var index = 0;
 					//Store tags in dictionary for later showing specific data
@@ -146,7 +148,8 @@ var MapControl = (function($){
 					}
 					  
 					s.uniqueTags = removeDups(allTags);
-
+					s.uniqueTags[s.uniqueTags.length] = "Tours";
+					
 					s.imagesUrl = params.imagesUrl;
 					s.mapTileFolder = params.mapTileFolder;
 					s.initCenter = new google.maps.LatLng(params.center.lat,params.center.long);
@@ -166,6 +169,14 @@ var MapControl = (function($){
 					});
 				}
 			});
+		}
+	}
+
+	function toggleBounce() {
+		if (marker.getAnimation() !== null) {
+		  marker.setAnimation(null);
+		} else {
+		  marker.setAnimation(google.maps.Animation.BOUNCE);
 		}
 	}
 
@@ -521,6 +532,10 @@ var MapControl = (function($){
 				}
 			});
 		}
+		else if (type == 'tour') {
+			console.log("tour");
+			s.map.panTo(s.map.getCenter());
+		}
 	}
 
 	/**********************************
@@ -687,6 +702,7 @@ var MapControl = (function($){
 	**********************************/
 	function refocus(){
 		var theBox = topDetailBox();
+		console.log("REFOCUS");
 		if(typeof theBox.data().boxOptions !== 'undefined' && theBox.data().boxOptions.selectedCategory !== 'undefined'){
 			showAdditionalFeatures(theBox.data().boxOptions.selectedCategory);
 		} else {
@@ -839,7 +855,7 @@ var MapControl = (function($){
 	Notes
 	[1] 	Just using the polygons, not the points
 	**********************************/
-	function populatePlacesList(){
+	function populatePlacesList() {
 		//PLACES
 		var data = s.placesGeoJson;
 		var additionalFeatures = s.featureGeoJson;
@@ -877,16 +893,13 @@ var MapControl = (function($){
 	**********************************/
 	function populateCategoriesList(){
 		var data = s.placesGeoJson;
-		var additionalFeatures = s.featureGeoJson;
 		for (var i=0;i<data.features.length;i++){
 			var feature = data.features[i];
 			var tags = feature.properties.tags;
 			s.controls.categoriesList = s.controls.categoriesList.concat(tags);
 		}
-		for(var i = 0; i < additionalFeatures.features.length; i++) {
-			var feature = additionalFeatures.features[i];
-			var tags = feature.properties.tags;
-			s.controls.categoriesList = s.controls.categoriesList.concat(tags);
+		for(var i = 0; i < s.uniqueTags.length; i++) {
+			s.controls.categoriesList = s.controls.categoriesList.concat(s.uniqueTags[i]);
 		}
 
 		s.controls.categoriesList = alphabetize('default',s.controls.categoriesList);
@@ -911,29 +924,35 @@ var MapControl = (function($){
 	**********************************/
 	function showCategory(category){
 		console.log(category);
-		var box = newDetailBox({
-					selectedCategory:category,
-					boxType:'categoryBox'
-				});
-		showAdditionalFeatures(category);
-		var categoryListMarkup =
+		
+		if (category == "Tours") {
+			showTours(category)
+		} else {
+			var box = newDetailBox({
+				selectedCategory:category,
+				boxType:'categoryBox'
+			});
+			showAdditionalFeatures(category);
+			var categoryListMarkup =
 			'<div class="wc-mc-detail-box-content">'+
 				'<ul class="wc-mc-items-list">';
-		for (var i = 0; i < s.controls.featuresList.length; i++) {
-			var thisFeature = s.controls.featuresList[i];
-			if (thisFeature.tags.indexOf(category) !== -1){
-				var listItemMarkup =
-					'<li role="menuitem">'+
-						'<a class="wc-item-link wc-mc-place-button wc-mc-button" data-show-place="{\'placeId\'\:\''+thisFeature.id+'\'}" title="'+thisFeature.name+'">'+
-							'<span class="wc-text">'+thisFeature.name+'</span><svg class="wc-icon" viewBox="0 0 32 32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="'+Globals.s.svgFilePath+'#icon-arrow-right"></use></svg>'+
-						'</a>'+
-					'</li>';
-				categoryListMarkup += listItemMarkup;
+			for (var i = 0; i < s.controls.featuresList.length; i++) {
+				var thisFeature = s.controls.featuresList[i];
+				if (thisFeature.tags.indexOf(category) !== -1){
+					var listItemMarkup =
+						'<li role="menuitem">'+
+							'<a class="wc-item-link wc-mc-place-button wc-mc-button" data-show-place="{\'placeId\'\:\''+thisFeature.id+'\'}" title="'+thisFeature.name+'">'+
+								'<span class="wc-text">'+thisFeature.name+'</span><svg class="wc-icon" viewBox="0 0 32 32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="'+Globals.s.svgFilePath+'#icon-arrow-right"></use></svg>'+
+							'</a>'+
+						'</li>';
+					categoryListMarkup += listItemMarkup;
+				}
 			}
+			categoryListMarkup += '</ul></div>';
+			box.append(categoryListMarkup);
+			setTimeout(function() {showDetailBox(box);}, 100);/*[1]*/
 		}
-		categoryListMarkup += '</ul></div>';
-		box.append(categoryListMarkup);
-		setTimeout(function() {showDetailBox(box);}, 100);/*[1]*/
+		
 		
 	}
 
@@ -1003,6 +1022,34 @@ var MapControl = (function($){
 		}
 	}
 
+	function showTours(category) {
+		console.log("SHOW TOURS CALLED");
+		var box = newDetailBox({
+					selectedCategory:category,
+					boxType:'categoryBox'
+				});
+		var categoryListMarkup =
+			'<div class="wc-mc-detail-box-content">'+
+				'<ul class="wc-mc-items-list">';
+		console.log(s.tours);
+		for (var i = 0; i < s.tours.features.length; i++) {
+			var thisFeature = s.tours.features[i].properties;
+			console.log(thisFeature)
+			var listItemMarkup =
+				'<li role="menuitem">'+
+					'<a class="wc-item-link wc-mc-place-button wc-mc-button" data-show-place="{\'placeId\'\:\''+thisFeature.first+'\'}" title="'+thisFeature.name+'">'+
+						'<span class="wc-text">'+thisFeature.name+'</span><svg class="wc-icon" viewBox="0 0 32 32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="'+Globals.s.svgFilePath+'#icon-arrow-right"></use></svg>'+
+					'</a>'+
+				'</li>';
+			categoryListMarkup += listItemMarkup;
+		}
+		categoryListMarkup += '</ul></div>';
+		box.append(categoryListMarkup);
+		setTimeout(function() {showDetailBox(box);}, 100);/*[1]*/
+		focusMap('additionalFeatures', '', category);
+
+	}
+
 	/**********************************
 	Map Controls - Show the place's information
 
@@ -1045,12 +1092,12 @@ var MapControl = (function($){
 				showDetailBox(box);
 				mobileSizing();
 			}, 100);
-		if(s.isMobile){
-			showHideControls('hide');
-		}
-		else{
-			showHideControls('show');
-		}
+		// if(s.isMobile){
+		// 	showHideControls('hide');
+		// }
+		// else{
+		// 	showHideControls('show');
+		// }
 		s.controls.notReady++;
 		setTimeout(function() { /*[3]*/
 			cleanupDetailBoxes('.wc-mc-place-detail-box');

@@ -459,7 +459,6 @@ THE HEADER
 								<div class="wc-button-toggle">
 									<a id="wc-map-categories-button" class="wc-toggled wc-mc-button">Categories</a>
 									<a id="wc-map-places-button" class="wc-mc-button">Places</a>
-									<a id="wc-map-tours-button" class="wc-mc-button">Tours</a>
 								</div>
 								<a class="wc-mc-mobile-hide-button wc-mc-hide-button wc-mc-header-box wc-mc-button wc-main-menu-button wc-toggle">
 									<span class="wc-text">Menu</span>
@@ -473,9 +472,6 @@ THE HEADER
 									<!-- CATEGORIES - populated by JS -->
 								</ul>
 								<ul class="wc-mc-items-list wc-map-places-list wc-hidden" id="wc-map-places-list">
-									<!-- PLACES - populated by JS -->
-								</ul>
-								<ul class="wc-mc-items-list wc-map-tours-list wc-hidden" id="wc-map-tours-list">
 									<!-- PLACES - populated by JS -->
 								</ul>
 							</div>
@@ -526,52 +522,95 @@ THE HEADER
 			//       property which points to the next object in the tour
 			//    2. Array tours which are arrays of ids and use currently existing functionality
 			//       Tour functionality would be triggered upon clicking the tour category.
-			// var tours = {
-			//    "type": "FeatureCollection",
-			//    "features": [
-			//       {
-			//          "type":"Feature",
-			//          "geometry":{  
-			//             "type":"Point",
-			//             "coordinates":[  
-			//                -118.33053,
-			//                46.07275
-			//             ]
-			//          },
-			//          "properties":{  
-			//             "id":"5",
-			//             "nextStop":"6",
-			//             "polygonId":"5",
-			//             "name":"Eastern Redbud",
-			//             "tags":[  
-			//                "Trees",
-			//                "Nature",
-			//                "Other"
-			//             ]
-			//          }
-			//       },
-			//       {  
-			//          "type":"Feature",
-			//          "geometry":{  
-			//             "type":"Point",
-			//             "coordinates":[  
-			//                -118.33056,
-			//                46.07273
-			//             ]
-			//          },
-			//          "properties":{  
-			//             "id":"6",
-			//             "nextStop":"7",
-			//             "polygonId":"6",
-			//             "name":"Eastern Redbud",
-			//             "tags":[  
-			//                "Trees",
-			//                "Nature"
-			//             ]
-			//          }
-			//       },
-			//    ]
-			// }
+			var tours = {
+			   "type": "FeatureCollection",
+			   "features": [
+			      {
+			         "type":"FeatureCollection",
+			         "features": [
+			            {
+			               "geometry":{  
+			                  "type":"Point",
+			                  "coordinates":[  
+			                     -118.33053,
+			                     46.07275
+			                  ]
+			               },
+			               "properties":{  
+			                  "id":"5",
+			                  "nextStop":"6",
+			                  "polygonId":"5",
+			                  "name":"First Eastern Redbud",
+			               }
+			            },
+			            {
+			               "geometry":{  
+			                  "type":"Point",
+			                  "coordinates":[  
+			                     -118.33037,
+			                     46.07249
+			                  ]
+			               },
+			               "properties":{  
+			                  "id":"6",
+			                  "nextStop":"7",
+			                  "polygonId":"6",
+			                  "name":"Second Eastern Redbud",
+			               }
+			            },
+			         ],
+			         "properties":{  
+			            "name":"First Tree Tour",
+			            "first":"5",
+			            "tags":[  
+			               "Tours"
+			            ]
+			         } 
+			      },
+			      {
+			         "type":"FeatureCollection",
+			         "features": [
+			            {
+			               "geometry":{  
+			                  "type":"Point",
+			                  "coordinates":[  
+			                     -118.32964,
+			                     46.07227
+			                  ]
+			               },
+			               "properties":{  
+			                  "id":"10",
+			                  "nextStop":"14",
+			                  "polygonId":"10",
+			                  "name":"Eastern Redbud",
+			               }
+			            },
+			            {
+			               "geometry":{  
+			                  "type":"Point",
+			                  "coordinates":[  
+			                     -118.32643,
+			                     46.07164
+			                  ]
+			               },
+			               "properties":{  
+			                  "id":"14",
+			                  "nextStop":"21",
+			                  "polygonId":"14",
+			                  "name":"Eastern Redbud",
+			               }
+			            },
+			         ],
+			         "properties":{  
+			            "name":"Second Tree Tour",
+			            "first":"10",
+			            "tags":[  
+			               "Tours"
+			            ]
+			         } 
+			      },
+			   ]
+			}
 				var featurePoints = {
 					"type": "FeatureCollection",
 					"features": [
@@ -590,8 +629,7 @@ THE HEADER
 			      "name":"Western Larch (tamarack)",
 			      "tags":[  
 			         "Trees",
-			         "Nature",
-			         "Staked"
+			         "Staked Trees"
 			      ]
 			   }
 			},
@@ -610,8 +648,7 @@ THE HEADER
 			      "name":"Bosnian Pine",
 			      "tags":[  
 			         "Trees",
-			         "Nature",
-			         "Staked"
+			         "Staked Trees"
 			      ]
 			   }
 			},
@@ -629,8 +666,7 @@ THE HEADER
 			      "polygonId":"7",
 			      "name":"London Plane Tree",
 			      "tags":[  
-			         "Trees",
-			         "Nature"
+			         "Trees"
 			      ]
 			   }
 			},
@@ -648,8 +684,7 @@ THE HEADER
 			      "polygonId":"8",
 			      "name":"Tulip Tree",
 			      "tags":[  
-			         "Trees",
-			         "Nature"
+			         "Trees"
 			      ]
 			   }
 			},
@@ -667,8 +702,7 @@ THE HEADER
 			      "polygonId":"9",
 			      "name":"Japanese Maple",
 			      "tags":[  
-			         "Trees",
-			         "Nature"
+			         "Trees"
 			      ]
 			   }
 			},
@@ -686,8 +720,7 @@ THE HEADER
 			      "polygonId":"10",
 			      "name":"Smoke Tree",
 			      "tags":[  
-			         "Trees",
-			         "Nature"
+			         "Trees"
 			      ]
 			   }
 			},
@@ -706,8 +739,7 @@ THE HEADER
 			      "name":"Pine",
 			      "tags":[  
 			         "Trees",
-			         "Nature",
-			         "Staked"
+			         "Staked Trees"
 			      ]
 			   }
 			},
@@ -725,8 +757,7 @@ THE HEADER
 			      "polygonId":"12",
 			      "name":"Silver Maple",
 			      "tags":[  
-			         "Trees",
-			         "Nature"
+			         "Trees"
 			      ]
 			   }
 			},
@@ -744,8 +775,7 @@ THE HEADER
 			      "polygonId":"13",
 			      "name":"Maidenhair Tree",
 			      "tags":[  
-			         "Trees",
-			         "Nature"
+			         "Trees"
 			      ]
 			   }
 			},
@@ -763,8 +793,7 @@ THE HEADER
 			      "polygonId":"14",
 			      "name":"Double Weeping Cherry",
 			      "tags":[  
-			         "Trees",
-			         "Nature"
+			         "Trees"
 			      ]
 			   }
 			},
@@ -782,8 +811,7 @@ THE HEADER
 			      "polygonId":"15",
 			      "name":"Mimosa, Silk",
 			      "tags":[  
-			         "Trees",
-			         "Nature"
+			         "Trees"
 			      ]
 			   }
 			},
@@ -801,8 +829,7 @@ THE HEADER
 			      "polygonId":"16",
 			      "name":"Elderberry",
 			      "tags":[  
-			         "Trees",
-			         "Nature"
+			         "Trees"
 			      ]
 			   }
 			},
@@ -820,8 +847,7 @@ THE HEADER
 			      "polygonId":"17",
 			      "name":"Group of Hiba Cedars (2)",
 			      "tags":[  
-			         "Trees",
-			         "Nature"
+			         "Trees"
 			      ]
 			   }
 			},
@@ -840,8 +866,7 @@ THE HEADER
 			      "name":"Norway Maple",
 			      "tags":[  
 			         "Trees",
-			         "Nature",
-			         "Staked"
+			         "Staked Trees"
 			      ]
 			   }
 			},
@@ -859,8 +884,7 @@ THE HEADER
 			      "polygonId":"19",
 			      "name":"Black Locust",
 			      "tags":[  
-			         "Trees",
-			         "Nature"
+			         "Trees"
 			      ]
 			   }
 			},
@@ -879,9 +903,8 @@ THE HEADER
 			      "name":"Hackberry",
 			      "tags":[  
 			         "Trees",
-			         "Nature",
-			         "Staked",
-			         "Champion"
+			         "Staked Trees",
+			         "Champion Trees"
 			      ]
 			   }
 			},
@@ -900,8 +923,7 @@ THE HEADER
 			      "name":"Pine",
 			      "tags":[  
 			         "Trees",
-			         "Nature",
-			         "Staked"
+			         "Staked Trees"
 			      ]
 			   }
 			},
@@ -919,8 +941,7 @@ THE HEADER
 			      "polygonId":"22",
 			      "name":"Southern Magnolia",
 			      "tags":[  
-			         "Trees",
-			         "Nature"
+			         "Trees"
 			      ]
 			   }
 			},
@@ -938,8 +959,7 @@ THE HEADER
 			      "polygonId":"23",
 			      "name":"Sycamore Maple",
 			      "tags":[  
-			         "Trees",
-			         "Nature"
+			         "Trees"
 			      ]
 			   }
 			},
@@ -957,8 +977,7 @@ THE HEADER
 			      "polygonId":"24",
 			      "name":"Japanese Maple",
 			      "tags":[  
-			         "Trees",
-			         "Nature"
+			         "Trees"
 			      ]
 			   }
 			},
@@ -977,9 +996,8 @@ THE HEADER
 			      "name":"Golden Rain Tree",
 			      "tags":[  
 			         "Trees",
-			         "Nature",
-			         "Staked",
-			         "Champion"
+			         "Staked Trees",
+			         "Champion Trees"
 			      ]
 			   }
 			},
@@ -998,8 +1016,7 @@ THE HEADER
 			      "name":"Black Mulberry",
 			      "tags":[  
 			         "Trees",
-			         "Nature",
-			         "Staked"
+			         "Staked Trees"
 			      ]
 			   }
 			},
@@ -1018,8 +1035,7 @@ THE HEADER
 			      "name":"Crack Willow",
 			      "tags":[  
 			         "Trees",
-			         "Nature",
-			         "Staked"
+			         "Staked Trees"
 			      ]
 			   }
 			},
@@ -1037,8 +1053,7 @@ THE HEADER
 			      "polygonId":"28",
 			      "name":"American Sweet Gum",
 			      "tags":[  
-			         "Trees",
-			         "Nature"
+			         "Trees"
 			      ]
 			   }
 			},
@@ -1056,8 +1071,7 @@ THE HEADER
 			      "polygonId":"29",
 			      "name":"Big Leaf Maple",
 			      "tags":[  
-			         "Trees",
-			         "Nature"
+			         "Trees"
 			      ]
 			   }
 			},
@@ -1075,8 +1089,7 @@ THE HEADER
 			      "polygonId":"30",
 			      "name":"India Horse Chestnut",
 			      "tags":[  
-			         "Trees",
-			         "Nature"
+			         "Trees"
 			      ]
 			   }
 			},
@@ -1095,8 +1108,7 @@ THE HEADER
 			      "name":"Elm",
 			      "tags":[  
 			         "Trees",
-			         "Nature",
-			         "Staked"
+			         "Staked Trees"
 			      ]
 			   }
 			},
@@ -1115,8 +1127,7 @@ THE HEADER
 			      "name":"American Sycamore",
 			      "tags":[  
 			         "Trees",
-			         "Nature",
-			         "Staked"
+			         "Staked Trees"
 			      ]
 			   }
 			},
@@ -1134,8 +1145,7 @@ THE HEADER
 			      "polygonId":"33",
 			      "name":"Birch",
 			      "tags":[  
-			         "Trees",
-			         "Nature"
+			         "Trees"
 			      ]
 			   }
 			},
@@ -1154,8 +1164,7 @@ THE HEADER
 			      "name":"Alaska Cedar",
 			      "tags":[  
 			         "Trees",
-			         "Nature",
-			         "Staked"
+			         "Staked Trees"
 			      ]
 			   }
 			},
@@ -1174,8 +1183,7 @@ THE HEADER
 			      "name":"Giant Sequioa",
 			      "tags":[  
 			         "Trees",
-			         "Nature",
-			         "Staked"
+			         "Staked Trees"
 			      ]
 			   }
 			},
@@ -1194,8 +1202,7 @@ THE HEADER
 			      "name":"Hawthorne",
 			      "tags":[  
 			         "Trees",
-			         "Nature",
-			         "Staked"
+			         "Staked Trees"
 			      ]
 			   }
 			},
@@ -1214,8 +1221,7 @@ THE HEADER
 			      "name":"Kentucky Coffee Tree",
 			      "tags":[  
 			         "Trees",
-			         "Nature",
-			         "Staked"
+			         "Staked Trees"
 			      ]
 			   }
 			},
@@ -1234,9 +1240,8 @@ THE HEADER
 			      "name":"Weeping Cherry",
 			      "tags":[  
 			         "Trees",
-			         "Nature",
-			         "Staked",
-			         "Champion"
+			         "Staked Trees",
+			         "Champion Trees"
 			      ]
 			   }
 			},
@@ -1254,8 +1259,7 @@ THE HEADER
 			      "polygonId":"39",
 			      "name":"European Hornbeam",
 			      "tags":[  
-			         "Trees",
-			         "Nature"
+			         "Trees"
 			      ]
 			   }
 			},
@@ -1274,8 +1278,7 @@ THE HEADER
 			      "name":"Wych Elm",
 			      "tags":[  
 			         "Trees",
-			         "Nature",
-			         "Staked"
+			         "Staked Trees"
 			      ]
 			   }
 			},
@@ -1293,8 +1296,7 @@ THE HEADER
 			      "polygonId":"41",
 			      "name":"Ash",
 			      "tags":[  
-			         "Trees",
-			         "Nature"
+			         "Trees"
 			      ]
 			   }
 			},
@@ -1312,8 +1314,7 @@ THE HEADER
 			      "polygonId":"42",
 			      "name":"Elm",
 			      "tags":[  
-			         "Trees",
-			         "Nature"
+			         "Trees"
 			      ]
 			   }
 			},
@@ -1331,8 +1332,7 @@ THE HEADER
 			      "polygonId":"43",
 			      "name":"Western Red Cedar",
 			      "tags":[  
-			         "Trees",
-			         "Nature"
+			         "Trees"
 			      ]
 			   }
 			},
@@ -1350,8 +1350,7 @@ THE HEADER
 			      "polygonId":"44",
 			      "name":"Western Red Cedar",
 			      "tags":[  
-			         "Trees",
-			         "Nature"
+			         "Trees"
 			      ]
 			   }
 			},
@@ -1369,8 +1368,7 @@ THE HEADER
 			      "polygonId":"45",
 			      "name":"Pine",
 			      "tags":[  
-			         "Trees",
-			         "Nature"
+			         "Trees"
 			      ]
 			   }
 			},
@@ -1388,8 +1386,7 @@ THE HEADER
 			      "polygonId":"46",
 			      "name":"Alaska Cedar",
 			      "tags":[  
-			         "Trees",
-			         "Nature"
+			         "Trees"
 			      ]
 			   }
 			},
@@ -1407,8 +1404,7 @@ THE HEADER
 			      "polygonId":"47",
 			      "name":"Bur Oak",
 			      "tags":[  
-			         "Trees",
-			         "Nature"
+			         "Trees"
 			      ]
 			   }
 			},
@@ -1426,8 +1422,7 @@ THE HEADER
 			      "polygonId":"48",
 			      "name":"Western Red Cedar",
 			      "tags":[  
-			         "Trees",
-			         "Nature"
+			         "Trees"
 			      ]
 			   }
 			},
@@ -1445,8 +1440,7 @@ THE HEADER
 			      "polygonId":"49",
 			      "name":"Spruce",
 			      "tags":[  
-			         "Trees",
-			         "Nature"
+			         "Trees"
 			      ]
 			   }
 			},
@@ -1464,8 +1458,7 @@ THE HEADER
 			      "polygonId":"50",
 			      "name":"Fern-leaf Beech",
 			      "tags":[  
-			         "Trees",
-			         "Nature"
+			         "Trees"
 			      ]
 			   }
 			},
@@ -1484,8 +1477,7 @@ THE HEADER
 			      "name":"Spruce",
 			      "tags":[  
 			         "Trees",
-			         "Nature",
-			         "Staked"
+			         "Staked Trees"
 			      ]
 			   }
 			},
@@ -1503,8 +1495,7 @@ THE HEADER
 			      "polygonId":"52",
 			      "name":"Western Larch (tamarack)",
 			      "tags":[  
-			         "Trees",
-			         "Nature"
+			         "Trees"
 			      ]
 			   }
 			},
@@ -1522,8 +1513,7 @@ THE HEADER
 			      "polygonId":"53",
 			      "name":"Japanese White Pine",
 			      "tags":[  
-			         "Trees",
-			         "Nature"
+			         "Trees"
 			      ]
 			   }
 			},	
@@ -5258,6 +5248,7 @@ THE HEADER
 						places:mapPlaces,
 						points:mapPoints,
 						additionalFeatures:featurePoints,
+						tours:tours,
 						mapTileFolder:'images_map/map/MapTiles111617',
 						imagesUrl:'images_map/',
 						center:{lat:46.070919,long:-118.330110}
