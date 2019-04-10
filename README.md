@@ -1,2 +1,2 @@
-# city-gis-applications
-Web GIS applications for the City of Walla Walla
+# WhitmanCampusMaps
+Web Google Maps applications for the Whitman College Campus Map
